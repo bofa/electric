@@ -12,9 +12,9 @@ function uniq(a, key) {
 data$ = Array(365).fill().map((_, i) => {
   const endTime = luxon.DateTime.now().minus({ days: i }).toFormat('dd-MM-yyyy');
 
-  return new Promise(resolve => setTimeout(resolve, 1000 * i))
+  return new Promise(resolve => setTimeout(resolve, 250 * i))
     .then(() => axios.get(`https://www.nordpoolgroup.com/api/marketdata/page/29?currency=,,,EUR&endDate=${endTime}`))
-    .then(r => r.data.data.Rows.map(row => ({ t: row.StartTime, y: Number(row.Columns[3].Value.replace(',','.')) })))
+    .then(r => r.data.data.Rows.map(row => ({ t: row.StartTime, y: Number(row.Columns[2].Value.replace(',','.')) })))
 })
 
 data$.forEach((r, i) => r.then(() => console.log(i)));
