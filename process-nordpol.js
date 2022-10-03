@@ -22,6 +22,7 @@ data$.forEach((r, i) => r.then(() => console.log(i)));
 Promise.all(data$).then(response => {
   const flat = response.flat();
   const unique = uniq(flat, 't')
+    .sort((a, b) => luxon.DateTime.fromISO(a.t) - luxon.DateTime.fromISO(b.t));
 
   fs.writeFileSync('data.json', JSON.stringify(unique, null, 2));
 })
