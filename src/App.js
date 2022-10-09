@@ -12,6 +12,7 @@ import fullDataSet from './data.json';
 import AreaMultiSelect from './AreaMultiSelect';
 import './App.css';
 import trade from './trading';
+import { DateTime } from 'luxon';
 
 const areas = Object.keys(fullDataSet[0]).filter(item => item !== 't');
 
@@ -22,12 +23,15 @@ const options = {
       beginAtZero: true,
       suggestedMax: 300
     }
-  }
+  },
+  spanGaps: true
 }
 
 function App () {
   const [area, setArea] = React.useState('SE3');
   const [windowSize, setWindowSize] = React.useState(24);
+  const [samplingSize, setSamplingSize] = React.useState(24);
+
   // const trades = trade(tradingData.map(d => d.y), 0.20)
 
   // const buy = trades.filter((t, i) => i % 3 === 1)
@@ -57,15 +61,20 @@ function App () {
   
   // const max = Math.max(...tradingData.map(p => p.y))
   
-  const pricePerHour = Array(24).fill()
-    .map((_, h) => tradingData.filter(p => Number(p.x.slice(11, 13)) === h).map(p => p.y))
-  const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-  const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
+  // const pricePerHour = Array(24).fill()
+  //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(11, 13)) === h).map(p => p.y))
+  // const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+  // const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
 
-  const pricePerMonth = Array(12).fill()
-    .map((_, h) => tradingData.filter(p => Number(p.x.slice(5, 7)) === h + 1).map(p => p.y))
-  const averagePerMonth = pricePerMonth.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-  const stdPerMonth = pricePerMonth.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerMonth[i])**2, 0) / range.length));
+  const pricePerDay = Array(7).fill()
+    .map((_, weekday) => tradingData.filter(p => DateTime.fromISO(p.x).weekday === weekday + 1).map(p => p.y))
+  const averagePerDay = pricePerDay.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+  // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
+
+  // const pricePerMonth = Array(12).fill()
+  //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(5, 7)) === h + 1).map(p => p.y))
+  // const averagePerMonth = pricePerMonth.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+  // const stdPerMonth = pricePerMonth.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerMonth[i])**2, 0) / range.length));
 
   // console.log('averagePerHour', max, averagePerHour, stdPerHour);
 
@@ -82,7 +91,7 @@ function App () {
       // },
       {
         label: 'Moving Average',
-        data: movingAverage,
+        data: movingAverage.filter((_, i) => i % samplingSize === 0),
         fill: false,
         backgroundColor: 'rgb(10, 99, 132)',
         borderColor: 'rgba(10, 99, 132, 1)',
@@ -112,9 +121,18 @@ function App () {
 
   const dataHourOfDay = {
     datasets: [
+      // {
+      //   label: 'Hourly Average Price',
+      //   data: averagePerHour.map((price, hour) => ({ x: '' + hour, y: price })),
+      //   // fill: true,
+      //   // backgroundColor: 'rgb(10, 99, 132)',
+      //   // borderColor: 'rgba(10, 99, 132, 1)',
+      //   // pointRadius: 0,
+      //   // borderWidth: 1,
+      // },
       {
-        label: 'Hourly Average Price',
-        data: averagePerHour.map((price, hour) => ({ x: '' + hour, y: price })),
+        label: 'Weekday Average Price',
+        data: averagePerDay.map((price, day) => ({ x: '' + day + 1, y: price })),
         // fill: true,
         // backgroundColor: 'rgb(10, 99, 132)',
         // borderColor: 'rgba(10, 99, 132, 1)',
@@ -137,16 +155,29 @@ function App () {
     <div className="App" style={{ padding: 20}}>
       <Navbar>
         <NavbarGroup>
-          <HTMLSelect onChange={e => setArea(e.currentTarget.value)}>
-            {areas.map(a => <option selected={a === area} value={a}>{a}</option>)}
+          <NavbarHeading>
+            Area
+          </NavbarHeading>
+          <HTMLSelect value={area} onChange={e => setArea(e.currentTarget.value)}>
+            {areas.map(a => <option value={a}>{a}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
-          <HTMLSelect onChange={e => setWindowSize(e.currentTarget.value)}>
-            <option selected={windowSize === 1} value={1}>Hour</option>
-            <option selected={windowSize === 8} value={8}>8 Hours</option>
-            <option selected={windowSize === 24} value={24}>Day</option>
-            <option selected={windowSize === 24*7} value={24*7}>Week</option>
-            <option selected={windowSize === 24*30} value={24*30}>Month</option>
+          <NavbarHeading>
+            Smoothing
+          </NavbarHeading>
+          <HTMLSelect value={windowSize} onChange={e => setWindowSize(e.currentTarget.value)}>
+            <option value={1}>Hour</option>
+            <option value={8}>8 Hours</option>
+            <option value={24}>Day</option>
+            <option value={24*7}>Week</option>
+            <option value={24*30}>Month</option>
+          </HTMLSelect>
+          <NavbarDivider/>
+          <NavbarHeading>
+            Sampling
+          </NavbarHeading>
+          <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(e.currentTarget.value)}>
+            {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           {/* <AreaMultiSelect areas={areas}/> */}
