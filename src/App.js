@@ -16,21 +16,21 @@ import { DateTime } from 'luxon';
 
 const areas = Object.keys(fullDataSet[0]).filter(item => item !== 't');
 const weekDayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-const colors = ['red', 'maroon', 'yellow', 'olive', 'lime', 'green', 'aqua', 'teal']
+const colors = ['red', 'maroon', 'olive', 'lime', 'green', 'aqua', 'teal', 'yellow']
 
 const options = {
   maintainAspectRatio: false,
   scales: {
     y: {
       beginAtZero: true,
-      suggestedMax: 300
+      suggestedMax: 250
     }
   },
-  spanGaps: true
+  // spanGaps: true
 }
 
 function App () {
-  const [area, setArea] = React.useState('SE3');
+  const [selectedAreas, setSelectedAreas] = React.useState(['SE3']);
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
 
@@ -46,129 +46,101 @@ function App () {
 
   // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
   // const area = 'SE3';
-  const tradingData = fullDataSet.map(p => ({
-    x: p.t,
-    y: p[area],
-  }))
-  // .slice(0, 1000);
+  const processedSeries = selectedAreas.map(area => {
+    const tradingData = fullDataSet.map(p => ({
+      x: p.t,
+      y: p[area],
+    }))
+    // .slice(0, 6000)
 
-  // const windowSize = 24;
-  const movingAverage = tradingData.map((v, i) => ({
-    x: v.x,
-    y: i < windowSize
-      ? NaN
-      : tradingData.slice(i - windowSize + 1, i + 1).reduce((s, p) => s + p.y, 0) / windowSize
-  }));
+    // const windowSize = 24;
+    const movingAverage = tradingData.map((v, i) => ({
+      x: v.x,
+      y: i < windowSize
+        ? NaN
+        : tradingData.slice(i - windowSize + 1, i + 1).reduce((s, p) => s + p.y, 0) / windowSize
+    }));
+      
+    // const max = Math.max(...tradingData.map(p => p.y))
     
-  console.log('tradingData', tradingData);
-  
-  // const max = Math.max(...tradingData.map(p => p.y))
-  
-  // const pricePerHour = Array(24).fill()
-  //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(11, 13)) === h).map(p => p.y))
-  // const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-  // const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
-  const tradingDataDate = tradingData.map(p => ({ x: DateTime.fromISO(p.x), y: p.y }))
+    const pricePerHour = Array(24).fill()
+      .map((_, h) => tradingData.filter(p => Number(p.x.slice(11, 13)) === h).map(p => p.y))
+    const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+    const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
 
-  const pricePerDay = Array(7).fill()
-    .map((_, weekday) => Array(24).fill().map((_, hour) => tradingDataDate
-      .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour)
-      .map(p => p.y)
-    ))
-    
-  console.log('pricePerDay', pricePerDay);
-  const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
-  // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
+    // const tradingDataDate = tradingData.map(p => ({ x: DateTime.fromISO(p.x), y: p.y }))
+    // const pricePerDay = Array(7).fill()
+    //   .map((_, weekday) => Array(24).fill().map((_, hour) => tradingDataDate
+    //     .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour)
+    //     .map(p => p.y)
+    //   ))
+    // const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
+    // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
 
-  // const pricePerMonth = Array(12).fill()
-  //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(5, 7)) === h + 1).map(p => p.y))
-  // const averagePerMonth = pricePerMonth.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-  // const stdPerMonth = pricePerMonth.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerMonth[i])**2, 0) / range.length));
+    // const pricePerDay = [1, 8]
+    //   .map((month) => Array(24).fill().map((_, hour) => tradingDataDate
+    //     .filter(p => p.x.month === month + 1 && p.x.hour === hour)
+    //     .map(p => p.y)
+    //   ))
+    // const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
+    // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
 
-  // console.log('averagePerHour', max, averagePerHour, stdPerHour);
+    // const pricePerMonth = Array(12).fill()
+    //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(5, 7)) === h + 1).map(p => p.y))
+    // const averagePerMonth = pricePerMonth.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+    // const stdPerMonth = pricePerMonth.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerMonth[i])**2, 0) / range.length));
+
+    // console.log('averagePerHour', max, averagePerHour, stdPerHour);
+
+    return {
+      label: area,
+      movingAverage,
+      binAverage: averagePerHour,
+    }
+  })
 
   const dataTimeSeries = {
-    datasets: [
-      // {
-      //   label: 'Price',
-      //   data: tradingData,
-      //   fill: false,
-      //   backgroundColor: 'rgb(255, 99, 132)',
-      //   borderColor: 'rgba(255, 99, 132, 1)',
-      //   pointRadius: 0,
-      //   borderWidth: 1,
-      // },
-      {
-        label: 'Moving Average',
-        data: movingAverage.filter((_, i) => i % samplingSize === 0),
-        fill: false,
-        backgroundColor: 'rgb(10, 99, 132)',
-        borderColor: 'rgba(10, 99, 132, 1)',
-        pointRadius: 0,
-        borderWidth: 1,
-      },
-      // {
-      //   type: 'scatter',
-      //   label: 'Buy',
-      //   data: buy,
-      //   fill: false,
-      //   backgroundColor: 'green',
-      //   radius: 7,
-      //   // borderColor: 'rgba(25, 99, 132, 0.2)',
-      // },
-      // {
-      //   type: 'scatter',
-      //   label: 'Sell',
-      //   data: sell,
-      //   fill: false,
-      //   backgroundColor: 'red',
-      //   radius: 7,
-      //   // borderColor: 'rgba(25, 99, 132, 0.2)',
-      // },
-    ],
+    datasets: processedSeries.map((area, i) => ({
+      label: area.label,
+      data: area.movingAverage.filter((_, i) => i % samplingSize === 0).map(p => ({ x: p.x.slice(0, 13), y: p.y })),
+      fill: false,
+      backgroundColor: colors[i],
+      borderColor: colors[i],
+      pointRadius: 0,
+      borderWidth: 1,
+    })),
   };
 
   const dataHourOfDay = {
-    // datasets: [
-      // {
-      //   label: 'Hourly Average Price',
-      //   data: averagePerHour.map((price, hour) => ({ x: '' + hour, y: price })),
-      //   // fill: true,
-      //   // backgroundColor: 'rgb(10, 99, 132)',
-      //   // borderColor: 'rgba(10, 99, 132, 1)',
-      //   // pointRadius: 0,
-      //   // borderWidth: 1,
-      // },
-      // {
-      //   label: 'Monthly Average Price',
-      //   data: averagePerMonth.map((price, month) => ({ x: '' + (month + 1), y: price })),
-      //   // fill: true,
-      //   // backgroundColor: 'rgb(10, 99, 132)',
-      //   // borderColor: 'rgba(10, 99, 132, 1)',
-      //   // pointRadius: 0,
-      //   // borderWidth: 1,
-      // },
-      datasets: averagePerDay.map((data, weekDay)  => ({
-        label: weekDayNames[weekDay],
-        data: data.map((price, hour) => ({ x: '' + hour, y: price })),
+    datasets: processedSeries.map((area, i) => ({
+        label: area.label,
+        data: area.binAverage.map((price, hour) => ({ x: '' + hour, y: price })),
         // fill: true,
-        // backgroundColor: colors[weekDay],
-        borderColor: colors[weekDay],
+        backgroundColor: colors[i],
+        borderColor: colors[i],
         // pointRadius: 0,
         // borderWidth: 1,
-      }))
+    }))
+    // datasets: averagePerDay.map((data, weekDay)  => ({
+    //   label: weekDayNames[weekDay],
+    //   data: data.map((price, hour) => ({ x: '' + hour, y: price })),
+    //   // fill: true,
+    //   // backgroundColor: colors[weekDay],
+    //   borderColor: colors[weekDay],
+    //   // pointRadius: 0,
+    //   // borderWidth: 1,
+    // }))
   }
 
   return (
     <div className="App">
       <Navbar>
         <NavbarGroup>
-          <NavbarHeading>
-            Area
-          </NavbarHeading>
-          <HTMLSelect value={area} onChange={e => setArea(e.currentTarget.value)}>
-            {areas.map(a => <option value={a}>{a}</option>)}
-          </HTMLSelect>
+          <AreaMultiSelect
+            areas={areas}
+            selectedAreas={selectedAreas}
+            setSelectedAreas={setSelectedAreas}
+          />
           <NavbarDivider/>
           <NavbarHeading>
             Smooth
@@ -194,7 +166,6 @@ function App () {
             {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
-          {/* <AreaMultiSelect areas={areas}/> */}
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>

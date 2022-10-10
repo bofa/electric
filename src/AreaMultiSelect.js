@@ -1,53 +1,37 @@
 import { Button, MenuItem, Tag } from "@blueprintjs/core";
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
- 
-// export interface Film {
-//     title: string;
-//     year: number;
-//     rank: number;
-// }
- 
-// const TOP_100_FILMS: Film[] = [
-//     { title: "The Shawshank Redemption", year: 1994 },
-//     { title: "The Godfather", year: 1972 },
-//     // ...
-// ].map((f, index) => ({ ...f, rank: index + 1 }));
- 
-// const filterFilm: ItemPredicate<Film> = (query, film, _index, exactMatch) => {
-//     const normalizedTitle = film.title.toLowerCase();
-//     const normalizedQuery = query.toLowerCase();
- 
-//     if (exactMatch) {
-//         return normalizedTitle === normalizedQuery;
-//     } else {
-//         return `${film.rank}. ${normalizedTitle} ${film.year}`.indexOf(normalizedQuery) >= 0;
-//     }
-// };
+
+function toggleItems(selected, item) {
+  if (selected.includes(item)) {
+      return selected.filter(v => v !== item);
+  } else {
+      return selected.concat(item);
+  }
+}
  
 const renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
   if (!modifiers.matchesPredicate) {
     return null;
   }
 
-  console.log('Render');
-
   return (
     <MenuItem
-      // active={modifiers.active}
-      // disabled={modifiers.disabled}
+      {...modifiers}
+      active={modifiers.active}
+      disabled={modifiers.disabled}
       key={item.area}
-      // label={item.area}
-      // onClick={handleClick}
-      // onFocus={handleFocus}
+      onClick={handleClick}
+      onFocus={handleFocus}
       text={item.text}
+      icon={item.active ? 'tick' : false}
     />
   );
 };
  
 export default function FilmSelect(props) {
-  const [selectedAreas, setSelectedAreas] = React.useState([]);
-  const items = props.areas.map(area => ({ area, text: area }));
+  const { selectedAreas, setSelectedAreas } = props;
+  const items = props.areas.map(area => ({ area, text: area, active: selectedAreas.includes(area) }));
 
   return (
     <MultiSelect2
@@ -55,9 +39,9 @@ export default function FilmSelect(props) {
       // itemPredicate={filterFilm}
       itemRenderer={renderItem}
       noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
-      onItemSelect={item => setSelectedAreas([item.area])}
-      selectedItems={selectedAreas}
-      tagRenderer={item => <Tag>{item.area}</Tag>}
+      onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
+      selectedItems={items.filter(item => selectedAreas.includes(item.area))}
+      tagRenderer={item => item.area}
     />
   );
 };

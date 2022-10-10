@@ -9,13 +9,9 @@ function uniq(a, key) {
   });
 }
 
-const responseStrucuture = [
-  'sys', 'SE1', 'SE2', 'SE3', 'SE4', 'FI'
-]
-
 const days = 2 * 365;
 data$ = Array(days).fill().map((_, i) => {
-  const endTime = luxon.DateTime.now().minus({ days: i }).toFormat('dd-MM-yyyy');
+  const endTime = luxon.DateTime.now().minus({ days: i - 2 }).toFormat('dd-MM-yyyy');
 
   return new Promise(resolve => setTimeout(resolve, 250 * i))
     .then(() => axios.get(`https://www.nordpoolgroup.com/api/marketdata/page/10?currency=,EUR,EUR,EUR&endDate=${endTime}`))
@@ -24,12 +20,15 @@ data$ = Array(days).fill().map((_, i) => {
     .then(rows => {
       const structure = rows[0].Columns.map(c => c.CombinedName);
 
-      return rows.map(row => ({
-        t: row.StartTime,
-        ...structure
-          .map((area, index) => [area, Number(row.Columns[index].Value.replace(',','.'))])
-          .reduce((obj, area) => ({ ...obj, [area[0]]: area[1]}), {})
-      }))
+      const output = rows.map(row => ({
+          t: row.StartTime,
+          ...structure
+            .map((area, index) => [area, Number(row.Columns[index].Value.replace(',','.'))])
+            .reduce((obj, area) => ({ ...obj, [area[0]]: area[1]}), {})
+        }))
+        .filter(p => !Number.isNaN(p.SYS))
+
+      return output;
     })
 })
 
