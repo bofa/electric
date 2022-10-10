@@ -160,7 +160,7 @@ function App () {
   }
 
   return (
-    <div className="App" style={{ padding: 20}}>
+    <div className="App">
       <Navbar>
         <NavbarGroup>
           <NavbarHeading>
@@ -197,10 +197,10 @@ function App () {
           {/* <AreaMultiSelect areas={areas}/> */}
         </NavbarGroup>
       </Navbar>
-      <div style={{ height: 'calc(50vh - 60px)' }}>
+      <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
         <Chart type="line" data={dataTimeSeries} options={options}/>
      </div>
-      <div style={{ height: 'calc(50vh - 60px)' }}>
+      <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
         <Chart type="line" data={dataHourOfDay} options={options}/>
       </div>
       {/* {Math.round(sum)}EUR, {Math.round(sum/tradingData.length)}EUR/h, {Math.round(24 * 365 * sum/tradingData.length)}EUR/y */}
