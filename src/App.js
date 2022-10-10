@@ -173,7 +173,13 @@ function App () {
           <NavbarHeading>
             Smooth
           </NavbarHeading>
-          <HTMLSelect value={windowSize} onChange={e => setWindowSize(e.currentTarget.value)}>
+          <HTMLSelect value={windowSize} onChange={e => {
+            const newWindowSize = e.currentTarget.value;
+            setWindowSize(newWindowSize)
+            if (newWindowSize < samplingSize) {
+              setSamplingSize(newWindowSize);
+            }
+          }}>
             <option value={1}>Hour</option>
             <option value={8}>8 Hours</option>
             <option value={24}>Day</option>
