@@ -15,6 +15,8 @@ import trade from './trading';
 import { DateTime } from 'luxon';
 
 const areas = Object.keys(fullDataSet[0]).filter(item => item !== 't');
+const weekDayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const colors = ['red', 'maroon', 'yellow', 'olive', 'lime', 'green', 'aqua', 'teal']
 
 const options = {
   maintainAspectRatio: false,
@@ -47,7 +49,8 @@ function App () {
   const tradingData = fullDataSet.map(p => ({
     x: p.t,
     y: p[area],
-  })); // .slice(0, 100);
+  }))
+  // .slice(0, 1000);
 
   // const windowSize = 24;
   const movingAverage = tradingData.map((v, i) => ({
@@ -65,10 +68,16 @@ function App () {
   //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(11, 13)) === h).map(p => p.y))
   // const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
   // const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
+  const tradingDataDate = tradingData.map(p => ({ x: DateTime.fromISO(p.x), y: p.y }))
 
   const pricePerDay = Array(7).fill()
-    .map((_, weekday) => tradingData.filter(p => DateTime.fromISO(p.x).weekday === weekday + 1).map(p => p.y))
-  const averagePerDay = pricePerDay.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+    .map((_, weekday) => Array(24).fill().map((_, hour) => tradingDataDate
+      .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour)
+      .map(p => p.y)
+    ))
+    
+  console.log('pricePerDay', pricePerDay);
+  const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
   // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
 
   // const pricePerMonth = Array(12).fill()
@@ -120,7 +129,7 @@ function App () {
   };
 
   const dataHourOfDay = {
-    datasets: [
+    // datasets: [
       // {
       //   label: 'Hourly Average Price',
       //   data: averagePerHour.map((price, hour) => ({ x: '' + hour, y: price })),
@@ -130,15 +139,6 @@ function App () {
       //   // pointRadius: 0,
       //   // borderWidth: 1,
       // },
-      {
-        label: 'Weekday Average Price',
-        data: averagePerDay.map((price, day) => ({ x: '' + day + 1, y: price })),
-        // fill: true,
-        // backgroundColor: 'rgb(10, 99, 132)',
-        // borderColor: 'rgba(10, 99, 132, 1)',
-        // pointRadius: 0,
-        // borderWidth: 1,
-      },
       // {
       //   label: 'Monthly Average Price',
       //   data: averagePerMonth.map((price, month) => ({ x: '' + (month + 1), y: price })),
@@ -148,7 +148,15 @@ function App () {
       //   // pointRadius: 0,
       //   // borderWidth: 1,
       // },
-    ]
+      datasets: averagePerDay.map((data, weekDay)  => ({
+        label: weekDayNames[weekDay],
+        data: data.map((price, hour) => ({ x: '' + hour, y: price })),
+        // fill: true,
+        // backgroundColor: colors[weekDay],
+        borderColor: colors[weekDay],
+        // pointRadius: 0,
+        // borderWidth: 1,
+      }))
   }
 
   return (
@@ -163,7 +171,7 @@ function App () {
           </HTMLSelect>
           <NavbarDivider/>
           <NavbarHeading>
-            Smoothing
+            Smooth
           </NavbarHeading>
           <HTMLSelect value={windowSize} onChange={e => setWindowSize(e.currentTarget.value)}>
             <option value={1}>Hour</option>
@@ -174,7 +182,7 @@ function App () {
           </HTMLSelect>
           <NavbarDivider/>
           <NavbarHeading>
-            Sampling
+            Samp
           </NavbarHeading>
           <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(e.currentTarget.value)}>
             {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
