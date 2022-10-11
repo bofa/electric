@@ -14,6 +14,9 @@ import './App.css';
 import trade from './trading';
 import { DateTime } from 'luxon';
 
+// Add link to
+// https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
+
 const areas = Object.keys(fullDataSet[0]).filter(item => item !== 't');
 const weekDayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const colors = ['red', 'maroon', 'olive', 'lime', 'green', 'aqua', 'teal', 'yellow']
