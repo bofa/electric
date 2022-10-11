@@ -105,7 +105,7 @@ function App () {
   const dataTimeSeries = {
     datasets: processedSeries.map((area, i) => ({
       label: area.label,
-      data: area.movingAverage.filter((_, i) => i % samplingSize === 0).map(p => ({ x: p.x.slice(0, 13), y: p.y })),
+      data: area.movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1).map(p => ({ x: p.x.slice(0, 13), y: p.y })),
       fill: false,
       backgroundColor: colors[i],
       borderColor: colors[i],
