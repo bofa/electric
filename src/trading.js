@@ -52,7 +52,7 @@ function bestTradeFunc (startIndex, stopIndex, data, cycleLoss) {
   if (!bestTrade || bestTrade[0] <= 0) {
     return [];
   } 
-
+  
   const range1 = bestTradeFunc(startIndex, bestTrade[1], data, cycleLoss);
   const range2 = bestTradeFunc(bestTrade[2], stopIndex, data, cycleLoss);
 
@@ -63,10 +63,24 @@ function bestTradeFunc (startIndex, stopIndex, data, cycleLoss) {
   // return range1.concat(bestTrade).concat(range2);
 }
 
-export default function trade(data, cycleLoss) {
-  console.log('data', data, cycleLoss);
+export default function trade(data, cycleLoss, visability) {
+  console.log('data', data, cycleLoss, visability);
 
-  const trades = bestTradeFunc(0, data.length, data, cycleLoss);
+  const dataNoNegative = data.map(v => Math.max(v, 0));
 
-  return trades;
+  const completeTrades = bestTradeFunc(0, dataNoNegative.length, dataNoNegative, cycleLoss);
+
+  // const completeTrades = dataNoNegative.reduce((output, price, index, array) => {
+  //   const stopIndex = index + visability > array.length ? array.length : index + visability;
+  //   const trades = bestTradeFunc(index, stopIndex, array, cycleLoss);
+
+  //   // console.log('trades', index, trades);
+
+  //   output[index] = trades[1] == index ? trades.slice(0, 3) : null;
+  //   return output;
+  // }, new Array(data.length).fill())
+
+  console.log('completeTrades', completeTrades);
+
+  return completeTrades;
 }

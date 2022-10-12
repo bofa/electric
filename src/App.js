@@ -7,6 +7,7 @@ import {
 } from "@blueprintjs/core";
 import React from 'react';
 import 'chart.js/auto';
+// import 'chartjs-adapter-luxon';
 import { Chart } from 'react-chartjs-2';
 import fullDataSet from './data.json';
 import AreaMultiSelect from './AreaMultiSelect';
@@ -27,34 +28,60 @@ const options = {
     y: {
       beginAtZero: true,
       suggestedMax: 250
-    }
+      },
+    // x: {
+    //   type: 'time',
+    //   time: {
+    //     // Luxon format string
+    //     tooltipFormat: 'DD T'
+    //   },
+    //   title: {
+    //     display: true,
+    //     text: 'Date'
+    //   }
+    // },
   },
+  animation: false,
+  normalized: true,
   // spanGaps: true
+  // parsing: false,
 }
 
 function App () {
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3']);
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
+  const [range, setRange] = React.useState('Full');
 
-  // const trades = trade(tradingData.map(d => d.y), 0.20)
+  const now = DateTime.now();
+  let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
+  if (range === 'Last Week') {
+    lowerDate = now.minus({ weeks: 1 })
+  } else if (range === 'Last Month') {
+    lowerDate = now.minus({ months: 1 })
+  } else if (range === 'Last Year') {
+    lowerDate = now.minus({ years: 1 })
+  }
+  const rangeDataSet = fullDataSet.filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
 
-  // const buy = trades.filter((t, i) => i % 3 === 1)
-  //   .map(t => tradingData[t])
-  //   .map(({ t, y }) => ({ x: t, y }));
-  
-  // const sell = trades.filter((t, i) => i % 3 === 2)
-  //   .map(t => tradingData[t])
-  //   .map(({ t, y }) => ({ x: t, y }));
-
-  // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
-  // const area = 'SE3';
   const processedSeries = selectedAreas.map(area => {
-    const tradingData = fullDataSet.map(p => ({
-      x: p.t,
+    const tradingData = rangeDataSet.map(p => ({
+      x: p.x,
       y: p[area],
     }))
-    // .slice(0, 6000)
+    
+    console.log('tradingData', tradingData);
+    
+    // const trades = trade(tradingData.map(d => d.y), 0.20, 24)
+    // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
+
+    // console.log('sum', sum);
+
+    // const buy = trades.filter((t, i) => i % 3 === 1)
+    //   .map(t => tradingData[t])
+    
+    // const sell = trades.filter((t, i) => i % 3 === 2)
+    //   .map(t => tradingData[t])
 
     // const windowSize = 24;
     const movingAverage = tradingData.map((v, i) => ({
@@ -99,19 +126,45 @@ function App () {
       label: area,
       movingAverage,
       binAverage: averagePerHour,
+      // buy,
+      // sell,
     }
   })
 
   const dataTimeSeries = {
-    datasets: processedSeries.map((area, i) => ({
-      label: area.label,
-      data: area.movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1).map(p => ({ x: p.x.slice(0, 13), y: p.y })),
-      fill: false,
-      backgroundColor: colors[i],
-      borderColor: colors[i],
-      pointRadius: 0,
-      borderWidth: 1,
-    })),
+    datasets: 
+      processedSeries.map((area, i) => [{
+        type: windowSize === 1 ? 'scatter' : 'line',
+        label: area.label + windowSize,
+        data: area.movingAverage
+          .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
+
+          ,
+        fill: false,
+        backgroundColor: colors[i],
+        borderColor: colors[i],
+        pointRadius: windowSize === 1 ? 1 : 0,
+        borderWidth: 1,
+      },
+      // {
+      //   type: 'scatter',
+      //   label: 'Buy',
+      //   data: area.buy,
+      //   fill: false,
+      //   backgroundColor: 'green',
+      //   radius: 7,
+      //   // borderColor: 'rgba(25, 99, 132, 0.2)',
+      // },
+      // {
+      //   type: 'scatter',
+      //   label: 'Sell',
+      //   data: area.sell,
+      //   fill: false,
+      //   backgroundColor: 'red',
+      //   radius: 7,
+      //   // borderColor: 'rgba(25, 99, 132, 0.2)',
+      // },
+    ]).flat()
   };
 
   const dataHourOfDay = {
@@ -149,7 +202,7 @@ function App () {
             Smooth
           </NavbarHeading>
           <HTMLSelect value={windowSize} onChange={e => {
-            const newWindowSize = e.currentTarget.value;
+            const newWindowSize = Number(e.currentTarget.value);
             setWindowSize(newWindowSize)
             if (newWindowSize < samplingSize) {
               setSamplingSize(newWindowSize);
@@ -165,8 +218,15 @@ function App () {
           <NavbarHeading>
             Samp
           </NavbarHeading>
-          <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(e.currentTarget.value)}>
+          <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(Number(e.currentTarget.value))}>
             {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
+          </HTMLSelect>
+          <NavbarDivider/>
+          <NavbarHeading>
+            Range
+          </NavbarHeading>
+          <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
+            {['Full', 'Last Year', 'Last Month', 'Last Week'].map(v => <option value={v}>{v}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
         </NavbarGroup>
