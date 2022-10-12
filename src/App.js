@@ -135,7 +135,7 @@ function App () {
     datasets: 
       processedSeries.map((area, i) => [{
         type: windowSize === 1 ? 'scatter' : 'line',
-        label: area.label + windowSize,
+        label: area.label,
         data: area.movingAverage
           .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
 
