@@ -25,9 +25,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scrape": "npm run price && npm run consumption",
+    "scrape": "npm run price && npm run consumption && npm run production",
     "price": "node price-nordpol.js",
-    "consumption": "node consumption-nordpol.js"
+    "consumption": "node consumption-nordpol.js",
+    "production": "node production-nordpol.js"
   },
   "eslintConfig": {
     "extends": [
