@@ -78,8 +78,6 @@ function App () {
       y: p[area],
     }))
     
-    console.log('tradingData', tradingData);
-    
     // const trades = trade(tradingData.map(d => d.y), 0.20, 24)
     // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
 
