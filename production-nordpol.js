@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
-const importData = require('production.json');
+const importData = require('./production.json');
 
 function uniq(a, key) {
   var seen = {};
@@ -10,7 +10,7 @@ function uniq(a, key) {
   });
 }
 
-const days = 10; // 2 * 365;
+const days = 3 * 365;
 data$ = Array(days).fill().map((_, i) => {
   const endTime = luxon.DateTime.now().minus({ days: i }).toFormat('dd-MM-yyyy');
 
@@ -37,14 +37,15 @@ data$.forEach((r, i) => r.then(() => console.log(i)));
 Promise.all(data$).then(response => {
   const flat = response
     .flat()
-    .concat(importData2021)
+    .concat(importData)
 
   const unique = uniq(flat, 'x')
     .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
     
     fs.writeFileSync('production.json', JSON.stringify(unique, null, 2));
 
-    // const from2021 = unique.filter(p => luxon.DateTime.fromISO(p.x).year === 2021);
-    // fs.writeFileSync('consumption2021.json', JSON.stringify(from2021, null, 2));
+    // const year = 2022;
+    // const fromYear = unique.filter(p => luxon.DateTime.fromISO(p.x).year === year);
+    // fs.writeFileSync(`consumption${year}.json`, JSON.stringify(fromYear, null, 2));
 })
   

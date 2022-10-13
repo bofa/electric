@@ -48,17 +48,25 @@ const options = {
 }
 
 function App () {
-  const [selectedAreas, setSelectedAreas] = React.useState(['SE3']);
+  const [selectedAreas, setSelectedAreas] = React.useState([]);
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
-  const [fullDataSet, setFullDataSet] = React.useState([{}]);
-
+  const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
+  const [priceDataSet, setPriceDataSet] = React.useState([{}]);
+  const [consumptionDataSet, setConsumptionDataSet] = React.useState([{}]);
+  const [productionDataSet, setProductionDataSet] = React.useState([{}]);
+  
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/data.json')
-      .then(response => setFullDataSet(response.data));
+      .then(response => setPriceDataSet(response.data));
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/consumption.json')
+      .then(response => setConsumptionDataSet(response.data));
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/production.json')
+      .then(response => setProductionDataSet(response.data));
   }, [])
 
+  const fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet }[selectDataSet];
   const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
 
   const now = DateTime.now();
@@ -70,14 +78,16 @@ function App () {
   } else if (range === 'Past Year') {
     lowerDate = now.minus({ years: 1 })
   }
+  
   const rangeDataSet = fullDataSet.filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
 
   const processedSeries = selectedAreas.map(area => {
-    const tradingData = rangeDataSet.map(p => ({
-      x: p.x,
-      y: p[area],
-    }))
-    
+    const tradingData = rangeDataSet
+      .map(p => ({
+        x: p.x,
+        y: p[area],
+      }))
+      .filter(p => p.y !== null)
     // const trades = trade(tradingData.map(d => d.y), 0.20, 24)
     // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
 
@@ -203,6 +213,15 @@ function App () {
             selectedAreas={selectedAreas}
             setSelectedAreas={setSelectedAreas}
           />
+          <NavbarDivider/>
+          <NavbarHeading>
+            Param
+          </NavbarHeading>
+          <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
+            <option value={'priceDataSet'}>Price</option>
+            <option value={'consumptionDataSet'}>Consumption</option>
+            <option value={'productionDataSet'}>Production</option>
+          </HTMLSelect>
           <NavbarDivider/>
           <NavbarHeading>
             Smooth
