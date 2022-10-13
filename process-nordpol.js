@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
-const importData2021 = require('./src/data2021.json')
+const importData2021 = require('./data2021.json')
 
 function uniq(a, key) {
   var seen = {};
@@ -43,7 +43,7 @@ Promise.all(data$).then(response => {
   const unique = uniq(flat, 'x')
     .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
     
-    fs.writeFileSync('src/data.json', JSON.stringify(unique, null, 2));
+    fs.writeFileSync('data.json', JSON.stringify(unique, null, 2));
 
     // const from2021 = unique.filter(p => luxon.DateTime.fromISO(p.x).year === 2021);
     // fs.writeFileSync('src/data2021.json', JSON.stringify(from2021, null, 2));
