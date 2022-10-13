@@ -48,7 +48,7 @@ const options = {
 }
 
 function App () {
-  const [selectedAreas, setSelectedAreas] = React.useState([]);
+  const [selectedAreas, setSelectedAreas] = React.useState(['SE3']);
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
@@ -78,7 +78,7 @@ function App () {
   } else if (range === 'Past Year') {
     lowerDate = now.minus({ years: 1 })
   }
-  
+
   const rangeDataSet = fullDataSet.filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
 
   const processedSeries = selectedAreas.map(area => {
