@@ -9,16 +9,16 @@ import React from 'react';
 import 'chart.js/auto';
 // import 'chartjs-adapter-luxon';
 import { Chart } from 'react-chartjs-2';
-import fullDataSet from './data.json';
+// import fullDataSet from './data.json';
 import AreaMultiSelect from './AreaMultiSelect';
 import './App.css';
 import trade from './trading';
 import { DateTime } from 'luxon';
+import axios from 'axios';
 
 // Add link to
 // https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
 
-const areas = Object.keys(fullDataSet[0]).filter(item => item !== 't');
 const weekDayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const colors = ['red', 'maroon', 'olive', 'lime', 'green', 'aqua', 'teal', 'yellow']
 
@@ -52,6 +52,14 @@ function App () {
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
+  const [fullDataSet, setFullDataSet] = React.useState([{}]);
+
+  React.useEffect(() => {
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/data.json')
+      .then(response => setFullDataSet(response.data));
+  }, [])
+
+  const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
