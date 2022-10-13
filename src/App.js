@@ -55,11 +55,11 @@ function App () {
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
-  if (range === 'Last Week') {
+  if (range === 'Past Week') {
     lowerDate = now.minus({ weeks: 1 })
-  } else if (range === 'Last Month') {
+  } else if (range === 'Past Month') {
     lowerDate = now.minus({ months: 1 })
-  } else if (range === 'Last Year') {
+  } else if (range === 'Past Year') {
     lowerDate = now.minus({ years: 1 })
   }
   const rangeDataSet = fullDataSet.filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
@@ -226,7 +226,7 @@ function App () {
             Range
           </NavbarHeading>
           <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
-            {['Full', 'Last Year', 'Last Month', 'Last Week'].map(v => <option value={v}>{v}</option>)}
+            {['Full', 'Past Year', 'Past Month', 'Past Week'].map(v => <option value={v}>{v}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
         </NavbarGroup>
