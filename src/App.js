@@ -56,17 +56,29 @@ function App () {
   const [priceDataSet, setPriceDataSet] = React.useState([{}]);
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([{}]);
   const [productionDataSet, setProductionDataSet] = React.useState([{}]);
+  const [exportDataSet, setExportDataSet] = React.useState([{}]);
   
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/data.json')
       .then(response => setPriceDataSet(response.data));
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/consumption.json')
-      .then(response => setConsumptionDataSet(response.data));
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/production.json')
-      .then(response => setProductionDataSet(response.data));
+
+    const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/consumption.json')
+      .then(response => response.data)
+    consumption$.then(data => setConsumptionDataSet(data));
+    
+    const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/production.json')
+      .then(response => response.data)
+    production$.then(data => setProductionDataSet(data));
+
+    Promise.all([production$, consumption$]).then(([production, consumption]) => {
+      const areas = Object.keys(production[0]).filter(item => item !== 'x');
+      const exports = production.map((p, i) => ({ x: p.x, ...areas.reduce((obj, area) => ({ ...obj, [area]: p[area] - consumption[i][area] }), {}) }))
+      
+      setExportDataSet(exports)
+    });
   }, [])
 
-  const fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet }[selectDataSet];
+  const fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
 
   const now = DateTime.now();
@@ -79,7 +91,8 @@ function App () {
     lowerDate = now.minus({ years: 1 })
   }
 
-  const rangeDataSet = fullDataSet.filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
+  const rangeDataSet = fullDataSet
+    .filter(p => DateTime.fromISO(p.x) - lowerDate > 0);
 
   const processedSeries = selectedAreas.map(area => {
     const tradingData = rangeDataSet
@@ -221,6 +234,7 @@ function App () {
             <option value={'priceDataSet'}>Price</option>
             <option value={'consumptionDataSet'}>Consumption</option>
             <option value={'productionDataSet'}>Production</option>
+            <option value={'exportDataSet'}>Export/Import</option>
           </HTMLSelect>
           <NavbarDivider/>
           <NavbarHeading>
