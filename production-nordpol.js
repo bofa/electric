@@ -10,7 +10,7 @@ function uniq(a, key) {
   });
 }
 
-const days = 3 * 365;
+const days = 10; // 3 * 365;
 data$ = Array(days).fill().map((_, i) => {
   const endTime = luxon.DateTime.now().minus({ days: i }).toFormat('dd-MM-yyyy');
 
@@ -46,6 +46,6 @@ Promise.all(data$).then(response => {
 
     // const year = 2022;
     // const fromYear = unique.filter(p => luxon.DateTime.fromISO(p.x).year === year);
-    // fs.writeFileSync(`consumption${year}.json`, JSON.stringify(fromYear, null, 2));
+    // fs.writeFileSync(`production${year}.json`, JSON.stringify(fromYear, null, 2));
 })
   

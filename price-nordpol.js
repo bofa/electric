@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
 const importData2021 = require('./data2021.json');
-const importData = require('./data2021.json');
+const importData = require('./data.json');
 
 function uniq(a, key) {
   var seen = {};
@@ -11,7 +11,7 @@ function uniq(a, key) {
   });
 }
 
-const days = 1 * 365;
+const days = 10; // 1 * 365;
 data$ = Array(days).fill().map((_, i) => {
   const endTime = luxon.DateTime.now().minus({ days: i - 2 }).toFormat('dd-MM-yyyy');
 
