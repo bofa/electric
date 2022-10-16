@@ -17,6 +17,11 @@ const optionsTransform = {
   normalized: true,
   // spanGaps: true
   // parsing: false,
+  plugins: {
+    legend: {
+      position: 'right'
+    }
+  }
 }
 
 export default function TransformChart(props) {
@@ -24,13 +29,13 @@ export default function TransformChart(props) {
 
   const dataHourOfDay = {
     datasets: props.processedSeries.map((area, i) => ({
-        label: area.label,
-        data: area.binAverage.map((price, hour) => ({ x: '' + hour, y: price })),
-        // fill: true,
-        backgroundColor: colors[i],
-        borderColor: colors[i],
-        // pointRadius: 0,
-        // borderWidth: 1,
+      label: area.label,
+      data: area.binAverage.map((price, hour) => ({ x: '' + hour, y: price })),
+      // fill: true,
+      backgroundColor: colors[i],
+      borderColor: colors[i],
+      // pointRadius: 0,
+      // borderWidth: 1,
     }))
     // datasets: averagePerDay.map((data, weekDay)  => ({
     //   label: weekDayNames[weekDay],

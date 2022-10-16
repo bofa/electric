@@ -31,7 +31,11 @@ const optionsTime = {
       type: 'time',
       time: {
         // Luxon format string
-        tooltipFormat: 'DD T'
+        tooltipFormat: 'DD T',
+        unit: 'day',
+        displayFormats: {
+          day: 'yy:MM:dd'
+        },
       },
       title: {
         display: true,
@@ -43,6 +47,11 @@ const optionsTime = {
   normalized: true,
   // spanGaps: true
   // parsing: false,
+  plugins: {
+    legend: {
+      position: 'right'
+    }
+  }
 }
 
 function objectMap(object, mapFn) {
