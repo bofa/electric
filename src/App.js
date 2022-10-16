@@ -71,7 +71,7 @@ function transformSin(p, bias, amplitude, frequence, phase) {
 }
 
 function App () {
-  const [selectedAreas, setSelectedAreas] = React.useState(['SE3']);
+  const [selectedAreas, setSelectedAreas] = React.useState(['SE3', 'SE']);
   const [windowSize, setWindowSize] = React.useState(24);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
