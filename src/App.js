@@ -279,7 +279,7 @@ function App () {
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
-        <div style={{ position: 'fixed', float: 'left', marginLeft: 100 }}>
+        <div style={{ position: 'fixed', float: 'left', marginLeft: 50 }}>
           <HTMLSelect value={windowSize} onChange={e => {
             const newWindowSize = Number(e.currentTarget.value);
             setWindowSize(newWindowSize)
