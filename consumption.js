@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
-const importData = require('./consumption.json');
+const importData = require('./scrape/consumption.json');
 
 function uniq(a, key) {
   var seen = {};

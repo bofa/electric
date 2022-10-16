@@ -73,17 +73,17 @@ function App () {
   const [exportDataSet, setExportDataSet] = React.useState([{}]);
   
   React.useEffect(() => {
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/data.json')
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
       .then(response => response.data)
       .then(transformSeries)
       .then(setPriceDataSet);
 
-    const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/consumption.json')
+    const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
       .then(response => response.data)
       .then(transformSeries)
     consumption$.then(setConsumptionDataSet);
     
-    const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/production.json')
+    const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
       .then(response => response.data)
       .then(transformSeries)
     production$.then(setProductionDataSet);
