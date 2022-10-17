@@ -113,8 +113,6 @@ export default function TransformChart(props) {
     
   }).flat();
 
-  console.log('binSeries', binSeries);
-
   const dataHourOfDay = {
     datasets: binSeries.map((area, i) => ({
       label: area.label,
