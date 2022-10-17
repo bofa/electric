@@ -49,7 +49,10 @@ const optionsTime = {
   // parsing: false,
   plugins: {
     legend: {
-      position: 'right'
+      position: 'right',
+      labels: {
+        filter: item=> !item.text.includes('remove')
+      }
     }
   }
 }
@@ -201,7 +204,7 @@ function App () {
           ? []
           : [
             {
-              label: area.label + ' min',
+              label: 'remove' + area.label + ' min',
               data: area.movingAverage.map(p => ({ x: p.x, y: p.min })),
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
@@ -210,7 +213,7 @@ function App () {
               borderWidth: 1,
             },
             {
-              label: area.label + ' max',
+              label: 'remove' + area.label + ' max',
               data: area.movingAverage.map(p => ({ x: p.x, y: p.max })),
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
