@@ -61,14 +61,14 @@ export default function TransformChart(props) {
         bin: averagePerHour
       }];
     } else if (transform === 'timeOfWeekday') {
-      const pricePerDay = Array(7).fill()
+      const pricePerWeekday = Array(7).fill()
         .map((_, weekday) => Array(24).fill().map((_, hour) => s.tradingData
           .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour && !isNaN(p.y))
           .map(p => p.y)
         ))
-      const averagePerDay = pricePerDay.map((gurkburk, label) => ({
-        label: weekDayNames[label], 
-        bin: gurkburk.map((range, i) => ({
+      const averagePerDay = pricePerWeekday.map((weekday, label) => ({
+        label: s.label + ' ' + weekDayNames[label], 
+        bin: weekday.map((range, i) => ({
           x: '' + i,
           y: range.reduce((sum, y) => sum + y, 0) / range.length,
         }))
