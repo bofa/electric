@@ -174,41 +174,11 @@ function App () {
     })
     .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1);
       
-    // const max = Math.max(...tradingData.map(p => p.y))
-    
-    const pricePerHour = Array(24).fill()
-      .map((_, h) => tradingData.filter(p => p.x.hour === h && !isNaN(p.y)).map(p => p.y))
-    const averagePerHour = pricePerHour.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-    const stdPerHour = pricePerHour.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerHour[i])**2, 0) / range.length));
-
-    // const tradingDataDate = tradingData.map(p => ({ x: DateTime.fromISO(p.x), y: p.y }))
-    // const pricePerDay = Array(7).fill()
-    //   .map((_, weekday) => Array(24).fill().map((_, hour) => tradingDataDate
-    //     .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour)
-    //     .map(p => p.y)
-    //   ))
-    // const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
-    // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
-
-    // const pricePerDay = [1, 8]
-    //   .map((month) => Array(24).fill().map((_, hour) => tradingDataDate
-    //     .filter(p => p.x.month === month + 1 && p.x.hour === hour)
-    //     .map(p => p.y)
-    //   ))
-    // const averagePerDay = pricePerDay.map(gurkburk => gurkburk.map(range => range.reduce((sum, y) => sum + y, 0) / range.length));
-    // const stdPerDay = pricePerDay.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - pricePerDay[i])**2, 0) / range.length));
-
-    // const pricePerMonth = Array(12).fill()
-    //   .map((_, h) => tradingData.filter(p => Number(p.x.slice(5, 7)) === h + 1).map(p => p.y))
-    // const averagePerMonth = pricePerMonth.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-    // const stdPerMonth = pricePerMonth.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - averagePerMonth[i])**2, 0) / range.length));
-
-    // console.log('averagePerHour', max, averagePerHour, stdPerHour);
-
     return {
       label: area,
+      tradingData,
       movingAverage,
-      binAverage: averagePerHour,
+      // binAverage: averagePerHour,
       // buy,
       // sell,
     }
@@ -234,7 +204,7 @@ function App () {
               label: area.label + ' min',
               data: area.movingAverage.map(p => ({ x: p.x, y: p.min })),
               fill: 3*i,
-              backgroundColor: adjustHexOpacity(i, 0.4),
+              backgroundColor: adjustHexOpacity(i, 0.2),
               borderColor: 'transparent',
               pointRadius: windowSize === 1 ? 1 : 0,
               borderWidth: 1,
@@ -243,7 +213,7 @@ function App () {
               label: area.label + ' max',
               data: area.movingAverage.map(p => ({ x: p.x, y: p.max })),
               fill: 3*i,
-              backgroundColor: adjustHexOpacity(i, 0.4),
+              backgroundColor: adjustHexOpacity(i, 0.2),
               borderColor: 'transparent',
               pointRadius: windowSize === 1 ? 1 : 0,
               borderWidth: 1,
