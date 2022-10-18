@@ -9,7 +9,9 @@ const optionsTransform = {
   maintainAspectRatio: false,
   scales: {
     x: {
-      type: 'linear'
+      type: 'linear',
+      // min: 2019,
+      // max: 2022,
     },
     y: {
       beginAtZero: true,
@@ -100,6 +102,33 @@ export default function TransformChart(props) {
         min,
         max,
       }];
+    } else if (transform === 'year') {
+      const startYear = s.tradingData.at(0).x.year;
+      const endYear = s.tradingData.at(-1).x.year;
+      console.log('startYear', startYear, endYear)
+      return Array(endYear-startYear + 1).fill().map((_, i) => startYear + i).map((year) => {
+        const pricePerMonth = Array(12).fill().map((_, i) => i + 1)
+          .map((m) => ({
+            x: m,
+            w: s.tradingData.filter(p => p.x.year === year && p.x.month === m && !isNaN(p.y)).map(p => p.y),
+          }))
+        const averagePerMonth = pricePerMonth
+          .map(range => ({
+            x: range.x,
+            y: range.w.reduce((sum, y) => sum + y, 0) / range.w.length
+          }));
+
+        const std = pricePerMonth.map((range, i) => Math.sqrt(range.w.reduce((sum, y) => sum + (y - averagePerMonth[i].y)**2, 0) / range.w.length))
+        const min  = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y - std[i] }));
+        const max = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y + std[i] }));
+
+        return {
+          label: s.label + year, 
+          bin: averagePerMonth,
+          // min,
+          // max,
+        };
+      })
     }
   }).flat();
 
@@ -140,6 +169,7 @@ export default function TransformChart(props) {
           <option value={'timeOfDay'}>Time of day</option>
           <option value={'timeOfWeekday'}>Time of weekday</option>
           <option value={'month'}>Month</option>
+          <option value={'year'}>Month of year</option>
         </HTMLSelect>
       </div>
       <Chart type="line" data={dataHourOfDay} options={optionsTransform}/>
