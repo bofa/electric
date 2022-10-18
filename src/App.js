@@ -17,45 +17,11 @@ import TransformChart from './TransformChart';
 // import { fft, util as fftUtil } from 'fft-js';
 import { colors, adjustHexOpacity } from './utils';
 
+// const optionsDatasetsArray = {
+// }
+
 // Add link to
 // https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
-
-const optionsTime = {
-  maintainAspectRatio: false,
-  scales: {
-    y: {
-      beginAtZero: true,
-      suggestedMax: 250
-      },
-    x: {
-      type: 'time',
-      time: {
-        // Luxon format string
-        tooltipFormat: 'DD T',
-        unit: 'day',
-        displayFormats: {
-          day: 'yy-MM-dd'
-        },
-      },
-      title: {
-        display: true,
-        text: 'Date'
-      }
-    },
-  },
-  animation: false,
-  normalized: true,
-  // spanGaps: true
-  // parsing: false,
-  plugins: {
-    legend: {
-      position: 'right',
-      labels: {
-        filter: item=> !item.text.includes('remove')
-      }
-    }
-  }
-}
 
 function objectMap(object, mapFn) {
   return Object.keys(object).reduce(function(result, key) {
@@ -208,18 +174,16 @@ function App () {
               data: area.movingAverage.map(p => ({ x: p.x, y: p.min })),
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
-              borderColor: 'transparent',
-              pointRadius: windowSize === 1 ? 1 : 0,
-              borderWidth: 1,
+              pointRadius: 0,
+              borderWidth: 0,
             },
             {
               label: 'remove' + area.label + ' max',
               data: area.movingAverage.map(p => ({ x: p.x, y: p.max })),
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
-              borderColor: 'transparent',
-              pointRadius: windowSize === 1 ? 1 : 0,
-              borderWidth: 1,
+              pointRadius: 0,
+              borderWidth: 0,
             }
           ]
         ),
@@ -290,6 +254,48 @@ function App () {
     ).flat(2)
   };
 
+  const optionsTime = {
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        suggestedMax: 250,
+        position: 'right',
+        title: {
+          display: true,
+          text: 'Price [EUR/MWh]',
+        }
+      },
+      x: {
+        type: 'time',
+        time: {
+          // Luxon format string
+          tooltipFormat: 'DD T',
+          unit: 'day',
+          displayFormats: {
+            day: 'yy-MM-dd'
+          },
+        },
+        title: {
+          display: true,
+          text: 'Date'
+        }
+      },
+    },
+    animation: false,
+    normalized: true,
+    // spanGaps: true
+    // parsing: false,
+    plugins: {
+      legend: {
+        position: 'left',
+        labels: {
+          filter: item=> !item.text.includes('remove')
+        }
+      }
+    }
+  }
+
   return (
     <div className="App">
       <Navbar>
@@ -320,7 +326,7 @@ function App () {
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
-        <div style={{ position: 'fixed', float: 'left', marginLeft: 50 }}>
+        <div style={{ position: 'fixed', float: 'left' }}>
           <HTMLSelect value={windowSize} onChange={e => {
             const newWindowSize = Number(e.currentTarget.value);
             setWindowSize(newWindowSize)
