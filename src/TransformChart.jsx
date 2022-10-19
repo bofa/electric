@@ -161,6 +161,27 @@ export default function TransformChart(props) {
           // max,
         };
       })
+    } else if (transform === 'histogram') {
+      const numberOfBins = 100;
+
+      const rawSeries = s.tradingData.map(p => p.y).filter(y => !isNaN(y))
+      const min = Math.min(...rawSeries);
+      const max = Math.max(...rawSeries);
+      
+      const step = (max - min) / numberOfBins;
+
+      const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
+        .map(min => ({
+          x: min,
+          y: rawSeries.filter(y => y >= min && y < min + step).length
+        }));
+
+      return [{
+        label: s.label,
+        bin: histogram,
+        min: [],
+        max: [],
+      }];
     }
   }).flat();
 
@@ -203,6 +224,7 @@ export default function TransformChart(props) {
           <option value={'month'}>Month</option>
           <option value={'monthOfYear'}>Month of year</option>
           <option value={'hourOfYear'}>Hour of year</option>
+          <option value={'histogram'}>Histogram</option>
         </HTMLSelect>
       </div>
       <Chart type="line" data={dataHourOfDay} options={optionsTransform}/>
