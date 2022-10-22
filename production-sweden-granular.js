@@ -2,12 +2,12 @@ const axios = require('axios');
 const fs = require('fs');
 
 const productionTypes = [
-  { key: 'KK', name: 'nuclear' },
-  { key: 'SE', name: 'solar' },
-  { key: 'OK', name: 'misc' },
-  { key: 'OP', name: 'unspecificed' },
-  { key: 'VA', name: 'hydro' },
-  { key: 'VI', name: 'wind' },
+  { key: 'KK', name: 'SE-nuclear' },
+  { key: 'SE', name: 'SE-solar' },
+  { key: 'OK', name: 'SE-misc' },
+  { key: 'OP', name: 'SE-unspecificed' },
+  { key: 'VA', name: 'SE-hydro' },
+  { key: 'VI', name: 'SE-wind' },
 ]
 
 const calls$ = productionTypes
