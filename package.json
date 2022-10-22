@@ -13,6 +13,7 @@
     "axios": "^1.1.2",
     "chart.js": "^3.6.0",
     "chartjs-adapter-luxon": "^1.2.0",
+    "fft-js": "^0.0.12",
     "luxon": "^3.0.4",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.3.1",
@@ -26,9 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scrape": "npm run price && npm run consumption && npm run production",
-    "price": "node price-nordpol.js",
-    "consumption": "node consumption-nordpol.js",
-    "production": "node production-nordpol.js"
+    "price": "node price.js",
+    "consumption": "node consumption.js",
+    "production": "node production.js"
   },
   "eslintConfig": {
     "extends": [
