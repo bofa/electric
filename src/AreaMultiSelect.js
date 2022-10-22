@@ -4,9 +4,9 @@ import React from "react";
 
 function toggleItems(selected, item) {
   if (selected.includes(item)) {
-      return selected.filter(v => v !== item);
+    return selected.filter(v => v !== item);
   } else {
-      return selected.concat(item);
+    return selected.concat(item);
   }
 }
  
@@ -36,12 +36,12 @@ export default function FilmSelect(props) {
   return (
     <MultiSelect2
       items={items}
-      // itemPredicate={filterFilm}
       itemRenderer={renderItem}
       noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
       onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
       selectedItems={items.filter(item => selectedAreas.includes(item.area))}
       tagRenderer={item => item.area}
+      onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
     />
   );
 };
