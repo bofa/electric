@@ -42,10 +42,10 @@ Promise.all(data$).then(response => {
   const unique = uniq(flat, 'x')
     .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
     
-    fs.writeFileSync('scrape/production.json', JSON.stringify(unique, null, 2));
+  fs.writeFileSync('scrape/production.json', JSON.stringify(unique, null, 2));
 
-    // const year = 2022;
-    // const fromYear = unique.filter(p => luxon.DateTime.fromISO(p.x).year === year);
-    // fs.writeFileSync(`production${year}.json`, JSON.stringify(fromYear, null, 2));
+  // const year = 2022;
+  // const fromYear = unique.filter(p => luxon.DateTime.fromISO(p.x).year === year);
+  // fs.writeFileSync(`production${year}.json`, JSON.stringify(fromYear, null, 2));
 })
   

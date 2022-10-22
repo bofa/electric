@@ -29,7 +29,8 @@
     "scrape": "npm run price && npm run consumption && npm run production",
     "price": "node price.js",
     "consumption": "node consumption.js",
-    "production": "node production.js"
+    "production": "node production.js",
+    "productiongranular": "node production-granular.js"
   },
   "eslintConfig": {
     "extends": [
