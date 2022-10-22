@@ -219,7 +219,7 @@ export default function TransformChart(props) {
     <>
       <div style={{ position: 'fixed' }}>
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
-          <option value={'timeOfDay'}>Hourly per day</option>
+          <option value={'timeOfDay'}>Hourly</option>
           <option value={'timeOfWeekday'}>Hourly per weekday</option>
           <option value={'month'}>Monthly</option>
           <option value={'monthOfYear'}>Monthly per year</option>
