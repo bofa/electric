@@ -21,7 +21,7 @@ Promise.all(calls$)
     .map(row => row.split(';'))
     .map(row => ({
       x: row[0].replace(' ', 'T') + ':00',
-      y: Math.round(Number(row[1]?.replace(',', '.')))
+      y: Math.round(Number(row[1]?.replace(',', '.')) / 1000 )
     }))
   ))
   .then(calls => calls[0].map((p, rowIndex) => ({

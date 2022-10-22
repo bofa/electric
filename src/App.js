@@ -64,7 +64,22 @@ function App () {
     const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
       .then(response => response.data)
       .then(transformSeries)
-    production$.then(setProductionDataSet);
+
+    const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
+      .then(response => response.data)
+      .then(transformSeries)
+
+    Promise.all([production$, productionSwedenGranular$])
+      .then(([production, productionSweden]) => {
+
+        // This only works as long as the two series start on the same date
+        const merge = production.map((p, i) => ({
+          ...p,
+          ...productionSweden[i],
+        }))
+
+        setProductionDataSet(merge);
+      })
 
     Promise.all([production$, consumption$]).then(([production, consumption]) => {
       const areas = Object.keys(production[0]).filter(item => item !== 'x');
@@ -284,7 +299,7 @@ function App () {
     },
     animation: false,
     normalized: true,
-    // spanGaps: true
+    spanGaps: true,
     // parsing: false,
     plugins: {
       legend: {
