@@ -5,7 +5,7 @@ const productionTypes = [
   { key: 'KK', name: 'SE-nuclear' },
   { key: 'SE', name: 'SE-solar' },
   { key: 'OK', name: 'SE-misc' },
-  { key: 'OP', name: 'SE-unspecificed' },
+  // { key: 'OP', name: 'SE-unspecificed' },
   { key: 'VA', name: 'SE-hydro' },
   { key: 'VI', name: 'SE-wind' },
 ]
