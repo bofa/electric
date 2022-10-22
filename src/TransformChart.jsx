@@ -3,7 +3,7 @@ import {
   HTMLSelect,
 } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
-import { colors, weekDayNames, adjustHexOpacity } from './utils';
+import { weekDayNames, adjustHexOpacity } from './utils';
 
 const optionsTransform = {
   maintainAspectRatio: false,
@@ -183,6 +183,8 @@ export default function TransformChart(props) {
         max: [],
       }];
     }
+
+    throw new Error('No matching member');
   }).flat();
 
   console.log('binSeries', binSeries);

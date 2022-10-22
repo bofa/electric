@@ -1,4 +1,4 @@
-import { Button, MenuItem, Tag } from "@blueprintjs/core";
+import { MenuItem } from "@blueprintjs/core";
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
 
