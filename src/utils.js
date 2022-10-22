@@ -13,3 +13,7 @@ export function adjustHexOpacity(colorIndex, opacity) {
 
   return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + opacity + ')';
 }
+
+export const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];

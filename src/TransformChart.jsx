@@ -3,7 +3,7 @@ import {
   HTMLSelect,
 } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
-import { weekDayNames, adjustHexOpacity } from './utils';
+import { weekDayNames, monthNames, adjustHexOpacity } from './utils';
 
 const optionsTransform = {
   maintainAspectRatio: false,
@@ -73,6 +73,29 @@ export default function TransformChart(props) {
 
         return {
           label: s.label + ' ' + weekDayNames[label], 
+          bin,
+          min: [],
+          max: [],
+        };
+      });
+
+      return averagePerDay;
+    } else if (transform === 'timeOfMonth') {
+      const pricePerWeekday = Array(12).fill().map((_, i) => i+1)
+        .map((month) => Array(24).fill().map((_, hour) => s.tradingData
+          .filter(p => p.x.month === month + 1 && p.x.hour === hour && !isNaN(p.y))
+          .map(p => p.y)
+        ))
+      const averagePerDay = pricePerWeekday.map((weekday, label) => {
+        const average = weekday.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+        const std = weekday.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (average[i] - y)**2, 0) / range.length));
+        
+        const bin = average.map((m, i) => ({ x: i, y: m }));
+        // const min = average.map((m, i) => ({ x: i, y: m - std[i] }));
+        // const max = average.map((m, i) => ({ x: i, y: m + std[i] }));
+
+        return {
+          label: s.label + ' ' + monthNames[label], 
           bin,
           min: [],
           max: [],
@@ -223,9 +246,10 @@ export default function TransformChart(props) {
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
           <option value={'timeOfDay'}>Hourly</option>
           <option value={'timeOfWeekday'}>Hourly per weekday</option>
+          <option value={'timeOfMonth'}>Hourly per month</option>
+          <option value={'hourOfYear'}>Hourly per year</option>
           <option value={'month'}>Monthly</option>
           <option value={'monthOfYear'}>Monthly per year</option>
-          <option value={'hourOfYear'}>Hourly per year</option>
           <option value={'histogram'}>Histogram</option>
         </HTMLSelect>
       </div>
