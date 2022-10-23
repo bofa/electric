@@ -3,7 +3,7 @@ import {
   HTMLSelect,
 } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
-import { weekDayNames, monthNames, adjustHexOpacity } from './utils';
+import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
 
 const optionsTransform = {
   maintainAspectRatio: false,
@@ -89,9 +89,9 @@ const seriesTransforms = [
     key: 'hourPerYear',
     name: 'Hourly per year',
     transform: timeBinTransform(
-      'year', [2020, 2021, 2022, 2023],
+      'year', yearsNames,
       'hour', Array(24).fill().map((_, hour) => hour),
-      [2020, 2021, 2022, 2023]
+      yearsNames
     )
   },
   {
@@ -107,9 +107,9 @@ const seriesTransforms = [
     key: 'monthOfYear',
     name: 'Monthly per year',
     transform: timeBinTransform(
-      'year', [2020, 2021, 2022, 2023],
+      'year', yearsNames,
       'month', Array(12).fill().map((_, month) => month+1),
-      [2020, 2021, 2022, 2023]
+      yearsNames
     )
   },
   {
