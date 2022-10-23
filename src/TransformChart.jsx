@@ -33,6 +33,113 @@ const optionsTransform = {
   }
 }
 
+function timeBinTransform(groupKey, groups, binKey, bins, labels) {
+  return (series, confidenceTransform) => {
+    const ranges = groups.map(group => bins.map(bin => series.tradingData
+      .filter(p => !isNaN(p.y) && p.x[binKey] === bin && (groupKey === null || p.x[groupKey] === group))
+      .map(p => p.y)
+    ))
+
+    const output = ranges.map((range, label) => {
+      const average = range.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+      const bin = average.map((m, i) => ({ x: bins[i], y: m }));
+      const { min, max } = confidenceTransform(range, bin);
+
+      return {
+        label: series.label + labels[label], // + ' ' + weekDayNames[label], 
+        bin,
+        min,
+        max,
+      };
+    }).filter(group => !group?.bin.every(p => isNaN(p.y)))
+
+    return output;
+  };
+}
+
+const seriesTransforms = [
+  {
+    key: 'hour',
+    name: 'Hourly',
+    transform: timeBinTransform(
+      null, [0],
+      'hour', Array(24).fill().map((_, hour) => hour),
+      ['']
+    )
+  },
+  {
+    key: 'hourPerWeekday',
+    name: 'Hourly per weekday',
+    transform: timeBinTransform(
+      'weekday', Array(7).fill().map((_, weekday) => weekday + 1),
+      'hour', Array(24).fill().map((_, hour) => hour),
+      weekDayNames.map(d => ' ' + d)
+    )
+  },
+  {
+    key: 'hourPerMonth',
+    name: 'Hourly per month',
+    transform: timeBinTransform(
+      'month', Array(12).fill().map((_, weekday) => weekday + 1),
+      'hour', Array(24).fill().map((_, hour) => hour),
+      monthNames.map(d => ' ' + d)
+    )
+  },
+  {
+    key: 'hourPerYear',
+    name: 'Hourly per year',
+    transform: timeBinTransform(
+      'year', [2020, 2021, 2022, 2023],
+      'hour', Array(24).fill().map((_, hour) => hour),
+      [2020, 2021, 2022, 2023]
+    )
+  },
+  {
+    key: 'month',
+    name: 'Monthly',
+    transform: timeBinTransform(
+      null, [0],
+      'month', Array(12).fill().map((_, month) => month+1),
+      ['']
+    )
+  },
+  {
+    key: 'monthOfYear',
+    name: 'Monthly per year',
+    transform: timeBinTransform(
+      'year', [2020, 2021, 2022, 2023],
+      'month', Array(12).fill().map((_, month) => month+1),
+      [2020, 2021, 2022, 2023]
+    )
+  },
+  {
+    key: 'histogram',
+    name: 'Histogram',
+    transform: series =>  {
+      const numberOfBins = 100;
+
+      const rawSeries = series.tradingData.map(p => p.y).filter(y => !isNaN(y))
+      const min = Math.min(...rawSeries);
+      const max = Math.max(...rawSeries);
+      
+      const step = (max - min) / numberOfBins;
+
+      const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
+        .map(min => ({
+          x: min,
+          y: rawSeries.filter(y => y >= min && y < min + step).length
+        }));
+
+      return [{
+        label: series.label,
+        bin: histogram,
+        min: [],
+        max: [],
+      }];
+    }
+  },
+]
+
 const confidenceTransforms = [
   {
     key: 'off',
@@ -74,181 +181,13 @@ const confidenceTransforms = [
 ]
 
 export default function TransformChart(props) {
-  const [transform, setTransform] = useState('timeOfDay');
+  const [transform, setTransform] = useState(seriesTransforms[0].key);
   const [confidence, setConfidence] = useState(confidenceTransforms[0].key);
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   const binSeries = props.processedSeries.map(s => {
-
-    if (transform === 'timeOfDay') {
-      const pricePerHour = Array(24).fill()
-        .map((_, h) => s.tradingData.filter(p => p.x.hour === h && !isNaN(p.y)).map(p => p.y))
-      
-      const averagePerHour = pricePerHour.map((range, i) => ({
-        x: i,
-        y: range.reduce((sum, y) => sum + y, 0) / range.length
-      }));
-
-      const { min, max } = confidenceTransform(pricePerHour, averagePerHour);
-
-      return [{
-        label: s.label,
-        bin: averagePerHour,
-        min,
-        max, 
-      }];
-    } else if (transform === 'timeOfWeekday') {
-      const pricePerWeekday = Array(7).fill()
-        .map((_, weekday) => Array(24).fill().map((_, hour) => s.tradingData
-          .filter(p => p.x.weekday === weekday + 1 && p.x.hour === hour && !isNaN(p.y))
-          .map(p => p.y)
-        ))
-
-      const averagePerDay = pricePerWeekday.map((weekday, label) => {
-        const average = weekday.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-        
-        const bin = average.map((m, i) => ({ x: i, y: m }));
-        const { min, max } = confidenceTransform(weekday, bin);
-
-        return {
-          label: s.label + ' ' + weekDayNames[label], 
-          bin,
-          min,
-          max,
-        };
-      });
-
-      return averagePerDay;
-    } else if (transform === 'timeOfMonth') {
-      const pricePerMonth = Array(12).fill().map((_, i) => i+1)
-        .map((month) => Array(24).fill().map((_, hour) => s.tradingData
-          .filter(p => p.x.month === month + 1 && p.x.hour === hour && !isNaN(p.y))
-          .map(p => p.y)
-        ))
-      const averagePerDay = pricePerMonth.map((month, label) => {
-        const average = month.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-        
-        const bin = average.map((m, i) => ({ x: i, y: m }));
-
-        const { min, max } = confidenceTransform(month, bin);
-
-        return {
-          label: s.label + ' ' + monthNames[label], 
-          bin,
-          min,
-          max,
-        };
-      });
-
-      return averagePerDay;
-    } else if (transform === 'month') {
-      const pricePerMonth = Array(12).fill().map((_, i) => i + 1)
-        .map((m) => ({
-          x: m,
-          w: s.tradingData.filter(p => p.x.month === m && !isNaN(p.y)).map(p => p.y),
-        }))
-
-      const averagePerMonth = pricePerMonth
-        .map(range => ({
-          x: range.x,
-          y: range.w.reduce((sum, y) => sum + y, 0) / range.w.length
-        }));
-
-      // const std = pricePerMonth.map((range, i) => Math.sqrt(range.w.reduce((sum, y) => sum + (y - averagePerMonth[i].y)**2, 0) / range.w.length))
-      // const min  = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y - std[i] }));
-      // const max = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y + std[i] }));
-
-      // const { min, max } = confidenceTransform(pricePerMonth, averagePerMonth);
-
-      return [{
-        label: s.label, 
-        bin: averagePerMonth,
-        min: [],
-        max: [],
-      }];
-    } else if (transform === 'monthOfYear') {
-      const startYear = s.tradingData.at(0).x.year;
-      const endYear = s.tradingData.at(-1).x.year;
-      console.log('startYear', startYear, endYear)
-      return Array(endYear-startYear + 1).fill().map((_, i) => startYear + i).map((year) => {
-        const pricePerMonth = Array(12).fill().map((_, i) => i + 1)
-          .map((month) => ({
-            x: month,
-            w: s.tradingData.filter(p => p.x.year === year && p.x.month === month && !isNaN(p.y)).map(p => p.y),
-          }))
-        const averagePerMonth = pricePerMonth
-          .map(range => ({
-            x: range.x,
-            y: range.w.reduce((sum, y) => sum + y, 0) / range.w.length
-          }));
-
-        const std = pricePerMonth.map((range, i) => Math.sqrt(range.w.reduce((sum, y) => sum + (y - averagePerMonth[i].y)**2, 0) / range.w.length))
-        const min  = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y - std[i] }));
-        const max = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y + std[i] }));
-
-        return {
-          label: s.label + year, 
-          bin: averagePerMonth,
-          // min,
-          // max,
-        };
-      })
-    } else if (transform === 'hourOfYear') {
-      const startYear = s.tradingData.at(0).x.year;
-      const endYear = s.tradingData.at(-1).x.year;
-      return Array(endYear-startYear + 1).fill().map((_, i) => startYear + i).map((year) => {
-        const pricePerMonth = Array(24).fill().map((_, i) => i)
-          .map((hour) => ({
-            x: hour,
-            w: s.tradingData.filter(p => p.x.year === year
-              && p.x.hour === hour
-              && !isNaN(p.y)
-              // && p.x.month === 10
-              // && [1,2,3,4,5].includes(p.x.weekday)
-              // && p.x.day <= 18
-          ).map(p => p.y),
-          }))
-        const averagePerMonth = pricePerMonth
-          .map(range => ({
-            x: range.x,
-            y: range.w.reduce((sum, y) => sum + y, 0) / range.w.length
-          }));
-
-        const std = pricePerMonth.map((range, i) => Math.sqrt(range.w.reduce((sum, y) => sum + (y - averagePerMonth[i].y)**2, 0) / range.w.length))
-        const min  = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y - std[i] }));
-        const max = averagePerMonth.map((p, i) => ({ x: i + 1, y: p.y + std[i] }));
-
-        return {
-          label: s.label + year, 
-          bin: averagePerMonth,
-          // min,
-          // max,
-        };
-      })
-    } else if (transform === 'histogram') {
-      const numberOfBins = 100;
-
-      const rawSeries = s.tradingData.map(p => p.y).filter(y => !isNaN(y))
-      const min = Math.min(...rawSeries);
-      const max = Math.max(...rawSeries);
-      
-      const step = (max - min) / numberOfBins;
-
-      const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
-        .map(min => ({
-          x: min,
-          y: rawSeries.filter(y => y >= min && y < min + step).length
-        }));
-
-      return [{
-        label: s.label,
-        bin: histogram,
-        min: [],
-        max: [],
-      }];
-    }
-
-    throw new Error('No matching member');
+    const transformInstance = seriesTransforms.find(t => t.key === transform).transform;
+    return transformInstance(s, confidenceTransform);
   }).flat();
 
   console.log('binSeries', binSeries);
@@ -285,13 +224,7 @@ export default function TransformChart(props) {
     <>
       <div style={{ position: 'fixed' }}>
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
-          <option value={'timeOfDay'}>Hourly</option>
-          <option value={'timeOfWeekday'}>Hourly per weekday</option>
-          <option value={'timeOfMonth'}>Hourly per month</option>
-          <option value={'hourOfYear'}>Hourly per year</option>
-          <option value={'month'}>Monthly</option>
-          <option value={'monthOfYear'}>Monthly per year</option>
-          <option value={'histogram'}>Histogram</option>
+          {seriesTransforms.map(({ key, name }) => <option value={key}>{name}</option>)}
         </HTMLSelect>
         <HTMLSelect value={confidence} onChange={e => setConfidence(e.currentTarget.value)}>
           {confidenceTransforms.map(({ key, name }) =>
