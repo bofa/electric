@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-// const importData = require('./scrape/consumption-sweden-granular.json');
+const importData = require('./scrape/consumption-sweden-granular.json');
 const luxon = require('luxon');
 
 function uniq(a, key) {
@@ -17,9 +17,9 @@ const areas = [
   { key: 'SN4', name: 'SE4' },
 ]
 
-// const fetchDaysBack = 10; // 3 * 365;
+const fetchDaysBack = 10;
 const too = luxon.DateTime.now();
-const from = luxon.DateTime.fromISO('2020-01-01T00:00:00') // too.minus({ days: fetchDaysBack });
+const from = too.minus({ days: fetchDaysBack });
 
 // https://mimer.svk.se/ProductionConsumption/DownloadText
 // ConstraintAreaId=SN0&ProductionSortId=TL&IsConsumption=True
@@ -50,9 +50,9 @@ Promise.all(calls$)
   })))
   // .then(formatted => { console.log(formatted); return formatted })
   .then(formatted => {
-    // const merge = importData
-    //   .concat(formatted)
-    const merge = formatted;
+    const merge = importData
+      .concat(formatted)
+    // const merge = formatted;
 
     const unique = uniq(merge, 'x')
       .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
