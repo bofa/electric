@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-const importData = require('./scrape/production-sweden-granular.json');
+const importData = require('./scrape/consumption-sweden-granular.json');
 const luxon = require('luxon');
 
 function uniq(a, key) {
@@ -10,25 +10,26 @@ function uniq(a, key) {
   });
 }
 
-const productionTypes = [
-  { key: 'KK', name: 'SE-nuclear' },
-  { key: 'SE', name: 'SE-solar' },
-  { key: 'OK', name: 'SE-misc' },
-  // { key: 'OP', name: 'SE-unspecificed' },
-  { key: 'VA', name: 'SE-hydro' },
-  { key: 'VI', name: 'SE-wind' },
+const areas = [
+  { key: 'SN1', name: 'SE1' },
+  { key: 'SN2', name: 'SE2' },
+  { key: 'SN3', name: 'SE3' },
+  { key: 'SN4', name: 'SE4' },
 ]
 
-const fetchDaysBack = 10;
+const fetchDaysBack = 10; // 3 * 365;
 const too = luxon.DateTime.now();
 const from = too.minus({ days: fetchDaysBack });
 
-const calls$ = productionTypes
-  .map(type => axios.get('https://mimer.svk.se/ProductionConsumption/DownloadText', { params: {
+// https://mimer.svk.se/ProductionConsumption/DownloadText
+// ConstraintAreaId=SN0&ProductionSortId=TL&IsConsumption=True
+const calls$ = areas
+  .map(area => axios.get('https://mimer.svk.se/ProductionConsumption/DownloadText', { params: {
     PeriodFrom: from.toISO(), // '01%2F01%2F2020%2000%3A00%3A00',
     PeriodTo: too.toISO(),
-    ConstraintAreaId: 'SN0', 
-    ProductionSortId: type.key
+    ConstraintAreaId: area.key, 
+    ProductionSortId: 'TL',
+    IsConsumption: 'True',
   }}))
 
 Promise.all(calls$)
@@ -39,21 +40,22 @@ Promise.all(calls$)
     .map(row => ({
       x: row[0].replace(' ', 'T') + ':00',
       y: row[1] !== '0'
-        ? Math.round(Number(row[1]?.replace(',', '.')) / 1000 )
+        ? Math.round(-Number(row[1]?.replace(',', '.')) / 1000 )
         : NaN
     }))
   ))
   .then(calls => calls[0].map((p, rowIndex) => ({
     x: p.x,
-    ...productionTypes.reduce((obj, type, typeIndex) => ({ ...obj, [type.name]: calls[typeIndex][rowIndex].y }), {})
+    ...areas.reduce((obj, area, typeIndex) => ({ ...obj, [area.name]: calls[typeIndex][rowIndex].y }), {})
   })))
   // .then(formatted => { console.log(formatted); return formatted })
   .then(formatted => {
     const merge = importData
       .concat(formatted)
+    // const merge = formatted;
 
     const unique = uniq(merge, 'x')
       .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
 
-    fs.writeFileSync('scrape/production-sweden-granular.json', JSON.stringify(unique, null, 2))
+    fs.writeFileSync('scrape/consumption-sweden-granular.json', JSON.stringify(unique, null, 2))
   })

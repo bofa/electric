@@ -7,7 +7,7 @@ const importData = require('./scrape/price.json');
 function uniq(a, key) {
   var seen = {};
   return a.filter(function(item) {
-      return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true);
+    return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true);
   });
 }
 

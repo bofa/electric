@@ -29,6 +29,7 @@
     "scrape": "npm run price && npm run consumption && npm run production",
     "price": "node price.js",
     "consumption": "node consumption.js",
+    "consumptiongraunlar": "node consumption-sweden-granular.js",
     "production": "node production.js",
     "productiongranular": "node production-sweden-granular.js"
   },

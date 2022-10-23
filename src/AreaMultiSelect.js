@@ -31,7 +31,9 @@ const renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
  
 export default function FilmSelect(props) {
   const { selectedAreas, setSelectedAreas } = props;
-  const items = props.areas.map(area => ({ area, text: area, active: selectedAreas.includes(area) }));
+  const items = props.areas
+    .map(area => ({ area, text: area, active: selectedAreas.includes(area) }))
+    .sort((a1, a2) => a1.text.localeCompare(a2.text) )
 
   return (
     <MultiSelect2
