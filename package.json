@@ -26,12 +26,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scrape": "npm run price && npm run consumption && npm run production",
+    "scrape": "npm run price && npm run consumption && npm run production && npm run granular",
     "price": "node price.js",
     "consumption": "node consumption.js",
     "consumptiongraunlar": "node consumption-sweden-granular.js",
     "production": "node production.js",
-    "productiongranular": "node production-sweden-granular.js"
+    "productiongranular": "node production-sweden-granular.js",
+    "granular": "npm run consumptiongraunlar && npm run productiongranular"
   },
   "eslintConfig": {
     "extends": [

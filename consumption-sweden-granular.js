@@ -50,8 +50,8 @@ Promise.all(calls$)
   })))
   // .then(formatted => { console.log(formatted); return formatted })
   .then(formatted => {
-    const merge = importData
-      .concat(formatted)
+    const merge = formatted
+      .concat(importData)
     // const merge = formatted;
 
     const unique = uniq(merge, 'x')
