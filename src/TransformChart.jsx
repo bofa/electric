@@ -115,7 +115,7 @@ const seriesTransforms = [
   {
     key: 'histogram',
     name: 'Histogram',
-    transform: series =>  {
+    transform: series => {
       const numberOfBins = 100;
 
       const rawSeries = series.tradingData.map(p => p.y).filter(y => !isNaN(y))
@@ -137,6 +137,36 @@ const seriesTransforms = [
         max: [],
       }];
     }
+  },
+  {
+    key: 'histogramPerYear',
+    name: 'Histogram Per Year',
+    transform: series => yearsNames.map(year => {
+      const numberOfBins = 100;
+      
+      const rawSeries = series.tradingData
+        .filter(p => p.x.year === year)
+        .map(p => p.y)
+        .filter(y => !isNaN(y))
+      
+      const min = Math.min(...rawSeries);
+      const max = Math.max(...rawSeries);
+      
+      const step = (max - min) / numberOfBins;
+
+      const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
+        .map(min => ({
+          x: min,
+          y: rawSeries.filter(y => y >= min && y < min + step).length
+        }));
+
+      return {
+        label: series.label + year,
+        bin: histogram,
+        min: [],
+        max: [],
+      };
+    }).filter(group => !isNaN(group?.bin[0].x))
   },
 ]
 
