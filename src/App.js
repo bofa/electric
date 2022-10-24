@@ -16,6 +16,7 @@ import axios from 'axios';
 import TransformChart from './TransformChart';
 // import { fft, util as fftUtil } from 'fft-js';
 import { colors, adjustHexOpacity } from './utils';
+import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 
 // const optionsDatasetsArray = {
 // }
@@ -72,7 +73,10 @@ function App () {
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([{}]);
   const [productionDataSet, setProductionDataSet] = React.useState([{}]);
   const [exportDataSet, setExportDataSet] = React.useState([{}]);
+  const [confidence, setConfidence] = React.useState(confidenceTransforms[0].key);
   
+  const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
+
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
       .then(response => response.data)
@@ -173,33 +177,29 @@ function App () {
     //   .map(t => tradingData[t])
 
     // const windowSize = 24;
-    const movingAverage = tradingData.map((p, i) => {
-      if(i < windowSize) {
-        return { x: p.x, y: NaN }
-      }
-
-      const sampledWindow = tradingData
-        .slice(i - windowSize + 1, i + 1)
-        .map(p => p.y)
-        .filter(y => !isNaN(y));
-      
+    const ranges = tradingData.slice(windowSize-1).map((p, i) => {
+      return tradingData
+        .slice(i, i + windowSize)
+    })
+    
+    const movingAverage = ranges.map((sampledWindow, i) => {
       const N = sampledWindow.length;
-      const m = sampledWindow.reduce((s, y, i, a) => s + y, 0) / N;
-      const std = Math.sqrt(sampledWindow.reduce((s, y) => s + (m-y)**2, 0) / N);
+      const m = sampledWindow.reduce((s, p) => s + p.y, 0) / N;
 
       return {
-        x: p.x,
+        x: sampledWindow.at(-1).x,
         y: m,
-        min: m - std, // Math.min(...sampledWindow),
-        max: m + std, // Math.max(...sampledWindow),
       }
     })
-    .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1);
       
+    const { min, max } = confidenceTransform(ranges.map(r => r.map(p => p.y)), movingAverage);
+
     return {
       label: area,
-      tradingData,
-      movingAverage,
+      tradingData: tradingData,
+      movingAverage: movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
+      min: min.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
+      max: max.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
       // binAverage: averagePerHour,
       // buy,
       // sell,
@@ -224,7 +224,7 @@ function App () {
           : [
             {
               label: 'remove' + area.label + ' min',
-              data: area.movingAverage.map(p => ({ x: p.x, y: p.min })),
+              data: area.min,
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
               pointRadius: 0,
@@ -232,7 +232,7 @@ function App () {
             },
             {
               label: 'remove' + area.label + ' max',
-              data: area.movingAverage.map(p => ({ x: p.x, y: p.max })),
+              data: area.max,
               fill: 3*i,
               backgroundColor: adjustHexOpacity(i, 0.2),
               pointRadius: 0,
@@ -395,6 +395,10 @@ function App () {
           <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(Number(e.currentTarget.value))}>
             {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
           </HTMLSelect>
+          <SelectConfidence
+            confidence={confidence}
+            setConfidence={setConfidence}
+          />
         </div>
         <Chart type="line" data={dataTimeSeries} options={optionsTime}/>
      </div>

@@ -4,6 +4,7 @@ import {
 } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
 import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
+import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 
 function timeBinTransform(groupKey, groups, binKey, bins, labels) {
   return (series, confidenceTransform) => {
@@ -150,46 +151,6 @@ const seriesTransforms = [
   },
 ]
 
-const confidenceTransforms = [
-  {
-    key: 'off',
-    name: 'off',
-    transform: s => ({ min: [], max: []})
-  },
-  {
-    key: 'minmax',
-    name: 'min/max',
-    transform: (raw, average) => {
-      const min = raw.map((range, i) => ({ x: i, y: Math.min(...range) }))
-      const max = raw.map((range, i) => ({ x: i, y: Math.max(...range) }))
-
-      return { min, max };
-    }
-  },
-  {
-    key: 'std1',
-    name: '±σ',
-    transform: (raw, average) => {
-      const std = raw.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - average[i].y)**2, 0) / range.length))
-      const min  = std.map((std, i) => ({ x: i, y: average[i].y - std }));
-      const max = std.map((std, i) => ({ x: i, y: average[i].y + std }));
-
-      return { min, max };
-    }
-  },
-  {
-    key: 'std2',
-    name: '±2σ',
-    transform: (raw, average) => {
-      const std = raw.map((range, i) => Math.sqrt(range.reduce((sum, y) => sum + (y - average[i].y)**2, 0) / range.length))
-      const min  = std.map((std, i) => ({ x: i, y: average[i].y - 2*std }));
-      const max = std.map((std, i) => ({ x: i, y: average[i].y + 2*std }));
-
-      return { min, max };
-    }
-  },
-]
-
 export default function TransformChart(props) {
   const [transform, setTransform] = useState(seriesTransforms[0].key);
   const [confidence, setConfidence] = useState(confidenceTransforms[0].key);
@@ -275,11 +236,10 @@ export default function TransformChart(props) {
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
           {seriesTransforms.map(({ key, name }) => <option value={key}>{name}</option>)}
         </HTMLSelect>
-        <HTMLSelect value={confidence} onChange={e => setConfidence(e.currentTarget.value)}>
-          {confidenceTransforms.map(({ key, name }) =>
-            <option value={key}>{name}</option>
-          )}
-        </HTMLSelect>
+        <SelectConfidence
+          confidence={confidence}
+          setConfidence={setConfidence}
+        />
       </div>
       <Chart type="line" data={dataHourOfDay} options={optionsTransform}/>
     </>
