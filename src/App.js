@@ -39,6 +39,29 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
+const dataSets = [
+  {
+    key: 'priceDataSet',
+    name: 'Price',
+    unit: 'EUR/MWh'
+  },
+  {
+    key: 'consumptionDataSet',
+    name: 'Consumption',
+    unit: 'MW'
+  },
+  {
+    key: 'productionDataSet',
+    name: 'Production',
+    unit: 'MW'
+  },
+  {
+    key: 'exportDataSet',
+    name: 'Export/Import',
+    unit: 'MW'
+  },
+]
+
 function App () {
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3', 'SE']);
   const [windowSize, setWindowSize] = React.useState(24);
@@ -284,6 +307,8 @@ function App () {
     ).flat(2)
   };
 
+  const unit = dataSets?.find(ds => ds.key === selectDataSet)?.unit;
+
   const optionsTime = {
     maintainAspectRatio: false,
     scales: {
@@ -293,7 +318,7 @@ function App () {
         position: 'right',
         title: {
           display: true,
-          text: 'Price [EUR/MWh]',
+          text: unit,
         }
       },
       x: {
@@ -334,10 +359,7 @@ function App () {
             Param
           </NavbarHeading>
           <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
-            <option value={'priceDataSet'}>Price</option>
-            <option value={'consumptionDataSet'}>Consumption</option>
-            <option value={'productionDataSet'}>Production</option>
-            <option value={'exportDataSet'}>Export/Import</option>
+            {dataSets.map(({ key, name }) => <option value={key}>{name}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           <NavbarHeading>
@@ -379,6 +401,7 @@ function App () {
       <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
         <TransformChart
           processedSeries={processedSeries}
+          unit={unit}
         />
       </div>
       {/* {Math.round(sum)}EUR, {Math.round(sum/tradingData.length)}EUR/h, {Math.round(24 * 365 * sum/tradingData.length)}EUR/y */}

@@ -5,34 +5,6 @@ import {
 import { Chart } from 'react-chartjs-2';
 import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
 
-const optionsTransform = {
-  maintainAspectRatio: false,
-  scales: {
-    x: {
-      type: 'linear',
-      // min: 2019,
-      // max: 2022,
-    },
-    y: {
-      beginAtZero: true,
-      suggestedMax: 250,
-      position: 'right'
-    },
-  },
-  animation: false,
-  normalized: true,
-  // spanGaps: true
-  // parsing: false,
-  plugins: {
-    legend: {
-      position: 'left',
-      labels: {
-        filter: item=> !item.text.includes('remove')
-      }
-    }
-  }
-}
-
 function timeBinTransform(groupKey, groups, binKey, bins, labels) {
   return (series, confidenceTransform) => {
     const ranges = groups.map(group => bins.map(bin => series.tradingData
@@ -61,6 +33,7 @@ const seriesTransforms = [
   {
     key: 'hour',
     name: 'Hourly',
+    unit: seriesYUnit => ['hour', seriesYUnit],
     transform: timeBinTransform(
       null, [0],
       'hour', Array(24).fill().map((_, hour) => hour),
@@ -70,6 +43,7 @@ const seriesTransforms = [
   {
     key: 'hourPerWeekday',
     name: 'Hourly per weekday',
+    unit: seriesYUnit => ['hour', seriesYUnit],
     transform: timeBinTransform(
       'weekday', Array(7).fill().map((_, weekday) => weekday + 1),
       'hour', Array(24).fill().map((_, hour) => hour),
@@ -79,6 +53,7 @@ const seriesTransforms = [
   {
     key: 'hourPerMonth',
     name: 'Hourly per month',
+    unit: seriesYUnit => ['hour', seriesYUnit],
     transform: timeBinTransform(
       'month', Array(12).fill().map((_, weekday) => weekday + 1),
       'hour', Array(24).fill().map((_, hour) => hour),
@@ -88,6 +63,7 @@ const seriesTransforms = [
   {
     key: 'hourPerYear',
     name: 'Hourly per year',
+    unit: seriesYUnit => ['hour', seriesYUnit],
     transform: timeBinTransform(
       'year', yearsNames,
       'hour', Array(24).fill().map((_, hour) => hour),
@@ -97,6 +73,7 @@ const seriesTransforms = [
   {
     key: 'month',
     name: 'Monthly',
+    unit: seriesYUnit => ['month', seriesYUnit],
     transform: timeBinTransform(
       null, [0],
       'month', Array(12).fill().map((_, month) => month+1),
@@ -106,6 +83,7 @@ const seriesTransforms = [
   {
     key: 'monthOfYear',
     name: 'Monthly per year',
+    unit: seriesYUnit => ['month', seriesYUnit],
     transform: timeBinTransform(
       'year', yearsNames,
       'month', Array(12).fill().map((_, month) => month+1),
@@ -115,6 +93,7 @@ const seriesTransforms = [
   {
     key: 'histogram',
     name: 'Histogram',
+    unit: seriesYUnit => [seriesYUnit, 'hours'],
     transform: series => {
       const numberOfBins = 100;
 
@@ -141,6 +120,7 @@ const seriesTransforms = [
   {
     key: 'histogramPerYear',
     name: 'Histogram Per Year',
+    unit: seriesYUnit => [seriesYUnit, 'hours'],
     transform: series => yearsNames.map(year => {
       const numberOfBins = 100;
       
@@ -214,11 +194,12 @@ export default function TransformChart(props) {
   const [transform, setTransform] = useState(seriesTransforms[0].key);
   const [confidence, setConfidence] = useState(confidenceTransforms[0].key);
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
+  
+  const transformInstance = seriesTransforms.find(t => t.key === transform);
 
-  const binSeries = props.processedSeries.map(s => {
-    const transformInstance = seriesTransforms.find(t => t.key === transform).transform;
-    return transformInstance(s, confidenceTransform);
-  }).flat();
+  const binSeries = props.processedSeries
+    .map(s => transformInstance.transform(s, confidenceTransform))
+    .flat();
 
   console.log('binSeries', binSeries);
 
@@ -248,6 +229,44 @@ export default function TransformChart(props) {
         borderWidth: 0,
       }
     ]).flat()
+  }
+
+  const [xUnit, yUnit] = transformInstance.unit(props.unit);
+
+  const optionsTransform = {
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        type: 'linear',
+        // min: 2019,
+        // max: 2022,
+        title: {
+          display: true,
+          text: xUnit,
+        }
+      },
+      y: {
+        beginAtZero: true,
+        suggestedMax: 250,
+        position: 'right',
+        title: {
+          display: true,
+          text: yUnit,
+        }
+      },
+    },
+    animation: false,
+    normalized: true,
+    // spanGaps: true
+    // parsing: false,
+    plugins: {
+      legend: {
+        position: 'left',
+        labels: {
+          filter: item=> !item.text.includes('remove')
+        }
+      }
+    }
   }
 
   return (
