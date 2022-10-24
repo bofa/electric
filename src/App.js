@@ -183,8 +183,10 @@ function App () {
     })
     
     const movingAverage = ranges.map((sampledWindow, i) => {
-      const N = sampledWindow.length;
-      const m = sampledWindow.reduce((s, p) => s + p.y, 0) / N;
+      const sampledWindowFiltered = sampledWindow.filter(p => !isNaN(p.y))
+
+      const N = sampledWindowFiltered.length;
+      const m = sampledWindowFiltered.reduce((s, p) => s + p.y, 0) / N;
 
       return {
         x: sampledWindow.at(-1).x,
