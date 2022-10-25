@@ -65,7 +65,7 @@ const dataSets = [
 
 function App () {
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3', 'SE']);
-  const [windowSize, setWindowSize] = React.useState(24);
+  const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
@@ -73,7 +73,7 @@ function App () {
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([{}]);
   const [productionDataSet, setProductionDataSet] = React.useState([{}]);
   const [exportDataSet, setExportDataSet] = React.useState([{}]);
-  const [confidence, setConfidence] = React.useState(confidenceTransforms[0].key);
+  const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
   
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 

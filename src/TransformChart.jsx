@@ -153,7 +153,7 @@ const seriesTransforms = [
 
 export default function TransformChart(props) {
   const [transform, setTransform] = useState(seriesTransforms[0].key);
-  const [confidence, setConfidence] = useState(confidenceTransforms[0].key);
+  const [confidence, setConfidence] = useState(confidenceTransforms[2].key);
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
   
   const transformInstance = seriesTransforms.find(t => t.key === transform);
