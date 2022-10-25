@@ -220,7 +220,7 @@ export default function TransformChart(props) {
     // parsing: false,
     plugins: {
       legend: {
-        position: 'left',
+        // position: 'left',
         labels: {
           filter: item=> !item.text.includes('remove')
         }
@@ -230,7 +230,7 @@ export default function TransformChart(props) {
 
   return (
     <>
-      <div style={{ position: 'fixed' }}>
+      <div style={{ float: 'left' }}>
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
           {seriesTransforms.map(({ key, name }) => <option value={key}>{name}</option>)}
         </HTMLSelect>

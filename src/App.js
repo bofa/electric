@@ -345,7 +345,7 @@ function App () {
     // parsing: false,
     plugins: {
       legend: {
-        position: 'left',
+        // position: 'left',
         labels: {
           filter: item=> !item.text.includes('remove')
         }
@@ -357,16 +357,9 @@ function App () {
     <div className="App">
       <Navbar>
         <NavbarGroup>
-          <NavbarHeading>
-            Param
-          </NavbarHeading>
           <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
             {dataSets.map(({ key, name }) => <option value={key}>{name}</option>)}
           </HTMLSelect>
-          <NavbarDivider/>
-          <NavbarHeading>
-            Range
-          </NavbarHeading>
           <NavbarDivider/>
           <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
             {['Full', 'Past Year', 'Past Month', 'Past Week'].map(v => <option value={v}>{v}</option>)}
@@ -380,7 +373,7 @@ function App () {
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
-        <div style={{ position: 'fixed', float: 'left' }}>
+        <div style={{ float: 'left' }}>
           <HTMLSelect value={windowSize} onChange={e => {
             const newWindowSize = Number(e.currentTarget.value);
             setWindowSize(newWindowSize)
