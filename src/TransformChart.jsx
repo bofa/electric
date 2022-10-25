@@ -162,8 +162,6 @@ export default function TransformChart(props) {
     .map(s => transformInstance.transform(s, confidenceTransform))
     .flat();
 
-  console.log('binSeries', binSeries);
-
   const dataHourOfDay = {
     datasets: binSeries.map((area, i) => [
       {
