@@ -372,7 +372,7 @@ function App () {
           />
         </NavbarGroup>
       </Navbar>
-      <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
+      <div style={{ height: 'calc(50vh - 66px)', padding: 14 }}>
         <div style={{ float: 'left' }}>
           <HTMLSelect value={windowSize} onChange={e => {
             const newWindowSize = Number(e.currentTarget.value);
@@ -397,7 +397,7 @@ function App () {
         </div>
         <Chart type="line" data={dataTimeSeries} options={optionsTime}/>
      </div>
-      <div style={{ height: 'calc(50vh - 60px)', padding: 10 }}>
+      <div style={{ height: 'calc(50vh - 66px)', padding: 10 }}>
         <TransformChart
           processedSeries={processedSeries}
           unit={unit}
