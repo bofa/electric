@@ -31,6 +31,7 @@
     "consumption": "node consumption.js",
     "consumptiongraunlar": "node consumption-sweden-granular.js",
     "production": "node production.js",
+    "productionwind": "node production-wind.js",
     "productiongranular": "node production-sweden-granular.js",
     "granular": "npm run consumptiongraunlar && npm run productiongranular"
   },
