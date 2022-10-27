@@ -44,7 +44,7 @@ export default function SelectConfidence(props) {
   return (
     <HTMLSelect value={props.confidence} onChange={e => props.setConfidence(e.currentTarget.value)}>
       {confidenceTransforms.map(({ key, name }) =>
-        <option value={key}>{name}</option>
+        <option key={key} value={key}>{name}</option>
       )}
     </HTMLSelect>
   )

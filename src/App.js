@@ -354,11 +354,11 @@ function App () {
       <Navbar>
         <NavbarGroup>
           <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
-            {dataSets.map(({ key, name }) => <option value={key}>{name}</option>)}
+            {dataSets.map(({ key, name }) => <option key={key} value={key}>{name}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
-            {['Full', 'Past Year', 'Past Month', 'Past Week'].map(v => <option value={v}>{v}</option>)}
+            {['Full', 'Past Year', 'Past Month', 'Past Week'].map(v => <option key={v} value={v}>{v}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           <AreaMultiSelect
@@ -384,7 +384,7 @@ function App () {
             <option value={24*30}>Month</option>
           </HTMLSelect>
           <HTMLSelect value={samplingSize} onChange={e => setSamplingSize(Number(e.currentTarget.value))}>
-            {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option value={v}>{v}</option>)}
+            {[1, 24, 24*7].filter(v => v <= windowSize).map(v => <option key={v} value={v}>{v}</option>)}
           </HTMLSelect>
           <SelectConfidence
             confidence={confidence}

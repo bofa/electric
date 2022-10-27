@@ -232,7 +232,7 @@ export default function TransformChart(props) {
     <>
       <div style={{ float: 'left' }}>
         <HTMLSelect value={transform} onChange={e => setTransform(e.currentTarget.value)}>
-          {seriesTransforms.map(({ key, name }) => <option value={key}>{name}</option>)}
+          {seriesTransforms.map(({ key, name }) => <option key={key} value={key}>{name}</option>)}
         </HTMLSelect>
         <SelectConfidence
           confidence={confidence}
