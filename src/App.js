@@ -69,65 +69,74 @@ function App () {
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
-  const [priceDataSet, setPriceDataSet] = React.useState([{}]);
-  const [consumptionDataSet, setConsumptionDataSet] = React.useState([{}]);
-  const [productionDataSet, setProductionDataSet] = React.useState([{}]);
-  const [exportDataSet, setExportDataSet] = React.useState([{}]);
+  const [priceDataSet, setPriceDataSet] = React.useState(null);
+  const [consumptionDataSet, setConsumptionDataSet] = React.useState(null);
+  const [productionDataSet, setProductionDataSet] = React.useState(null);
+  const [exportDataSet, setExportDataSet] = React.useState(null);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
   
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   React.useEffect(() => {
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
-      .then(response => response.data)
-      .then(transformSeries)
-      .then(setPriceDataSet);
+    if (selectDataSet === 'priceDataSet' && priceDataSet === null) {
+      setPriceDataSet([]);
+      axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
+        .then(response => response.data)
+        .then(transformSeries)
+        .then(setPriceDataSet);
+    } else if (consumptionDataSet === null || productionDataSet === null || exportDataSet === null) {
+      setConsumptionDataSet([])
+      setProductionDataSet([])
+      setExportDataSet([])
 
-    const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
-      .then(response => response.data)
-      .then(transformSeries)
+      const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
-    const consumptionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption-sweden-granular.json')
-      .then(response => response.data)
-      .then(transformSeries)
+      const consumptionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption-sweden-granular.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
-    Promise.all([consumption$, consumptionSwedenGranular$]).then(([production, productionSweden]) => {
-      // This only works as long as the two series start on the same date
-      const merge = production.map((p, i) => ({
-        ...p,
-        ...productionSweden[i],
-      }))
+      Promise.all([consumption$, consumptionSwedenGranular$]).then(([production, productionSweden]) => {
+        // This only works as long as the two series start on the same date
+        const merge = production.map((p, i) => ({
+          ...p,
+          ...productionSweden[i],
+        }))
 
-      setConsumptionDataSet(merge);
-    })
-    
-    const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
-      .then(response => response.data)
-      .then(transformSeries)
-
-    const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
-      .then(response => response.data)
-      .then(transformSeries)
-
-    Promise.all([production$, productionSwedenGranular$]).then(([production, productionSweden]) => {
-      // This only works as long as the two series start on the same date
-      const merge = production.map((p, i) => ({
-        ...p,
-        ...productionSweden[i],
-      }))
-
-      setProductionDataSet(merge);
-    })
-
-    Promise.all([production$, consumption$]).then(([production, consumption]) => {
-      const areas = Object.keys(production[0]).filter(item => item !== 'x');
-      const exports = production.map((p, i) => ({ x: p.x, ...areas.reduce((obj, area) => ({ ...obj, [area]: p[area] - consumption[i][area] }), {}) }))
+        setConsumptionDataSet(merge);
+      })
       
-      setExportDataSet(exports)
-    });
-  }, [])
+      const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
-  const fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
+      const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
+        .then(response => response.data)
+        .then(transformSeries)
+
+      Promise.all([production$, productionSwedenGranular$]).then(([production, productionSweden]) => {
+        // This only works as long as the two series start on the same date
+        const merge = production.map((p, i) => ({
+          ...p,
+          ...productionSweden[i],
+        }))
+
+        setProductionDataSet(merge);
+      })
+
+      Promise.all([production$, consumption$]).then(([production, consumption]) => {
+        const areas = Object.keys(production[0]).filter(item => item !== 'x');
+        const exports = production.map((p, i) => ({ x: p.x, ...areas.reduce((obj, area) => ({ ...obj, [area]: p[area] - consumption[i][area] }), {}) }))
+        
+        setExportDataSet(exports)
+      });
+    }
+  }, [selectDataSet])
+
+  let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
+  fullDataSet = fullDataSet === null || fullDataSet.length < 1 ? [{}] : fullDataSet
+
   const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
 
   const now = DateTime.now();
