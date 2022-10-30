@@ -10,7 +10,7 @@ function uniq(a, key) {
   });
 }
 
-const days = 3 * 365;
+const days = 10; // 3 * 365; // 10;
 data$ = Array(days).fill().map((_, i) => {
   const endTime = luxon.DateTime.now().minus({ days: i }).toFormat('dd-MM-yyyy');
 
@@ -24,7 +24,7 @@ data$ = Array(days).fill().map((_, i) => {
           x: row.StartTime,
           ...structure
             .map((area, index) => [area, Number(row.Columns[index].Value.replace(',','.').replace(' ',''))])
-            .reduce((obj, area) => ({ ...obj, [area[0]]: area[1]}), {})
+            .reduce((obj, area) => ({ ...obj, [area[0]+'-wind']: area[1]}), {})
         }))
         .filter(p => !Number.isNaN(p.SYS))
 
@@ -44,8 +44,8 @@ Promise.all(data$).then(response => {
     
   fs.writeFileSync('scrape/production-wind.json', JSON.stringify(unique, null, 2));
 
-  // const year = 2022;
+  // const year = 2020;
   // const fromYear = unique.filter(p => luxon.DateTime.fromISO(p.x).year === year);
-  // fs.writeFileSync(`production${year}.json`, JSON.stringify(fromYear, null, 2));
+  // fs.writeFileSync(`scrape/production-wind${year}.json`, JSON.stringify(fromYear, null, 2));
 })
   

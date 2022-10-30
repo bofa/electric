@@ -2,7 +2,6 @@ import {
   Navbar,
   NavbarDivider,
   NavbarGroup,
-  NavbarHeading,
   HTMLSelect,
 } from "@blueprintjs/core";
 import React from 'react';
@@ -84,10 +83,8 @@ function App () {
         .then(response => response.data)
         .then(transformSeries)
         .then(setPriceDataSet);
-    } else if (consumptionDataSet === null || productionDataSet === null || exportDataSet === null) {
+    } else if (selectDataSet === 'consumptionDataSet' && consumptionDataSet === null) {
       setConsumptionDataSet([])
-      setProductionDataSet([])
-      setExportDataSet([])
 
       const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
         .then(response => response.data)
@@ -106,6 +103,8 @@ function App () {
 
         setConsumptionDataSet(merge);
       })
+    } else if (selectDataSet === 'productionDataSet' && productionDataSet === null) {
+      setProductionDataSet([])
       
       const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
         .then(response => response.data)
@@ -115,15 +114,32 @@ function App () {
         .then(response => response.data)
         .then(transformSeries)
 
-      Promise.all([production$, productionSwedenGranular$]).then(([production, productionSweden]) => {
-        // This only works as long as the two series start on the same date
-        const merge = production.map((p, i) => ({
-          ...p,
-          ...productionSweden[i],
-        }))
+      const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
-        setProductionDataSet(merge);
-      })
+      Promise.all([production$, productionSwedenGranular$, productionWind$])
+        .then(([production, productionSweden, productionWind]) => {
+          // This only works as long as the two series start on the same date
+          const merge = production.map((p, i) => ({
+            ...p,
+            ...productionSweden[i],
+            ...productionWind[i],
+          }))
+
+          setProductionDataSet(merge);
+        })
+      
+    } else if (selectDataSet === 'exportDataSet' && exportDataSet === null) {
+      setExportDataSet([])
+
+      const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
+        .then(response => response.data)
+        .then(transformSeries)
+
+      const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
       Promise.all([production$, consumption$]).then(([production, consumption]) => {
         const areas = Object.keys(production[0]).filter(item => item !== 'x');
