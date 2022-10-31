@@ -39,6 +39,7 @@ export default function FilmSelect(props) {
     <MultiSelect2
       items={items}
       itemRenderer={renderItem}
+      itemPredicate={(query, item) => item.area.toLowerCase().includes(query.toLowerCase())}
       noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
       onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
       selectedItems={items.filter(item => selectedAreas.includes(item.area))}
