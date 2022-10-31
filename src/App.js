@@ -118,6 +118,7 @@ function App () {
       const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
         .then(response => response.data)
         .then(transformSeries)
+        .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
 
       Promise.all([production$, productionSwedenGranular$, productionWind$])
         .then(([production, productionSweden, productionWind]) => {
