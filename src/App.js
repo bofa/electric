@@ -3,6 +3,7 @@ import {
   NavbarDivider,
   NavbarGroup,
   HTMLSelect,
+  Spinner,
 } from "@blueprintjs/core";
 import React from 'react';
 import { Chart } from 'react-chartjs-2';
@@ -151,7 +152,8 @@ function App () {
   }, [selectDataSet])
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
-  fullDataSet = fullDataSet === null || fullDataSet.length < 1 ? [{}] : fullDataSet
+  const loading = fullDataSet === null || fullDataSet.length < 1;
+  fullDataSet = loading ? [{}] : fullDataSet
 
   const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
 
@@ -391,6 +393,7 @@ function App () {
             selectedAreas={selectedAreas}
             setSelectedAreas={setSelectedAreas}
           />
+          {loading && <Spinner style={{ marginLeft: 10 }} size={16}/>}
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 66px)', padding: 14 }}>
