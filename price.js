@@ -1,7 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
-const importData2021 = require('./scrape/price2021.json');
 const importData = require('./scrape/price.json');
 
 function uniq(a, key) {
@@ -39,7 +38,6 @@ data$.forEach((r, i) => r.then(() => console.log(i)));
 Promise.all(data$).then(response => {
   const flat = response
     .flat()
-    .concat(importData2021)
     .concat(importData)
 
   const unique = uniq(flat, 'x')

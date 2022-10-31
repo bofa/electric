@@ -28,6 +28,8 @@
     "eject": "react-scripts eject",
     "scrape": "npm run price && npm run consumption && npm run production && npm run granular",
     "price": "node price.js",
+    "priceuk": "node price-uk.js",
+    "pricepl": "node price-pl.js",
     "consumption": "node consumption.js",
     "consumptiongraunlar": "node consumption-sweden-granular.js",
     "production": "node production.js",
