@@ -10,9 +10,10 @@ function uniq(a, key) {
   });
 }
 
-const days = 630; // 3 * 365;
-data$ = Array(days).fill().map((_, i) => {
-  const endTime = luxon.DateTime.now().minus({ days: i - 2 }).toFormat('dd-MM-yyyy');
+const daysFrom = -2;
+const daysTo = 10; // 3 * 365;
+data$ = Array(daysTo - daysFrom).fill().map((_, i) => daysFrom + i).map((day, i) => {
+  const endTime = luxon.DateTime.now().minus({ days: day }).toFormat('dd-MM-yyyy');
 
   return new Promise(resolve => setTimeout(resolve, 350 * i))
     .then(() => axios.get(`https://www.nordpoolgroup.com/api/marketdata/page/392234?currency=,EUR,EUR,EUR&endDate=${endTime}`))
