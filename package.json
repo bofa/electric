@@ -35,6 +35,7 @@
     "production": "node production.js",
     "productionwind": "node production-wind.js",
     "productiongranular": "node production-sweden-granular.js",
+    "productiongermany": "node production-germany.js",
     "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind"
   },
   "eslintConfig": {
