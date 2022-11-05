@@ -12,7 +12,7 @@ function uniq(a, key) {
 const weeks = [
   Array(52).fill().map((_, i) => ({ year: '2020', week: String(i+1).padStart(2, '0') })),
   Array(52).fill().map((_, i) => ({ year: '2021', week: String(i+1).padStart(2, '0') })),
-  Array(40).fill().map((_, i) => ({ year: '2022', week: String(i+1).padStart(2, '0') })),
+  Array(44).fill().map((_, i) => ({ year: '2022', week: String(i+1).padStart(2, '0') })),
 ].flat()
   .map((weekObj, delay) => new Promise(resolve => setTimeout(resolve, 350 * delay)).then(() =>
     axios.get(`https://www.energy-charts.info/charts/power/data/de/week_${weekObj.year}_${weekObj.week}.json`)
