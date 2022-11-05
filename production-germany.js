@@ -23,9 +23,10 @@ const weeks = [
 
         const individualSource = sources.map(source => source.data.map(y => ({ ['DE-' + source.name.en]: y })))
         const merge = individualSource[0].map((_, i) => ({
-          x: luxon.DateTime.fromMillis(sources[0].xAxisValues[i]),
-          ...individualSource.map(source => source[i]).reduce((merge, source) => ({ ...merge, ...source}), {})
-        }))
+            x: luxon.DateTime.fromMillis(sources[0].xAxisValues[i]),
+            ...individualSource.map(source => source[i]).reduce((merge, source) => ({ ...merge, ...source}), {})
+          }))
+          .filter(p => p.x.minute === 0)
 
         return merge;
       }))
