@@ -56,12 +56,11 @@ const dataSets = [
     name: 'Production',
     unit: 'MW'
   },
-  // TODO
-  // {
-  //   key: 'exportDataSet',
-  //   name: 'Export/Import',
-  //   unit: 'MW'
-  // },
+  {
+    key: 'exportDataSet',
+    name: 'Export/Import',
+    unit: 'MW'
+  },
 ]
 
 function App () {
@@ -135,10 +134,15 @@ function App () {
         .then(response => response.data)
         .then(transformSeries)
 
-      // TODO
       Promise.all([production$, consumption$]).then(([production, consumption]) => {
-        const areas = Object.keys(production[0]).filter(item => item !== 'x');
-        const exports = production.map((p, i) => ({ x: p.x, ...areas.reduce((obj, area) => ({ ...obj, [area]: p[area] - consumption[i][area] }), {}) }))
+        const exports = production.map(productionSeries => {
+          const cunsumptionData = consumption.find(c => c.label === productionSeries.label).data;
+
+          return {
+            label: productionSeries.label,
+            data: productionSeries.data.map((p, i) => ({ x: p.x, y: p.y - cunsumptionData[i].y }))
+          };
+        });
         
         setExportDataSet(exports)
       });
