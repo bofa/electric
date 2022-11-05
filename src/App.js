@@ -24,15 +24,15 @@ import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 // Add link to
 // https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
 
-function objectMap(object, mapFn) {
-  return Object.keys(object).reduce(function(result, key) {
-    result[key] = mapFn(object[key])
-    return result
-  }, {})
-}
-
 function transformSeries(series) {
-  return series.map((p) => ({ ...objectMap(p, v => v === null ? NaN : v), x: DateTime.fromISO(p.x) }))
+  const keys = Object.keys(series[0]).filter(key => key !== 'x')
+
+  const formattedSeries = keys.map(key => ({
+    label: key,
+    data: series.map(p => ({ x: DateTime.fromISO(p.x), y: p[key] === null ? NaN : p[key] }))
+  }))
+
+  return formattedSeries;
 }
 
 const referenceDate = DateTime.fromISO('2000-01-01T00:00:00');
@@ -56,11 +56,12 @@ const dataSets = [
     name: 'Production',
     unit: 'MW'
   },
-  {
-    key: 'exportDataSet',
-    name: 'Export/Import',
-    unit: 'MW'
-  },
+  // TODO
+  // {
+  //   key: 'exportDataSet',
+  //   name: 'Export/Import',
+  //   unit: 'MW'
+  // },
 ]
 
 function App () {
@@ -95,14 +96,8 @@ function App () {
         .then(response => response.data)
         .then(transformSeries)
 
-      Promise.all([consumption$, consumptionSwedenGranular$]).then(([production, productionSweden]) => {
-        // This only works as long as the two series start on the same date
-        const merge = production.map((p, i) => ({
-          ...p,
-          ...productionSweden[i],
-        }))
-
-        setConsumptionDataSet(merge);
+      Promise.all([consumption$, consumptionSwedenGranular$]).then((consumption) => {
+        setConsumptionDataSet(consumption.flat());
       })
     } else if (selectDataSet === 'productionDataSet' && productionDataSet === null) {
       setProductionDataSet([])
@@ -117,19 +112,16 @@ function App () {
 
       const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
         .then(response => response.data)
-        .then(transformSeries)
         .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
+        .then(transformSeries)
 
-      Promise.all([production$, productionSwedenGranular$, productionWind$])
-        .then(([production, productionSweden, productionWind]) => {
-          // This only works as long as the two series start on the same date
-          const merge = production.map((p, i) => ({
-            ...p,
-            ...productionSweden[i],
-            ...productionWind[i],
-          }))
+      const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany.json')
+        .then(response => response.data)
+        .then(transformSeries)
 
-          setProductionDataSet(merge);
+      Promise.all([production$, productionSwedenGranular$, productionWind$, productionGermany$])
+        .then((production) => {
+          setProductionDataSet(production.flat());
         })
       
     } else if (selectDataSet === 'exportDataSet' && exportDataSet === null) {
@@ -143,6 +135,7 @@ function App () {
         .then(response => response.data)
         .then(transformSeries)
 
+      // TODO
       Promise.all([production$, consumption$]).then(([production, consumption]) => {
         const areas = Object.keys(production[0]).filter(item => item !== 'x');
         const exports = production.map((p, i) => ({ x: p.x, ...areas.reduce((obj, area) => ({ ...obj, [area]: p[area] - consumption[i][area] }), {}) }))
@@ -154,9 +147,10 @@ function App () {
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
-  fullDataSet = loading ? [{}] : fullDataSet
+  fullDataSet = loading ? [] : fullDataSet;
 
-  const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
+  // const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
+  const areas = fullDataSet.map(s => s.label);
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
@@ -169,14 +163,17 @@ function App () {
   }
 
   const rangeDataSet = fullDataSet
-    .filter(p => p.x - lowerDate > 0);
+    .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
 
-  const processedSeries = selectedAreas.filter(area => areas.includes(area)).map(area => {
-    const tradingData = rangeDataSet
-      .map(p => ({
-        x: p.x,
-        y: p[area] === null ? NaN : p[area],
-      }))
+  const processedSeries = rangeDataSet
+    .filter(series => selectedAreas.includes(series.label))
+    .map(series => {
+      const tradingData = series.data;
+    // const tradingData = rangeDataSet
+    //   .map(p => ({
+    //     x: p.x,
+    //     y: p[area] === null ? NaN : p[area],
+    //   }))
     // const trades = trade(tradingData.map(d => d.y), 0.20, 24)
     // const sum = trades.filter((t, i) => i % 3 === 0).reduce((sum, value) => sum + value);
 
@@ -221,7 +218,7 @@ function App () {
     const { min, max } = confidenceTransform(ranges.map(r => r.map(p => p.y)), movingAverage);
 
     return {
-      label: area,
+      label: series.label,
       tradingData: tradingData,
       movingAverage: movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
       min: min.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
