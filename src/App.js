@@ -25,11 +25,12 @@ import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 // https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
 
 function transformSeries(series) {
+  series.forEach(p => p.x = DateTime.fromISO(p.x))
   const keys = Object.keys(series[0]).filter(key => key !== 'x')
 
   const formattedSeries = keys.map(key => ({
     label: key,
-    data: series.map(p => ({ x: DateTime.fromISO(p.x), y: p[key] === null ? NaN : p[key] }))
+    data: series.map(p => ({ x: p.x, y: p[key] === null ? NaN : p[key] }))
   }))
 
   return formattedSeries;
