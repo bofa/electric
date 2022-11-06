@@ -115,7 +115,7 @@ function App () {
         .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
         .then(transformSeries)
 
-      const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany.json')
+      const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany-filterd.json')
         .then(response => response.data)
         .then(transformSeries)
 
