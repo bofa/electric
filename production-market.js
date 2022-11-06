@@ -6,7 +6,7 @@ const market = process.argv[2] || 'de';
 
 let importData = [];
 try {
-  importData = require(`./scrape/production-${market}.json`);
+  importData = require(`./scrape/extra/production-${market}.json`);
 } catch {}
 
 const marketLabel = market.toUpperCase();
@@ -78,8 +78,10 @@ Promise.all(weeks)
     const unique = uniq(flat, 'x')
       .sort((a, b) => a.x - b.x);
 
-    const filtered = unique.map(p => keepKeys.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
+    const filtered = unique
+      .filter(p => p.x.year >= 2020)
+      .map(p => keepKeys.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
 
-    fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(unique, null, 2));
-    fs.writeFileSync(`scrape/production-${market}-filterd.json`, JSON.stringify(filtered, null, 2));
+    fs.writeFileSync(`scrape/extra/production-${market}.json`, JSON.stringify(unique, null, 2));
+    fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filtered, null, 2));
   })
