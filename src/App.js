@@ -115,19 +115,24 @@ function App () {
         // .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
         .then(transformSeries)
 
-      const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany-filterd.json')
-        .then(response => response.data)
-        .then(transformSeries)
+      const markets = ['de', 'pl', 'ie', 'pt'].map(market =>
+        axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/production-${market}-filterd.json`)
+          .then(response => response.data)
+          .then(transformSeries))
 
-      const productionPoland$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-pl-filterd.json')
-        .then(response => response.data)
-        .then(transformSeries)
+      // const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany-filterd.json')
+      //   .then(response => response.data)
+      //   .then(transformSeries)
 
-      const productionIE$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-ie-filterd.json')
-        .then(response => response.data)
-        .then(transformSeries)
+      // const productionPoland$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-pl-filterd.json')
+      //   .then(response => response.data)
+      //   .then(transformSeries)
 
-      Promise.all([production$, productionSwedenGranular$, productionWind$, productionGermany$, productionPoland$, productionIE$])
+      // const productionIE$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-ie-filterd.json')
+      //   .then(response => response.data)
+      //   .then(transformSeries)
+
+      Promise.all([production$, productionSwedenGranular$, productionWind$, ...markets])
         .then((production) => {
           setProductionDataSet(production.flat());
         })
