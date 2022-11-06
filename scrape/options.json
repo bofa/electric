@@ -39,12 +39,84 @@
     "unit": "MW",
     "files": [
       {
+        "file": "consumption-ch.json",
+        "options": [
+          "CH-Load"
+        ]
+      },
+      {
+        "file": "consumption-de.json",
+        "options": [
+          "DE-Load"
+        ]
+      },
+      {
+        "file": "consumption-dk.json",
+        "options": [
+          "DK-Load"
+        ]
+      },
+      {
+        "file": "consumption-es.json",
+        "options": [
+          "ES-Load"
+        ]
+      },
+      {
+        "file": "consumption-fi.json",
+        "options": [
+          "FI-Load"
+        ]
+      },
+      {
+        "file": "consumption-fr.json",
+        "options": [
+          "FR-Load"
+        ]
+      },
+      {
+        "file": "consumption-ie.json",
+        "options": [
+          "IE-Load"
+        ]
+      },
+      {
+        "file": "consumption-it.json",
+        "options": [
+          "IT-Load"
+        ]
+      },
+      {
+        "file": "consumption-nl.json",
+        "options": [
+          "NL-Load"
+        ]
+      },
+      {
+        "file": "consumption-pl.json",
+        "options": [
+          "PL-Load"
+        ]
+      },
+      {
+        "file": "consumption-pt.json",
+        "options": [
+          "PT-Load"
+        ]
+      },
+      {
         "file": "consumption-sweden-granular.json",
         "options": [
           "SE1",
           "SE2",
           "SE3",
           "SE4"
+        ]
+      },
+      {
+        "file": "consumption-uk.json",
+        "options": [
+          "UK-Load"
         ]
       },
       {
@@ -280,6 +352,85 @@
           "LV",
           "LT",
           "Baltic"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "exportDataSet",
+    "name": "Export",
+    "unit": "MW",
+    "files": [
+      {
+        "file": "export-ch.json",
+        "options": [
+          "CH-Import Balance"
+        ]
+      },
+      {
+        "file": "export-de.json",
+        "options": [
+          "DE-Import Balance"
+        ]
+      },
+      {
+        "file": "export-dk.json",
+        "options": [
+          "DK-Import Balance"
+        ]
+      },
+      {
+        "file": "export-es.json",
+        "options": [
+          "ES-Import Balance"
+        ]
+      },
+      {
+        "file": "export-fi.json",
+        "options": [
+          "FI-Import Balance"
+        ]
+      },
+      {
+        "file": "export-fr.json",
+        "options": [
+          "FR-Import Balance"
+        ]
+      },
+      {
+        "file": "export-ie.json",
+        "options": [
+          "IE-Import Balance"
+        ]
+      },
+      {
+        "file": "export-it.json",
+        "options": [
+          "IT-Import Balance"
+        ]
+      },
+      {
+        "file": "export-nl.json",
+        "options": [
+          "NL-Import Balance"
+        ]
+      },
+      {
+        "file": "export-pl.json",
+        "options": [
+          "PL-Import Balance"
+        ]
+      },
+      {
+        "file": "export-pt.json",
+        "options": [
+          "PT-Import Balance"
+        ]
+      },
+      {
+        "file": "export-uk.json",
+        "options": [
+          "UK-Import Balance"
         ]
       }
     ]
