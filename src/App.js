@@ -115,9 +115,13 @@ function App () {
         // .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
         .then(transformSeries)
 
-      const markets = ['de', 'pl', 'ie', 'pt'].map(market =>
+      const markets = ['de', 'pl', 'ie', 'pt', 'uk'].map(market =>
         axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/production-${market}-filterd.json`)
           .then(response => response.data)
+          .catch(error => {
+            console.warn('Error', error);
+            return [];
+          })
           .then(transformSeries))
 
       // const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany-filterd.json')
