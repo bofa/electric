@@ -120,7 +120,7 @@ function App () {
           .then(response => response.data)
           .catch(error => {
             console.warn('Error', error);
-            return [];
+            return [{ x: '2020-01-01' }];
           })
           .then(transformSeries))
 
