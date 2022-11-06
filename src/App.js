@@ -65,114 +65,137 @@ const dataSets = [
 ]
 
 function App () {
+  const [options, setOptions] = React.useState([]);
+  const [loadedFiles, setLoadedFiles] = React.useState([]);
+
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3', 'SE']);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
-  const [priceDataSet, setPriceDataSet] = React.useState(null);
-  const [consumptionDataSet, setConsumptionDataSet] = React.useState(null);
-  const [productionDataSet, setProductionDataSet] = React.useState(null);
-  const [exportDataSet, setExportDataSet] = React.useState(null);
+  const [priceDataSet, setPriceDataSet] = React.useState([]);
+  const [consumptionDataSet, setConsumptionDataSet] = React.useState([]);
+  const [productionDataSet, setProductionDataSet] = React.useState([]);
+  const [exportDataSet, setExportDataSet] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
   
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   React.useEffect(() => {
-    if (selectDataSet === 'priceDataSet' && priceDataSet === null) {
-      setPriceDataSet([]);
-      axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
-        .then(response => response.data)
-        .then(transformSeries)
-        .then(setPriceDataSet);
-    } else if (selectDataSet === 'consumptionDataSet' && consumptionDataSet === null) {
-      setConsumptionDataSet([])
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options.json')
+      .then(response => response.data)
+      .then(setOptions)
+  }, [])
 
-      const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
-        .then(response => response.data)
-        .then(transformSeries)
+  React.useEffect(() => {
+    const files = selectedAreas
+      .map(area => options
+        .find(option => option.key === selectDataSet)
+        ?.files
+        .find(file => file.options.includes(area))
+        ?.file
+      )
+      .flat()
+      .filter(file => file !== undefined)
+      .filter((file, i, a) => a.indexOf(file) === i)
+      .filter(file => !loadedFiles.includes(file))
 
-      const consumptionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption-sweden-granular.json')
-        .then(response => response.data)
-        .then(transformSeries)
+    setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
-      Promise.all([consumption$, consumptionSwedenGranular$]).then((consumption) => {
-        setConsumptionDataSet(consumption.flat());
+    const setFunc = selectDataSet === 'priceDataSet' ? setPriceDataSet
+      : selectDataSet ===  'consumptionDataSet' ? setConsumptionDataSet
+      : selectDataSet ===  'productionDataSet' ? setProductionDataSet
+      // TODO Export
+      : () => {};
+
+
+    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/` + file)
+      .then(response => response.data)
+      .catch(error => {
+        console.warn('Error', error);
+        return [{ x: '2020-01-01' }];
       })
-    } else if (selectDataSet === 'productionDataSet' && productionDataSet === null) {
-      setProductionDataSet([])
+      .then(transformSeries)
+      .then(series => setFunc(state => state.concat(series))))
+    
+  }, [options, selectDataSet, selectedAreas.length])
+
+  // React.useEffect(() => {
+  //   if (selectDataSet === 'priceDataSet' && priceDataSet === null) {
+  //     setPriceDataSet([]);
+  //     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
+  //       .then(setPriceDataSet);
+  //   } else if (selectDataSet === 'consumptionDataSet' && consumptionDataSet === null) {
+  //     setConsumptionDataSet([])
+
+  //     const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
+
+  //     const consumptionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption-sweden-granular.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
+
+  //     Promise.all([consumption$, consumptionSwedenGranular$]).then((consumption) => {
+  //       setConsumptionDataSet(consumption.flat());
+  //     })
+  //   } else if (selectDataSet === 'productionDataSet' && productionDataSet === null) {
+  //     setProductionDataSet([])
       
-      const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
-        .then(response => response.data)
-        .then(transformSeries)
+  //     const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
 
-      const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
-        .then(response => response.data)
-        .then(transformSeries)
+  //     const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
 
-      const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
-        .then(response => response.data)
-        // .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
-        .then(transformSeries)
+  //     const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
+  //       .then(response => response.data)
+  //       // .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
+  //       .then(transformSeries)
 
-      const markets = ['de', 'pl', 'ie', 'pt', 'uk'].map(market =>
-        axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/production-${market}-filterd.json`)
-          .then(response => response.data)
-          .catch(error => {
-            console.warn('Error', error);
-            return [{ x: '2020-01-01' }];
-          })
-          .then(transformSeries))
-
-      // const productionGermany$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-germany-filterd.json')
-      //   .then(response => response.data)
-      //   .then(transformSeries)
-
-      // const productionPoland$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-pl-filterd.json')
-      //   .then(response => response.data)
-      //   .then(transformSeries)
-
-      // const productionIE$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-ie-filterd.json')
-      //   .then(response => response.data)
-      //   .then(transformSeries)
-
-      Promise.all([production$, productionSwedenGranular$, productionWind$, ...markets])
-        .then((production) => {
-          setProductionDataSet(production.flat());
-        })
+  //     Promise.all([production$, productionSwedenGranular$, productionWind$])
+  //       .then((production) => {
+  //         setProductionDataSet(productionState => productionState.concat(production.flat()));
+  //       })
       
-    } else if (selectDataSet === 'exportDataSet' && exportDataSet === null) {
-      setExportDataSet([])
+  //   } else if (selectDataSet === 'exportDataSet' && exportDataSet === null) {
+  //     setExportDataSet([])
 
-      const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
-        .then(response => response.data)
-        .then(transformSeries)
+  //     const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
 
-      const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
-        .then(response => response.data)
-        .then(transformSeries)
+  //     const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
+  //       .then(response => response.data)
+  //       .then(transformSeries)
 
-      Promise.all([production$, consumption$]).then(([production, consumption]) => {
-        const exports = production.map(productionSeries => {
-          const cunsumptionData = consumption.find(c => c.label === productionSeries.label).data;
+  //     Promise.all([production$, consumption$]).then(([production, consumption]) => {
+  //       const exports = production.map(productionSeries => {
+  //         const cunsumptionData = consumption.find(c => c.label === productionSeries.label).data;
 
-          return {
-            label: productionSeries.label,
-            data: productionSeries.data.map((p, i) => ({ x: p.x, y: p.y - cunsumptionData[i].y }))
-          };
-        });
+  //         return {
+  //           label: productionSeries.label,
+  //           data: productionSeries.data.map((p, i) => ({ x: p.x, y: p.y - cunsumptionData[i].y }))
+  //         };
+  //       });
         
-        setExportDataSet(exports)
-      });
-    }
-  }, [selectDataSet])
+  //       setExportDataSet(exports)
+  //     });
+  //   }
+  // }, [selectDataSet])
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
 
-  // const areas = Object.keys(fullDataSet[0]).filter(item => item !== 'x');
-  const areas = fullDataSet.map(s => s.label);
+  const areas = options
+    .find(option => option.key === selectDataSet)
+    ?.files.map(file => file.options).flat()
+    || [];
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
@@ -384,7 +407,7 @@ function App () {
     },
     animation: false,
     normalized: true,
-    spanGaps: true,
+    spanGaps: false,
     // parsing: false,
     plugins: {
       legend: {
@@ -401,7 +424,7 @@ function App () {
       <Navbar>
         <NavbarGroup>
           <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
-            {dataSets.map(({ key, name }) => <option key={key} value={key}>{name}</option>)}
+            {options.map(({ key, name }) => <option key={key} value={key}>{name}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
