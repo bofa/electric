@@ -106,6 +106,6 @@ Promise.all(weeks)
 
     const filteredExport = unique
       .filter(p => p.x.year >= 2020)
-      .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
+      .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: -p[key[0]] }), {}))
     fs.writeFileSync(`scrape/export-${market}.json`, JSON.stringify(filteredExport, null, 2));
   })
