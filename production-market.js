@@ -37,16 +37,20 @@ function uniq(a, key) {
   });
 }
 
-const startDate = importData.length === 0 ? luxon.DateTime.fromISO('2020-01-01') : luxon.DateTime.fromISO(importData.at(-1).x);
+const startDate = luxon.DateTime.fromISO('2020-01-01')
+// const startDate = importData.length === 0
+//   ? luxon.DateTime.fromISO('2020-01-01')
+//   : luxon.DateTime.fromISO(importData.at(-1).x);
 
 const now = luxon.DateTime.now();
 const weeks = [
-  Array(52).fill().map((_, i) => ({ year: '2020', week: String(i+1).padStart(2, '0') })),
-  Array(52).fill().map((_, i) => ({ year: '2021', week: String(i+1).padStart(2, '0') })),
-  Array(52).fill().map((_, i) => ({ year: '2022', week: String(i+1).padStart(2, '0') })),
+  Array(53).fill().map((_, i) => ({ year: 2020, week: i+1 })),
+  Array(53).fill().map((_, i) => ({ year: 2021, week: i+1 })),
+  Array(53).fill().map((_, i) => ({ year: 2022, week: i+1 })),
 ].flat()
-  .filter(week => week.year >= startDate.year && week.week >= startDate.weekNumber - 3)
-  .filter(week => week.year <= now.year && week.week <= now.weekNumber + 1)
+  .filter(week => week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
+  .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
+  .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
   .map((weekObj, delay) => new Promise(resolve => setTimeout(resolve, 350 * delay)).then(() =>
     axios.get(`https://www.energy-charts.info/charts/power/data/${market}/week_${weekObj.year}_${weekObj.week}.json`)
       .then(response => response.data)
