@@ -35,16 +35,8 @@ export default function FilmSelect(props) {
     .map(area => ({ area, text: area, active: selectedAreas.includes(area) }))
     .sort((a1, a2) => a1.text.localeCompare(a2.text) )
   
-  const selectRef = React.useRef();
-  React.useEffect(() => {
-    const input = selectRef.current.input
-    input.setAttribute('autofill', 'off');
-    input.setAttribute('type', 'search');
-  }, [selectRef])
-
   return (
     <MultiSelect2
-      ref={selectRef}
       items={items}
       itemRenderer={renderItem}
       itemPredicate={(query, item) => item.area.toLowerCase().includes(query.toLowerCase())}
@@ -53,6 +45,12 @@ export default function FilmSelect(props) {
       selectedItems={items.filter(item => selectedAreas.includes(item.area))}
       tagRenderer={item => item.area}
       onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
+      tagInputProps={{
+        inputProps: {
+          autofill: 'off',
+          type: 'search',
+        }
+      }}
     />
   );
 };
