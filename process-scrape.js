@@ -1,7 +1,7 @@
 const folder = './scrape/';
 const fs = require('fs');
 
-const files = fs.readdirSync(folder).filter(file => file.includes('.json'))
+const allFiles = fs.readdirSync(folder).filter(file => file.includes('.json'))
 
 // files.forEach(file => console.log(file))
 
@@ -28,17 +28,18 @@ const options = // ['price', 'production', 'consumption']
   //   unit: 'MW'
   // },
 ].map(option => {
-    const typeFiles = files.filter(file => file.includes(option.name.toLowerCase()))
+    const typeFiles = allFiles.filter(file => file.includes(option.name.toLowerCase()))
 
-    const areas = typeFiles
-      .map(file => Object.keys(JSON.parse(fs.readFileSync(folder + file))[0]))
-      .flat()
-      .filter(option => option !== 'x')
-      .sort((a, b) => a.localeCompare(b))
+    const files = typeFiles
+      .map(file => ({
+        file,
+        options: Object.keys(JSON.parse(fs.readFileSync(folder + file))[0]).filter(option => option !== 'x')
+      }))
+      // .sort((a, b) => a.localeCompare(b))
 
     return {
       ...option,
-      areas,
+      files,
     };
   })
   
