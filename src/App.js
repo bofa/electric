@@ -108,7 +108,6 @@ function App () {
       : selectDataSet ===  'exportDataSet' ? setExportDataSet
       : () => {};
 
-
     files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/` + file)
       .then(response => response.data)
       .catch(error => {
@@ -119,7 +118,6 @@ function App () {
       .then(series => setFunc(state => state.concat(series))))
     
   }, [options, selectDataSet, selectedAreas.length])
-
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;

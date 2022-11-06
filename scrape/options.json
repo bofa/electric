@@ -87,6 +87,12 @@
         ]
       },
       {
+        "file": "consumption-lu.json",
+        "options": [
+          "LU"
+        ]
+      },
+      {
         "file": "consumption-nl.json",
         "options": [
           "NL"
@@ -258,6 +264,12 @@
         ]
       },
       {
+        "file": "production-lu.json",
+        "options": [
+          "LU-Import Balance"
+        ]
+      },
+      {
         "file": "production-nl.json",
         "options": [
           "NL-Import Balance",
@@ -407,6 +419,12 @@
         "file": "export-it.json",
         "options": [
           "IT"
+        ]
+      },
+      {
+        "file": "export-lu.json",
+        "options": [
+          "LU"
         ]
       },
       {
