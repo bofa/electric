@@ -37,10 +37,10 @@ function uniq(a, key) {
   });
 }
 
-const startDate = luxon.DateTime.fromISO('2020-01-01')
-// const startDate = importData.length === 0
-//   ? luxon.DateTime.fromISO('2020-01-01')
-//   : luxon.DateTime.fromISO(importData.at(-1).x);
+// const startDate = luxon.DateTime.fromISO('2020-01-01')
+const startDate = importData.length === 0
+  ? luxon.DateTime.fromISO('2020-01-01')
+  : luxon.DateTime.fromISO(importData.at(-1).x);
 
 const now = luxon.DateTime.now();
 const weeks = [

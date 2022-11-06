@@ -38,7 +38,7 @@
     "productiongermany": "node production-market.js de",
     "productionmarket": "node production-market.js",
     "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind && npm run productiongermany",
-    "processcrape": "node process-scrape.js"
+    "options": "node process-scrape.js"
   },
   "eslintConfig": {
     "extends": [

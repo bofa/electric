@@ -69,6 +69,18 @@
     "unit": "MW",
     "files": [
       {
+        "file": "production-ch.json",
+        "options": [
+          "CH-Import Balance",
+          "CH-Nuclear",
+          "CH-Hydro Run-of-River",
+          "CH-Hydro water reservoir",
+          "CH-Hydro pumped storage",
+          "CH-Wind onshore",
+          "CH-Solar"
+        ]
+      },
+      {
         "file": "production-de.json",
         "options": [
           "DE-Import Balance",
@@ -88,6 +100,35 @@
         ]
       },
       {
+        "file": "production-dk.json",
+        "options": [
+          "DK-Import Balance",
+          "DK-Biomass",
+          "DK-Fossil hard coal",
+          "DK-Fossil oil",
+          "DK-Fossil gas",
+          "DK-Wind offshore",
+          "DK-Wind onshore",
+          "DK-Solar"
+        ]
+      },
+      {
+        "file": "production-es.json",
+        "options": [
+          "ES-Import Balance",
+          "ES-Nuclear",
+          "ES-Hydro Run-of-River",
+          "ES-Biomass",
+          "ES-Fossil brown coal / lignite",
+          "ES-Fossil hard coal",
+          "ES-Fossil oil",
+          "ES-Fossil gas",
+          "ES-Hydro water reservoir",
+          "ES-Wind onshore",
+          "ES-Solar"
+        ]
+      },
+      {
         "file": "production-fi.json",
         "options": [
           "FI-Import Balance",
@@ -98,6 +139,22 @@
           "FI-Fossil oil",
           "FI-Fossil gas",
           "FI-Wind onshore"
+        ]
+      },
+      {
+        "file": "production-fr.json",
+        "options": [
+          "FR-Import Balance",
+          "FR-Nuclear",
+          "FR-Hydro Run-of-River",
+          "FR-Biomass",
+          "FR-Fossil hard coal",
+          "FR-Fossil oil",
+          "FR-Fossil gas",
+          "FR-Hydro water reservoir",
+          "FR-Hydro pumped storage",
+          "FR-Wind onshore",
+          "FR-Solar"
         ]
       },
       {
@@ -126,6 +183,19 @@
           "IT-Hydro pumped storage",
           "IT-Wind onshore",
           "IT-Solar"
+        ]
+      },
+      {
+        "file": "production-nl.json",
+        "options": [
+          "NL-Import Balance",
+          "NL-Nuclear",
+          "NL-Biomass",
+          "NL-Fossil hard coal",
+          "NL-Fossil gas",
+          "NL-Wind offshore",
+          "NL-Wind onshore",
+          "NL-Solar"
         ]
       },
       {
