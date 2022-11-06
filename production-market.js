@@ -10,7 +10,7 @@ try {
 } catch {}
 
 const marketLabel = market.toUpperCase();
-const keepKeys = [
+const keepKeysProduction = [
   'x',
   marketLabel + '-Import Balance',
   marketLabel + '-Nuclear',
@@ -26,6 +26,16 @@ const keepKeys = [
   marketLabel + '-Wind offshore',
   marketLabel + '-Wind onshore',
   marketLabel + '-Solar',
+]
+
+const keepKeysConsumption = [
+  ['x', 'x'],
+  [marketLabel + '-Load', marketLabel],
+]
+
+const keepKeysExport = [
+  ['x', 'x'],
+  [marketLabel + '-Import Balance', marketLabel],
 ]
 
 importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
@@ -82,10 +92,20 @@ Promise.all(weeks)
     const unique = uniq(flat, 'x')
       .sort((a, b) => a.x - b.x);
 
-    const filtered = unique
-      .filter(p => p.x.year >= 2020)
-      .map(p => keepKeys.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
-
     fs.writeFileSync(`scrape/extra/production-${market}.json`, JSON.stringify(unique, null, 2));
-    fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filtered, null, 2));
+    
+    const filteredProduction = unique
+      .filter(p => p.x.year >= 2020)
+      .map(p => keepKeysProduction.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
+    fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filteredProduction, null, 2));
+
+    const filteredConsumption = unique
+      .filter(p => p.x.year >= 2020)
+      .map(p => keepKeysConsumption.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
+    fs.writeFileSync(`scrape/consumption-${market}.json`, JSON.stringify(filteredConsumption, null, 2));
+
+    const filteredExport = unique
+      .filter(p => p.x.year >= 2020)
+      .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
+    fs.writeFileSync(`scrape/export-${market}.json`, JSON.stringify(filteredExport, null, 2));
   })

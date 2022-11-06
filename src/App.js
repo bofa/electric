@@ -105,7 +105,7 @@ function App () {
     const setFunc = selectDataSet === 'priceDataSet' ? setPriceDataSet
       : selectDataSet ===  'consumptionDataSet' ? setConsumptionDataSet
       : selectDataSet ===  'productionDataSet' ? setProductionDataSet
-      // TODO Export
+      : selectDataSet ===  'exportDataSet' ? setExportDataSet
       : () => {};
 
 
@@ -120,73 +120,6 @@ function App () {
     
   }, [options, selectDataSet, selectedAreas.length])
 
-  // React.useEffect(() => {
-  //   if (selectDataSet === 'priceDataSet' && priceDataSet === null) {
-  //     setPriceDataSet([]);
-  //     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/price.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-  //       .then(setPriceDataSet);
-  //   } else if (selectDataSet === 'consumptionDataSet' && consumptionDataSet === null) {
-  //     setConsumptionDataSet([])
-
-  //     const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     const consumptionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption-sweden-granular.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     Promise.all([consumption$, consumptionSwedenGranular$]).then((consumption) => {
-  //       setConsumptionDataSet(consumption.flat());
-  //     })
-  //   } else if (selectDataSet === 'productionDataSet' && productionDataSet === null) {
-  //     setProductionDataSet([])
-      
-  //     const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     const productionSwedenGranular$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-sweden-granular.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     const productionWind$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production-wind.json')
-  //       .then(response => response.data)
-  //       // .then(series => series.map(p => ({ ...p, 'SE-wind': p['SE1-wind'] + p['SE2-wind'] + p['SE3-wind'] + p['SE4-wind'] })))
-  //       .then(transformSeries)
-
-  //     Promise.all([production$, productionSwedenGranular$, productionWind$])
-  //       .then((production) => {
-  //         setProductionDataSet(productionState => productionState.concat(production.flat()));
-  //       })
-      
-  //   } else if (selectDataSet === 'exportDataSet' && exportDataSet === null) {
-  //     setExportDataSet([])
-
-  //     const consumption$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/consumption.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     const production$ = axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/production.json')
-  //       .then(response => response.data)
-  //       .then(transformSeries)
-
-  //     Promise.all([production$, consumption$]).then(([production, consumption]) => {
-  //       const exports = production.map(productionSeries => {
-  //         const cunsumptionData = consumption.find(c => c.label === productionSeries.label).data;
-
-  //         return {
-  //           label: productionSeries.label,
-  //           data: productionSeries.data.map((p, i) => ({ x: p.x, y: p.y - cunsumptionData[i].y }))
-  //         };
-  //       });
-        
-  //       setExportDataSet(exports)
-  //     });
-  //   }
-  // }, [selectDataSet])
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
