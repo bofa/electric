@@ -9,7 +9,30 @@
     "files": [
       {
         "file": "price.json",
-        "options": []
+        "options": [
+          "SYS-price",
+          "SE1-price",
+          "SE2-price",
+          "SE3-price",
+          "SE4-price",
+          "FI-price",
+          "DK1-price",
+          "DK2-price",
+          "Oslo-price",
+          "Kr.sand-price",
+          "Bergen-price",
+          "Molde-price",
+          "Tr.heim-price",
+          "Tromsø-price",
+          "EE-price",
+          "LV-price",
+          "LT-price",
+          "AT-price",
+          "BE-price",
+          "DE-LU-price",
+          "FR-price",
+          "NL-price"
+        ]
       },
       {
         "file": "production-ch.json",
