@@ -35,6 +35,10 @@
         ]
       },
       {
+        "file": "production-at.json",
+        "options": []
+      },
+      {
         "file": "production-ch.json",
         "options": []
       },
@@ -97,7 +101,6 @@
     "name": "Production",
     "unit": "MW",
     "fields": [
-      "-Import Balance",
       "-Nuclear",
       "-Hydro Run-of-River",
       "-Biomass",
@@ -118,9 +121,23 @@
         "options": []
       },
       {
+        "file": "production-at.json",
+        "options": [
+          "AT-Hydro pumped storage consumption",
+          "AT-Hydro Run-of-River",
+          "AT-Biomass",
+          "AT-Fossil hard coal",
+          "AT-Fossil gas",
+          "AT-Geothermal",
+          "AT-Hydro water reservoir",
+          "AT-Hydro pumped storage",
+          "AT-Wind onshore",
+          "AT-Solar"
+        ]
+      },
+      {
         "file": "production-ch.json",
         "options": [
-          "CH-Import Balance",
           "CH-Nuclear",
           "CH-Hydro Run-of-River",
           "CH-Hydro water reservoir",
@@ -133,7 +150,6 @@
         "file": "production-de.json",
         "options": [
           "DE-Hydro pumped storage consumption",
-          "DE-Import Balance",
           "DE-Nuclear",
           "DE-Hydro Run-of-River",
           "DE-Biomass",
@@ -152,7 +168,6 @@
       {
         "file": "production-dk.json",
         "options": [
-          "DK-Import Balance",
           "DK-Biomass",
           "DK-Fossil hard coal",
           "DK-Fossil oil",
@@ -166,7 +181,6 @@
         "file": "production-es.json",
         "options": [
           "ES-Hydro pumped storage consumption",
-          "ES-Import Balance",
           "ES-Nuclear",
           "ES-Hydro Run-of-River",
           "ES-Biomass",
@@ -182,7 +196,6 @@
       {
         "file": "production-fi.json",
         "options": [
-          "FI-Import Balance",
           "FI-Nuclear",
           "FI-Hydro Run-of-River",
           "FI-Biomass",
@@ -196,7 +209,6 @@
         "file": "production-fr.json",
         "options": [
           "FR-Hydro pumped storage consumption",
-          "FR-Import Balance",
           "FR-Nuclear",
           "FR-Hydro Run-of-River",
           "FR-Biomass",
@@ -213,7 +225,6 @@
         "file": "production-ie.json",
         "options": [
           "IE-Hydro pumped storage consumption",
-          "IE-Import Balance",
           "IE-Hydro Run-of-River",
           "IE-Fossil hard coal",
           "IE-Fossil oil",
@@ -226,7 +237,6 @@
         "file": "production-it.json",
         "options": [
           "IT-Hydro pumped storage consumption",
-          "IT-Import Balance",
           "IT-Hydro Run-of-River",
           "IT-Biomass",
           "IT-Fossil hard coal",
@@ -241,14 +251,11 @@
       },
       {
         "file": "production-lu.json",
-        "options": [
-          "LU-Import Balance"
-        ]
+        "options": []
       },
       {
         "file": "production-nl.json",
         "options": [
-          "NL-Import Balance",
           "NL-Nuclear",
           "NL-Biomass",
           "NL-Fossil hard coal",
@@ -261,7 +268,6 @@
       {
         "file": "production-pl.json",
         "options": [
-          "PL-Import Balance",
           "PL-Hydro Run-of-River",
           "PL-Biomass",
           "PL-Fossil brown coal / lignite",
@@ -277,7 +283,6 @@
         "file": "production-pt.json",
         "options": [
           "PT-Hydro pumped storage consumption",
-          "PT-Import Balance",
           "PT-Hydro Run-of-River",
           "PT-Biomass",
           "PT-Fossil hard coal",
@@ -291,7 +296,6 @@
       {
         "file": "production-se.json",
         "options": [
-          "SE-Import Balance",
           "SE-Nuclear",
           "SE-Hydro water reservoir",
           "SE-Wind onshore"
@@ -300,7 +304,6 @@
       {
         "file": "production-uk.json",
         "options": [
-          "UK-Import Balance",
           "UK-Nuclear",
           "UK-Hydro Run-of-River",
           "UK-Biomass",
@@ -326,6 +329,12 @@
       {
         "file": "price.json",
         "options": []
+      },
+      {
+        "file": "production-at.json",
+        "options": [
+          "AT-Load"
+        ]
       },
       {
         "file": "production-ch.json",
@@ -424,6 +433,12 @@
       {
         "file": "price.json",
         "options": []
+      },
+      {
+        "file": "production-at.json",
+        "options": [
+          "AT-Import Balance"
+        ]
       },
       {
         "file": "production-ch.json",
