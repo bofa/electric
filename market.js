@@ -6,7 +6,7 @@ const market = process.argv[2] || 'de';
 
 let importData = [];
 try {
-  importData = require(`./scrape/extra/production-${market}.json`);
+  importData = require(`./scrape/raw/production-${market}.json`);
 } catch {}
 
 const marketLabel = market.toUpperCase();
@@ -57,8 +57,8 @@ const weeks = [
   Array(53).fill().map((_, i) => ({ year: 2021, week: i+1 })),
   Array(53).fill().map((_, i) => ({ year: 2022, week: i+1 })),
 ].flat()
-  // .filter(week => week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
-  // .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
+  .filter(week => week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
+  .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
   .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
   .map((weekObj, delay) => new Promise(resolve => setTimeout(resolve, 350 * delay)).then(() =>
     axios.get(`https://www.energy-charts.info/charts/power/data/${market}/week_${weekObj.year}_${weekObj.week}.json`)
@@ -91,20 +91,20 @@ Promise.all(weeks)
     const unique = uniq(flat, 'x')
       .sort((a, b) => a.x - b.x);
 
-    fs.writeFileSync(`scrape/extra/production-${market}.json`, JSON.stringify(unique, null, 2));
+    fs.writeFileSync(`scrape/raw/production-${market}.json`, JSON.stringify(unique, null, 2));
     
-    const filteredProduction = unique
-      .filter(p => p.x.year >= 2020)
-      .map(p => keepKeysProduction.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
-    fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filteredProduction, null, 2));
+    // const filteredProduction = unique
+    //   .filter(p => p.x.year >= 2020)
+    //   .map(p => keepKeysProduction.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
+    // fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filteredProduction, null, 2));
 
-    const filteredConsumption = unique
-      .filter(p => p.x.year >= 2020)
-      .map(p => keepKeysConsumption.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
-    fs.writeFileSync(`scrape/consumption-${market}.json`, JSON.stringify(filteredConsumption, null, 2));
+    // const filteredConsumption = unique
+    //   .filter(p => p.x.year >= 2020)
+    //   .map(p => keepKeysConsumption.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
+    // fs.writeFileSync(`scrape/consumption-${market}.json`, JSON.stringify(filteredConsumption, null, 2));
 
-    const filteredExport = unique
-      .filter(p => p.x.year >= 2020)
-      .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: -p[key[0]] }), { x: p.x }))
-    fs.writeFileSync(`scrape/export-${market}.json`, JSON.stringify(filteredExport, null, 2));
+    // const filteredExport = unique
+    //   .filter(p => p.x.year >= 2020)
+    //   .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: -p[key[0]] }), { x: p.x }))
+    // fs.writeFileSync(`scrape/export-${market}.json`, JSON.stringify(filteredExport, null, 2));
   })
