@@ -3,8 +3,14 @@
     "key": "priceDataSet",
     "name": "Price",
     "unit": "EUR/MWh",
-    "fields": [],
+    "fields": [
+      "-price"
+    ],
     "files": [
+      {
+        "file": "price.json",
+        "options": []
+      },
       {
         "file": "production-ch.json",
         "options": []
@@ -84,6 +90,10 @@
       "-Solar"
     ],
     "files": [
+      {
+        "file": "price.json",
+        "options": []
+      },
       {
         "file": "production-ch.json",
         "options": [
@@ -291,6 +301,10 @@
     ],
     "files": [
       {
+        "file": "price.json",
+        "options": []
+      },
+      {
         "file": "production-ch.json",
         "options": [
           "CH-Load"
@@ -384,6 +398,10 @@
       "-Import Balance"
     ],
     "files": [
+      {
+        "file": "price.json",
+        "options": []
+      },
       {
         "file": "production-ch.json",
         "options": [
