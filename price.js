@@ -43,9 +43,14 @@ Promise.all(data$).then(response => {
   const unique = uniq(flat, 'x')
     .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
     
-    fs.writeFileSync('scrape/price.json', JSON.stringify(unique, null, 2));
+  fs.writeFileSync('scrape/price.json', JSON.stringify(unique, null, 2));
 
-    // const from2021 = unique.filter(p => luxon.DateTime.fromISO(p.x).year === 2021);
-    // fs.writeFileSync('src/data2021.json', JSON.stringify(from2021, null, 2));
+  const formatted = unique.map(p => Object.keys(p)
+    .filter(key => key !== 'x')
+    .reduce((sum, key) => ({ ...sum, [key+'-price']: p[key] }), { x: p.x }))
+
+  fs.writeFileSync('scrape/extra/price.json', JSON.stringify(formatted, null, 2));
+  // const from2021 = unique.filter(p => luxon.DateTime.fromISO(p.x).year === 2021);
+  // fs.writeFileSync('src/data2021.json', JSON.stringify(from2021, null, 2));
 })
   

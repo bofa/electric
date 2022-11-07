@@ -41,34 +41,11 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
-const dataSets = [
-  {
-    key: 'priceDataSet',
-    name: 'Price',
-    unit: 'EUR/MWh'
-  },
-  {
-    key: 'consumptionDataSet',
-    name: 'Consumption',
-    unit: 'MW'
-  },
-  {
-    key: 'productionDataSet',
-    name: 'Production',
-    unit: 'MW'
-  },
-  {
-    key: 'exportDataSet',
-    name: 'Export/Import',
-    unit: 'MW'
-  },
-]
-
 function App () {
   const [options, setOptions] = React.useState([]);
   const [loadedFiles, setLoadedFiles] = React.useState([]);
 
-  const [selectedAreas, setSelectedAreas] = React.useState(['SE3', 'SE']);
+  const [selectedAreas, setSelectedAreas] = React.useState(['SE3-price', 'SE-Nuclear', 'SE-Load']);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [range, setRange] = React.useState('Full');
@@ -90,10 +67,8 @@ function App () {
   React.useEffect(() => {
     const files = selectedAreas
       .map(area => options
-        .find(option => option.key === selectDataSet)
-        ?.files
-        .find(file => file.options.includes(area))
-        ?.file
+        .find(option => option.key === selectDataSet)?.files
+        .find(file => file.options.includes(area))?.file
       )
       .flat()
       .filter(file => file !== undefined)
@@ -102,22 +77,29 @@ function App () {
 
     setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
-    const setFunc = selectDataSet === 'priceDataSet' ? setPriceDataSet
-      : selectDataSet ===  'consumptionDataSet' ? setConsumptionDataSet
-      : selectDataSet ===  'productionDataSet' ? setProductionDataSet
-      : selectDataSet ===  'exportDataSet' ? setExportDataSet
-      : () => {};
-
-    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/` + file)
+    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/extra/` + file)
       .then(response => response.data)
       .catch(error => {
         console.warn('Error', error);
         return [{ x: '2020-01-01' }];
       })
       .then(transformSeries)
-      .then(series => setFunc(state => state.concat(series))))
+      .then(series => {
+        options.forEach(option => {
+          const setFunc = option.key === 'priceDataSet'       ? setPriceDataSet
+                        : option.key === 'consumptionDataSet' ? setConsumptionDataSet
+                        : option.key === 'productionDataSet'  ? setProductionDataSet
+                        : option.key === 'exportDataSet'      ? setExportDataSet
+                        : () => {};
+
+          const seriesFiltered = series.filter(s => option.fields.some(f => s.label.includes(f)))
+
+          setFunc(state => state.concat(seriesFiltered));
+        })
+
+      }))
     
-  }, [options, selectDataSet, selectedAreas.length])
+  }, [selectDataSet, selectedAreas.length, options.length])
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
@@ -306,7 +288,7 @@ function App () {
     ).flat(2)
   };
 
-  const unit = dataSets?.find(ds => ds.key === selectDataSet)?.unit;
+  const unit = options?.find(ds => ds.key === selectDataSet)?.unit;
 
   const optionsTime = {
     maintainAspectRatio: false,
@@ -367,7 +349,7 @@ function App () {
             selectedAreas={selectedAreas}
             setSelectedAreas={setSelectedAreas}
           />
-          {loading && <Spinner style={{ marginLeft: 10 }} size={16}/>}
+          {/* {loading && <Spinner style={{ marginLeft: 10 }} size={16}/>} */}
         </NavbarGroup>
       </Navbar>
       <div style={{ height: 'calc(50vh - 66px)', padding: 14 }}>

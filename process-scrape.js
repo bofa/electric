@@ -1,14 +1,5 @@
-const folder = './scrape/';
+const folder = './scrape/raw/';
 const fs = require('fs');
-
-// Calculate exports
-const production = JSON.parse(fs.readFileSync('./scrape/production.json'))
-const consumption = JSON.parse(fs.readFileSync('./scrape/consumption.json'))
-
-const exportKeys = Object.keys(production[0]).filter(v => v !== 'x')
-const exportsCalc = production.map((p, i) => exportKeys.reduce((obj, key) => ({ ...obj, [key]: production[i][key] - consumption[i][key] }), { x: p.x }))
-
-fs.writeFileSync('./scrape/export.json', JSON.stringify(exportsCalc, null, 2));
 
 // Extract options
 const allFiles = fs.readdirSync(folder).filter(file => file.includes('.json'))
@@ -17,30 +8,50 @@ const options = // ['price', 'production', 'consumption']
   {
     key: 'priceDataSet',
     name: 'Price',
-    unit: 'EUR/MWh'
-  },
-  {
-    key: 'consumptionDataSet',
-    name: 'Consumption',
-    unit: 'MW'
+    unit: 'EUR/MWh',
+    fields: ['-price'],
   },
   {
     key: 'productionDataSet',
     name: 'Production',
-    unit: 'MW'
+    unit: 'MW',
+    fields: [
+      '-Nuclear',
+      '-Hydro Run-of-River',
+      '-Biomass',
+      '-Fossil brown coal / lignite',
+      '-Fossil hard coal',
+      '-Fossil oil',
+      '-Fossil gas',
+      '-Geothermal',
+      '-Hydro water reservoir',
+      '-Hydro pumped storage',
+      '-Wind offshore',
+      '-Wind onshore',
+      '-Solar',
+    ],
+  },
+  {
+    key: 'consumptionDataSet',
+    name: 'Consumption',
+    unit: 'MW',
+    fields: ['-Load'],
   },
   {
     key: 'exportDataSet',
     name: 'Export',
-    unit: 'MW'
+    unit: 'MW',
+    fields: ['-Import Balance'],
   },
 ].map(option => {
-    const typeFiles = allFiles.filter(file => file.includes(option.name.toLowerCase()))
+    const typeFiles = allFiles // .filter(file => file.includes(option.name.toLowerCase()))
 
     const files = typeFiles
       .map(file => ({
-        file,
-        options: Object.keys(JSON.parse(fs.readFileSync(folder + file))[0]).filter(option => option !== 'x')
+        file: file,
+        options: Object.keys(JSON.parse(fs.readFileSync(folder + file))[0])
+          .filter(key => key !== 'x')
+          .filter(key => option.fields.some(partial => key.includes(partial)))
       }))
       // .sort((a, b) => a.localeCompare(b))
 
