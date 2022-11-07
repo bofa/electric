@@ -6,31 +6,60 @@
     "fields": [],
     "files": [
       {
-        "file": "price.json",
-        "options": [
-          "SYS",
-          "SE1",
-          "SE2",
-          "SE3",
-          "SE4",
-          "FI",
-          "DK1",
-          "DK2",
-          "Oslo",
-          "Kr.sand",
-          "Bergen",
-          "Molde",
-          "Tr.heim",
-          "Tromsø",
-          "EE",
-          "LV",
-          "LT",
-          "AT",
-          "BE",
-          "DE-LU",
-          "FR",
-          "NL"
-        ]
+        "file": "production-ch.json",
+        "options": []
+      },
+      {
+        "file": "production-de.json",
+        "options": []
+      },
+      {
+        "file": "production-dk.json",
+        "options": []
+      },
+      {
+        "file": "production-es.json",
+        "options": []
+      },
+      {
+        "file": "production-fi.json",
+        "options": []
+      },
+      {
+        "file": "production-fr.json",
+        "options": []
+      },
+      {
+        "file": "production-ie.json",
+        "options": []
+      },
+      {
+        "file": "production-it.json",
+        "options": []
+      },
+      {
+        "file": "production-lu.json",
+        "options": []
+      },
+      {
+        "file": "production-nl.json",
+        "options": []
+      },
+      {
+        "file": "production-pl.json",
+        "options": []
+      },
+      {
+        "file": "production-pt.json",
+        "options": []
+      },
+      {
+        "file": "production-se.json",
+        "options": []
+      },
+      {
+        "file": "production-uk.json",
+        "options": []
       }
     ]
   },
@@ -70,6 +99,7 @@
       {
         "file": "production-de.json",
         "options": [
+          "DE-Hydro pumped storage consumption",
           "DE-Import Balance",
           "DE-Nuclear",
           "DE-Hydro Run-of-River",
@@ -102,6 +132,7 @@
       {
         "file": "production-es.json",
         "options": [
+          "ES-Hydro pumped storage consumption",
           "ES-Import Balance",
           "ES-Nuclear",
           "ES-Hydro Run-of-River",
@@ -131,6 +162,7 @@
       {
         "file": "production-fr.json",
         "options": [
+          "FR-Hydro pumped storage consumption",
           "FR-Import Balance",
           "FR-Nuclear",
           "FR-Hydro Run-of-River",
@@ -147,6 +179,7 @@
       {
         "file": "production-ie.json",
         "options": [
+          "IE-Hydro pumped storage consumption",
           "IE-Import Balance",
           "IE-Hydro Run-of-River",
           "IE-Fossil hard coal",
@@ -159,6 +192,7 @@
       {
         "file": "production-it.json",
         "options": [
+          "IT-Hydro pumped storage consumption",
           "IT-Import Balance",
           "IT-Hydro Run-of-River",
           "IT-Biomass",
@@ -209,6 +243,7 @@
       {
         "file": "production-pt.json",
         "options": [
+          "PT-Hydro pumped storage consumption",
           "PT-Import Balance",
           "PT-Hydro Run-of-River",
           "PT-Biomass",
@@ -230,16 +265,6 @@
         ]
       },
       {
-        "file": "production-sweden-granular.json",
-        "options": [
-          "SE-nuclear",
-          "SE-solar",
-          "SE-misc",
-          "SE-hydro",
-          "SE-wind"
-        ]
-      },
-      {
         "file": "production-uk.json",
         "options": [
           "UK-Import Balance",
@@ -254,21 +279,6 @@
           "UK-Wind onshore",
           "UK-Solar"
         ]
-      },
-      {
-        "file": "production-wind.json",
-        "options": [
-          "SE1-wind",
-          "SE2-wind",
-          "SE3-wind",
-          "SE4-wind",
-          "FI-wind",
-          "DK1-wind",
-          "DK2-wind",
-          "EE-wind",
-          "LV-wind",
-          "LT-wind"
-        ]
       }
     ]
   },
@@ -281,96 +291,87 @@
     ],
     "files": [
       {
-        "file": "consumption-ch.json",
+        "file": "production-ch.json",
         "options": [
-          "CH"
+          "CH-Load"
         ]
       },
       {
-        "file": "consumption-de.json",
+        "file": "production-de.json",
         "options": [
-          "DE"
+          "DE-Load"
         ]
       },
       {
-        "file": "consumption-dk.json",
+        "file": "production-dk.json",
         "options": [
-          "DK"
+          "DK-Load"
         ]
       },
       {
-        "file": "consumption-es.json",
+        "file": "production-es.json",
         "options": [
-          "ES"
+          "ES-Load"
         ]
       },
       {
-        "file": "consumption-fi.json",
+        "file": "production-fi.json",
         "options": [
-          "FI"
+          "FI-Load"
         ]
       },
       {
-        "file": "consumption-fr.json",
+        "file": "production-fr.json",
         "options": [
-          "FR"
+          "FR-Load"
         ]
       },
       {
-        "file": "consumption-ie.json",
+        "file": "production-ie.json",
         "options": [
-          "IE"
+          "IE-Load"
         ]
       },
       {
-        "file": "consumption-it.json",
+        "file": "production-it.json",
         "options": [
-          "IT"
+          "IT-Load"
         ]
       },
       {
-        "file": "consumption-lu.json",
+        "file": "production-lu.json",
         "options": [
-          "LU"
+          "LU-Load"
         ]
       },
       {
-        "file": "consumption-nl.json",
+        "file": "production-nl.json",
         "options": [
-          "NL"
+          "NL-Load"
         ]
       },
       {
-        "file": "consumption-pl.json",
+        "file": "production-pl.json",
         "options": [
-          "PL"
+          "PL-Load"
         ]
       },
       {
-        "file": "consumption-pt.json",
+        "file": "production-pt.json",
         "options": [
-          "PT"
+          "PT-Load"
         ]
       },
       {
-        "file": "consumption-se.json",
+        "file": "production-se.json",
         "options": [
-          "SE"
+          "SE-Load"
         ]
       },
       {
-        "file": "consumption-sweden-granular.json",
+        "file": "production-uk.json",
         "options": [
-          "SE1",
-          "SE2",
-          "SE3",
-          "SE4"
-        ]
-      },
-      {
-        "file": "consumption-uk.json",
-        "options": [
-          "UK"
+          "UK-Load"
         ]
       }
     ]
@@ -384,101 +385,87 @@
     ],
     "files": [
       {
-        "file": "export-ch.json",
+        "file": "production-ch.json",
         "options": [
-          "CH"
+          "CH-Import Balance"
         ]
       },
       {
-        "file": "export-de.json",
+        "file": "production-de.json",
         "options": [
-          "DE"
+          "DE-Import Balance"
         ]
       },
       {
-        "file": "export-dk.json",
+        "file": "production-dk.json",
         "options": [
-          "DK"
+          "DK-Import Balance"
         ]
       },
       {
-        "file": "export-es.json",
+        "file": "production-es.json",
         "options": [
-          "ES"
+          "ES-Import Balance"
         ]
       },
       {
-        "file": "export-fi.json",
+        "file": "production-fi.json",
         "options": [
-          "FI"
+          "FI-Import Balance"
         ]
       },
       {
-        "file": "export-fr.json",
+        "file": "production-fr.json",
         "options": [
-          "FR"
+          "FR-Import Balance"
         ]
       },
       {
-        "file": "export-ie.json",
+        "file": "production-ie.json",
         "options": [
-          "IE"
+          "IE-Import Balance"
         ]
       },
       {
-        "file": "export-it.json",
+        "file": "production-it.json",
         "options": [
-          "IT"
+          "IT-Import Balance"
         ]
       },
       {
-        "file": "export-lu.json",
+        "file": "production-lu.json",
         "options": [
-          "LU"
+          "LU-Import Balance"
         ]
       },
       {
-        "file": "export-nl.json",
+        "file": "production-nl.json",
         "options": [
-          "NL"
+          "NL-Import Balance"
         ]
       },
       {
-        "file": "export-pl.json",
+        "file": "production-pl.json",
         "options": [
-          "PL"
+          "PL-Import Balance"
         ]
       },
       {
-        "file": "export-pt.json",
+        "file": "production-pt.json",
         "options": [
-          "PT"
+          "PT-Import Balance"
         ]
       },
       {
-        "file": "export-se.json",
+        "file": "production-se.json",
         "options": [
-          "SE"
+          "SE-Import Balance"
         ]
       },
       {
-        "file": "export-uk.json",
+        "file": "production-uk.json",
         "options": [
-          "UK"
-        ]
-      },
-      {
-        "file": "export.json",
-        "options": [
-          "NO",
-          "SE",
-          "FI",
-          "DK",
-          "Nordic",
-          "EE",
-          "LV",
-          "LT",
-          "Baltic"
+          "UK-Import Balance"
         ]
       }
     ]
