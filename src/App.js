@@ -77,7 +77,7 @@ function App () {
 
     setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
-    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/extra/` + file)
+    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/raw/` + file)
       .then(response => response.data)
       .catch(error => {
         console.warn('Error', error);
