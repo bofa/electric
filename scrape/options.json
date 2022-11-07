@@ -3,6 +3,7 @@
     "key": "priceDataSet",
     "name": "Price",
     "unit": "EUR/MWh",
+    "fields": [],
     "files": [
       {
         "file": "price.json",
@@ -34,103 +35,25 @@
     ]
   },
   {
-    "key": "consumptionDataSet",
-    "name": "Consumption",
-    "unit": "MW",
-    "files": [
-      {
-        "file": "consumption-ch.json",
-        "options": [
-          "CH"
-        ]
-      },
-      {
-        "file": "consumption-de.json",
-        "options": [
-          "DE"
-        ]
-      },
-      {
-        "file": "consumption-dk.json",
-        "options": [
-          "DK"
-        ]
-      },
-      {
-        "file": "consumption-es.json",
-        "options": [
-          "ES"
-        ]
-      },
-      {
-        "file": "consumption-fi.json",
-        "options": [
-          "FI"
-        ]
-      },
-      {
-        "file": "consumption-fr.json",
-        "options": [
-          "FR"
-        ]
-      },
-      {
-        "file": "consumption-ie.json",
-        "options": [
-          "IE"
-        ]
-      },
-      {
-        "file": "consumption-it.json",
-        "options": [
-          "IT"
-        ]
-      },
-      {
-        "file": "consumption-lu.json",
-        "options": [
-          "LU"
-        ]
-      },
-      {
-        "file": "consumption-nl.json",
-        "options": [
-          "NL"
-        ]
-      },
-      {
-        "file": "consumption-pl.json",
-        "options": [
-          "PL"
-        ]
-      },
-      {
-        "file": "consumption-pt.json",
-        "options": [
-          "PT"
-        ]
-      },
-      {
-        "file": "consumption-sweden-granular.json",
-        "options": [
-          "SE1",
-          "SE2",
-          "SE3",
-          "SE4"
-        ]
-      },
-      {
-        "file": "consumption-uk.json",
-        "options": [
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
     "key": "productionDataSet",
     "name": "Production",
     "unit": "MW",
+    "fields": [
+      "-Import Balance",
+      "-Nuclear",
+      "-Hydro Run-of-River",
+      "-Biomass",
+      "-Fossil brown coal / lignite",
+      "-Fossil hard coal",
+      "-Fossil oil",
+      "-Fossil gas",
+      "-Geothermal",
+      "-Hydro water reservoir",
+      "-Hydro pumped storage",
+      "-Wind offshore",
+      "-Wind onshore",
+      "-Solar"
+    ],
     "files": [
       {
         "file": "production-ch.json",
@@ -341,9 +264,111 @@
     ]
   },
   {
+    "key": "consumptionDataSet",
+    "name": "Consumption",
+    "unit": "MW",
+    "fields": [
+      "-Load",
+      ""
+    ],
+    "files": [
+      {
+        "file": "consumption-ch.json",
+        "options": [
+          "CH"
+        ]
+      },
+      {
+        "file": "consumption-de.json",
+        "options": [
+          "DE"
+        ]
+      },
+      {
+        "file": "consumption-dk.json",
+        "options": [
+          "DK"
+        ]
+      },
+      {
+        "file": "consumption-es.json",
+        "options": [
+          "ES"
+        ]
+      },
+      {
+        "file": "consumption-fi.json",
+        "options": [
+          "FI"
+        ]
+      },
+      {
+        "file": "consumption-fr.json",
+        "options": [
+          "FR"
+        ]
+      },
+      {
+        "file": "consumption-ie.json",
+        "options": [
+          "IE"
+        ]
+      },
+      {
+        "file": "consumption-it.json",
+        "options": [
+          "IT"
+        ]
+      },
+      {
+        "file": "consumption-lu.json",
+        "options": [
+          "LU"
+        ]
+      },
+      {
+        "file": "consumption-nl.json",
+        "options": [
+          "NL"
+        ]
+      },
+      {
+        "file": "consumption-pl.json",
+        "options": [
+          "PL"
+        ]
+      },
+      {
+        "file": "consumption-pt.json",
+        "options": [
+          "PT"
+        ]
+      },
+      {
+        "file": "consumption-sweden-granular.json",
+        "options": [
+          "SE1",
+          "SE2",
+          "SE3",
+          "SE4"
+        ]
+      },
+      {
+        "file": "consumption-uk.json",
+        "options": [
+          "UK"
+        ]
+      }
+    ]
+  },
+  {
     "key": "exportDataSet",
     "name": "Export",
     "unit": "MW",
+    "fields": [
+      "-Import Balance",
+      ""
+    ],
     "files": [
       {
         "file": "export-ch.json",
