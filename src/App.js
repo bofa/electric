@@ -92,7 +92,9 @@ function App () {
                         : option.key === 'exportDataSet'      ? setExportDataSet
                         : () => {};
 
-          const seriesFiltered = series.filter(s => option.fields.some(f => s.label.includes(f)))
+          const seriesFiltered = series
+            .filter(s => option.fields.some(f => s.label.includes(f)))
+            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2020) }))
 
           setFunc(state => state.concat(seriesFiltered));
         })
