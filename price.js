@@ -49,7 +49,7 @@ Promise.all(data$).then(response => {
     .filter(key => key !== 'x')
     .reduce((sum, key) => ({ ...sum, [key+'-price']: p[key] }), { x: p.x }))
 
-  fs.writeFileSync('scrape/extra/price.json', JSON.stringify(formatted, null, 2));
+  fs.writeFileSync('scrape/raw/price.json', JSON.stringify(formatted, null, 2));
   // const from2021 = unique.filter(p => luxon.DateTime.fromISO(p.x).year === 2021);
   // fs.writeFileSync('src/data2021.json', JSON.stringify(from2021, null, 2));
 })
