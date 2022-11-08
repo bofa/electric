@@ -51,6 +51,10 @@
         "options": []
       },
       {
+        "file": "production-ee.json",
+        "options": []
+      },
+      {
         "file": "production-es.json",
         "options": []
       },
@@ -63,6 +67,10 @@
         "options": []
       },
       {
+        "file": "production-hu.json",
+        "options": []
+      },
+      {
         "file": "production-ie.json",
         "options": []
       },
@@ -71,7 +79,19 @@
         "options": []
       },
       {
+        "file": "production-lt.json",
+        "options": []
+      },
+      {
         "file": "production-lu.json",
+        "options": []
+      },
+      {
+        "file": "production-lv.json",
+        "options": []
+      },
+      {
+        "file": "production-mt.json",
         "options": []
       },
       {
@@ -178,6 +198,17 @@
         ]
       },
       {
+        "file": "production-ee.json",
+        "options": [
+          "EE-Hydro Run-of-River",
+          "EE-Biomass",
+          "EE-Fossil oil shale",
+          "EE-Fossil gas",
+          "EE-Wind onshore",
+          "EE-Solar"
+        ]
+      },
+      {
         "file": "production-es.json",
         "options": [
           "ES-Hydro pumped storage consumption",
@@ -222,6 +253,20 @@
         ]
       },
       {
+        "file": "production-hu.json",
+        "options": [
+          "HU-Nuclear",
+          "HU-Hydro Run-of-River",
+          "HU-Biomass",
+          "HU-Fossil brown coal / lignite",
+          "HU-Fossil oil",
+          "HU-Fossil gas",
+          "HU-Hydro water reservoir",
+          "HU-Wind onshore",
+          "HU-Solar"
+        ]
+      },
+      {
         "file": "production-ie.json",
         "options": [
           "IE-Hydro pumped storage consumption",
@@ -250,7 +295,32 @@
         ]
       },
       {
+        "file": "production-lt.json",
+        "options": [
+          "LT-Hydro pumped storage consumption",
+          "LT-Hydro Run-of-River",
+          "LT-Biomass",
+          "LT-Fossil gas",
+          "LT-Hydro pumped storage",
+          "LT-Wind onshore",
+          "LT-Solar"
+        ]
+      },
+      {
         "file": "production-lu.json",
+        "options": []
+      },
+      {
+        "file": "production-lv.json",
+        "options": [
+          "LV-Hydro Run-of-River",
+          "LV-Biomass",
+          "LV-Fossil gas",
+          "LV-Wind onshore"
+        ]
+      },
+      {
+        "file": "production-mt.json",
         "options": []
       },
       {
@@ -355,6 +425,12 @@
         ]
       },
       {
+        "file": "production-ee.json",
+        "options": [
+          "EE-Load"
+        ]
+      },
+      {
         "file": "production-es.json",
         "options": [
           "ES-Load"
@@ -373,6 +449,12 @@
         ]
       },
       {
+        "file": "production-hu.json",
+        "options": [
+          "HU-Load"
+        ]
+      },
+      {
         "file": "production-ie.json",
         "options": [
           "IE-Load"
@@ -385,10 +467,26 @@
         ]
       },
       {
+        "file": "production-lt.json",
+        "options": [
+          "LT-Load"
+        ]
+      },
+      {
         "file": "production-lu.json",
         "options": [
           "LU-Load"
         ]
+      },
+      {
+        "file": "production-lv.json",
+        "options": [
+          "LV-Load"
+        ]
+      },
+      {
+        "file": "production-mt.json",
+        "options": []
       },
       {
         "file": "production-nl.json",
@@ -459,6 +557,12 @@
         ]
       },
       {
+        "file": "production-ee.json",
+        "options": [
+          "EE-Import Balance"
+        ]
+      },
+      {
         "file": "production-es.json",
         "options": [
           "ES-Import Balance"
@@ -477,6 +581,12 @@
         ]
       },
       {
+        "file": "production-hu.json",
+        "options": [
+          "HU-Import Balance"
+        ]
+      },
+      {
         "file": "production-ie.json",
         "options": [
           "IE-Import Balance"
@@ -489,9 +599,27 @@
         ]
       },
       {
+        "file": "production-lt.json",
+        "options": [
+          "LT-Import Balance"
+        ]
+      },
+      {
         "file": "production-lu.json",
         "options": [
           "LU-Import Balance"
+        ]
+      },
+      {
+        "file": "production-lv.json",
+        "options": [
+          "LV-Import Balance"
+        ]
+      },
+      {
+        "file": "production-mt.json",
+        "options": [
+          "MT-Import Balance"
         ]
       },
       {

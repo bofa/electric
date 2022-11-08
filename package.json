@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scrape": "npm run price && npm run consumption && npm run production && npm run granular && npm run processcrape",
+    "scrape": "npm run price && npm run markets && npm run options",
     "price": "node price.js",
     "priceuk": "node price-uk.js",
     "pricepl": "node price-pl.js",
@@ -37,6 +37,7 @@
     "productiongranular": "node production-sweden-granular.js",
     "productiongermany": "node production-market.js de",
     "market": "node market.js",
+    "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se uk",
     "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind && npm run productiongermany",
     "options": "node process-scrape.js"
   },
