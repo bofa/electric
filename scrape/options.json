@@ -10,28 +10,94 @@
       {
         "file": "price.json",
         "options": [
-          "SYS-price",
-          "SE1-price",
-          "SE2-price",
-          "SE3-price",
-          "SE4-price",
-          "FI-price",
-          "DK1-price",
-          "DK2-price",
-          "Oslo-price",
-          "Kr.sand-price",
-          "Bergen-price",
-          "Molde-price",
-          "Tr.heim-price",
-          "Tromsø-price",
-          "EE-price",
-          "LV-price",
-          "LT-price",
-          "AT-price",
-          "BE-price",
-          "DE-LU-price",
-          "FR-price",
-          "NL-price"
+          [
+            "SYS-price",
+            92.1676347121637
+          ],
+          [
+            "SE1-price",
+            41.586299864980916
+          ],
+          [
+            "SE2-price",
+            43.168919234073726
+          ],
+          [
+            "SE3-price",
+            89.03718485331972
+          ],
+          [
+            "SE4-price",
+            108.99299864980937
+          ],
+          [
+            "FI-price",
+            103.63735117221037
+          ],
+          [
+            "DK1-price",
+            148.59360807659266
+          ],
+          [
+            "DK2-price",
+            143.6451024917147
+          ],
+          [
+            "Oslo-price",
+            127.89225850006105
+          ],
+          [
+            "Kr.sand-price",
+            138.1942389836746
+          ],
+          [
+            "Bergen-price",
+            127.5602105069348
+          ],
+          [
+            "Molde-price",
+            34.42870013501905
+          ],
+          [
+            "Tr.heim-price",
+            34.42870013501905
+          ],
+          [
+            "Tromsø-price",
+            26.08975389713993
+          ],
+          [
+            "EE-price",
+            130.6911120657917
+          ],
+          [
+            "LV-price",
+            149.64210691051946
+          ],
+          [
+            "LT-price",
+            152.3125813182768
+          ],
+          [
+            "AT-price",
+            178.88072848901461
+          ],
+          [
+            "BE-price",
+            168.76466613477314
+          ],
+          [
+            "DE-LU-price",
+            161.01098686633128
+          ],
+          [
+            "FR-price",
+            187.6533472443836
+          ],
+          [
+            "NL-price",
+            167.25075549281823
+          ]
         ]
       },
       {
@@ -148,175 +214,517 @@
       {
         "file": "production-at.json",
         "options": [
-          "AT-Hydro pumped storage consumption",
-          "AT-Hydro Run-of-River",
-          "AT-Biomass",
-          "AT-Fossil hard coal",
-          "AT-Fossil gas",
-          "AT-Geothermal",
-          "AT-Hydro water reservoir",
-          "AT-Hydro pumped storage",
-          "AT-Others",
-          "AT-Wind onshore",
-          "AT-Solar"
+          [
+            "AT-Hydro pumped storage consumption",
+            -316.81316846248814
+          ],
+          [
+            "AT-Hydro Run-of-River",
+            3106.783889308576
+          ],
+          [
+            "AT-Biomass",
+            139.65329410361417
+          ],
+          [
+            "AT-Fossil hard coal",
+            null
+          ],
+          [
+            "AT-Fossil gas",
+            1068.1306508687192
+          ],
+          [
+            "AT-Geothermal",
+            0.09977734483713623
+          ],
+          [
+            "AT-Hydro water reservoir",
+            536.4382648801285
+          ],
+          [
+            "AT-Hydro pumped storage",
+            628.8040077929331
+          ],
+          [
+            "AT-Others",
+            21.951015864180352
+          ],
+          [
+            "AT-Wind onshore",
+            813.1824579539581
+          ],
+          [
+            "AT-Solar",
+            94.78700648085564
+          ]
         ]
       },
       {
         "file": "production-ch.json",
         "options": [
-          "CH-Nuclear",
-          "CH-Hydro Run-of-River",
-          "CH-Hydro water reservoir",
-          "CH-Hydro pumped storage",
-          "CH-Wind onshore",
-          "CH-Solar"
+          [
+            "CH-Nuclear",
+            2431.5785967286365
+          ],
+          [
+            "CH-Hydro Run-of-River",
+            1921.137557209375
+          ],
+          [
+            "CH-Hydro water reservoir",
+            2005.6499542325048
+          ],
+          [
+            "CH-Hydro pumped storage",
+            475.6610259879772
+          ],
+          [
+            "CH-Wind onshore",
+            14.11882835197188
+          ],
+          [
+            "CH-Solar",
+            344.6415449516465
+          ]
         ]
       },
       {
         "file": "production-de.json",
         "options": [
-          "DE-Hydro pumped storage consumption",
-          "DE-Nuclear",
-          "DE-Hydro Run-of-River",
-          "DE-Biomass",
-          "DE-Fossil brown coal / lignite",
-          "DE-Fossil hard coal",
-          "DE-Fossil oil",
-          "DE-Fossil gas",
-          "DE-Geothermal",
-          "DE-Hydro water reservoir",
-          "DE-Hydro pumped storage",
-          "DE-Others",
-          "DE-Wind offshore",
-          "DE-Wind onshore",
-          "DE-Solar"
+          [
+            "DE-Hydro pumped storage consumption",
+            -886.2226728220584
+          ],
+          [
+            "DE-Nuclear",
+            6162.296660962278
+          ],
+          [
+            "DE-Hydro Run-of-River",
+            1904.4074342340768
+          ],
+          [
+            "DE-Biomass",
+            4810.242504079307
+          ],
+          [
+            "DE-Fossil brown coal / lignite",
+            10848.139821705838
+          ],
+          [
+            "DE-Fossil hard coal",
+            5030.528940979827
+          ],
+          [
+            "DE-Fossil oil",
+            74.44986269749414
+          ],
+          [
+            "DE-Fossil gas",
+            5843.03917300118
+          ],
+          [
+            "DE-Geothermal",
+            20.277613722290763
+          ],
+          [
+            "DE-Hydro water reservoir",
+            145.03454451386946
+          ],
+          [
+            "DE-Hydro pumped storage",
+            723.2023122537463
+          ],
+          [
+            "DE-Others",
+            67.51789708281937
+          ],
+          [
+            "DE-Wind offshore",
+            2841.6853543996567
+          ],
+          [
+            "DE-Wind onshore",
+            10932.42759581329
+          ],
+          [
+            "DE-Solar",
+            6150.891690213702
+          ]
         ]
       },
       {
         "file": "production-dk.json",
         "options": [
-          "DK-Biomass",
-          "DK-Fossil hard coal",
-          "DK-Fossil oil",
-          "DK-Fossil gas",
-          "DK-Wind offshore",
-          "DK-Wind onshore",
-          "DK-Solar"
+          [
+            "DK-Biomass",
+            446.4813984956431
+          ],
+          [
+            "DK-Fossil hard coal",
+            552.8500139292395
+          ],
+          [
+            "DK-Fossil oil",
+            34.626457595415324
+          ],
+          [
+            "DK-Fossil gas",
+            243.91469335774204
+          ],
+          [
+            "DK-Wind offshore",
+            819.0459067934864
+          ],
+          [
+            "DK-Wind onshore",
+            1108.614004855332
+          ],
+          [
+            "DK-Solar",
+            188.3047916583903
+          ]
         ]
       },
       {
         "file": "production-ee.json",
         "options": [
-          "EE-Hydro Run-of-River",
-          "EE-Biomass",
-          "EE-Fossil oil shale",
-          "EE-Fossil gas",
-          "EE-Wind onshore",
-          "EE-Solar"
+          [
+            "EE-Hydro Run-of-River",
+            1.9755601544156225
+          ],
+          [
+            "EE-Biomass",
+            86.0737453735031
+          ],
+          [
+            "EE-Fossil oil shale",
+            368.68204720022186
+          ],
+          [
+            "EE-Fossil gas",
+            3.0348429975727274
+          ],
+          [
+            "EE-Wind onshore",
+            89.6589644605402
+          ],
+          [
+            "EE-Solar",
+            38.32122816094306
+          ]
         ]
       },
       {
         "file": "production-es.json",
         "options": [
-          "ES-Hydro pumped storage consumption",
-          "ES-Nuclear",
-          "ES-Hydro Run-of-River",
-          "ES-Biomass",
-          "ES-Fossil brown coal / lignite",
-          "ES-Fossil hard coal",
-          "ES-Fossil oil",
-          "ES-Fossil gas",
-          "ES-Hydro water reservoir",
-          "ES-Others",
-          "ES-Wind onshore",
-          "ES-Solar"
+          [
+            "ES-Hydro pumped storage consumption",
+            -575.5174672662871
+          ],
+          [
+            "ES-Nuclear",
+            6288.57148883671
+          ],
+          [
+            "ES-Hydro Run-of-River",
+            965.3059975325347
+          ],
+          [
+            "ES-Biomass",
+            459.5326939149121
+          ],
+          [
+            "ES-Fossil brown coal / lignite",
+            null
+          ],
+          [
+            "ES-Fossil hard coal",
+            685.9551319297965
+          ],
+          [
+            "ES-Fossil oil",
+            164.91918653241538
+          ],
+          [
+            "ES-Fossil gas",
+            7639.198424006047
+          ],
+          [
+            "ES-Hydro water reservoir",
+            2383.745214311299
+          ],
+          [
+            "ES-Others",
+            45.6183388386994
+          ],
+          [
+            "ES-Wind onshore",
+            6372.458598320529
+          ],
+          [
+            "ES-Solar",
+            2961.3141879253394
+          ]
         ]
       },
       {
         "file": "production-fi.json",
         "options": [
-          "FI-Nuclear",
-          "FI-Hydro Run-of-River",
-          "FI-Biomass",
-          "FI-Fossil hard coal",
-          "FI-Fossil oil",
-          "FI-Fossil gas",
-          "FI-Others",
-          "FI-Wind onshore"
+          [
+            "FI-Nuclear",
+            2609.444835269774
+          ],
+          [
+            "FI-Hydro Run-of-River",
+            1577.3630510902394
+          ],
+          [
+            "FI-Biomass",
+            689.2094421454751
+          ],
+          [
+            "FI-Fossil hard coal",
+            363.3378043928008
+          ],
+          [
+            "FI-Fossil oil",
+            3.538735476682781
+          ],
+          [
+            "FI-Fossil gas",
+            390.89306859780515
+          ],
+          [
+            "FI-Others",
+            72.30462756644901
+          ],
+          [
+            "FI-Wind onshore",
+            979.9309366544678
+          ]
         ]
       },
       {
         "file": "production-fr.json",
         "options": [
-          "FR-Hydro pumped storage consumption",
-          "FR-Nuclear",
-          "FR-Hydro Run-of-River",
-          "FR-Biomass",
-          "FR-Fossil hard coal",
-          "FR-Fossil oil",
-          "FR-Fossil gas",
-          "FR-Hydro water reservoir",
-          "FR-Hydro pumped storage",
-          "FR-Wind onshore",
-          "FR-Solar"
+          [
+            "FR-Hydro pumped storage consumption",
+            -606.6442074262745
+          ],
+          [
+            "FR-Nuclear",
+            37005.65061487643
+          ],
+          [
+            "FR-Hydro Run-of-River",
+            4383.305488120349
+          ],
+          [
+            "FR-Biomass",
+            361.8501213833725
+          ],
+          [
+            "FR-Fossil hard coal",
+            298.23019063159154
+          ],
+          [
+            "FR-Fossil oil",
+            191.04015600748198
+          ],
+          [
+            "FR-Fossil gas",
+            4053.030843315955
+          ],
+          [
+            "FR-Hydro water reservoir",
+            1656.2548652843554
+          ],
+          [
+            "FR-Hydro pumped storage",
+            550.2841166872289
+          ],
+          [
+            "FR-Wind onshore",
+            4099.423170294902
+          ],
+          [
+            "FR-Solar",
+            1709.9616348947347
+          ]
         ]
       },
       {
         "file": "production-hu.json",
         "options": [
-          "HU-Nuclear",
-          "HU-Hydro Run-of-River",
-          "HU-Biomass",
-          "HU-Fossil brown coal / lignite",
-          "HU-Fossil oil",
-          "HU-Fossil gas",
-          "HU-Hydro water reservoir",
-          "HU-Others",
-          "HU-Wind onshore",
-          "HU-Solar"
+          [
+            "HU-Nuclear",
+            1713.86922189974
+          ],
+          [
+            "HU-Hydro Run-of-River",
+            10.684382330722528
+          ],
+          [
+            "HU-Biomass",
+            122.72088187348415
+          ],
+          [
+            "HU-Fossil brown coal / lignite",
+            369.9178203649971
+          ],
+          [
+            "HU-Fossil oil",
+            1.59680330801956
+          ],
+          [
+            "HU-Fossil gas",
+            917.1677388572976
+          ],
+          [
+            "HU-Hydro water reservoir",
+            10.679738380185269
+          ],
+          [
+            "HU-Others",
+            63.72964892051857
+          ],
+          [
+            "HU-Wind onshore",
+            71.47060554252324
+          ],
+          [
+            "HU-Solar",
+            275.44102023776327
+          ]
         ]
       },
       {
         "file": "production-ie.json",
         "options": [
-          "IE-Hydro pumped storage consumption",
-          "IE-Hydro Run-of-River",
-          "IE-Fossil hard coal",
-          "IE-Fossil oil",
-          "IE-Fossil gas",
-          "IE-Hydro pumped storage",
-          "IE-Others",
-          "IE-Wind onshore"
+          [
+            "IE-Hydro pumped storage consumption",
+            -55.28675229028176
+          ],
+          [
+            "IE-Hydro Run-of-River",
+            84.42386384048824
+          ],
+          [
+            "IE-Fossil hard coal",
+            243.15957427699004
+          ],
+          [
+            "IE-Fossil oil",
+            273.13034848211316
+          ],
+          [
+            "IE-Fossil gas",
+            836.5829890425733
+          ],
+          [
+            "IE-Hydro pumped storage",
+            30.796587030716676
+          ],
+          [
+            "IE-Others",
+            5.9206349919166525
+          ],
+          [
+            "IE-Wind onshore",
+            1175.8132656727116
+          ]
         ]
       },
       {
         "file": "production-it.json",
         "options": [
-          "IT-Hydro pumped storage consumption",
-          "IT-Hydro Run-of-River",
-          "IT-Biomass",
-          "IT-Fossil hard coal",
-          "IT-Fossil oil",
-          "IT-Fossil gas",
-          "IT-Geothermal",
-          "IT-Hydro water reservoir",
-          "IT-Hydro pumped storage",
-          "IT-Others",
-          "IT-Wind onshore",
-          "IT-Solar"
+          [
+            "IT-Hydro pumped storage consumption",
+            -269.46304771759463
+          ],
+          [
+            "IT-Hydro Run-of-River",
+            3667.387232857086
+          ],
+          [
+            "IT-Biomass",
+            654.1092450352211
+          ],
+          [
+            "IT-Fossil hard coal",
+            1707.356309945477
+          ],
+          [
+            "IT-Fossil oil",
+            179.82950610896646
+          ],
+          [
+            "IT-Fossil gas",
+            13000.303737015958
+          ],
+          [
+            "IT-Geothermal",
+            630.5363155171727
+          ],
+          [
+            "IT-Hydro water reservoir",
+            609.5425637760178
+          ],
+          [
+            "IT-Hydro pumped storage",
+            418.9377561985116
+          ],
+          [
+            "IT-Others",
+            2022.4780117005612
+          ],
+          [
+            "IT-Wind onshore",
+            2239.77355036415
+          ],
+          [
+            "IT-Solar",
+            2459.3682890914156
+          ]
         ]
       },
       {
         "file": "production-lt.json",
         "options": [
-          "LT-Hydro pumped storage consumption",
-          "LT-Hydro Run-of-River",
-          "LT-Biomass",
-          "LT-Fossil gas",
-          "LT-Hydro pumped storage",
-          "LT-Others",
-          "LT-Wind onshore",
-          "LT-Solar"
+          [
+            "LT-Hydro pumped storage consumption",
+            null
+          ],
+          [
+            "LT-Hydro Run-of-River",
+            37.63535240975831
+          ],
+          [
+            "LT-Biomass",
+            45.12662076650543
+          ],
+          [
+            "LT-Fossil gas",
+            118.00004377761005
+          ],
+          [
+            "LT-Hydro pumped storage",
+            76.74732757591451
+          ],
+          [
+            "LT-Others",
+            13.02461097624282
+          ],
+          [
+            "LT-Wind onshore",
+            161.59477056552632
+          ],
+          [
+            "LT-Solar",
+            21.750981016436477
+          ]
         ]
       },
       {
@@ -326,11 +734,26 @@
       {
         "file": "production-lv.json",
         "options": [
-          "LV-Hydro Run-of-River",
-          "LV-Biomass",
-          "LV-Fossil gas",
-          "LV-Others",
-          "LV-Wind onshore"
+          [
+            "LV-Hydro Run-of-River",
+            301.0075220886731
+          ],
+          [
+            "LV-Biomass",
+            52.91128711295073
+          ],
+          [
+            "LV-Fossil gas",
+            159.01954151078564
+          ],
+          [
+            "LV-Others",
+            51.075579081429595
+          ],
+          [
+            "LV-Wind onshore",
+            16.43417177425774
+          ]
         ]
       },
       {
@@ -340,74 +763,203 @@
       {
         "file": "production-nl.json",
         "options": [
-          "NL-Nuclear",
-          "NL-Biomass",
-          "NL-Fossil hard coal",
-          "NL-Fossil gas",
-          "NL-Others",
-          "NL-Wind offshore",
-          "NL-Wind onshore",
-          "NL-Solar"
+          [
+            "NL-Nuclear",
+            431.00749791060207
+          ],
+          [
+            "NL-Biomass",
+            15.694400445735692
+          ],
+          [
+            "NL-Fossil hard coal",
+            1940.3300115413676
+          ],
+          [
+            "NL-Fossil gas",
+            5087.037306483072
+          ],
+          [
+            "NL-Others",
+            1945.4336848808077
+          ],
+          [
+            "NL-Wind offshore",
+            785.0436820949499
+          ],
+          [
+            "NL-Wind onshore",
+            559.9046085883685
+          ],
+          [
+            "NL-Solar",
+            34.817053368886484
+          ]
         ]
       },
       {
         "file": "production-pl.json",
         "options": [
-          "PL-Hydro Run-of-River",
-          "PL-Biomass",
-          "PL-Fossil brown coal / lignite",
-          "PL-Fossil hard coal",
-          "PL-Fossil oil",
-          "PL-Fossil gas",
-          "PL-Hydro water reservoir",
-          "PL-Hydro pumped storage",
-          "PL-Wind onshore"
+          [
+            "PL-Hydro Run-of-River",
+            178.30364946074087
+          ],
+          [
+            "PL-Biomass",
+            213.54990647510988
+          ],
+          [
+            "PL-Fossil brown coal / lignite",
+            4500.201257611313
+          ],
+          [
+            "PL-Fossil hard coal",
+            8508.915811676683
+          ],
+          [
+            "PL-Fossil oil",
+            221.32791817567414
+          ],
+          [
+            "PL-Fossil gas",
+            1285.0243443307945
+          ],
+          [
+            "PL-Hydro water reservoir",
+            14.121765431607544
+          ],
+          [
+            "PL-Hydro pumped storage",
+            125.66630715962926
+          ],
+          [
+            "PL-Wind onshore",
+            1861.46116130059
+          ]
         ]
       },
       {
         "file": "production-pt.json",
         "options": [
-          "PT-Hydro pumped storage consumption",
-          "PT-Hydro Run-of-River",
-          "PT-Biomass",
-          "PT-Fossil hard coal",
-          "PT-Fossil gas",
-          "PT-Hydro water reservoir",
-          "PT-Hydro pumped storage",
-          "PT-Others",
-          "PT-Wind onshore",
-          "PT-Solar"
+          [
+            "PT-Hydro pumped storage consumption",
+            -264.64946275071736
+          ],
+          [
+            "PT-Hydro Run-of-River",
+            688.2475167144249
+          ],
+          [
+            "PT-Biomass",
+            380.87497612225235
+          ],
+          [
+            "PT-Fossil hard coal",
+            null
+          ],
+          [
+            "PT-Fossil gas",
+            1821.295666189117
+          ],
+          [
+            "PT-Hydro water reservoir",
+            254.40073623050415
+          ],
+          [
+            "PT-Hydro pumped storage",
+            365.34492199935795
+          ],
+          [
+            "PT-Others",
+            25.818234638650065
+          ],
+          [
+            "PT-Wind onshore",
+            1398.0312718879322
+          ],
+          [
+            "PT-Solar",
+            211.99570200572893
+          ]
         ]
       },
       {
         "file": "production-se.json",
         "options": [
-          "SE-Nuclear",
-          "SE-Hydro water reservoir",
-          "SE-Others",
-          "SE-Wind onshore"
+          [
+            "SE-Nuclear",
+            5678.972109682811
+          ],
+          [
+            "SE-Hydro water reservoir",
+            8197.615067457295
+          ],
+          [
+            "SE-Others",
+            898.4555498069777
+          ],
+          [
+            "SE-Wind onshore",
+            3259.08458232183
+          ]
         ]
       },
       {
         "file": "production-sweden-granular.json",
         "options": [
-          "SE-Solar"
+          [
+            "SE-Solar",
+            83.45282515991471
+          ]
         ]
       },
       {
         "file": "production-uk.json",
         "options": [
-          "UK-Nuclear",
-          "UK-Hydro Run-of-River",
-          "UK-Biomass",
-          "UK-Fossil hard coal",
-          "UK-Fossil oil",
-          "UK-Fossil gas",
-          "UK-Hydro pumped storage",
-          "UK-Others",
-          "UK-Wind offshore",
-          "UK-Wind onshore",
-          "UK-Solar"
+          [
+            "UK-Nuclear",
+            null
+          ],
+          [
+            "UK-Hydro Run-of-River",
+            null
+          ],
+          [
+            "UK-Biomass",
+            null
+          ],
+          [
+            "UK-Fossil hard coal",
+            null
+          ],
+          [
+            "UK-Fossil oil",
+            null
+          ],
+          [
+            "UK-Fossil gas",
+            null
+          ],
+          [
+            "UK-Hydro pumped storage",
+            null
+          ],
+          [
+            "UK-Others",
+            null
+          ],
+          [
+            "UK-Wind offshore",
+            null
+          ],
+          [
+            "UK-Wind onshore",
+            null
+          ],
+          [
+            "UK-Solar",
+            null
+          ]
         ]
       }
     ]
@@ -427,85 +979,127 @@
       {
         "file": "production-at.json",
         "options": [
-          "AT-Load"
+          [
+            "AT-Load",
+            7021.111240109696
+          ]
         ]
       },
       {
         "file": "production-ch.json",
         "options": [
-          "CH-Load"
+          [
+            "CH-Load",
+            7146.006506944765
+          ]
         ]
       },
       {
         "file": "production-de.json",
         "options": [
-          "DE-Load"
+          [
+            "DE-Load",
+            56216.6903768857
+          ]
         ]
       },
       {
         "file": "production-dk.json",
         "options": [
-          "DK-Load"
+          [
+            "DK-Load",
+            3966.6835515580724
+          ]
         ]
       },
       {
         "file": "production-ee.json",
         "options": [
-          "EE-Load"
+          [
+            "EE-Load",
+            925.6007084013186
+          ]
         ]
       },
       {
         "file": "production-es.json",
         "options": [
-          "ES-Load"
+          [
+            "ES-Load",
+            27316.805348827962
+          ]
         ]
       },
       {
         "file": "production-fi.json",
         "options": [
-          "FI-Load"
+          [
+            "FI-Load",
+            9158.796661626653
+          ]
         ]
       },
       {
         "file": "production-fr.json",
         "options": [
-          "FR-Load"
+          [
+            "FR-Load",
+            51132.3040951964
+          ]
         ]
       },
       {
         "file": "production-hu.json",
         "options": [
-          "HU-Load"
+          [
+            "HU-Load",
+            4952.134634805762
+          ]
         ]
       },
       {
         "file": "production-ie.json",
         "options": [
-          "IE-Load"
+          [
+            "IE-Load",
+            null
+          ]
         ]
       },
       {
         "file": "production-it.json",
         "options": [
-          "IT-Load"
+          [
+            "IT-Load",
+            32188.297846937556
+          ]
         ]
       },
       {
         "file": "production-lt.json",
         "options": [
-          "LT-Load"
+          [
+            "LT-Load",
+            1376.260922513627
+          ]
         ]
       },
       {
         "file": "production-lu.json",
         "options": [
-          "LU-Load"
+          [
+            "LU-Load",
+            453.28416842440345
+          ]
         ]
       },
       {
         "file": "production-lv.json",
         "options": [
-          "LV-Load"
+          [
+            "LV-Load",
+            803.7007482289262
+          ]
         ]
       },
       {
@@ -515,25 +1109,37 @@
       {
         "file": "production-nl.json",
         "options": [
-          "NL-Load"
+          [
+            "NL-Load",
+            11908.561595096919
+          ]
         ]
       },
       {
         "file": "production-pl.json",
         "options": [
-          "PL-Load"
+          [
+            "PL-Load",
+            19377.853432562562
+          ]
         ]
       },
       {
         "file": "production-pt.json",
         "options": [
-          "PT-Load"
+          [
+            "PT-Load",
+            5629.198085800731
+          ]
         ]
       },
       {
         "file": "production-se.json",
         "options": [
-          "SE-Load"
+          [
+            "SE-Load",
+            15251.551757074063
+          ]
         ]
       },
       {
@@ -543,7 +1149,10 @@
       {
         "file": "production-uk.json",
         "options": [
-          "UK-Load"
+          [
+            "UK-Load",
+            null
+          ]
         ]
       }
     ]
@@ -563,115 +1172,172 @@
       {
         "file": "production-at.json",
         "options": [
-          "AT-Import Balance"
+          [
+            "AT-Import Balance",
+            756.2401852809055
+          ]
         ]
       },
       {
         "file": "production-ch.json",
         "options": [
-          "CH-Import Balance"
+          [
+            "CH-Import Balance",
+            48.83848449874568
+          ]
         ]
       },
       {
         "file": "production-de.json",
         "options": [
-          "DE-Import Balance"
+          [
+            "DE-Import Balance",
+            -2435.676523261824
+          ]
         ]
       },
       {
         "file": "production-dk.json",
         "options": [
-          "DK-Import Balance"
+          [
+            "DK-Import Balance",
+            529.4673140446514
+          ]
         ]
       },
       {
         "file": "production-ee.json",
         "options": [
-          "EE-Import Balance"
+          [
+            "EE-Import Balance",
+            282.76411429935973
+          ]
         ]
       },
       {
         "file": "production-es.json",
         "options": [
-          "ES-Import Balance"
+          [
+            "ES-Import Balance",
+            -454.83228399729524
+          ]
         ]
       },
       {
         "file": "production-fi.json",
         "options": [
-          "FI-Import Balance"
+          [
+            "FI-Import Balance",
+            1712.235564220903
+          ]
         ]
       },
       {
         "file": "production-fr.json",
         "options": [
-          "FR-Import Balance"
+          [
+            "FR-Import Balance",
+            -2970.9568949735512
+          ]
         ]
       },
       {
         "file": "production-hu.json",
         "options": [
-          "HU-Import Balance"
+          [
+            "HU-Import Balance",
+            1379.365110731187
+          ]
         ]
       },
       {
         "file": "production-ie.json",
         "options": [
-          "IE-Import Balance"
+          [
+            "IE-Import Balance",
+            null
+          ]
         ]
       },
       {
         "file": "production-it.json",
         "options": [
-          "IT-Import Balance"
+          [
+            "IT-Import Balance",
+            4532.939352091356
+          ]
         ]
       },
       {
         "file": "production-lt.json",
         "options": [
-          "LT-Import Balance"
+          [
+            "LT-Import Balance",
+            984.9993871134625
+          ]
         ]
       },
       {
         "file": "production-lu.json",
         "options": [
-          "LU-Import Balance"
+          [
+            "LU-Import Balance",
+            439.15232220320735
+          ]
         ]
       },
       {
         "file": "production-lv.json",
         "options": [
-          "LV-Import Balance"
+          [
+            "LV-Import Balance",
+            222.7697086683115
+          ]
         ]
       },
       {
         "file": "production-mt.json",
         "options": [
-          "MT-Import Balance"
+          [
+            "MT-Import Balance",
+            66.27432374409618
+          ]
         ]
       },
       {
         "file": "production-nl.json",
         "options": [
-          "NL-Import Balance"
+          [
+            "NL-Import Balance",
+            -233.25402952998803
+          ]
         ]
       },
       {
         "file": "production-pl.json",
         "options": [
-          "PL-Import Balance"
+          [
+            "PL-Import Balance",
+            520.1543877104303
+          ]
         ]
       },
       {
         "file": "production-pt.json",
         "options": [
-          "PT-Import Balance"
+          [
+            "PT-Import Balance",
+            636.7242000955115
+          ]
         ]
       },
       {
         "file": "production-se.json",
         "options": [
-          "SE-Import Balance"
+          [
+            "SE-Import Balance",
+            -3188.5165399769257
+          ]
         ]
       },
       {
@@ -681,7 +1347,10 @@
       {
         "file": "production-uk.json",
         "options": [
-          "UK-Import Balance"
+          [
+            "UK-Import Balance",
+            1588.2467982648209
+          ]
         ]
       }
     ]
