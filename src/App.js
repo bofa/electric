@@ -128,7 +128,7 @@ function App () {
 
   const processedSeries = rangeDataSet
     .filter(series => selectedAreas.includes(series.label))
-    .map(series => ProcessSeries(series, windowSize, samplingSize, confidence, confidenceTransform))
+    .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
 
   const dataTimeSeries = {
     datasets: 

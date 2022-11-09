@@ -1,7 +1,12 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
-const importData = require('./scrape/production.json');
+
+let importData = [];
+try {
+  importData = require('./scrape/production.json');
+} catch {}
+importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
 
 function uniq(a, key) {
   var seen = {};

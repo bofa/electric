@@ -29,6 +29,7 @@ const options = // ['price', 'production', 'consumption']
       '-Wind offshore',
       '-Wind onshore',
       '-Solar',
+      '-Others'
     ],
   },
   {

@@ -61,8 +61,8 @@ function ProcessSeries(series, windowSize, samplingSize, confidenceTransform) {
 }
 
 let cache = {};
-const memoize = (series, windowSize, samplingSize, confidence, confidenceTransform) => {
-  const triggerKeys = [series.label, windowSize, samplingSize, confidence];
+const memoize = (series, range, windowSize, samplingSize, confidence, confidenceTransform) => {
+  const triggerKeys = [series.label, range, windowSize, samplingSize, confidence];
   let n = triggerKeys.join('|');
   if (n in cache) {
     return cache[n];

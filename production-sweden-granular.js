@@ -11,15 +11,15 @@ function uniq(a, key) {
 }
 
 const productionTypes = [
-  { key: 'KK', name: 'SE-nuclear' },
-  { key: 'SE', name: 'SE-solar' },
-  { key: 'OK', name: 'SE-misc' },
+  // { key: 'KK', name: 'SE-nuclear' },
+  { key: 'SE', name: 'SE-Solar' },
+  // { key: 'OK', name: 'SE-misc' },
   // { key: 'OP', name: 'SE-unspecificed' },
-  { key: 'VA', name: 'SE-hydro' },
-  { key: 'VI', name: 'SE-wind' },
+  // { key: 'VA', name: 'SE-hydro' },
+  // { key: 'VI', name: 'SE-wind' },
 ]
 
-const fetchDaysBack = 10;
+const fetchDaysBack = 3 * 365;
 const too = luxon.DateTime.now();
 const from = too.minus({ days: fetchDaysBack });
 
@@ -56,4 +56,6 @@ Promise.all(calls$)
       .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
 
     fs.writeFileSync('scrape/production-sweden-granular.json', JSON.stringify(unique, null, 2))
+
+    fs.writeFileSync('scrape/raw/production-sweden-granular.json', JSON.stringify(unique, null, 2))
   })
