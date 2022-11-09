@@ -43,7 +43,7 @@ export default function FilmSelect(props) {
       itemRenderer={renderItem}
       itemPredicate={(query, item) => item.area.toLowerCase().includes(query.toLowerCase())}
       noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
-      onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area[0]))}
+      onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
       selectedItems={items.filter(item => selectedAreas.includes(item.area))}
       tagRenderer={item => item.area}
       onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
