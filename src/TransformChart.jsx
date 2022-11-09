@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import {
-  HTMLSelect,
-} from "@blueprintjs/core";
+import { HTMLSelect } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
 import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
