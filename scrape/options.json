@@ -111,6 +111,10 @@
         "options": []
       },
       {
+        "file": "production-sweden-granular.json",
+        "options": []
+      },
+      {
         "file": "production-uk.json",
         "options": []
       }
@@ -133,7 +137,8 @@
       "-Hydro pumped storage",
       "-Wind offshore",
       "-Wind onshore",
-      "-Solar"
+      "-Solar",
+      "-Others"
     ],
     "files": [
       {
@@ -151,6 +156,7 @@
           "AT-Geothermal",
           "AT-Hydro water reservoir",
           "AT-Hydro pumped storage",
+          "AT-Others",
           "AT-Wind onshore",
           "AT-Solar"
         ]
@@ -180,6 +186,7 @@
           "DE-Geothermal",
           "DE-Hydro water reservoir",
           "DE-Hydro pumped storage",
+          "DE-Others",
           "DE-Wind offshore",
           "DE-Wind onshore",
           "DE-Solar"
@@ -220,6 +227,7 @@
           "ES-Fossil oil",
           "ES-Fossil gas",
           "ES-Hydro water reservoir",
+          "ES-Others",
           "ES-Wind onshore",
           "ES-Solar"
         ]
@@ -233,6 +241,7 @@
           "FI-Fossil hard coal",
           "FI-Fossil oil",
           "FI-Fossil gas",
+          "FI-Others",
           "FI-Wind onshore"
         ]
       },
@@ -262,6 +271,7 @@
           "HU-Fossil oil",
           "HU-Fossil gas",
           "HU-Hydro water reservoir",
+          "HU-Others",
           "HU-Wind onshore",
           "HU-Solar"
         ]
@@ -275,6 +285,7 @@
           "IE-Fossil oil",
           "IE-Fossil gas",
           "IE-Hydro pumped storage",
+          "IE-Others",
           "IE-Wind onshore"
         ]
       },
@@ -290,6 +301,7 @@
           "IT-Geothermal",
           "IT-Hydro water reservoir",
           "IT-Hydro pumped storage",
+          "IT-Others",
           "IT-Wind onshore",
           "IT-Solar"
         ]
@@ -302,6 +314,7 @@
           "LT-Biomass",
           "LT-Fossil gas",
           "LT-Hydro pumped storage",
+          "LT-Others",
           "LT-Wind onshore",
           "LT-Solar"
         ]
@@ -316,6 +329,7 @@
           "LV-Hydro Run-of-River",
           "LV-Biomass",
           "LV-Fossil gas",
+          "LV-Others",
           "LV-Wind onshore"
         ]
       },
@@ -330,6 +344,7 @@
           "NL-Biomass",
           "NL-Fossil hard coal",
           "NL-Fossil gas",
+          "NL-Others",
           "NL-Wind offshore",
           "NL-Wind onshore",
           "NL-Solar"
@@ -359,6 +374,7 @@
           "PT-Fossil gas",
           "PT-Hydro water reservoir",
           "PT-Hydro pumped storage",
+          "PT-Others",
           "PT-Wind onshore",
           "PT-Solar"
         ]
@@ -368,7 +384,14 @@
         "options": [
           "SE-Nuclear",
           "SE-Hydro water reservoir",
+          "SE-Others",
           "SE-Wind onshore"
+        ]
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": [
+          "SE-Solar"
         ]
       },
       {
@@ -381,6 +404,7 @@
           "UK-Fossil oil",
           "UK-Fossil gas",
           "UK-Hydro pumped storage",
+          "UK-Others",
           "UK-Wind offshore",
           "UK-Wind onshore",
           "UK-Solar"
@@ -511,6 +535,10 @@
         "options": [
           "SE-Load"
         ]
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": []
       },
       {
         "file": "production-uk.json",
@@ -645,6 +673,10 @@
         "options": [
           "SE-Import Balance"
         ]
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": []
       },
       {
         "file": "production-uk.json",
