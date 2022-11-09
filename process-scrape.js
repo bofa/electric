@@ -58,7 +58,7 @@ const options = // ['price', 'production', 'consumption']
           .filter(key => option.fields.some(partial => key.includes(partial)))
           .map(key => {
             const average = content.map(p => p[key]).reduce((sum, value) => sum + value) / content.length;
-            return [key, average];
+            return [key, Math.round(average)];
           })
         }
       })
