@@ -24,6 +24,7 @@ const renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
       onClick={handleClick}
       onFocus={handleFocus}
       text={item.text}
+      label={item.label}
       icon={item.active ? 'tick' : false}
     />
   );
@@ -31,8 +32,9 @@ const renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
  
 export default function FilmSelect(props) {
   const { selectedAreas, setSelectedAreas } = props;
+
   const items = props.areas
-    .map(area => ({ area, text: area, active: selectedAreas.includes(area) }))
+    .map(area => ({ area: area[0], text: area[0], label: Math.round(area[1]), active: selectedAreas.includes(area[0]) }))
     .sort((a1, a2) => a1.text.localeCompare(a2.text) )
   
   return (
@@ -41,7 +43,7 @@ export default function FilmSelect(props) {
       itemRenderer={renderItem}
       itemPredicate={(query, item) => item.area.toLowerCase().includes(query.toLowerCase())}
       noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
-      onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
+      onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area[0]))}
       selectedItems={items.filter(item => selectedAreas.includes(item.area))}
       tagRenderer={item => item.area}
       onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}

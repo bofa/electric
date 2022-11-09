@@ -69,7 +69,7 @@ function App () {
     const files = selectedAreas
       .map(area => options
         .find(option => option.key === selectDataSet)?.files
-        .find(file => file.options.includes(area))?.file
+        .find(file => file.options.map(o => o[0]).includes(area))?.file
       )
       .flat()
       .filter(file => file !== undefined)
@@ -108,10 +108,15 @@ function App () {
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
 
-  const areas = options
+  const areasArray = options
     .find(option => option.key === selectDataSet)
-    ?.files.map(file => file.options).flat()
+    ?.files
+    .map(file => file.options)
+    .flat()
     || [];
+
+  const areas = areasArray
+    .map(option => option[0])
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
@@ -288,7 +293,7 @@ function App () {
           </HTMLSelect>
           <NavbarDivider/>
           <AreaMultiSelect
-            areas={areas}
+            areas={areasArray}
             selectedAreas={selectedAreas}
             setSelectedAreas={setSelectedAreas}
           />

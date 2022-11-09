@@ -48,12 +48,20 @@ const options = // ['price', 'production', 'consumption']
     const typeFiles = allFiles // .filter(file => file.includes(option.name.toLowerCase()))
 
     const files = typeFiles
-      .map(file => ({
+      .map(file => {
+        const content = JSON.parse(fs.readFileSync(folder + file));
+
+        return {
         file: file,
         options: Object.keys(JSON.parse(fs.readFileSync(folder + file))[0])
           .filter(key => key !== 'x')
           .filter(key => option.fields.some(partial => key.includes(partial)))
-      }))
+          .map(key => {
+            const average = content.map(p => p[key]).reduce((sum, value) => sum + value) / content.length;
+            return [key, average];
+          })
+        }
+      })
       // .sort((a, b) => a.localeCompare(b))
 
     return {
