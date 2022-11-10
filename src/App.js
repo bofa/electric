@@ -82,7 +82,7 @@ function App () {
       .then(response => response.data)
       .catch(error => {
         console.warn('Error', error);
-        return [{ x: '2020-01-01' }];
+        return [{ x: '2019-01-01' }];
       })
       .then(transformSeries)
       .then(series => {
@@ -95,7 +95,7 @@ function App () {
 
           const seriesFiltered = series
             .filter(s => option.fields.some(f => s.label.includes(f)))
-            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2020) }))
+            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2019) }))
 
           setFunc(state => state.concat(seriesFiltered));
         })
