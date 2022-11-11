@@ -86,6 +86,103 @@
       {
         "file": "energy-charts-uk.json",
         "options": []
+      },
+      {
+        "file": "price.json",
+        "options": [
+          [
+            "SYS-price",
+            92
+          ],
+          [
+            "SE1-price",
+            42
+          ],
+          [
+            "SE2-price",
+            43
+          ],
+          [
+            "SE3-price",
+            89
+          ],
+          [
+            "SE4-price",
+            109
+          ],
+          [
+            "FI-price",
+            103
+          ],
+          [
+            "DK1-price",
+            148
+          ],
+          [
+            "DK2-price",
+            143
+          ],
+          [
+            "Oslo-price",
+            128
+          ],
+          [
+            "Kr.sand-price",
+            138
+          ],
+          [
+            "Bergen-price",
+            127
+          ],
+          [
+            "Molde-price",
+            34
+          ],
+          [
+            "Tr.heim-price",
+            34
+          ],
+          [
+            "Tromsø-price",
+            26
+          ],
+          [
+            "EE-price",
+            131
+          ],
+          [
+            "LV-price",
+            150
+          ],
+          [
+            "LT-price",
+            152
+          ],
+          [
+            "AT-price",
+            179
+          ],
+          [
+            "BE-price",
+            169
+          ],
+          [
+            "DE-LU-price",
+            161
+          ],
+          [
+            "FR-price",
+            188
+          ],
+          [
+            "NL-price",
+            167
+          ]
+        ]
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": []
       }
     ]
   },
@@ -847,6 +944,19 @@
             null
           ]
         ]
+      },
+      {
+        "file": "price.json",
+        "options": []
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": [
+          [
+            "SE-Solar",
+            83
+          ]
+        ]
       }
     ]
   },
@@ -1032,6 +1142,14 @@
             null
           ]
         ]
+      },
+      {
+        "file": "price.json",
+        "options": []
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": []
       }
     ]
   },
@@ -1222,6 +1340,14 @@
             1812
           ]
         ]
+      },
+      {
+        "file": "price.json",
+        "options": []
+      },
+      {
+        "file": "production-sweden-granular.json",
+        "options": []
       }
     ]
   }
