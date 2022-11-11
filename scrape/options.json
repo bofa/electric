@@ -8,180 +8,83 @@
     ],
     "files": [
       {
-        "file": "price.json",
-        "options": [
-          [
-            "SYS-price",
-            92
-          ],
-          [
-            "SE1-price",
-            42
-          ],
-          [
-            "SE2-price",
-            43
-          ],
-          [
-            "SE3-price",
-            89
-          ],
-          [
-            "SE4-price",
-            109
-          ],
-          [
-            "FI-price",
-            103
-          ],
-          [
-            "DK1-price",
-            148
-          ],
-          [
-            "DK2-price",
-            143
-          ],
-          [
-            "Oslo-price",
-            128
-          ],
-          [
-            "Kr.sand-price",
-            138
-          ],
-          [
-            "Bergen-price",
-            127
-          ],
-          [
-            "Molde-price",
-            34
-          ],
-          [
-            "Tr.heim-price",
-            34
-          ],
-          [
-            "Tromsø-price",
-            26
-          ],
-          [
-            "EE-price",
-            131
-          ],
-          [
-            "LV-price",
-            150
-          ],
-          [
-            "LT-price",
-            152
-          ],
-          [
-            "AT-price",
-            179
-          ],
-          [
-            "BE-price",
-            169
-          ],
-          [
-            "DE-LU-price",
-            161
-          ],
-          [
-            "FR-price",
-            188
-          ],
-          [
-            "NL-price",
-            167
-          ]
-        ]
-      },
-      {
-        "file": "production-at.json",
+        "file": "energy-charts-at.json",
         "options": []
       },
       {
-        "file": "production-ch.json",
+        "file": "energy-charts-ch.json",
         "options": []
       },
       {
-        "file": "production-de.json",
+        "file": "energy-charts-de.json",
         "options": []
       },
       {
-        "file": "production-dk.json",
+        "file": "energy-charts-dk.json",
         "options": []
       },
       {
-        "file": "production-ee.json",
+        "file": "energy-charts-ee.json",
         "options": []
       },
       {
-        "file": "production-es.json",
+        "file": "energy-charts-es.json",
         "options": []
       },
       {
-        "file": "production-fi.json",
+        "file": "energy-charts-fi.json",
         "options": []
       },
       {
-        "file": "production-fr.json",
+        "file": "energy-charts-fr.json",
         "options": []
       },
       {
-        "file": "production-hu.json",
+        "file": "energy-charts-hu.json",
         "options": []
       },
       {
-        "file": "production-ie.json",
+        "file": "energy-charts-ie.json",
         "options": []
       },
       {
-        "file": "production-it.json",
+        "file": "energy-charts-it.json",
         "options": []
       },
       {
-        "file": "production-lt.json",
+        "file": "energy-charts-lt.json",
         "options": []
       },
       {
-        "file": "production-lu.json",
+        "file": "energy-charts-lu.json",
         "options": []
       },
       {
-        "file": "production-lv.json",
+        "file": "energy-charts-lv.json",
         "options": []
       },
       {
-        "file": "production-mt.json",
+        "file": "energy-charts-mt.json",
         "options": []
       },
       {
-        "file": "production-nl.json",
+        "file": "energy-charts-nl.json",
         "options": []
       },
       {
-        "file": "production-pl.json",
+        "file": "energy-charts-pl.json",
         "options": []
       },
       {
-        "file": "production-pt.json",
+        "file": "energy-charts-pt.json",
         "options": []
       },
       {
-        "file": "production-se.json",
+        "file": "energy-charts-se.json",
         "options": []
       },
       {
-        "file": "production-sweden-granular.json",
-        "options": []
-      },
-      {
-        "file": "production-uk.json",
+        "file": "energy-charts-uk.json",
         "options": []
       }
     ]
@@ -208,11 +111,7 @@
     ],
     "files": [
       {
-        "file": "price.json",
-        "options": []
-      },
-      {
-        "file": "production-at.json",
+        "file": "energy-charts-at.json",
         "options": [
           [
             "AT-Hydro pumped storage consumption",
@@ -261,7 +160,7 @@
         ]
       },
       {
-        "file": "production-ch.json",
+        "file": "energy-charts-ch.json",
         "options": [
           [
             "CH-Nuclear",
@@ -290,7 +189,7 @@
         ]
       },
       {
-        "file": "production-de.json",
+        "file": "energy-charts-de.json",
         "options": [
           [
             "DE-Hydro pumped storage consumption",
@@ -355,7 +254,7 @@
         ]
       },
       {
-        "file": "production-dk.json",
+        "file": "energy-charts-dk.json",
         "options": [
           [
             "DK-Biomass",
@@ -388,7 +287,7 @@
         ]
       },
       {
-        "file": "production-ee.json",
+        "file": "energy-charts-ee.json",
         "options": [
           [
             "EE-Hydro Run-of-River",
@@ -417,7 +316,7 @@
         ]
       },
       {
-        "file": "production-es.json",
+        "file": "energy-charts-es.json",
         "options": [
           [
             "ES-Hydro pumped storage consumption",
@@ -470,7 +369,7 @@
         ]
       },
       {
-        "file": "production-fi.json",
+        "file": "energy-charts-fi.json",
         "options": [
           [
             "FI-Nuclear",
@@ -507,7 +406,7 @@
         ]
       },
       {
-        "file": "production-fr.json",
+        "file": "energy-charts-fr.json",
         "options": [
           [
             "FR-Hydro pumped storage consumption",
@@ -556,7 +455,7 @@
         ]
       },
       {
-        "file": "production-hu.json",
+        "file": "energy-charts-hu.json",
         "options": [
           [
             "HU-Nuclear",
@@ -597,7 +496,7 @@
         ]
       },
       {
-        "file": "production-ie.json",
+        "file": "energy-charts-ie.json",
         "options": [
           [
             "IE-Hydro pumped storage consumption",
@@ -634,7 +533,7 @@
         ]
       },
       {
-        "file": "production-it.json",
+        "file": "energy-charts-it.json",
         "options": [
           [
             "IT-Hydro pumped storage consumption",
@@ -687,7 +586,7 @@
         ]
       },
       {
-        "file": "production-lt.json",
+        "file": "energy-charts-lt.json",
         "options": [
           [
             "LT-Hydro pumped storage consumption",
@@ -724,11 +623,11 @@
         ]
       },
       {
-        "file": "production-lu.json",
+        "file": "energy-charts-lu.json",
         "options": []
       },
       {
-        "file": "production-lv.json",
+        "file": "energy-charts-lv.json",
         "options": [
           [
             "LV-Hydro Run-of-River",
@@ -753,11 +652,11 @@
         ]
       },
       {
-        "file": "production-mt.json",
+        "file": "energy-charts-mt.json",
         "options": []
       },
       {
-        "file": "production-nl.json",
+        "file": "energy-charts-nl.json",
         "options": [
           [
             "NL-Nuclear",
@@ -794,7 +693,7 @@
         ]
       },
       {
-        "file": "production-pl.json",
+        "file": "energy-charts-pl.json",
         "options": [
           [
             "PL-Hydro Run-of-River",
@@ -835,7 +734,7 @@
         ]
       },
       {
-        "file": "production-pt.json",
+        "file": "energy-charts-pt.json",
         "options": [
           [
             "PT-Hydro pumped storage consumption",
@@ -880,7 +779,7 @@
         ]
       },
       {
-        "file": "production-se.json",
+        "file": "energy-charts-se.json",
         "options": [
           [
             "SE-Nuclear",
@@ -901,16 +800,7 @@
         ]
       },
       {
-        "file": "production-sweden-granular.json",
-        "options": [
-          [
-            "SE-Solar",
-            83
-          ]
-        ]
-      },
-      {
-        "file": "production-uk.json",
+        "file": "energy-charts-uk.json",
         "options": [
           [
             "UK-Nuclear",
@@ -969,11 +859,7 @@
     ],
     "files": [
       {
-        "file": "price.json",
-        "options": []
-      },
-      {
-        "file": "production-at.json",
+        "file": "energy-charts-at.json",
         "options": [
           [
             "AT-Load",
@@ -982,7 +868,7 @@
         ]
       },
       {
-        "file": "production-ch.json",
+        "file": "energy-charts-ch.json",
         "options": [
           [
             "CH-Load",
@@ -991,7 +877,7 @@
         ]
       },
       {
-        "file": "production-de.json",
+        "file": "energy-charts-de.json",
         "options": [
           [
             "DE-Load",
@@ -1000,7 +886,7 @@
         ]
       },
       {
-        "file": "production-dk.json",
+        "file": "energy-charts-dk.json",
         "options": [
           [
             "DK-Load",
@@ -1009,7 +895,7 @@
         ]
       },
       {
-        "file": "production-ee.json",
+        "file": "energy-charts-ee.json",
         "options": [
           [
             "EE-Load",
@@ -1018,7 +904,7 @@
         ]
       },
       {
-        "file": "production-es.json",
+        "file": "energy-charts-es.json",
         "options": [
           [
             "ES-Load",
@@ -1027,7 +913,7 @@
         ]
       },
       {
-        "file": "production-fi.json",
+        "file": "energy-charts-fi.json",
         "options": [
           [
             "FI-Load",
@@ -1036,7 +922,7 @@
         ]
       },
       {
-        "file": "production-fr.json",
+        "file": "energy-charts-fr.json",
         "options": [
           [
             "FR-Load",
@@ -1045,7 +931,7 @@
         ]
       },
       {
-        "file": "production-hu.json",
+        "file": "energy-charts-hu.json",
         "options": [
           [
             "HU-Load",
@@ -1054,7 +940,7 @@
         ]
       },
       {
-        "file": "production-ie.json",
+        "file": "energy-charts-ie.json",
         "options": [
           [
             "IE-Load",
@@ -1063,7 +949,7 @@
         ]
       },
       {
-        "file": "production-it.json",
+        "file": "energy-charts-it.json",
         "options": [
           [
             "IT-Load",
@@ -1072,7 +958,7 @@
         ]
       },
       {
-        "file": "production-lt.json",
+        "file": "energy-charts-lt.json",
         "options": [
           [
             "LT-Load",
@@ -1081,7 +967,7 @@
         ]
       },
       {
-        "file": "production-lu.json",
+        "file": "energy-charts-lu.json",
         "options": [
           [
             "LU-Load",
@@ -1090,7 +976,7 @@
         ]
       },
       {
-        "file": "production-lv.json",
+        "file": "energy-charts-lv.json",
         "options": [
           [
             "LV-Load",
@@ -1099,11 +985,11 @@
         ]
       },
       {
-        "file": "production-mt.json",
+        "file": "energy-charts-mt.json",
         "options": []
       },
       {
-        "file": "production-nl.json",
+        "file": "energy-charts-nl.json",
         "options": [
           [
             "NL-Load",
@@ -1112,7 +998,7 @@
         ]
       },
       {
-        "file": "production-pl.json",
+        "file": "energy-charts-pl.json",
         "options": [
           [
             "PL-Load",
@@ -1121,7 +1007,7 @@
         ]
       },
       {
-        "file": "production-pt.json",
+        "file": "energy-charts-pt.json",
         "options": [
           [
             "PT-Load",
@@ -1130,7 +1016,7 @@
         ]
       },
       {
-        "file": "production-se.json",
+        "file": "energy-charts-se.json",
         "options": [
           [
             "SE-Load",
@@ -1139,11 +1025,7 @@
         ]
       },
       {
-        "file": "production-sweden-granular.json",
-        "options": []
-      },
-      {
-        "file": "production-uk.json",
+        "file": "energy-charts-uk.json",
         "options": [
           [
             "UK-Load",
@@ -1162,11 +1044,7 @@
     ],
     "files": [
       {
-        "file": "price.json",
-        "options": []
-      },
-      {
-        "file": "production-at.json",
+        "file": "energy-charts-at.json",
         "options": [
           [
             "AT-Import Balance",
@@ -1175,7 +1053,7 @@
         ]
       },
       {
-        "file": "production-ch.json",
+        "file": "energy-charts-ch.json",
         "options": [
           [
             "CH-Import Balance",
@@ -1184,7 +1062,7 @@
         ]
       },
       {
-        "file": "production-de.json",
+        "file": "energy-charts-de.json",
         "options": [
           [
             "DE-Import Balance",
@@ -1193,7 +1071,7 @@
         ]
       },
       {
-        "file": "production-dk.json",
+        "file": "energy-charts-dk.json",
         "options": [
           [
             "DK-Import Balance",
@@ -1202,7 +1080,7 @@
         ]
       },
       {
-        "file": "production-ee.json",
+        "file": "energy-charts-ee.json",
         "options": [
           [
             "EE-Import Balance",
@@ -1211,7 +1089,7 @@
         ]
       },
       {
-        "file": "production-es.json",
+        "file": "energy-charts-es.json",
         "options": [
           [
             "ES-Import Balance",
@@ -1220,7 +1098,7 @@
         ]
       },
       {
-        "file": "production-fi.json",
+        "file": "energy-charts-fi.json",
         "options": [
           [
             "FI-Import Balance",
@@ -1229,7 +1107,7 @@
         ]
       },
       {
-        "file": "production-fr.json",
+        "file": "energy-charts-fr.json",
         "options": [
           [
             "FR-Import Balance",
@@ -1238,7 +1116,7 @@
         ]
       },
       {
-        "file": "production-hu.json",
+        "file": "energy-charts-hu.json",
         "options": [
           [
             "HU-Import Balance",
@@ -1247,7 +1125,7 @@
         ]
       },
       {
-        "file": "production-ie.json",
+        "file": "energy-charts-ie.json",
         "options": [
           [
             "IE-Import Balance",
@@ -1256,7 +1134,7 @@
         ]
       },
       {
-        "file": "production-it.json",
+        "file": "energy-charts-it.json",
         "options": [
           [
             "IT-Import Balance",
@@ -1265,7 +1143,7 @@
         ]
       },
       {
-        "file": "production-lt.json",
+        "file": "energy-charts-lt.json",
         "options": [
           [
             "LT-Import Balance",
@@ -1274,7 +1152,7 @@
         ]
       },
       {
-        "file": "production-lu.json",
+        "file": "energy-charts-lu.json",
         "options": [
           [
             "LU-Import Balance",
@@ -1283,7 +1161,7 @@
         ]
       },
       {
-        "file": "production-lv.json",
+        "file": "energy-charts-lv.json",
         "options": [
           [
             "LV-Import Balance",
@@ -1292,7 +1170,7 @@
         ]
       },
       {
-        "file": "production-mt.json",
+        "file": "energy-charts-mt.json",
         "options": [
           [
             "MT-Import Balance",
@@ -1301,7 +1179,7 @@
         ]
       },
       {
-        "file": "production-nl.json",
+        "file": "energy-charts-nl.json",
         "options": [
           [
             "NL-Import Balance",
@@ -1310,7 +1188,7 @@
         ]
       },
       {
-        "file": "production-pl.json",
+        "file": "energy-charts-pl.json",
         "options": [
           [
             "PL-Import Balance",
@@ -1319,7 +1197,7 @@
         ]
       },
       {
-        "file": "production-pt.json",
+        "file": "energy-charts-pt.json",
         "options": [
           [
             "PT-Import Balance",
@@ -1328,7 +1206,7 @@
         ]
       },
       {
-        "file": "production-se.json",
+        "file": "energy-charts-se.json",
         "options": [
           [
             "SE-Import Balance",
@@ -1337,11 +1215,7 @@
         ]
       },
       {
-        "file": "production-sweden-granular.json",
-        "options": []
-      },
-      {
-        "file": "production-uk.json",
+        "file": "energy-charts-uk.json",
         "options": [
           [
             "UK-Import Balance",
