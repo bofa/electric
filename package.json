@@ -39,7 +39,8 @@
     "market": "node market.js",
     "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se uk",
     "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind && npm run productiongermany",
-    "options": "node process-scrape.js"
+    "options": "node options.js",
+    "process": "node process-scrape.js"
   },
   "eslintConfig": {
     "extends": [

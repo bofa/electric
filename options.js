@@ -1,5 +1,4 @@
-const folderRead = './scrape/raw/';
-const folderWrite = './scrape/processed/';
+const folderRead = './scrape/processed/';
 const fs = require('fs');
 
 // Extract options
@@ -45,16 +44,30 @@ const options = // ['price', 'production', 'consumption']
     unit: 'MW',
     fields: ['-Import Balance'],
   },
-]
+].map(option => {
+    const typeFiles = allFiles // .filter(file => file.includes(option.name.toLowerCase()))
 
-allFiles
-  .forEach(file => {
-    if (file.includes('energy-charts')) {
-      const content = JSON.parse(fs.readFileSync(folderRead + file));
-      
-      fs.writeFileSync(folderWrite + file, JSON.stringify(content));
-    } else {
-      const content = JSON.parse(fs.readFileSync(folderRead + file));
-      fs.writeFileSync(folderWrite + file, JSON.stringify(content));
-    }
+    const files = typeFiles
+      .map(file => {
+        const content = JSON.parse(fs.readFileSync(folderRead + file));
+
+        return {
+        file: file,
+        options: Object.keys(content[0])
+          .filter(key => key !== 'x')
+          .filter(key => option.fields.some(partial => key.includes(partial)))
+          .map(key => {
+            const average = content.map(p => p[key]).reduce((sum, value) => sum + value) / content.length;
+            return [key, Math.round(average)];
+          })
+        }
+      })
+      // .sort((a, b) => a.localeCompare(b))
+
+    return {
+      ...option,
+      files,
+    };
   })
+
+fs.writeFileSync('scrape/options.json', JSON.stringify(options, null, 2));

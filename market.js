@@ -8,7 +8,7 @@ markets = markets.length > 0 ? markets : ['de']
 markets.forEach((market, marketIndex) => {
   let importData = [];
   try {
-    importData = require(`./scrape/raw/production-${market}.json`);
+    importData = require(`./scrape/raw/energy-charts-${market}.json`);
   } catch {}
   importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
 
@@ -67,7 +67,7 @@ markets.forEach((market, marketIndex) => {
       const unique = uniq(flat, 'x')
         .sort((a, b) => a.x - b.x);
 
-      fs.writeFileSync(`scrape/raw/production-${market}.json`, JSON.stringify(unique, null, 2));
+      fs.writeFileSync(`scrape/raw/energy-charts-${market}.json`, JSON.stringify(unique, null, 2));
       
       // const filteredProduction = unique
       //   .filter(p => p.x.year >= 2020)
