@@ -72,6 +72,10 @@
         "options": []
       },
       {
+        "file": "energy-charts-no.json",
+        "options": []
+      },
+      {
         "file": "energy-charts-pl.json",
         "options": []
       },
@@ -790,6 +794,31 @@
         ]
       },
       {
+        "file": "energy-charts-no.json",
+        "options": [
+          [
+            "NO-Hydro Run-of-River",
+            1533
+          ],
+          [
+            "NO-Fossil gas",
+            230
+          ],
+          [
+            "NO-Hydro water reservoir",
+            13538
+          ],
+          [
+            "NO-Others",
+            null
+          ],
+          [
+            "NO-Wind onshore",
+            957
+          ]
+        ]
+      },
+      {
         "file": "energy-charts-pl.json",
         "options": [
           [
@@ -1108,6 +1137,15 @@
         ]
       },
       {
+        "file": "energy-charts-no.json",
+        "options": [
+          [
+            "NO-Load",
+            15240
+          ]
+        ]
+      },
+      {
         "file": "energy-charts-pl.json",
         "options": [
           [
@@ -1302,6 +1340,15 @@
           [
             "NL-Import Balance",
             -162
+          ]
+        ]
+      },
+      {
+        "file": "energy-charts-no.json",
+        "options": [
+          [
+            "NO-Import Balance",
+            -1315
           ]
         ]
       },

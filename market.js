@@ -22,18 +22,25 @@ markets.forEach((market, marketIndex) => {
   }
 
   // const startDate = luxon.DateTime.fromISO('2020-01-01')
-  const startDate = importData.length === 0
-    ? luxon.DateTime.fromISO('2020-01-01')
-    : luxon.DateTime.fromISO(importData.at(-1).x);
+
+  const nowDate = luxon.DateTime.now();
+  const startDateRequested = luxon.DateTime.fromISO('2018-01-01')
+  const startDateImport = luxon.DateTime.fromISO(importData.at(0)?.x);
+  const endDateImport = luxon.DateTime.fromISO(importData.at(-1)?.x);
+
+  const startDate = startDateImport.isValid && startDateImport <= startDateRequested.plus({ days: 1 })
+    ? endDateImport
+    : startDateRequested;
 
   const now = luxon.DateTime.now();
   const weeks = [
-    Array(53).fill().map((_, i) => ({ year: 2019, week: i+1 })),
-    Array(53).fill().map((_, i) => ({ year: 2020, week: i+1 })),
-    Array(53).fill().map((_, i) => ({ year: 2021, week: i+1 })),
-    Array(53).fill().map((_, i) => ({ year: 2022, week: i+1 })),
-  ].flat()
-    .filter(week => week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
+    Array(nowDate.year - startDate.year + 1)
+      .fill()
+      .map((_, i) => startDate.year + i)
+      .map(year => Array(53).fill().map((_, i) => ({ year, week: i+1 })))
+  ].flat(2)
+    // .map(w => { console.log('w', w); return w; })
+    .filter(week => startDate === null || week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
     .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
     .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
     .map((weekObj, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
