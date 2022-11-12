@@ -47,12 +47,30 @@ const options = // ['price', 'production', 'consumption']
   },
 ]
 
+const combineKeys = [
+  ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
+  // null check!
+  ['Wind Total', ['Wind offshore', 'Wind onshore']]
+]
+
 allFiles
+  // Debug
+  // .filter(file => file.includes('de'))
   .forEach(file => {
     if (file.includes('energy-charts')) {
+      const marketLabel = file.split('-')[2].slice(0,2).toUpperCase() + '-';
       const content = JSON.parse(fs.readFileSync(folderRead + file));
       
-      fs.writeFileSync(folderWrite + file, JSON.stringify(content));
+      const contentTransform = content
+        // Combine keys
+        .map(y => ({ ...y, ...combineKeys.reduce((obj, combine) => ({
+          ...obj,
+          [combine[0]]: combine[1].filter(k => y[k]).reduce((sum, k) => sum + y[k], 0)
+        }), {}) }))
+        // Map on market label
+        .map(y => Object.keys(y).filter(k => k !== 'x').reduce((obj, k) => ({ ...obj, [marketLabel + k]: y[k] }), { x: y.x }))
+
+      fs.writeFileSync(folderWrite + file, JSON.stringify(contentTransform, null, 2));
     } else {
       const content = JSON.parse(fs.readFileSync(folderRead + file));
       fs.writeFileSync(folderWrite + file, JSON.stringify(content));

@@ -50,7 +50,7 @@ markets.forEach((market, marketIndex) => {
           // const date = new luxon.DateTime(sources[0].xAxisValues[0])
           console.log(market, weekObj);
 
-          const individualSource = sources.map(source => source.data.map(y => ({ [marketLabel + '-' + source.name.en]: y })))
+          const individualSource = sources.map(source => source.data.map(y => ({ [source.name.en]: y })))
           const merge = individualSource[0].map((_, i) => ({
               x: luxon.DateTime.fromMillis(sources[0].xAxisValues[i]),
               ...individualSource.map(source => source[i]).reduce((merge, source) => ({ ...merge, ...source}), {})
