@@ -43,13 +43,13 @@ function transformSin(p, bias, amplitude, frequence, phase) {
 }
 
 const rangeOptions = [
-  { key: 'Full', minus: null },
-  { key: 'Past 2 Years', minus: { years: 2} },
-  { key: 'Past Year', minus: { years: 1} },
+  { key: 'Full',         minus: null          },
+  { key: 'Past 2 Years', minus: { years: 2 }  },
+  { key: 'Past Year',    minus: { years: 1 }  },
   { key: 'Past 2 Month', minus: { months: 2 } },
-  { key: 'Past Month', minus: { years: 1 } },
+  { key: 'Past Month',   minus: { months: 1 } },
   { key: 'Past 2 Weeks', minus: { weeks: 2 }  },
-  { key: 'Past Week', minus: { weeks: 1 }  },
+  { key: 'Past Week',    minus: { weeks: 1 }  },
 ]
 
 function App () {
