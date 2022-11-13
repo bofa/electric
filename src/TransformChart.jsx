@@ -92,7 +92,7 @@ const seriesTransforms = [
   {
     key: 'histogram',
     name: 'Histogram',
-    unit: seriesYUnit => [seriesYUnit, 'hours'],
+    unit: seriesYUnit => [seriesYUnit, '100 hours / MW'],
     transform: series => {
       const numberOfBins = 100;
 
@@ -102,11 +102,16 @@ const seriesTransforms = [
       
       const step = (max - min) / numberOfBins;
 
+      console.log('length', rawSeries.length);
+
       const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
         .map(min => ({
-          x: min,
-          y: rawSeries.filter(y => y >= min && y < min + step).length
+          x: Math.round(min + step/2),
+          y: 100 * rawSeries.filter(y => y >= min && y < min + step).length / step,
         }));
+
+      console.log('historgram', histogram)
+      // console.log('historgram', histogram.map(({ y }) => y).reduce((s, y) => s+y))
 
       return [{
         label: series.label,
@@ -136,7 +141,7 @@ const seriesTransforms = [
       const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
         .map(min => ({
           x: min,
-          y: rawSeries.filter(y => y >= min && y < min + step).length
+          y: 100 * rawSeries.filter(y => y >= min && y < min + step).length / step
         }));
 
       return {
