@@ -42,6 +42,16 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
+const rangeOptions = [
+  { key: 'Full', minus: null },
+  { key: 'Past 2 Years', minus: { years: 2} },
+  { key: 'Past Year', minus: { years: 1} },
+  { key: 'Past 2 Month', minus: { months: 2 } },
+  { key: 'Past Month', minus: { years: 1 } },
+  { key: 'Past 2 Weeks', minus: { weeks: 2 }  },
+  { key: 'Past Week', minus: { weeks: 1 }  },
+]
+
 function App () {
   const [options, setOptions] = React.useState([]);
   const [loadedFiles, setLoadedFiles] = React.useState([]);
@@ -120,12 +130,9 @@ function App () {
 
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
-  if (range === 'Past Week') {
-    lowerDate = now.minus({ weeks: 1 })
-  } else if (range === 'Past Month') {
-    lowerDate = now.minus({ months: 1 })
-  } else if (range === 'Past Year') {
-    lowerDate = now.minus({ years: 1 })
+  const minus = rangeOptions.find(ro => ro.key === range)?.minus;
+  if (minus) {
+    lowerDate = now.minus(minus)
   }
 
   const rangeDataSet = fullDataSet
@@ -289,7 +296,7 @@ function App () {
           </HTMLSelect>
           <NavbarDivider/>
           <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
-            {['Full', 'Past Year', 'Past Month', 'Past Week'].map(v => <option key={v} value={v}>{v}</option>)}
+            {rangeOptions.map(({ key }) => <option key={key} value={key}>{key}</option>)}
           </HTMLSelect>
           <NavbarDivider/>
           <AreaMultiSelect
