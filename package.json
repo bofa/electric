@@ -35,10 +35,9 @@
     "production": "node production.js",
     "productionwind": "node production-wind.js",
     "productiongranular": "node production-sweden-granular.js",
-    "productiongermany": "node production-market.js de",
     "market": "node market.js",
     "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se uk no",
-    "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind && npm run productiongermany",
+    "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind",
     "options": "node options.js",
     "process": "node process-scrape.js"
   },

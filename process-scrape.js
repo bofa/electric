@@ -49,9 +49,14 @@ const options = // ['price', 'production', 'consumption']
 
 const combineKeys = [
   ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
-  // null check!
-  ['Wind Total', ['Wind offshore', 'Wind onshore']]
+  ['Wind Total', ['Wind offshore', 'Wind onshore']],
+  ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
+  ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
 ]
+
+const removeKeys = combineKeys
+  .map(key => key[1])
+  .flat();
 
 allFiles
   // Debug
@@ -67,8 +72,14 @@ allFiles
           ...obj,
           [combine[0]]: combine[1].filter(k => y[k]).reduce((sum, k) => sum + y[k], 0)
         }), {}) }))
+        .map(y => {
+          removeKeys.forEach(k => delete y[k]);
+
+          return y;
+        })
         // Map on market label
         .map(y => Object.keys(y).filter(k => k !== 'x').reduce((obj, k) => ({ ...obj, [marketLabel + k]: y[k] }), { x: y.x }))
+        // Remove keys
 
       fs.writeFileSync(folderWrite + file, JSON.stringify(contentTransform, null, 2));
     } else {

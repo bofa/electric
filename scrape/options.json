@@ -128,7 +128,7 @@
           ],
           [
             "Oslo-price",
-            128
+            127
           ],
           [
             "Kr.sand-price",
@@ -176,7 +176,7 @@
           ],
           [
             "FR-price",
-            188
+            187
           ],
           [
             "NL-price",
@@ -196,10 +196,9 @@
     "unit": "MW",
     "fields": [
       "-Nuclear",
-      "-Hydro Run-of-River",
+      "-Hydro Total",
       "-Biomass",
-      "-Fossil brown coal / lignite",
-      "-Fossil hard coal",
+      "-Coal Total",
       "-Fossil oil",
       "-Fossil gas",
       "-Geothermal",
@@ -213,16 +212,8 @@
         "file": "energy-charts-at.json",
         "options": [
           [
-            "AT-Hydro Run-of-River",
-            3082
-          ],
-          [
             "AT-Biomass",
             194
-          ],
-          [
-            "AT-Fossil hard coal",
-            null
           ],
           [
             "AT-Fossil gas",
@@ -247,6 +238,14 @@
           [
             "AT-Wind Total",
             816
+          ],
+          [
+            "AT-Coal Total",
+            70
+          ],
+          [
+            "AT-Hydro Total",
+            3918
           ]
         ]
       },
@@ -255,11 +254,7 @@
         "options": [
           [
             "CH-Nuclear",
-            2599
-          ],
-          [
-            "CH-Hydro Run-of-River",
-            1935
+            2601
           ],
           [
             "CH-Solar",
@@ -272,6 +267,14 @@
           [
             "CH-Wind Total",
             15
+          ],
+          [
+            "CH-Coal Total",
+            0
+          ],
+          [
+            "CH-Hydro Total",
+            4380
           ]
         ]
       },
@@ -280,23 +283,11 @@
         "options": [
           [
             "DE-Nuclear",
-            6977
-          ],
-          [
-            "DE-Hydro Run-of-River",
-            1941
+            6975
           ],
           [
             "DE-Biomass",
             4808
-          ],
-          [
-            "DE-Fossil brown coal / lignite",
-            11868
-          ],
-          [
-            "DE-Fossil hard coal",
-            5828
           ],
           [
             "DE-Fossil oil",
@@ -304,7 +295,7 @@
           ],
           [
             "DE-Fossil gas",
-            5701
+            5699
           ],
           [
             "DE-Geothermal",
@@ -316,7 +307,7 @@
           ],
           [
             "DE-Solar",
-            5650
+            5649
           ],
           [
             "DE-Hydro Pumped",
@@ -324,7 +315,15 @@
           ],
           [
             "DE-Wind Total",
-            13550
+            13546
+          ],
+          [
+            "DE-Coal Total",
+            17827
+          ],
+          [
+            "DE-Hydro Total",
+            1895
           ]
         ]
       },
@@ -334,10 +333,6 @@
           [
             "DK-Biomass",
             440
-          ],
-          [
-            "DK-Fossil hard coal",
-            566
           ],
           [
             "DK-Fossil oil",
@@ -357,17 +352,21 @@
           ],
           [
             "DK-Wind Total",
-            1838
+            1837
+          ],
+          [
+            "DK-Coal Total",
+            566
+          ],
+          [
+            "DK-Hydro Total",
+            0
           ]
         ]
       },
       {
         "file": "energy-charts-ee.json",
         "options": [
-          [
-            "EE-Hydro Run-of-River",
-            2
-          ],
           [
             "EE-Biomass",
             77
@@ -391,6 +390,14 @@
           [
             "EE-Wind Total",
             84
+          ],
+          [
+            "EE-Coal Total",
+            49
+          ],
+          [
+            "EE-Hydro Total",
+            2
           ]
         ]
       },
@@ -399,23 +406,11 @@
         "options": [
           [
             "ES-Nuclear",
-            6263
-          ],
-          [
-            "ES-Hydro Run-of-River",
-            1023
+            6267
           ],
           [
             "ES-Biomass",
             409
-          ],
-          [
-            "ES-Fossil brown coal / lignite",
-            null
-          ],
-          [
-            "ES-Fossil hard coal",
-            1409
           ],
           [
             "ES-Fossil oil",
@@ -423,7 +418,7 @@
           ],
           [
             "ES-Fossil gas",
-            7507
+            7510
           ],
           [
             "ES-Others",
@@ -431,7 +426,7 @@
           ],
           [
             "ES-Solar",
-            2366
+            2367
           ],
           [
             "ES-Hydro Pumped",
@@ -439,7 +434,15 @@
           ],
           [
             "ES-Wind Total",
-            6132
+            6137
+          ],
+          [
+            "ES-Coal Total",
+            1494
+          ],
+          [
+            "ES-Hydro Total",
+            2946
           ]
         ]
       },
@@ -448,19 +451,11 @@
         "options": [
           [
             "FI-Nuclear",
-            2587
-          ],
-          [
-            "FI-Hydro Run-of-River",
-            1491
+            2589
           ],
           [
             "FI-Biomass",
             696
-          ],
-          [
-            "FI-Fossil hard coal",
-            463
           ],
           [
             "FI-Fossil oil",
@@ -480,7 +475,15 @@
           ],
           [
             "FI-Wind Total",
-            838
+            840
+          ],
+          [
+            "FI-Coal Total",
+            464
+          ],
+          [
+            "FI-Hydro Total",
+            1491
           ]
         ]
       },
@@ -489,19 +492,11 @@
         "options": [
           [
             "FR-Nuclear",
-            39807
-          ],
-          [
-            "FR-Hydro Run-of-River",
-            4529
+            39823
           ],
           [
             "FR-Biomass",
             367
-          ],
-          [
-            "FR-Fossil hard coal",
-            349
           ],
           [
             "FR-Fossil oil",
@@ -509,11 +504,11 @@
           ],
           [
             "FR-Fossil gas",
-            3978
+            3981
           ],
           [
             "FR-Solar",
-            1502
+            1503
           ],
           [
             "FR-Hydro Pumped",
@@ -521,7 +516,15 @@
           ],
           [
             "FR-Wind Total",
-            3811
+            3812
+          ],
+          [
+            "FR-Coal Total",
+            349
+          ],
+          [
+            "FR-Hydro Total",
+            6174
           ]
         ]
       },
@@ -530,19 +533,11 @@
         "options": [
           [
             "HU-Nuclear",
-            1717
-          ],
-          [
-            "HU-Hydro Run-of-River",
-            10
+            1718
           ],
           [
             "HU-Biomass",
             117
-          ],
-          [
-            "HU-Fossil brown coal / lignite",
-            425
           ],
           [
             "HU-Fossil oil",
@@ -563,20 +558,20 @@
           [
             "HU-Wind Total",
             72
+          ],
+          [
+            "HU-Coal Total",
+            426
+          ],
+          [
+            "HU-Hydro Total",
+            21
           ]
         ]
       },
       {
         "file": "energy-charts-ie.json",
         "options": [
-          [
-            "IE-Hydro Run-of-River",
-            84
-          ],
-          [
-            "IE-Fossil hard coal",
-            205
-          ],
           [
             "IE-Fossil oil",
             263
@@ -596,6 +591,14 @@
           [
             "IE-Wind Total",
             1115
+          ],
+          [
+            "IE-Coal Total",
+            205
+          ],
+          [
+            "IE-Hydro Total",
+            81
           ]
         ]
       },
@@ -603,16 +606,8 @@
         "file": "energy-charts-it.json",
         "options": [
           [
-            "IT-Hydro Run-of-River",
-            3806
-          ],
-          [
             "IT-Biomass",
-            587
-          ],
-          [
-            "IT-Fossil hard coal",
-            2012
+            588
           ],
           [
             "IT-Fossil oil",
@@ -620,15 +615,15 @@
           ],
           [
             "IT-Fossil gas",
-            12072
+            12077
           ],
           [
             "IT-Geothermal",
-            638
+            639
           ],
           [
             "IT-Others",
-            3180
+            3182
           ],
           [
             "IT-Solar",
@@ -640,17 +635,21 @@
           ],
           [
             "IT-Wind Total",
-            2191
+            2193
+          ],
+          [
+            "IT-Coal Total",
+            2545
+          ],
+          [
+            "IT-Hydro Total",
+            4697
           ]
         ]
       },
       {
         "file": "energy-charts-lt.json",
         "options": [
-          [
-            "LT-Hydro Run-of-River",
-            41
-          ],
           [
             "LT-Biomass",
             45
@@ -674,6 +673,14 @@
           [
             "LT-Wind Total",
             155
+          ],
+          [
+            "LT-Coal Total",
+            0
+          ],
+          [
+            "LT-Hydro Total",
+            80
           ]
         ]
       },
@@ -687,6 +694,14 @@
           [
             "LU-Wind Total",
             5
+          ],
+          [
+            "LU-Coal Total",
+            0
+          ],
+          [
+            "LU-Hydro Total",
+            1
           ]
         ]
       },
@@ -694,16 +709,12 @@
         "file": "energy-charts-lv.json",
         "options": [
           [
-            "LV-Hydro Run-of-River",
-            280
-          ],
-          [
             "LV-Biomass",
-            61
+            60
           ],
           [
             "LV-Fossil gas",
-            221
+            220
           ],
           [
             "LV-Others",
@@ -716,6 +727,14 @@
           [
             "LV-Wind Total",
             15
+          ],
+          [
+            "LV-Coal Total",
+            0
+          ],
+          [
+            "LV-Hydro Total",
+            280
           ]
         ]
       },
@@ -728,6 +747,14 @@
           ],
           [
             "MT-Wind Total",
+            0
+          ],
+          [
+            "MT-Coal Total",
+            0
+          ],
+          [
+            "MT-Hydro Total",
             0
           ]
         ]
@@ -744,16 +771,12 @@
             10
           ],
           [
-            "NL-Fossil hard coal",
-            2166
-          ],
-          [
             "NL-Fossil gas",
-            5069
+            5068
           ],
           [
             "NL-Others",
-            2145
+            2144
           ],
           [
             "NL-Solar",
@@ -765,17 +788,21 @@
           ],
           [
             "NL-Wind Total",
-            1085
+            1084
+          ],
+          [
+            "NL-Coal Total",
+            2166
+          ],
+          [
+            "NL-Hydro Total",
+            0
           ]
         ]
       },
       {
         "file": "energy-charts-no.json",
         "options": [
-          [
-            "NO-Hydro Run-of-River",
-            1533
-          ],
           [
             "NO-Fossil gas",
             230
@@ -790,7 +817,15 @@
           ],
           [
             "NO-Wind Total",
-            957
+            958
+          ],
+          [
+            "NO-Coal Total",
+            0
+          ],
+          [
+            "NO-Hydro Total",
+            15335
           ]
         ]
       },
@@ -798,20 +833,8 @@
         "file": "energy-charts-pl.json",
         "options": [
           [
-            "PL-Hydro Run-of-River",
-            172
-          ],
-          [
             "PL-Biomass",
             217
-          ],
-          [
-            "PL-Fossil brown coal / lignite",
-            4589
-          ],
-          [
-            "PL-Fossil hard coal",
-            8673
           ],
           [
             "PL-Fossil oil",
@@ -828,6 +851,14 @@
           [
             "PL-Wind Total",
             1727
+          ],
+          [
+            "PL-Coal Total",
+            13317
+          ],
+          [
+            "PL-Hydro Total",
+            296
           ]
         ]
       },
@@ -835,16 +866,8 @@
         "file": "energy-charts-pt.json",
         "options": [
           [
-            "PT-Hydro Run-of-River",
-            697
-          ],
-          [
             "PT-Biomass",
             345
-          ],
-          [
-            "PT-Fossil hard coal",
-            null
           ],
           [
             "PT-Fossil gas",
@@ -856,7 +879,7 @@
           ],
           [
             "PT-Solar",
-            169
+            170
           ],
           [
             "PT-Hydro Pumped",
@@ -865,6 +888,14 @@
           [
             "PT-Wind Total",
             1433
+          ],
+          [
+            "PT-Coal Total",
+            452
+          ],
+          [
+            "PT-Hydro Total",
+            1081
           ]
         ]
       },
@@ -873,7 +904,7 @@
         "options": [
           [
             "SE-Nuclear",
-            6397
+            6396
           ],
           [
             "SE-Others",
@@ -885,7 +916,15 @@
           ],
           [
             "SE-Wind Total",
-            2763
+            2765
+          ],
+          [
+            "SE-Coal Total",
+            0
+          ],
+          [
+            "SE-Hydro Total",
+            7823
           ]
         ]
       },
@@ -897,15 +936,7 @@
             null
           ],
           [
-            "UK-Hydro Run-of-River",
-            null
-          ],
-          [
             "UK-Biomass",
-            null
-          ],
-          [
-            "UK-Fossil hard coal",
             null
           ],
           [
@@ -930,7 +961,15 @@
           ],
           [
             "UK-Wind Total",
-            4043
+            4041
+          ],
+          [
+            "UK-Coal Total",
+            659
+          ],
+          [
+            "UK-Hydro Total",
+            458
           ]
         ]
       },
@@ -962,7 +1001,7 @@
         "options": [
           [
             "AT-Load",
-            7116
+            7119
           ]
         ]
       },
@@ -971,7 +1010,7 @@
         "options": [
           [
             "CH-Load",
-            7113
+            7117
           ]
         ]
       },
@@ -980,7 +1019,7 @@
         "options": [
           [
             "DE-Load",
-            56734
+            56729
           ]
         ]
       },
@@ -989,7 +1028,7 @@
         "options": [
           [
             "DK-Load",
-            3913
+            3912
           ]
         ]
       },
@@ -1007,7 +1046,7 @@
         "options": [
           [
             "ES-Load",
-            27918
+            27930
           ]
         ]
       },
@@ -1016,7 +1055,7 @@
         "options": [
           [
             "FI-Load",
-            9362
+            9366
           ]
         ]
       },
@@ -1025,7 +1064,7 @@
         "options": [
           [
             "FR-Load",
-            52078
+            52103
           ]
         ]
       },
@@ -1034,7 +1073,7 @@
         "options": [
           [
             "HU-Load",
-            4956
+            4958
           ]
         ]
       },
@@ -1052,7 +1091,7 @@
         "options": [
           [
             "IT-Load",
-            32830
+            32846
           ]
         ]
       },
@@ -1061,7 +1100,7 @@
         "options": [
           [
             "LT-Load",
-            1380
+            1379
           ]
         ]
       },
@@ -1092,7 +1131,7 @@
         "options": [
           [
             "NL-Load",
-            12377
+            12376
           ]
         ]
       },
@@ -1101,7 +1140,7 @@
         "options": [
           [
             "NO-Load",
-            15241
+            15249
           ]
         ]
       },
@@ -1110,7 +1149,7 @@
         "options": [
           [
             "PL-Load",
-            19397
+            19396
           ]
         ]
       },
@@ -1128,7 +1167,7 @@
         "options": [
           [
             "SE-Load",
-            15426
+            15425
           ]
         ]
       },
@@ -1164,7 +1203,7 @@
         "options": [
           [
             "AT-Import Balance",
-            731
+            733
           ]
         ]
       },
@@ -1173,7 +1212,7 @@
         "options": [
           [
             "CH-Import Balance",
-            -26
+            -25
           ]
         ]
       },
@@ -1182,7 +1221,7 @@
         "options": [
           [
             "DE-Import Balance",
-            -3357
+            -3355
           ]
         ]
       },
@@ -1209,7 +1248,7 @@
         "options": [
           [
             "ES-Import Balance",
-            212
+            211
           ]
         ]
       },
@@ -1227,7 +1266,7 @@
         "options": [
           [
             "FR-Import Balance",
-            -4497
+            -4498
           ]
         ]
       },
@@ -1236,7 +1275,7 @@
         "options": [
           [
             "HU-Import Balance",
-            1451
+            1452
           ]
         ]
       },
@@ -1254,7 +1293,7 @@
         "options": [
           [
             "IT-Import Balance",
-            4573
+            4577
           ]
         ]
       },
@@ -1299,7 +1338,7 @@
         "options": [
           [
             "NL-Import Balance",
-            42
+            44
           ]
         ]
       },
@@ -1308,7 +1347,7 @@
         "options": [
           [
             "NO-Import Balance",
-            -1315
+            -1318
           ]
         ]
       },
@@ -1317,7 +1356,7 @@
         "options": [
           [
             "PL-Import Balance",
-            678
+            677
           ]
         ]
       },
@@ -1335,7 +1374,7 @@
         "options": [
           [
             "SE-Import Balance",
-            -2885
+            -2886
           ]
         ]
       },
@@ -1344,7 +1383,7 @@
         "options": [
           [
             "UK-Import Balance",
-            1895
+            1892
           ]
         ]
       },
