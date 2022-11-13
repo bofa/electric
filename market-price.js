@@ -1,0 +1,102 @@
+const axios = require('axios');
+const luxon = require('luxon');
+const fs = require('fs');
+
+let markets = process.argv.slice(2);
+markets = markets.length > 0 ? markets : ['de']
+
+markets.forEach((market, marketIndex) => {
+  let importData = [];
+  // try {
+  //   importData = require(`./scrape/raw/energy-charts-${market}.json`);
+  // } catch {}
+  // importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
+
+  const marketLabel = market.toUpperCase();
+
+  function uniq(a, key) {
+    var seen = {};
+    return a.filter(function(item) {
+      return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true);
+    });
+  }
+
+  // const startDate = luxon.DateTime.fromISO('2020-01-01')
+
+  const nowDate = luxon.DateTime.now();
+  const startDateRequested = luxon.DateTime.fromISO('2018-01-01')
+  const startDateImport = luxon.DateTime.fromISO(importData.at(0)?.x);
+  const endDateImport = luxon.DateTime.fromISO(importData.at(-1)?.x);
+
+  const startDate = startDateImport.isValid && startDateImport <= startDateRequested.plus({ days: 1 })
+    ? endDateImport
+    : startDateRequested;
+
+  const now = luxon.DateTime.now();
+  const weeks =
+  [
+    Array(nowDate.year - startDate.year + 1)
+      .fill()
+      .map((_, i) => startDate.year + i)
+      .map(year => Array(53).fill().map((_, i) => ({ year, week: i+1 })))
+  ].flat(2)
+  // [{ year: 2020, week: '45' }]
+    // .map(w => { console.log('w', w); return w; })
+    .filter(week => startDate === null || week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
+    .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
+    .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
+    .map((weekObj, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
+        axios.get(`https://www.energy-charts.info/charts/price_spot_market/data/${market}/week_${weekObj.year}_${weekObj.week}.json`)
+        .then(response => response.data)
+        .then(sources => {
+          // const date = new luxon.DateTime(sources[0].xAxisValues[0])
+          console.log(market, weekObj);
+          const marketData = sources
+            .filter(s => Array.isArray(s.name))
+            .map(s => ({
+              name: s.name[0].en.match(/\(([^\)]+)\)/g)[0].slice(1, -1),
+              data: s.data,
+            }))
+
+          const dates = sources[0].xAxisValues.map(d => luxon.DateTime.fromMillis(d));
+
+          const inverted = dates.map((x, i) => ({
+            x,
+            ...marketData.reduce((obj, m) => ({ ...obj, [m.name + '-Price']: m.data[i] }), {})
+          }))
+
+          return inverted;
+        })
+        .catch(error => {
+          console.warn('Error', error.response?.status, error.request?.path);
+          return [];
+        })
+    ))
+
+  Promise.all(weeks)
+    .then(weeks => {
+      const flat = weeks
+        .flat()
+        .concat(importData)
+
+      const unique = uniq(flat, 'x')
+        .sort((a, b) => a.x - b.x);
+
+      fs.writeFileSync(`scrape/raw/energy-price-${market}.json`, JSON.stringify(unique, null, 2));
+      
+      // const filteredProduction = unique
+      //   .filter(p => p.x.year >= 2020)
+      //   .map(p => keepKeysProduction.reduce((obj, key) => ({ ...obj, [key]: p[key] }), {}))
+      // fs.writeFileSync(`scrape/production-${market}.json`, JSON.stringify(filteredProduction, null, 2));
+
+      // const filteredConsumption = unique
+      //   .filter(p => p.x.year >= 2020)
+      //   .map(p => keepKeysConsumption.reduce((obj, key) => ({ ...obj, [key[1]]: p[key[0]] }), {}))
+      // fs.writeFileSync(`scrape/consumption-${market}.json`, JSON.stringify(filteredConsumption, null, 2));
+
+      // const filteredExport = unique
+      //   .filter(p => p.x.year >= 2020)
+      //   .map(p => keepKeysExport.reduce((obj, key) => ({ ...obj, [key[1]]: -p[key[0]] }), { x: p.x }))
+      // fs.writeFileSync(`scrape/export-${market}.json`, JSON.stringify(filteredExport, null, 2));
+    })
+})

@@ -9,7 +9,7 @@ const options = // ['price', 'production', 'consumption']
     key: 'priceDataSet',
     name: 'Price',
     unit: 'EUR/MWh',
-    fields: ['-price'],
+    fields: ['-price', '-Price'],
   },
   {
     key: 'productionDataSet',

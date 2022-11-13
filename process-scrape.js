@@ -4,49 +4,6 @@ const fs = require('fs');
 
 // Extract options
 const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
-const options = // ['price', 'production', 'consumption']
-[
-  {
-    key: 'priceDataSet',
-    name: 'Price',
-    unit: 'EUR/MWh',
-    fields: ['-price'],
-  },
-  {
-    key: 'productionDataSet',
-    name: 'Production',
-    unit: 'MW',
-    fields: [
-      '-Nuclear',
-      '-Hydro Run-of-River',
-      '-Biomass',
-      '-Fossil brown coal / lignite',
-      '-Fossil hard coal',
-      '-Fossil oil',
-      '-Fossil gas',
-      '-Geothermal',
-      '-Hydro water reservoir',
-      '-Hydro pumped storage',
-      '-Wind offshore',
-      '-Wind onshore',
-      '-Solar',
-      '-Others'
-    ],
-  },
-  {
-    key: 'consumptionDataSet',
-    name: 'Consumption',
-    unit: 'MW',
-    fields: ['-Load'],
-  },
-  {
-    key: 'exportDataSet',
-    name: 'Export',
-    unit: 'MW',
-    fields: ['-Import Balance'],
-  },
-]
-
 const combineKeys = [
   ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
   ['Wind Total', ['Wind offshore', 'Wind onshore']],

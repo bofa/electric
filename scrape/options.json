@@ -4,7 +4,8 @@
     "name": "Price",
     "unit": "EUR/MWh",
     "fields": [
-      "-price"
+      "-price",
+      "-Price"
     ],
     "files": [
       {
@@ -89,6 +90,63 @@
       },
       {
         "file": "energy-charts-uk.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-it.json",
+        "options": [
+          [
+            "IT-Brindisi-Price",
+            null
+          ],
+          [
+            "IT-Centre-North-Price",
+            112
+          ],
+          [
+            "IT-Centre-South-Price",
+            111
+          ],
+          [
+            "IT-Foggia-Price",
+            null
+          ],
+          [
+            "IT-North-Price",
+            112
+          ],
+          [
+            "IT-Priolo-Price",
+            null
+          ],
+          [
+            "IT-Rossano-Price",
+            null
+          ],
+          [
+            "IT-SACOAC-Price",
+            108
+          ],
+          [
+            "IT-SACODC-Price",
+            206
+          ],
+          [
+            "IT-Sardinia-Price",
+            108
+          ],
+          [
+            "IT-Sicily-Price",
+            117
+          ],
+          [
+            "IT-South-Price",
+            109
+          ]
+        ]
+      },
+      {
+        "file": "energy-price-se.json",
         "options": []
       },
       {
@@ -974,6 +1032,14 @@
         ]
       },
       {
+        "file": "energy-price-it.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-se.json",
+        "options": []
+      },
+      {
         "file": "price.json",
         "options": []
       },
@@ -1181,6 +1247,14 @@
         ]
       },
       {
+        "file": "energy-price-it.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-se.json",
+        "options": []
+      },
+      {
         "file": "price.json",
         "options": []
       },
@@ -1386,6 +1460,14 @@
             1892
           ]
         ]
+      },
+      {
+        "file": "energy-price-it.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-se.json",
+        "options": []
       },
       {
         "file": "price.json",
