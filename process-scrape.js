@@ -70,7 +70,9 @@ allFiles
         // Combine keys
         .map(y => ({ ...y, ...combineKeys.reduce((obj, combine) => ({
           ...obj,
-          [combine[0]]: combine[1].filter(k => y[k]).reduce((sum, k) => sum + y[k], 0)
+          [combine[0]]: combine[1].filter(k => y[k]).length < 1
+            ? null :
+            combine[1].filter(k => y[k]).reduce((sum, k) => sum + y[k], 0)
         }), {}) }))
         .map(y => {
           removeKeys.forEach(k => delete y[k]);
