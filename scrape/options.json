@@ -93,6 +93,32 @@
         "options": []
       },
       {
+        "file": "energy-price-at.json",
+        "options": [
+          [
+            "AT-Price",
+            88
+          ],
+          [
+            "DE-AT-LU-Price",
+            null
+          ]
+        ]
+      },
+      {
+        "file": "energy-price-dk.json",
+        "options": [
+          [
+            "DK1-Price",
+            79
+          ],
+          [
+            "DK2-Price",
+            79
+          ]
+        ]
+      },
+      {
         "file": "energy-price-it.json",
         "options": [
           [
@@ -146,8 +172,43 @@
         ]
       },
       {
+        "file": "energy-price-pl.json",
+        "options": [
+          [
+            "PL-Price",
+            146
+          ]
+        ]
+      },
+      {
         "file": "energy-price-se.json",
-        "options": []
+        "options": [
+          [
+            "SE1-Price",
+            36
+          ],
+          [
+            "SE2-Price",
+            36
+          ],
+          [
+            "SE3-Price",
+            55
+          ],
+          [
+            "SE4-Price",
+            65
+          ]
+        ]
+      },
+      {
+        "file": "energy-price-uk.json",
+        "options": [
+          [
+            "GB-Price",
+            null
+          ]
+        ]
       },
       {
         "file": "price.json",
@@ -1032,11 +1093,27 @@
         ]
       },
       {
+        "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-dk.json",
+        "options": []
+      },
+      {
         "file": "energy-price-it.json",
         "options": []
       },
       {
+        "file": "energy-price-pl.json",
+        "options": []
+      },
+      {
         "file": "energy-price-se.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-uk.json",
         "options": []
       },
       {
@@ -1247,11 +1324,27 @@
         ]
       },
       {
+        "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-dk.json",
+        "options": []
+      },
+      {
         "file": "energy-price-it.json",
         "options": []
       },
       {
+        "file": "energy-price-pl.json",
+        "options": []
+      },
+      {
         "file": "energy-price-se.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-uk.json",
         "options": []
       },
       {
@@ -1462,11 +1555,27 @@
         ]
       },
       {
+        "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-dk.json",
+        "options": []
+      },
+      {
         "file": "energy-price-it.json",
         "options": []
       },
       {
+        "file": "energy-price-pl.json",
+        "options": []
+      },
+      {
         "file": "energy-price-se.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-uk.json",
         "options": []
       },
       {

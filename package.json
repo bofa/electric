@@ -37,6 +37,7 @@
     "productiongranular": "node production-sweden-granular.js",
     "market": "node market.js",
     "marketprice": "node market-price.js",
+    "marketsprice": "node market-price.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se uk no",
     "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se uk no",
     "granular": "npm run consumptiongraunlar && npm run productiongranular && npm run productionwind",
     "options": "node options.js",
