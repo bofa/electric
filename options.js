@@ -62,9 +62,12 @@ const options = // ['price', 'production', 'consumption']
           .filter(key => key !== 'x')
           .filter(key => option.fields.some(partial => key.includes(partial)))
           .map(key => {
-            const average = content.map(p => p[key]).reduce((sum, value) => sum + value) / content.length;
-            return [key, Math.round(average)];
+            const values = content.slice(-365*24).map(p => p[key]);
+            const average = values.reduce((sum, value) => sum + value) / content.length;
+            const variance = values.reduce((sum , value) => sum + (value-average)**2, 0) / content.length;
+            return [key, Math.round(average), Math.sqrt(variance)];
           })
+          .filter(option => !isNaN(option[2]) && option[2] !== 0)
         }
       })
       // .sort((a, b) => a.localeCompare(b))
