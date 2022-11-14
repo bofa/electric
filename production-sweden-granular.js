@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-const importData = require('./scrape/production-sweden-granular.json');
+const importData = require('./scrape/raw/production-sweden-granular.json');
 const luxon = require('luxon');
 
 function uniq(a, key) {
@@ -19,7 +19,7 @@ const productionTypes = [
   // { key: 'VI', name: 'SE-wind' },
 ]
 
-const fetchDaysBack = 3 * 365;
+const fetchDaysBack = 5 * 365;
 const too = luxon.DateTime.now();
 const from = too.minus({ days: fetchDaysBack });
 
@@ -37,7 +37,7 @@ Promise.all(calls$)
     .slice(1, -2)
     .map(row => row.split(';'))
     .map(row => ({
-      x: row[0].replace(' ', 'T') + ':00',
+      x: luxon.DateTime.fromISO(row[0].replace(' ', 'T') + ':00'),
       y: row[1] !== '0'
         ? Math.round(Number(row[1]?.replace(',', '.')) / 1000 )
         : NaN
@@ -50,12 +50,12 @@ Promise.all(calls$)
   // .then(formatted => { console.log(formatted); return formatted })
   .then(formatted => {
     const merge = formatted
-      .concat(importData)
+      // .concat(importData)
 
     const unique = uniq(merge, 'x')
       .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
 
-    fs.writeFileSync('scrape/production-sweden-granular.json', JSON.stringify(unique, null, 2))
+    // fs.writeFileSync('scrape/production-sweden-granular.json', JSON.stringify(unique, null, 2))
 
     fs.writeFileSync('scrape/raw/production-sweden-granular.json', JSON.stringify(unique, null, 2))
   })
