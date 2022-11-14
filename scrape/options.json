@@ -95,11 +95,6 @@
             "key": "AT-Price",
             "average": 16,
             "stdMovingAverage": 22.05035858004706
-          },
-          {
-            "key": "DE-AT-LU-Price",
-            "average": null,
-            "stdMovingAverage": null
           }
         ]
       },
@@ -182,11 +177,6 @@
         "file": "energy-price-it.json",
         "options": [
           {
-            "key": "IT-Brindisi-Price",
-            "average": null,
-            "stdMovingAverage": null
-          },
-          {
             "key": "IT-Centre-North-Price",
             "average": 62,
             "stdMovingAverage": 32.51979909576486
@@ -197,24 +187,9 @@
             "stdMovingAverage": 31.22440806292876
           },
           {
-            "key": "IT-Foggia-Price",
-            "average": null,
-            "stdMovingAverage": null
-          },
-          {
             "key": "IT-North-Price",
             "average": 63,
             "stdMovingAverage": 32.36876726648883
-          },
-          {
-            "key": "IT-Priolo-Price",
-            "average": null,
-            "stdMovingAverage": null
-          },
-          {
-            "key": "IT-Rossano-Price",
-            "average": null,
-            "stdMovingAverage": null
           },
           {
             "key": "IT-SACOAC-Price",
@@ -256,11 +231,6 @@
       {
         "file": "energy-price-lu.json",
         "options": [
-          {
-            "key": "DE-AT-LU-Price",
-            "average": null,
-            "stdMovingAverage": null
-          },
           {
             "key": "DE-LU-Price",
             "average": 14,
@@ -426,11 +396,6 @@
             "stdMovingAverage": 336.16895264418855
           },
           {
-            "key": "AT-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "AT-Hydro Total",
             "average": 1037,
             "stdMovingAverage": 63389.012388924486
@@ -446,11 +411,6 @@
             "stdMovingAverage": 128.34249021813957
           },
           {
-            "key": "CH-Solar",
-            "average": null,
-            "stdMovingAverage": null
-          },
-          {
             "key": "CH-Hydro Pumped",
             "average": 83,
             "stdMovingAverage": 200.82615766907534
@@ -459,11 +419,6 @@
             "key": "CH-Wind Total",
             "average": 2,
             "stdMovingAverage": 4.7979332901880305
-          },
-          {
-            "key": "CH-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "CH-Hydro Total",
@@ -556,11 +511,6 @@
             "stdMovingAverage": 157.0724670228178
           },
           {
-            "key": "DK-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "DK-Wind Total",
             "average": 438,
             "stdMovingAverage": 600.472875807163
@@ -569,11 +519,6 @@
             "key": "DK-Coal Total",
             "average": 124,
             "stdMovingAverage": 117.88801800749054
-          },
-          {
-            "key": "DK-Hydro Total",
-            "average": 0,
-            "stdMovingAverage": 0
           }
         ]
       },
@@ -599,11 +544,6 @@
             "key": "EE-Solar",
             "average": 12,
             "stdMovingAverage": 39.09431923819824
-          },
-          {
-            "key": "EE-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "EE-Wind Total",
@@ -706,11 +646,6 @@
             "stdMovingAverage": 11.965817303509738
           },
           {
-            "key": "FI-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "FI-Wind Total",
             "average": 258,
             "stdMovingAverage": 353.90031160230905
@@ -804,11 +739,6 @@
             "key": "HU-Others",
             "average": 13,
             "stdMovingAverage": 6.350793335054006
-          },
-          {
-            "key": "HU-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "HU-Wind Total",
@@ -956,11 +886,6 @@
             "stdMovingAverage": 60.099551480377144
           },
           {
-            "key": "LT-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "LT-Hydro Total",
             "average": 8,
             "stdMovingAverage": 103.50134598911436
@@ -971,19 +896,9 @@
         "file": "energy-charts-lu.json",
         "options": [
           {
-            "key": "LU-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "LU-Wind Total",
             "average": 4,
             "stdMovingAverage": 10.03444034156635
-          },
-          {
-            "key": "LU-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "LU-Hydro Total",
@@ -1011,19 +926,9 @@
             "stdMovingAverage": 1.9143284411771646
           },
           {
-            "key": "LV-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "LV-Wind Total",
             "average": 4,
             "stdMovingAverage": 8.124605803041815
-          },
-          {
-            "key": "LV-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "LV-Hydro Total",
@@ -1034,28 +939,7 @@
       },
       {
         "file": "energy-charts-mt.json",
-        "options": [
-          {
-            "key": "MT-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
-            "key": "MT-Wind Total",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
-            "key": "MT-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
-            "key": "MT-Hydro Total",
-            "average": 0,
-            "stdMovingAverage": 0
-          }
-        ]
+        "options": []
       },
       {
         "file": "energy-charts-nl.json",
@@ -1086,11 +970,6 @@
             "stdMovingAverage": 27.23720544697012
           },
           {
-            "key": "NL-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "NL-Wind Total",
             "average": 302,
             "stdMovingAverage": 458.4267333752818
@@ -1099,11 +978,6 @@
             "key": "NL-Coal Total",
             "average": 471,
             "stdMovingAverage": 274.64125317696215
-          },
-          {
-            "key": "NL-Hydro Total",
-            "average": 0,
-            "stdMovingAverage": 0
           }
         ]
       },
@@ -1116,11 +990,6 @@
             "stdMovingAverage": 9.359383696246084
           },
           {
-            "key": "NO-Others",
-            "average": null,
-            "stdMovingAverage": null
-          },
-          {
             "key": "NO-Hydro Pumped",
             "average": 39,
             "stdMovingAverage": 62.643469160063425
@@ -1129,11 +998,6 @@
             "key": "NO-Wind Total",
             "average": 336,
             "stdMovingAverage": 367.8672634835621
-          },
-          {
-            "key": "NO-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "NO-Hydro Total",
@@ -1241,19 +1105,9 @@
             "stdMovingAverage": 90.66091887889851
           },
           {
-            "key": "SE-Hydro Pumped",
-            "average": 0,
-            "stdMovingAverage": 0
-          },
-          {
             "key": "SE-Wind Total",
             "average": 771,
             "stdMovingAverage": 905.6596280312226
-          },
-          {
-            "key": "SE-Coal Total",
-            "average": 0,
-            "stdMovingAverage": 0
           },
           {
             "key": "SE-Hydro Total",
@@ -1442,13 +1296,7 @@
       },
       {
         "file": "energy-charts-ie.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": null,
-            "stdMovingAverage": null
-          }
-        ]
+        "options": []
       },
       {
         "file": "energy-charts-it.json",
@@ -1718,13 +1566,7 @@
       },
       {
         "file": "energy-charts-ie.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": null,
-            "stdMovingAverage": null
-          }
-        ]
+        "options": []
       },
       {
         "file": "energy-charts-it.json",
