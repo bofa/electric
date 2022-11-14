@@ -38,6 +38,11 @@ export const confidenceTransforms = [
       return { min, max };
     }
   },
+  {
+    key: 'stacked',
+    name: 'stacked',
+    transform: s => ({ min: [], max: []})
+  },
 ]
 
 export default function SelectConfidence(props) {

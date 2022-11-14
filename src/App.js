@@ -137,6 +137,8 @@ function App () {
     .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
     .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
 
+  const stacked = confidence === 'stacked';
+
   const dataTimeSeries = {
     datasets: 
       processedSeries.map((area, i) => [
@@ -149,9 +151,10 @@ function App () {
             pointRadius: windowSize === 1 ? 1 : 0,
             borderWidth: 1,
             // TODO
-            // fill: i === 0 ? 'origin' : i-1,
-            fill: false,
-            stacked: false,
+            fill: !stacked ? false
+              : i === 0 ? 'origin'
+              : i-1,
+            stacked,
           },
         ]
         .concat(windowSize === 1
@@ -173,7 +176,7 @@ function App () {
               pointRadius: 0,
               borderWidth: 0,
             }
-          ]
+          ].filter(s => s.data.length > 0)
         ),
           // {
           //   type: windowSize === 1 ? 'scatter' : 'line',
@@ -248,7 +251,7 @@ function App () {
     maintainAspectRatio: false,
     scales: {
       y: {
-        stacked: false,
+        stacked,
         beginAtZero: true,
         suggestedMax: 250,
         position: 'right',
