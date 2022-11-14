@@ -50,7 +50,7 @@ Promise.all(calls$)
   // .then(formatted => { console.log(formatted); return formatted })
   .then(formatted => {
     const merge = formatted
-      // .concat(importData)
+      .concat(importData)
 
     const unique = uniq(merge, 'x')
       .sort((a, b) => luxon.DateTime.fromISO(a.x) - luxon.DateTime.fromISO(b.x));
