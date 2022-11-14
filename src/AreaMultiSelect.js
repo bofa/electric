@@ -34,7 +34,7 @@ export default function FilmSelect(props) {
   const { selectedAreas, setSelectedAreas } = props;
 
   const items = props.areas
-    .map(area => ({ area: area[0], text: area[0], label: Math.round(area[1]), active: selectedAreas.includes(area[0]) }))
+    .map(area => ({ area: area.key, text: area.key, label: Math.round(area.average), active: selectedAreas.includes(area.key) }))
     .sort((a1, a2) => a1.text.localeCompare(a2.text) )
   
   return (

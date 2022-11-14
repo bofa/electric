@@ -61,10 +61,10 @@ markets.forEach((market, marketIndex) => {
 
           return inverted;
         })
-        // .catch(error => {
-        //   console.warn('Error', error.response?.status, error.request?.path);
-        //   return [];
-        // })
+        .catch(error => {
+          console.warn('Error', error.response?.status, error.request?.path);
+          return [];
+        })
     ))
 
   Promise.all(weeks)

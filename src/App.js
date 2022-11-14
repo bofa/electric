@@ -79,7 +79,7 @@ function App () {
     const files = selectedAreas
       .map(area => options
         .find(option => option.key === selectDataSet)?.files
-        .find(file => file.options.map(o => o[0]).includes(area))?.file
+        .find(file => file.options.map(o => o.key).includes(area))?.file
       )
       .flat()
       .filter(file => file !== undefined)
@@ -132,8 +132,16 @@ function App () {
     lowerDate = now.minus(minus)
   }
 
+  const flatOptions = options
+    .map(o => o.files)
+    .flat()
+    .map(f => f.options)
+    .flat();
+
   const processedSeries = fullDataSet
     .filter(series => selectedAreas.includes(series.label))
+    .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
+    .sort((s1, s2) => s1.option.stdMovingAverage - s2.option.stdMovingAverage)
     .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
     .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
 
@@ -142,106 +150,106 @@ function App () {
   const dataTimeSeries = {
     datasets: 
       processedSeries.map((area, i) => [
+        {
+          type: windowSize === 1 ? 'scatter' : 'line',
+          label: area.label,
+          data: area.movingAverage,
+          backgroundColor: adjustHexOpacity(i, 0.25),
+          borderColor: adjustHexOpacity(i, 1),
+          pointRadius: windowSize === 1 ? 1 : 0,
+          borderWidth: 1,
+          // TODO
+          fill: !stacked ? false
+            : i === 0 ? 'origin'
+            : i-1,
+          stacked,
+        },
+      ]
+      .concat(windowSize === 1
+        ? []
+        : [
           {
-            type: windowSize === 1 ? 'scatter' : 'line',
-            label: area.label,
-            data: area.movingAverage,
-            backgroundColor: adjustHexOpacity(i, 0.25),
-            borderColor: adjustHexOpacity(i, 1),
-            pointRadius: windowSize === 1 ? 1 : 0,
-            borderWidth: 1,
-            // TODO
-            fill: !stacked ? false
-              : i === 0 ? 'origin'
-              : i-1,
-            stacked,
+            label: 'remove' + area.label + ' min',
+            data: area.min,
+            fill: 3*i,
+            backgroundColor: adjustHexOpacity(i, 0.2),
+            pointRadius: 0,
+            borderWidth: 0,
           },
-        ]
-        .concat(windowSize === 1
-          ? []
-          : [
-            {
-              label: 'remove' + area.label + ' min',
-              data: area.min,
-              fill: 3*i,
-              backgroundColor: adjustHexOpacity(i, 0.2),
-              pointRadius: 0,
-              borderWidth: 0,
-            },
-            {
-              label: 'remove' + area.label + ' max',
-              data: area.max,
-              fill: 3*i,
-              backgroundColor: adjustHexOpacity(i, 0.2),
-              pointRadius: 0,
-              borderWidth: 0,
-            }
-          ].filter(s => s.data.length > 0)
-        ),
-          // {
-          //   type: windowSize === 1 ? 'scatter' : 'line',
-          //   label: area.label,
-          //   data: range.movingAverage,
-          //   fill: false,
-          //   backgroundColor: colors[i],
-          //   borderColor: colors[i],
-          //   pointRadius: windowSize === 1 ? 1 : 0,
-          //   borderWidth: 1,
-          // },
-          // {
-          //   type: windowSize === 1 ? 'scatter' : 'line',
-          //   label: area.label,
-          //   data: arerangea.movingAverage,
-          //   fill: false,
-          //   backgroundColor: colors[i],
-          //   borderColor: colors[i],
-          //   pointRadius: windowSize === 1 ? 1 : 0,
-          //   borderWidth: 1,
-          // },
-          // {
-          //   type: 'line',
-          //   label: 'sin',
-          //   data: area.movingAverage
-          //     .map((p, i) => transformSin(p, 1.75e4, 3e3, 2*Math.PI, 1))
-          //     .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
-          //     ,
-          //   fill: false,
-          //   backgroundColor: colors[i+1],
-          //   borderColor: colors[i+1],
-          //   pointRadius: windowSize === 1 ? 1 : 0,
-          //   borderWidth: 1,
-          // },
-          // {
-          //   type: 'line',
-          //   label: 'sin2',
-          //   data: area.movingAverage
-          //     .map((p, i) => transformSin(p, 1.33e4, 3e3, 2*Math.PI, 1))
-          //     .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
-          //     ,
-          //   fill: false,
-          //   backgroundColor: colors[i+1],
-          //   borderColor: colors[i+1],
-          //   pointRadius: windowSize === 1 ? 1 : 0,
-          //   borderWidth: 1,
-          // },
-          // {
-          //   type: 'scatter',
-          //   label: 'Buy',
-          //   data: area.buy,
-          //   fill: false,
-          //   backgroundColor: 'green',
-          //   radius: 7,
-          //   // borderColor: 'rgba(25, 99, 132, 0.2)',
-          // },
-          // {
-          //   type: 'scatter',
-          //   label: 'Sell',
-          //   data: area.sell,
-          //   fill: false,
-          //   backgroundColor: 'red',
-          //   radius: 7,
-          //   // borderColor: 'rgba(25, 99, 132, 0.2)',
-          // },
+          {
+            label: 'remove' + area.label + ' max',
+            data: area.max,
+            fill: 3*i,
+            backgroundColor: adjustHexOpacity(i, 0.2),
+            pointRadius: 0,
+            borderWidth: 0,
+          }
+        ].filter(s => s.data.length > 0)
+      ),
+        // {
+        //   type: windowSize === 1 ? 'scatter' : 'line',
+        //   label: area.label,
+        //   data: range.movingAverage,
+        //   fill: false,
+        //   backgroundColor: colors[i],
+        //   borderColor: colors[i],
+        //   pointRadius: windowSize === 1 ? 1 : 0,
+        //   borderWidth: 1,
+        // },
+        // {
+        //   type: windowSize === 1 ? 'scatter' : 'line',
+        //   label: area.label,
+        //   data: arerangea.movingAverage,
+        //   fill: false,
+        //   backgroundColor: colors[i],
+        //   borderColor: colors[i],
+        //   pointRadius: windowSize === 1 ? 1 : 0,
+        //   borderWidth: 1,
+        // },
+        // {
+        //   type: 'line',
+        //   label: 'sin',
+        //   data: area.movingAverage
+        //     .map((p, i) => transformSin(p, 1.75e4, 3e3, 2*Math.PI, 1))
+        //     .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
+        //     ,
+        //   fill: false,
+        //   backgroundColor: colors[i+1],
+        //   borderColor: colors[i+1],
+        //   pointRadius: windowSize === 1 ? 1 : 0,
+        //   borderWidth: 1,
+        // },
+        // {
+        //   type: 'line',
+        //   label: 'sin2',
+        //   data: area.movingAverage
+        //     .map((p, i) => transformSin(p, 1.33e4, 3e3, 2*Math.PI, 1))
+        //     .filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1)
+        //     ,
+        //   fill: false,
+        //   backgroundColor: colors[i+1],
+        //   borderColor: colors[i+1],
+        //   pointRadius: windowSize === 1 ? 1 : 0,
+        //   borderWidth: 1,
+        // },
+        // {
+        //   type: 'scatter',
+        //   label: 'Buy',
+        //   data: area.buy,
+        //   fill: false,
+        //   backgroundColor: 'green',
+        //   radius: 7,
+        //   // borderColor: 'rgba(25, 99, 132, 0.2)',
+        // },
+        // {
+        //   type: 'scatter',
+        //   label: 'Sell',
+        //   data: area.sell,
+        //   fill: false,
+        //   backgroundColor: 'red',
+        //   radius: 7,
+        //   // borderColor: 'rgba(25, 99, 132, 0.2)',
+        // },
     ).flat(2)
   };
 
