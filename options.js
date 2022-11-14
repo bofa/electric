@@ -57,17 +57,17 @@ const options = // ['price', 'production', 'consumption']
         const content = JSON.parse(fs.readFileSync(folderRead + file));
 
         return {
-        file: file,
-        options: Object.keys(content[0])
-          .filter(key => key !== 'x')
-          .filter(key => option.fields.some(partial => key.includes(partial)))
-          .map(key => {
-            const values = content.slice(-365*24).map(p => p[key]);
-            const average = values.reduce((sum, value) => sum + value) / content.length;
-            const variance = values.reduce((sum , value) => sum + (value-average)**2, 0) / content.length;
-            return [key, Math.round(average), Math.sqrt(variance)];
-          })
-          .filter(option => !isNaN(option[2]) && option[2] !== 0)
+          file: file,
+          options: Object.keys(content[0])
+            .filter(key => key !== 'x')
+            .filter(key => option.fields.some(partial => key.includes(partial)))
+            .map(key => {
+              const values = content.slice(-365*24).map(p => p[key]);
+              const average = values.reduce((sum, value) => sum + value) / content.length;
+              const variance = values.reduce((sum , value) => sum + (value-average)**2, 0) / content.length;
+              return [key, Math.round(average), Math.sqrt(variance)];
+            })
+            .filter(option => !isNaN(option[2]) && option[2] !== 0)
         }
       })
       // .sort((a, b) => a.localeCompare(b))

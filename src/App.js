@@ -125,9 +125,6 @@ function App () {
     .flat()
     || [];
 
-  const areas = areasArray
-    .map(option => option[0])
-
   const now = DateTime.now();
   let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
   const minus = rangeOptions.find(ro => ro.key === range)?.minus;
@@ -135,11 +132,9 @@ function App () {
     lowerDate = now.minus(minus)
   }
 
-  const rangeDataSet = fullDataSet
-    .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
-
-  const processedSeries = rangeDataSet
+  const processedSeries = fullDataSet
     .filter(series => selectedAreas.includes(series.label))
+    .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
     .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
 
   const dataTimeSeries = {
@@ -149,35 +144,37 @@ function App () {
             type: windowSize === 1 ? 'scatter' : 'line',
             label: area.label,
             data: area.movingAverage,
-            fill: i === 0 ? 'origin' : i-1,
             backgroundColor: adjustHexOpacity(i, 0.25),
             borderColor: adjustHexOpacity(i, 1),
             pointRadius: windowSize === 1 ? 1 : 0,
             borderWidth: 1,
-            stacked: true,
+            // TODO
+            // fill: i === 0 ? 'origin' : i-1,
+            fill: false,
+            stacked: false,
           },
         ]
-        // .concat(windowSize === 1
-        //   ? []
-        //   : [
-        //     {
-        //       label: 'remove' + area.label + ' min',
-        //       data: area.min,
-        //       fill: 3*i,
-        //       backgroundColor: adjustHexOpacity(i, 0.2),
-        //       pointRadius: 0,
-        //       borderWidth: 0,
-        //     },
-        //     {
-        //       label: 'remove' + area.label + ' max',
-        //       data: area.max,
-        //       fill: 3*i,
-        //       backgroundColor: adjustHexOpacity(i, 0.2),
-        //       pointRadius: 0,
-        //       borderWidth: 0,
-        //     }
-        //   ]
-        // ),
+        .concat(windowSize === 1
+          ? []
+          : [
+            {
+              label: 'remove' + area.label + ' min',
+              data: area.min,
+              fill: 3*i,
+              backgroundColor: adjustHexOpacity(i, 0.2),
+              pointRadius: 0,
+              borderWidth: 0,
+            },
+            {
+              label: 'remove' + area.label + ' max',
+              data: area.max,
+              fill: 3*i,
+              backgroundColor: adjustHexOpacity(i, 0.2),
+              pointRadius: 0,
+              borderWidth: 0,
+            }
+          ]
+        ),
           // {
           //   type: windowSize === 1 ? 'scatter' : 'line',
           //   label: area.label,
@@ -251,7 +248,7 @@ function App () {
     maintainAspectRatio: false,
     scales: {
       y: {
-        stacked: true,
+        stacked: false,
         beginAtZero: true,
         suggestedMax: 250,
         position: 'right',
