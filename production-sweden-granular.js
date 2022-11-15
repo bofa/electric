@@ -39,7 +39,7 @@ Promise.all(calls$)
     .map(row => ({
       x: luxon.DateTime.fromISO(row[0].replace(' ', 'T') + ':00'),
       y: row[1] !== '0'
-        ? Math.round(Number(row[1]?.replace(',', '.')) / 1000 )
+        ? Number(row[1]?.replace(',', '.') / 1000 )
         : NaN
     }))
   ))
