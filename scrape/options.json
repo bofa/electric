@@ -17,6 +17,10 @@
         "options": []
       },
       {
+        "file": "energy-charts-cz.json",
+        "options": []
+      },
+      {
         "file": "energy-charts-de.json",
         "options": []
       },
@@ -95,6 +99,16 @@
             "key": "AT-Price",
             "average": 321,
             "stdMovingAverage": 97.36120095598815
+          }
+        ]
+      },
+      {
+        "file": "energy-price-cz.json",
+        "options": [
+          {
+            "key": "CZ-Price",
+            "average": 244,
+            "stdMovingAverage": 88.87670893811139
           }
         ]
       },
@@ -363,42 +377,42 @@
           {
             "key": "AT-Biomass",
             "average": 57,
-            "stdMovingAverage": 4.846115512917332
+            "stdMovingAverage": 4.845983417210848
           },
           {
             "key": "AT-Fossil gas",
-            "average": 2198,
-            "stdMovingAverage": 87512.73015334988
+            "average": 1259,
+            "stdMovingAverage": 584.6710634386959
           },
           {
             "key": "AT-Geothermal",
             "average": 0,
-            "stdMovingAverage": 0.0068004416404159294
+            "stdMovingAverage": 0.006764789907554726
           },
           {
             "key": "AT-Others",
             "average": 22,
-            "stdMovingAverage": 1.496097160891505
+            "stdMovingAverage": 1.48825377966204
           },
           {
             "key": "AT-Solar",
             "average": 87,
-            "stdMovingAverage": 119.60112009989103
+            "stdMovingAverage": 119.6045226842223
           },
           {
             "key": "AT-Hydro Pumped",
-            "average": 238,
-            "stdMovingAverage": 1214.7974398816561
+            "average": 237,
+            "stdMovingAverage": 1212.62497660477
           },
           {
             "key": "AT-Wind Total",
             "average": 838,
-            "stdMovingAverage": 742.2794829773972
+            "stdMovingAverage": 742.2736953453879
           },
           {
             "key": "AT-Hydro Total",
-            "average": 5055,
-            "stdMovingAverage": 140080.80315788128
+            "average": 3554,
+            "stdMovingAverage": 1468.2100650349503
           }
         ]
       },
@@ -408,7 +422,7 @@
           {
             "key": "CH-Nuclear",
             "average": 2576,
-            "stdMovingAverage": 284.4071785779888
+            "stdMovingAverage": 283.34246506435187
           },
           {
             "key": "CH-Solar",
@@ -418,7 +432,7 @@
           {
             "key": "CH-Hydro Pumped",
             "average": 402,
-            "stdMovingAverage": 442.682393911013
+            "stdMovingAverage": 442.6616004778921
           },
           {
             "key": "CH-Wind Total",
@@ -428,7 +442,62 @@
           {
             "key": "CH-Hydro Total",
             "average": 3810,
-            "stdMovingAverage": 1757.2115188944074
+            "stdMovingAverage": 1757.0962572449323
+          }
+        ]
+      },
+      {
+        "file": "energy-charts-cz.json",
+        "options": [
+          {
+            "key": "CZ-Nuclear",
+            "average": 3292,
+            "stdMovingAverage": 207.7353082222432
+          },
+          {
+            "key": "CZ-Biomass",
+            "average": 274,
+            "stdMovingAverage": 15.546315587024687
+          },
+          {
+            "key": "CZ-Fossil oil",
+            "average": 3,
+            "stdMovingAverage": 3.2108167387424253
+          },
+          {
+            "key": "CZ-Fossil gas",
+            "average": 648,
+            "stdMovingAverage": 334.39262506924655
+          },
+          {
+            "key": "CZ-Others",
+            "average": 3,
+            "stdMovingAverage": 5.183650299757338
+          },
+          {
+            "key": "CZ-Solar",
+            "average": 272,
+            "stdMovingAverage": 394.4899092311095
+          },
+          {
+            "key": "CZ-Hydro Pumped",
+            "average": -38,
+            "stdMovingAverage": 407.9756028914911
+          },
+          {
+            "key": "CZ-Wind Total",
+            "average": 76,
+            "stdMovingAverage": 54.297367969253585
+          },
+          {
+            "key": "CZ-Coal Total",
+            "average": 3798,
+            "stdMovingAverage": 546.2723789413471
+          },
+          {
+            "key": "CZ-Hydro Total",
+            "average": 196,
+            "stdMovingAverage": 466.7165182402959
           }
         ]
       },
@@ -438,57 +507,57 @@
           {
             "key": "DE-Nuclear",
             "average": 4206,
-            "stdMovingAverage": 462.65731266826833
+            "stdMovingAverage": 461.3985914422924
           },
           {
             "key": "DE-Biomass",
-            "average": 4804,
-            "stdMovingAverage": 332.93420236030073
+            "average": 4805,
+            "stdMovingAverage": 326.9747917877438
           },
           {
             "key": "DE-Fossil oil",
             "average": 75,
-            "stdMovingAverage": 91.77790142063019
+            "stdMovingAverage": 91.78419812924139
           },
           {
             "key": "DE-Fossil gas",
             "average": 5199,
-            "stdMovingAverage": 2338.2106014822143
+            "stdMovingAverage": 2337.853402042778
           },
           {
             "key": "DE-Geothermal",
             "average": 21,
-            "stdMovingAverage": 2.4868091717298095
+            "stdMovingAverage": 2.4766208098081335
           },
           {
             "key": "DE-Others",
-            "average": 62,
-            "stdMovingAverage": 8.040846619333749
+            "average": 57,
+            "stdMovingAverage": 7.733182442144368
           },
           {
             "key": "DE-Solar",
-            "average": 6562,
-            "stdMovingAverage": 9207.604187457408
+            "average": 6563,
+            "stdMovingAverage": 9207.980388560722
           },
           {
             "key": "DE-Hydro Pumped",
             "average": -216,
-            "stdMovingAverage": 1789.8728301895862
+            "stdMovingAverage": 1789.8827044423954
           },
           {
             "key": "DE-Wind Total",
-            "average": 14143,
-            "stdMovingAverage": 8863.628624770703
+            "average": 14144,
+            "stdMovingAverage": 8862.468114662066
           },
           {
             "key": "DE-Coal Total",
-            "average": 18374,
-            "stdMovingAverage": 4112.359573719628
+            "average": 18377,
+            "stdMovingAverage": 4110.222555531724
           },
           {
             "key": "DE-Hydro Total",
             "average": 1619,
-            "stdMovingAverage": 1842.5074652652156
+            "stdMovingAverage": 1842.3969756923368
           }
         ]
       },
@@ -498,32 +567,32 @@
           {
             "key": "DK-Biomass",
             "average": 467,
-            "stdMovingAverage": 175.6641649997273
+            "stdMovingAverage": 175.64436892081395
           },
           {
             "key": "DK-Fossil oil",
             "average": 37,
-            "stdMovingAverage": 20.253713554770695
+            "stdMovingAverage": 20.25233182264541
           },
           {
             "key": "DK-Fossil gas",
             "average": 242,
-            "stdMovingAverage": 113.0177786449528
+            "stdMovingAverage": 113.00697971836625
           },
           {
             "key": "DK-Solar",
             "average": 240,
-            "stdMovingAverage": 346.8637038325453
+            "stdMovingAverage": 346.86364187010906
           },
           {
             "key": "DK-Wind Total",
-            "average": 2142,
-            "stdMovingAverage": 1320.1505507712154
+            "average": 2143,
+            "stdMovingAverage": 1320.003294901953
           },
           {
             "key": "DK-Coal Total",
             "average": 601,
-            "stdMovingAverage": 259.5307455939352
+            "stdMovingAverage": 259.5160627861389
           }
         ]
       },
@@ -533,32 +602,32 @@
           {
             "key": "EE-Biomass",
             "average": 135,
-            "stdMovingAverage": 49.39398510832398
+            "stdMovingAverage": 49.390801548065156
           },
           {
             "key": "EE-Fossil oil shale",
             "average": 483,
-            "stdMovingAverage": 183.59651013288484
+            "stdMovingAverage": 183.5417591678884
           },
           {
             "key": "EE-Fossil gas",
             "average": 3,
-            "stdMovingAverage": 1.093639602836606
+            "stdMovingAverage": 1.0926929363648883
           },
           {
             "key": "EE-Solar",
-            "average": 58,
-            "stdMovingAverage": 86.58079544710104
+            "average": 59,
+            "stdMovingAverage": 87.36445451796578
           },
           {
             "key": "EE-Wind Total",
             "average": 83,
-            "stdMovingAverage": 58.98272666896618
+            "stdMovingAverage": 58.98088474146301
           },
           {
             "key": "EE-Coal Total",
             "average": 41,
-            "stdMovingAverage": 9.28347642378028
+            "stdMovingAverage": 9.273955660972849
           },
           {
             "key": "EE-Hydro Total",
@@ -572,53 +641,53 @@
         "options": [
           {
             "key": "ES-Nuclear",
-            "average": 6150,
-            "stdMovingAverage": 603.573957592056
+            "average": 6151,
+            "stdMovingAverage": 601.3828156886472
           },
           {
             "key": "ES-Biomass",
             "average": 478,
-            "stdMovingAverage": 54.593040209645615
+            "stdMovingAverage": 54.46504067464928
           },
           {
             "key": "ES-Fossil oil",
             "average": 134,
-            "stdMovingAverage": 29.724456677762056
+            "stdMovingAverage": 29.71290343315202
           },
           {
             "key": "ES-Fossil gas",
-            "average": 9167,
-            "stdMovingAverage": 3195.2534561395855
+            "average": 9168,
+            "stdMovingAverage": 3194.344227434045
           },
           {
             "key": "ES-Others",
             "average": 34,
-            "stdMovingAverage": 13.13551094386326
+            "stdMovingAverage": 13.135356153747347
           },
           {
             "key": "ES-Solar",
-            "average": 3528,
-            "stdMovingAverage": 4145.532155906794
+            "average": 3529,
+            "stdMovingAverage": 4145.568089587464
           },
           {
             "key": "ES-Hydro Pumped",
-            "average": -655,
-            "stdMovingAverage": 834.8060562208715
+            "average": -656,
+            "stdMovingAverage": 834.8935875820268
           },
           {
             "key": "ES-Wind Total",
-            "average": 6692,
-            "stdMovingAverage": 3469.8499292293473
+            "average": 6694,
+            "stdMovingAverage": 3471.2221854196537
           },
           {
             "key": "ES-Coal Total",
-            "average": 915,
-            "stdMovingAverage": 264.3205933683582
+            "average": 916,
+            "stdMovingAverage": 264.3092086376452
           },
           {
             "key": "ES-Hydro Total",
             "average": 1773,
-            "stdMovingAverage": 1786.6149873044042
+            "stdMovingAverage": 1786.6592362104243
           }
         ]
       },
@@ -627,28 +696,28 @@
         "options": [
           {
             "key": "FI-Nuclear",
-            "average": 2729,
-            "stdMovingAverage": 319.63469193368087
+            "average": 2730,
+            "stdMovingAverage": 318.8435576640664
           },
           {
             "key": "FI-Biomass",
             "average": 666,
-            "stdMovingAverage": 79.11745880588657
+            "stdMovingAverage": 78.84723357903694
           },
           {
             "key": "FI-Fossil oil",
             "average": 6,
-            "stdMovingAverage": 7.851842382692124
+            "stdMovingAverage": 7.851813203575208
           },
           {
             "key": "FI-Fossil gas",
             "average": 243,
-            "stdMovingAverage": 123.38072219600373
+            "stdMovingAverage": 123.37327222556993
           },
           {
             "key": "FI-Others",
             "average": 73,
-            "stdMovingAverage": 26.412875097941125
+            "stdMovingAverage": 26.410014406633376
           },
           {
             "key": "FI-Wind Total",
@@ -658,12 +727,12 @@
           {
             "key": "FI-Coal Total",
             "average": 394,
-            "stdMovingAverage": 138.212085513983
+            "stdMovingAverage": 138.13224386259202
           },
           {
             "key": "FI-Hydro Total",
             "average": 1444,
-            "stdMovingAverage": 460.85839143523543
+            "stdMovingAverage": 460.84300345843843
           }
         ]
       },
@@ -672,48 +741,48 @@
         "options": [
           {
             "key": "FR-Nuclear",
-            "average": 32433,
-            "stdMovingAverage": 3018.2946672004177
+            "average": 32436,
+            "stdMovingAverage": 3008.122208818988
           },
           {
             "key": "FR-Biomass",
             "average": 396,
-            "stdMovingAverage": 61.185622191692325
+            "stdMovingAverage": 61.14094836647026
           },
           {
             "key": "FR-Fossil oil",
             "average": 208,
-            "stdMovingAverage": 141.2575413355307
+            "stdMovingAverage": 141.24804191294186
           },
           {
             "key": "FR-Fossil gas",
-            "average": 4875,
-            "stdMovingAverage": 1375.427953345932
+            "average": 4876,
+            "stdMovingAverage": 1374.359961674108
           },
           {
             "key": "FR-Solar",
             "average": 2022,
-            "stdMovingAverage": 2659.9154509109117
+            "stdMovingAverage": 2659.9388556719728
           },
           {
             "key": "FR-Hydro Pumped",
             "average": -131,
-            "stdMovingAverage": 1563.9608969976732
+            "stdMovingAverage": 1564.0319729153161
           },
           {
             "key": "FR-Wind Total",
-            "average": 4055,
-            "stdMovingAverage": 2549.464131449512
+            "average": 4056,
+            "stdMovingAverage": 2549.974783845419
           },
           {
             "key": "FR-Coal Total",
             "average": 317,
-            "stdMovingAverage": 300.6413704901295
+            "stdMovingAverage": 300.6650797829547
           },
           {
             "key": "FR-Hydro Total",
-            "average": 4751,
-            "stdMovingAverage": 2773.894446184702
+            "average": 4752,
+            "stdMovingAverage": 2773.724359015931
           }
         ]
       },
@@ -723,12 +792,12 @@
           {
             "key": "HU-Nuclear",
             "average": 1670,
-            "stdMovingAverage": 164.88366136062317
+            "stdMovingAverage": 164.5189155065141
           },
           {
             "key": "HU-Biomass",
             "average": 126,
-            "stdMovingAverage": 20.24731452441237
+            "stdMovingAverage": 20.216676502674
           },
           {
             "key": "HU-Fossil oil",
@@ -738,27 +807,27 @@
           {
             "key": "HU-Fossil gas",
             "average": 912,
-            "stdMovingAverage": 256.7535648230695
+            "stdMovingAverage": 256.7053418648464
           },
           {
             "key": "HU-Others",
             "average": 66,
-            "stdMovingAverage": 13.978689103437155
+            "stdMovingAverage": 13.973303429013045
           },
           {
             "key": "HU-Wind Total",
             "average": 70,
-            "stdMovingAverage": 66.93644042454888
+            "stdMovingAverage": 66.93611199422828
           },
           {
             "key": "HU-Coal Total",
             "average": 344,
-            "stdMovingAverage": 81.29312759201372
+            "stdMovingAverage": 81.26193806712472
           },
           {
             "key": "HU-Hydro Total",
             "average": 18,
-            "stdMovingAverage": 4.676185084365864
+            "stdMovingAverage": 4.672974666975851
           }
         ]
       },
@@ -767,38 +836,38 @@
         "options": [
           {
             "key": "IE-Fossil oil",
-            "average": 227,
-            "stdMovingAverage": 167.33098539264032
+            "average": 125,
+            "stdMovingAverage": 143.13136884621358
           },
           {
             "key": "IE-Fossil gas",
-            "average": 861,
-            "stdMovingAverage": 414.4056693215697
+            "average": 679,
+            "stdMovingAverage": 397.04749024714874
           },
           {
             "key": "IE-Others",
-            "average": 11,
-            "stdMovingAverage": 38.08546717392395
+            "average": 6,
+            "stdMovingAverage": 29.0910197649441
           },
           {
             "key": "IE-Hydro Pumped",
-            "average": -20,
-            "stdMovingAverage": 116.52589012906654
+            "average": -14,
+            "stdMovingAverage": 96.35639701817917
           },
           {
             "key": "IE-Wind Total",
-            "average": 1139,
-            "stdMovingAverage": 808.296601201464
+            "average": 929,
+            "stdMovingAverage": 745.7025589568595
           },
           {
             "key": "IE-Coal Total",
-            "average": 370,
-            "stdMovingAverage": 155.38074336572222
+            "average": 257,
+            "stdMovingAverage": 134.13144121709638
           },
           {
             "key": "IE-Hydro Total",
-            "average": 49,
-            "stdMovingAverage": 135.5283764145625
+            "average": 45,
+            "stdMovingAverage": 111.83887690040392
           }
         ]
       },
@@ -807,53 +876,53 @@
         "options": [
           {
             "key": "IT-Biomass",
-            "average": 631,
-            "stdMovingAverage": 80.96417523099343
+            "average": 630,
+            "stdMovingAverage": 80.8519560094306
           },
           {
             "key": "IT-Fossil oil",
             "average": 262,
-            "stdMovingAverage": 131.1117644376197
+            "stdMovingAverage": 131.03870577624969
           },
           {
             "key": "IT-Fossil gas",
-            "average": 13744,
-            "stdMovingAverage": 4759.4715352658595
+            "average": 13746,
+            "stdMovingAverage": 4759.202395033294
           },
           {
             "key": "IT-Geothermal",
             "average": 616,
-            "stdMovingAverage": 59.51975037462068
+            "stdMovingAverage": 59.302301162757814
           },
           {
             "key": "IT-Others",
             "average": 2011,
-            "stdMovingAverage": 433.1547218004832
+            "stdMovingAverage": 432.8097824150126
           },
           {
             "key": "IT-Solar",
             "average": 2555,
-            "stdMovingAverage": 3365.143731704071
+            "stdMovingAverage": 3364.7128933376325
           },
           {
             "key": "IT-Hydro Pumped",
             "average": 84,
-            "stdMovingAverage": 899.8300566699123
+            "stdMovingAverage": 899.834573768994
           },
           {
             "key": "IT-Wind Total",
             "average": 2367,
-            "stdMovingAverage": 1542.8083628065099
+            "stdMovingAverage": 1542.944491314748
           },
           {
             "key": "IT-Coal Total",
-            "average": 2935,
-            "stdMovingAverage": 549.6695917233119
+            "average": 2936,
+            "stdMovingAverage": 549.1003353704579
           },
           {
             "key": "IT-Hydro Total",
-            "average": 3132,
-            "stdMovingAverage": 1935.7797272426112
+            "average": 3133,
+            "stdMovingAverage": 1935.6230910793954
           }
         ]
       },
@@ -863,22 +932,22 @@
           {
             "key": "LT-Biomass",
             "average": 44,
-            "stdMovingAverage": 3.640700456860274
+            "stdMovingAverage": 3.632262840122719
           },
           {
             "key": "LT-Fossil gas",
             "average": 46,
-            "stdMovingAverage": 86.83121061330442
+            "stdMovingAverage": 86.83029015821127
           },
           {
             "key": "LT-Others",
             "average": 8,
-            "stdMovingAverage": 1.7316437840281638
+            "stdMovingAverage": 1.7314927099333615
           },
           {
             "key": "LT-Solar",
             "average": 40,
-            "stdMovingAverage": 59.808111975313146
+            "stdMovingAverage": 59.8080804308149
           },
           {
             "key": "LT-Hydro Pumped",
@@ -888,12 +957,12 @@
           {
             "key": "LT-Wind Total",
             "average": 172,
-            "stdMovingAverage": 132.51605571181832
+            "stdMovingAverage": 132.51303085290206
           },
           {
             "key": "LT-Hydro Total",
             "average": 40,
-            "stdMovingAverage": 228.5463127528277
+            "stdMovingAverage": 228.54614140669977
           }
         ]
       },
@@ -903,12 +972,12 @@
           {
             "key": "LU-Wind Total",
             "average": 20,
-            "stdMovingAverage": 22.161948481571464
+            "stdMovingAverage": 22.15850070124412
           },
           {
             "key": "LU-Hydro Total",
             "average": 3,
-            "stdMovingAverage": 1.930688053100436
+            "stdMovingAverage": 1.92992953843128
           }
         ]
       },
@@ -951,38 +1020,38 @@
         "options": [
           {
             "key": "NL-Nuclear",
-            "average": 446,
-            "stdMovingAverage": 58.46217647717858
+            "average": 447,
+            "stdMovingAverage": 58.31831263820924
           },
           {
             "key": "NL-Biomass",
-            "average": 16,
-            "stdMovingAverage": 6.842025720685777
+            "average": 17,
+            "stdMovingAverage": 7.211447532494712
           },
           {
             "key": "NL-Fossil gas",
-            "average": 4105,
-            "stdMovingAverage": 2245.250112401348
+            "average": 4111,
+            "stdMovingAverage": 2244.288438977795
           },
           {
             "key": "NL-Others",
-            "average": 1952,
-            "stdMovingAverage": 900.2970679242765
+            "average": 1967,
+            "stdMovingAverage": 900.7567949465781
           },
           {
             "key": "NL-Solar",
             "average": 41,
-            "stdMovingAverage": 60.145578525091906
+            "stdMovingAverage": 60.2698150483551
           },
           {
             "key": "NL-Wind Total",
-            "average": 1474,
-            "stdMovingAverage": 1008.8629098568465
+            "average": 1477,
+            "stdMovingAverage": 1011.5178164602054
           },
           {
             "key": "NL-Coal Total",
             "average": 2298,
-            "stdMovingAverage": 611.3936947429909
+            "stdMovingAverage": 611.4210842590531
           }
         ]
       },
@@ -992,22 +1061,22 @@
           {
             "key": "NO-Fossil gas",
             "average": 128,
-            "stdMovingAverage": 20.91912603811075
+            "stdMovingAverage": 20.85916442679195
           },
           {
             "key": "NO-Hydro Pumped",
             "average": 192,
-            "stdMovingAverage": 138.07507758887047
+            "stdMovingAverage": 138.08411849314913
           },
           {
             "key": "NO-Wind Total",
             "average": 1641,
-            "stdMovingAverage": 813.7150088647644
+            "stdMovingAverage": 813.586429920705
           },
           {
             "key": "NO-Hydro Total",
-            "average": 14747,
-            "stdMovingAverage": 3225.067188059691
+            "average": 14749,
+            "stdMovingAverage": 3222.138751269055
           }
         ]
       },
@@ -1017,37 +1086,37 @@
           {
             "key": "PL-Biomass",
             "average": 181,
-            "stdMovingAverage": 39.544324979514876
+            "stdMovingAverage": 39.48652908309795
           },
           {
             "key": "PL-Fossil oil",
             "average": 242,
-            "stdMovingAverage": 19.610017829993335
+            "stdMovingAverage": 19.47364503130034
           },
           {
             "key": "PL-Fossil gas",
             "average": 1067,
-            "stdMovingAverage": 271.2711593274453
+            "stdMovingAverage": 271.4784662985782
           },
           {
             "key": "PL-Hydro Pumped",
             "average": 139,
-            "stdMovingAverage": 240.3703791438564
+            "stdMovingAverage": 240.3703739333504
           },
           {
             "key": "PL-Wind Total",
             "average": 2182,
-            "stdMovingAverage": 1475.3814709314101
+            "stdMovingAverage": 1475.3672148221217
           },
           {
             "key": "PL-Coal Total",
-            "average": 13575,
-            "stdMovingAverage": 2372.517567695335
+            "average": 13577,
+            "stdMovingAverage": 2370.414941878177
           },
           {
             "key": "PL-Hydro Total",
             "average": 316,
-            "stdMovingAverage": 264.50105046580677
+            "stdMovingAverage": 264.4928807625352
           }
         ]
       },
@@ -1057,32 +1126,32 @@
           {
             "key": "PT-Biomass",
             "average": 382,
-            "stdMovingAverage": 26.252019855221725
+            "stdMovingAverage": 26.136719620017196
           },
           {
             "key": "PT-Fossil gas",
             "average": 1917,
-            "stdMovingAverage": 695.377293396286
+            "stdMovingAverage": 695.0443334942476
           },
           {
             "key": "PT-Others",
             "average": 22,
-            "stdMovingAverage": 3.747454951545259
+            "stdMovingAverage": 3.7460829038588637
           },
           {
             "key": "PT-Solar",
-            "average": 287,
-            "stdMovingAverage": 377.36049416724273
+            "average": 288,
+            "stdMovingAverage": 377.54414739270226
           },
           {
             "key": "PT-Hydro Pumped",
             "average": -2,
-            "stdMovingAverage": 817.2523357577289
+            "stdMovingAverage": 817.2720268428667
           },
           {
             "key": "PT-Wind Total",
             "average": 1493,
-            "stdMovingAverage": 986.0637797251509
+            "stdMovingAverage": 986.3168897468732
           },
           {
             "key": "PT-Coal Total",
@@ -1092,7 +1161,7 @@
           {
             "key": "PT-Hydro Total",
             "average": 467,
-            "stdMovingAverage": 1196.8523983199668
+            "stdMovingAverage": 1196.8624839454258
           }
         ]
       },
@@ -1101,28 +1170,32 @@
         "options": [
           {
             "key": "SE-Nuclear",
-            "average": 5868,
-            "stdMovingAverage": 480.82401419576
+            "average": 5869,
+            "stdMovingAverage": 478.992538738404
           },
           {
             "key": "SE-Others",
             "average": 986,
-            "stdMovingAverage": 196.07634938529958
+            "stdMovingAverage": 196.04038118878904
           },
           {
             "key": "SE-Wind Total",
             "average": 3771,
-            "stdMovingAverage": 1994.4907715356399
+            "stdMovingAverage": 1994.0905397499046
           },
           {
             "key": "SE-Hydro Total",
-            "average": 7992,
-            "stdMovingAverage": 1793.84339281674
+            "average": 7993,
+            "stdMovingAverage": 1793.1492280073899
           }
         ]
       },
       {
         "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-cz.json",
         "options": []
       },
       {
@@ -1214,8 +1287,8 @@
         "options": [
           {
             "key": "AT-Load",
-            "average": 7006,
-            "stdMovingAverage": 1168.7187622983067
+            "average": 7007,
+            "stdMovingAverage": 1168.0098381318035
           }
         ]
       },
@@ -1224,8 +1297,18 @@
         "options": [
           {
             "key": "CH-Load",
-            "average": 7250,
-            "stdMovingAverage": 867.5193001604682
+            "average": 7251,
+            "stdMovingAverage": 865.3524318859897
+          }
+        ]
+      },
+      {
+        "file": "energy-charts-cz.json",
+        "options": [
+          {
+            "key": "CZ-Load",
+            "average": 7381,
+            "stdMovingAverage": 1029.1133648686705
           }
         ]
       },
@@ -1234,8 +1317,8 @@
         "options": [
           {
             "key": "DE-Load",
-            "average": 56174,
-            "stdMovingAverage": 9074.001143741612
+            "average": 56182,
+            "stdMovingAverage": 9062.756394242557
           }
         ]
       },
@@ -1244,8 +1327,8 @@
         "options": [
           {
             "key": "DK-Load",
-            "average": 3945,
-            "stdMovingAverage": 642.775412819297
+            "average": 3946,
+            "stdMovingAverage": 642.1211100441797
           }
         ]
       },
@@ -1255,7 +1338,7 @@
           {
             "key": "EE-Load",
             "average": 934,
-            "stdMovingAverage": 153.68782134442415
+            "stdMovingAverage": 153.5275899352613
           }
         ]
       },
@@ -1264,8 +1347,8 @@
         "options": [
           {
             "key": "ES-Load",
-            "average": 27119,
-            "stdMovingAverage": 4182.694348074324
+            "average": 27122,
+            "stdMovingAverage": 4177.906419590927
           }
         ]
       },
@@ -1274,8 +1357,8 @@
         "options": [
           {
             "key": "FI-Load",
-            "average": 9183,
-            "stdMovingAverage": 868.7074156588606
+            "average": 9185,
+            "stdMovingAverage": 862.7003754081636
           }
         ]
       },
@@ -1284,8 +1367,8 @@
         "options": [
           {
             "key": "FR-Load",
-            "average": 51187,
-            "stdMovingAverage": 7762.643033723495
+            "average": 51193,
+            "stdMovingAverage": 7753.485082079776
           }
         ]
       },
@@ -1294,22 +1377,28 @@
         "options": [
           {
             "key": "HU-Load",
-            "average": 4971,
-            "stdMovingAverage": 690.5885218260308
+            "average": 4972,
+            "stdMovingAverage": 689.7659191584299
           }
         ]
       },
       {
         "file": "energy-charts-ie.json",
-        "options": []
+        "options": [
+          {
+            "key": "IE-Load",
+            "average": 1717,
+            "stdMovingAverage": 804.1406443243101
+          }
+        ]
       },
       {
         "file": "energy-charts-it.json",
         "options": [
           {
             "key": "IT-Load",
-            "average": 32654,
-            "stdMovingAverage": 7328.662934990956
+            "average": 32657,
+            "stdMovingAverage": 7324.349349755429
           }
         ]
       },
@@ -1319,7 +1408,7 @@
           {
             "key": "LT-Load",
             "average": 1397,
-            "stdMovingAverage": 239.434248955508
+            "stdMovingAverage": 239.22389946651492
           }
         ]
       },
@@ -1329,7 +1418,7 @@
           {
             "key": "LU-Load",
             "average": 498,
-            "stdMovingAverage": 86.57723297708718
+            "stdMovingAverage": 86.40415840375998
           }
         ]
       },
@@ -1339,7 +1428,7 @@
           {
             "key": "LV-Load",
             "average": 789,
-            "stdMovingAverage": 144.27611616603153
+            "stdMovingAverage": 144.11106332378824
           }
         ]
       },
@@ -1352,8 +1441,8 @@
         "options": [
           {
             "key": "NL-Load",
-            "average": 11423,
-            "stdMovingAverage": 1777.3296704625031
+            "average": 11426,
+            "stdMovingAverage": 1773.7722509746623
           }
         ]
       },
@@ -1362,8 +1451,8 @@
         "options": [
           {
             "key": "NO-Load",
-            "average": 15179,
-            "stdMovingAverage": 2026.774748458219
+            "average": 15181,
+            "stdMovingAverage": 2023.1519655613156
           }
         ]
       },
@@ -1372,8 +1461,8 @@
         "options": [
           {
             "key": "PL-Load",
-            "average": 19662,
-            "stdMovingAverage": 3076.036211734267
+            "average": 19665,
+            "stdMovingAverage": 3072.6202047969027
           }
         ]
       },
@@ -1382,8 +1471,8 @@
         "options": [
           {
             "key": "PT-Load",
-            "average": 5739,
-            "stdMovingAverage": 982.5120857187742
+            "average": 5740,
+            "stdMovingAverage": 981.6194893757536
           }
         ]
       },
@@ -1392,13 +1481,17 @@
         "options": [
           {
             "key": "SE-Load",
-            "average": 15179,
-            "stdMovingAverage": 1806.8657936779405
+            "average": 15181,
+            "stdMovingAverage": 1803.3769748534114
           }
         ]
       },
       {
         "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-cz.json",
         "options": []
       },
       {
@@ -1485,7 +1578,7 @@
           {
             "key": "AT-Import Balance",
             "average": 1080,
-            "stdMovingAverage": 1102.7509880877017
+            "stdMovingAverage": 1102.7185591034802
           }
         ]
       },
@@ -1495,7 +1588,17 @@
           {
             "key": "CH-Import Balance",
             "average": 493,
-            "stdMovingAverage": 1814.4076568877529
+            "stdMovingAverage": 1814.3834875305495
+          }
+        ]
+      },
+      {
+        "file": "energy-charts-cz.json",
+        "options": [
+          {
+            "key": "CZ-Import Balance",
+            "average": -1545,
+            "stdMovingAverage": 708.6767554201238
           }
         ]
       },
@@ -1505,7 +1608,7 @@
           {
             "key": "DE-Import Balance",
             "average": -3215,
-            "stdMovingAverage": 4565.71086073848
+            "stdMovingAverage": 4565.610707227386
           }
         ]
       },
@@ -1515,7 +1618,7 @@
           {
             "key": "DK-Import Balance",
             "average": 209,
-            "stdMovingAverage": 1026.726966055728
+            "stdMovingAverage": 1026.7653437038214
           }
         ]
       },
@@ -1525,7 +1628,7 @@
           {
             "key": "EE-Import Balance",
             "average": 106,
-            "stdMovingAverage": 176.85297245865237
+            "stdMovingAverage": 177.14644065927106
           }
         ]
       },
@@ -1534,8 +1637,8 @@
         "options": [
           {
             "key": "ES-Import Balance",
-            "average": -2068,
-            "stdMovingAverage": 1707.0615138202975
+            "average": -2069,
+            "stdMovingAverage": 1706.971898790711
           }
         ]
       },
@@ -1544,8 +1647,8 @@
         "options": [
           {
             "key": "FI-Import Balance",
-            "average": 1546,
-            "stdMovingAverage": 636.6240340656261
+            "average": 1547,
+            "stdMovingAverage": 636.5606620302249
           }
         ]
       },
@@ -1555,7 +1658,7 @@
           {
             "key": "FR-Import Balance",
             "average": 1816,
-            "stdMovingAverage": 3210.6184641384966
+            "stdMovingAverage": 3210.6224355658715
           }
         ]
       },
@@ -1565,21 +1668,27 @@
           {
             "key": "HU-Import Balance",
             "average": 1407,
-            "stdMovingAverage": 645.714989043295
+            "stdMovingAverage": 645.6164219621675
           }
         ]
       },
       {
         "file": "energy-charts-ie.json",
-        "options": []
+        "options": [
+          {
+            "key": "IE-Import Balance",
+            "average": -36,
+            "stdMovingAverage": 154.89640907573292
+          }
+        ]
       },
       {
         "file": "energy-charts-it.json",
         "options": [
           {
             "key": "IT-Import Balance",
-            "average": 4732,
-            "stdMovingAverage": 1636.0278654484034
+            "average": 4733,
+            "stdMovingAverage": 1634.299811508872
           }
         ]
       },
@@ -1589,7 +1698,7 @@
           {
             "key": "LT-Import Balance",
             "average": 1023,
-            "stdMovingAverage": 232.61620823385738
+            "stdMovingAverage": 232.47597888904968
           }
         ]
       },
@@ -1599,7 +1708,7 @@
           {
             "key": "LU-Import Balance",
             "average": 444,
-            "stdMovingAverage": 81.32861949941804
+            "stdMovingAverage": 81.2026600174095
           }
         ]
       },
@@ -1609,7 +1718,7 @@
           {
             "key": "LV-Import Balance",
             "average": 272,
-            "stdMovingAverage": 205.57125627730798
+            "stdMovingAverage": 205.58181374635748
           }
         ]
       },
@@ -1619,7 +1728,7 @@
           {
             "key": "MT-Import Balance",
             "average": 81,
-            "stdMovingAverage": 44.57065410230579
+            "stdMovingAverage": 44.558342022569676
           }
         ]
       },
@@ -1629,7 +1738,7 @@
           {
             "key": "NL-Import Balance",
             "average": -478,
-            "stdMovingAverage": 1594.2553477466208
+            "stdMovingAverage": 1594.2080041642116
           }
         ]
       },
@@ -1638,8 +1747,8 @@
         "options": [
           {
             "key": "NO-Import Balance",
-            "average": -1378,
-            "stdMovingAverage": 2347.0681807102405
+            "average": -1379,
+            "stdMovingAverage": 2346.869345172275
           }
         ]
       },
@@ -1649,7 +1758,7 @@
           {
             "key": "PL-Import Balance",
             "average": -172,
-            "stdMovingAverage": 699.0282913230759
+            "stdMovingAverage": 699.1780023268919
           }
         ]
       },
@@ -1659,7 +1768,7 @@
           {
             "key": "PT-Import Balance",
             "average": 1176,
-            "stdMovingAverage": 1209.1711627334864
+            "stdMovingAverage": 1209.183677543379
           }
         ]
       },
@@ -1668,13 +1777,17 @@
         "options": [
           {
             "key": "SE-Import Balance",
-            "average": -3863,
-            "stdMovingAverage": 1293.799674593314
+            "average": -3864,
+            "stdMovingAverage": 1292.9648189254024
           }
         ]
       },
       {
         "file": "energy-price-at.json",
+        "options": []
+      },
+      {
+        "file": "energy-price-cz.json",
         "options": []
       },
       {

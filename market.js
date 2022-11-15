@@ -33,22 +33,25 @@ markets.forEach((market, marketIndex) => {
     : startDateRequested;
 
   const now = luxon.DateTime.now();
-  const weeks = [
-    Array(nowDate.year - startDate.year + 1)
-      .fill()
-      .map((_, i) => startDate.year + i)
-      .map(year => Array(53).fill().map((_, i) => ({ year, week: i+1 })))
-  ].flat(2)
+  const weeks =
+  // [
+  //   Array(nowDate.year - startDate.year + 1)
+  //     .fill()
+  //     .map((_, i) => startDate.year + i)
+  //     .map(year => Array(53).fill().map((_, i) => ({ year, week: i+1 })))
+  // ].flat(2)
+  [2018, 2019, 2020, 2021, 2022]
     // .map(w => { console.log('w', w); return w; })
-    .filter(week => startDate === null || week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
-    .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
-    .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
-    .map((weekObj, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
-      axios.get(`https://www.energy-charts.info/charts/power/data/${market}/week_${weekObj.year}_${weekObj.week}.json`)
+    // .filter(week => startDate === null || week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
+    // .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
+    // .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
+    .filter(year => year >= startDate.year - 1)
+    .map((year, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
+      axios.get(`https://www.energy-charts.info/charts/power/data/${market}/year_${year}.json`)
         .then(response => response.data)
         .then(sources => {
           // const date = new luxon.DateTime(sources[0].xAxisValues[0])
-          console.log(market, weekObj);
+          console.log(market, year);
 
           const individualSource = sources.map(source => source.data.map(y => ({ [source.name.en]: y })))
           const merge = individualSource[0].map((_, i) => ({
