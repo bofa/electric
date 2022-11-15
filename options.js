@@ -35,6 +35,8 @@ const options = // ['price', 'production', 'consumption']
       '-Wind Total',
       '-Solar',
       '-Others',
+      '-Load',
+      '-Import Balance',
     ],
   },
   {

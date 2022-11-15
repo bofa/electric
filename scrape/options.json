@@ -368,12 +368,19 @@
       "-Hydro Pumped",
       "-Wind Total",
       "-Solar",
-      "-Others"
+      "-Others",
+      "-Load",
+      "-Import Balance"
     ],
     "files": [
       {
         "file": "energy-charts-at.json",
         "options": [
+          {
+            "key": "AT-Import Balance",
+            "average": 1080,
+            "stdMovingAverage": 1102.7185591034802
+          },
           {
             "key": "AT-Biomass",
             "average": 57,
@@ -400,6 +407,11 @@
             "stdMovingAverage": 119.6045226842223
           },
           {
+            "key": "AT-Load",
+            "average": 7007,
+            "stdMovingAverage": 1168.0098381318035
+          },
+          {
             "key": "AT-Hydro Pumped",
             "average": 237,
             "stdMovingAverage": 1212.62497660477
@@ -420,6 +432,11 @@
         "file": "energy-charts-ch.json",
         "options": [
           {
+            "key": "CH-Import Balance",
+            "average": 493,
+            "stdMovingAverage": 1814.3834875305495
+          },
+          {
             "key": "CH-Nuclear",
             "average": 2576,
             "stdMovingAverage": 283.34246506435187
@@ -428,6 +445,11 @@
             "key": "CH-Solar",
             "average": 346,
             "stdMovingAverage": 574.7680561099427
+          },
+          {
+            "key": "CH-Load",
+            "average": 7251,
+            "stdMovingAverage": 865.3524318859897
           },
           {
             "key": "CH-Hydro Pumped",
@@ -449,6 +471,11 @@
       {
         "file": "energy-charts-cz.json",
         "options": [
+          {
+            "key": "CZ-Import Balance",
+            "average": -1545,
+            "stdMovingAverage": 708.6767554201238
+          },
           {
             "key": "CZ-Nuclear",
             "average": 3292,
@@ -480,6 +507,11 @@
             "stdMovingAverage": 394.4899092311095
           },
           {
+            "key": "CZ-Load",
+            "average": 7381,
+            "stdMovingAverage": 1029.1133648686705
+          },
+          {
             "key": "CZ-Hydro Pumped",
             "average": -38,
             "stdMovingAverage": 407.9756028914911
@@ -504,6 +536,11 @@
       {
         "file": "energy-charts-de.json",
         "options": [
+          {
+            "key": "DE-Import Balance",
+            "average": -3215,
+            "stdMovingAverage": 4565.610707227386
+          },
           {
             "key": "DE-Nuclear",
             "average": 4206,
@@ -540,6 +577,11 @@
             "stdMovingAverage": 9207.980388560722
           },
           {
+            "key": "DE-Load",
+            "average": 56182,
+            "stdMovingAverage": 9062.756394242557
+          },
+          {
             "key": "DE-Hydro Pumped",
             "average": -216,
             "stdMovingAverage": 1789.8827044423954
@@ -565,6 +607,11 @@
         "file": "energy-charts-dk.json",
         "options": [
           {
+            "key": "DK-Import Balance",
+            "average": 209,
+            "stdMovingAverage": 1026.7653437038214
+          },
+          {
             "key": "DK-Biomass",
             "average": 467,
             "stdMovingAverage": 175.64436892081395
@@ -585,6 +632,11 @@
             "stdMovingAverage": 346.86364187010906
           },
           {
+            "key": "DK-Load",
+            "average": 3946,
+            "stdMovingAverage": 642.1211100441797
+          },
+          {
             "key": "DK-Wind Total",
             "average": 2143,
             "stdMovingAverage": 1320.003294901953
@@ -599,6 +651,11 @@
       {
         "file": "energy-charts-ee.json",
         "options": [
+          {
+            "key": "EE-Import Balance",
+            "average": 106,
+            "stdMovingAverage": 177.14644065927106
+          },
           {
             "key": "EE-Biomass",
             "average": 135,
@@ -620,6 +677,11 @@
             "stdMovingAverage": 87.36445451796578
           },
           {
+            "key": "EE-Load",
+            "average": 934,
+            "stdMovingAverage": 153.5275899352613
+          },
+          {
             "key": "EE-Wind Total",
             "average": 83,
             "stdMovingAverage": 58.98088474146301
@@ -639,6 +701,11 @@
       {
         "file": "energy-charts-es.json",
         "options": [
+          {
+            "key": "ES-Import Balance",
+            "average": -2069,
+            "stdMovingAverage": 1706.971898790711
+          },
           {
             "key": "ES-Nuclear",
             "average": 6151,
@@ -670,6 +737,11 @@
             "stdMovingAverage": 4145.568089587464
           },
           {
+            "key": "ES-Load",
+            "average": 27122,
+            "stdMovingAverage": 4177.906419590927
+          },
+          {
             "key": "ES-Hydro Pumped",
             "average": -656,
             "stdMovingAverage": 834.8935875820268
@@ -694,6 +766,11 @@
       {
         "file": "energy-charts-fi.json",
         "options": [
+          {
+            "key": "FI-Import Balance",
+            "average": 1547,
+            "stdMovingAverage": 636.5606620302249
+          },
           {
             "key": "FI-Nuclear",
             "average": 2730,
@@ -720,6 +797,11 @@
             "stdMovingAverage": 26.410014406633376
           },
           {
+            "key": "FI-Load",
+            "average": 9185,
+            "stdMovingAverage": 862.7003754081636
+          },
+          {
             "key": "FI-Wind Total",
             "average": 1256,
             "stdMovingAverage": 782.634721707514
@@ -739,6 +821,11 @@
       {
         "file": "energy-charts-fr.json",
         "options": [
+          {
+            "key": "FR-Import Balance",
+            "average": 1816,
+            "stdMovingAverage": 3210.6224355658715
+          },
           {
             "key": "FR-Nuclear",
             "average": 32436,
@@ -763,6 +850,11 @@
             "key": "FR-Solar",
             "average": 2022,
             "stdMovingAverage": 2659.9388556719728
+          },
+          {
+            "key": "FR-Load",
+            "average": 51193,
+            "stdMovingAverage": 7753.485082079776
           },
           {
             "key": "FR-Hydro Pumped",
@@ -790,6 +882,11 @@
         "file": "energy-charts-hu.json",
         "options": [
           {
+            "key": "HU-Import Balance",
+            "average": 1407,
+            "stdMovingAverage": 645.6164219621675
+          },
+          {
             "key": "HU-Nuclear",
             "average": 1670,
             "stdMovingAverage": 164.5189155065141
@@ -815,6 +912,11 @@
             "stdMovingAverage": 13.973303429013045
           },
           {
+            "key": "HU-Load",
+            "average": 4972,
+            "stdMovingAverage": 689.7659191584299
+          },
+          {
             "key": "HU-Wind Total",
             "average": 70,
             "stdMovingAverage": 66.93611199422828
@@ -835,6 +937,11 @@
         "file": "energy-charts-ie.json",
         "options": [
           {
+            "key": "IE-Import Balance",
+            "average": -36,
+            "stdMovingAverage": 154.89640907573292
+          },
+          {
             "key": "IE-Fossil oil",
             "average": 125,
             "stdMovingAverage": 143.13136884621358
@@ -848,6 +955,11 @@
             "key": "IE-Others",
             "average": 6,
             "stdMovingAverage": 29.0910197649441
+          },
+          {
+            "key": "IE-Load",
+            "average": 1717,
+            "stdMovingAverage": 804.1406443243101
           },
           {
             "key": "IE-Hydro Pumped",
@@ -874,6 +986,11 @@
       {
         "file": "energy-charts-it.json",
         "options": [
+          {
+            "key": "IT-Import Balance",
+            "average": 4733,
+            "stdMovingAverage": 1634.299811508872
+          },
           {
             "key": "IT-Biomass",
             "average": 630,
@@ -905,6 +1022,11 @@
             "stdMovingAverage": 3364.7128933376325
           },
           {
+            "key": "IT-Load",
+            "average": 32657,
+            "stdMovingAverage": 7324.349349755429
+          },
+          {
             "key": "IT-Hydro Pumped",
             "average": 84,
             "stdMovingAverage": 899.834573768994
@@ -930,6 +1052,11 @@
         "file": "energy-charts-lt.json",
         "options": [
           {
+            "key": "LT-Import Balance",
+            "average": 1023,
+            "stdMovingAverage": 232.47597888904968
+          },
+          {
             "key": "LT-Biomass",
             "average": 44,
             "stdMovingAverage": 3.632262840122719
@@ -948,6 +1075,11 @@
             "key": "LT-Solar",
             "average": 40,
             "stdMovingAverage": 59.8080804308149
+          },
+          {
+            "key": "LT-Load",
+            "average": 1397,
+            "stdMovingAverage": 239.22389946651492
           },
           {
             "key": "LT-Hydro Pumped",
@@ -970,6 +1102,16 @@
         "file": "energy-charts-lu.json",
         "options": [
           {
+            "key": "LU-Import Balance",
+            "average": 444,
+            "stdMovingAverage": 81.2026600174095
+          },
+          {
+            "key": "LU-Load",
+            "average": 498,
+            "stdMovingAverage": 86.40415840375998
+          },
+          {
             "key": "LU-Wind Total",
             "average": 20,
             "stdMovingAverage": 22.15850070124412
@@ -984,6 +1126,11 @@
       {
         "file": "energy-charts-lv.json",
         "options": [
+          {
+            "key": "LV-Import Balance",
+            "average": 272,
+            "stdMovingAverage": 205.58181374635748
+          },
           {
             "key": "LV-Biomass",
             "average": 42,
@@ -1000,6 +1147,11 @@
             "stdMovingAverage": 4.194722191927564
           },
           {
+            "key": "LV-Load",
+            "average": 789,
+            "stdMovingAverage": 144.11106332378824
+          },
+          {
             "key": "LV-Wind Total",
             "average": 18,
             "stdMovingAverage": 17.918812126182573
@@ -1013,11 +1165,22 @@
       },
       {
         "file": "energy-charts-mt.json",
-        "options": []
+        "options": [
+          {
+            "key": "MT-Import Balance",
+            "average": 81,
+            "stdMovingAverage": 44.558342022569676
+          }
+        ]
       },
       {
         "file": "energy-charts-nl.json",
         "options": [
+          {
+            "key": "NL-Import Balance",
+            "average": -478,
+            "stdMovingAverage": 1594.2080041642116
+          },
           {
             "key": "NL-Nuclear",
             "average": 447,
@@ -1044,6 +1207,11 @@
             "stdMovingAverage": 60.2698150483551
           },
           {
+            "key": "NL-Load",
+            "average": 11426,
+            "stdMovingAverage": 1773.7722509746623
+          },
+          {
             "key": "NL-Wind Total",
             "average": 1477,
             "stdMovingAverage": 1011.5178164602054
@@ -1059,9 +1227,19 @@
         "file": "energy-charts-no.json",
         "options": [
           {
+            "key": "NO-Import Balance",
+            "average": -1379,
+            "stdMovingAverage": 2346.869345172275
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 128,
             "stdMovingAverage": 20.85916442679195
+          },
+          {
+            "key": "NO-Load",
+            "average": 15181,
+            "stdMovingAverage": 2023.1519655613156
           },
           {
             "key": "NO-Hydro Pumped",
@@ -1084,6 +1262,11 @@
         "file": "energy-charts-pl.json",
         "options": [
           {
+            "key": "PL-Import Balance",
+            "average": -172,
+            "stdMovingAverage": 699.1780023268919
+          },
+          {
             "key": "PL-Biomass",
             "average": 181,
             "stdMovingAverage": 39.48652908309795
@@ -1097,6 +1280,11 @@
             "key": "PL-Fossil gas",
             "average": 1067,
             "stdMovingAverage": 271.4784662985782
+          },
+          {
+            "key": "PL-Load",
+            "average": 19665,
+            "stdMovingAverage": 3072.6202047969027
           },
           {
             "key": "PL-Hydro Pumped",
@@ -1124,6 +1312,11 @@
         "file": "energy-charts-pt.json",
         "options": [
           {
+            "key": "PT-Import Balance",
+            "average": 1176,
+            "stdMovingAverage": 1209.183677543379
+          },
+          {
             "key": "PT-Biomass",
             "average": 382,
             "stdMovingAverage": 26.136719620017196
@@ -1142,6 +1335,11 @@
             "key": "PT-Solar",
             "average": 288,
             "stdMovingAverage": 377.54414739270226
+          },
+          {
+            "key": "PT-Load",
+            "average": 5740,
+            "stdMovingAverage": 981.6194893757536
           },
           {
             "key": "PT-Hydro Pumped",
@@ -1169,6 +1367,11 @@
         "file": "energy-charts-se.json",
         "options": [
           {
+            "key": "SE-Import Balance",
+            "average": -3864,
+            "stdMovingAverage": 1292.9648189254024
+          },
+          {
             "key": "SE-Nuclear",
             "average": 5869,
             "stdMovingAverage": 478.992538738404
@@ -1177,6 +1380,11 @@
             "key": "SE-Others",
             "average": 986,
             "stdMovingAverage": 196.04038118878904
+          },
+          {
+            "key": "SE-Load",
+            "average": 15181,
+            "stdMovingAverage": 1803.3769748534114
           },
           {
             "key": "SE-Wind Total",
