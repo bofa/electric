@@ -5,21 +5,19 @@ const fs = require('fs');
 let markets = process.argv.slice(2);
 markets = markets.length > 0 ? markets : ['de']
 
+function uniq(a, key) {
+  var seen = {};
+  return a.filter(function(item) {
+    return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true);
+  });
+}
+
 markets.forEach((market, marketIndex) => {
   let importData = [];
   try {
     importData = require(`./scrape/raw/energy-charts-${market}.json`);
   } catch {}
   importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
-
-  const marketLabel = market.toUpperCase();
-
-  function uniq(a, key) {
-    var seen = {};
-    return a.filter(function(item) {
-      return seen.hasOwnProperty(item[key]) ? false : (seen[item[key]] = true);
-    });
-  }
 
   // const startDate = luxon.DateTime.fromISO('2020-01-01')
 
@@ -33,18 +31,7 @@ markets.forEach((market, marketIndex) => {
     : startDateRequested;
 
   const now = luxon.DateTime.now();
-  const weeks =
-  // [
-  //   Array(nowDate.year - startDate.year + 1)
-  //     .fill()
-  //     .map((_, i) => startDate.year + i)
-  //     .map(year => Array(53).fill().map((_, i) => ({ year, week: i+1 })))
-  // ].flat(2)
-  [2018, 2019, 2020, 2021, 2022]
-    // .map(w => { console.log('w', w); return w; })
-    // .filter(week => startDate === null || week.year > startDate.year || (week.year === startDate.year && week.week >= startDate.weekNumber - 3))
-    // .filter(week => week.year < now.year || (week.year === now.year && week.week <= now.weekNumber + 1))
-    // .map(week => ({ year: week.year, week: String(week.week).padStart(2, '0') }))
+  const weeks = [2018, 2019, 2020, 2021, 2022]
     .filter(year => year >= startDate.year - 1)
     .map((year, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
       axios.get(`https://www.energy-charts.info/charts/power/data/${market}/year_${year}.json`)
