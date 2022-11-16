@@ -153,7 +153,8 @@ function App () {
         {
           type: windowSize === 1 ? 'scatter' : 'line',
           label: area.label,
-          data: area.movingAverage,
+          data: area.movingAverage
+            .map(p => stacked ? ({ x: p.x, y: Math.max(p.y, 0) }) : p),
           backgroundColor: adjustHexOpacity(i, 0.25),
           borderColor: adjustHexOpacity(i, 1),
           pointRadius: windowSize === 1 ? 1 : 0,
@@ -251,6 +252,21 @@ function App () {
         //   // borderColor: 'rgba(25, 99, 132, 0.2)',
         // },
     ).flat(2)
+    // Append negative series
+    .concat(stacked
+      ? processedSeries
+        .filter(area => area.movingAverage.some(p => p.y < 0))
+        .map((area, i) => ({
+          label: area.label + ' Negative',
+          data: area.movingAverage.map(p => ({ x: p.x, y: p.y <= 0 ? p.y : NaN })),
+          fill: 'origin',
+          backgroundColor: adjustHexOpacity(6, 0.25),
+          borderColor: adjustHexOpacity(6, 1),
+          pointRadius: 0,
+          borderWidth: 1,
+          stacked: false,
+        }))
+      : [])
   };
 
   const unit = options?.find(ds => ds.key === selectDataSet)?.unit;
