@@ -2911,13 +2911,21 @@
     "unit": "MW",
     "fields": [
       "-Nuclear",
+      "-Hydro Run-of-River",
       "-Hydro Total",
       "-Biomass",
+      "-Fossil brown coal / lignite",
+      "-Fossil coal-derived gas",
+      "-Fossil hard coal",
       "-Coal Total",
       "-Fossil oil",
       "-Fossil gas",
       "-Geothermal",
+      "-Hydro water reservoir",
+      "-Hydro pumped storage",
       "-Hydro Pumped",
+      "-Wind offshore",
+      "-Wind onshore",
       "-Wind Total",
       "-Solar",
       "-Others",
@@ -2928,14 +2936,29 @@
         "file": "at-charts-2015.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -267,
+            "stdMovingAverage": 428.0330851494512
+          },
+          {
             "key": "AT-Import Balance",
             "average": 706,
             "stdMovingAverage": 856.4585931988678
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 2211,
+            "stdMovingAverage": 246.73476575745127
+          },
+          {
             "key": "AT-Biomass",
             "average": 299,
             "stdMovingAverage": 7.059785959177965
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 210,
+            "stdMovingAverage": 167.53781384729464
           },
           {
             "key": "AT-Fossil gas",
@@ -2948,9 +2971,24 @@
             "stdMovingAverage": 2.208334525292641e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 348,
+            "stdMovingAverage": 260.75702934743214
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 478,
+            "stdMovingAverage": 534.5165664001481
+          },
+          {
             "key": "AT-Others",
             "average": 675,
             "stdMovingAverage": 389.02953001444934
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 561,
+            "stdMovingAverage": 500.86998507481024
           },
           {
             "key": "AT-Solar",
@@ -2963,14 +3001,29 @@
         "file": "at-charts-2016.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -241,
+            "stdMovingAverage": 445.47271616435125
+          },
+          {
             "key": "AT-Import Balance",
             "average": 401,
             "stdMovingAverage": 937.806287918815
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 3217,
+            "stdMovingAverage": 429.09622606783216
+          },
+          {
             "key": "AT-Biomass",
             "average": 289,
             "stdMovingAverage": 32.36864236680475
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 167,
+            "stdMovingAverage": 102.83239636339904
           },
           {
             "key": "AT-Fossil gas",
@@ -2983,9 +3036,24 @@
             "stdMovingAverage": 0.010743590842305912
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 524,
+            "stdMovingAverage": 251.0018902984625
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 583,
+            "stdMovingAverage": 724.5860008718278
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.940623706922463e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 607,
+            "stdMovingAverage": 594.5518778438197
           },
           {
             "key": "AT-Solar",
@@ -2998,14 +3066,29 @@
         "file": "at-charts-2017.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -350,
+            "stdMovingAverage": 513.4313361462379
+          },
+          {
             "key": "AT-Import Balance",
             "average": 120,
             "stdMovingAverage": 967.9596940572129
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 3066,
+            "stdMovingAverage": 416.7924946041131
+          },
+          {
             "key": "AT-Biomass",
             "average": 297,
             "stdMovingAverage": 7.974181546399698
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 161,
+            "stdMovingAverage": 98.59429476094458
           },
           {
             "key": "AT-Fossil gas",
@@ -3018,9 +3101,24 @@
             "stdMovingAverage": 2.2083359118359376e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 530,
+            "stdMovingAverage": 297.0268727195755
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 534,
+            "stdMovingAverage": 747.2521208987496
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.9406199066210684e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 768,
+            "stdMovingAverage": 641.4027014686551
           },
           {
             "key": "AT-Solar",
@@ -3033,14 +3131,29 @@
         "file": "at-charts-2018.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -288,
+            "stdMovingAverage": 478.37615466387945
+          },
+          {
             "key": "AT-Import Balance",
             "average": 885,
             "stdMovingAverage": 942.8997112834
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 2943,
+            "stdMovingAverage": 405.2507016634574
+          },
+          {
             "key": "AT-Biomass",
             "average": 295,
             "stdMovingAverage": 6.5056305187915155
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 163,
+            "stdMovingAverage": 100.72462938505701
           },
           {
             "key": "AT-Fossil gas",
@@ -3053,9 +3166,24 @@
             "stdMovingAverage": 2.2083359118359376e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 538,
+            "stdMovingAverage": 323.4354623360186
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 551,
+            "stdMovingAverage": 723.0359565061257
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.9406199066210684e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 731,
+            "stdMovingAverage": 610.9605250161952
           },
           {
             "key": "AT-Solar",
@@ -3068,14 +3196,29 @@
         "file": "at-charts-2019.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -240,
+            "stdMovingAverage": 407.5522881284025
+          },
+          {
             "key": "AT-Import Balance",
             "average": 504,
             "stdMovingAverage": 974.1735704837383
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 3146,
+            "stdMovingAverage": 342.2502824218941
+          },
+          {
             "key": "AT-Biomass",
             "average": 249,
             "stdMovingAverage": 6.9962721762238465
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 143,
+            "stdMovingAverage": 100.07981073855622
           },
           {
             "key": "AT-Fossil gas",
@@ -3088,9 +3231,24 @@
             "stdMovingAverage": 2.2083359118359376e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 549,
+            "stdMovingAverage": 263.9895023443006
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 512,
+            "stdMovingAverage": 669.21574952174
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.9406199066210684e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 910,
+            "stdMovingAverage": 779.7402268516441
           },
           {
             "key": "AT-Solar",
@@ -3103,14 +3261,29 @@
         "file": "at-charts-2020.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -294,
+            "stdMovingAverage": 482.1384334081512
+          },
+          {
             "key": "AT-Import Balance",
             "average": 379,
             "stdMovingAverage": 1042.5539196186696
           },
           {
+            "key": "AT-Hydro Run-of-River",
+            "average": 3260,
+            "stdMovingAverage": 399.374453548734
+          },
+          {
             "key": "AT-Biomass",
             "average": 195,
             "stdMovingAverage": 5.040271648602351
+          },
+          {
+            "key": "AT-Fossil hard coal",
+            "average": 37,
+            "stdMovingAverage": 11.614347640759794
           },
           {
             "key": "AT-Fossil gas",
@@ -3123,9 +3296,24 @@
             "stdMovingAverage": 2.2083372980618013e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 584,
+            "stdMovingAverage": 310.7124888918726
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 665,
+            "stdMovingAverage": 800.9334380168187
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.940623706922463e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 825,
+            "stdMovingAverage": 741.4900691519301
           },
           {
             "key": "AT-Solar",
@@ -3138,9 +3326,19 @@
         "file": "at-charts-2021.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -303,
+            "stdMovingAverage": 513.3404076723182
+          },
+          {
             "key": "AT-Import Balance",
             "average": 953,
             "stdMovingAverage": 1025.399977710048
+          },
+          {
+            "key": "AT-Hydro Run-of-River",
+            "average": 3074,
+            "stdMovingAverage": 379.4247415015064
           },
           {
             "key": "AT-Biomass",
@@ -3158,9 +3356,24 @@
             "stdMovingAverage": 2.2083359118359376e-16
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 523,
+            "stdMovingAverage": 281.9084989251204
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 607,
+            "stdMovingAverage": 771.6634447645944
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 4.9406199066210684e-14
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 793,
+            "stdMovingAverage": 701.1664704828402
           },
           {
             "key": "AT-Solar",
@@ -3173,9 +3386,19 @@
         "file": "at-charts-2022.json",
         "options": [
           {
+            "key": "AT-Hydro pumped storage consumption",
+            "average": -359,
+            "stdMovingAverage": 529.3910963072423
+          },
+          {
             "key": "AT-Import Balance",
             "average": 993,
             "stdMovingAverage": 1082.98456227933
+          },
+          {
+            "key": "AT-Hydro Run-of-River",
+            "average": 4870,
+            "stdMovingAverage": 165618.2995074564
           },
           {
             "key": "AT-Biomass",
@@ -3193,9 +3416,24 @@
             "stdMovingAverage": 0.0011333041683478377
           },
           {
+            "key": "AT-Hydro water reservoir",
+            "average": 592,
+            "stdMovingAverage": 7905.169855112938
+          },
+          {
+            "key": "AT-Hydro pumped storage",
+            "average": 660,
+            "stdMovingAverage": 3615.5053929257447
+          },
+          {
             "key": "AT-Others",
             "average": 22,
             "stdMovingAverage": 0.2493269170365243
+          },
+          {
+            "key": "AT-Wind onshore",
+            "average": 818,
+            "stdMovingAverage": 729.0594958900066
           },
           {
             "key": "AT-Solar",
@@ -3238,9 +3476,29 @@
             "stdMovingAverage": 478.4765362876438
           },
           {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1894,
+            "stdMovingAverage": 1059.702449644019
+          },
+          {
             "key": "CH-Fossil gas",
             "average": 3,
             "stdMovingAverage": 23.4013989393105
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 2351,
+            "stdMovingAverage": 1926.0618863630941
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 262,
+            "stdMovingAverage": 314.980810536378
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 13,
+            "stdMovingAverage": 11.655860838303369
           },
           {
             "key": "CH-Solar",
@@ -3263,6 +3521,26 @@
             "stdMovingAverage": 389.3092270073163
           },
           {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1890,
+            "stdMovingAverage": 435.4569800957344
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 1919,
+            "stdMovingAverage": 1200.912018242398
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 333,
+            "stdMovingAverage": 308.17840058537973
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 12,
+            "stdMovingAverage": 10.554204901482722
+          },
+          {
             "key": "CH-Solar",
             "average": 152,
             "stdMovingAverage": 233.99082186344194
@@ -3281,6 +3559,26 @@
             "key": "CH-Nuclear",
             "average": 2226,
             "stdMovingAverage": 215.0894370422571
+          },
+          {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1820,
+            "stdMovingAverage": 289.6609857079657
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 1891,
+            "stdMovingAverage": 1147.2837624614124
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 475,
+            "stdMovingAverage": 451.62811851007416
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 15,
+            "stdMovingAverage": 12.154663700497172
           },
           {
             "key": "CH-Solar",
@@ -3303,6 +3601,26 @@
             "stdMovingAverage": 162.3680154296198
           },
           {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1930,
+            "stdMovingAverage": 377.6303676762851
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 1887,
+            "stdMovingAverage": 1123.0835917716083
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 455,
+            "stdMovingAverage": 422.59020485477237
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 14,
+            "stdMovingAverage": 14.29306570905247
+          },
+          {
             "key": "CH-Solar",
             "average": 222,
             "stdMovingAverage": 355.09734615336225
@@ -3321,6 +3639,26 @@
             "key": "CH-Nuclear",
             "average": 2886,
             "stdMovingAverage": 286.2128922225699
+          },
+          {
+            "key": "CH-Hydro Run-of-River",
+            "average": 2021,
+            "stdMovingAverage": 413.11796095999995
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 2137,
+            "stdMovingAverage": 1206.6797819339072
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 472,
+            "stdMovingAverage": 422.4459712098376
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 17,
+            "stdMovingAverage": 14.427338216193712
           },
           {
             "key": "CH-Solar",
@@ -3343,6 +3681,26 @@
             "stdMovingAverage": 189.43426808769968
           },
           {
+            "key": "CH-Hydro Run-of-River",
+            "average": 2011,
+            "stdMovingAverage": 442.7917157101134
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 2110,
+            "stdMovingAverage": 1328.0083345608327
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 509,
+            "stdMovingAverage": 492.7428477633248
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 17,
+            "stdMovingAverage": 13.288764973484575
+          },
+          {
             "key": "CH-Solar",
             "average": 297,
             "stdMovingAverage": 451.32653587140993
@@ -3361,6 +3719,26 @@
             "key": "CH-Nuclear",
             "average": 2115,
             "stdMovingAverage": 223.19173287674732
+          },
+          {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1936,
+            "stdMovingAverage": 379.3597401538787
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 2100,
+            "stdMovingAverage": 1353.5768500008996
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 473,
+            "stdMovingAverage": 468.08022504270554
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 15,
+            "stdMovingAverage": 13.09190735881912
           },
           {
             "key": "CH-Solar",
@@ -3383,6 +3761,26 @@
             "stdMovingAverage": 234.01684962798015
           },
           {
+            "key": "CH-Hydro Run-of-River",
+            "average": 1753,
+            "stdMovingAverage": 422.17627120380274
+          },
+          {
+            "key": "CH-Hydro water reservoir",
+            "average": 1623,
+            "stdMovingAverage": 1076.3381998899752
+          },
+          {
+            "key": "CH-Hydro pumped storage",
+            "average": 401,
+            "stdMovingAverage": 435.1318157691218
+          },
+          {
+            "key": "CH-Wind onshore",
+            "average": 10,
+            "stdMovingAverage": 9.739998992614591
+          },
+          {
             "key": "CH-Solar",
             "average": 388,
             "stdMovingAverage": 612.0644926340494
@@ -3392,6 +3790,11 @@
       {
         "file": "cz-charts-2015.json",
         "options": [
+          {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -190,
+            "stdMovingAverage": 331.19353309504567
+          },
           {
             "key": "CZ-Import Balance",
             "average": -1484,
@@ -3403,9 +3806,29 @@
             "stdMovingAverage": 296.3522350526788
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 83,
+            "stdMovingAverage": 15.382980043884679
+          },
+          {
             "key": "CZ-Biomass",
             "average": 263,
             "stdMovingAverage": 30.15533195555429
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3680,
+            "stdMovingAverage": 543.248948331215
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 229,
+            "stdMovingAverage": 34.6702820303352
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 561,
+            "stdMovingAverage": 157.64132990341147
           },
           {
             "key": "CZ-Fossil oil",
@@ -3418,9 +3841,24 @@
             "stdMovingAverage": 183.4765778183838
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 133,
+            "stdMovingAverage": 136.70528661133525
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 142,
+            "stdMovingAverage": 196.3280201995163
+          },
+          {
             "key": "CZ-Others",
             "average": 45,
             "stdMovingAverage": 20.379430688019987
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 68,
+            "stdMovingAverage": 50.60296657813447
           },
           {
             "key": "CZ-Solar",
@@ -3433,6 +3871,11 @@
         "file": "cz-charts-2016.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -178,
+            "stdMovingAverage": 328.5979665498228
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1247,
             "stdMovingAverage": 568.0490724976718
@@ -3443,9 +3886,29 @@
             "stdMovingAverage": 188.30714712240035
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 95,
+            "stdMovingAverage": 10.129436547014224
+          },
+          {
             "key": "CZ-Biomass",
             "average": 235,
             "stdMovingAverage": 15.990683041285111
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3796,
+            "stdMovingAverage": 493.5818304932578
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 230,
+            "stdMovingAverage": 21.50293238554676
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 557,
+            "stdMovingAverage": 139.0535014205981
           },
           {
             "key": "CZ-Fossil oil",
@@ -3458,9 +3921,24 @@
             "stdMovingAverage": 251.36627683516372
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 144,
+            "stdMovingAverage": 127.21047537128854
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 136,
+            "stdMovingAverage": 191.54240720256328
+          },
+          {
             "key": "CZ-Others",
             "average": 77,
             "stdMovingAverage": 9.543140683525783
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 55,
+            "stdMovingAverage": 44.07944534090232
           },
           {
             "key": "CZ-Solar",
@@ -3473,6 +3951,11 @@
         "file": "cz-charts-2017.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -175,
+            "stdMovingAverage": 320.05779148532935
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1511,
             "stdMovingAverage": 678.4739263376562
@@ -3483,9 +3966,29 @@
             "stdMovingAverage": 182.21836606284077
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 94,
+            "stdMovingAverage": 15.844055190715524
+          },
+          {
             "key": "CZ-Biomass",
             "average": 233,
             "stdMovingAverage": 14.554695164043371
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3795,
+            "stdMovingAverage": 526.6074237010922
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 204,
+            "stdMovingAverage": 27.775010639891565
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 489,
+            "stdMovingAverage": 113.36056394764996
           },
           {
             "key": "CZ-Fossil oil",
@@ -3498,9 +4001,24 @@
             "stdMovingAverage": 278.25244335141775
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 104,
+            "stdMovingAverage": 109.4571283007423
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 132,
+            "stdMovingAverage": 196.99078847565792
+          },
+          {
             "key": "CZ-Others",
             "average": 111,
             "stdMovingAverage": 9.846359709982435
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 64,
+            "stdMovingAverage": 46.16604671448919
           },
           {
             "key": "CZ-Solar",
@@ -3513,6 +4031,11 @@
         "file": "cz-charts-2018.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -157,
+            "stdMovingAverage": 298.6663187234369
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1554,
             "stdMovingAverage": 691.8767562593548
@@ -3523,9 +4046,29 @@
             "stdMovingAverage": 211.23865914923803
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 85,
+            "stdMovingAverage": 12.750067969226347
+          },
+          {
             "key": "CZ-Biomass",
             "average": 257,
             "stdMovingAverage": 16.590132803116717
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3850,
+            "stdMovingAverage": 518.8537368896358
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 190,
+            "stdMovingAverage": 22.508826686132725
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 398,
+            "stdMovingAverage": 91.96815938425429
           },
           {
             "key": "CZ-Fossil oil",
@@ -3538,9 +4081,24 @@
             "stdMovingAverage": 275.83867021526186
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 114,
+            "stdMovingAverage": 120.91863986095714
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 119,
+            "stdMovingAverage": 187.01416297130814
+          },
+          {
             "key": "CZ-Others",
             "average": 115,
             "stdMovingAverage": 10.003608933919637
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 69,
+            "stdMovingAverage": 49.84719909998869
           },
           {
             "key": "CZ-Solar",
@@ -3553,6 +4111,11 @@
         "file": "cz-charts-2019.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -168,
+            "stdMovingAverage": 323.1152538301313
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1450,
             "stdMovingAverage": 639.439336159215
@@ -3563,9 +4126,29 @@
             "stdMovingAverage": 217.8964496749739
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 96,
+            "stdMovingAverage": 15.674003798330363
+          },
+          {
             "key": "CZ-Biomass",
             "average": 223,
             "stdMovingAverage": 15.502371158977352
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3623,
+            "stdMovingAverage": 563.9692517995614
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 171,
+            "stdMovingAverage": 28.3107586626591
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 228,
+            "stdMovingAverage": 62.05912493728356
           },
           {
             "key": "CZ-Fossil oil",
@@ -3578,9 +4161,24 @@
             "stdMovingAverage": 299.0682489447474
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 123,
+            "stdMovingAverage": 112.31482088984005
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 130,
+            "stdMovingAverage": 202.5354791830456
+          },
+          {
             "key": "CZ-Others",
             "average": 112,
             "stdMovingAverage": 10.057996152470857
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 78,
+            "stdMovingAverage": 53.331830655564595
           },
           {
             "key": "CZ-Solar",
@@ -3593,6 +4191,11 @@
         "file": "cz-charts-2020.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -193,
+            "stdMovingAverage": 346.66607815765514
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1108,
             "stdMovingAverage": 696.9625723670573
@@ -3603,9 +4206,29 @@
             "stdMovingAverage": 207.19543479962505
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 120,
+            "stdMovingAverage": 14.241960254659283
+          },
+          {
             "key": "CZ-Biomass",
             "average": 265,
             "stdMovingAverage": 17.924699763774697
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3003,
+            "stdMovingAverage": 519.4909279598372
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 245,
+            "stdMovingAverage": 29.83578158345289
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 193,
+            "stdMovingAverage": 58.39043616388754
           },
           {
             "key": "CZ-Fossil oil",
@@ -3618,9 +4241,24 @@
             "stdMovingAverage": 299.2926755479591
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 118,
+            "stdMovingAverage": 106.88737210033214
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 148,
+            "stdMovingAverage": 235.60060389646742
+          },
+          {
             "key": "CZ-Others",
             "average": 101,
             "stdMovingAverage": 11.494928536432841
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 78,
+            "stdMovingAverage": 51.52388661565112
           },
           {
             "key": "CZ-Solar",
@@ -3633,6 +4271,11 @@
         "file": "cz-charts-2021.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -179,
+            "stdMovingAverage": 337.05302658714805
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1277,
             "stdMovingAverage": 699.0335568209522
@@ -3643,9 +4286,29 @@
             "stdMovingAverage": 174.65546512569648
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 136,
+            "stdMovingAverage": 13.491782762560131
+          },
+          {
             "key": "CZ-Biomass",
             "average": 284,
             "stdMovingAverage": 14.28361028964153
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3180,
+            "stdMovingAverage": 474.93151445667223
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 245,
+            "stdMovingAverage": 27.843712907621256
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 291,
+            "stdMovingAverage": 117.90892644310966
           },
           {
             "key": "CZ-Fossil oil",
@@ -3658,9 +4321,24 @@
             "stdMovingAverage": 332.6878711465261
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 142,
+            "stdMovingAverage": 118.89653937820478
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 135,
+            "stdMovingAverage": 221.59454691374802
+          },
+          {
             "key": "CZ-Others",
             "average": 13,
             "stdMovingAverage": 8.554075948072905
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 70,
+            "stdMovingAverage": 52.47379317883948
           },
           {
             "key": "CZ-Solar",
@@ -3673,6 +4351,11 @@
         "file": "cz-charts-2022.json",
         "options": [
           {
+            "key": "CZ-Hydro pumped storage consumption",
+            "average": -140,
+            "stdMovingAverage": 289.78467064741983
+          },
+          {
             "key": "CZ-Import Balance",
             "average": -1487,
             "stdMovingAverage": 709.1024018233384
@@ -3683,9 +4366,29 @@
             "stdMovingAverage": 218.77108563184416
           },
           {
+            "key": "CZ-Hydro Run-of-River",
+            "average": 117,
+            "stdMovingAverage": 12.864693301243733
+          },
+          {
             "key": "CZ-Biomass",
             "average": 274,
             "stdMovingAverage": 16.238536848956276
+          },
+          {
+            "key": "CZ-Fossil brown coal / lignite",
+            "average": 3353,
+            "stdMovingAverage": 484.92797133878497
+          },
+          {
+            "key": "CZ-Fossil coal-derived gas",
+            "average": 15,
+            "stdMovingAverage": 4.333097814511919
+          },
+          {
+            "key": "CZ-Fossil hard coal",
+            "average": 280,
+            "stdMovingAverage": 115.19187028589644
           },
           {
             "key": "CZ-Fossil oil",
@@ -3698,9 +4401,24 @@
             "stdMovingAverage": 327.95869824318845
           },
           {
+            "key": "CZ-Hydro water reservoir",
+            "average": 123,
+            "stdMovingAverage": 118.15487424673297
+          },
+          {
+            "key": "CZ-Hydro pumped storage",
+            "average": 106,
+            "stdMovingAverage": 179.2778730717991
+          },
+          {
             "key": "CZ-Others",
             "average": 3,
             "stdMovingAverage": 5.5465146222918325
+          },
+          {
+            "key": "CZ-Wind onshore",
+            "average": 74,
+            "stdMovingAverage": 52.903494063871136
           },
           {
             "key": "CZ-Solar",
@@ -3745,6 +4463,11 @@
         "file": "de-charts-2015.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -826,
+            "stdMovingAverage": 996.878764258419
+          },
+          {
             "key": "DE-Import Balance",
             "average": -4303,
             "stdMovingAverage": 2610.2365241891735
@@ -3755,9 +4478,29 @@
             "stdMovingAverage": 569.6668182497511
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 2061,
+            "stdMovingAverage": 151.26509213485176
+          },
+          {
             "key": "DE-Biomass",
             "average": 4818,
             "stdMovingAverage": 90.65225272600657
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 15911,
+            "stdMovingAverage": 1956.9566517255014
+          },
+          {
+            "key": "DE-Fossil coal-derived gas",
+            "average": 134,
+            "stdMovingAverage": 67.83523382787924
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 12124,
+            "stdMovingAverage": 5098.336547437184
           },
           {
             "key": "DE-Fossil oil",
@@ -3775,9 +4518,29 @@
             "stdMovingAverage": 2.211392876871927
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 72,
+            "stdMovingAverage": 40.090198940404356
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 687,
+            "stdMovingAverage": 726.7835871931293
+          },
+          {
             "key": "DE-Others",
             "average": 38,
             "stdMovingAverage": 15.520347249747283
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 931,
+            "stdMovingAverage": 622.7982881055837
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 8094,
+            "stdMovingAverage": 5888.815396618906
           },
           {
             "key": "DE-Solar",
@@ -3790,6 +4553,11 @@
         "file": "de-charts-2016.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -751,
+            "stdMovingAverage": 916.0828697937311
+          },
+          {
             "key": "DE-Import Balance",
             "average": -4759,
             "stdMovingAverage": 2586.914777266039
@@ -3800,9 +4568,29 @@
             "stdMovingAverage": 504.1621564638616
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 2211,
+            "stdMovingAverage": 166.94357613282173
+          },
+          {
             "key": "DE-Biomass",
             "average": 4871,
             "stdMovingAverage": 62.137085612843315
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 15355,
+            "stdMovingAverage": 1949.0853309049808
+          },
+          {
+            "key": "DE-Fossil coal-derived gas",
+            "average": 430,
+            "stdMovingAverage": 92.29591905549006
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 11364,
+            "stdMovingAverage": 5066.33442170289
           },
           {
             "key": "DE-Fossil oil",
@@ -3820,9 +4608,29 @@
             "stdMovingAverage": 2.764370795056172
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 97,
+            "stdMovingAverage": 53.451966490966726
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 650,
+            "stdMovingAverage": 641.6266954826235
+          },
+          {
             "key": "DE-Others",
             "average": 37,
             "stdMovingAverage": 16.493389529592772
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 1377,
+            "stdMovingAverage": 925.6737532807286
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 7558,
+            "stdMovingAverage": 5596.541744393615
           },
           {
             "key": "DE-Solar",
@@ -3835,6 +4643,11 @@
         "file": "de-charts-2017.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -640,
+            "stdMovingAverage": 664.2596186825239
+          },
+          {
             "key": "DE-Import Balance",
             "average": -5256,
             "stdMovingAverage": 2832.6604169631937
@@ -3845,9 +4658,29 @@
             "stdMovingAverage": 623.1114940372742
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 2212,
+            "stdMovingAverage": 155.13275443860996
+          },
+          {
             "key": "DE-Biomass",
             "average": 4891,
             "stdMovingAverage": 119.36630740108129
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 15296,
+            "stdMovingAverage": 2073.3754306050932
+          },
+          {
+            "key": "DE-Fossil coal-derived gas",
+            "average": 429,
+            "stdMovingAverage": 79.63639293231954
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 9327,
+            "stdMovingAverage": 4669.33619638918
           },
           {
             "key": "DE-Fossil oil",
@@ -3865,9 +4698,29 @@
             "stdMovingAverage": 2.630032851473036
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 72,
+            "stdMovingAverage": 37.45703256922395
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 699,
+            "stdMovingAverage": 730.1526240382755
+          },
+          {
             "key": "DE-Others",
             "average": 24,
             "stdMovingAverage": 8.957665371475029
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 1988,
+            "stdMovingAverage": 1241.4516781673303
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 9842,
+            "stdMovingAverage": 7079.454825391662
           },
           {
             "key": "DE-Solar",
@@ -3880,6 +4733,11 @@
         "file": "de-charts-2018.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -1034,
+            "stdMovingAverage": 1214.4616960149074
+          },
+          {
             "key": "DE-Import Balance",
             "average": -5484,
             "stdMovingAverage": 3312.760893758863
@@ -3890,9 +4748,29 @@
             "stdMovingAverage": 553.8251795274684
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 1899,
+            "stdMovingAverage": 151.72315809127062
+          },
+          {
             "key": "DE-Biomass",
             "average": 4810,
             "stdMovingAverage": 129.99524434174617
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 15010,
+            "stdMovingAverage": 2379.689563301498
+          },
+          {
+            "key": "DE-Fossil coal-derived gas",
+            "average": 406,
+            "stdMovingAverage": 80.784730981995
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 8262,
+            "stdMovingAverage": 3977.560293037961
           },
           {
             "key": "DE-Fossil oil",
@@ -3910,9 +4788,29 @@
             "stdMovingAverage": 1.7893536749406531
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 109,
+            "stdMovingAverage": 73.1847540731698
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 789,
+            "stdMovingAverage": 947.4786382983083
+          },
+          {
             "key": "DE-Others",
             "average": 28,
             "stdMovingAverage": 28.177646857295823
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 2190,
+            "stdMovingAverage": 1334.3426147476164
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 10125,
+            "stdMovingAverage": 7391.3961724353785
           },
           {
             "key": "DE-Solar",
@@ -3925,6 +4823,11 @@
         "file": "de-charts-2019.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -903,
+            "stdMovingAverage": 1058.553146476787
+          },
+          {
             "key": "DE-Import Balance",
             "average": -3899,
             "stdMovingAverage": 4025.3522515901495
@@ -3935,9 +4838,29 @@
             "stdMovingAverage": 602.9967365055194
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 2084,
+            "stdMovingAverage": 142.2529622264683
+          },
+          {
             "key": "DE-Biomass",
             "average": 4795,
             "stdMovingAverage": 135.02560262466903
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 11632,
+            "stdMovingAverage": 2826.11914394086
+          },
+          {
+            "key": "DE-Fossil coal-derived gas",
+            "average": 222,
+            "stdMovingAverage": 62.936521564268865
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 5648,
+            "stdMovingAverage": 3018.9632306658777
           },
           {
             "key": "DE-Fossil oil",
@@ -3955,9 +4878,29 @@
             "stdMovingAverage": 2.102899675740506
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 159,
+            "stdMovingAverage": 84.45932420622466
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 705,
+            "stdMovingAverage": 815.4442296706563
+          },
+          {
             "key": "DE-Others",
             "average": 65,
             "stdMovingAverage": 11.697367292569941
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 2784,
+            "stdMovingAverage": 1620.3811751610324
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 11319,
+            "stdMovingAverage": 7503.797502240613
           },
           {
             "key": "DE-Solar",
@@ -3970,6 +4913,11 @@
         "file": "de-charts-2020.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -896,
+            "stdMovingAverage": 588.1125498307641
+          },
+          {
             "key": "DE-Import Balance",
             "average": -2223,
             "stdMovingAverage": 4483.798119144541
@@ -3980,9 +4928,24 @@
             "stdMovingAverage": 533.422450176891
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 1930,
+            "stdMovingAverage": 143.108257462719
+          },
+          {
             "key": "DE-Biomass",
             "average": 4864,
             "stdMovingAverage": 127.41892476831205
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 9344,
+            "stdMovingAverage": 2783.5711784622526
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 4039,
+            "stdMovingAverage": 2506.2088893700097
           },
           {
             "key": "DE-Fossil oil",
@@ -4000,9 +4963,29 @@
             "stdMovingAverage": 2.2781510398507936
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 149,
+            "stdMovingAverage": 92.99474696176478
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 773,
+            "stdMovingAverage": 509.98895805286946
+          },
+          {
             "key": "DE-Others",
             "average": 72,
             "stdMovingAverage": 12.380446892821487
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 3063,
+            "stdMovingAverage": 1800.9099677221877
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 11709,
+            "stdMovingAverage": 7641.585664533157
           },
           {
             "key": "DE-Solar",
@@ -4015,6 +4998,11 @@
         "file": "de-charts-2021.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -773,
+            "stdMovingAverage": 856.9533048653976
+          },
+          {
             "key": "DE-Import Balance",
             "average": -2204,
             "stdMovingAverage": 4587.016632820977
@@ -4025,9 +5013,24 @@
             "stdMovingAverage": 415.8562564319817
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 2027,
+            "stdMovingAverage": 159.59029096357148
+          },
+          {
             "key": "DE-Biomass",
             "average": 4775,
             "stdMovingAverage": 151.0372543118189
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 11343,
+            "stdMovingAverage": 2566.8282979632477
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 5324,
+            "stdMovingAverage": 2301.1121903076487
           },
           {
             "key": "DE-Fossil oil",
@@ -4045,9 +5048,29 @@
             "stdMovingAverage": 2.39806299739528
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 144,
+            "stdMovingAverage": 88.7700192805053
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 623,
+            "stdMovingAverage": 708.1335300771497
+          },
+          {
             "key": "DE-Others",
             "average": 70,
             "stdMovingAverage": 8.24367084718484
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 2740,
+            "stdMovingAverage": 1861.8513487093194
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 10004,
+            "stdMovingAverage": 7918.963834442276
           },
           {
             "key": "DE-Solar",
@@ -4060,6 +5083,11 @@
         "file": "de-charts-2022.json",
         "options": [
           {
+            "key": "DE-Hydro pumped storage consumption",
+            "average": -959,
+            "stdMovingAverage": 1115.5268125246669
+          },
+          {
             "key": "DE-Import Balance",
             "average": -2959,
             "stdMovingAverage": 4687.30871036397
@@ -4070,9 +5098,24 @@
             "stdMovingAverage": 292.2128065722813
           },
           {
+            "key": "DE-Hydro Run-of-River",
+            "average": 1738,
+            "stdMovingAverage": 155.65406675586053
+          },
+          {
             "key": "DE-Biomass",
             "average": 4810,
             "stdMovingAverage": 156.29027478459497
+          },
+          {
+            "key": "DE-Fossil brown coal / lignite",
+            "average": 12109,
+            "stdMovingAverage": 2260.175119924984
+          },
+          {
+            "key": "DE-Fossil hard coal",
+            "average": 5923,
+            "stdMovingAverage": 1992.3468174768295
           },
           {
             "key": "DE-Fossil oil",
@@ -4090,9 +5133,29 @@
             "stdMovingAverage": 2.294465694983584
           },
           {
+            "key": "DE-Hydro water reservoir",
+            "average": 144,
+            "stdMovingAverage": 98.04260104656326
+          },
+          {
+            "key": "DE-Hydro pumped storage",
+            "average": 736,
+            "stdMovingAverage": 956.4397513637019
+          },
+          {
             "key": "DE-Others",
             "average": 56,
             "stdMovingAverage": 7.284027059309632
+          },
+          {
+            "key": "DE-Wind offshore",
+            "average": 2734,
+            "stdMovingAverage": 1630.7876687745706
+          },
+          {
+            "key": "DE-Wind onshore",
+            "average": 11222,
+            "stdMovingAverage": 7634.220459317366
           },
           {
             "key": "DE-Solar",
@@ -4115,6 +5178,11 @@
             "stdMovingAverage": 14.516597991299774
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 864,
+            "stdMovingAverage": 348.8763692564666
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 24,
             "stdMovingAverage": 29.195193647000384
@@ -4123,6 +5191,16 @@
             "key": "DK-Fossil gas",
             "average": 456,
             "stdMovingAverage": 184.30782501574066
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 549,
+            "stdMovingAverage": 342.0932971481364
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1009,
+            "stdMovingAverage": 759.59836181762
           },
           {
             "key": "DK-Solar",
@@ -4145,6 +5223,11 @@
             "stdMovingAverage": 11.044348589773401
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 1086,
+            "stdMovingAverage": 369.8720880151398
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 25,
             "stdMovingAverage": 19.53402478189711
@@ -4153,6 +5236,16 @@
             "key": "DK-Fossil gas",
             "average": 488,
             "stdMovingAverage": 207.53754297514854
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 520,
+            "stdMovingAverage": 325.8117868363704
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 835,
+            "stdMovingAverage": 640.687463551204
           },
           {
             "key": "DK-Solar",
@@ -4175,6 +5268,11 @@
             "stdMovingAverage": 137.02649664355812
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 618,
+            "stdMovingAverage": 301.8916410772575
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 92,
             "stdMovingAverage": 16.718725256494718
@@ -4183,6 +5281,16 @@
             "key": "DK-Fossil gas",
             "average": 238,
             "stdMovingAverage": 130.7991086925592
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 580,
+            "stdMovingAverage": 349.4279164419675
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1064,
+            "stdMovingAverage": 802.1261129955966
           },
           {
             "key": "DK-Solar",
@@ -4205,6 +5313,11 @@
             "stdMovingAverage": 126.8574905856279
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 734,
+            "stdMovingAverage": 281.75590050393475
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 23,
             "stdMovingAverage": 12.29922936548948
@@ -4213,6 +5326,16 @@
             "key": "DK-Fossil gas",
             "average": 325,
             "stdMovingAverage": 125.98095548914927
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 506,
+            "stdMovingAverage": 330.24106200300986
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1086,
+            "stdMovingAverage": 866.2436901066147
           },
           {
             "key": "DK-Solar",
@@ -4235,6 +5358,11 @@
             "stdMovingAverage": 130.8583524626101
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 436,
+            "stdMovingAverage": 206.7372833725094
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 30,
             "stdMovingAverage": 16.633454137132254
@@ -4243,6 +5371,16 @@
             "key": "DK-Fossil gas",
             "average": 299,
             "stdMovingAverage": 117.73772697535604
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 641,
+            "stdMovingAverage": 390.19617560980066
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1178,
+            "stdMovingAverage": 843.6828807130181
           },
           {
             "key": "DK-Solar",
@@ -4265,6 +5403,11 @@
             "stdMovingAverage": 129.4508251147071
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 439,
+            "stdMovingAverage": 166.0627159777007
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 28,
             "stdMovingAverage": 16.263612650391902
@@ -4273,6 +5416,16 @@
             "key": "DK-Fossil gas",
             "average": 208,
             "stdMovingAverage": 106.69344297879611
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 718,
+            "stdMovingAverage": 423.79793292212076
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1148,
+            "stdMovingAverage": 766.8260712595708
           },
           {
             "key": "DK-Solar",
@@ -4295,6 +5448,11 @@
             "stdMovingAverage": 176.36409351295944
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 666,
+            "stdMovingAverage": 233.20404756224292
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 41,
             "stdMovingAverage": 15.695282387785243
@@ -4303,6 +5461,16 @@
             "key": "DK-Fossil gas",
             "average": 299,
             "stdMovingAverage": 122.21460771977526
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 822,
+            "stdMovingAverage": 555.9500286152428
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1013,
+            "stdMovingAverage": 781.9778389427947
           },
           {
             "key": "DK-Solar",
@@ -4325,6 +5493,11 @@
             "stdMovingAverage": 173.6971820618472
           },
           {
+            "key": "DK-Fossil hard coal",
+            "average": 553,
+            "stdMovingAverage": 248.18913481510023
+          },
+          {
             "key": "DK-Fossil oil",
             "average": 35,
             "stdMovingAverage": 18.849962279357225
@@ -4333,6 +5506,16 @@
             "key": "DK-Fossil gas",
             "average": 221,
             "stdMovingAverage": 99.38644134843535
+          },
+          {
+            "key": "DK-Wind offshore",
+            "average": 944,
+            "stdMovingAverage": 558.2461817951065
+          },
+          {
+            "key": "DK-Wind onshore",
+            "average": 1188,
+            "stdMovingAverage": 815.5272114847221
           },
           {
             "key": "DK-Solar",
@@ -4382,9 +5565,19 @@
             "stdMovingAverage": 180.63031946403456
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 4,
+            "stdMovingAverage": 0.38027573351558436
+          },
+          {
             "key": "EE-Biomass",
             "average": 60,
             "stdMovingAverage": 7.287847719712714
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 34,
+            "stdMovingAverage": 7.869995615553413
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4395,6 +5588,11 @@
             "key": "EE-Fossil gas",
             "average": 6,
             "stdMovingAverage": 0.8378696505693659
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 71,
+            "stdMovingAverage": 50.62726429526945
           },
           {
             "key": "EE-Solar",
@@ -4412,9 +5610,19 @@
             "stdMovingAverage": 212.45772883991157
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 0.23742612839270388
+          },
+          {
             "key": "EE-Biomass",
             "average": 58,
             "stdMovingAverage": 6.92162136514252
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 42,
+            "stdMovingAverage": 8.734432558960824
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4425,6 +5633,11 @@
             "key": "EE-Fossil gas",
             "average": 3,
             "stdMovingAverage": 0.9544958065301387
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 60,
+            "stdMovingAverage": 44.37130682570622
           },
           {
             "key": "EE-Solar",
@@ -4442,9 +5655,19 @@
             "stdMovingAverage": 224.22474496166552
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 0.3867512888529227
+          },
+          {
             "key": "EE-Biomass",
             "average": 64,
             "stdMovingAverage": 6.36827019900116
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 48,
+            "stdMovingAverage": 10.606374379761514
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4455,6 +5678,11 @@
             "key": "EE-Fossil gas",
             "average": 2,
             "stdMovingAverage": 7.508670270726105
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 80,
+            "stdMovingAverage": 62.30717568396378
           },
           {
             "key": "EE-Solar",
@@ -4472,9 +5700,19 @@
             "stdMovingAverage": 222.17666327681263
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 0.5158496137128549
+          },
+          {
             "key": "EE-Biomass",
             "average": 63,
             "stdMovingAverage": 11.212447766465912
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 52,
+            "stdMovingAverage": 11.653672555786748
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4485,6 +5723,11 @@
             "key": "EE-Fossil gas",
             "average": 3,
             "stdMovingAverage": 10.077949285176912
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 70,
+            "stdMovingAverage": 59.67532534603476
           },
           {
             "key": "EE-Solar",
@@ -4502,9 +5745,19 @@
             "stdMovingAverage": 152.3439717138739
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 0.21424214383254597
+          },
+          {
             "key": "EE-Biomass",
             "average": 65,
             "stdMovingAverage": 5.715978824676992
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 55,
+            "stdMovingAverage": 9.555238095428098
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4515,6 +5768,11 @@
             "key": "EE-Fossil gas",
             "average": 2,
             "stdMovingAverage": 0.7753809452551174
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 81,
+            "stdMovingAverage": 55.05879918619595
           },
           {
             "key": "EE-Solar",
@@ -4532,9 +5790,19 @@
             "stdMovingAverage": 143.12514748432912
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 1,
+            "stdMovingAverage": 0.19956176647618273
+          },
+          {
             "key": "EE-Biomass",
             "average": 66,
             "stdMovingAverage": 6.1295455247855095
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 51,
+            "stdMovingAverage": 10.324178944010153
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4545,6 +5813,11 @@
             "key": "EE-Fossil gas",
             "average": 3,
             "stdMovingAverage": 0.850067431719968
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 100,
+            "stdMovingAverage": 64.79614371864366
           },
           {
             "key": "EE-Solar",
@@ -4562,9 +5835,19 @@
             "stdMovingAverage": 150.40362285484653
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 2,
+            "stdMovingAverage": 0.22171125952116116
+          },
+          {
             "key": "EE-Biomass",
             "average": 54,
             "stdMovingAverage": 7.137122728181243
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 47,
+            "stdMovingAverage": 11.161382447353281
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4575,6 +5858,11 @@
             "key": "EE-Fossil gas",
             "average": 3,
             "stdMovingAverage": 0.7025667393278223
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 89,
+            "stdMovingAverage": 60.232986936552464
           },
           {
             "key": "EE-Solar",
@@ -4592,9 +5880,19 @@
             "stdMovingAverage": 174.10281105986874
           },
           {
+            "key": "EE-Hydro Run-of-River",
+            "average": 2,
+            "stdMovingAverage": 0.2706355909927683
+          },
+          {
             "key": "EE-Biomass",
             "average": 146,
             "stdMovingAverage": 52.52633801001249
+          },
+          {
+            "key": "EE-Fossil coal-derived gas",
+            "average": 41,
+            "stdMovingAverage": 7.953192050416408
           },
           {
             "key": "EE-Fossil oil shale",
@@ -4605,6 +5903,11 @@
             "key": "EE-Fossil gas",
             "average": 4,
             "stdMovingAverage": 1.0998462065544201
+          },
+          {
+            "key": "EE-Wind onshore",
+            "average": 79,
+            "stdMovingAverage": 56.75092671382572
           },
           {
             "key": "EE-Solar",
@@ -4649,6 +5952,11 @@
         "file": "es-charts-2015.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -532,
+            "stdMovingAverage": 765.0906581939201
+          },
+          {
             "key": "ES-Import Balance",
             "average": 564,
             "stdMovingAverage": 950.5282675864663
@@ -4659,9 +5967,24 @@
             "stdMovingAverage": 404.5885465631079
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 872,
+            "stdMovingAverage": 116.19824540934269
+          },
+          {
             "key": "ES-Biomass",
             "average": 491,
             "stdMovingAverage": 38.99223080795844
+          },
+          {
+            "key": "ES-Fossil brown coal / lignite",
+            "average": 514,
+            "stdMovingAverage": 293.7890861135904
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 5339,
+            "stdMovingAverage": 1420.6732336472885
           },
           {
             "key": "ES-Fossil oil",
@@ -4674,9 +5997,19 @@
             "stdMovingAverage": 1315.0357430326508
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 2527,
+            "stdMovingAverage": 1364.4839019668016
+          },
+          {
             "key": "ES-Others",
             "average": 78,
             "stdMovingAverage": 11.605930921759924
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 5468,
+            "stdMovingAverage": 2819.643185370663
           },
           {
             "key": "ES-Solar",
@@ -4689,6 +6022,11 @@
         "file": "es-charts-2016.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -562,
+            "stdMovingAverage": 788.5047932279173
+          },
+          {
             "key": "ES-Import Balance",
             "average": 1456,
             "stdMovingAverage": 1490.7665432522736
@@ -4699,9 +6037,24 @@
             "stdMovingAverage": 365.2528153457518
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 1023,
+            "stdMovingAverage": 106.35795813663042
+          },
+          {
             "key": "ES-Biomass",
             "average": 365,
             "stdMovingAverage": 34.9997289398177
+          },
+          {
+            "key": "ES-Fossil brown coal / lignite",
+            "average": 382,
+            "stdMovingAverage": 220.51067484964943
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 3659,
+            "stdMovingAverage": 1133.3832993302321
           },
           {
             "key": "ES-Fossil oil",
@@ -4714,9 +6067,19 @@
             "stdMovingAverage": 1690.1064866791621
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 3389,
+            "stdMovingAverage": 1471.7802232419763
+          },
+          {
             "key": "ES-Others",
             "average": 60,
             "stdMovingAverage": 6.755583956024661
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 5408,
+            "stdMovingAverage": 2628.8155215367588
           },
           {
             "key": "ES-Solar",
@@ -4729,6 +6092,11 @@
         "file": "es-charts-2017.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -418,
+            "stdMovingAverage": 726.7381736515088
+          },
+          {
             "key": "ES-Import Balance",
             "average": 1714,
             "stdMovingAverage": 1433.2093852203134
@@ -4739,9 +6107,24 @@
             "stdMovingAverage": 290.7013948369248
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 768,
+            "stdMovingAverage": 100.3313276836425
+          },
+          {
             "key": "ES-Biomass",
             "average": 340,
             "stdMovingAverage": 25.675699323264876
+          },
+          {
+            "key": "ES-Fossil brown coal / lignite",
+            "average": 544,
+            "stdMovingAverage": 228.87235436400013
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 4335,
+            "stdMovingAverage": 1104.4359480103342
           },
           {
             "key": "ES-Fossil oil",
@@ -4754,9 +6137,19 @@
             "stdMovingAverage": 2184.072230396055
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 1603,
+            "stdMovingAverage": 1072.4242789416699
+          },
+          {
             "key": "ES-Others",
             "average": 49,
             "stdMovingAverage": 9.156396944848272
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 5379,
+            "stdMovingAverage": 2766.313477463367
           },
           {
             "key": "ES-Solar",
@@ -4769,6 +6162,11 @@
         "file": "es-charts-2018.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -385,
+            "stdMovingAverage": 689.2528315843518
+          },
+          {
             "key": "ES-Import Balance",
             "average": 1665,
             "stdMovingAverage": 1381.8135585097004
@@ -4779,9 +6177,24 @@
             "stdMovingAverage": 335.18642558734734
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 1223,
+            "stdMovingAverage": 111.00779326348011
+          },
+          {
             "key": "ES-Biomass",
             "average": 337,
             "stdMovingAverage": 26.385566929576907
+          },
+          {
+            "key": "ES-Fossil brown coal / lignite",
+            "average": 353,
+            "stdMovingAverage": 201.46424100765606
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 3692,
+            "stdMovingAverage": 1091.5483712430735
           },
           {
             "key": "ES-Fossil oil",
@@ -4794,9 +6207,19 @@
             "stdMovingAverage": 1744.606216590724
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 2901,
+            "stdMovingAverage": 1314.20041835041
+          },
+          {
             "key": "ES-Others",
             "average": 53,
             "stdMovingAverage": 8.928152905913985
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 5584,
+            "stdMovingAverage": 2662.6828359278193
           },
           {
             "key": "ES-Solar",
@@ -4809,6 +6232,11 @@
         "file": "es-charts-2019.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -367,
+            "stdMovingAverage": 631.5176068746397
+          },
+          {
             "key": "ES-Import Balance",
             "average": 699,
             "stdMovingAverage": 1388.148307877349
@@ -4819,9 +6247,24 @@
             "stdMovingAverage": 389.9283193102391
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 997,
+            "stdMovingAverage": 126.28470326315683
+          },
+          {
             "key": "ES-Biomass",
             "average": 333,
             "stdMovingAverage": 31.031489151301574
+          },
+          {
+            "key": "ES-Fossil brown coal / lignite",
+            "average": 60,
+            "stdMovingAverage": 105.328770352526
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 1207,
+            "stdMovingAverage": 546.2408846271028
           },
           {
             "key": "ES-Fossil oil",
@@ -4834,9 +6277,19 @@
             "stdMovingAverage": 2233.9655533238197
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 2047,
+            "stdMovingAverage": 1032.6955690052337
+          },
+          {
             "key": "ES-Others",
             "average": 44,
             "stdMovingAverage": 10.704398383857155
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 5977,
+            "stdMovingAverage": 3111.0157769659704
           },
           {
             "key": "ES-Solar",
@@ -4849,6 +6302,11 @@
         "file": "es-charts-2020.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -551,
+            "stdMovingAverage": 819.2238230659301
+          },
+          {
             "key": "ES-Import Balance",
             "average": 417,
             "stdMovingAverage": 1819.2127355537975
@@ -4859,9 +6317,19 @@
             "stdMovingAverage": 346.34096474077813
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 1149,
+            "stdMovingAverage": 130.71576359419254
+          },
+          {
             "key": "ES-Biomass",
             "average": 437,
             "stdMovingAverage": 51.5257514642051
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 585,
+            "stdMovingAverage": 180.63589275098857
           },
           {
             "key": "ES-Fossil oil",
@@ -4874,9 +6342,19 @@
             "stdMovingAverage": 1777.9911751467714
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 2679,
+            "stdMovingAverage": 1432.5579778960991
+          },
+          {
             "key": "ES-Others",
             "average": 49,
             "stdMovingAverage": 11.844358899804584
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 6064,
+            "stdMovingAverage": 3281.6376384433242
           },
           {
             "key": "ES-Solar",
@@ -4889,6 +6367,11 @@
         "file": "es-charts-2021.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -523,
+            "stdMovingAverage": 774.1123508913696
+          },
+          {
             "key": "ES-Import Balance",
             "average": 89,
             "stdMovingAverage": 1868.530689786195
@@ -4899,9 +6382,19 @@
             "stdMovingAverage": 453.6273341566891
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 973,
+            "stdMovingAverage": 107.76394178951503
+          },
+          {
             "key": "ES-Biomass",
             "average": 474,
             "stdMovingAverage": 33.678692731968106
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 586,
+            "stdMovingAverage": 196.62210985003307
           },
           {
             "key": "ES-Fossil oil",
@@ -4914,9 +6407,19 @@
             "stdMovingAverage": 2383.396465018977
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 2756,
+            "stdMovingAverage": 1311.7205347119218
+          },
+          {
             "key": "ES-Others",
             "average": 54,
             "stdMovingAverage": 10.547505065439085
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 6735,
+            "stdMovingAverage": 3390.038599201798
           },
           {
             "key": "ES-Solar",
@@ -4929,6 +6432,11 @@
         "file": "es-charts-2022.json",
         "options": [
           {
+            "key": "ES-Hydro pumped storage consumption",
+            "average": -667,
+            "stdMovingAverage": 835.4656505017712
+          },
+          {
             "key": "ES-Import Balance",
             "average": -2134,
             "stdMovingAverage": 1667.6092716291625
@@ -4939,9 +6447,19 @@
             "stdMovingAverage": 505.14456979695285
           },
           {
+            "key": "ES-Hydro Run-of-River",
+            "average": 738,
+            "stdMovingAverage": 94.58022385051224
+          },
+          {
             "key": "ES-Biomass",
             "average": 472,
             "stdMovingAverage": 49.99207389191452
+          },
+          {
+            "key": "ES-Fossil hard coal",
+            "average": 909,
+            "stdMovingAverage": 269.3241988448488
           },
           {
             "key": "ES-Fossil oil",
@@ -4954,9 +6472,19 @@
             "stdMovingAverage": 2999.480254258735
           },
           {
+            "key": "ES-Hydro water reservoir",
+            "average": 1576,
+            "stdMovingAverage": 1155.5763424790919
+          },
+          {
             "key": "ES-Others",
             "average": 32,
             "stdMovingAverage": 12.788251684278727
+          },
+          {
+            "key": "ES-Wind onshore",
+            "average": 6461,
+            "stdMovingAverage": 3330.388429127014
           },
           {
             "key": "ES-Solar",
@@ -5011,9 +6539,19 @@
             "stdMovingAverage": 218.45611732958574
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1768,
+            "stdMovingAverage": 356.2952549061952
+          },
+          {
             "key": "FI-Biomass",
             "average": 882,
             "stdMovingAverage": 80.3367416132402
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 590,
+            "stdMovingAverage": 255.31210219546958
           },
           {
             "key": "FI-Fossil oil",
@@ -5029,6 +6567,11 @@
             "key": "FI-Others",
             "average": 202,
             "stdMovingAverage": 24.123785140658406
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 236,
+            "stdMovingAverage": 147.96426766577622
           }
         ]
       },
@@ -5046,9 +6589,19 @@
             "stdMovingAverage": 226.64909781936686
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1637,
+            "stdMovingAverage": 362.5563862992848
+          },
+          {
             "key": "FI-Biomass",
             "average": 838,
             "stdMovingAverage": 65.23601229863583
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 809,
+            "stdMovingAverage": 219.3738274812317
           },
           {
             "key": "FI-Fossil oil",
@@ -5064,6 +6617,11 @@
             "key": "FI-Others",
             "average": 181,
             "stdMovingAverage": 26.033734853243335
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 324,
+            "stdMovingAverage": 235.42000583476988
           }
         ]
       },
@@ -5081,9 +6639,19 @@
             "stdMovingAverage": 197.41032299266672
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1571,
+            "stdMovingAverage": 390.1884937006795
+          },
+          {
             "key": "FI-Biomass",
             "average": 811,
             "stdMovingAverage": 60.574264060565234
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 667,
+            "stdMovingAverage": 165.6847371784274
           },
           {
             "key": "FI-Fossil oil",
@@ -5099,6 +6667,11 @@
             "key": "FI-Others",
             "average": 129,
             "stdMovingAverage": 44.221107342202956
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 470,
+            "stdMovingAverage": 334.9080492669457
           }
         ]
       },
@@ -5116,9 +6689,19 @@
             "stdMovingAverage": 196.65623212033756
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1429,
+            "stdMovingAverage": 374.1867390051875
+          },
+          {
             "key": "FI-Biomass",
             "average": 731,
             "stdMovingAverage": 55.05998191332836
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 682,
+            "stdMovingAverage": 163.171099474981
           },
           {
             "key": "FI-Fossil oil",
@@ -5134,6 +6717,11 @@
             "key": "FI-Others",
             "average": 160,
             "stdMovingAverage": 92.47142979198841
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 615,
+            "stdMovingAverage": 425.8933986840949
           }
         ]
       },
@@ -5151,9 +6739,19 @@
             "stdMovingAverage": 151.33398199395248
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1306,
+            "stdMovingAverage": 460.7396253543575
+          },
+          {
             "key": "FI-Biomass",
             "average": 679,
             "stdMovingAverage": 44.741606431842364
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 533,
+            "stdMovingAverage": 131.03859584578993
           },
           {
             "key": "FI-Fossil oil",
@@ -5169,6 +6767,11 @@
             "key": "FI-Others",
             "average": 96,
             "stdMovingAverage": 60.388359380430195
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 648,
+            "stdMovingAverage": 425.9073440556329
           }
         ]
       },
@@ -5186,9 +6789,19 @@
             "stdMovingAverage": 170.0918535768496
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1642,
+            "stdMovingAverage": 405.4448573447288
+          },
+          {
             "key": "FI-Biomass",
             "average": 680,
             "stdMovingAverage": 70.34206779983658
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 344,
+            "stdMovingAverage": 142.34388750513284
           },
           {
             "key": "FI-Fossil oil",
@@ -5204,6 +6817,11 @@
             "key": "FI-Others",
             "average": 73,
             "stdMovingAverage": 45.17411560540323
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 821,
+            "stdMovingAverage": 458.84173666513294
           }
         ]
       },
@@ -5221,9 +6839,19 @@
             "stdMovingAverage": 160.45568019859857
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1649,
+            "stdMovingAverage": 396.48336371419487
+          },
+          {
             "key": "FI-Biomass",
             "average": 744,
             "stdMovingAverage": 55.87418139930413
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 401,
+            "stdMovingAverage": 126.12440404511334
           },
           {
             "key": "FI-Fossil oil",
@@ -5239,6 +6867,11 @@
             "key": "FI-Others",
             "average": 79,
             "stdMovingAverage": 28.094767188706225
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 902,
+            "stdMovingAverage": 608.3065817497416
           }
         ]
       },
@@ -5256,9 +6889,19 @@
             "stdMovingAverage": 297.32215638290074
           },
           {
+            "key": "FI-Hydro Run-of-River",
+            "average": 1427,
+            "stdMovingAverage": 463.9884120086124
+          },
+          {
             "key": "FI-Biomass",
             "average": 645,
             "stdMovingAverage": 64.41138587961554
+          },
+          {
+            "key": "FI-Fossil hard coal",
+            "average": 350,
+            "stdMovingAverage": 122.53340381415862
           },
           {
             "key": "FI-Fossil oil",
@@ -5274,6 +6917,11 @@
             "key": "FI-Others",
             "average": 64,
             "stdMovingAverage": 21.16870693650899
+          },
+          {
+            "key": "FI-Wind onshore",
+            "average": 1260,
+            "stdMovingAverage": 800.9737137019715
           }
         ]
       },
@@ -5313,6 +6961,11 @@
         "file": "fr-charts-2015.json",
         "options": [
           {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -599,
+            "stdMovingAverage": 885.8959361873243
+          },
+          {
             "key": "FR-Import Balance",
             "average": -6722,
             "stdMovingAverage": 2306.1932593349184
@@ -5323,9 +6976,19 @@
             "stdMovingAverage": 2565.3694770772277
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4423,
+            "stdMovingAverage": 630.7844316152048
+          },
+          {
             "key": "FR-Biomass",
             "average": 219,
             "stdMovingAverage": 8.71451465880259
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 980,
+            "stdMovingAverage": 539.3227390310994
           },
           {
             "key": "FR-Fossil oil",
@@ -5338,6 +7001,21 @@
             "stdMovingAverage": 1263.6948950753851
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 1777,
+            "stdMovingAverage": 1063.2330017476802
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 483,
+            "stdMovingAverage": 633.551570915306
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 2236,
+            "stdMovingAverage": 1403.9104609788742
+          },
+          {
             "key": "FR-Solar",
             "average": 803,
             "stdMovingAverage": 1043.7081293943495
@@ -5347,6 +7025,11 @@
       {
         "file": "fr-charts-2016.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -656,
+            "stdMovingAverage": 909.2836799823878
+          },
           {
             "key": "FR-Import Balance",
             "average": -4164,
@@ -5358,9 +7041,19 @@
             "stdMovingAverage": 3245.267954206058
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4795,
+            "stdMovingAverage": 628.7930077682327
+          },
+          {
             "key": "FR-Biomass",
             "average": 284,
             "stdMovingAverage": 25.30326082044513
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 817,
+            "stdMovingAverage": 459.49635491719664
           },
           {
             "key": "FR-Fossil oil",
@@ -5373,6 +7066,21 @@
             "stdMovingAverage": 1409.9416373457625
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 1706,
+            "stdMovingAverage": 867.2443414136568
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 583,
+            "stdMovingAverage": 720.8462593238985
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 2224,
+            "stdMovingAverage": 1354.3535090292728
+          },
+          {
             "key": "FR-Solar",
             "average": 909,
             "stdMovingAverage": 1192.8984301373857
@@ -5382,6 +7090,11 @@
       {
         "file": "fr-charts-2017.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -709,
+            "stdMovingAverage": 973.5058152642448
+          },
           {
             "key": "FR-Import Balance",
             "average": -4077,
@@ -5393,9 +7106,19 @@
             "stdMovingAverage": 1970.4273762061398
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4008,
+            "stdMovingAverage": 648.4154151973494
+          },
+          {
             "key": "FR-Biomass",
             "average": 348,
             "stdMovingAverage": 69.81549654613895
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 1106,
+            "stdMovingAverage": 514.1018629916094
           },
           {
             "key": "FR-Fossil oil",
@@ -5408,6 +7131,21 @@
             "stdMovingAverage": 1365.5237407590264
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 1426,
+            "stdMovingAverage": 830.9373615756194
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 594,
+            "stdMovingAverage": 737.0603742499892
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 2606,
+            "stdMovingAverage": 1705.7433705420483
+          },
+          {
             "key": "FR-Solar",
             "average": 1017,
             "stdMovingAverage": 1322.8294765164035
@@ -5417,6 +7155,11 @@
       {
         "file": "fr-charts-2018.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -738,
+            "stdMovingAverage": 1038.1746684213047
+          },
           {
             "key": "FR-Import Balance",
             "average": -6852,
@@ -5428,9 +7171,19 @@
             "stdMovingAverage": 2690.2525420570787
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4890,
+            "stdMovingAverage": 513.7419129859802
+          },
+          {
             "key": "FR-Biomass",
             "average": 398,
             "stdMovingAverage": 68.73343977607753
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 662,
+            "stdMovingAverage": 480.7477791158938
           },
           {
             "key": "FR-Fossil oil",
@@ -5443,6 +7196,21 @@
             "stdMovingAverage": 1511.8617479102606
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 2018,
+            "stdMovingAverage": 744.2779684871912
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 618,
+            "stdMovingAverage": 753.1095572340921
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 3060,
+            "stdMovingAverage": 1934.3115440132854
+          },
+          {
             "key": "FR-Solar",
             "average": 1110,
             "stdMovingAverage": 1448.3747688344758
@@ -5452,6 +7220,11 @@
       {
         "file": "fr-charts-2019.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -621,
+            "stdMovingAverage": 901.7962606490283
+          },
           {
             "key": "FR-Import Balance",
             "average": -6555,
@@ -5463,9 +7236,19 @@
             "stdMovingAverage": 2758.2980624379234
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4604,
+            "stdMovingAverage": 694.468684604816
+          },
+          {
             "key": "FR-Biomass",
             "average": 351,
             "stdMovingAverage": 46.09555611522794
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 182,
+            "stdMovingAverage": 328.3818530259551
           },
           {
             "key": "FR-Fossil oil",
@@ -5478,6 +7261,21 @@
             "stdMovingAverage": 1614.1101977620278
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 1574,
+            "stdMovingAverage": 815.9874806399014
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 573,
+            "stdMovingAverage": 723.1942074161004
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 3731,
+            "stdMovingAverage": 2267.760657146387
+          },
+          {
             "key": "FR-Solar",
             "average": 1303,
             "stdMovingAverage": 1701.297754912656
@@ -5487,6 +7285,11 @@
       {
         "file": "fr-charts-2020.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -588,
+            "stdMovingAverage": 900.5683356451586
+          },
           {
             "key": "FR-Import Balance",
             "average": -5023,
@@ -5498,9 +7301,19 @@
             "stdMovingAverage": 2790.33070220921
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4702,
+            "stdMovingAverage": 698.7770298353349
+          },
+          {
             "key": "FR-Biomass",
             "average": 332,
             "stdMovingAverage": 22.670047311184085
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 157,
+            "stdMovingAverage": 244.23142173031425
           },
           {
             "key": "FR-Fossil oil",
@@ -5513,6 +7326,21 @@
             "stdMovingAverage": 1380.2636470756802
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 2004,
+            "stdMovingAverage": 930.4459857777921
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 574,
+            "stdMovingAverage": 707.656802452624
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 4368,
+            "stdMovingAverage": 2564.386963684046
+          },
+          {
             "key": "FR-Solar",
             "average": 1418,
             "stdMovingAverage": 1850.9266083202392
@@ -5522,6 +7350,11 @@
       {
         "file": "fr-charts-2021.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -562,
+            "stdMovingAverage": 841.2272499757203
+          },
           {
             "key": "FR-Import Balance",
             "average": -4891,
@@ -5533,9 +7366,19 @@
             "stdMovingAverage": 2052.8334859012075
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 4631,
+            "stdMovingAverage": 691.0163866503405
+          },
+          {
             "key": "FR-Biomass",
             "average": 356,
             "stdMovingAverage": 31.68747989009398
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 463,
+            "stdMovingAverage": 351.70052902485065
           },
           {
             "key": "FR-Fossil oil",
@@ -5548,6 +7391,21 @@
             "stdMovingAverage": 1467.0727329480892
           },
           {
+            "key": "FR-Hydro water reservoir",
+            "average": 1795,
+            "stdMovingAverage": 932.5279109959703
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 520,
+            "stdMovingAverage": 687.3840569645555
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 4015,
+            "stdMovingAverage": 2562.861012100276
+          },
+          {
             "key": "FR-Solar",
             "average": 1560,
             "stdMovingAverage": 2049.153048103752
@@ -5557,6 +7415,11 @@
       {
         "file": "fr-charts-2022.json",
         "options": [
+          {
+            "key": "FR-Hydro pumped storage consumption",
+            "average": -688,
+            "stdMovingAverage": 977.0363816040441
+          },
           {
             "key": "FR-Import Balance",
             "average": 1640,
@@ -5568,9 +7431,19 @@
             "stdMovingAverage": 2665.12015030091
           },
           {
+            "key": "FR-Hydro Run-of-River",
+            "average": 3720,
+            "stdMovingAverage": 725.4561798694626
+          },
+          {
             "key": "FR-Biomass",
             "average": 402,
             "stdMovingAverage": 63.13462095995325
+          },
+          {
+            "key": "FR-Fossil hard coal",
+            "average": 270,
+            "stdMovingAverage": 279.7917606320563
           },
           {
             "key": "FR-Fossil oil",
@@ -5581,6 +7454,21 @@
             "key": "FR-Fossil gas",
             "average": 4643,
             "stdMovingAverage": 1339.4069970559133
+          },
+          {
+            "key": "FR-Hydro water reservoir",
+            "average": 1081,
+            "stdMovingAverage": 763.9750501728494
+          },
+          {
+            "key": "FR-Hydro pumped storage",
+            "average": 567,
+            "stdMovingAverage": 760.4080312877932
+          },
+          {
+            "key": "FR-Wind onshore",
+            "average": 3962,
+            "stdMovingAverage": 2519.503175404724
           },
           {
             "key": "FR-Solar",
@@ -5635,9 +7523,19 @@
             "stdMovingAverage": 115.88605914704007
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 10,
+            "stdMovingAverage": 2.311733164441805
+          },
+          {
             "key": "HU-Biomass",
             "average": 90,
             "stdMovingAverage": 16.44423591756422
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 681,
+            "stdMovingAverage": 87.97884240226459
           },
           {
             "key": "HU-Fossil oil",
@@ -5650,9 +7548,19 @@
             "stdMovingAverage": 224.10386925867422
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 13,
+            "stdMovingAverage": 3.258643144178606
+          },
+          {
             "key": "HU-Others",
             "average": 88,
             "stdMovingAverage": 10.807377990408693
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 73,
+            "stdMovingAverage": 72.41171253251363
           }
         ]
       },
@@ -5670,9 +7578,19 @@
             "stdMovingAverage": 125.23426230755983
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 11,
+            "stdMovingAverage": 2.133249763167306
+          },
+          {
             "key": "HU-Biomass",
             "average": 93,
             "stdMovingAverage": 16.60553854888697
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 624,
+            "stdMovingAverage": 95.79561519882034
           },
           {
             "key": "HU-Fossil oil",
@@ -5685,9 +7603,19 @@
             "stdMovingAverage": 207.64850876328796
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 14,
+            "stdMovingAverage": 3.671460652890601
+          },
+          {
             "key": "HU-Others",
             "average": 84,
             "stdMovingAverage": 11.058761074289304
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 72,
+            "stdMovingAverage": 75.48693418228828
           }
         ]
       },
@@ -5705,9 +7633,19 @@
             "stdMovingAverage": 96.63993300069633
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 10,
+            "stdMovingAverage": 1.9492583178738494
+          },
+          {
             "key": "HU-Biomass",
             "average": 100,
             "stdMovingAverage": 18.14772975548884
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 552,
+            "stdMovingAverage": 97.04706000723202
           },
           {
             "key": "HU-Fossil oil",
@@ -5720,9 +7658,19 @@
             "stdMovingAverage": 208.34501715072253
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 12,
+            "stdMovingAverage": 3.1603036122540114
+          },
+          {
             "key": "HU-Others",
             "average": 85,
             "stdMovingAverage": 8.943564682701668
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 79,
+            "stdMovingAverage": 74.82749165077716
           }
         ]
       },
@@ -5740,9 +7688,19 @@
             "stdMovingAverage": 134.6966899514317
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 9,
+            "stdMovingAverage": 2.006053709476363
+          },
+          {
             "key": "HU-Biomass",
             "average": 104,
             "stdMovingAverage": 18.057828714954784
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 545,
+            "stdMovingAverage": 96.09523668077671
           },
           {
             "key": "HU-Fossil oil",
@@ -5755,9 +7713,19 @@
             "stdMovingAverage": 219.70101718572258
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 11,
+            "stdMovingAverage": 3.124003500091894
+          },
+          {
             "key": "HU-Others",
             "average": 77,
             "stdMovingAverage": 9.35881082898543
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 65,
+            "stdMovingAverage": 62.079154915107566
           }
         ]
       },
@@ -5775,9 +7743,19 @@
             "stdMovingAverage": 109.40164394621752
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 11,
+            "stdMovingAverage": 2.1788258863529935
+          },
+          {
             "key": "HU-Biomass",
             "average": 111,
             "stdMovingAverage": 15.732475966304547
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 461,
+            "stdMovingAverage": 100.47995372267097
           },
           {
             "key": "HU-Fossil oil",
@@ -5790,9 +7768,19 @@
             "stdMovingAverage": 214.07563911911345
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 12,
+            "stdMovingAverage": 3.139469006401514
+          },
+          {
             "key": "HU-Others",
             "average": 81,
             "stdMovingAverage": 12.630499120445142
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 80,
+            "stdMovingAverage": 78.00751790010234
           }
         ]
       },
@@ -5810,9 +7798,19 @@
             "stdMovingAverage": 123.27831357375693
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 13,
+            "stdMovingAverage": 2.0078296510842075
+          },
+          {
             "key": "HU-Biomass",
             "average": 114,
             "stdMovingAverage": 18.761157467776673
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 421,
+            "stdMovingAverage": 87.89390591724123
           },
           {
             "key": "HU-Fossil oil",
@@ -5825,9 +7823,19 @@
             "stdMovingAverage": 182.09991564068693
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 13,
+            "stdMovingAverage": 3.3662804294983664
+          },
+          {
             "key": "HU-Others",
             "average": 60,
             "stdMovingAverage": 6.637467536224787
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 72,
+            "stdMovingAverage": 69.465036240815
           },
           {
             "key": "HU-Solar",
@@ -5850,9 +7858,24 @@
             "stdMovingAverage": 135.16091227819004
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 10,
+            "stdMovingAverage": 1.9379812345266547
+          },
+          {
             "key": "HU-Biomass",
             "average": 128,
             "stdMovingAverage": 20.012801219139366
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 346,
+            "stdMovingAverage": 71.2665239241937
+          },
+          {
+            "key": "HU-Fossil hard coal",
+            "average": 0,
+            "stdMovingAverage": 0.595196194454625
           },
           {
             "key": "HU-Fossil oil",
@@ -5870,9 +7893,19 @@
             "stdMovingAverage": 0.15409314524551462
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 10,
+            "stdMovingAverage": 3.065555503075667
+          },
+          {
             "key": "HU-Others",
             "average": 68,
             "stdMovingAverage": 7.713456408122706
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 73,
+            "stdMovingAverage": 70.41785900264608
           },
           {
             "key": "HU-Solar",
@@ -5895,9 +7928,24 @@
             "stdMovingAverage": 120.6720218687461
           },
           {
+            "key": "HU-Hydro Run-of-River",
+            "average": 9,
+            "stdMovingAverage": 1.9785629032318313
+          },
+          {
             "key": "HU-Biomass",
             "average": 127,
             "stdMovingAverage": 17.594034688686424
+          },
+          {
+            "key": "HU-Fossil brown coal / lignite",
+            "average": 344,
+            "stdMovingAverage": 79.2960163572768
+          },
+          {
+            "key": "HU-Fossil hard coal",
+            "average": 0,
+            "stdMovingAverage": 1.7957945023894444
           },
           {
             "key": "HU-Fossil oil",
@@ -5915,9 +7963,19 @@
             "stdMovingAverage": 0.07445271028240737
           },
           {
+            "key": "HU-Hydro water reservoir",
+            "average": 9,
+            "stdMovingAverage": 2.9999513021995967
+          },
+          {
             "key": "HU-Others",
             "average": 64,
             "stdMovingAverage": 13.95264813263342
+          },
+          {
+            "key": "HU-Wind onshore",
+            "average": 68,
+            "stdMovingAverage": 64.45587277402684
           },
           {
             "key": "HU-Solar",
@@ -5962,9 +8020,24 @@
         "file": "ie-charts-2015.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -11,
+            "stdMovingAverage": 41.285550181711656
+          },
+          {
             "key": "IE-Import Balance",
             "average": 123,
             "stdMovingAverage": 223.72034466625922
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 86,
+            "stdMovingAverage": 28.97140472485199
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 559,
+            "stdMovingAverage": 164.7747060997018
           },
           {
             "key": "IE-Fossil oil",
@@ -5977,9 +8050,19 @@
             "stdMovingAverage": 262.3285277161478
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 83,
+            "stdMovingAverage": 78.56997089474125
+          },
+          {
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 10.707712629477374
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 746,
+            "stdMovingAverage": 473.094365637643
           }
         ]
       },
@@ -5992,6 +8075,16 @@
             "stdMovingAverage": 203.49887111288987
           },
           {
+            "key": "IE-Hydro Run-of-River",
+            "average": 72,
+            "stdMovingAverage": 31.225571406088665
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 534,
+            "stdMovingAverage": 173.45672784047306
+          },
+          {
             "key": "IE-Fossil oil",
             "average": 265,
             "stdMovingAverage": 156.76665586773504
@@ -6002,9 +8095,19 @@
             "stdMovingAverage": 272.155568162252
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 94,
+            "stdMovingAverage": 85.24355814285055
+          },
+          {
             "key": "IE-Others",
             "average": 3,
             "stdMovingAverage": 14.8075966083041
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 689,
+            "stdMovingAverage": 485.1790789925081
           }
         ]
       },
@@ -6017,6 +8120,16 @@
             "stdMovingAverage": 258.7704871437508
           },
           {
+            "key": "IE-Hydro Run-of-River",
+            "average": 73,
+            "stdMovingAverage": 29.08460583988506
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 411,
+            "stdMovingAverage": 164.92245438779835
+          },
+          {
             "key": "IE-Fossil oil",
             "average": 309,
             "stdMovingAverage": 135.80526270320354
@@ -6027,9 +8140,19 @@
             "stdMovingAverage": 274.8366449197367
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 58,
+            "stdMovingAverage": 66.60270833553126
+          },
+          {
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 10.234665335554602
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 822,
+            "stdMovingAverage": 581.3098497793093
           }
         ]
       },
@@ -6037,9 +8160,24 @@
         "file": "ie-charts-2018.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -11,
+            "stdMovingAverage": 42.6370530311834
+          },
+          {
             "key": "IE-Import Balance",
             "average": -57,
             "stdMovingAverage": 283.409847295204
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 73,
+            "stdMovingAverage": 28.58813722419268
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 243,
+            "stdMovingAverage": 132.61979941053795
           },
           {
             "key": "IE-Fossil oil",
@@ -6052,9 +8190,19 @@
             "stdMovingAverage": 320.37742069349355
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 72,
+            "stdMovingAverage": 74.25510639973334
+          },
+          {
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 8.755241371853602
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 990,
+            "stdMovingAverage": 670.3243398906452
           }
         ]
       },
@@ -6062,9 +8210,24 @@
         "file": "ie-charts-2019.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -41,
+            "stdMovingAverage": 78.6611883103162
+          },
+          {
             "key": "IE-Import Balance",
             "average": -21,
             "stdMovingAverage": 326.06264285419155
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 95,
+            "stdMovingAverage": 33.55752414962618
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 67,
+            "stdMovingAverage": 58.14225080041071
           },
           {
             "key": "IE-Fossil oil",
@@ -6077,9 +8240,19 @@
             "stdMovingAverage": 306.49941809141256
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 29,
+            "stdMovingAverage": 44.63654271583365
+          },
+          {
             "key": "IE-Others",
             "average": 1,
             "stdMovingAverage": 8.695766038250673
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 1083,
+            "stdMovingAverage": 701.2041385273873
           }
         ]
       },
@@ -6087,9 +8260,24 @@
         "file": "ie-charts-2020.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -61,
+            "stdMovingAverage": 96.59701905923504
+          },
+          {
             "key": "IE-Import Balance",
             "average": -103,
             "stdMovingAverage": 303.41226042992395
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 96,
+            "stdMovingAverage": 31.8235080504579
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 86,
+            "stdMovingAverage": 65.95744000391959
           },
           {
             "key": "IE-Fossil oil",
@@ -6102,9 +8290,19 @@
             "stdMovingAverage": 371.4827630197739
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 33,
+            "stdMovingAverage": 50.38469701655876
+          },
+          {
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 12.335745678007237
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 1243,
+            "stdMovingAverage": 766.7969171848772
           }
         ]
       },
@@ -6112,9 +8310,24 @@
         "file": "ie-charts-2021.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -58,
+            "stdMovingAverage": 95.60182109200808
+          },
+          {
             "key": "IE-Import Balance",
             "average": 57,
             "stdMovingAverage": 230.12862541520963
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 78,
+            "stdMovingAverage": 33.68515916561685
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 370,
+            "stdMovingAverage": 141.67977615828943
           },
           {
             "key": "IE-Fossil oil",
@@ -6127,9 +8340,19 @@
             "stdMovingAverage": 274.19547098764525
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 33,
+            "stdMovingAverage": 53.300500667728734
+          },
+          {
             "key": "IE-Others",
             "average": 10,
             "stdMovingAverage": 35.29724772565507
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 1076,
+            "stdMovingAverage": 749.303700904964
           }
         ]
       },
@@ -6137,9 +8360,24 @@
         "file": "ie-charts-2022.json",
         "options": [
           {
+            "key": "IE-Hydro pumped storage consumption",
+            "average": -27,
+            "stdMovingAverage": 64.36731710539557
+          },
+          {
             "key": "IE-Import Balance",
             "average": -33,
             "stdMovingAverage": 134.72440381777423
+          },
+          {
+            "key": "IE-Hydro Run-of-River",
+            "average": 48,
+            "stdMovingAverage": 32.397222647908876
+          },
+          {
+            "key": "IE-Fossil hard coal",
+            "average": 200,
+            "stdMovingAverage": 124.20853181224132
           },
           {
             "key": "IE-Fossil oil",
@@ -6152,9 +8390,19 @@
             "stdMovingAverage": 391.62739616986454
           },
           {
+            "key": "IE-Hydro pumped storage",
+            "average": 16,
+            "stdMovingAverage": 41.52020491837929
+          },
+          {
             "key": "IE-Others",
             "average": 3,
             "stdMovingAverage": 21.151214130352116
+          },
+          {
+            "key": "IE-Wind onshore",
+            "average": 816,
+            "stdMovingAverage": 718.0558552557934
           }
         ]
       },
@@ -6194,14 +8442,29 @@
         "file": "it-charts-2015.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -1,
+            "stdMovingAverage": 26.356119091067246
+          },
+          {
             "key": "IT-Import Balance",
             "average": 5028,
             "stdMovingAverage": 1568.0700458267122
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 9,
+            "stdMovingAverage": 172.5955864395018
+          },
+          {
             "key": "IT-Biomass",
             "average": 13,
             "stdMovingAverage": 55.42782471098521
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 1,
+            "stdMovingAverage": 11.808353908064296
           },
           {
             "key": "IT-Fossil oil",
@@ -6219,6 +8482,21 @@
             "stdMovingAverage": 35.55279654057294
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 1,
+            "stdMovingAverage": 31.570874913251583
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 1,
+            "stdMovingAverage": 21.480808145279557
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 1,
+            "stdMovingAverage": 14.833699130090523
+          },
+          {
             "key": "IT-Solar",
             "average": 323,
             "stdMovingAverage": 1011.8413638399192
@@ -6229,14 +8507,34 @@
         "file": "it-charts-2016.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -255,
+            "stdMovingAverage": 428.8760093239204
+          },
+          {
             "key": "IT-Import Balance",
             "average": 3959,
             "stdMovingAverage": 1688.1484747880427
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 3533,
+            "stdMovingAverage": 972.1325257926084
+          },
+          {
             "key": "IT-Biomass",
             "average": 277,
             "stdMovingAverage": 23.44196284053891
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 225,
+            "stdMovingAverage": 42.33036951343353
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 1140,
+            "stdMovingAverage": 279.8442457087683
           },
           {
             "key": "IT-Fossil oil",
@@ -6254,9 +8552,24 @@
             "stdMovingAverage": 16.08713528714601
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 725,
+            "stdMovingAverage": 383.1022995970805
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 357,
+            "stdMovingAverage": 441.37984199775536
+          },
+          {
             "key": "IT-Others",
             "average": 10475,
             "stdMovingAverage": 2145.672191935687
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 1955,
+            "stdMovingAverage": 1248.8296825481775
           },
           {
             "key": "IT-Solar",
@@ -6269,14 +8582,34 @@
         "file": "it-charts-2017.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -259,
+            "stdMovingAverage": 438.5734084029808
+          },
+          {
             "key": "IT-Import Balance",
             "average": 4065,
             "stdMovingAverage": 1662.7321553669215
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 3119,
+            "stdMovingAverage": 979.1791246955565
+          },
+          {
             "key": "IT-Biomass",
             "average": 344,
             "stdMovingAverage": 21.675773435977902
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 206,
+            "stdMovingAverage": 48.11523372468925
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 2301,
+            "stdMovingAverage": 572.6640641687559
           },
           {
             "key": "IT-Fossil oil",
@@ -6294,9 +8627,24 @@
             "stdMovingAverage": 14.17747467198752
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 689,
+            "stdMovingAverage": 430.58685106870655
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 299,
+            "stdMovingAverage": 460.7419879287713
+          },
+          {
             "key": "IT-Others",
             "average": 9143,
             "stdMovingAverage": 2026.8757723298706
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 1998,
+            "stdMovingAverage": 1366.1418104105146
           },
           {
             "key": "IT-Solar",
@@ -6309,14 +8657,34 @@
         "file": "it-charts-2018.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -228,
+            "stdMovingAverage": 406.9278152457448
+          },
+          {
             "key": "IT-Import Balance",
             "average": 4821,
             "stdMovingAverage": 1443.7984958996708
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 4093,
+            "stdMovingAverage": 966.825461844829
+          },
+          {
             "key": "IT-Biomass",
             "average": 398,
             "stdMovingAverage": 28.753778805155456
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 221,
+            "stdMovingAverage": 67.1257123142959
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 2949,
+            "stdMovingAverage": 620.3210828083442
           },
           {
             "key": "IT-Fossil oil",
@@ -6334,9 +8702,24 @@
             "stdMovingAverage": 25.535844504863878
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 979,
+            "stdMovingAverage": 476.85750280564093
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 365,
+            "stdMovingAverage": 480.88489966137195
+          },
+          {
             "key": "IT-Others",
             "average": 6793,
             "stdMovingAverage": 1671.9054636699516
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 1976,
+            "stdMovingAverage": 1334.2464555527506
           },
           {
             "key": "IT-Solar",
@@ -6349,14 +8732,34 @@
         "file": "it-charts-2019.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -247,
+            "stdMovingAverage": 400.97089060372485
+          },
+          {
             "key": "IT-Import Balance",
             "average": 4422,
             "stdMovingAverage": 1241.026790047189
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 3934,
+            "stdMovingAverage": 997.3331499741711
+          },
+          {
             "key": "IT-Biomass",
             "average": 584,
             "stdMovingAverage": 27.836909738028385
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 620,
+            "stdMovingAverage": 98.58158560353725
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 1948,
+            "stdMovingAverage": 519.0916329136787
           },
           {
             "key": "IT-Fossil oil",
@@ -6374,9 +8777,24 @@
             "stdMovingAverage": 14.952501284873287
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 924,
+            "stdMovingAverage": 434.3937601846004
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 366,
+            "stdMovingAverage": 487.7591218829521
+          },
+          {
             "key": "IT-Others",
             "average": 2893,
             "stdMovingAverage": 667.9900173898392
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 2276,
+            "stdMovingAverage": 1407.7125680129598
           },
           {
             "key": "IT-Solar",
@@ -6389,14 +8807,34 @@
         "file": "it-charts-2020.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -259,
+            "stdMovingAverage": 399.6503816225276
+          },
+          {
             "key": "IT-Import Balance",
             "average": 3748,
             "stdMovingAverage": 1710.4975970639284
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 4244,
+            "stdMovingAverage": 1152.835940890115
+          },
+          {
             "key": "IT-Biomass",
             "average": 652,
             "stdMovingAverage": 28.076187495209894
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 715,
+            "stdMovingAverage": 70.354692641451
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 1406,
+            "stdMovingAverage": 330.78268142762096
           },
           {
             "key": "IT-Fossil oil",
@@ -6414,9 +8852,24 @@
             "stdMovingAverage": 13.489882644674761
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 738,
+            "stdMovingAverage": 393.1136715818012
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 406,
+            "stdMovingAverage": 528.9199773216691
+          },
+          {
             "key": "IT-Others",
             "average": 2069,
             "stdMovingAverage": 474.37919119723995
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 2112,
+            "stdMovingAverage": 1450.0301676155761
           },
           {
             "key": "IT-Solar",
@@ -6429,14 +8882,34 @@
         "file": "it-charts-2021.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -279,
+            "stdMovingAverage": 464.81291061586194
+          },
+          {
             "key": "IT-Import Balance",
             "average": 4957,
             "stdMovingAverage": 1605.2667382148131
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 3995,
+            "stdMovingAverage": 1026.4618006142257
+          },
+          {
             "key": "IT-Biomass",
             "average": 692,
             "stdMovingAverage": 28.503874180500222
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 438,
+            "stdMovingAverage": 50.6643617779171
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 1501,
+            "stdMovingAverage": 391.66111968806655
           },
           {
             "key": "IT-Fossil oil",
@@ -6454,9 +8927,24 @@
             "stdMovingAverage": 13.09843789121573
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 682,
+            "stdMovingAverage": 311.69904532454245
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 480,
+            "stdMovingAverage": 622.8364103968596
+          },
+          {
             "key": "IT-Others",
             "average": 2007,
             "stdMovingAverage": 419.48377546345813
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 2369,
+            "stdMovingAverage": 1393.2734739312339
           },
           {
             "key": "IT-Solar",
@@ -6469,14 +8957,34 @@
         "file": "it-charts-2022.json",
         "options": [
           {
+            "key": "IT-Hydro pumped storage consumption",
+            "average": -273,
+            "stdMovingAverage": 480.1455771035125
+          },
+          {
             "key": "IT-Import Balance",
             "average": 5024,
             "stdMovingAverage": 1532.6189925811202
           },
           {
+            "key": "IT-Hydro Run-of-River",
+            "average": 2621,
+            "stdMovingAverage": 930.744101266264
+          },
+          {
             "key": "IT-Biomass",
             "average": 618,
             "stdMovingAverage": 72.05139653038395
+          },
+          {
+            "key": "IT-Fossil coal-derived gas",
+            "average": 684,
+            "stdMovingAverage": 80.83156706332721
+          },
+          {
+            "key": "IT-Fossil hard coal",
+            "average": 2304,
+            "stdMovingAverage": 509.9027060689364
           },
           {
             "key": "IT-Fossil oil",
@@ -6494,9 +9002,24 @@
             "stdMovingAverage": 51.45845280254968
           },
           {
+            "key": "IT-Hydro water reservoir",
+            "average": 374,
+            "stdMovingAverage": 268.3218544960889
+          },
+          {
+            "key": "IT-Hydro pumped storage",
+            "average": 365,
+            "stdMovingAverage": 562.6480965901733
+          },
+          {
             "key": "IT-Others",
             "average": 2002,
             "stdMovingAverage": 407.46207077993864
+          },
+          {
+            "key": "IT-Wind onshore",
+            "average": 2231,
+            "stdMovingAverage": 1542.1005173016079
           },
           {
             "key": "IT-Solar",
@@ -6541,9 +9064,19 @@
         "file": "lt-charts-2015.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -104,
+            "stdMovingAverage": 192.70322144402778
+          },
+          {
             "key": "LT-Import Balance",
             "average": 812,
             "stdMovingAverage": 191.39746397122394
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 34,
+            "stdMovingAverage": 20.13845522621287
           },
           {
             "key": "LT-Biomass",
@@ -6561,9 +9094,19 @@
             "stdMovingAverage": 55.0997337604815
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 75,
+            "stdMovingAverage": 107.14330065541932
+          },
+          {
             "key": "LT-Others",
             "average": 13,
             "stdMovingAverage": 3.353171066153716
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 80,
+            "stdMovingAverage": 69.88580451382515
           },
           {
             "key": "LT-Solar",
@@ -6576,9 +9119,19 @@
         "file": "lt-charts-2016.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -85,
+            "stdMovingAverage": 183.52700726450806
+          },
+          {
             "key": "LT-Import Balance",
             "average": 904,
             "stdMovingAverage": 265.4148658699082
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 39,
+            "stdMovingAverage": 20.835482796618518
           },
           {
             "key": "LT-Biomass",
@@ -6596,9 +9149,19 @@
             "stdMovingAverage": 102.87681297165872
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 60,
+            "stdMovingAverage": 104.99990213819682
+          },
+          {
             "key": "LT-Others",
             "average": 13,
             "stdMovingAverage": 3.589047865472507
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 104,
+            "stdMovingAverage": 90.63076266958828
           },
           {
             "key": "LT-Solar",
@@ -6611,9 +9174,19 @@
         "file": "lt-charts-2017.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -92,
+            "stdMovingAverage": 195.98749075475413
+          },
+          {
             "key": "LT-Import Balance",
             "average": 998,
             "stdMovingAverage": 246.85460676135727
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 57,
+            "stdMovingAverage": 25.334445579777373
           },
           {
             "key": "LT-Biomass",
@@ -6631,9 +9204,19 @@
             "stdMovingAverage": 68.62674115419321
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 66,
+            "stdMovingAverage": 121.18167044270528
+          },
+          {
             "key": "LT-Others",
             "average": 13,
             "stdMovingAverage": 2.3560168223147153
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 134,
+            "stdMovingAverage": 107.9447383592801
           },
           {
             "key": "LT-Solar",
@@ -6646,9 +9229,19 @@
         "file": "lt-charts-2018.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -81,
+            "stdMovingAverage": 186.15226490541428
+          },
+          {
             "key": "LT-Import Balance",
             "average": 1112,
             "stdMovingAverage": 221.51215524522436
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 50,
+            "stdMovingAverage": 19.795517632660083
           },
           {
             "key": "LT-Biomass",
@@ -6661,9 +9254,19 @@
             "stdMovingAverage": 42.0317254975248
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 60,
+            "stdMovingAverage": 101.28068630402976
+          },
+          {
             "key": "LT-Others",
             "average": 32,
             "stdMovingAverage": 1064.4535593032563
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 129,
+            "stdMovingAverage": 111.04379676195558
           },
           {
             "key": "LT-Solar",
@@ -6676,9 +9279,19 @@
         "file": "lt-charts-2019.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -6,
+            "stdMovingAverage": 50.94244010675503
+          },
+          {
             "key": "LT-Import Balance",
             "average": 1088,
             "stdMovingAverage": 227.3305541919459
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 41,
+            "stdMovingAverage": 18.28794772692248
           },
           {
             "key": "LT-Biomass",
@@ -6691,9 +9304,19 @@
             "stdMovingAverage": 24.167629743639342
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 67,
+            "stdMovingAverage": 110.51654606995103
+          },
+          {
             "key": "LT-Others",
             "average": 18,
             "stdMovingAverage": 3.1578670316942596
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 162,
+            "stdMovingAverage": 114.83215330998418
           },
           {
             "key": "LT-Solar",
@@ -6711,6 +9334,11 @@
             "stdMovingAverage": 265.06009227101896
           },
           {
+            "key": "LT-Hydro Run-of-River",
+            "average": 30,
+            "stdMovingAverage": 14.709675927974763
+          },
+          {
             "key": "LT-Biomass",
             "average": 46,
             "stdMovingAverage": 3.9462109123519116
@@ -6721,9 +9349,19 @@
             "stdMovingAverage": 146.79994987975326
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 88,
+            "stdMovingAverage": 123.16851811537747
+          },
+          {
             "key": "LT-Others",
             "average": 16,
             "stdMovingAverage": 2.546352113142991
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 171,
+            "stdMovingAverage": 128.09658239587546
           },
           {
             "key": "LT-Solar",
@@ -6741,6 +9379,11 @@
             "stdMovingAverage": 258.7338438920612
           },
           {
+            "key": "LT-Hydro Run-of-River",
+            "average": 37,
+            "stdMovingAverage": 20.266226914160885
+          },
+          {
             "key": "LT-Biomass",
             "average": 46,
             "stdMovingAverage": 3.3122642338743735
@@ -6751,9 +9394,19 @@
             "stdMovingAverage": 148.06378755794952
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 81,
+            "stdMovingAverage": 128.09251728006396
+          },
+          {
             "key": "LT-Others",
             "average": 15,
             "stdMovingAverage": 2.092639890318615
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 143,
+            "stdMovingAverage": 111.61351204087366
           },
           {
             "key": "LT-Solar",
@@ -6766,9 +9419,19 @@
         "file": "lt-charts-2022.json",
         "options": [
           {
+            "key": "LT-Hydro pumped storage consumption",
+            "average": -81,
+            "stdMovingAverage": 172.52139762801943
+          },
+          {
             "key": "LT-Import Balance",
             "average": 991,
             "stdMovingAverage": 217.5750333147182
+          },
+          {
+            "key": "LT-Hydro Run-of-River",
+            "average": 47,
+            "stdMovingAverage": 22.075433404615136
           },
           {
             "key": "LT-Biomass",
@@ -6781,9 +9444,19 @@
             "stdMovingAverage": 79.32169468316454
           },
           {
+            "key": "LT-Hydro pumped storage",
+            "average": 60,
+            "stdMovingAverage": 109.64459423506415
+          },
+          {
             "key": "LT-Others",
             "average": 7,
             "stdMovingAverage": 1.7448290945772842
+          },
+          {
+            "key": "LT-Wind onshore",
+            "average": 171,
+            "stdMovingAverage": 132.66398330926268
           },
           {
             "key": "LT-Solar",
@@ -6885,6 +9558,11 @@
             "stdMovingAverage": 80.1941300962435
           },
           {
+            "key": "LU-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 1.5595727218837505
+          },
+          {
             "key": "LU-Biomass",
             "average": 29,
             "stdMovingAverage": 5.97369701154749
@@ -6893,6 +9571,11 @@
             "key": "LU-Fossil gas",
             "average": 6,
             "stdMovingAverage": 5.84913499025473
+          },
+          {
+            "key": "LU-Wind onshore",
+            "average": 23,
+            "stdMovingAverage": 24.04446020463205
           },
           {
             "key": "LU-Solar",
@@ -6942,6 +9625,11 @@
             "stdMovingAverage": 174.70577808136025
           },
           {
+            "key": "LV-Hydro Run-of-River",
+            "average": 129,
+            "stdMovingAverage": 137.67068591962226
+          },
+          {
             "key": "LV-Biomass",
             "average": 78,
             "stdMovingAverage": 5.8396666590888815
@@ -6952,9 +9640,19 @@
             "stdMovingAverage": 176.99927220299526
           },
           {
+            "key": "LV-Hydro water reservoir",
+            "average": 76,
+            "stdMovingAverage": 125.09709709797478
+          },
+          {
             "key": "LV-Others",
             "average": 83,
             "stdMovingAverage": 4.252283780201512
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 12,
+            "stdMovingAverage": 10.609968483886139
           }
         ]
       },
@@ -6965,6 +9663,11 @@
             "key": "LV-Import Balance",
             "average": 134,
             "stdMovingAverage": 225.5100168886115
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 277,
+            "stdMovingAverage": 235.56318752155414
           },
           {
             "key": "LV-Biomass",
@@ -6980,6 +9683,11 @@
             "key": "LV-Others",
             "average": 86,
             "stdMovingAverage": 6.380373501252647
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 13,
+            "stdMovingAverage": 12.00823365199103
           }
         ]
       },
@@ -6990,6 +9698,11 @@
             "key": "LV-Import Balance",
             "average": -6,
             "stdMovingAverage": 211.5994668299479
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 483,
+            "stdMovingAverage": 248.41082760996815
           },
           {
             "key": "LV-Biomass",
@@ -7005,6 +9718,11 @@
             "key": "LV-Others",
             "average": 90,
             "stdMovingAverage": 5.849525499771356
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 14,
+            "stdMovingAverage": 13.634978458867696
           }
         ]
       },
@@ -7015,6 +9733,11 @@
             "key": "LV-Import Balance",
             "average": 43,
             "stdMovingAverage": 232.58505575485054
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 270,
+            "stdMovingAverage": 192.3959957805635
           },
           {
             "key": "LV-Biomass",
@@ -7030,6 +9753,11 @@
             "key": "LV-Others",
             "average": 80,
             "stdMovingAverage": 3.7095756111753033
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 12,
+            "stdMovingAverage": 12.105578427996136
           }
         ]
       },
@@ -7040,6 +9768,11 @@
             "key": "LV-Import Balance",
             "average": 125,
             "stdMovingAverage": 231.42759677372257
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 232,
+            "stdMovingAverage": 223.70245078820318
           },
           {
             "key": "LV-Biomass",
@@ -7055,6 +9788,11 @@
             "key": "LV-Others",
             "average": 71,
             "stdMovingAverage": 5.258617584128272
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 15,
+            "stdMovingAverage": 13.355656673025761
           }
         ]
       },
@@ -7065,6 +9803,11 @@
             "key": "LV-Import Balance",
             "average": 184,
             "stdMovingAverage": 233.0074648330098
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 286,
+            "stdMovingAverage": 252.47078480149133
           },
           {
             "key": "LV-Biomass",
@@ -7080,6 +9823,11 @@
             "key": "LV-Others",
             "average": 64,
             "stdMovingAverage": 3.083520403618098
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 17,
+            "stdMovingAverage": 14.500080217787271
           }
         ]
       },
@@ -7090,6 +9838,11 @@
             "key": "LV-Import Balance",
             "average": 200,
             "stdMovingAverage": 223.33294232499085
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 300,
+            "stdMovingAverage": 226.4010318768107
           },
           {
             "key": "LV-Biomass",
@@ -7105,6 +9858,11 @@
             "key": "LV-Others",
             "average": 55,
             "stdMovingAverage": 2.680158758717239
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 14,
+            "stdMovingAverage": 12.672766197219602
           }
         ]
       },
@@ -7115,6 +9873,11 @@
             "key": "LV-Import Balance",
             "average": 295,
             "stdMovingAverage": 182.86048150374555
+          },
+          {
+            "key": "LV-Hydro Run-of-River",
+            "average": 316,
+            "stdMovingAverage": 202.05421008685903
           },
           {
             "key": "LV-Biomass",
@@ -7130,6 +9893,11 @@
             "key": "LV-Others",
             "average": 31,
             "stdMovingAverage": 4.251958792907391
+          },
+          {
+            "key": "LV-Wind onshore",
+            "average": 19,
+            "stdMovingAverage": 18.449571572429694
           }
         ]
       },
@@ -7264,6 +10032,11 @@
             "stdMovingAverage": 6.750148536934478
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 3343,
+            "stdMovingAverage": 620.1756697664614
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 3062,
             "stdMovingAverage": 1444.0530886868871
@@ -7272,6 +10045,16 @@
             "key": "NL-Others",
             "average": 2961,
             "stdMovingAverage": 869.8211520294959
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 129,
+            "stdMovingAverage": 89.16099534876551
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 244,
+            "stdMovingAverage": 187.77391994053684
           },
           {
             "key": "NL-Solar",
@@ -7299,6 +10082,11 @@
             "stdMovingAverage": 7.137107718722666
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 3950,
+            "stdMovingAverage": 708.8665846803618
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 3808,
             "stdMovingAverage": 1355.0600720807356
@@ -7307,6 +10095,16 @@
             "key": "NL-Others",
             "average": 2085,
             "stdMovingAverage": 690.4101438168661
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 254,
+            "stdMovingAverage": 201.82625171501542
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 252,
+            "stdMovingAverage": 217.63199541898263
           },
           {
             "key": "NL-Solar",
@@ -7334,6 +10132,11 @@
             "stdMovingAverage": 6.056963368860509
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 3440,
+            "stdMovingAverage": 613.9946555581536
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 4323,
             "stdMovingAverage": 1552.5294325241657
@@ -7342,6 +10145,16 @@
             "key": "NL-Others",
             "average": 2256,
             "stdMovingAverage": 701.2182653652385
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 393,
+            "stdMovingAverage": 264.180149312499
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 272,
+            "stdMovingAverage": 227.67520966779793
           }
         ]
       },
@@ -7364,6 +10177,11 @@
             "stdMovingAverage": 1.6614302343948957
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 3103,
+            "stdMovingAverage": 603.1276806933332
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 4259,
             "stdMovingAverage": 1389.7164631037024
@@ -7372,6 +10190,16 @@
             "key": "NL-Others",
             "average": 2208,
             "stdMovingAverage": 703.7645184433856
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 384,
+            "stdMovingAverage": 259.24978945491426
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 256,
+            "stdMovingAverage": 200.15539200742236
           },
           {
             "key": "NL-Solar",
@@ -7399,6 +10227,11 @@
             "stdMovingAverage": 2.455600311618109
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 1879,
+            "stdMovingAverage": 608.2716265098909
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 5837,
             "stdMovingAverage": 1441.4172660224676
@@ -7407,6 +10240,16 @@
             "key": "NL-Others",
             "average": 2640,
             "stdMovingAverage": 750.1868062564337
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 402,
+            "stdMovingAverage": 256.5337572822757
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 370,
+            "stdMovingAverage": 266.348740267469
           },
           {
             "key": "NL-Solar",
@@ -7434,6 +10277,11 @@
             "stdMovingAverage": 5.634752328100689
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 1381,
+            "stdMovingAverage": 458.32737027686875
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 6383,
             "stdMovingAverage": 2089.9049064333153
@@ -7442,6 +10290,16 @@
             "key": "NL-Others",
             "average": 2041,
             "stdMovingAverage": 678.8712108548162
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 613,
+            "stdMovingAverage": 428.37720651357967
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 586,
+            "stdMovingAverage": 399.8103830745019
           },
           {
             "key": "NL-Solar",
@@ -7469,6 +10327,11 @@
             "stdMovingAverage": 5.479392366156811
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 2342,
+            "stdMovingAverage": 614.5148037749738
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 4748,
             "stdMovingAverage": 2402.5167178669044
@@ -7477,6 +10340,16 @@
             "key": "NL-Others",
             "average": 1811,
             "stdMovingAverage": 814.8799854748517
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 898,
+            "stdMovingAverage": 663.9010288943299
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 540,
+            "stdMovingAverage": 417.09349578771577
           },
           {
             "key": "NL-Solar",
@@ -7504,6 +10377,11 @@
             "stdMovingAverage": 7.0428217748930795
           },
           {
+            "key": "NL-Fossil hard coal",
+            "average": 2134,
+            "stdMovingAverage": 632.0058165633868
+          },
+          {
             "key": "NL-Fossil gas",
             "average": 3958,
             "stdMovingAverage": 2171.8315152707073
@@ -7512,6 +10390,16 @@
             "key": "NL-Others",
             "average": 2013,
             "stdMovingAverage": 930.0159283337765
+          },
+          {
+            "key": "NL-Wind offshore",
+            "average": 867,
+            "stdMovingAverage": 644.8362429364106
+          },
+          {
+            "key": "NL-Wind onshore",
+            "average": 561,
+            "stdMovingAverage": 390.99377833908045
           },
           {
             "key": "NL-Solar",
@@ -7561,14 +10449,29 @@
             "stdMovingAverage": 1850.5617393379941
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1411,
+            "stdMovingAverage": 76.68320221158547
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 339,
             "stdMovingAverage": 47.200922275219924
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 14297,
+            "stdMovingAverage": 2985.8889675113764
+          },
+          {
             "key": "NO-Others",
             "average": 47,
             "stdMovingAverage": 14.381295074324191
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 270,
+            "stdMovingAverage": 120.28897978956483
           }
         ]
       },
@@ -7581,14 +10484,29 @@
             "stdMovingAverage": 1877.0188589372206
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1285,
+            "stdMovingAverage": 84.86896503674406
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 342,
             "stdMovingAverage": 28.535066366413428
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 15043,
+            "stdMovingAverage": 2957.8472519159536
+          },
+          {
             "key": "NO-Others",
             "average": 30,
             "stdMovingAverage": 19.330405539604364
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 240,
+            "stdMovingAverage": 114.33984393121852
           }
         ]
       },
@@ -7601,14 +10519,29 @@
             "stdMovingAverage": 1832.3755148457242
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1328,
+            "stdMovingAverage": 166.77804811327798
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 333,
             "stdMovingAverage": 39.31491633697734
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 14781,
+            "stdMovingAverage": 3134.9086500490166
+          },
+          {
             "key": "NO-Others",
             "average": 43,
             "stdMovingAverage": 26.881113828563354
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 303,
+            "stdMovingAverage": 148.13957029063513
           }
         ]
       },
@@ -7621,14 +10554,29 @@
             "stdMovingAverage": 2223.6537708270466
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1143,
+            "stdMovingAverage": 100.54489581100259
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 350,
             "stdMovingAverage": 22.184662923657605
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 14626,
+            "stdMovingAverage": 3266.389210461655
+          },
+          {
             "key": "NO-Others",
             "average": 129,
             "stdMovingAverage": 69.73186066734233
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 386,
+            "stdMovingAverage": 179.96522046760967
           }
         ]
       },
@@ -7641,14 +10589,29 @@
             "stdMovingAverage": 2107.0285522499235
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1188,
+            "stdMovingAverage": 115.47010240343182
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 338,
             "stdMovingAverage": 27.742554320466137
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 13081,
+            "stdMovingAverage": 3173.7024943539554
+          },
+          {
             "key": "NO-Others",
             "average": 22,
             "stdMovingAverage": 31.403438710011987
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 597,
+            "stdMovingAverage": 280.3651213053351
           }
         ]
       },
@@ -7661,14 +10624,29 @@
             "stdMovingAverage": 1610.3088853240931
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1286,
+            "stdMovingAverage": 112.94298330672014
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 232,
             "stdMovingAverage": 34.06097218999869
           },
           {
+            "key": "NO-Hydro water reservoir",
+            "average": 14453,
+            "stdMovingAverage": 2542.7341349918356
+          },
+          {
             "key": "NO-Others",
             "average": 30,
             "stdMovingAverage": 15.435831570008332
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 1056,
+            "stdMovingAverage": 482.70086800835185
           }
         ]
       },
@@ -7681,9 +10659,29 @@
             "stdMovingAverage": 2251.7264048540565
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 1450,
+            "stdMovingAverage": 260.5783745316391
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 85,
             "stdMovingAverage": 10.070594114464159
+          },
+          {
+            "key": "NO-Hydro water reservoir",
+            "average": 14067,
+            "stdMovingAverage": 2844.971609354873
+          },
+          {
+            "key": "NO-Hydro pumped storage",
+            "average": 809,
+            "stdMovingAverage": 334.71600515792494
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 1221,
+            "stdMovingAverage": 716.338039883702
           }
         ]
       },
@@ -7696,9 +10694,29 @@
             "stdMovingAverage": 2289.7412518427227
           },
           {
+            "key": "NO-Hydro Run-of-River",
+            "average": 2795,
+            "stdMovingAverage": 278.6501445964971
+          },
+          {
             "key": "NO-Fossil gas",
             "average": 135,
             "stdMovingAverage": 19.075698141823526
+          },
+          {
+            "key": "NO-Hydro water reservoir",
+            "average": 11250,
+            "stdMovingAverage": 2861.6144814711056
+          },
+          {
+            "key": "NO-Hydro pumped storage",
+            "average": 150,
+            "stdMovingAverage": 120.31006301894999
+          },
+          {
+            "key": "NO-Wind onshore",
+            "average": 1626,
+            "stdMovingAverage": 708.620263082915
           }
         ]
       },
@@ -7743,9 +10761,29 @@
             "stdMovingAverage": 403.8637367843392
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 153,
+            "stdMovingAverage": 20.811715176545988
+          },
+          {
             "key": "PL-Biomass",
             "average": 205,
             "stdMovingAverage": 41.693366095871454
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 5561,
+            "stdMovingAverage": 1033.3598751759403
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 66,
+            "stdMovingAverage": 7.189425936263487
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 9090,
+            "stdMovingAverage": 1631.7636595126673
           },
           {
             "key": "PL-Fossil oil",
@@ -7756,6 +10794,21 @@
             "key": "PL-Fossil gas",
             "average": 449,
             "stdMovingAverage": 66.24831141691496
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 13,
+            "stdMovingAverage": 17.736795151715157
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 90,
+            "stdMovingAverage": 164.19490440108532
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1211,
+            "stdMovingAverage": 877.3418742840228
           }
         ]
       },
@@ -7768,9 +10821,29 @@
             "stdMovingAverage": 554.3020277103795
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 179,
+            "stdMovingAverage": 26.345258751565932
+          },
+          {
             "key": "PL-Biomass",
             "average": 215,
             "stdMovingAverage": 33.857344880924174
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 5310,
+            "stdMovingAverage": 973.4098761976742
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 63,
+            "stdMovingAverage": 5.7809865064976735
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 9022,
+            "stdMovingAverage": 1559.5911756765809
           },
           {
             "key": "PL-Fossil oil",
@@ -7781,6 +10854,21 @@
             "key": "PL-Fossil gas",
             "average": 591,
             "stdMovingAverage": 122.70653513652938
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 15,
+            "stdMovingAverage": 21.230771410077498
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 78,
+            "stdMovingAverage": 145.72947067073417
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1322,
+            "stdMovingAverage": 991.888864416664
           }
         ]
       },
@@ -7793,9 +10881,29 @@
             "stdMovingAverage": 710.0594569729124
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 218,
+            "stdMovingAverage": 28.486989227314464
+          },
+          {
             "key": "PL-Biomass",
             "average": 150,
             "stdMovingAverage": 44.07784413524849
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 5399,
+            "stdMovingAverage": 942.5719306896074
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 72,
+            "stdMovingAverage": 6.552252411365666
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 8909,
+            "stdMovingAverage": 1569.178099396385
           },
           {
             "key": "PL-Fossil oil",
@@ -7806,6 +10914,21 @@
             "key": "PL-Fossil gas",
             "average": 685,
             "stdMovingAverage": 143.5794636773176
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 17,
+            "stdMovingAverage": 21.591859294997356
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 81,
+            "stdMovingAverage": 143.82739848998762
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1645,
+            "stdMovingAverage": 1159.276056812483
           }
         ]
       },
@@ -7818,9 +10941,29 @@
             "stdMovingAverage": 827.8241092065249
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 168,
+            "stdMovingAverage": 25.95357689961148
+          },
+          {
             "key": "PL-Biomass",
             "average": 206,
             "stdMovingAverage": 43.084255566998074
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 5102,
+            "stdMovingAverage": 852.3978178329448
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 62,
+            "stdMovingAverage": 7.651235007423834
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 9096,
+            "stdMovingAverage": 1526.671247985037
           },
           {
             "key": "PL-Fossil oil",
@@ -7831,6 +10974,21 @@
             "key": "PL-Fossil gas",
             "average": 991,
             "stdMovingAverage": 172.6746735826537
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 12,
+            "stdMovingAverage": 16.31054264674236
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 72,
+            "stdMovingAverage": 133.70618140061302
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1407,
+            "stdMovingAverage": 1052.5299487338264
           }
         ]
       },
@@ -7843,9 +11001,29 @@
             "stdMovingAverage": 770.17435610949
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 160,
+            "stdMovingAverage": 23.843162165110815
+          },
+          {
             "key": "PL-Biomass",
             "average": 236,
             "stdMovingAverage": 60.85330646227587
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 4312,
+            "stdMovingAverage": 907.6671793846946
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 63,
+            "stdMovingAverage": 8.095051280342261
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 8702,
+            "stdMovingAverage": 1560.8751762319512
           },
           {
             "key": "PL-Fossil oil",
@@ -7856,6 +11034,21 @@
             "key": "PL-Fossil gas",
             "average": 1208,
             "stdMovingAverage": 138.07912381456768
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 14,
+            "stdMovingAverage": 18.74245936983212
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 104,
+            "stdMovingAverage": 171.08207206605172
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1663,
+            "stdMovingAverage": 1093.7627332173006
           }
         ]
       },
@@ -7868,9 +11061,29 @@
             "stdMovingAverage": 828.618274802866
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 169,
+            "stdMovingAverage": 23.693135745506805
+          },
+          {
             "key": "PL-Biomass",
             "average": 237,
             "stdMovingAverage": 45.131544579450484
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 3941,
+            "stdMovingAverage": 956.9689667805742
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 33,
+            "stdMovingAverage": 5.773124614457157
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 8026,
+            "stdMovingAverage": 1288.3954370820848
           },
           {
             "key": "PL-Fossil oil",
@@ -7881,6 +11094,21 @@
             "key": "PL-Fossil gas",
             "average": 1420,
             "stdMovingAverage": 164.20989116126233
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 16,
+            "stdMovingAverage": 20.49301004736284
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 121,
+            "stdMovingAverage": 179.44396317149852
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1730,
+            "stdMovingAverage": 1142.2606466328584
           }
         ]
       },
@@ -7893,9 +11121,29 @@
             "stdMovingAverage": 896.3505171681867
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 194,
+            "stdMovingAverage": 28.679475936108652
+          },
+          {
             "key": "PL-Biomass",
             "average": 220,
             "stdMovingAverage": 42.12296806738227
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 4746,
+            "stdMovingAverage": 847.4678930060754
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 60,
+            "stdMovingAverage": 10.468261823630883
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 9170,
+            "stdMovingAverage": 1707.8644195717536
           },
           {
             "key": "PL-Fossil oil",
@@ -7906,6 +11154,21 @@
             "key": "PL-Fossil gas",
             "average": 1402,
             "stdMovingAverage": 193.42468837422922
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 16,
+            "stdMovingAverage": 19.69157504788702
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 116,
+            "stdMovingAverage": 192.5206359422961
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 1740,
+            "stdMovingAverage": 1308.703503881528
           },
           {
             "key": "PL-Solar",
@@ -7923,9 +11186,29 @@
             "stdMovingAverage": 648.0939906291337
           },
           {
+            "key": "PL-Hydro Run-of-River",
+            "average": 170,
+            "stdMovingAverage": 23.160123672520637
+          },
+          {
             "key": "PL-Biomass",
             "average": 181,
             "stdMovingAverage": 31.20913761543343
+          },
+          {
+            "key": "PL-Fossil brown coal / lignite",
+            "average": 4901,
+            "stdMovingAverage": 802.4580485443976
+          },
+          {
+            "key": "PL-Fossil coal-derived gas",
+            "average": 58,
+            "stdMovingAverage": 7.939055012024966
+          },
+          {
+            "key": "PL-Fossil hard coal",
+            "average": 8376,
+            "stdMovingAverage": 1527.057616826487
           },
           {
             "key": "PL-Fossil oil",
@@ -7936,6 +11219,21 @@
             "key": "PL-Fossil gas",
             "average": 994,
             "stdMovingAverage": 269.5000104271097
+          },
+          {
+            "key": "PL-Hydro water reservoir",
+            "average": 11,
+            "stdMovingAverage": 18.845522038348058
+          },
+          {
+            "key": "PL-Hydro pumped storage",
+            "average": 143,
+            "stdMovingAverage": 247.98347673664148
+          },
+          {
+            "key": "PL-Wind onshore",
+            "average": 2147,
+            "stdMovingAverage": 1433.7773253716784
           },
           {
             "key": "PL-Solar",
@@ -7980,9 +11278,19 @@
         "file": "pt-charts-2015.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -173,
+            "stdMovingAverage": 267.19942242040355
+          },
+          {
             "key": "PT-Import Balance",
             "average": 265,
             "stdMovingAverage": 844.2531262009734
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 707,
+            "stdMovingAverage": 330.07049259729575
           },
           {
             "key": "PT-Biomass",
@@ -7990,14 +11298,34 @@
             "stdMovingAverage": 15.32206270198467
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 1563,
+            "stdMovingAverage": 271.5128115723563
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1127,
             "stdMovingAverage": 597.2976235592321
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 184,
+            "stdMovingAverage": 207.52511301399198
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 211,
+            "stdMovingAverage": 253.61428968942948
+          },
+          {
             "key": "PT-Others",
             "average": 41,
             "stdMovingAverage": 4.320795266025092
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1294,
+            "stdMovingAverage": 889.55919092949
           },
           {
             "key": "PT-Solar",
@@ -8010,9 +11338,19 @@
         "file": "pt-charts-2016.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -176,
+            "stdMovingAverage": 293.9894632526189
+          },
+          {
             "key": "PT-Import Balance",
             "average": -574,
             "stdMovingAverage": 964.3775194320342
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 1083,
+            "stdMovingAverage": 347.602576471509
           },
           {
             "key": "PT-Biomass",
@@ -8020,14 +11358,34 @@
             "stdMovingAverage": 16.68530665080581
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 1338,
+            "stdMovingAverage": 358.69140266613925
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1327,
             "stdMovingAverage": 684.7034122996055
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 428,
+            "stdMovingAverage": 271.24805278772976
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 390,
+            "stdMovingAverage": 321.46161394955124
+          },
+          {
             "key": "PT-Others",
             "average": 38,
             "stdMovingAverage": 3.916315353080002
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1383,
+            "stdMovingAverage": 912.2020686904006
           },
           {
             "key": "PT-Solar",
@@ -8040,9 +11398,19 @@
         "file": "pt-charts-2017.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -259,
+            "stdMovingAverage": 434.2672374198421
+          },
+          {
             "key": "PT-Import Balance",
             "average": -303,
             "stdMovingAverage": 1079.631981063606
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 392,
+            "stdMovingAverage": 271.7278281611358
           },
           {
             "key": "PT-Biomass",
@@ -8050,14 +11418,34 @@
             "stdMovingAverage": 17.006481866785748
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 1556,
+            "stdMovingAverage": 232.55153257047715
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 2021,
             "stdMovingAverage": 829.9818975977893
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 158,
+            "stdMovingAverage": 185.8493205869787
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 294,
+            "stdMovingAverage": 404.12863011395774
+          },
+          {
             "key": "PT-Others",
             "average": 36,
             "stdMovingAverage": 4.239329196714557
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1367,
+            "stdMovingAverage": 940.5368177297934
           },
           {
             "key": "PT-Solar",
@@ -8070,9 +11458,19 @@
         "file": "pt-charts-2018.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -186,
+            "stdMovingAverage": 353.9091041117091
+          },
+          {
             "key": "PT-Import Balance",
             "average": -298,
             "stdMovingAverage": 1066.1821542006253
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 835,
+            "stdMovingAverage": 380.17829182412754
           },
           {
             "key": "PT-Biomass",
@@ -8080,14 +11478,34 @@
             "stdMovingAverage": 20.99304079065244
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 1274,
+            "stdMovingAverage": 354.887116733476
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1659,
             "stdMovingAverage": 711.8150074908962
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 340,
+            "stdMovingAverage": 250.62135241145805
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 355,
+            "stdMovingAverage": 426.85113627036293
+          },
+          {
             "key": "PT-Others",
             "average": 65,
             "stdMovingAverage": 14.192221114682951
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1410,
+            "stdMovingAverage": 886.1715510661784
           },
           {
             "key": "PT-Solar",
@@ -8100,9 +11518,19 @@
         "file": "pt-charts-2019.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -214,
+            "stdMovingAverage": 407.0306529388277
+          },
+          {
             "key": "PT-Import Balance",
             "average": 389,
             "stdMovingAverage": 1230.5635932574048
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 593,
+            "stdMovingAverage": 356.3919475414878
           },
           {
             "key": "PT-Biomass",
@@ -8110,14 +11538,34 @@
             "stdMovingAverage": 22.407647071670045
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 591,
+            "stdMovingAverage": 430.80536725365846
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1841,
             "stdMovingAverage": 779.8755306236446
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 219,
+            "stdMovingAverage": 225.26606536662896
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 341,
+            "stdMovingAverage": 446.73882213285367
+          },
+          {
             "key": "PT-Others",
             "average": 42,
             "stdMovingAverage": 8.829687795557811
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1533,
+            "stdMovingAverage": 1054.6403336174383
           },
           {
             "key": "PT-Solar",
@@ -8130,9 +11578,19 @@
         "file": "pt-charts-2020.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -232,
+            "stdMovingAverage": 432.42043883745
+          },
+          {
             "key": "PT-Import Balance",
             "average": 171,
             "stdMovingAverage": 1357.3171004355336
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 855,
+            "stdMovingAverage": 475.85678674298754
           },
           {
             "key": "PT-Biomass",
@@ -8140,14 +11598,34 @@
             "stdMovingAverage": 19.783350264673384
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 253,
+            "stdMovingAverage": 278.31556913934753
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1894,
             "stdMovingAverage": 868.613205586418
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 337,
+            "stdMovingAverage": 246.56110905764785
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 381,
+            "stdMovingAverage": 509.87421038778757
+          },
+          {
             "key": "PT-Others",
             "average": 28,
             "stdMovingAverage": 4.5974115888118945
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1372,
+            "stdMovingAverage": 1015.1709588974988
           },
           {
             "key": "PT-Solar",
@@ -8160,9 +11638,19 @@
         "file": "pt-charts-2021.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -233,
+            "stdMovingAverage": 434.99573965894405
+          },
+          {
             "key": "PT-Import Balance",
             "average": 545,
             "stdMovingAverage": 1322.3777909768917
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 806,
+            "stdMovingAverage": 394.5753735920015
           },
           {
             "key": "PT-Biomass",
@@ -8170,14 +11658,39 @@
             "stdMovingAverage": 21.511051279571387
           },
           {
+            "key": "PT-Fossil hard coal",
+            "average": 83,
+            "stdMovingAverage": 132.17908030404882
+          },
+          {
             "key": "PT-Fossil gas",
             "average": 1660,
             "stdMovingAverage": 852.4166829024836
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 312,
+            "stdMovingAverage": 279.7765833803749
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 396,
+            "stdMovingAverage": 484.97542126274556
+          },
+          {
             "key": "PT-Others",
             "average": 27,
             "stdMovingAverage": 2.9693514563977446
+          },
+          {
+            "key": "PT-Wind offshore",
+            "average": 6,
+            "stdMovingAverage": 6.96484386910402
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1469,
+            "stdMovingAverage": 981.0673012362182
           },
           {
             "key": "PT-Solar",
@@ -8190,9 +11703,19 @@
         "file": "pt-charts-2022.json",
         "options": [
           {
+            "key": "PT-Hydro pumped storage consumption",
+            "average": -343,
+            "stdMovingAverage": 482.86493336779984
+          },
+          {
             "key": "PT-Import Balance",
             "average": 1276,
             "stdMovingAverage": 1200.6572621837834
+          },
+          {
+            "key": "PT-Hydro Run-of-River",
+            "average": 346,
+            "stdMovingAverage": 355.80166228506073
           },
           {
             "key": "PT-Biomass",
@@ -8205,9 +11728,29 @@
             "stdMovingAverage": 669.0941273931818
           },
           {
+            "key": "PT-Hydro water reservoir",
+            "average": 89,
+            "stdMovingAverage": 144.822740894794
+          },
+          {
+            "key": "PT-Hydro pumped storage",
+            "average": 313,
+            "stdMovingAverage": 472.0942170242073
+          },
+          {
             "key": "PT-Others",
             "average": 22,
             "stdMovingAverage": 3.8373509331257156
+          },
+          {
+            "key": "PT-Wind offshore",
+            "average": 9,
+            "stdMovingAverage": 9.10067217621958
+          },
+          {
+            "key": "PT-Wind onshore",
+            "average": 1378,
+            "stdMovingAverage": 961.3162981992956
           },
           {
             "key": "PT-Solar",
@@ -8262,9 +11805,19 @@
             "stdMovingAverage": 838.2135087112414
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 8059,
+            "stdMovingAverage": 1993.195389011717
+          },
+          {
             "key": "SE-Others",
             "average": 753,
             "stdMovingAverage": 184.47767295528
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 1873,
+            "stdMovingAverage": 948.2631887006693
           }
         ]
       },
@@ -8282,9 +11835,19 @@
             "stdMovingAverage": 400.41504429485724
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 7031,
+            "stdMovingAverage": 2248.7346943507937
+          },
+          {
             "key": "SE-Others",
             "average": 866,
             "stdMovingAverage": 143.136806960859
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 1774,
+            "stdMovingAverage": 950.0628457201318
           }
         ]
       },
@@ -8302,9 +11865,19 @@
             "stdMovingAverage": 412.29736375269863
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 7423,
+            "stdMovingAverage": 2172.527518352333
+          },
+          {
             "key": "SE-Others",
             "average": 934,
             "stdMovingAverage": 120.14493776281856
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 1976,
+            "stdMovingAverage": 1006.9626508349336
           }
         ]
       },
@@ -8322,9 +11895,19 @@
             "stdMovingAverage": 436.9583389935834
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 7091,
+            "stdMovingAverage": 2054.8938829493186
+          },
+          {
             "key": "SE-Others",
             "average": 951,
             "stdMovingAverage": 111.759380505832
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 1860,
+            "stdMovingAverage": 1052.1634434710807
           }
         ]
       },
@@ -8342,9 +11925,19 @@
             "stdMovingAverage": 376.44031659591474
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 7480,
+            "stdMovingAverage": 2155.3911943817616
+          },
+          {
             "key": "SE-Others",
             "average": 1027,
             "stdMovingAverage": 114.809644375642
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 2226,
+            "stdMovingAverage": 1168.5550382673923
           }
         ]
       },
@@ -8362,9 +11955,19 @@
             "stdMovingAverage": 472.3097019888409
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 8332,
+            "stdMovingAverage": 1752.9486159244047
+          },
+          {
             "key": "SE-Others",
             "average": 774,
             "stdMovingAverage": 135.570276903771
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 3051,
+            "stdMovingAverage": 1527.7327252095968
           }
         ]
       },
@@ -8382,9 +11985,19 @@
             "stdMovingAverage": 344.4043665771283
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 8471,
+            "stdMovingAverage": 1579.783720841009
+          },
+          {
             "key": "SE-Others",
             "average": 1022,
             "stdMovingAverage": 205.3682591439733
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 3044,
+            "stdMovingAverage": 1716.093298284018
           }
         ]
       },
@@ -8402,9 +12015,19 @@
             "stdMovingAverage": 395.2047649888428
           },
           {
+            "key": "SE-Hydro water reservoir",
+            "average": 7801,
+            "stdMovingAverage": 1738.633691682364
+          },
+          {
             "key": "SE-Others",
             "average": 899,
             "stdMovingAverage": 182.51192676526873
+          },
+          {
+            "key": "SE-Wind onshore",
+            "average": 3768,
+            "stdMovingAverage": 1950.6728948379423
           }
         ]
       },
