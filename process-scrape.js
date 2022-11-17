@@ -5,12 +5,15 @@ const luxon = require('luxon');
 
 // Extract options
 const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
-const combineKeys = [
-  ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
-  ['Wind Total', ['Wind offshore', 'Wind onshore']],
-  ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
-  ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
-]
+// TODO
+const combineKeys =
+[]
+// [
+//   ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
+//   ['Wind Total', ['Wind offshore', 'Wind onshore']],
+//   ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
+//   ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
+// ]
 
 const removeKeys = combineKeys
   .map(key => key[1])
@@ -18,14 +21,16 @@ const removeKeys = combineKeys
 
 allFiles
   // Debug
-  // .filter(file => file.includes('de'))
+  .filter(file => file.includes('se'))
   .forEach(file => {
       const marketLabel = file.split('-')[2].slice(0,2) + '-';
       const type = file.split('-')[1] + '-';
       const content = JSON.parse(fs.readFileSync(folderRead + file));
       
-      const p0 = content[0];
-      const combineKeysValid = combineKeys.filter(c => c[1].some(key => key in p0) )
+      const pKeys = Object.keys(content[0]);
+      const combineKeysValid = combineKeys.filter(c => c[1].some(key => pKeys.some(pk => pk.includes(key))))
+
+      console.log('combineKeysValid', pKeys, combineKeysValid);
 
       const contentTransform = content
         // Combine keys

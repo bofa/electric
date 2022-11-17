@@ -51,7 +51,9 @@ const options = // ['price', 'production', 'consumption']
     fields: ['-Import Balance'],
   },
 ].map(option => {
-    const typeFiles = allFiles // .filter(file => file.includes(option.name.toLowerCase()))
+    const typeFiles = allFiles
+      // .filter(file => file.includes(2022))
+      // .filter(file => file.includes(option.name.toLowerCase()))
 
     const files = typeFiles
       .map(file => {

@@ -59,7 +59,7 @@ function App () {
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load']);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
-  const [range, setRange] = React.useState('Full');
+  const [range, setRange] = React.useState(rangeOptions[2].key);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [priceDataSet, setPriceDataSet] = React.useState([]);
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([]);
@@ -69,8 +69,15 @@ function App () {
   
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
+  const now = DateTime.now();
+  let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
+  const minus = rangeOptions.find(ro => ro.key === range)?.minus;
+  if (minus) {
+    lowerDate = now.minus(minus)
+  }
+
   React.useEffect(() => {
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options.json')
+    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
       .then(response => response.data)
       .then(setOptions)
   }, [])
@@ -79,16 +86,19 @@ function App () {
     const files = selectedAreas
       .map(area => options
         .find(option => option.key === selectDataSet)?.files
-        .find(file => file.options.map(o => o.key).includes(area))?.file
+        .filter(file => file.options.map(o => o.key).includes(area))
+        .map(file => file.file)
       )
       .flat()
       .filter(file => file !== undefined)
       .filter((file, i, a) => a.indexOf(file) === i)
       .filter(file => !loadedFiles.includes(file))
+      // Check year
+      .filter(file => Number(file.split('.')[0].split('-')[2]) >= lowerDate.year)
 
     setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
-    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/processed/` + file)
+    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file)
       .then(response => response.data)
       .catch(error => {
         console.warn('Error', error);
@@ -105,14 +115,28 @@ function App () {
 
           const seriesFiltered = series
             .filter(s => option.fields.some(f => s.label.includes(f)))
-            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2019) }))
+            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2000) }))
 
-          setFunc(state => state.concat(seriesFiltered));
+          setFunc(state => {
+            const stateMerge = state.map(s => {
+              const findData = seriesFiltered.find(sf => sf.label === s.label)?.data || [];
+
+              return {
+                label: s.label,
+                data: s.data.concat(findData).sort((a, b) => a.x - b.x),
+              }
+            })
+
+            const stateLabels = state.map(s => s.label)
+            const newSeries = seriesFiltered.filter(sf => !stateLabels.includes(sf.label))
+
+            return stateMerge.concat(newSeries);
+          });
         })
 
       }))
     
-  }, [selectDataSet, selectedAreas.length, options.length])
+  }, [selectDataSet, selectedAreas.length, options.length, range])
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
@@ -124,13 +148,6 @@ function App () {
     .map(file => file.options)
     .flat()
     || [];
-
-  const now = DateTime.now();
-  let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
-  const minus = rangeOptions.find(ro => ro.key === range)?.minus;
-  if (minus) {
-    lowerDate = now.minus(minus)
-  }
 
   const flatOptions = options
     .map(o => o.files)
