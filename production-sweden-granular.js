@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-const importData = require('./scrape/raw/production-sweden-granular.json');
+const importData = require('./scrape/raw/production-solar-se.json');
 const luxon = require('luxon');
 
 function uniq(a, key) {
@@ -57,5 +57,5 @@ Promise.all(calls$)
 
     // fs.writeFileSync('scrape/production-sweden-granular.json', JSON.stringify(unique, null, 2))
 
-    fs.writeFileSync('scrape/raw/production-sweden-granular.json', JSON.stringify(unique, null, 2))
+    fs.writeFileSync('scrape/raw/production-solar-se.json', JSON.stringify(unique, null, 2))
   })

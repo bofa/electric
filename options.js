@@ -1,4 +1,4 @@
-const folderRead = './scrape/processed/';
+const folderRead = './scrape/processed-refactor/';
 const fs = require('fs');
 
 // Extract options
@@ -56,6 +56,7 @@ const options = // ['price', 'production', 'consumption']
     const files = typeFiles
       .map(file => {
         const content = JSON.parse(fs.readFileSync(folderRead + file));
+        console.log('file', file);
 
         return {
           file: file,
@@ -85,4 +86,4 @@ const options = // ['price', 'production', 'consumption']
     };
   })
 
-fs.writeFileSync('scrape/options.json', JSON.stringify(options, null, 2));
+fs.writeFileSync('scrape/options-refactor.json', JSON.stringify(options, null, 2));
