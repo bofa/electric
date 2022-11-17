@@ -3,8 +3,10 @@ import {
   NavbarDivider,
   NavbarGroup,
   HTMLSelect,
-  Spinner,
+  Button,
+  Menu,
 } from "@blueprintjs/core";
+import { MenuItem2, Popover2 } from "@blueprintjs/popover2";
 import React from 'react';
 import { Chart } from 'react-chartjs-2';
 // import fullDataSet from './data.json';
@@ -15,7 +17,7 @@ import { DateTime } from 'luxon';
 import axios from 'axios';
 import TransformChart from './TransformChart';
 // import { fft, util as fftUtil } from 'fft-js';
-import { colors, adjustHexOpacity } from './utils';
+import { adjustHexOpacity } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
 
@@ -336,13 +338,16 @@ function App () {
     <div className="App">
       <Navbar>
         <NavbarGroup>
-          <HTMLSelect value={selectDataSet} onChange={e => setSelectDataSet(e.currentTarget.value)}>
-            {options.map(({ key, name }) => <option key={key} value={key}>{name}</option>)}
-          </HTMLSelect>
-          <NavbarDivider/>
-          <HTMLSelect value={range} onChange={e => setRange(e.currentTarget.value)}>
-            {rangeOptions.map(({ key }) => <option key={key} value={key}>{key}</option>)}
-          </HTMLSelect>
+          <Popover2 content={<Menu>
+            <MenuItem2 text="Type">
+              {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
+            </MenuItem2>
+            <MenuItem2 text="Range">
+              {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range}  key={key} text={key} />)}
+            </MenuItem2>
+          </Menu>}>
+            <Button icon="cog" />
+          </Popover2>
           <NavbarDivider/>
           <AreaMultiSelect
             areas={areasArray}
