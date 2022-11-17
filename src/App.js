@@ -56,10 +56,10 @@ function App () {
   const [options, setOptions] = React.useState([]);
   const [loadedFiles, setLoadedFiles] = React.useState([]);
 
-  const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load']);
+  const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
-  const [range, setRange] = React.useState(rangeOptions[2].key);
+  const [range, setRange] = React.useState(rangeOptions[1].key);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [priceDataSet, setPriceDataSet] = React.useState([]);
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([]);
