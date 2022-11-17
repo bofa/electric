@@ -98,14 +98,16 @@ function App () {
 
     setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
-    files.forEach(file => axios.get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file)
+    Promise.all(files.map(file => axios
+      .get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file)
       .then(response => response.data)
-      .catch(error => {
-        console.warn('Error', error);
-        return [{ x: '2019-01-01' }];
-      })
-      .then(transformSeries)
-      .then(series => {
+        .catch(error => {
+          console.warn('Error', error);
+          return [{ x: '2019-01-01' }];
+        })
+        .then(transformSeries)
+      ))
+      .then(seriesArray => {
         options.forEach(option => {
           const setFunc = option.key === 'priceDataSet'       ? setPriceDataSet
                         : option.key === 'consumptionDataSet' ? setConsumptionDataSet
@@ -113,28 +115,22 @@ function App () {
                         : option.key === 'exportDataSet'      ? setExportDataSet
                         : () => {};
 
-          const seriesFiltered = series
-            .filter(s => option.fields.some(f => s.label.includes(f)))
-            .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2000) }))
-
+            
           setFunc(state => {
-            const stateMerge = state.map(s => {
-              const findData = seriesFiltered.find(sf => sf.label === s.label)?.data || [];
+            const seriesFilteredObj = seriesArray
+              .flat()
+              .filter(s => option.fields.some(f => s.label.includes(f)))
+              .map(s => ({ ...s, data: s.data.filter(p => p.x.year >= 2000) }))
+              .concat(state)
+              .reduce((obj, s) => ({ ...obj, [s.label]: obj[s.label]?.concat(s.data) || s.data }), {})
+            
+            const seriesFiltered = Object.keys(seriesFilteredObj).map(key => ({ label: key, data: seriesFilteredObj[key] }))
 
-              return {
-                label: s.label,
-                data: s.data.concat(findData).sort((a, b) => a.x - b.x),
-              }
-            })
-
-            const stateLabels = state.map(s => s.label)
-            const newSeries = seriesFiltered.filter(sf => !stateLabels.includes(sf.label))
-
-            return stateMerge.concat(newSeries);
+            return seriesFiltered;
           });
         })
 
-      }))
+      })
     
   }, [selectDataSet, selectedAreas.length, options.length, range])
 
