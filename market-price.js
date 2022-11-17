@@ -21,8 +21,7 @@ markets.forEach((market, marketIndex) => {
 
   // const startDate = luxon.DateTime.fromISO('2020-01-01')
 
-  const nowDate = luxon.DateTime.now();
-  const startDateRequested = luxon.DateTime.fromISO('2018-01-01')
+  const startDateRequested = luxon.DateTime.fromISO('2015-01-01')
   const startDateImport = luxon.DateTime.fromISO(importData.at(0)?.x);
   const endDateImport = luxon.DateTime.fromISO(importData.at(-1)?.x);
 
@@ -31,7 +30,7 @@ markets.forEach((market, marketIndex) => {
     : startDateRequested;
 
   const now = luxon.DateTime.now();
-  const weeks = [2018, 2019, 2020, 2021, 2022]
+  const weeks = Array(now.year - startDateRequested.year + 1).fill().map((_, i) => startDateRequested.year + i)
     .filter(year => year >= startDate.year - 1)
     .map((year, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
         axios.get(`https://www.energy-charts.info/charts/price_spot_market/data/${market}/year_${year}.json`)

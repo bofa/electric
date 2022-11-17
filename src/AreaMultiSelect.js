@@ -34,8 +34,6 @@ export default function FilmSelect(props) {
   const { selectedAreas, setSelectedAreas } = props;
 
   const items = props.areas
-    // TODO
-    .filter((area, i, a) => a.findIndex(area2 => area2.key === area.key) === i)
     .map(area => ({ area: area.key, text: area.key, label: Math.round(area.average), active: selectedAreas.includes(area.key) }))
     .sort((a1, a2) => a1.text.localeCompare(a2.text) )
     

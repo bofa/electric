@@ -142,11 +142,16 @@ function App () {
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
 
+  const yearNow = DateTime.now().year;
   const areasArray = options
     .find(option => option.key === selectDataSet)
     ?.files
-    .map(file => file.options)
+    .map(file => file.options.map(o => ({
+      ...o,
+      year: Number(file.file.split('.')[0].split('-')[2])
+    })))
     .flat()
+    .filter(o => o.year === yearNow)
     || [];
 
   const flatOptions = options

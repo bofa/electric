@@ -21,7 +21,7 @@ const removeKeys = combineKeys
 
 allFiles
   // Debug
-  .filter(file => file.includes('se'))
+  // .filter(file => file.includes('se'))
   .forEach(file => {
       const marketLabel = file.split('-')[2].slice(0,2) + '-';
       const type = file.split('-')[1] + '-';
@@ -66,6 +66,6 @@ allFiles
           const contentYear = contentTransform.slice(startIndex, endIndex);
           const newFilename = marketLabel + type + year + '.json';
 
-          fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear, null, 2));
+          fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear));
         })
   })
