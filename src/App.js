@@ -183,7 +183,6 @@ function App () {
           fill: !stacked ? false
             : i === 0 ? 'origin'
             : i-1,
-          stacked,
         },
       ]
       .concat(windowSize === 1

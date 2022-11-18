@@ -3,6 +3,7 @@ import { HTMLSelect } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
 import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
+import { DateTime } from 'luxon';
 
 function timeBinTransform(groupKey, groups, binKey, bins, labels) {
   return (series, confidenceTransform) => {
@@ -90,6 +91,16 @@ const seriesTransforms = [
     )
   },
   {
+    key: 'year',
+    name: 'Yearly',
+    unit: seriesYUnit => ['year', seriesYUnit],
+    transform: timeBinTransform(
+      null, [0],
+      'year', Array(DateTime.now().year - 2015 + 1).fill().map((_, i) => 2015 + i),
+      ['']
+    )
+  },
+  {
     key: 'histogram',
     name: 'Histogram',
     unit: seriesYUnit => [seriesYUnit, '100 hours / MW'],
@@ -102,16 +113,11 @@ const seriesTransforms = [
       
       const step = (max - min) / numberOfBins;
 
-      console.log('length', rawSeries.length);
-
       const histogram = Array(numberOfBins).fill().map((_, i) => min + i*step)
         .map(min => ({
           x: Math.round(min + step/2),
           y: 100 * rawSeries.filter(y => y >= min && y < min + step).length / step,
         }));
-
-      console.log('historgram', histogram)
-      // console.log('historgram', histogram.map(({ y }) => y).reduce((s, y) => s+y))
 
       return [{
         label: series.label,
@@ -165,15 +171,22 @@ export default function TransformChart(props) {
     .map(s => transformInstance.transform(s, confidenceTransform))
     .flat();
 
+  const stacked = confidence === 'stacked';
+
   const dataHourOfDay = {
     datasets: binSeries.map((area, i) => [
       {
         label: area.label,
         data: area.bin,
         borderColor: adjustHexOpacity(i, 1),
+        backgroundColor: adjustHexOpacity(i, 0.25),
         // pointRadius: 0,
         // borderWidth: 1,
-      },
+        fill: !stacked ? false
+          : i === 0 ? 'origin'
+          : i-1,
+      }
+    ].concat(stacked ? [] : [
       {
         label: 'remove' + area.label + ' min',
         data: area?.min,
@@ -190,7 +203,7 @@ export default function TransformChart(props) {
         pointRadius: 0,
         borderWidth: 0,
       }
-    ]).flat()
+    ])).flat()
   }
 
   const [xUnit, yUnit] = transformInstance.unit(props.unit);
@@ -208,6 +221,7 @@ export default function TransformChart(props) {
         }
       },
       y: {
+        stacked,
         beginAtZero: true,
         suggestedMax: 250,
         position: 'right',
