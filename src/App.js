@@ -116,7 +116,6 @@ function App () {
                         : option.key === 'productionDataSet'  ? setProductionDataSet
                         : option.key === 'exportDataSet'      ? setExportDataSet
                         : () => {};
-
             
           setFunc(state => {
             const seriesFilteredObj = seriesArray
