@@ -7,31 +7,34 @@ const luxon = require('luxon');
 const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
 // TODO
 const combineKeys =
-[]
-// [
-//   ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
-//   ['Wind Total', ['Wind offshore', 'Wind onshore']],
-//   ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
-//   ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
-// ]
-
-const removeKeys = combineKeys
-  .map(key => key[1])
-  .flat();
+// []
+[
+  ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
+  ['Wind Total', ['Wind offshore', 'Wind onshore']],
+  ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
+  ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
+]
 
 allFiles
   // Debug
   // .filter(file => file.includes('se'))
   .forEach(file => {
       const marketLabel = file.split('-')[2].slice(0,2) + '-';
+      const marketLabelCase = marketLabel.toUpperCase();  
       const type = file.split('-')[1] + '-';
       const content = JSON.parse(fs.readFileSync(folderRead + file));
       
       const pKeys = Object.keys(content[0]);
-      const combineKeysValid = combineKeys.filter(c => c[1].some(key => pKeys.some(pk => pk.includes(key))))
+      const combineKeysValid = combineKeys
+        .map(c => [marketLabelCase + c[0], c[1].map(k => marketLabelCase + k)])
+        // .filter(c => c[1].some(key => pKeys.some(pk => pk.includes(key))))
 
-      console.log('combineKeysValid', pKeys, combineKeysValid);
+      // console.log('combineKeysValid', pKeys, combineKeysValid.map(p => p[0]));
 
+      const removeKeys = combineKeysValid
+        .map(key => key[1])
+        .flat();
+      
       const contentTransform = content
         // Combine keys
         .map(y => ({ ...y, ...combineKeysValid.reduce((obj, combine) => ({
@@ -40,14 +43,13 @@ allFiles
             ? null :
             combine[1].filter(k => y[k]).reduce((sum, k) => sum + y[k], 0)
         }), {}) }))
+        // .map(y => {
+        // Remove keys
         .map(y => {
           removeKeys.forEach(k => delete y[k]);
-
-          return y;
-        })
-        // Remove null keys
-        .map(y => {
-          removeKeys.forEach(k => delete y[k]);
+          Object.keys(y)
+            .filter(k => y[k] === null)
+            .forEach(k => delete y[k])
 
           return y;
         })
@@ -66,6 +68,6 @@ allFiles
           const contentYear = contentTransform.slice(startIndex, endIndex);
           const newFilename = marketLabel + type + year + '.json';
 
-          fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear));
+          fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear, null, 2));
         })
   })
