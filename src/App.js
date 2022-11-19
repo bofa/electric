@@ -171,8 +171,6 @@ function App () {
 
   const stacked = confidence === 'stacked';
 
-  console.log('processedSeries', processedSeries)
-
   const dataTimeSeries = {
     datasets: 
       processedSeries.map((area, i) => [
