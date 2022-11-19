@@ -1,6 +1,7 @@
 import { MenuItem } from "@blueprintjs/core";
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
+import { DateTime } from 'luxon';
 
 function toggleItems(selected, item) {
   if (selected.includes(item)) {
@@ -30,10 +31,22 @@ const renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
   );
 };
  
-export default function FilmSelect(props) {
+export default function AreaMultiSelect(props) {
   const { selectedAreas, setSelectedAreas } = props;
 
-  const items = props.areas
+  const yearNow = DateTime.now().year;
+  const areas = props.options
+    .find(option => option.key === props.selectDataSet)
+    ?.files
+    .map(file => file.options.map(o => ({
+      ...o,
+      year: Number(file.file.split('.')[0].split('-')[2])
+    })))
+    .flat()
+    .filter(o => o.year === yearNow)
+    || [];
+
+  const items = areas
     .map(area => ({ area: area.key, text: area.key, label: Math.round(area.average), active: selectedAreas.includes(area.key) }))
     .sort((a1, a2) => a1.text.localeCompare(a2.text) )
     

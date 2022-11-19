@@ -1,16 +1,6 @@
-import {
-  Navbar,
-  NavbarDivider,
-  NavbarGroup,
-  HTMLSelect,
-  Button,
-  Menu,
-} from "@blueprintjs/core";
-import { MenuItem2, Popover2 } from "@blueprintjs/popover2";
+import { HTMLSelect } from "@blueprintjs/core";
 import React from 'react';
 import { Chart } from 'react-chartjs-2';
-// import fullDataSet from './data.json';
-import AreaMultiSelect from './AreaMultiSelect';
 import './App.css';
 import trade from './trading';
 import { DateTime } from 'luxon';
@@ -20,13 +10,6 @@ import TransformChart from './TransformChart';
 import { adjustHexOpacity } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
-import randomIcon from './icon-random';
-
-// const optionsDatasetsArray = {
-// }
-
-// Add link to
-// https://www.nordpoolgroup.com/en/the-power-market/Day-ahead-market/#:~:text=The%20daily%20process,delivery%20hours%20the%20next%20day.
 
 function transformSeries(series) {
   series.forEach(p => p.x = DateTime.fromISO(p.x))
@@ -45,7 +28,7 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
-const rangeOptions = [
+export const rangeOptions = [
   { key: 'Full',         minus: null          },
   { key: 'Past 2 Years', minus: { years:  2 } },
   { key: 'Past Year',    minus: { years:  1 } },
@@ -55,23 +38,20 @@ const rangeOptions = [
   { key: 'Past Week',    minus: { weeks:  1 } },
 ]
 
-const settingsIcon = randomIcon();
-
-function App () {
+function App (props) {
   const [options, setOptions] = React.useState([]);
   const [loadedFiles, setLoadedFiles] = React.useState([]);
 
-  const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
-  const [range, setRange] = React.useState(rangeOptions[1].key);
-  const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [priceDataSet, setPriceDataSet] = React.useState([]);
   const [consumptionDataSet, setConsumptionDataSet] = React.useState([]);
   const [productionDataSet, setProductionDataSet] = React.useState([]);
   const [exportDataSet, setExportDataSet] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
-  
+
+  const { selectedAreas, selectDataSet, range } = props;
+
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   const now = DateTime.now();
@@ -121,8 +101,6 @@ function App () {
                         : () => {};
             
           setFunc(state => {
-            console.log('seriesArray', seriesArray);
-
             const seriesFilteredObj = seriesArray
               .flat()
               .filter(s => option.fields.some(f => s.label.includes(f)))
@@ -144,20 +122,6 @@ function App () {
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
-
-  console.log('fullDataSet', fullDataSet);
-  
-  const yearNow = DateTime.now().year;
-  const areasArray = options
-    .find(option => option.key === selectDataSet)
-    ?.files
-    .map(file => file.options.map(o => ({
-      ...o,
-      year: Number(file.file.split('.')[0].split('-')[2])
-    })))
-    .flat()
-    .filter(o => o.year === yearNow)
-    || [];
 
   const flatOptions = options
     .map(o => o.files)
@@ -341,28 +305,7 @@ function App () {
   }
 
   return (
-    <div className="App">
-      <Navbar>
-        <NavbarGroup>
-          <Popover2 content={<Menu>
-            <MenuItem2 text="Type">
-              {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
-            </MenuItem2>
-            <MenuItem2 text="Range">
-              {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range}  key={key} text={key} />)}
-            </MenuItem2>
-          </Menu>}>
-            <Button icon={settingsIcon} />
-          </Popover2>
-          <NavbarDivider/>
-          <AreaMultiSelect
-            areas={areasArray}
-            selectedAreas={selectedAreas}
-            setSelectedAreas={setSelectedAreas}
-          />
-          {/* {loading && <Spinner style={{ marginLeft: 10 }} size={16}/>} */}
-        </NavbarGroup>
-      </Navbar>
+    <>
       <div style={{ height: 'calc(50vh - 66px)', padding: 14 }}>
         <div style={{ float: 'left' }}>
           <HTMLSelect value={windowSize} onChange={e => {
@@ -395,7 +338,7 @@ function App () {
         />
       </div>
       {/* {Math.round(sum)}EUR, {Math.round(sum/tradingData.length)}EUR/h, {Math.round(24 * 365 * sum/tradingData.length)}EUR/y */}
-    </div>
+    </>
   );
 }
 
