@@ -65,6 +65,7 @@ markets.forEach((market, marketIndex) => {
       const flat = weeks
         .flat()
         .concat(importData)
+        .filter(p => p.x.minute === 0)
 
       const unique = uniq(flat, 'x')
         .sort((a, b) => a.x - b.x);
