@@ -12,11 +12,13 @@ import AreaMultiSelect from './AreaMultiSelect';
 import App, { rangeOptions } from './App';
 import './App.css';
 import randomIcon from './icon-random';
+import { DateTime } from 'luxon';
 
 const settingsIcon = randomIcon();
 
 export default function TopBar() {
   const [options, setOptions] = React.useState([]);
+  const [items, setItems] = React.useState([]);
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [range, setRange] = React.useState(rangeOptions[1].key);
@@ -24,8 +26,30 @@ export default function TopBar() {
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
       .then(response => response.data)
-      .then(setOptions)
+      .then(options => {
+        setOptions(options);
+      })
   }, [])
+
+  React.useEffect(() => {
+    const yearNow = DateTime.now().year;
+    const areas = options
+      .find(option => option.key === selectDataSet)
+      ?.files
+      .map(file => file.options.map(o => ({
+        ...o,
+        year: Number(file.file.split('.')[0].split('-')[2])
+      })))
+      .flat()
+      .filter(o => o.year === yearNow)
+      || [];
+  
+    const items = areas
+      .map(area => ({ area: area.key, text: area.key, label: Math.round(area.average) }))
+      .sort((a1, a2) => a1.text.localeCompare(a2.text) )
+
+    setItems(items);
+  }, [options, selectDataSet])
 
   return (
     <div className="App">
@@ -43,11 +67,9 @@ export default function TopBar() {
           </Popover2>
           <NavbarDivider/>
           <AreaMultiSelect
-            options={options}
-            // areas={areasArray}
+            items={items}
             selectedAreas={selectedAreas}
             setSelectedAreas={setSelectedAreas}
-            selectDataSet={selectDataSet}
           />
           {/* {loading && <Spinner style={{ marginLeft: 10 }} size={16}/>} */}
         </NavbarGroup>
