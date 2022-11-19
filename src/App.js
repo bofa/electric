@@ -20,6 +20,7 @@ import TransformChart from './TransformChart';
 import { adjustHexOpacity } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
+import randomIcon from './icon-random';
 
 // const optionsDatasetsArray = {
 // }
@@ -53,6 +54,8 @@ const rangeOptions = [
   { key: 'Past 2 Weeks', minus: { weeks:  2 } },
   { key: 'Past Week',    minus: { weeks:  1 } },
 ]
+
+const settingsIcon = randomIcon();
 
 function App () {
   const [options, setOptions] = React.useState([]);
@@ -349,7 +352,7 @@ function App () {
               {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range}  key={key} text={key} />)}
             </MenuItem2>
           </Menu>}>
-            <Button icon="cog" />
+            <Button icon={settingsIcon} />
           </Popover2>
           <NavbarDivider/>
           <AreaMultiSelect

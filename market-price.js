@@ -50,7 +50,7 @@ markets.forEach((market, marketIndex) => {
           const inverted = dates.map((x, i) => ({
             x,
             ...marketData.reduce((obj, m) => ({ ...obj, [m.name + '-Price']: m.data[i] }), {})
-          }))
+          })).filter(p => p.x.minute === 0)
 
           return inverted;
         })
