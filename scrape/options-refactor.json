@@ -8682,16 +8682,6 @@
             "key": "LU-Import Balance",
             "average": 450,
             "stdMovingAverage": 77.0424333712428
-          },
-          {
-            "key": "LU-Wind Total",
-            "average": 7,
-            "stdMovingAverage": 12.954504963847686
-          },
-          {
-            "key": "LU-Hydro Total",
-            "average": 1,
-            "stdMovingAverage": 2.2118910169845534
           }
         ]
       },
@@ -8704,6 +8694,11 @@
             "stdMovingAverage": 80.22755468700586
           },
           {
+            "key": "LU-Hydro Run-of-River",
+            "average": 3,
+            "stdMovingAverage": 1.5657696192135795
+          },
+          {
             "key": "LU-Biomass",
             "average": 29,
             "stdMovingAverage": 6.02622599011338
@@ -8714,19 +8709,14 @@
             "stdMovingAverage": 5.8314963750621045
           },
           {
-            "key": "LU-Solar",
-            "average": 28,
-            "stdMovingAverage": 41.389824796610306
-          },
-          {
-            "key": "LU-Wind Total",
+            "key": "LU-Wind onshore",
             "average": 23,
             "stdMovingAverage": 23.84729992946515
           },
           {
-            "key": "LU-Hydro Total",
-            "average": 3,
-            "stdMovingAverage": 2.0618254075850375
+            "key": "LU-Solar",
+            "average": 28,
+            "stdMovingAverage": 41.389824796610306
           }
         ]
       },
@@ -9710,11 +9700,6 @@
             "stdMovingAverage": 15.454772447215912
           },
           {
-            "key": "NO-Hydro Pumped",
-            "average": 294,
-            "stdMovingAverage": 185.09618411340506
-          },
-          {
             "key": "NO-Wind Total",
             "average": 1057,
             "stdMovingAverage": 482.2172824036765
@@ -9740,11 +9725,6 @@
             "stdMovingAverage": 10.070594114464159
           },
           {
-            "key": "NO-Hydro Pumped",
-            "average": 809,
-            "stdMovingAverage": 334.71600515792494
-          },
-          {
             "key": "NO-Wind Total",
             "average": 1221,
             "stdMovingAverage": 716.338039883702
@@ -9768,11 +9748,6 @@
             "key": "NO-Fossil gas",
             "average": 135,
             "stdMovingAverage": 19.09366201895994
-          },
-          {
-            "key": "NO-Hydro Pumped",
-            "average": 150,
-            "stdMovingAverage": 120.12186022596835
           },
           {
             "key": "NO-Wind Total",

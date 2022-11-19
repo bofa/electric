@@ -29,7 +29,7 @@ allFiles
       const pKeys = Object.keys(content[0]);
       const combineKeysValid = combineKeys
         .map(c => [marketLabelCase + c[0], c[1].map(k => marketLabelCase + k)])
-        // .filter(c => c[1].some(key => pKeys.some(pk => pk.includes(key))))
+        .filter(c => c[1].some(key => pKeys.some(pk => pk.includes(key))))
 
       // console.log('combineKeysValid', pKeys, combineKeysValid.map(p => p[0]));
 

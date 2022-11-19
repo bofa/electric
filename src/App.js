@@ -118,6 +118,8 @@ function App () {
                         : () => {};
             
           setFunc(state => {
+            console.log('seriesArray', seriesArray);
+
             const seriesFilteredObj = seriesArray
               .flat()
               .filter(s => option.fields.some(f => s.label.includes(f)))
@@ -125,7 +127,8 @@ function App () {
               .concat(state)
               .reduce((obj, s) => ({ ...obj, [s.label]: obj[s.label]?.concat(s.data) || s.data }), {})
             
-            const seriesFiltered = Object.keys(seriesFilteredObj).map(key => ({ label: key, data: seriesFilteredObj[key] }))
+            const seriesFiltered = Object.keys(seriesFilteredObj)
+              .map(key => ({ label: key, data: seriesFilteredObj[key].sort((a, b) => a.x - b.x) }))
 
             return seriesFiltered;
           });
@@ -139,6 +142,8 @@ function App () {
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
 
+  console.log('fullDataSet', fullDataSet);
+  
   const yearNow = DateTime.now().year;
   const areasArray = options
     .find(option => option.key === selectDataSet)
@@ -161,10 +166,12 @@ function App () {
     .filter(series => selectedAreas.includes(series.label))
     .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
     .sort((s1, s2) => s1.option.stdMovingAverage - s2.option.stdMovingAverage)
-    .map(s => ({ ...s, data: s.data.filter(p => p.x - lowerDate > 0) }))
+    .map(s => ({ ...s, data: s.data.slice(s.data.findIndex(p => p.x - lowerDate > 0)) }))
     .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
 
   const stacked = confidence === 'stacked';
+
+  console.log('processedSeries', processedSeries)
 
   const dataTimeSeries = {
     datasets: 

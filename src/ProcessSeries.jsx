@@ -30,8 +30,7 @@ function ProcessSeries(series, windowSize, samplingSize, confidenceTransform) {
 
   // const windowSize = 24;
   const ranges = tradingData.slice(windowSize-1).map((p, i) => {
-    return tradingData
-      .slice(i, i + windowSize)
+    return tradingData.slice(i, i + windowSize)
   })
   
   const movingAverage = ranges.map((sampledWindow, i) => {
@@ -48,16 +47,16 @@ function ProcessSeries(series, windowSize, samplingSize, confidenceTransform) {
     
   const { min, max } = confidenceTransform(ranges.map(r => r.map(p => p.y)), movingAverage);
 
-    return {
-      label: series.label,
-      tradingData: tradingData,
-      movingAverage: movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
-      min: min.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
-      max: max.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
-      // binAverage: averagePerHour,
-      // buy,
-      // sell,
-    }
+  return {
+    label: series.label,
+    tradingData: tradingData,
+    movingAverage: movingAverage.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
+    min: min.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
+    max: max.filter((_, i, a) => i % samplingSize === 0 || i === a.length - 1),
+    // binAverage: averagePerHour,
+    // buy,
+    // sell,
+  }
 }
 
 let cache = {};
