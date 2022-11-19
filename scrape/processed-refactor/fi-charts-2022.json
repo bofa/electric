@@ -147099,7 +147099,7 @@
   },
   {
     "x": "2022-11-19T14:00:00.000+01:00",
-    "FI-Import Balance": 2179.9,
+    "FI-Import Balance": 2183.5,
     "FI-Nuclear": 2774.3,
     "FI-Biomass": 964.4,
     "FI-Fossil oil": 0.3,
@@ -147108,12 +147108,31 @@
     "FI-Others": 93.1,
     "FI-Other renewables": 2.5,
     "FI-Waste": 23,
-    "FI-Load": null,
-    "FI-Residual load": null,
+    "FI-Load": 10236,
+    "FI-Residual load": 6853.9,
     "FI-Renewable share of generation": 44.9,
-    "FI-Renewable share of load": null,
+    "FI-Renewable share of load": 33,
     "FI-Wind Total": 513.6,
     "FI-Coal Total": 674.1,
     "FI-Hydro Total": 1890.1
+  },
+  {
+    "x": "2022-11-19T15:00:00.000+01:00",
+    "FI-Import Balance": -378.8,
+    "FI-Nuclear": null,
+    "FI-Biomass": null,
+    "FI-Fossil oil": null,
+    "FI-Fossil peat": null,
+    "FI-Fossil gas": null,
+    "FI-Others": null,
+    "FI-Other renewables": null,
+    "FI-Waste": null,
+    "FI-Load": 10438,
+    "FI-Residual load": 9878.9,
+    "FI-Renewable share of generation": null,
+    "FI-Renewable share of load": 5.4,
+    "FI-Wind Total": 559.1,
+    "FI-Coal Total": null,
+    "FI-Hydro Total": null
   }
 ]
