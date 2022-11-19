@@ -92822,13 +92822,25 @@
   {
     "x": "2022-11-19T07:00:00.000+01:00",
     "SE-Import Balance": -3211.7,
-    "SE-Nuclear": null,
-    "SE-Others": null,
-    "SE-Load": null,
-    "SE-Residual load": null,
-    "SE-Renewable share of generation": null,
-    "SE-Renewable share of load": null,
-    "SE-Wind Total": null,
-    "SE-Hydro Total": null
+    "SE-Nuclear": 5746,
+    "SE-Others": 1234.4,
+    "SE-Load": 19743,
+    "SE-Residual load": 7399.3,
+    "SE-Renewable share of generation": 63.9,
+    "SE-Renewable share of load": 62.5,
+    "SE-Wind Total": 3877.1,
+    "SE-Hydro Total": 8466.7
+  },
+  {
+    "x": "2022-11-19T08:00:00.000+01:00",
+    "SE-Import Balance": -2834.5,
+    "SE-Nuclear": 5746,
+    "SE-Others": 1243.5,
+    "SE-Load": 19944,
+    "SE-Residual load": 7411.2,
+    "SE-Renewable share of generation": 64.2,
+    "SE-Renewable share of load": 62.8,
+    "SE-Wind Total": 3894.6,
+    "SE-Hydro Total": 8638.2
   }
 ]
