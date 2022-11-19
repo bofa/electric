@@ -24,6 +24,8 @@ allFiles
       const type = file.split('-')[1] + '-';
       const content = JSON.parse(fs.readFileSync(folderRead + file));
       
+      console.log(type, marketLabel)
+
       const pKeys = Object.keys(content[0]);
       const combineKeysValid = combineKeys
         .map(c => [marketLabelCase + c[0], c[1].map(k => marketLabelCase + k)])
@@ -47,9 +49,10 @@ allFiles
         // Remove keys
         .map(y => {
           removeKeys.forEach(k => delete y[k]);
-          Object.keys(y)
-            .filter(k => y[k] === null)
-            .forEach(k => delete y[k])
+
+          // Object.keys(y)
+          //   .filter(k => y[k] === null)
+          //   .forEach(k => delete y[k])
 
           return y;
         })

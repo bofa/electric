@@ -52,7 +52,9 @@ const options = // ['price', 'production', 'consumption']
   },
 ].map(option => {
     const typeFiles = allFiles
-      // .filter(file => file.includes(2022))
+      // .filter(file => file.includes('cz'))
+      // .filter(file => file.includes('price'))
+      // .filter(file => file.includes(2020))
       // .filter(file => file.includes(option.name.toLowerCase()))
 
     const files = typeFiles
@@ -66,11 +68,12 @@ const options = // ['price', 'production', 'consumption']
             .filter(key => key !== 'x')
             .filter(key => option.fields.some(partial => key.includes(partial)))
             .map(key => {
-              const values = content.slice(-365*24).map(p => p[key]);
-              const average = values.reduce((sum, value) => sum + value) / values.length;
+              const values = content.map(p => p[key]).filter(v => v !== undefined);
+              const average = values.reduce((sum, value) => sum + value, 0) / values.length;
               const window = 7 * 24;
               const movingAverage = values.map((_, i, a1) => a1.slice(Math.max(i-window, 0), i+1).reduce((s, v, i, a2) => s + v/a2.length, 0))
               const variance = values.reduce((sum , value, i) => sum + (value-movingAverage[i])**2, 0) / values.length;
+              
               return {
                 key,
                 average: Math.round(average),
