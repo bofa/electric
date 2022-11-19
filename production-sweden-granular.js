@@ -19,7 +19,7 @@ const productionTypes = [
   // { key: 'VI', name: 'SE-wind' },
 ]
 
-const fetchDaysBack = 5 * 365;
+const fetchDaysBack = 1 * 365;
 const too = luxon.DateTime.now();
 const from = too.minus({ days: fetchDaysBack });
 
