@@ -10,6 +10,13 @@ function toggleItems(selected, item) {
   }
 }
 
+function matchQuery(query, itemString) {
+  const itemStringLower = itemString.toLowerCase();
+  const querys = query.split(' ').map(q => q.toLowerCase())
+  
+  return querys.every(query => itemStringLower.includes(query));
+}
+
 export default class AreaMultiSelect extends React.PureComponent {
    
   renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
@@ -44,7 +51,7 @@ export default class AreaMultiSelect extends React.PureComponent {
         resetOnSelect={false}
         items={items}
         itemRenderer={this.renderItem}
-        itemPredicate={(query, item) => item.area.toLowerCase().includes(query.toLowerCase())}
+        itemPredicate={(query, item) => matchQuery(query, item.area)}
         noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
         onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
         selectedItems={items.filter(item => selectedAreas.includes(item.area))}
