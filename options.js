@@ -13,7 +13,7 @@ const options = // ['price', 'production', 'consumption']
   },
   {
     key: 'productionDataSet',
-    name: 'Production',
+    name: 'Electricy Source/Flow',
     unit: 'MW',
     fields: [
       '-Nuclear',
@@ -36,19 +36,8 @@ const options = // ['price', 'production', 'consumption']
       '-Solar',
       '-Others',
       '-Import Balance',
+      '-Load',
     ],
-  },
-  {
-    key: 'consumptionDataSet',
-    name: 'Consumption',
-    unit: 'MW',
-    fields: ['-Load'],
-  },
-  {
-    key: 'exportDataSet',
-    name: 'Export',
-    unit: 'MW',
-    fields: ['-Import Balance'],
   },
 ].map(option => {
     const typeFiles = allFiles

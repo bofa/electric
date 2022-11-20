@@ -3038,7 +3038,7 @@
   },
   {
     "key": "productionDataSet",
-    "name": "Production",
+    "name": "Electricy Source/Flow",
     "unit": "MW",
     "fields": [
       "-Nuclear",
@@ -3060,7 +3060,8 @@
       "-Wind Total",
       "-Solar",
       "-Others",
-      "-Import Balance"
+      "-Import Balance",
+      "-Load"
     ],
     "files": [
       {
@@ -3095,6 +3096,11 @@
             "key": "AT-Solar",
             "average": 94,
             "stdMovingAverage": 123.29864752888048
+          },
+          {
+            "key": "AT-Load",
+            "average": 6762,
+            "stdMovingAverage": 1226.183749636143
           },
           {
             "key": "AT-Hydro Pumped",
@@ -3152,6 +3158,11 @@
             "stdMovingAverage": 140.47680211437628
           },
           {
+            "key": "AT-Load",
+            "average": 7159,
+            "stdMovingAverage": 1202.3504951191205
+          },
+          {
             "key": "AT-Hydro Pumped",
             "average": 341,
             "stdMovingAverage": 1001.8345316887742
@@ -3205,6 +3216,11 @@
             "key": "AT-Solar",
             "average": 131,
             "stdMovingAverage": 172.78450267972016
+          },
+          {
+            "key": "AT-Load",
+            "average": 7268,
+            "stdMovingAverage": 1192.557708240166
           },
           {
             "key": "AT-Hydro Pumped",
@@ -3262,6 +3278,11 @@
             "stdMovingAverage": 203.54558693164074
           },
           {
+            "key": "AT-Load",
+            "average": 7278,
+            "stdMovingAverage": 1217.9784750875017
+          },
+          {
             "key": "AT-Hydro Pumped",
             "average": 263,
             "stdMovingAverage": 1035.221563272342
@@ -3315,6 +3336,11 @@
             "key": "AT-Solar",
             "average": 76,
             "stdMovingAverage": 101.92573305570133
+          },
+          {
+            "key": "AT-Load",
+            "average": 7214,
+            "stdMovingAverage": 1213.845029343791
           },
           {
             "key": "AT-Hydro Pumped",
@@ -3372,6 +3398,11 @@
             "stdMovingAverage": 128.84665194223825
           },
           {
+            "key": "AT-Load",
+            "average": 6964,
+            "stdMovingAverage": 1177.3763799068824
+          },
+          {
             "key": "AT-Hydro Pumped",
             "average": 370,
             "stdMovingAverage": 1118.0997948935612
@@ -3427,6 +3458,11 @@
             "stdMovingAverage": 130.9442017810451
           },
           {
+            "key": "AT-Load",
+            "average": 7197,
+            "stdMovingAverage": 1115.8752754993839
+          },
+          {
             "key": "AT-Hydro Pumped",
             "average": 304,
             "stdMovingAverage": 1107.3760968149354
@@ -3448,48 +3484,53 @@
         "options": [
           {
             "key": "AT-Import Balance",
-            "average": 1003,
-            "stdMovingAverage": 1083.280457441578
+            "average": 1004,
+            "stdMovingAverage": 1082.881767885148
           },
           {
             "key": "AT-Biomass",
             "average": 45,
-            "stdMovingAverage": 4.793409444834715
+            "stdMovingAverage": 4.791544483023707
           },
           {
             "key": "AT-Fossil gas",
             "average": 1140,
-            "stdMovingAverage": 571.8871998456539
+            "stdMovingAverage": 571.7263105211345
           },
           {
             "key": "AT-Geothermal",
             "average": 0,
-            "stdMovingAverage": 0.0011296395911780503
+            "stdMovingAverage": 0.001129202226668718
           },
           {
             "key": "AT-Others",
             "average": 22,
-            "stdMovingAverage": 0.24852071005917103
+            "stdMovingAverage": 0.248424489867118
           },
           {
             "key": "AT-Solar",
             "average": 95,
-            "stdMovingAverage": 126.04125629868518
+            "stdMovingAverage": 125.9945150011853
+          },
+          {
+            "key": "AT-Load",
+            "average": 6939,
+            "stdMovingAverage": 1064.0145855412688
           },
           {
             "key": "AT-Hydro Pumped",
             "average": 258,
-            "stdMovingAverage": 1192.1110837153049
+            "stdMovingAverage": 1191.651751196792
           },
           {
             "key": "AT-Wind Total",
-            "average": 815,
-            "stdMovingAverage": 727.4794583637632
+            "average": 814,
+            "stdMovingAverage": 727.2660392168897
           },
           {
             "key": "AT-Hydro Total",
-            "average": 3724,
-            "stdMovingAverage": 1414.4047141268268
+            "average": 3723,
+            "stdMovingAverage": 1413.9761789655586
           }
         ]
       },
@@ -3537,6 +3578,11 @@
             "stdMovingAverage": 203.83014528674593
           },
           {
+            "key": "CH-Load",
+            "average": 7095,
+            "stdMovingAverage": 823.5341477663042
+          },
+          {
             "key": "CH-Hydro Pumped",
             "average": 262,
             "stdMovingAverage": 314.980810536378
@@ -3570,6 +3616,11 @@
             "key": "CH-Solar",
             "average": 152,
             "stdMovingAverage": 233.70057410815338
+          },
+          {
+            "key": "CH-Load",
+            "average": 7125,
+            "stdMovingAverage": 757.3062438040388
           },
           {
             "key": "CH-Hydro Pumped",
@@ -3607,6 +3658,11 @@
             "stdMovingAverage": 287.81751935730045
           },
           {
+            "key": "CH-Load",
+            "average": 6980,
+            "stdMovingAverage": 653.2084967168729
+          },
+          {
             "key": "CH-Hydro Pumped",
             "average": 475,
             "stdMovingAverage": 451.62811851007416
@@ -3640,6 +3696,11 @@
             "key": "CH-Solar",
             "average": 222,
             "stdMovingAverage": 355.09734615336225
+          },
+          {
+            "key": "CH-Load",
+            "average": 6897,
+            "stdMovingAverage": 687.831822016131
           },
           {
             "key": "CH-Hydro Pumped",
@@ -3677,6 +3738,11 @@
             "stdMovingAverage": 365.994152408138
           },
           {
+            "key": "CH-Load",
+            "average": 7238,
+            "stdMovingAverage": 722.8315515794467
+          },
+          {
             "key": "CH-Hydro Pumped",
             "average": 472,
             "stdMovingAverage": 422.4459712098376
@@ -3710,6 +3776,11 @@
             "key": "CH-Solar",
             "average": 296,
             "stdMovingAverage": 450.7476867307505
+          },
+          {
+            "key": "CH-Load",
+            "average": 7106,
+            "stdMovingAverage": 694.4297568991644
           },
           {
             "key": "CH-Hydro Pumped",
@@ -3747,6 +3818,11 @@
             "stdMovingAverage": 486.58839793968906
           },
           {
+            "key": "CH-Load",
+            "average": 7252,
+            "stdMovingAverage": 694.0534944226058
+          },
+          {
             "key": "CH-Hydro Pumped",
             "average": 473,
             "stdMovingAverage": 468.08022504270554
@@ -3768,33 +3844,38 @@
         "options": [
           {
             "key": "CH-Import Balance",
-            "average": 275,
-            "stdMovingAverage": 1798.0260493258972
+            "average": 279,
+            "stdMovingAverage": 1797.369080993602
           },
           {
             "key": "CH-Nuclear",
-            "average": 2612,
-            "stdMovingAverage": 233.453797689413
+            "average": 2613,
+            "stdMovingAverage": 233.26213882958515
           },
           {
             "key": "CH-Solar",
-            "average": 387,
-            "stdMovingAverage": 610.3628988223945
+            "average": 386,
+            "stdMovingAverage": 609.8196065671062
+          },
+          {
+            "key": "CH-Load",
+            "average": 7117,
+            "stdMovingAverage": 775.75129844773
           },
           {
             "key": "CH-Hydro Pumped",
-            "average": 400,
-            "stdMovingAverage": 434.6267847456114
+            "average": 399,
+            "stdMovingAverage": 434.4578854969367
           },
           {
             "key": "CH-Wind Total",
             "average": 10,
-            "stdMovingAverage": 9.708504378071593
+            "stdMovingAverage": 9.699740493295359
           },
           {
             "key": "CH-Hydro Total",
-            "average": 3767,
-            "stdMovingAverage": 1685.276958217126
+            "average": 3764,
+            "stdMovingAverage": 1684.1083698733405
           }
         ]
       },
@@ -3835,6 +3916,11 @@
             "key": "CZ-Solar",
             "average": 256,
             "stdMovingAverage": 377.8522203719472
+          },
+          {
+            "key": "CZ-Load",
+            "average": 7249,
+            "stdMovingAverage": 978.2371224397401
           },
           {
             "key": "CZ-Hydro Pumped",
@@ -3897,6 +3983,11 @@
             "stdMovingAverage": 362.08458969381826
           },
           {
+            "key": "CZ-Load",
+            "average": 7309,
+            "stdMovingAverage": 1324.989819002831
+          },
+          {
             "key": "CZ-Hydro Pumped",
             "average": -43,
             "stdMovingAverage": 440.05299510891155
@@ -3955,6 +4046,11 @@
             "key": "CZ-Solar",
             "average": 246,
             "stdMovingAverage": 364.5096811493672
+          },
+          {
+            "key": "CZ-Load",
+            "average": 7547,
+            "stdMovingAverage": 1033.3678948129937
           },
           {
             "key": "CZ-Hydro Pumped",
@@ -4017,6 +4113,11 @@
             "stdMovingAverage": 388.3572650100757
           },
           {
+            "key": "CZ-Load",
+            "average": 7617,
+            "stdMovingAverage": 1072.5691506711373
+          },
+          {
             "key": "CZ-Hydro Pumped",
             "average": -38,
             "stdMovingAverage": 407.30585282436107
@@ -4075,6 +4176,11 @@
             "key": "CZ-Solar",
             "average": 257,
             "stdMovingAverage": 369.78525252496365
+          },
+          {
+            "key": "CZ-Load",
+            "average": 7551,
+            "stdMovingAverage": 1058.0536452366619
           },
           {
             "key": "CZ-Hydro Pumped",
@@ -4137,6 +4243,11 @@
             "stdMovingAverage": 364.34009345892525
           },
           {
+            "key": "CZ-Load",
+            "average": 7319,
+            "stdMovingAverage": 1037.7116203704225
+          },
+          {
             "key": "CZ-Hydro Pumped",
             "average": -45,
             "stdMovingAverage": 483.3148497988472
@@ -4197,6 +4308,11 @@
             "stdMovingAverage": 369.3374754712151
           },
           {
+            "key": "CZ-Load",
+            "average": 7608,
+            "stdMovingAverage": 1042.2939417645994
+          },
+          {
             "key": "CZ-Hydro Pumped",
             "average": -45,
             "stdMovingAverage": 461.86984774705485
@@ -4223,58 +4339,63 @@
         "options": [
           {
             "key": "CZ-Import Balance",
-            "average": -1493,
-            "stdMovingAverage": 711.3276779763513
+            "average": -1496,
+            "stdMovingAverage": 713.4534305111156
           },
           {
             "key": "CZ-Nuclear",
-            "average": 3265,
-            "stdMovingAverage": 220.09981643997125
+            "average": 3266,
+            "stdMovingAverage": 216.47474694369998
           },
           {
             "key": "CZ-Biomass",
             "average": 274,
-            "stdMovingAverage": 16.198810500914004
+            "stdMovingAverage": 15.845935698616158
           },
           {
             "key": "CZ-Fossil oil",
             "average": 3,
-            "stdMovingAverage": 3.359908938243329
+            "stdMovingAverage": 3.3562214875136074
           },
           {
             "key": "CZ-Fossil gas",
-            "average": 610,
-            "stdMovingAverage": 327.02229764469706
+            "average": 609,
+            "stdMovingAverage": 326.7207732275457
           },
           {
             "key": "CZ-Others",
             "average": 3,
-            "stdMovingAverage": 5.553120287501618
+            "stdMovingAverage": 5.553422761172103
           },
           {
             "key": "CZ-Solar",
-            "average": 301,
-            "stdMovingAverage": 417.0686482330904
+            "average": 300,
+            "stdMovingAverage": 416.72646450898714
+          },
+          {
+            "key": "CZ-Load",
+            "average": 7271,
+            "stdMovingAverage": 1010.9020115923304
           },
           {
             "key": "CZ-Hydro Pumped",
             "average": -34,
-            "stdMovingAverage": 384.5447627929082
+            "stdMovingAverage": 385.01111699923615
           },
           {
             "key": "CZ-Wind Total",
             "average": 73,
-            "stdMovingAverage": 52.819581740248644
+            "stdMovingAverage": 52.79266099914253
           },
           {
             "key": "CZ-Coal Total",
-            "average": 3656,
-            "stdMovingAverage": 540.2813144932453
+            "average": 3659,
+            "stdMovingAverage": 538.9067839364064
           },
           {
             "key": "CZ-Hydro Total",
             "average": 206,
-            "stdMovingAverage": 445.8062455498837
+            "stdMovingAverage": 446.4250954801719
           }
         ]
       },
@@ -4354,6 +4475,11 @@
             "stdMovingAverage": 6015.463662638634
           },
           {
+            "key": "DE-Load",
+            "average": 57142,
+            "stdMovingAverage": 9570.718809326843
+          },
+          {
             "key": "DE-Hydro Pumped",
             "average": -140,
             "stdMovingAverage": 1536.4493433808152
@@ -4417,6 +4543,11 @@
             "key": "DE-Solar",
             "average": 4194,
             "stdMovingAverage": 5953.051434429129
+          },
+          {
+            "key": "DE-Load",
+            "average": 57320,
+            "stdMovingAverage": 9600.209252384024
           },
           {
             "key": "DE-Hydro Pumped",
@@ -4484,6 +4615,11 @@
             "stdMovingAverage": 6191.758347466835
           },
           {
+            "key": "DE-Load",
+            "average": 57769,
+            "stdMovingAverage": 9542.191900384161
+          },
+          {
             "key": "DE-Hydro Pumped",
             "average": 59,
             "stdMovingAverage": 1243.7972402429252
@@ -4547,6 +4683,11 @@
             "key": "DE-Solar",
             "average": 4967,
             "stdMovingAverage": 6986.691590470938
+          },
+          {
+            "key": "DE-Load",
+            "average": 58156,
+            "stdMovingAverage": 9308.71327142655
           },
           {
             "key": "DE-Hydro Pumped",
@@ -4614,6 +4755,11 @@
             "stdMovingAverage": 7171.252852592759
           },
           {
+            "key": "DE-Load",
+            "average": 56810,
+            "stdMovingAverage": 9170.283031149866
+          },
+          {
             "key": "DE-Hydro Pumped",
             "average": -198,
             "stdMovingAverage": 1658.449331225274
@@ -4677,6 +4823,11 @@
             "key": "DE-Solar",
             "average": 5532,
             "stdMovingAverage": 7793.747457771056
+          },
+          {
+            "key": "DE-Load",
+            "average": 55288,
+            "stdMovingAverage": 8766.624324476967
           },
           {
             "key": "DE-Hydro Pumped",
@@ -4744,6 +4895,11 @@
             "stdMovingAverage": 7874.4324256424115
           },
           {
+            "key": "DE-Load",
+            "average": 57630,
+            "stdMovingAverage": 8762.985852012998
+          },
+          {
             "key": "DE-Hydro Pumped",
             "average": -150,
             "stdMovingAverage": 1408.5611362146708
@@ -4770,63 +4926,68 @@
         "options": [
           {
             "key": "DE-Import Balance",
-            "average": -2971,
-            "stdMovingAverage": 4674.203277726093
+            "average": -2968,
+            "stdMovingAverage": 4673.668133047426
           },
           {
             "key": "DE-Nuclear",
             "average": 3749,
-            "stdMovingAverage": 291.27677232849777
+            "stdMovingAverage": 291.014049328269
           },
           {
             "key": "DE-Biomass",
-            "average": 4811,
-            "stdMovingAverage": 156.1018393579418
+            "average": 4812,
+            "stdMovingAverage": 155.96844986467252
           },
           {
             "key": "DE-Fossil oil",
             "average": 63,
-            "stdMovingAverage": 96.10169772362381
+            "stdMovingAverage": 96.01588539377428
           },
           {
             "key": "DE-Fossil gas",
-            "average": 4892,
-            "stdMovingAverage": 2185.1359030341478
+            "average": 4891,
+            "stdMovingAverage": 2184.552395190287
           },
           {
             "key": "DE-Geothermal",
             "average": 20,
-            "stdMovingAverage": 2.2870464629384437
+            "stdMovingAverage": 2.29470881414783
           },
           {
             "key": "DE-Others",
             "average": 56,
-            "stdMovingAverage": 7.274331261451304
+            "stdMovingAverage": 7.284915698169324
           },
           {
             "key": "DE-Solar",
-            "average": 7297,
-            "stdMovingAverage": 9764.245205374538
+            "average": 7284,
+            "stdMovingAverage": 9755.941575338291
+          },
+          {
+            "key": "DE-Load",
+            "average": 55806,
+            "stdMovingAverage": 8503.228975310818
           },
           {
             "key": "DE-Hydro Pumped",
-            "average": -223,
-            "stdMovingAverage": 1831.7294802428196
+            "average": -222,
+            "stdMovingAverage": 1833.9897872210686
           },
           {
             "key": "DE-Wind Total",
-            "average": 13980,
-            "stdMovingAverage": 8706.497620195865
+            "average": 13964,
+            "stdMovingAverage": 8716.116650564914
           },
           {
             "key": "DE-Coal Total",
-            "average": 18073,
-            "stdMovingAverage": 3865.614849364141
+            "average": 18086,
+            "stdMovingAverage": 3863.38157961757
           },
           {
             "key": "DE-Hydro Total",
-            "average": 1658,
-            "stdMovingAverage": 1885.2969646959368
+            "average": 1659,
+            "stdMovingAverage": 1887.59540359469
           }
         ]
       },
@@ -4857,6 +5018,11 @@
             "key": "DK-Solar",
             "average": 69,
             "stdMovingAverage": 103.27295985987192
+          },
+          {
+            "key": "DK-Load",
+            "average": 3747,
+            "stdMovingAverage": 696.3809652938498
           },
           {
             "key": "DK-Wind Total",
@@ -4899,6 +5065,11 @@
             "stdMovingAverage": 124.81918953584105
           },
           {
+            "key": "DK-Load",
+            "average": 3676,
+            "stdMovingAverage": 685.0124840258733
+          },
+          {
             "key": "DK-Wind Total",
             "average": 1353,
             "stdMovingAverage": 938.4513026354791
@@ -4937,6 +5108,11 @@
             "key": "DK-Solar",
             "average": 88,
             "stdMovingAverage": 129.75209742630605
+          },
+          {
+            "key": "DK-Load",
+            "average": 3706,
+            "stdMovingAverage": 677.3070485674583
           },
           {
             "key": "DK-Wind Total",
@@ -4979,6 +5155,11 @@
             "stdMovingAverage": 161.4064479299605
           },
           {
+            "key": "DK-Load",
+            "average": 3835,
+            "stdMovingAverage": 665.0123589052952
+          },
+          {
             "key": "DK-Wind Total",
             "average": 1592,
             "stdMovingAverage": 1166.4956179156493
@@ -5017,6 +5198,11 @@
             "key": "DK-Solar",
             "average": 111,
             "stdMovingAverage": 163.33622983766574
+          },
+          {
+            "key": "DK-Load",
+            "average": 3829,
+            "stdMovingAverage": 647.3543882563163
           },
           {
             "key": "DK-Wind Total",
@@ -5059,6 +5245,11 @@
             "stdMovingAverage": 208.71594760337527
           },
           {
+            "key": "DK-Load",
+            "average": 3882,
+            "stdMovingAverage": 649.7841627273389
+          },
+          {
             "key": "DK-Wind Total",
             "average": 1869,
             "stdMovingAverage": 1134.3258357708858
@@ -5099,6 +5290,11 @@
             "stdMovingAverage": 232.32201283251823
           },
           {
+            "key": "DK-Load",
+            "average": 4143,
+            "stdMovingAverage": 647.4193271735974
+          },
+          {
             "key": "DK-Wind Total",
             "average": 1835,
             "stdMovingAverage": 1283.6460165758795
@@ -5115,38 +5311,43 @@
         "options": [
           {
             "key": "DK-Import Balance",
-            "average": 220,
-            "stdMovingAverage": 1035.6101531440697
+            "average": 219,
+            "stdMovingAverage": 1034.8086580782692
           },
           {
             "key": "DK-Biomass",
-            "average": 431,
-            "stdMovingAverage": 173.33544052854597
+            "average": 432,
+            "stdMovingAverage": 173.44241755660485
           },
           {
             "key": "DK-Fossil oil",
             "average": 35,
-            "stdMovingAverage": 18.798961932846105
+            "stdMovingAverage": 18.788384216475315
           },
           {
             "key": "DK-Fossil gas",
-            "average": 221,
-            "stdMovingAverage": 99.32985856352641
+            "average": 222,
+            "stdMovingAverage": 99.61879922775063
           },
           {
             "key": "DK-Solar",
             "average": 269,
-            "stdMovingAverage": 368.4930518375014
+            "stdMovingAverage": 368.16490551844703
+          },
+          {
+            "key": "DK-Load",
+            "average": 3882,
+            "stdMovingAverage": 597.8954037309525
           },
           {
             "key": "DK-Wind Total",
             "average": 2146,
-            "stdMovingAverage": 1316.8288269736174
+            "stdMovingAverage": 1317.161765345878
           },
           {
             "key": "DK-Coal Total",
             "average": 554,
-            "stdMovingAverage": 248.16004883847555
+            "stdMovingAverage": 248.48542311550906
           }
         ]
       },
@@ -5211,6 +5412,11 @@
             "stdMovingAverage": 0.02967941822408803
           },
           {
+            "key": "EE-Load",
+            "average": 901,
+            "stdMovingAverage": 163.94312995833818
+          },
+          {
             "key": "EE-Wind Total",
             "average": 71,
             "stdMovingAverage": 50.62726429526945
@@ -5254,6 +5460,11 @@
             "key": "EE-Solar",
             "average": 1,
             "stdMovingAverage": 0.036427880646334135
+          },
+          {
+            "key": "EE-Load",
+            "average": 929,
+            "stdMovingAverage": 163.86877749678405
           },
           {
             "key": "EE-Wind Total",
@@ -5301,6 +5512,11 @@
             "stdMovingAverage": 0.08273434717102421
           },
           {
+            "key": "EE-Load",
+            "average": 947,
+            "stdMovingAverage": 158.6625585496839
+          },
+          {
             "key": "EE-Wind Total",
             "average": 80,
             "stdMovingAverage": 62.30717568396378
@@ -5344,6 +5560,11 @@
             "key": "EE-Solar",
             "average": 1,
             "stdMovingAverage": 0.10482931925603992
+          },
+          {
+            "key": "EE-Load",
+            "average": 950,
+            "stdMovingAverage": 197.13209198133592
           },
           {
             "key": "EE-Wind Total",
@@ -5391,6 +5612,11 @@
             "stdMovingAverage": 0.09335516248855585
           },
           {
+            "key": "EE-Load",
+            "average": 939,
+            "stdMovingAverage": 152.8807409038009
+          },
+          {
             "key": "EE-Wind Total",
             "average": 81,
             "stdMovingAverage": 55.05879918619595
@@ -5434,6 +5660,11 @@
             "key": "EE-Solar",
             "average": 15,
             "stdMovingAverage": 22.420410530540845
+          },
+          {
+            "key": "EE-Load",
+            "average": 905,
+            "stdMovingAverage": 143.11426757531362
           },
           {
             "key": "EE-Wind Total",
@@ -5481,6 +5712,11 @@
             "stdMovingAverage": 58.673525365935376
           },
           {
+            "key": "EE-Load",
+            "average": 962,
+            "stdMovingAverage": 148.5337931306899
+          },
+          {
             "key": "EE-Wind Total",
             "average": 89,
             "stdMovingAverage": 60.232986936552464
@@ -5503,42 +5739,47 @@
           {
             "key": "EE-Import Balance",
             "average": 104,
-            "stdMovingAverage": 173.9213498584191
+            "stdMovingAverage": 174.01250829060598
           },
           {
             "key": "EE-Biomass",
             "average": 146,
-            "stdMovingAverage": 52.358054089267945
+            "stdMovingAverage": 52.311446657180596
           },
           {
             "key": "EE-Fossil oil shale",
             "average": 447,
-            "stdMovingAverage": 175.18199654007125
+            "stdMovingAverage": 175.05266808526596
           },
           {
             "key": "EE-Fossil gas",
             "average": 4,
-            "stdMovingAverage": 1.0968743362903022
+            "stdMovingAverage": 1.0960094905929736
           },
           {
             "key": "EE-Solar",
             "average": 66,
-            "stdMovingAverage": 92.88525405431935
+            "stdMovingAverage": 92.80199978717587
+          },
+          {
+            "key": "EE-Load",
+            "average": 912,
+            "stdMovingAverage": 142.3920418308156
           },
           {
             "key": "EE-Wind Total",
             "average": 79,
-            "stdMovingAverage": 56.65734339491676
+            "stdMovingAverage": 56.61820135348879
           },
           {
             "key": "EE-Coal Total",
             "average": 41,
-            "stdMovingAverage": 7.997154710559211
+            "stdMovingAverage": 7.989927745590018
           },
           {
             "key": "EE-Hydro Total",
             "average": 2,
-            "stdMovingAverage": 0.27036224497594774
+            "stdMovingAverage": 0.27023625475262014
           }
         ]
       },
@@ -5613,6 +5854,11 @@
             "stdMovingAverage": 1568.9327865866287
           },
           {
+            "key": "ES-Load",
+            "average": 28272,
+            "stdMovingAverage": 4511.0790172273055
+          },
+          {
             "key": "ES-Hydro Pumped",
             "average": -532,
             "stdMovingAverage": 765.0906581939201
@@ -5671,6 +5917,11 @@
             "key": "ES-Solar",
             "average": 1406,
             "stdMovingAverage": 1543.5894732043248
+          },
+          {
+            "key": "ES-Load",
+            "average": 28492,
+            "stdMovingAverage": 4254.683013233387
           },
           {
             "key": "ES-Hydro Pumped",
@@ -5733,6 +5984,11 @@
             "stdMovingAverage": 1614.1636406189966
           },
           {
+            "key": "ES-Load",
+            "average": 28851,
+            "stdMovingAverage": 4250.8664226978535
+          },
+          {
             "key": "ES-Hydro Pumped",
             "average": -418,
             "stdMovingAverage": 726.7381736515088
@@ -5791,6 +6047,11 @@
             "key": "ES-Solar",
             "average": 1373,
             "stdMovingAverage": 1544.319782858455
+          },
+          {
+            "key": "ES-Load",
+            "average": 29057,
+            "stdMovingAverage": 4361.056167734873
           },
           {
             "key": "ES-Hydro Pumped",
@@ -5853,6 +6114,11 @@
             "stdMovingAverage": 1812.2139562508776
           },
           {
+            "key": "ES-Load",
+            "average": 28538,
+            "stdMovingAverage": 4193.084233600263
+          },
+          {
             "key": "ES-Hydro Pumped",
             "average": -367,
             "stdMovingAverage": 631.5176068746397
@@ -5911,6 +6177,11 @@
             "key": "ES-Solar",
             "average": 2281,
             "stdMovingAverage": 2636.944406283608
+          },
+          {
+            "key": "ES-Load",
+            "average": 27087,
+            "stdMovingAverage": 4011.3159762790588
           },
           {
             "key": "ES-Hydro Pumped",
@@ -5973,6 +6244,11 @@
             "stdMovingAverage": 3377.6162735468506
           },
           {
+            "key": "ES-Load",
+            "average": 27845,
+            "stdMovingAverage": 3925.6477972655975
+          },
+          {
             "key": "ES-Hydro Pumped",
             "average": -523,
             "stdMovingAverage": 774.1123508913696
@@ -5999,58 +6275,63 @@
         "options": [
           {
             "key": "ES-Import Balance",
-            "average": -2139,
-            "stdMovingAverage": 1667.028285595258
+            "average": -2141,
+            "stdMovingAverage": 1667.9276536579055
           },
           {
             "key": "ES-Nuclear",
             "average": 6342,
-            "stdMovingAverage": 503.51291905256545
+            "stdMovingAverage": 503.3185489610116
           },
           {
             "key": "ES-Biomass",
             "average": 472,
-            "stdMovingAverage": 49.87347243212054
+            "stdMovingAverage": 49.858146210523344
           },
           {
             "key": "ES-Fossil oil",
             "average": 129,
-            "stdMovingAverage": 29.289879271608132
+            "stdMovingAverage": 29.2785830781605
           },
           {
             "key": "ES-Fossil gas",
-            "average": 9074,
-            "stdMovingAverage": 2993.563487878974
+            "average": 9071,
+            "stdMovingAverage": 2992.5469240458415
           },
           {
             "key": "ES-Others",
             "average": 32,
-            "stdMovingAverage": 12.753613086819167
+            "stdMovingAverage": 12.748882818226877
           },
           {
             "key": "ES-Solar",
-            "average": 3802,
-            "stdMovingAverage": 4331.539029353114
+            "average": 3800,
+            "stdMovingAverage": 4330.1568969198925
+          },
+          {
+            "key": "ES-Load",
+            "average": 27041,
+            "stdMovingAverage": 3874.3705694090286
           },
           {
             "key": "ES-Hydro Pumped",
             "average": -669,
-            "stdMovingAverage": 836.9997799598406
+            "stdMovingAverage": 837.072340326607
           },
           {
             "key": "ES-Wind Total",
-            "average": 6502,
-            "stdMovingAverage": 3332.317239125622
+            "average": 6508,
+            "stdMovingAverage": 3331.6368238139185
           },
           {
             "key": "ES-Coal Total",
             "average": 904,
-            "stdMovingAverage": 268.4648433766721
+            "stdMovingAverage": 268.3611401702736
           },
           {
             "key": "ES-Hydro Total",
-            "average": 1645,
-            "stdMovingAverage": 1787.7319981174385
+            "average": 1646,
+            "stdMovingAverage": 1788.5191717541663
           }
         ]
       },
@@ -6120,6 +6401,11 @@
             "stdMovingAverage": 24.123785140658406
           },
           {
+            "key": "FI-Load",
+            "average": 9259,
+            "stdMovingAverage": 953.7243317428507
+          },
+          {
             "key": "FI-Wind Total",
             "average": 236,
             "stdMovingAverage": 147.96426766577622
@@ -6168,6 +6454,11 @@
             "key": "FI-Others",
             "average": 181,
             "stdMovingAverage": 26.437837943321572
+          },
+          {
+            "key": "FI-Load",
+            "average": 9524,
+            "stdMovingAverage": 975.8542720137597
           },
           {
             "key": "FI-Wind Total",
@@ -6220,6 +6511,11 @@
             "stdMovingAverage": 44.221107342202956
           },
           {
+            "key": "FI-Load",
+            "average": 9513,
+            "stdMovingAverage": 809.2658982337443
+          },
+          {
             "key": "FI-Wind Total",
             "average": 470,
             "stdMovingAverage": 334.9080492669457
@@ -6268,6 +6564,11 @@
             "key": "FI-Others",
             "average": 160,
             "stdMovingAverage": 92.47142979198841
+          },
+          {
+            "key": "FI-Load",
+            "average": 9789,
+            "stdMovingAverage": 764.472725055195
           },
           {
             "key": "FI-Wind Total",
@@ -6320,6 +6621,11 @@
             "stdMovingAverage": 60.388359380430195
           },
           {
+            "key": "FI-Load",
+            "average": 9525,
+            "stdMovingAverage": 737.1127715217035
+          },
+          {
             "key": "FI-Wind Total",
             "average": 648,
             "stdMovingAverage": 425.9073440556329
@@ -6368,6 +6674,11 @@
             "key": "FI-Others",
             "average": 73,
             "stdMovingAverage": 45.124290022226866
+          },
+          {
+            "key": "FI-Load",
+            "average": 8920,
+            "stdMovingAverage": 705.189250808664
           },
           {
             "key": "FI-Wind Total",
@@ -6420,6 +6731,11 @@
             "stdMovingAverage": 28.094767188706225
           },
           {
+            "key": "FI-Load",
+            "average": 9670,
+            "stdMovingAverage": 766.6309841514924
+          },
+          {
             "key": "FI-Wind Total",
             "average": 902,
             "stdMovingAverage": 608.3065817497416
@@ -6441,48 +6757,53 @@
         "options": [
           {
             "key": "FI-Import Balance",
-            "average": 1434,
-            "stdMovingAverage": 641.1228935109328
+            "average": 1435,
+            "stdMovingAverage": 640.1474842208223
           },
           {
             "key": "FI-Nuclear",
             "average": 2734,
-            "stdMovingAverage": 296.41133830935587
+            "stdMovingAverage": 296.1550602379268
           },
           {
             "key": "FI-Biomass",
             "average": 647,
-            "stdMovingAverage": 64.60594610057896
+            "stdMovingAverage": 64.66686671242846
           },
           {
             "key": "FI-Fossil oil",
             "average": 6,
-            "stdMovingAverage": 7.86224003741671
+            "stdMovingAverage": 7.8556608136181705
           },
           {
             "key": "FI-Fossil gas",
             "average": 195,
-            "stdMovingAverage": 91.8809489899674
+            "stdMovingAverage": 91.80113536791107
           },
           {
             "key": "FI-Others",
             "average": 64,
-            "stdMovingAverage": 21.1846967756952
+            "stdMovingAverage": 21.177306617935002
+          },
+          {
+            "key": "FI-Load",
+            "average": 8897,
+            "stdMovingAverage": 661.3651009618478
           },
           {
             "key": "FI-Wind Total",
-            "average": 1254,
-            "stdMovingAverage": 801.3615042518817
+            "average": 1252,
+            "stdMovingAverage": 800.6655359542078
           },
           {
             "key": "FI-Coal Total",
             "average": 352,
-            "stdMovingAverage": 122.58043761932419
+            "stdMovingAverage": 122.55594204098406
           },
           {
             "key": "FI-Hydro Total",
-            "average": 1429,
-            "stdMovingAverage": 464.43609161411354
+            "average": 1430,
+            "stdMovingAverage": 464.4355235342824
           }
         ]
       },
@@ -6552,6 +6873,11 @@
             "stdMovingAverage": 1043.7081293943495
           },
           {
+            "key": "FR-Load",
+            "average": 53653,
+            "stdMovingAverage": 6209.482186905921
+          },
+          {
             "key": "FR-Hydro Pumped",
             "average": -116,
             "stdMovingAverage": 1312.3881902745086
@@ -6605,6 +6931,11 @@
             "key": "FR-Solar",
             "average": 907,
             "stdMovingAverage": 1191.6170657307475
+          },
+          {
+            "key": "FR-Load",
+            "average": 54359,
+            "stdMovingAverage": 6510.53682169993
           },
           {
             "key": "FR-Hydro Pumped",
@@ -6662,6 +6993,11 @@
             "stdMovingAverage": 1322.8294765164035
           },
           {
+            "key": "FR-Load",
+            "average": 54332,
+            "stdMovingAverage": 6952.8283672271045
+          },
+          {
             "key": "FR-Hydro Pumped",
             "average": -115,
             "stdMovingAverage": 1527.0375647845244
@@ -6715,6 +7051,11 @@
             "key": "FR-Solar",
             "average": 1110,
             "stdMovingAverage": 1448.3747688344758
+          },
+          {
+            "key": "FR-Load",
+            "average": 53696,
+            "stdMovingAverage": 6967.2105820804
           },
           {
             "key": "FR-Hydro Pumped",
@@ -6772,6 +7113,11 @@
             "stdMovingAverage": 1701.297754912656
           },
           {
+            "key": "FR-Load",
+            "average": 53332,
+            "stdMovingAverage": 6360.260997690017
+          },
+          {
             "key": "FR-Hydro Pumped",
             "average": -48,
             "stdMovingAverage": 1434.7172386710242
@@ -6825,6 +7171,11 @@
             "key": "FR-Solar",
             "average": 1416,
             "stdMovingAverage": 1848.9940911958404
+          },
+          {
+            "key": "FR-Load",
+            "average": 50592,
+            "stdMovingAverage": 5877.788503503342
           },
           {
             "key": "FR-Hydro Pumped",
@@ -6882,6 +7233,11 @@
             "stdMovingAverage": 2049.153048103752
           },
           {
+            "key": "FR-Load",
+            "average": 53169,
+            "stdMovingAverage": 6325.481875437502
+          },
+          {
             "key": "FR-Hydro Pumped",
             "average": -42,
             "stdMovingAverage": 1341.6667406408128
@@ -6908,53 +7264,58 @@
         "options": [
           {
             "key": "FR-Import Balance",
-            "average": 1662,
-            "stdMovingAverage": 3020.728026298993
+            "average": 1666,
+            "stdMovingAverage": 3020.1138193077654
           },
           {
             "key": "FR-Nuclear",
-            "average": 31148,
-            "stdMovingAverage": 2657.7845024751223
+            "average": 31145,
+            "stdMovingAverage": 2655.6052410038897
           },
           {
             "key": "FR-Biomass",
-            "average": 401,
-            "stdMovingAverage": 63.21568028657113
+            "average": 402,
+            "stdMovingAverage": 63.37369089418901
           },
           {
             "key": "FR-Fossil oil",
             "average": 203,
-            "stdMovingAverage": 138.07384332489144
+            "stdMovingAverage": 137.94958485420014
           },
           {
             "key": "FR-Fossil gas",
-            "average": 4645,
-            "stdMovingAverage": 1341.6542835380806
+            "average": 4648,
+            "stdMovingAverage": 1341.991328371746
           },
           {
             "key": "FR-Solar",
-            "average": 2206,
-            "stdMovingAverage": 2801.9989200279206
+            "average": 2203,
+            "stdMovingAverage": 2799.837256394603
+          },
+          {
+            "key": "FR-Load",
+            "average": 49486,
+            "stdMovingAverage": 7263.094174603375
           },
           {
             "key": "FR-Hydro Pumped",
             "average": -123,
-            "stdMovingAverage": 1528.047027084363
+            "stdMovingAverage": 1529.100812334667
           },
           {
             "key": "FR-Wind Total",
             "average": 3970,
-            "stdMovingAverage": 2524.2986225004925
+            "stdMovingAverage": 2524.6241752667142
           },
           {
             "key": "FR-Coal Total",
             "average": 271,
-            "stdMovingAverage": 279.83286197782473
+            "stdMovingAverage": 279.65471870479246
           },
           {
             "key": "FR-Hydro Total",
             "average": 4675,
-            "stdMovingAverage": 2640.5443285212787
+            "stdMovingAverage": 2640.7893029561887
           }
         ]
       },
@@ -7024,6 +7385,11 @@
             "stdMovingAverage": 10.807377990408693
           },
           {
+            "key": "HU-Load",
+            "average": 4746,
+            "stdMovingAverage": 652.7884512453327
+          },
+          {
             "key": "HU-Wind Total",
             "average": 73,
             "stdMovingAverage": 72.41171253251363
@@ -7072,6 +7438,11 @@
             "key": "HU-Others",
             "average": 84,
             "stdMovingAverage": 11.053415857440603
+          },
+          {
+            "key": "HU-Load",
+            "average": 4768,
+            "stdMovingAverage": 636.2173679594458
           },
           {
             "key": "HU-Wind Total",
@@ -7124,6 +7495,11 @@
             "stdMovingAverage": 8.943564682701668
           },
           {
+            "key": "HU-Load",
+            "average": 4902,
+            "stdMovingAverage": 646.0397733388718
+          },
+          {
             "key": "HU-Wind Total",
             "average": 79,
             "stdMovingAverage": 74.82749165077716
@@ -7174,6 +7550,11 @@
             "stdMovingAverage": 9.35881082898543
           },
           {
+            "key": "HU-Load",
+            "average": 4943,
+            "stdMovingAverage": 646.4689654961173
+          },
+          {
             "key": "HU-Wind Total",
             "average": 65,
             "stdMovingAverage": 62.079154915107566
@@ -7222,6 +7603,11 @@
             "key": "HU-Others",
             "average": 81,
             "stdMovingAverage": 12.630499120445142
+          },
+          {
+            "key": "HU-Load",
+            "average": 4968,
+            "stdMovingAverage": 639.3273214423712
           },
           {
             "key": "HU-Wind Total",
@@ -7277,6 +7663,11 @@
             "key": "HU-Solar",
             "average": 181,
             "stdMovingAverage": 260.56783423967994
+          },
+          {
+            "key": "HU-Load",
+            "average": 4882,
+            "stdMovingAverage": 633.4850412153611
           },
           {
             "key": "HU-Wind Total",
@@ -7339,6 +7730,11 @@
             "stdMovingAverage": 384.2633155796458
           },
           {
+            "key": "HU-Load",
+            "average": 5082,
+            "stdMovingAverage": 637.0605734185003
+          },
+          {
             "key": "HU-Wind Total",
             "average": 73,
             "stdMovingAverage": 70.41785900264608
@@ -7361,57 +7757,62 @@
           {
             "key": "HU-Import Balance",
             "average": 1357,
-            "stdMovingAverage": 648.3880347253207
+            "stdMovingAverage": 648.5541972006042
           },
           {
             "key": "HU-Nuclear",
             "average": 1697,
-            "stdMovingAverage": 120.28199198123079
+            "stdMovingAverage": 120.2354309768239
           },
           {
             "key": "HU-Biomass",
             "average": 127,
-            "stdMovingAverage": 17.5383531999139
+            "stdMovingAverage": 17.5318592102161
           },
           {
             "key": "HU-Fossil oil",
             "average": 2,
-            "stdMovingAverage": 18.96064338164251
+            "stdMovingAverage": 18.953361093795152
           },
           {
             "key": "HU-Fossil gas",
             "average": 861,
-            "stdMovingAverage": 235.4692059171244
+            "stdMovingAverage": 235.39814377603275
           },
           {
             "key": "HU-Geothermal",
             "average": 0,
-            "stdMovingAverage": 0.07421196493799778
+            "stdMovingAverage": 0.07418323216350478
           },
           {
             "key": "HU-Others",
             "average": 64,
-            "stdMovingAverage": 13.92828193129869
+            "stdMovingAverage": 13.923721795813107
           },
           {
             "key": "HU-Solar",
-            "average": 383,
-            "stdMovingAverage": 513.6814706447532
+            "average": 382,
+            "stdMovingAverage": 513.4894656530204
+          },
+          {
+            "key": "HU-Load",
+            "average": 4925,
+            "stdMovingAverage": 605.0069504987968
           },
           {
             "key": "HU-Wind Total",
             "average": 67,
-            "stdMovingAverage": 64.29532781836343
+            "stdMovingAverage": 64.27192311369487
           },
           {
             "key": "HU-Coal Total",
             "average": 343,
-            "stdMovingAverage": 80.84538746014232
+            "stdMovingAverage": 80.9631099855948
           },
           {
             "key": "HU-Hydro Total",
             "average": 18,
-            "stdMovingAverage": 4.448495923764225
+            "stdMovingAverage": 4.446780279469037
           }
         ]
       },
@@ -7471,6 +7872,11 @@
             "stdMovingAverage": 10.707712629477374
           },
           {
+            "key": "IE-Load",
+            "average": 2997,
+            "stdMovingAverage": 625.6050709377038
+          },
+          {
             "key": "IE-Hydro Pumped",
             "average": 72,
             "stdMovingAverage": 93.15005808191599
@@ -7514,6 +7920,11 @@
             "key": "IE-Others",
             "average": 3,
             "stdMovingAverage": 14.83170506310562
+          },
+          {
+            "key": "IE-Load",
+            "average": 3045,
+            "stdMovingAverage": 657.873476839947
           },
           {
             "key": "IE-Hydro Pumped",
@@ -7561,6 +7972,11 @@
             "stdMovingAverage": 10.234665335554602
           },
           {
+            "key": "IE-Load",
+            "average": 3153,
+            "stdMovingAverage": 585.2091951273279
+          },
+          {
             "key": "IE-Hydro Pumped",
             "average": 46,
             "stdMovingAverage": 83.2665458394059
@@ -7604,6 +8020,11 @@
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 8.755241371853602
+          },
+          {
+            "key": "IE-Load",
+            "average": 3293,
+            "stdMovingAverage": 564.3313966622997
           },
           {
             "key": "IE-Hydro Pumped",
@@ -7651,6 +8072,11 @@
             "stdMovingAverage": 8.695766038250673
           },
           {
+            "key": "IE-Load",
+            "average": 3313,
+            "stdMovingAverage": 568.8996753477026
+          },
+          {
             "key": "IE-Hydro Pumped",
             "average": -12,
             "stdMovingAverage": 103.38194397068872
@@ -7694,6 +8120,11 @@
             "key": "IE-Others",
             "average": 2,
             "stdMovingAverage": 12.319583477722906
+          },
+          {
+            "key": "IE-Load",
+            "average": 3296,
+            "stdMovingAverage": 663.1946618509885
           },
           {
             "key": "IE-Hydro Pumped",
@@ -7741,6 +8172,11 @@
             "stdMovingAverage": 35.29724772565507
           },
           {
+            "key": "IE-Load",
+            "average": 3461,
+            "stdMovingAverage": 732.0010891633904
+          },
+          {
             "key": "IE-Hydro Pumped",
             "average": -25,
             "stdMovingAverage": 125.45492671868006
@@ -7784,6 +8220,11 @@
             "key": "IE-Others",
             "average": 3,
             "stdMovingAverage": 21.151214130352116
+          },
+          {
+            "key": "IE-Load",
+            "average": 1275,
+            "stdMovingAverage": 758.8485212130067
           },
           {
             "key": "IE-Hydro Pumped",
@@ -7873,6 +8314,11 @@
             "stdMovingAverage": 1011.8413638399192
           },
           {
+            "key": "IT-Load",
+            "average": 32938,
+            "stdMovingAverage": 7123.297891870081
+          },
+          {
             "key": "IT-Hydro Pumped",
             "average": 0,
             "stdMovingAverage": 33.40885209416262
@@ -7931,6 +8377,11 @@
             "key": "IT-Solar",
             "average": 2025,
             "stdMovingAverage": 2680.8182459591385
+          },
+          {
+            "key": "IT-Load",
+            "average": 32248,
+            "stdMovingAverage": 6907.708592112493
           },
           {
             "key": "IT-Hydro Pumped",
@@ -7993,6 +8444,11 @@
             "stdMovingAverage": 2989.597543563323
           },
           {
+            "key": "IT-Load",
+            "average": 33271,
+            "stdMovingAverage": 7139.371601706689
+          },
+          {
             "key": "IT-Hydro Pumped",
             "average": 40,
             "stdMovingAverage": 733.541172113502
@@ -8051,6 +8507,11 @@
             "key": "IT-Solar",
             "average": 2032,
             "stdMovingAverage": 2719.0552545765077
+          },
+          {
+            "key": "IT-Load",
+            "average": 33934,
+            "stdMovingAverage": 7151.08012086117
           },
           {
             "key": "IT-Hydro Pumped",
@@ -8113,6 +8574,11 @@
             "stdMovingAverage": 2909.6051696371874
           },
           {
+            "key": "IT-Load",
+            "average": 33580,
+            "stdMovingAverage": 7134.129445682934
+          },
+          {
             "key": "IT-Hydro Pumped",
             "average": 119,
             "stdMovingAverage": 740.1683340758929
@@ -8171,6 +8637,11 @@
             "key": "IT-Solar",
             "average": 2323,
             "stdMovingAverage": 3063.87782779576
+          },
+          {
+            "key": "IT-Load",
+            "average": 31103,
+            "stdMovingAverage": 6579.700402453685
           },
           {
             "key": "IT-Hydro Pumped",
@@ -8233,6 +8704,11 @@
             "stdMovingAverage": 3051.4684327674486
           },
           {
+            "key": "IT-Load",
+            "average": 33023,
+            "stdMovingAverage": 6866.478324453497
+          },
+          {
             "key": "IT-Hydro Pumped",
             "average": 202,
             "stdMovingAverage": 905.0376786565727
@@ -8260,57 +8736,62 @@
           {
             "key": "IT-Import Balance",
             "average": 5032,
-            "stdMovingAverage": 1532.6240699609152
+            "stdMovingAverage": 1533.6429763074514
           },
           {
             "key": "IT-Biomass",
             "average": 619,
-            "stdMovingAverage": 71.82198695903307
+            "stdMovingAverage": 72.28550640067081
           },
           {
             "key": "IT-Fossil oil",
             "average": 263,
-            "stdMovingAverage": 123.98312059217925
+            "stdMovingAverage": 124.20922886426888
           },
           {
             "key": "IT-Fossil gas",
-            "average": 13327,
-            "stdMovingAverage": 4652.99925936641
+            "average": 13321,
+            "stdMovingAverage": 4653.377593740179
           },
           {
             "key": "IT-Geothermal",
             "average": 617,
-            "stdMovingAverage": 51.29640355771977
+            "stdMovingAverage": 51.71962790441885
           },
           {
             "key": "IT-Others",
             "average": 2004,
-            "stdMovingAverage": 407.76332416516146
+            "stdMovingAverage": 408.37528563842244
           },
           {
             "key": "IT-Solar",
-            "average": 2771,
-            "stdMovingAverage": 3532.234016566267
+            "average": 2768,
+            "stdMovingAverage": 3530.709029236749
+          },
+          {
+            "key": "IT-Load",
+            "average": 32608,
+            "stdMovingAverage": 7056.0965235434005
           },
           {
             "key": "IT-Hydro Pumped",
-            "average": 91,
-            "stdMovingAverage": 851.8155247837503
+            "average": 92,
+            "stdMovingAverage": 852.1844518765263
           },
           {
             "key": "IT-Wind Total",
-            "average": 2247,
-            "stdMovingAverage": 1548.0501425010864
+            "average": 2249,
+            "stdMovingAverage": 1549.5644193732182
           },
           {
             "key": "IT-Coal Total",
             "average": 2988,
-            "stdMovingAverage": 540.5535164582099
+            "stdMovingAverage": 541.4669409055896
           },
           {
             "key": "IT-Hydro Total",
-            "average": 3086,
-            "stdMovingAverage": 1880.1111239786233
+            "average": 3088,
+            "stdMovingAverage": 1881.2607035989531
           }
         ]
       },
@@ -8380,6 +8861,11 @@
             "stdMovingAverage": 9.213281647141153
           },
           {
+            "key": "LT-Load",
+            "average": 1191,
+            "stdMovingAverage": 242.58069257981217
+          },
+          {
             "key": "LT-Hydro Pumped",
             "average": -29,
             "stdMovingAverage": 254.46054462557785
@@ -8428,6 +8914,11 @@
             "key": "LT-Solar",
             "average": 7,
             "stdMovingAverage": 9.271823360697317
+          },
+          {
+            "key": "LT-Load",
+            "average": 1269,
+            "stdMovingAverage": 228.58060867685674
           },
           {
             "key": "LT-Hydro Pumped",
@@ -8480,6 +8971,11 @@
             "stdMovingAverage": 9.491925868774056
           },
           {
+            "key": "LT-Load",
+            "average": 1324,
+            "stdMovingAverage": 248.88355936058696
+          },
+          {
             "key": "LT-Hydro Pumped",
             "average": -26,
             "stdMovingAverage": 256.8496167170521
@@ -8523,6 +9019,11 @@
             "key": "LT-Solar",
             "average": 9,
             "stdMovingAverage": 13.072838641132886
+          },
+          {
+            "key": "LT-Load",
+            "average": 1377,
+            "stdMovingAverage": 260.90251116081515
           },
           {
             "key": "LT-Hydro Pumped",
@@ -8570,6 +9071,11 @@
             "stdMovingAverage": 13.393619271842416
           },
           {
+            "key": "LT-Load",
+            "average": 1390,
+            "stdMovingAverage": 233.13110377189483
+          },
+          {
             "key": "LT-Hydro Pumped",
             "average": 61,
             "stdMovingAverage": 124.0359720023972
@@ -8613,6 +9119,11 @@
             "key": "LT-Solar",
             "average": 8,
             "stdMovingAverage": 13.00912351797627
+          },
+          {
+            "key": "LT-Load",
+            "average": 1348,
+            "stdMovingAverage": 222.87889096775524
           },
           {
             "key": "LT-Hydro Pumped",
@@ -8660,6 +9171,11 @@
             "stdMovingAverage": 23.790413270175804
           },
           {
+            "key": "LT-Load",
+            "average": 1413,
+            "stdMovingAverage": 226.99259613572872
+          },
+          {
             "key": "LT-Hydro Pumped",
             "average": 81,
             "stdMovingAverage": 128.09251728006396
@@ -8681,43 +9197,48 @@
         "options": [
           {
             "key": "LT-Import Balance",
-            "average": 991,
-            "stdMovingAverage": 218.55276202614053
+            "average": 992,
+            "stdMovingAverage": 217.50582289976174
           },
           {
             "key": "LT-Biomass",
             "average": 43,
-            "stdMovingAverage": 2.8129747649624655
+            "stdMovingAverage": 2.8129940066803765
           },
           {
             "key": "LT-Fossil gas",
             "average": 43,
-            "stdMovingAverage": 79.06522048910897
+            "stdMovingAverage": 79.03460586945809
           },
           {
             "key": "LT-Others",
             "average": 7,
-            "stdMovingAverage": 1.7391864011421383
+            "stdMovingAverage": 1.7385129504291283
           },
           {
             "key": "LT-Solar",
             "average": 45,
-            "stdMovingAverage": 63.5565787074313
+            "stdMovingAverage": 63.532778430069335
+          },
+          {
+            "key": "LT-Load",
+            "average": 1373,
+            "stdMovingAverage": 220.6303312810283
           },
           {
             "key": "LT-Hydro Pumped",
-            "average": -22,
-            "stdMovingAverage": 227.93290200199277
+            "average": -21,
+            "stdMovingAverage": 227.9018716157053
           },
           {
             "key": "LT-Wind Total",
             "average": 171,
-            "stdMovingAverage": 132.4572909157248
+            "stdMovingAverage": 132.41296414148167
           },
           {
             "key": "LT-Hydro Total",
-            "average": 25,
-            "stdMovingAverage": 238.68458627881012
+            "average": 26,
+            "stdMovingAverage": 238.64345440245762
           }
         ]
       },
@@ -8755,15 +9276,33 @@
       },
       {
         "file": "lu-charts-2015.json",
-        "options": []
+        "options": [
+          {
+            "key": "LU-Load",
+            "average": 485,
+            "stdMovingAverage": 70.37853811608622
+          }
+        ]
       },
       {
         "file": "lu-charts-2016.json",
-        "options": []
+        "options": [
+          {
+            "key": "LU-Load",
+            "average": 491,
+            "stdMovingAverage": 73.86776727946932
+          }
+        ]
       },
       {
         "file": "lu-charts-2017.json",
-        "options": []
+        "options": [
+          {
+            "key": "LU-Load",
+            "average": 491,
+            "stdMovingAverage": 80.54143812114202
+          }
+        ]
       },
       {
         "file": "lu-charts-2018.json",
@@ -8772,6 +9311,11 @@
             "key": "LU-Import Balance",
             "average": 482,
             "stdMovingAverage": 76.53267058308585
+          },
+          {
+            "key": "LU-Load",
+            "average": 454,
+            "stdMovingAverage": 135.34136388664936
           }
         ]
       },
@@ -8782,6 +9326,11 @@
             "key": "LU-Import Balance",
             "average": 471,
             "stdMovingAverage": 78.90240661021477
+          },
+          {
+            "key": "LU-Load",
+            "average": 436,
+            "stdMovingAverage": 128.14390037293896
           }
         ]
       },
@@ -8792,6 +9341,11 @@
             "key": "LU-Import Balance",
             "average": 431,
             "stdMovingAverage": 75.84493580125977
+          },
+          {
+            "key": "LU-Load",
+            "average": 414,
+            "stdMovingAverage": 97.27104757750443
           }
         ]
       },
@@ -8802,6 +9356,11 @@
             "key": "LU-Import Balance",
             "average": 450,
             "stdMovingAverage": 77.0424333712428
+          },
+          {
+            "key": "LU-Load",
+            "average": 455,
+            "stdMovingAverage": 80.07098406382501
           }
         ]
       },
@@ -8811,32 +9370,37 @@
           {
             "key": "LU-Import Balance",
             "average": 439,
-            "stdMovingAverage": 80.19120145415418
+            "stdMovingAverage": 80.16308593688211
           },
           {
             "key": "LU-Hydro Run-of-River",
             "average": 3,
-            "stdMovingAverage": 1.563123206366406
+            "stdMovingAverage": 1.5652408073845105
           },
           {
             "key": "LU-Biomass",
             "average": 29,
-            "stdMovingAverage": 5.980257183263762
+            "stdMovingAverage": 6.001385866667443
           },
           {
             "key": "LU-Fossil gas",
             "average": 6,
-            "stdMovingAverage": 5.818429224520893
+            "stdMovingAverage": 5.828919291395547
           },
           {
             "key": "LU-Wind onshore",
             "average": 23,
-            "stdMovingAverage": 23.8519147553371
+            "stdMovingAverage": 23.85229744370423
           },
           {
             "key": "LU-Solar",
             "average": 28,
-            "stdMovingAverage": 41.366054763212134
+            "stdMovingAverage": 41.350488899376046
+          },
+          {
+            "key": "LU-Load",
+            "average": 502,
+            "stdMovingAverage": 85.68700324479482
           }
         ]
       },
@@ -8896,6 +9460,11 @@
             "stdMovingAverage": 4.252283780201512
           },
           {
+            "key": "LV-Load",
+            "average": 807,
+            "stdMovingAverage": 155.98354510776105
+          },
+          {
             "key": "LV-Wind Total",
             "average": 12,
             "stdMovingAverage": 10.609968483886139
@@ -8929,6 +9498,11 @@
             "key": "LV-Others",
             "average": 86,
             "stdMovingAverage": 6.373037720406917
+          },
+          {
+            "key": "LV-Load",
+            "average": 818,
+            "stdMovingAverage": 164.47362789685891
           },
           {
             "key": "LV-Wind Total",
@@ -8966,6 +9540,11 @@
             "stdMovingAverage": 5.849525499771356
           },
           {
+            "key": "LV-Load",
+            "average": 822,
+            "stdMovingAverage": 164.60831111330776
+          },
+          {
             "key": "LV-Wind Total",
             "average": 14,
             "stdMovingAverage": 13.634978458867696
@@ -8999,6 +9578,11 @@
             "key": "LV-Others",
             "average": 80,
             "stdMovingAverage": 3.7095756111753033
+          },
+          {
+            "key": "LV-Load",
+            "average": 838,
+            "stdMovingAverage": 157.45583860337683
           },
           {
             "key": "LV-Wind Total",
@@ -9036,6 +9620,11 @@
             "stdMovingAverage": 5.258617584128272
           },
           {
+            "key": "LV-Load",
+            "average": 825,
+            "stdMovingAverage": 153.88605477368526
+          },
+          {
             "key": "LV-Wind Total",
             "average": 15,
             "stdMovingAverage": 13.355656673025761
@@ -9069,6 +9658,11 @@
             "key": "LV-Others",
             "average": 64,
             "stdMovingAverage": 3.080755791788252
+          },
+          {
+            "key": "LV-Load",
+            "average": 803,
+            "stdMovingAverage": 146.91566156969233
           },
           {
             "key": "LV-Wind Total",
@@ -9106,6 +9700,11 @@
             "stdMovingAverage": 2.680158758717239
           },
           {
+            "key": "LV-Load",
+            "average": 834,
+            "stdMovingAverage": 145.89828681656593
+          },
+          {
             "key": "LV-Wind Total",
             "average": 14,
             "stdMovingAverage": 12.672766197219602
@@ -9122,33 +9721,38 @@
         "options": [
           {
             "key": "LV-Import Balance",
-            "average": 293,
-            "stdMovingAverage": 185.08558100238366
+            "average": 292,
+            "stdMovingAverage": 185.03269299216782
           },
           {
             "key": "LV-Biomass",
             "average": 38,
-            "stdMovingAverage": 5.125927340271469
+            "stdMovingAverage": 5.124103677865933
           },
           {
             "key": "LV-Fossil gas",
-            "average": 72,
-            "stdMovingAverage": 112.44543049583194
+            "average": 73,
+            "stdMovingAverage": 112.43278890070637
           },
           {
             "key": "LV-Others",
             "average": 31,
-            "stdMovingAverage": 4.238843462189612
+            "stdMovingAverage": 4.237202596662696
+          },
+          {
+            "key": "LV-Load",
+            "average": 771,
+            "stdMovingAverage": 139.04977658015756
           },
           {
             "key": "LV-Wind Total",
             "average": 19,
-            "stdMovingAverage": 18.414800468096633
+            "stdMovingAverage": 18.408519126983975
           },
           {
             "key": "LV-Hydro Total",
             "average": 316,
-            "stdMovingAverage": 202.11069944048575
+            "stdMovingAverage": 202.03739716772571
           }
         ]
       },
@@ -9298,6 +9902,11 @@
             "stdMovingAverage": 7.209883471679499
           },
           {
+            "key": "NL-Load",
+            "average": 11160,
+            "stdMovingAverage": 2220.276029539321
+          },
+          {
             "key": "NL-Wind Total",
             "average": 373,
             "stdMovingAverage": 263.67390452203466
@@ -9343,6 +9952,11 @@
             "stdMovingAverage": 9.426930611669738
           },
           {
+            "key": "NL-Load",
+            "average": 12979,
+            "stdMovingAverage": 2179.102433165815
+          },
+          {
             "key": "NL-Wind Total",
             "average": 506,
             "stdMovingAverage": 394.92769561786014
@@ -9381,6 +9995,11 @@
             "key": "NL-Others",
             "average": 2256,
             "stdMovingAverage": 701.2182653652385
+          },
+          {
+            "key": "NL-Load",
+            "average": 12995,
+            "stdMovingAverage": 2117.8624518795978
           },
           {
             "key": "NL-Wind Total",
@@ -9428,6 +10047,11 @@
             "stdMovingAverage": 1.001664318394324
           },
           {
+            "key": "NL-Load",
+            "average": 13094,
+            "stdMovingAverage": 1988.3472804882592
+          },
+          {
             "key": "NL-Wind Total",
             "average": 640,
             "stdMovingAverage": 433.2195398627813
@@ -9471,6 +10095,11 @@
             "key": "NL-Solar",
             "average": 8,
             "stdMovingAverage": 11.494707578638028
+          },
+          {
+            "key": "NL-Load",
+            "average": 13002,
+            "stdMovingAverage": 1725.3117763993446
           },
           {
             "key": "NL-Wind Total",
@@ -9518,6 +10147,11 @@
             "stdMovingAverage": 35.31579353808335
           },
           {
+            "key": "NL-Load",
+            "average": 12312,
+            "stdMovingAverage": 1558.1217955379252
+          },
+          {
             "key": "NL-Wind Total",
             "average": 1197,
             "stdMovingAverage": 777.6344504535308
@@ -9563,6 +10197,11 @@
             "stdMovingAverage": 53.49262998992131
           },
           {
+            "key": "NL-Load",
+            "average": 12146,
+            "stdMovingAverage": 1543.2966565670888
+          },
+          {
             "key": "NL-Wind Total",
             "average": 1439,
             "stdMovingAverage": 1041.8213063747312
@@ -9579,43 +10218,48 @@
         "options": [
           {
             "key": "NL-Import Balance",
-            "average": -435,
-            "stdMovingAverage": 1615.439300592999
+            "average": -434,
+            "stdMovingAverage": 1614.8841369538043
           },
           {
             "key": "NL-Nuclear",
             "average": 444,
-            "stdMovingAverage": 55.16256678245182
+            "stdMovingAverage": 55.141247145315766
           },
           {
             "key": "NL-Biomass",
             "average": 15,
-            "stdMovingAverage": 7.00696529795623
+            "stdMovingAverage": 6.984910184077066
           },
           {
             "key": "NL-Fossil gas",
-            "average": 3951,
-            "stdMovingAverage": 2166.787925390681
+            "average": 3952,
+            "stdMovingAverage": 2168.039471098077
           },
           {
             "key": "NL-Others",
-            "average": 2015,
-            "stdMovingAverage": 927.3776879755907
+            "average": 2014,
+            "stdMovingAverage": 927.0417727957757
           },
           {
             "key": "NL-Solar",
             "average": 46,
-            "stdMovingAverage": 63.95776984401935
+            "stdMovingAverage": 63.93379618573332
+          },
+          {
+            "key": "NL-Load",
+            "average": 11207,
+            "stdMovingAverage": 1631.8680970268667
           },
           {
             "key": "NL-Wind Total",
-            "average": 1432,
-            "stdMovingAverage": 999.6185645356474
+            "average": 1431,
+            "stdMovingAverage": 999.5855266327666
           },
           {
             "key": "NL-Coal Total",
-            "average": 2144,
-            "stdMovingAverage": 635.7799145777201
+            "average": 2145,
+            "stdMovingAverage": 635.9171045715017
           }
         ]
       },
@@ -9670,6 +10314,11 @@
             "stdMovingAverage": 14.381295074324191
           },
           {
+            "key": "NO-Load",
+            "average": 14726,
+            "stdMovingAverage": 1580.4557270636
+          },
+          {
             "key": "NO-Wind Total",
             "average": 270,
             "stdMovingAverage": 120.28897978956483
@@ -9698,6 +10347,11 @@
             "key": "NO-Others",
             "average": 30,
             "stdMovingAverage": 19.305318616690748
+          },
+          {
+            "key": "NO-Load",
+            "average": 15043,
+            "stdMovingAverage": 1481.0552055833707
           },
           {
             "key": "NO-Wind Total",
@@ -9730,6 +10384,11 @@
             "stdMovingAverage": 26.881113828563354
           },
           {
+            "key": "NO-Load",
+            "average": 15169,
+            "stdMovingAverage": 1366.257690172488
+          },
+          {
             "key": "NO-Wind Total",
             "average": 303,
             "stdMovingAverage": 148.13957029063513
@@ -9758,6 +10417,11 @@
             "key": "NO-Others",
             "average": 129,
             "stdMovingAverage": 69.73186066734233
+          },
+          {
+            "key": "NO-Load",
+            "average": 15467,
+            "stdMovingAverage": 1389.085269298609
           },
           {
             "key": "NO-Wind Total",
@@ -9790,6 +10454,11 @@
             "stdMovingAverage": 31.403438710011987
           },
           {
+            "key": "NO-Load",
+            "average": 15035,
+            "stdMovingAverage": 2295.4138901778288
+          },
+          {
             "key": "NO-Wind Total",
             "average": 597,
             "stdMovingAverage": 280.3651213053351
@@ -9820,6 +10489,11 @@
             "stdMovingAverage": 15.454772447215912
           },
           {
+            "key": "NO-Load",
+            "average": 15125,
+            "stdMovingAverage": 1244.8124979718868
+          },
+          {
             "key": "NO-Wind Total",
             "average": 1057,
             "stdMovingAverage": 482.2172824036765
@@ -9845,6 +10519,11 @@
             "stdMovingAverage": 10.070594114464159
           },
           {
+            "key": "NO-Load",
+            "average": 15857,
+            "stdMovingAverage": 1290.2333192757308
+          },
+          {
             "key": "NO-Wind Total",
             "average": 1221,
             "stdMovingAverage": 716.338039883702
@@ -9861,23 +10540,28 @@
         "options": [
           {
             "key": "NO-Import Balance",
-            "average": -1276,
-            "stdMovingAverage": 2283.888849190947
+            "average": -1279,
+            "stdMovingAverage": 2283.513502968838
           },
           {
             "key": "NO-Fossil gas",
             "average": 135,
-            "stdMovingAverage": 19.091298305999782
+            "stdMovingAverage": 19.08856343393383
+          },
+          {
+            "key": "NO-Load",
+            "average": 14745,
+            "stdMovingAverage": 1890.0926356787122
           },
           {
             "key": "NO-Wind Total",
             "average": 1631,
-            "stdMovingAverage": 707.0843498893644
+            "stdMovingAverage": 707.184013007391
           },
           {
             "key": "NO-Hydro Total",
-            "average": 14222,
-            "stdMovingAverage": 2968.5846283700284
+            "average": 14228,
+            "stdMovingAverage": 2970.166474063522
           }
         ]
       },
@@ -9937,6 +10621,11 @@
             "stdMovingAverage": 66.24831141691496
           },
           {
+            "key": "PL-Load",
+            "average": 18419,
+            "stdMovingAverage": 2802.9177470516097
+          },
+          {
             "key": "PL-Hydro Pumped",
             "average": 90,
             "stdMovingAverage": 164.19490440108532
@@ -9980,6 +10669,11 @@
             "key": "PL-Fossil gas",
             "average": 591,
             "stdMovingAverage": 122.55318400023606
+          },
+          {
+            "key": "PL-Load",
+            "average": 18714,
+            "stdMovingAverage": 2883.4812256492337
           },
           {
             "key": "PL-Hydro Pumped",
@@ -10027,6 +10721,11 @@
             "stdMovingAverage": 143.5794636773176
           },
           {
+            "key": "PL-Load",
+            "average": 19220,
+            "stdMovingAverage": 2900.821835648018
+          },
+          {
             "key": "PL-Hydro Pumped",
             "average": 81,
             "stdMovingAverage": 143.82739848998762
@@ -10070,6 +10769,11 @@
             "key": "PL-Fossil gas",
             "average": 991,
             "stdMovingAverage": 172.6746735826537
+          },
+          {
+            "key": "PL-Load",
+            "average": 19530,
+            "stdMovingAverage": 2951.1786023542813
           },
           {
             "key": "PL-Hydro Pumped",
@@ -10117,6 +10821,11 @@
             "stdMovingAverage": 138.07912381456768
           },
           {
+            "key": "PL-Load",
+            "average": 19283,
+            "stdMovingAverage": 2939.0523727949585
+          },
+          {
             "key": "PL-Hydro Pumped",
             "average": 104,
             "stdMovingAverage": 171.08207206605172
@@ -10160,6 +10869,11 @@
             "key": "PL-Fossil gas",
             "average": 1419,
             "stdMovingAverage": 164.07520650562077
+          },
+          {
+            "key": "PL-Load",
+            "average": 18817,
+            "stdMovingAverage": 2850.6974675840966
           },
           {
             "key": "PL-Hydro Pumped",
@@ -10212,6 +10926,11 @@
             "stdMovingAverage": 714.8018987905386
           },
           {
+            "key": "PL-Load",
+            "average": 19936,
+            "stdMovingAverage": 2957.645702430488
+          },
+          {
             "key": "PL-Hydro Pumped",
             "average": 116,
             "stdMovingAverage": 192.5206359422961
@@ -10239,47 +10958,52 @@
           {
             "key": "PL-Import Balance",
             "average": -109,
-            "stdMovingAverage": 646.3856876404832
+            "stdMovingAverage": 646.1477282686861
           },
           {
             "key": "PL-Biomass",
             "average": 181,
-            "stdMovingAverage": 31.88154636746544
+            "stdMovingAverage": 32.1463649972
           },
           {
             "key": "PL-Fossil oil",
             "average": 243,
-            "stdMovingAverage": 11.252290210803858
+            "stdMovingAverage": 11.26402507027464
           },
           {
             "key": "PL-Fossil gas",
             "average": 997,
-            "stdMovingAverage": 270.9095508265551
+            "stdMovingAverage": 270.89636886634514
           },
           {
             "key": "PL-Solar",
-            "average": 1174,
-            "stdMovingAverage": 1542.203809731552
+            "average": 1173,
+            "stdMovingAverage": 1541.6300252462595
+          },
+          {
+            "key": "PL-Load",
+            "average": 19498,
+            "stdMovingAverage": 2829.820889033621
           },
           {
             "key": "PL-Hydro Pumped",
             "average": 143,
-            "stdMovingAverage": 248.09660551979164
+            "stdMovingAverage": 248.03228023921434
           },
           {
             "key": "PL-Wind Total",
-            "average": 2143,
-            "stdMovingAverage": 1430.1234226675256
+            "average": 2142,
+            "stdMovingAverage": 1429.588874505324
           },
           {
             "key": "PL-Coal Total",
-            "average": 13354,
-            "stdMovingAverage": 2172.8510315813755
+            "average": 13356,
+            "stdMovingAverage": 2172.2199465902545
           },
           {
             "key": "PL-Hydro Total",
             "average": 323,
-            "stdMovingAverage": 272.330857815812
+            "stdMovingAverage": 272.26404339360687
           }
         ]
       },
@@ -10344,6 +11068,11 @@
             "stdMovingAverage": 112.21055798808472
           },
           {
+            "key": "PT-Load",
+            "average": 5590,
+            "stdMovingAverage": 888.855538254317
+          },
+          {
             "key": "PT-Hydro Pumped",
             "average": 37,
             "stdMovingAverage": 450.9767769836411
@@ -10392,6 +11121,11 @@
             "key": "PT-Solar",
             "average": 89,
             "stdMovingAverage": 115.68836440642555
+          },
+          {
+            "key": "PT-Load",
+            "average": 5609,
+            "stdMovingAverage": 898.941619110804
           },
           {
             "key": "PT-Hydro Pumped",
@@ -10444,6 +11178,11 @@
             "stdMovingAverage": 123.70689244845425
           },
           {
+            "key": "PT-Load",
+            "average": 5665,
+            "stdMovingAverage": 899.8118421381826
+          },
+          {
             "key": "PT-Hydro Pumped",
             "average": 35,
             "stdMovingAverage": 707.4942572205929
@@ -10492,6 +11231,11 @@
             "key": "PT-Solar",
             "average": 94,
             "stdMovingAverage": 125.09331660672699
+          },
+          {
+            "key": "PT-Load",
+            "average": 5811,
+            "stdMovingAverage": 934.7446090530728
           },
           {
             "key": "PT-Hydro Pumped",
@@ -10544,6 +11288,11 @@
             "stdMovingAverage": 157.29578209989998
           },
           {
+            "key": "PT-Load",
+            "average": 5747,
+            "stdMovingAverage": 920.5554686594786
+          },
+          {
             "key": "PT-Hydro Pumped",
             "average": 127,
             "stdMovingAverage": 710.1630496285552
@@ -10592,6 +11341,11 @@
             "key": "PT-Solar",
             "average": 144,
             "stdMovingAverage": 188.8207791816688
+          },
+          {
+            "key": "PT-Load",
+            "average": 5556,
+            "stdMovingAverage": 900.4194947046575
           },
           {
             "key": "PT-Hydro Pumped",
@@ -10644,6 +11398,11 @@
             "stdMovingAverage": 258.7291750455008
           },
           {
+            "key": "PT-Load",
+            "average": 5647,
+            "stdMovingAverage": 918.1788017579984
+          },
+          {
             "key": "PT-Hydro Pumped",
             "average": 163,
             "stdMovingAverage": 770.2932855792238
@@ -10671,42 +11430,47 @@
           {
             "key": "PT-Import Balance",
             "average": 1269,
-            "stdMovingAverage": 1201.234220467225
+            "stdMovingAverage": 1201.8695037063187
           },
           {
             "key": "PT-Biomass",
             "average": 380,
-            "stdMovingAverage": 21.420274563377443
+            "stdMovingAverage": 21.437304114788923
           },
           {
             "key": "PT-Fossil gas",
-            "average": 1938,
-            "stdMovingAverage": 670.5087042171742
+            "average": 1937,
+            "stdMovingAverage": 670.89581306084
           },
           {
             "key": "PT-Others",
             "average": 22,
-            "stdMovingAverage": 3.915489904731767
+            "stdMovingAverage": 3.9287722222918853
           },
           {
             "key": "PT-Solar",
             "average": 308,
-            "stdMovingAverage": 393.6440609430723
+            "stdMovingAverage": 393.5318574529475
+          },
+          {
+            "key": "PT-Load",
+            "average": 5720,
+            "stdMovingAverage": 912.2056654499671
           },
           {
             "key": "PT-Hydro Pumped",
-            "average": -27,
-            "stdMovingAverage": 810.2835334841586
+            "average": -26,
+            "stdMovingAverage": 810.5286332258763
           },
           {
             "key": "PT-Wind Total",
             "average": 1395,
-            "stdMovingAverage": 963.9738222984824
+            "stdMovingAverage": 964.2041333299469
           },
           {
             "key": "PT-Hydro Total",
-            "average": 413,
-            "stdMovingAverage": 1165.1475006304781
+            "average": 414,
+            "stdMovingAverage": 1165.5633673388234
           }
         ]
       },
@@ -10771,6 +11535,11 @@
             "stdMovingAverage": 201.17355406002665
           },
           {
+            "key": "RO-Load",
+            "average": 6502,
+            "stdMovingAverage": 1011.704443179038
+          },
+          {
             "key": "RO-Wind Total",
             "average": 752,
             "stdMovingAverage": 654.5167116007888
@@ -10814,6 +11583,11 @@
             "key": "RO-Solar",
             "average": 143,
             "stdMovingAverage": 202.9226281528448
+          },
+          {
+            "key": "RO-Load",
+            "average": 6656,
+            "stdMovingAverage": 859.85116484918
           },
           {
             "key": "RO-Wind Total",
@@ -10861,6 +11635,11 @@
             "stdMovingAverage": 218.13662897101653
           },
           {
+            "key": "RO-Load",
+            "average": 6846,
+            "stdMovingAverage": 877.6035382842716
+          },
+          {
             "key": "RO-Wind Total",
             "average": 833,
             "stdMovingAverage": 665.296602525894
@@ -10904,6 +11683,11 @@
             "key": "RO-Solar",
             "average": 153,
             "stdMovingAverage": 215.8668236110702
+          },
+          {
+            "key": "RO-Load",
+            "average": 6929,
+            "stdMovingAverage": 974.2619985971672
           },
           {
             "key": "RO-Wind Total",
@@ -10951,6 +11735,11 @@
             "stdMovingAverage": 217.97915730912098
           },
           {
+            "key": "RO-Load",
+            "average": 6858,
+            "stdMovingAverage": 863.0843689907354
+          },
+          {
             "key": "RO-Wind Total",
             "average": 762,
             "stdMovingAverage": 605.6654030213041
@@ -10994,6 +11783,11 @@
             "key": "RO-Solar",
             "average": 153,
             "stdMovingAverage": 213.76610171281078
+          },
+          {
+            "key": "RO-Load",
+            "average": 6610,
+            "stdMovingAverage": 855.4018576392205
           },
           {
             "key": "RO-Wind Total",
@@ -11041,6 +11835,11 @@
             "stdMovingAverage": 207.8637022875835
           },
           {
+            "key": "RO-Load",
+            "average": 6748,
+            "stdMovingAverage": 1487.3557288200761
+          },
+          {
             "key": "RO-Wind Total",
             "average": 725,
             "stdMovingAverage": 620.7139604968363
@@ -11063,42 +11862,47 @@
           {
             "key": "RO-Import Balance",
             "average": 162,
-            "stdMovingAverage": 674.739192378408
+            "stdMovingAverage": 674.8652163501655
           },
           {
             "key": "RO-Nuclear",
-            "average": 1227,
-            "stdMovingAverage": 211.92493033823837
+            "average": 1228,
+            "stdMovingAverage": 211.84326062541695
           },
           {
             "key": "RO-Biomass",
             "average": 62,
-            "stdMovingAverage": 10.190075098377644
+            "stdMovingAverage": 10.186776243352092
           },
           {
             "key": "RO-Fossil gas",
             "average": 1160,
-            "stdMovingAverage": 274.3010307794432
+            "stdMovingAverage": 274.24736267947395
           },
           {
             "key": "RO-Solar",
-            "average": 168,
-            "stdMovingAverage": 225.60005120055493
+            "average": 167,
+            "stdMovingAverage": 225.51981551683926
+          },
+          {
+            "key": "RO-Load",
+            "average": 6285,
+            "stdMovingAverage": 1134.02480778531
           },
           {
             "key": "RO-Wind Total",
             "average": 757,
-            "stdMovingAverage": 639.3853110854993
+            "stdMovingAverage": 639.685679783103
           },
           {
             "key": "RO-Coal Total",
             "average": 1181,
-            "stdMovingAverage": 223.16034416708303
+            "stdMovingAverage": 223.11908684319621
           },
           {
             "key": "RO-Hydro Total",
-            "average": 1568,
-            "stdMovingAverage": 393.34303929626304
+            "average": 1567,
+            "stdMovingAverage": 393.3274683822687
           }
         ]
       },
@@ -11153,6 +11957,11 @@
             "stdMovingAverage": 184.47767295528
           },
           {
+            "key": "SE-Load",
+            "average": 15209,
+            "stdMovingAverage": 2578.758475043004
+          },
+          {
             "key": "SE-Wind Total",
             "average": 1873,
             "stdMovingAverage": 948.2631887006693
@@ -11181,6 +11990,11 @@
             "key": "SE-Others",
             "average": 867,
             "stdMovingAverage": 143.93607560996267
+          },
+          {
+            "key": "SE-Load",
+            "average": 15713,
+            "stdMovingAverage": 1937.7853574057863
           },
           {
             "key": "SE-Wind Total",
@@ -11213,6 +12027,11 @@
             "stdMovingAverage": 120.14493776281856
           },
           {
+            "key": "SE-Load",
+            "average": 15767,
+            "stdMovingAverage": 1895.7909246036788
+          },
+          {
             "key": "SE-Wind Total",
             "average": 1976,
             "stdMovingAverage": 1006.9626508349336
@@ -11241,6 +12060,11 @@
             "key": "SE-Others",
             "average": 951,
             "stdMovingAverage": 111.759380505832
+          },
+          {
+            "key": "SE-Load",
+            "average": 15771,
+            "stdMovingAverage": 1894.44197977712
           },
           {
             "key": "SE-Wind Total",
@@ -11273,6 +12097,11 @@
             "stdMovingAverage": 114.809644375642
           },
           {
+            "key": "SE-Load",
+            "average": 15570,
+            "stdMovingAverage": 1867.1598755532013
+          },
+          {
             "key": "SE-Wind Total",
             "average": 2226,
             "stdMovingAverage": 1168.5550382673923
@@ -11301,6 +12130,11 @@
             "key": "SE-Others",
             "average": 775,
             "stdMovingAverage": 135.47655361137407
+          },
+          {
+            "key": "SE-Load",
+            "average": 15133,
+            "stdMovingAverage": 1710.3826968340059
           },
           {
             "key": "SE-Wind Total",
@@ -11333,6 +12167,11 @@
             "stdMovingAverage": 205.3682591439733
           },
           {
+            "key": "SE-Load",
+            "average": 15915,
+            "stdMovingAverage": 1756.9292732010863
+          },
+          {
             "key": "SE-Wind Total",
             "average": 3044,
             "stdMovingAverage": 1716.093298284018
@@ -11350,27 +12189,32 @@
           {
             "key": "SE-Import Balance",
             "average": -4010,
-            "stdMovingAverage": 1191.5635212231664
+            "stdMovingAverage": 1191.207193726972
           },
           {
             "key": "SE-Nuclear",
             "average": 5758,
-            "stdMovingAverage": 389.93329444501677
+            "stdMovingAverage": 394.9250326395576
           },
           {
             "key": "SE-Others",
             "average": 901,
-            "stdMovingAverage": 183.22439967998966
+            "stdMovingAverage": 183.8677710243974
+          },
+          {
+            "key": "SE-Load",
+            "average": 14691,
+            "stdMovingAverage": 1532.704909121741
           },
           {
             "key": "SE-Wind Total",
-            "average": 3764,
-            "stdMovingAverage": 1946.0150564261428
+            "average": 3763,
+            "stdMovingAverage": 1945.36955913618
           },
           {
             "key": "SE-Hydro Total",
-            "average": 7815,
-            "stdMovingAverage": 1739.6871078041183
+            "average": 7816,
+            "stdMovingAverage": 1742.073408469827
           }
         ]
       },
@@ -11482,4739 +12326,9 @@
           {
             "key": "SE-Solar",
             "average": 142,
-            "stdMovingAverage": 214.3318513874179
+            "stdMovingAverage": 214.00060051755912
           }
         ]
-      }
-    ]
-  },
-  {
-    "key": "consumptionDataSet",
-    "name": "Consumption",
-    "unit": "MW",
-    "fields": [
-      "-Load"
-    ],
-    "files": [
-      {
-        "file": "at-charts-2015.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 6762,
-            "stdMovingAverage": 1226.183749636143
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2016.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 7159,
-            "stdMovingAverage": 1202.3504951191205
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2017.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 7268,
-            "stdMovingAverage": 1192.557708240166
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2018.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 7278,
-            "stdMovingAverage": 1217.9784750875017
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2019.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 7214,
-            "stdMovingAverage": 1213.845029343791
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2020.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 6964,
-            "stdMovingAverage": 1177.3763799068824
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2021.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 7197,
-            "stdMovingAverage": 1115.8752754993839
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2022.json",
-        "options": [
-          {
-            "key": "AT-Load",
-            "average": 6939,
-            "stdMovingAverage": 1064.3898501823837
-          }
-        ]
-      },
-      {
-        "file": "at-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ch-charts-2015.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7095,
-            "stdMovingAverage": 823.5341477663042
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2016.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7125,
-            "stdMovingAverage": 757.3062438040388
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2017.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 6980,
-            "stdMovingAverage": 653.2084967168729
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2018.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 6897,
-            "stdMovingAverage": 687.831822016131
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2019.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7238,
-            "stdMovingAverage": 722.8315515794467
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2020.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7106,
-            "stdMovingAverage": 694.4297568991644
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2021.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7252,
-            "stdMovingAverage": 694.0534944226058
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2022.json",
-        "options": [
-          {
-            "key": "CH-Load",
-            "average": 7116,
-            "stdMovingAverage": 776.0543920801243
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2015.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7249,
-            "stdMovingAverage": 978.2371224397401
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2016.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7309,
-            "stdMovingAverage": 1324.989819002831
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2017.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7547,
-            "stdMovingAverage": 1033.3678948129937
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2018.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7617,
-            "stdMovingAverage": 1072.5691506711373
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2019.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7551,
-            "stdMovingAverage": 1058.0536452366619
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2020.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7319,
-            "stdMovingAverage": 1037.7116203704225
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2021.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7608,
-            "stdMovingAverage": 1042.2939417645994
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2022.json",
-        "options": [
-          {
-            "key": "CZ-Load",
-            "average": 7271,
-            "stdMovingAverage": 1014.7204016836056
-          }
-        ]
-      },
-      {
-        "file": "cz-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "de-charts-2015.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 57142,
-            "stdMovingAverage": 9570.718809326843
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2016.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 57320,
-            "stdMovingAverage": 9600.209252384024
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2017.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 57769,
-            "stdMovingAverage": 9542.191900384161
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2018.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 58156,
-            "stdMovingAverage": 9308.71327142655
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2019.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 56810,
-            "stdMovingAverage": 9170.283031149866
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2020.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 55288,
-            "stdMovingAverage": 8766.624324476967
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2021.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 57630,
-            "stdMovingAverage": 8762.985852012998
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2022.json",
-        "options": [
-          {
-            "key": "DE-Load",
-            "average": 55820,
-            "stdMovingAverage": 8480.17379172715
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2015.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3747,
-            "stdMovingAverage": 696.3809652938498
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2016.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3676,
-            "stdMovingAverage": 685.0124840258733
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2017.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3706,
-            "stdMovingAverage": 677.3070485674583
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2018.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3835,
-            "stdMovingAverage": 665.0123589052952
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2019.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3829,
-            "stdMovingAverage": 647.3543882563163
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2020.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3882,
-            "stdMovingAverage": 649.7841627273389
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2021.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 4143,
-            "stdMovingAverage": 647.4193271735974
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2022.json",
-        "options": [
-          {
-            "key": "DK-Load",
-            "average": 3882,
-            "stdMovingAverage": 597.9916777282046
-          }
-        ]
-      },
-      {
-        "file": "dk-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ee-charts-2015.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 901,
-            "stdMovingAverage": 163.94312995833818
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2016.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 929,
-            "stdMovingAverage": 163.86877749678405
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2017.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 947,
-            "stdMovingAverage": 158.6625585496839
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2018.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 950,
-            "stdMovingAverage": 197.13209198133592
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2019.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 939,
-            "stdMovingAverage": 152.8807409038009
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2020.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 905,
-            "stdMovingAverage": 143.11426757531362
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2021.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 962,
-            "stdMovingAverage": 148.5337931306899
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2022.json",
-        "options": [
-          {
-            "key": "EE-Load",
-            "average": 912,
-            "stdMovingAverage": 141.95414616483185
-          }
-        ]
-      },
-      {
-        "file": "ee-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "es-charts-2015.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 28272,
-            "stdMovingAverage": 4511.0790172273055
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2016.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 28492,
-            "stdMovingAverage": 4254.683013233387
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2017.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 28851,
-            "stdMovingAverage": 4250.8664226978535
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2018.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 29057,
-            "stdMovingAverage": 4361.056167734873
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2019.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 28538,
-            "stdMovingAverage": 4193.084233600263
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2020.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 27087,
-            "stdMovingAverage": 4011.3159762790588
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2021.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 27845,
-            "stdMovingAverage": 3925.6477972655975
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2022.json",
-        "options": [
-          {
-            "key": "ES-Load",
-            "average": 27041,
-            "stdMovingAverage": 3875.7274076727763
-          }
-        ]
-      },
-      {
-        "file": "es-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "fi-charts-2015.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9259,
-            "stdMovingAverage": 953.7243317428507
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2016.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9524,
-            "stdMovingAverage": 975.8542720137597
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2017.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9513,
-            "stdMovingAverage": 809.2658982337443
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2018.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9789,
-            "stdMovingAverage": 764.472725055195
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2019.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9525,
-            "stdMovingAverage": 737.1127715217035
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2020.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 8920,
-            "stdMovingAverage": 705.189250808664
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2021.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 9670,
-            "stdMovingAverage": 766.6309841514924
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2022.json",
-        "options": [
-          {
-            "key": "FI-Load",
-            "average": 8896,
-            "stdMovingAverage": 652.5301733672798
-          }
-        ]
-      },
-      {
-        "file": "fi-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "fr-charts-2015.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 53653,
-            "stdMovingAverage": 6209.482186905921
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2016.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 54359,
-            "stdMovingAverage": 6510.53682169993
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2017.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 54332,
-            "stdMovingAverage": 6952.8283672271045
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2018.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 53696,
-            "stdMovingAverage": 6967.2105820804
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2019.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 53332,
-            "stdMovingAverage": 6360.260997690017
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2020.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 50592,
-            "stdMovingAverage": 5877.788503503342
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2021.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 53169,
-            "stdMovingAverage": 6325.481875437502
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2022.json",
-        "options": [
-          {
-            "key": "FR-Load",
-            "average": 49486,
-            "stdMovingAverage": 7267.888289473872
-          }
-        ]
-      },
-      {
-        "file": "fr-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "hu-charts-2015.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4746,
-            "stdMovingAverage": 652.7884512453327
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2016.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4768,
-            "stdMovingAverage": 636.2173679594458
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2017.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4902,
-            "stdMovingAverage": 646.0397733388718
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2018.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4943,
-            "stdMovingAverage": 646.4689654961173
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2019.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4968,
-            "stdMovingAverage": 639.3273214423712
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2020.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4882,
-            "stdMovingAverage": 633.4850412153611
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2021.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 5082,
-            "stdMovingAverage": 637.0605734185003
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2022.json",
-        "options": [
-          {
-            "key": "HU-Load",
-            "average": 4924,
-            "stdMovingAverage": 605.161470798251
-          }
-        ]
-      },
-      {
-        "file": "hu-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ie-charts-2015.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 2997,
-            "stdMovingAverage": 625.6050709377038
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2016.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3045,
-            "stdMovingAverage": 657.873476839947
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2017.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3153,
-            "stdMovingAverage": 585.2091951273279
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2018.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3293,
-            "stdMovingAverage": 564.3313966622997
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2019.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3313,
-            "stdMovingAverage": 568.8996753477026
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2020.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3296,
-            "stdMovingAverage": 663.1946618509885
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2021.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 3461,
-            "stdMovingAverage": 732.0010891633904
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2022.json",
-        "options": [
-          {
-            "key": "IE-Load",
-            "average": 1275,
-            "stdMovingAverage": 758.8485212130067
-          }
-        ]
-      },
-      {
-        "file": "ie-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "it-charts-2015.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 32938,
-            "stdMovingAverage": 7123.297891870081
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2016.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 32248,
-            "stdMovingAverage": 6907.708592112493
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2017.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 33271,
-            "stdMovingAverage": 7139.371601706689
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2018.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 33934,
-            "stdMovingAverage": 7151.08012086117
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2019.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 33580,
-            "stdMovingAverage": 7134.129445682934
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2020.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 31103,
-            "stdMovingAverage": 6579.700402453685
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2021.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 33023,
-            "stdMovingAverage": 6866.478324453497
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2022.json",
-        "options": [
-          {
-            "key": "IT-Load",
-            "average": 32613,
-            "stdMovingAverage": 7050.264907653087
-          }
-        ]
-      },
-      {
-        "file": "it-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lt-charts-2015.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1191,
-            "stdMovingAverage": 242.58069257981217
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2016.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1269,
-            "stdMovingAverage": 228.58060867685674
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2017.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1324,
-            "stdMovingAverage": 248.88355936058696
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2018.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1377,
-            "stdMovingAverage": 260.90251116081515
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2019.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1390,
-            "stdMovingAverage": 233.13110377189483
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2020.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1348,
-            "stdMovingAverage": 222.87889096775524
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2021.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1413,
-            "stdMovingAverage": 226.99259613572872
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2022.json",
-        "options": [
-          {
-            "key": "LT-Load",
-            "average": 1373,
-            "stdMovingAverage": 220.67196706721847
-          }
-        ]
-      },
-      {
-        "file": "lt-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lu-charts-2015.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 485,
-            "stdMovingAverage": 70.37853811608622
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2016.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 491,
-            "stdMovingAverage": 73.86776727946932
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2017.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 491,
-            "stdMovingAverage": 80.54143812114202
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2018.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 454,
-            "stdMovingAverage": 135.34136388664936
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2019.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 436,
-            "stdMovingAverage": 128.14390037293896
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2020.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 414,
-            "stdMovingAverage": 97.27104757750443
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2021.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 455,
-            "stdMovingAverage": 80.07098406382501
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2022.json",
-        "options": [
-          {
-            "key": "LU-Load",
-            "average": 502,
-            "stdMovingAverage": 85.71644339330378
-          }
-        ]
-      },
-      {
-        "file": "lu-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lv-charts-2015.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 807,
-            "stdMovingAverage": 155.98354510776105
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2016.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 818,
-            "stdMovingAverage": 164.47362789685891
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2017.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 822,
-            "stdMovingAverage": 164.60831111330776
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2018.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 838,
-            "stdMovingAverage": 157.45583860337683
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2019.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 825,
-            "stdMovingAverage": 153.88605477368526
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2020.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 803,
-            "stdMovingAverage": 146.91566156969233
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2021.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 834,
-            "stdMovingAverage": 145.89828681656593
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2022.json",
-        "options": [
-          {
-            "key": "LV-Load",
-            "average": 771,
-            "stdMovingAverage": 139.08258051814727
-          }
-        ]
-      },
-      {
-        "file": "lv-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2015.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2016.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2017.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2018.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2019.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2020.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2021.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2022.json",
-        "options": []
-      },
-      {
-        "file": "nl-charts-2015.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 11160,
-            "stdMovingAverage": 2220.276029539321
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2016.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 12979,
-            "stdMovingAverage": 2179.102433165815
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2017.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 12995,
-            "stdMovingAverage": 2117.8624518795978
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2018.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 13094,
-            "stdMovingAverage": 1988.3472804882592
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2019.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 13002,
-            "stdMovingAverage": 1725.3117763993446
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2020.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 12312,
-            "stdMovingAverage": 1558.1217955379252
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2021.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 12146,
-            "stdMovingAverage": 1543.2966565670888
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2022.json",
-        "options": [
-          {
-            "key": "NL-Load",
-            "average": 11206,
-            "stdMovingAverage": 1631.798360571052
-          }
-        ]
-      },
-      {
-        "file": "nl-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "no-charts-2015.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 14726,
-            "stdMovingAverage": 1580.4557270636
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2016.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15043,
-            "stdMovingAverage": 1481.0552055833707
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2017.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15169,
-            "stdMovingAverage": 1366.257690172488
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2018.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15467,
-            "stdMovingAverage": 1389.085269298609
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2019.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15035,
-            "stdMovingAverage": 2295.4138901778288
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2020.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15125,
-            "stdMovingAverage": 1244.8124979718868
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2021.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 15857,
-            "stdMovingAverage": 1290.2333192757308
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2022.json",
-        "options": [
-          {
-            "key": "NO-Load",
-            "average": 14742,
-            "stdMovingAverage": 1889.5207168338263
-          }
-        ]
-      },
-      {
-        "file": "no-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "pl-charts-2015.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 18419,
-            "stdMovingAverage": 2802.9177470516097
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2016.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 18714,
-            "stdMovingAverage": 2883.4812256492337
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2017.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 19220,
-            "stdMovingAverage": 2900.821835648018
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2018.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 19530,
-            "stdMovingAverage": 2951.1786023542813
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2019.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 19283,
-            "stdMovingAverage": 2939.0523727949585
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2020.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 18817,
-            "stdMovingAverage": 2850.6974675840966
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2021.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 19936,
-            "stdMovingAverage": 2957.645702430488
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2022.json",
-        "options": [
-          {
-            "key": "PL-Load",
-            "average": 19496,
-            "stdMovingAverage": 2830.6283582031424
-          }
-        ]
-      },
-      {
-        "file": "pl-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "pt-charts-2015.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5590,
-            "stdMovingAverage": 888.855538254317
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2016.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5609,
-            "stdMovingAverage": 898.941619110804
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2017.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5665,
-            "stdMovingAverage": 899.8118421381826
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2018.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5811,
-            "stdMovingAverage": 934.7446090530728
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2019.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5747,
-            "stdMovingAverage": 920.5554686594786
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2020.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5556,
-            "stdMovingAverage": 900.4194947046575
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2021.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5647,
-            "stdMovingAverage": 918.1788017579984
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2022.json",
-        "options": [
-          {
-            "key": "PT-Load",
-            "average": 5720,
-            "stdMovingAverage": 912.4648788579764
-          }
-        ]
-      },
-      {
-        "file": "pt-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ro-charts-2015.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6502,
-            "stdMovingAverage": 1011.704443179038
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2016.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6656,
-            "stdMovingAverage": 859.85116484918
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2017.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6846,
-            "stdMovingAverage": 877.6035382842716
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2018.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6929,
-            "stdMovingAverage": 974.2619985971672
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2019.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6858,
-            "stdMovingAverage": 863.0843689907354
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2020.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6610,
-            "stdMovingAverage": 855.4018576392205
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2021.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6748,
-            "stdMovingAverage": 1487.3557288200761
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2022.json",
-        "options": [
-          {
-            "key": "RO-Load",
-            "average": 6285,
-            "stdMovingAverage": 1134.3980340985922
-          }
-        ]
-      },
-      {
-        "file": "ro-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "se-charts-2015.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15209,
-            "stdMovingAverage": 2578.758475043004
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2016.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15713,
-            "stdMovingAverage": 1937.7853574057863
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2017.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15767,
-            "stdMovingAverage": 1895.7909246036788
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2018.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15771,
-            "stdMovingAverage": 1894.44197977712
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2019.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15570,
-            "stdMovingAverage": 1867.1598755532013
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2020.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15133,
-            "stdMovingAverage": 1710.3826968340059
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2021.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 15915,
-            "stdMovingAverage": 1756.9292732010863
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2022.json",
-        "options": [
-          {
-            "key": "SE-Load",
-            "average": 14695,
-            "stdMovingAverage": 1529.0487051539849
-          }
-        ]
-      },
-      {
-        "file": "se-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2015.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2016.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2017.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2018.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2019.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2020.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2021.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2022.json",
-        "options": []
-      }
-    ]
-  },
-  {
-    "key": "exportDataSet",
-    "name": "Export",
-    "unit": "MW",
-    "fields": [
-      "-Import Balance"
-    ],
-    "files": [
-      {
-        "file": "at-charts-2015.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 706,
-            "stdMovingAverage": 856.4585931988678
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2016.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 406,
-            "stdMovingAverage": 936.9744838476254
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2017.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 120,
-            "stdMovingAverage": 967.9596940572129
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2018.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 885,
-            "stdMovingAverage": 942.8997112834
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2019.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 504,
-            "stdMovingAverage": 974.1735704837383
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2020.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 381,
-            "stdMovingAverage": 1042.0688277752724
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2021.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 953,
-            "stdMovingAverage": 1025.399977710048
-          }
-        ]
-      },
-      {
-        "file": "at-charts-2022.json",
-        "options": [
-          {
-            "key": "AT-Import Balance",
-            "average": 1003,
-            "stdMovingAverage": 1083.280457441578
-          }
-        ]
-      },
-      {
-        "file": "at-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "at-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ch-charts-2015.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": -27,
-            "stdMovingAverage": 1039.421679856434
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2016.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": 513,
-            "stdMovingAverage": 1064.5972141480956
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2017.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": 731,
-            "stdMovingAverage": 1449.2491753034421
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2018.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": 114,
-            "stdMovingAverage": 1495.861700162841
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2019.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": -379,
-            "stdMovingAverage": 1847.3019758848304
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2020.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": -482,
-            "stdMovingAverage": 1996.0454646155274
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2021.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": 406,
-            "stdMovingAverage": 1835.247694278582
-          }
-        ]
-      },
-      {
-        "file": "ch-charts-2022.json",
-        "options": [
-          {
-            "key": "CH-Import Balance",
-            "average": 275,
-            "stdMovingAverage": 1798.0260493258972
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2015.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1484,
-            "stdMovingAverage": 595.514248173735
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2016.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1248,
-            "stdMovingAverage": 568.7508148604056
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2017.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1511,
-            "stdMovingAverage": 678.4739263376562
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2018.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1554,
-            "stdMovingAverage": 691.8767562593548
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2019.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1450,
-            "stdMovingAverage": 639.439336159215
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2020.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1110,
-            "stdMovingAverage": 697.2047301901663
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2021.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1277,
-            "stdMovingAverage": 699.0335568209522
-          }
-        ]
-      },
-      {
-        "file": "cz-charts-2022.json",
-        "options": [
-          {
-            "key": "CZ-Import Balance",
-            "average": -1493,
-            "stdMovingAverage": 711.3276779763513
-          }
-        ]
-      },
-      {
-        "file": "cz-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "cz-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "de-charts-2015.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -4303,
-            "stdMovingAverage": 2610.2365241891735
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2016.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -4757,
-            "stdMovingAverage": 2591.1444917715703
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2017.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -5256,
-            "stdMovingAverage": 2832.6604169631937
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2018.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -5484,
-            "stdMovingAverage": 3312.760893758863
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2019.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -3899,
-            "stdMovingAverage": 4025.3522515901495
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2020.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -2223,
-            "stdMovingAverage": 4483.562366096527
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2021.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -2204,
-            "stdMovingAverage": 4587.016632820977
-          }
-        ]
-      },
-      {
-        "file": "de-charts-2022.json",
-        "options": [
-          {
-            "key": "DE-Import Balance",
-            "average": -2971,
-            "stdMovingAverage": 4674.203277726093
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2015.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 707,
-            "stdMovingAverage": 895.9493972437242
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2016.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 601,
-            "stdMovingAverage": 851.9036539924814
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2017.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 534,
-            "stdMovingAverage": 936.9081800183418
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2018.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 586,
-            "stdMovingAverage": 926.7965986879611
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2019.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 650,
-            "stdMovingAverage": 1031.5956360738335
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2020.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 782,
-            "stdMovingAverage": 990.654210320533
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2021.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 535,
-            "stdMovingAverage": 1014.1887800528762
-          }
-        ]
-      },
-      {
-        "file": "dk-charts-2022.json",
-        "options": [
-          {
-            "key": "DK-Import Balance",
-            "average": 220,
-            "stdMovingAverage": 1035.6101531440697
-          }
-        ]
-      },
-      {
-        "file": "dk-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "dk-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ee-charts-2015.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": -104,
-            "stdMovingAverage": 180.63031946403456
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2016.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": -228,
-            "stdMovingAverage": 212.62568895090277
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2017.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": -309,
-            "stdMovingAverage": 224.22474496166552
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2018.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": -157,
-            "stdMovingAverage": 222.17666327681263
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2019.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": 252,
-            "stdMovingAverage": 152.3439717138739
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2020.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": 416,
-            "stdMovingAverage": 143.1246622439251
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2021.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": 303,
-            "stdMovingAverage": 150.40362285484653
-          }
-        ]
-      },
-      {
-        "file": "ee-charts-2022.json",
-        "options": [
-          {
-            "key": "EE-Import Balance",
-            "average": 104,
-            "stdMovingAverage": 173.9213498584191
-          }
-        ]
-      },
-      {
-        "file": "ee-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ee-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "es-charts-2015.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 564,
-            "stdMovingAverage": 950.5282675864663
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2016.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 1455,
-            "stdMovingAverage": 1491.5792195779027
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2017.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 1714,
-            "stdMovingAverage": 1433.2093852203134
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2018.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 1665,
-            "stdMovingAverage": 1381.8135585097004
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2019.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 699,
-            "stdMovingAverage": 1388.148307877349
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2020.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 416,
-            "stdMovingAverage": 1821.8356577707336
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2021.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": 89,
-            "stdMovingAverage": 1868.530689786195
-          }
-        ]
-      },
-      {
-        "file": "es-charts-2022.json",
-        "options": [
-          {
-            "key": "ES-Import Balance",
-            "average": -2139,
-            "stdMovingAverage": 1667.028285595258
-          }
-        ]
-      },
-      {
-        "file": "es-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "es-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "fi-charts-2015.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 1834,
-            "stdMovingAverage": 450.256950430283
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2016.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 2127,
-            "stdMovingAverage": 439.9493216950672
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2017.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 2297,
-            "stdMovingAverage": 514.9944178203784
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2018.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 2232,
-            "stdMovingAverage": 518.611259528739
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2019.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 2249,
-            "stdMovingAverage": 515.5602380954351
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2020.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 1674,
-            "stdMovingAverage": 474.43789986140223
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2021.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 2000,
-            "stdMovingAverage": 590.697610170386
-          }
-        ]
-      },
-      {
-        "file": "fi-charts-2022.json",
-        "options": [
-          {
-            "key": "FI-Import Balance",
-            "average": 1434,
-            "stdMovingAverage": 641.1228935109328
-          }
-        ]
-      },
-      {
-        "file": "fi-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "fi-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "fr-charts-2015.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -6722,
-            "stdMovingAverage": 2306.1932593349184
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2016.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -4174,
-            "stdMovingAverage": 2620.00729085959
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2017.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -4077,
-            "stdMovingAverage": 2710.8395108078485
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2018.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -6852,
-            "stdMovingAverage": 3098.1466526317818
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2019.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -6555,
-            "stdMovingAverage": 3249.0826469548424
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2020.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -5020,
-            "stdMovingAverage": 3412.273833216844
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2021.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": -4891,
-            "stdMovingAverage": 3523.800954169769
-          }
-        ]
-      },
-      {
-        "file": "fr-charts-2022.json",
-        "options": [
-          {
-            "key": "FR-Import Balance",
-            "average": 1662,
-            "stdMovingAverage": 3020.728026298993
-          }
-        ]
-      },
-      {
-        "file": "fr-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "fr-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "hu-charts-2015.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1577,
-            "stdMovingAverage": 520.7339701931805
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2016.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1462,
-            "stdMovingAverage": 525.1909210405815
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2017.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1484,
-            "stdMovingAverage": 540.8040054002267
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2018.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1651,
-            "stdMovingAverage": 518.9214068104554
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2019.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1451,
-            "stdMovingAverage": 464.4264099476299
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2020.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1336,
-            "stdMovingAverage": 518.474435231071
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2021.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1465,
-            "stdMovingAverage": 539.1763819626707
-          }
-        ]
-      },
-      {
-        "file": "hu-charts-2022.json",
-        "options": [
-          {
-            "key": "HU-Import Balance",
-            "average": 1357,
-            "stdMovingAverage": 648.3880347253207
-          }
-        ]
-      },
-      {
-        "file": "hu-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "hu-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ie-charts-2015.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": 123,
-            "stdMovingAverage": 223.72034466625922
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2016.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -32,
-            "stdMovingAverage": 203.44498088582236
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2017.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -96,
-            "stdMovingAverage": 258.7704871437508
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2018.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -57,
-            "stdMovingAverage": 283.409847295204
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2019.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -21,
-            "stdMovingAverage": 326.06264285419155
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2020.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -103,
-            "stdMovingAverage": 303.3009825163956
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2021.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": 57,
-            "stdMovingAverage": 230.12862541520963
-          }
-        ]
-      },
-      {
-        "file": "ie-charts-2022.json",
-        "options": [
-          {
-            "key": "IE-Import Balance",
-            "average": -33,
-            "stdMovingAverage": 134.72440381777423
-          }
-        ]
-      },
-      {
-        "file": "ie-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ie-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "it-charts-2015.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 5028,
-            "stdMovingAverage": 1568.0700458267122
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2016.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 3958,
-            "stdMovingAverage": 1687.0696481674368
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2017.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 4065,
-            "stdMovingAverage": 1662.7321553669215
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2018.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 4821,
-            "stdMovingAverage": 1443.7984958996708
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2019.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 4422,
-            "stdMovingAverage": 1241.026790047189
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2020.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 3744,
-            "stdMovingAverage": 1714.6376036095373
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2021.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 4957,
-            "stdMovingAverage": 1605.2667382148131
-          }
-        ]
-      },
-      {
-        "file": "it-charts-2022.json",
-        "options": [
-          {
-            "key": "IT-Import Balance",
-            "average": 5032,
-            "stdMovingAverage": 1532.6240699609152
-          }
-        ]
-      },
-      {
-        "file": "it-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "it-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lt-charts-2015.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 812,
-            "stdMovingAverage": 191.39746397122394
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2016.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 903,
-            "stdMovingAverage": 265.3923833490174
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2017.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 998,
-            "stdMovingAverage": 246.85460676135727
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2018.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 1112,
-            "stdMovingAverage": 221.51215524522436
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2019.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 1088,
-            "stdMovingAverage": 227.3305541919459
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2020.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 920,
-            "stdMovingAverage": 265.1685282158486
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2021.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 1050,
-            "stdMovingAverage": 258.7338438920612
-          }
-        ]
-      },
-      {
-        "file": "lt-charts-2022.json",
-        "options": [
-          {
-            "key": "LT-Import Balance",
-            "average": 991,
-            "stdMovingAverage": 218.55276202614053
-          }
-        ]
-      },
-      {
-        "file": "lt-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lt-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lu-charts-2015.json",
-        "options": []
-      },
-      {
-        "file": "lu-charts-2016.json",
-        "options": []
-      },
-      {
-        "file": "lu-charts-2017.json",
-        "options": []
-      },
-      {
-        "file": "lu-charts-2018.json",
-        "options": [
-          {
-            "key": "LU-Import Balance",
-            "average": 482,
-            "stdMovingAverage": 76.53267058308585
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2019.json",
-        "options": [
-          {
-            "key": "LU-Import Balance",
-            "average": 471,
-            "stdMovingAverage": 78.90240661021477
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2020.json",
-        "options": [
-          {
-            "key": "LU-Import Balance",
-            "average": 431,
-            "stdMovingAverage": 75.84493580125977
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2021.json",
-        "options": [
-          {
-            "key": "LU-Import Balance",
-            "average": 450,
-            "stdMovingAverage": 77.0424333712428
-          }
-        ]
-      },
-      {
-        "file": "lu-charts-2022.json",
-        "options": [
-          {
-            "key": "LU-Import Balance",
-            "average": 439,
-            "stdMovingAverage": 80.19120145415418
-          }
-        ]
-      },
-      {
-        "file": "lu-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lu-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "lv-charts-2015.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 203,
-            "stdMovingAverage": 174.70577808136025
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2016.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 135,
-            "stdMovingAverage": 225.31405687133554
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2017.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": -6,
-            "stdMovingAverage": 211.5994668299479
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2018.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 43,
-            "stdMovingAverage": 232.58505575485054
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2019.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 125,
-            "stdMovingAverage": 231.42759677372257
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2020.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 183,
-            "stdMovingAverage": 233.27070424742496
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2021.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 200,
-            "stdMovingAverage": 223.33294232499085
-          }
-        ]
-      },
-      {
-        "file": "lv-charts-2022.json",
-        "options": [
-          {
-            "key": "LV-Import Balance",
-            "average": 293,
-            "stdMovingAverage": 185.08558100238366
-          }
-        ]
-      },
-      {
-        "file": "lv-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "lv-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "mt-charts-2015.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 120,
-            "stdMovingAverage": 31.007060052374925
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2016.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 173,
-            "stdMovingAverage": 25.2862162226436
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2017.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 97,
-            "stdMovingAverage": 43.625526071257426
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2018.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 68,
-            "stdMovingAverage": 48.45526520217616
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2019.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 74,
-            "stdMovingAverage": 50.68116961828762
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2020.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 47,
-            "stdMovingAverage": 35.46774227129667
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2021.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 59,
-            "stdMovingAverage": 42.40300810122563
-          }
-        ]
-      },
-      {
-        "file": "mt-charts-2022.json",
-        "options": [
-          {
-            "key": "MT-Import Balance",
-            "average": 83,
-            "stdMovingAverage": 44.64853376939212
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2015.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 552,
-            "stdMovingAverage": 820.2677590631566
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2016.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 336,
-            "stdMovingAverage": 917.6136766615347
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2017.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 403,
-            "stdMovingAverage": 1004.6478101076896
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2018.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 829,
-            "stdMovingAverage": 887.5115782505442
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2019.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 30,
-            "stdMovingAverage": 1166.0013714226056
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2020.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": -298,
-            "stdMovingAverage": 1444.911755428627
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2021.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": 48,
-            "stdMovingAverage": 1711.8488956321412
-          }
-        ]
-      },
-      {
-        "file": "nl-charts-2022.json",
-        "options": [
-          {
-            "key": "NL-Import Balance",
-            "average": -435,
-            "stdMovingAverage": 1615.439300592999
-          }
-        ]
-      },
-      {
-        "file": "nl-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "nl-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "no-charts-2015.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1609,
-            "stdMovingAverage": 1850.5617393379941
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2016.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1771,
-            "stdMovingAverage": 1875.6315582163359
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2017.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1666,
-            "stdMovingAverage": 1832.3755148457242
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2018.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1128,
-            "stdMovingAverage": 2223.6537708270466
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2019.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": 18,
-            "stdMovingAverage": 2107.0285522499235
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2020.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -2296,
-            "stdMovingAverage": 1609.586457464932
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2021.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1951,
-            "stdMovingAverage": 2251.7264048540565
-          }
-        ]
-      },
-      {
-        "file": "no-charts-2022.json",
-        "options": [
-          {
-            "key": "NO-Import Balance",
-            "average": -1276,
-            "stdMovingAverage": 2283.888849190947
-          }
-        ]
-      },
-      {
-        "file": "no-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "no-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "pl-charts-2015.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 31,
-            "stdMovingAverage": 403.8637367843392
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2016.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 237,
-            "stdMovingAverage": 553.7470159063528
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2017.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 289,
-            "stdMovingAverage": 710.0594569729124
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2018.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 638,
-            "stdMovingAverage": 827.8241092065249
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2019.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 1173,
-            "stdMovingAverage": 770.17435610949
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2020.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 1466,
-            "stdMovingAverage": 828.7319955642411
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2021.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": 118,
-            "stdMovingAverage": 896.3505171681867
-          }
-        ]
-      },
-      {
-        "file": "pl-charts-2022.json",
-        "options": [
-          {
-            "key": "PL-Import Balance",
-            "average": -109,
-            "stdMovingAverage": 646.3856876404832
-          }
-        ]
-      },
-      {
-        "file": "pl-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "pl-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "pt-charts-2015.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": 265,
-            "stdMovingAverage": 844.2531262009734
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2016.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": -574,
-            "stdMovingAverage": 963.4420550130216
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2017.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": -303,
-            "stdMovingAverage": 1079.631981063606
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2018.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": -298,
-            "stdMovingAverage": 1066.1821542006253
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2019.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": 389,
-            "stdMovingAverage": 1230.5635932574048
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2020.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": 171,
-            "stdMovingAverage": 1355.9481079801842
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2021.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": 545,
-            "stdMovingAverage": 1322.3777909768917
-          }
-        ]
-      },
-      {
-        "file": "pt-charts-2022.json",
-        "options": [
-          {
-            "key": "PT-Import Balance",
-            "average": 1269,
-            "stdMovingAverage": 1201.234220467225
-          }
-        ]
-      },
-      {
-        "file": "pt-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "pt-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "ro-charts-2015.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": -848,
-            "stdMovingAverage": 330.65333437208926
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2016.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": -664,
-            "stdMovingAverage": 377.7138592129528
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2017.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": -425,
-            "stdMovingAverage": 580.7854113049244
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2018.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": -293,
-            "stdMovingAverage": 517.3471964257047
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2019.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": 174,
-            "stdMovingAverage": 538.3496494406012
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2020.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": 316,
-            "stdMovingAverage": 582.946025625789
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2021.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": 241,
-            "stdMovingAverage": 656.4361132119739
-          }
-        ]
-      },
-      {
-        "file": "ro-charts-2022.json",
-        "options": [
-          {
-            "key": "RO-Import Balance",
-            "average": 162,
-            "stdMovingAverage": 674.739192378408
-          }
-        ]
-      },
-      {
-        "file": "ro-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "ro-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "se-charts-2015.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -2571,
-            "stdMovingAverage": 983.9598092775772
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2016.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -1385,
-            "stdMovingAverage": 992.776241062364
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2017.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -2189,
-            "stdMovingAverage": 971.6574438651203
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2018.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -1937,
-            "stdMovingAverage": 1065.8584832515846
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2019.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -2963,
-            "stdMovingAverage": 1085.8219970837738
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2020.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -2781,
-            "stdMovingAverage": 1132.6082087633392
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2021.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -2878,
-            "stdMovingAverage": 1340.5879376253085
-          }
-        ]
-      },
-      {
-        "file": "se-charts-2022.json",
-        "options": [
-          {
-            "key": "SE-Import Balance",
-            "average": -4010,
-            "stdMovingAverage": 1191.5635212231664
-          }
-        ]
-      },
-      {
-        "file": "se-price-2015.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2016.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2017.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2018.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2019.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2020.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2021.json",
-        "options": []
-      },
-      {
-        "file": "se-price-2022.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2015.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2016.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2017.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2018.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2019.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2020.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2021.json",
-        "options": []
-      },
-      {
-        "file": "se-solar-2022.json",
-        "options": []
       }
     ]
   }
