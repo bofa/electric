@@ -13,7 +13,7 @@ const options = // ['price', 'production', 'consumption']
   },
   {
     key: 'productionDataSet',
-    name: 'Electricy Source/Flow',
+    name: 'Electricity Source/Flow',
     unit: 'MW',
     fields: [
       '-Nuclear',
