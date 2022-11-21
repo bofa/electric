@@ -28,14 +28,22 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
+const now = DateTime.now();
 export const rangeOptions = [
-  { key: 'Full',         minus: null          },
-  { key: 'Past 2 Years', minus: { years:  2 } },
-  { key: 'Past Year',    minus: { years:  1 } },
-  { key: 'Past 2 Month', minus: { months: 2 } },
-  { key: 'Past Month',   minus: { months: 1 } },
-  { key: 'Past 2 Weeks', minus: { weeks:  2 } },
-  { key: 'Past Week',    minus: { weeks:  1 } },
+  { key: 'Full',         from: DateTime.fromISO('2000-01-01') },
+  { key: '2016',         from: DateTime.fromISO('2016-01-01') },
+  { key: '2017',         from: DateTime.fromISO('2017-01-01') },
+  { key: '2018',         from: DateTime.fromISO('2018-01-01') },
+  { key: '2019',         from: DateTime.fromISO('2019-01-01') },
+  { key: '2020',         from: DateTime.fromISO('2020-01-01') },
+  { key: '2021',         from: DateTime.fromISO('2021-01-01') },
+  { key: '2022',         from: DateTime.fromISO('2022-01-01') },
+  { key: 'Past 2 Years', from: now.minus({ years:  2 }) },
+  { key: 'Past Year',    from: now.minus({ years:  1 }) },
+  { key: 'Past 2 Month', from: now.minus({ months: 2 }) },
+  { key: 'Past Month',   from: now.minus({ months: 1 }) },
+  { key: 'Past 2 Weeks', from: now.minus({ weeks:  2 }) },
+  { key: 'Past Week',    from: now.minus({ weeks:  1 }) },
 ]
 
 function App (props) {
@@ -54,12 +62,7 @@ function App (props) {
 
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
-  const now = DateTime.now();
-  let lowerDate = DateTime.fromISO('2000-01-01T00:00:00');
-  const minus = rangeOptions.find(ro => ro.key === range)?.minus;
-  if (minus) {
-    lowerDate = now.minus(minus)
-  }
+  let lowerDate = rangeOptions.find(ro => ro.key === range)?.from;
 
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
