@@ -21,7 +21,7 @@ export default function TopBar() {
   const [items, setItems] = React.useState([]);
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
-  const [range, setRange] = React.useState(rangeOptions[1].key);
+  const [range, setRange] = React.useState(rangeOptions[6].key);
   
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
