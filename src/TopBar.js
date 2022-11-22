@@ -16,6 +16,13 @@ import { DateTime } from 'luxon';
 
 const settingsIcon = randomIcon();
 
+const predefined = [
+  {
+    key: 'sweden-short-price',
+    range: ''
+  }
+]
+
 export default function TopBar() {
   const [options, setOptions] = React.useState([]);
   const [items, setItems] = React.useState([]);
