@@ -14,8 +14,8 @@ const combineKeys =
   ['Coal', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
   ['Hydro', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
   ['Import', ['Import Balance']],
-  ['Gas', ['Fossil Gas']],
-  ['Oil', ['Fossil Oil']],
+  ['Gas', ['Fossil gas']],
+  ['Oil', ['Fossil oil']],
 ]
 
 allFiles

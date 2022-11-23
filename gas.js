@@ -10,7 +10,7 @@ function uniq(a, key) {
   });
 }
 
-const days = 3 * 365;
+const days = 8 * 365;
 data$ = Array(days).fill().map((_, i) => {
   const date = luxon.DateTime.now().minus({ days: i + 2 });
   const endTime = date.toFormat('yyyy-MM-dd');
@@ -28,13 +28,17 @@ data$ = Array(days).fill().map((_, i) => {
           market: market.code,
           data: {
             x,
-            [market.code.slice(0, 2) + '-Gas In Storage']: Number(market.gasInStorage),
-            [market.code.slice(0, 2) + '-Gas Capacity']: Number(market.workingGasVolume),
+            [market.code.slice(0, 2) + '-Storage gas']: Number(market.gasInStorage),
+            [market.code.slice(0, 2) + '-Capacity gas']: Number(market.workingGasVolume),
           },
         }))
         // .reduce((obj, market) => ({ ...obj, ...market}), { x })
 
       return output;
+    })
+    .catch(error => {
+      console.log('error', error?.status, error?.message)
+      return [];
     })
 })
 

@@ -53,9 +53,9 @@ function App (props) {
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [priceDataSet, setPriceDataSet] = React.useState([]);
-  const [consumptionDataSet, setConsumptionDataSet] = React.useState([]);
   const [productionDataSet, setProductionDataSet] = React.useState([]);
-  const [exportDataSet, setExportDataSet] = React.useState([]);
+  const [energyDataSet, setEnergyDataSet] = React.useState([]);
+  // const [datasets, setDatasets] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
 
   const { selectedAreas, selectDataSet, range, pre } = props;
@@ -97,10 +97,10 @@ function App (props) {
       ))
       .then(seriesArray => {
         options.forEach(option => {
+          // const setFunc = setDatasets;
           const setFunc = option.key === 'priceDataSet'       ? setPriceDataSet
-                        : option.key === 'consumptionDataSet' ? setConsumptionDataSet
                         : option.key === 'productionDataSet'  ? setProductionDataSet
-                        : option.key === 'exportDataSet'      ? setExportDataSet
+                        : option.key === 'energyDataSet'      ? setEnergyDataSet
                         : () => {};
             
           setFunc(state => {
@@ -130,7 +130,7 @@ function App (props) {
     }
   }, [pre]);
 
-  let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
+  let fullDataSet = { priceDataSet, productionDataSet, energyDataSet }[selectDataSet]; // TODO datasets
   const loading = fullDataSet === null || fullDataSet.length < 1;
   fullDataSet = loading ? [] : fullDataSet;
 
@@ -278,7 +278,7 @@ function App (props) {
       y: {
         stacked,
         beginAtZero: true,
-        suggestedMax: 250,
+        // suggestedMax: 250,
         position: 'right',
         title: {
           display: true,

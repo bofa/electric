@@ -24,8 +24,10 @@ const options = // ['price', 'production', 'consumption']
       // '-Fossil coal-derived gas',
       // '-Fossil hard coal',
       '-Coal',
-      '-Fossil oil',
-      '-Fossil gas',
+      // '-Fossil oil',
+      // '-Fossil gas',
+      '-Oil',
+      '-Gas',
       '-Geothermal',
       // '-Hydro water reservoir',
       // '-Hydro pumped storage',
@@ -43,8 +45,8 @@ const options = // ['price', 'production', 'consumption']
   {
     key: 'energyDataSet',
     name: 'Energy',
-    unit: 'MWh',
-    fields: ['-Gas In Storage', '-Gas Capacity'],
+    unit: 'TWh',
+    fields: ['-Storage gas', '-Capacity gas'],
   },
 ].map(option => {
     const typeFiles = allFiles

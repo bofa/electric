@@ -113,7 +113,7 @@ export default function TopBar() {
       <Navbar>
         <NavbarGroup>
           <Popover2 content={<Menu>
-            <MenuItem2 text="Type" icon="lightning">
+            <MenuItem2 text="Unit" icon="lightning">
               {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
             </MenuItem2>
             <MenuItem2 text="Range" icon="time">
@@ -123,7 +123,7 @@ export default function TopBar() {
               {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
             </MenuItem2>
           </Menu>}>
-            <Button icon={settingsIcon} />
+            <Button icon={settingsIcon}/>
           </Popover2>
           <NavbarDivider/>
           <AreaMultiSelect
