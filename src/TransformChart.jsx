@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HTMLSelect } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
 import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
@@ -164,7 +164,15 @@ export default function TransformChart(props) {
   const [transform, setTransform] = useState(seriesTransforms[0].key);
   const [confidence, setConfidence] = useState(confidenceTransforms[2].key);
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
-  
+  const { pre } = props;
+
+  useEffect(() => {
+    if (pre) {
+      setTransform(pre.transform);
+      setConfidence(pre.confidenceTransform);
+    }
+  }, [pre]);
+
   const transformInstance = seriesTransforms.find(t => t.key === transform);
 
   const binSeries = props.processedSeries

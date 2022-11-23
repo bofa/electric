@@ -101794,12 +101794,38 @@
     "LV-Biomass": 27,
     "LV-Fossil gas": 481,
     "LV-Others": 8,
-    "LV-Load": null,
-    "LV-Residual load": null,
+    "LV-Load": 885,
+    "LV-Residual load": 489,
     "LV-Renewable share of generation": 44.7,
-    "LV-Renewable share of load": null,
+    "LV-Renewable share of load": 44.7,
     "LV-Wind": 6,
     "LV-Hydro": 363,
-    "LV-Import": 3
+    "LV-Import": 2.5
+  },
+  {
+    "x": "2022-11-23T07:00:00.000+01:00",
+    "LV-Biomass": 26,
+    "LV-Fossil gas": 644,
+    "LV-Others": 8,
+    "LV-Load": 980,
+    "LV-Residual load": 575,
+    "LV-Renewable share of generation": 38.3,
+    "LV-Renewable share of load": 41.3,
+    "LV-Wind": 7,
+    "LV-Hydro": 372,
+    "LV-Import": -72
+  },
+  {
+    "x": "2022-11-23T08:00:00.000+01:00",
+    "LV-Biomass": 26,
+    "LV-Fossil gas": 763,
+    "LV-Others": 8,
+    "LV-Load": null,
+    "LV-Residual load": null,
+    "LV-Renewable share of generation": 30.6,
+    "LV-Renewable share of load": null,
+    "LV-Wind": 6,
+    "LV-Hydro": 308,
+    "LV-Import": 7
   }
 ]

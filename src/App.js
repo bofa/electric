@@ -346,6 +346,7 @@ function App (props) {
         <TransformChart
           processedSeries={processedSeries}
           unit={unit}
+          pre={pre}
         />
       </div>
       {/* {Math.round(sum)}EUR, {Math.round(sum/tradingData.length)}EUR/h, {Math.round(24 * 365 * sum/tradingData.length)}EUR/y */}

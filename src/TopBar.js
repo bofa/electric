@@ -29,6 +29,7 @@ const predefinedList = [
     samplingSize: 1,
     transform: 'hour',
     confidence: 'off',
+    confidenceTransform: 'off',
   },
   {
     key: 'france-nuclear',
@@ -40,8 +41,9 @@ const predefinedList = [
 
     windowSize: 24*7,
     samplingSize: 24,
-    transform: 'hour',
+    transform: 'monthOfYear',
     confidence: 'std1',
+    confidenceTransform: 'off',
   },
   {
     key: 'price',
@@ -55,6 +57,7 @@ const predefinedList = [
     samplingSize: 24,
     transform: 'hour',
     confidence: 'off',
+    confidenceTransform: 'off',
   },
 ]
 
