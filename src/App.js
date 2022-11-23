@@ -58,7 +58,7 @@ function App (props) {
   const [exportDataSet, setExportDataSet] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
 
-  const { selectedAreas, selectDataSet, range } = props;
+  const { selectedAreas, selectDataSet, range, pre } = props;
 
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
@@ -70,7 +70,11 @@ function App (props) {
       .then(setOptions)
   }, [])
 
+  console.log('selectedAreas', selectedAreas);
+
   React.useEffect(() => {
+    console.log('Running!');
+
     const files = selectedAreas
       .map(area => options
         .find(option => option.key === selectDataSet)?.files
@@ -120,7 +124,15 @@ function App (props) {
 
       })
     
-  }, [selectDataSet, selectedAreas.length, options.length, range])
+  }, [selectDataSet, selectedAreas.length, options.length, range, pre])
+
+  React.useEffect(() => {
+    if (pre) {
+      setConfidence(pre.confidence);
+      setWindowSize(pre.windowSize);
+      setSamplingSize(pre.samplingSize);
+    }
+  }, [pre]);
 
   let fullDataSet = { priceDataSet, consumptionDataSet, productionDataSet, exportDataSet }[selectDataSet];
   const loading = fullDataSet === null || fullDataSet.length < 1;

@@ -25,9 +25,10 @@ const predefinedList = [
     range: 'Past 2 Weeks',
     selectedAreas: ['SE3-Price'],
 
-    // windowSize: 1,
-    // samplingSize: 1,
-    // transform: 'hour'
+    windowSize: 1,
+    samplingSize: 1,
+    transform: 'hour',
+    confidence: 'off',
   },
   {
     key: 'france-nuclear',
@@ -37,9 +38,10 @@ const predefinedList = [
     range: 'Full',
     selectedAreas: ['FR-Nuclear'],
 
-    // windowSize: 1,
-    // samplingSize: 1,
-    // transform: 'hour'
+    windowSize: 24*7,
+    samplingSize: 24,
+    transform: 'hour',
+    confidence: 'std1',
   },
   {
     key: 'price',
@@ -49,9 +51,10 @@ const predefinedList = [
     range: '2021',
     selectedAreas: ['SE3-Price', 'FI-Price', 'DE-LU-Price', 'FR-Price'],
 
-    // windowSize: 1,
-    // samplingSize: 1,
-    // transform: 'hour'
+    windowSize: 24*7,
+    samplingSize: 24,
+    transform: 'hour',
+    confidence: 'off',
   },
 ]
 
@@ -98,6 +101,7 @@ export default function TopBar() {
       setSelectDataSet(pre.selectDataSet);
       setSelectedAreas(pre.selectedAreas);
       setRange(pre.range);
+      setPreKey(null);
     }
   }, [pre]);
 
@@ -131,6 +135,7 @@ export default function TopBar() {
         selectedAreas={selectedAreas}
         selectDataSet={selectDataSet}
         range={range}
+        pre={pre}
       />
     </div>
   )
