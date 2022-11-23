@@ -40,6 +40,12 @@ const options = // ['price', 'production', 'consumption']
       '-Load',
     ],
   },
+  {
+    key: 'energyDataSet',
+    name: 'Energy',
+    unit: 'MWh',
+    fields: ['-energy??!!'],
+  },
 ].map(option => {
     const typeFiles = allFiles
       // .filter(file => file.includes('cz'))
