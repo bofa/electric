@@ -68,7 +68,7 @@ export default class AreaMultiSelect extends React.PureComponent {
             <Button rightIcon="sort-alphabetical" onClick={() => this.setState({ sort: 0 })}>
               Sort
             </Button>
-            <Button icon="sort-numerical" onClick={() => this.setState({ sort: 1 })}/>
+            <Button icon="sort-numerical-desc" onClick={() => this.setState({ sort: 1 })}/>
           </ButtonGroup>
           <MenuDivider/>
           {items.map(renderItem).filter(item => item != null)}

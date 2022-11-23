@@ -44,7 +44,7 @@ const options = // ['price', 'production', 'consumption']
     key: 'energyDataSet',
     name: 'Energy',
     unit: 'MWh',
-    fields: ['-energy??!!'],
+    fields: ['-Gas In Storage', '-Gas Capacity'],
   },
 ].map(option => {
     const typeFiles = allFiles
