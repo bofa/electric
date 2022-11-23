@@ -1,4 +1,4 @@
-import { MenuItem } from "@blueprintjs/core";
+import { MenuItem, Menu, ButtonGroup, Button, MenuDivider, Label } from "@blueprintjs/core";
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
 
@@ -17,8 +17,17 @@ function matchQuery(query, itemString) {
   return querys.every(query => itemStringLower.includes(query));
 }
 
+const sortFunctions = [
+  (a1, a2) => a1.text.localeCompare(a2.text),
+  (a1, a2) => a2.label - a1.label,
+]
+
 export default class AreaMultiSelect extends React.PureComponent {
    
+  state = {
+    sort: 0,
+  }
+
   renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
     if (!modifiers.matchesPredicate) {
       return null;
@@ -43,14 +52,27 @@ export default class AreaMultiSelect extends React.PureComponent {
 
   render() {
     const props = this.props;
-    const { items, selectedAreas, setSelectedAreas } = props;
+    const { selectedAreas, setSelectedAreas } = props;
       
+    const items = props.items.sort(sortFunctions[this.state.sort]);
+    // const items = props.items.sort((a1, a2) => a1.text.localeCompare(a2.text));
+
     return (
       <MultiSelect2
         resetOnQuery={false}
         resetOnSelect={false}
         items={items}
         itemRenderer={this.renderItem}
+        itemListRenderer={({ items, itemsParentRef, query, renderItem }) => <Menu ulRef={itemsParentRef}>
+          <ButtonGroup minimal={true}>
+            <Button rightIcon="sort-alphabetical" onClick={() => this.setState({ sort: 0 })}>
+              Sort
+            </Button>
+            <Button icon="sort-numerical" onClick={() => this.setState({ sort: 1 })}/>
+          </ButtonGroup>
+          <MenuDivider/>
+          {items.map(renderItem).filter(item => item != null)}
+        </Menu>}
         itemPredicate={(query, item) => matchQuery(query, item.area)}
         noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
         onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
