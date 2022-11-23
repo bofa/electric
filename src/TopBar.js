@@ -36,7 +36,7 @@ const predefinedList = [
 
     selectDataSet: 'productionDataSet',
     range: 'Full',
-    selectedAreas: ['FR-Nuclear'],
+    selectedAreas: ['FR-Nuclear', 'FR-Import', 'FR-Load'],
 
     windowSize: 24*7,
     samplingSize: 24,

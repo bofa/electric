@@ -10,9 +10,10 @@ const combineKeys =
 // []
 [
   ['Hydro Pumped', ['Hydro pumped storage consumption', 'Hydro pumped storage']],
-  ['Wind Total', ['Wind offshore', 'Wind onshore']],
-  ['Coal Total', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
-  ['Hydro Total', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
+  ['Wind', ['Wind offshore', 'Wind onshore']],
+  ['Coal', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas']],
+  ['Hydro', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River']],
+  ['Import', ['Import Balance']],
 ]
 
 allFiles
