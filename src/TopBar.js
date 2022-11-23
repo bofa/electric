@@ -16,11 +16,43 @@ import { DateTime } from 'luxon';
 
 const settingsIcon = randomIcon();
 
-const predefined = [
+const predefinedList = [
   {
     key: 'sweden-short-price',
-    range: ''
-  }
+    text: 'Sweden Current Price',
+
+    selectDataSet: 'priceDataSet',
+    range: 'Past 2 Weeks',
+    selectedAreas: ['SE3-Price'],
+
+    // windowSize: 1,
+    // samplingSize: 1,
+    // transform: 'hour'
+  },
+  {
+    key: 'france-nuclear',
+    text: 'France Nuclear',
+
+    selectDataSet: 'productionDataSet',
+    range: 'Full',
+    selectedAreas: ['FR-Nuclear'],
+
+    // windowSize: 1,
+    // samplingSize: 1,
+    // transform: 'hour'
+  },
+  {
+    key: 'price',
+    text: 'Wide Price',
+
+    selectDataSet: 'priceDataSet',
+    range: '2021',
+    selectedAreas: ['SE3-Price', 'FI-Price', 'DE-LU-Price', 'FR-Price'],
+
+    // windowSize: 1,
+    // samplingSize: 1,
+    // transform: 'hour'
+  },
 ]
 
 export default function TopBar() {
@@ -29,7 +61,10 @@ export default function TopBar() {
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [range, setRange] = React.useState(rangeOptions[6].key);
+  const [preKey, setPreKey] = React.useState(null);
   
+  const pre = predefinedList.find(p => p.key === preKey);
+
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
       .then(response => response.data)
@@ -58,16 +93,27 @@ export default function TopBar() {
     setItems(items);
   }, [options, selectDataSet])
 
+  React.useEffect(() => {
+    if (pre) {
+      setSelectDataSet(pre.selectDataSet);
+      setSelectedAreas(pre.selectedAreas);
+      setRange(pre.range);
+    }
+  }, [pre]);
+
   return (
     <div className="App">
       <Navbar>
         <NavbarGroup>
           <Popover2 content={<Menu>
-            <MenuItem2 text="Type">
+            <MenuItem2 text="Type" icon="lightning">
               {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
             </MenuItem2>
-            <MenuItem2 text="Range">
+            <MenuItem2 text="Range" icon="time">
               {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range}  key={key} text={key} />)}
+            </MenuItem2>
+            <MenuItem2 text="Predefined" icon="settings">
+              {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
             </MenuItem2>
           </Menu>}>
             <Button icon={settingsIcon} />

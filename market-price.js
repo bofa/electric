@@ -92,11 +92,14 @@ markets.forEach((market, marketIndex) => {
     nordpool$
   ]).then(([energyChartsCalls, nordpool]) => {
       const keys = Object.keys(energyChartsCalls[0]).concat('x');
-      const nordpoolFiltered = nordpool.map(p => keys.map(k => [k, p[k]]).reduce((obj, p) => ({ ...obj, [p[0]]: p[1] }), {}))
+      const nordpoolFiltered = nordpool
+        .map(p => keys.filter(k => k in p).map(k => [k, p[k]])
+        .reduce((obj, p) => ({ ...obj, [p[0]]: p[1] }), {}))
+        .filter(p => Object.keys(p).length > 1)
 
       const flat = energyChartsCalls
         .flat()
-        .concat(nordpoolFiltered)
+        // .concat(nordpoolFiltered)
         .concat(importData)
         .filter(p => p.x.minute === 0)
 
