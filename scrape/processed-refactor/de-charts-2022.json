@@ -150937,7 +150937,7 @@
     "DE-Wind": 21810,
     "DE-Coal": 19994,
     "DE-Hydro": 1793.5,
-    "DE-Import": -2176.7
+    "DE-Import": -2176.6
   },
   {
     "x": "2022-11-11T11:00:00.000+01:00",
@@ -151837,7 +151837,7 @@
     "DE-Wind": 9091,
     "DE-Coal": 20739.9,
     "DE-Hydro": 1253.5,
-    "DE-Import": -3879
+    "DE-Import": -3878.9
   },
   {
     "x": "2022-11-13T08:00:00.000+01:00",
@@ -156648,7 +156648,7 @@
     "DE-Geothermal": null,
     "DE-Others": null,
     "DE-Waste": null,
-    "DE-Solar": 486.4,
+    "DE-Solar": 488.2,
     "DE-Load": null,
     "DE-Residual load": null,
     "DE-Renewable share of generation": 82.1,
@@ -156656,7 +156656,47 @@
     "DE-Hydro Pumped": null,
     "DE-Wind": 17356.9,
     "DE-Coal": null,
-    "DE-Hydro": null,
-    "DE-Import": -2471.4
+    "DE-Hydro": 62.6,
+    "DE-Import": -3334.6
+  },
+  {
+    "x": "2022-11-23T09:00:00.000+01:00",
+    "DE-Nuclear": 3900.7,
+    "DE-Biomass": 5225.3,
+    "DE-Fossil oil": 47.8,
+    "DE-Fossil gas": 7424.7,
+    "DE-Geothermal": 18.7,
+    "DE-Others": 54.3,
+    "DE-Waste": 1106.2,
+    "DE-Solar": 3905.2,
+    "DE-Load": 69960.2,
+    "DE-Residual load": 41521.4,
+    "DE-Renewable share of generation": 41.1,
+    "DE-Renewable share of load": 40.6,
+    "DE-Hydro Pumped": 3181.7,
+    "DE-Wind": 16911.3,
+    "DE-Coal": 25511.3,
+    "DE-Hydro": 5029.099999999999,
+    "DE-Import": -5468.6
+  },
+  {
+    "x": "2022-11-23T10:00:00.000+01:00",
+    "DE-Nuclear": 3900,
+    "DE-Biomass": 5241.6,
+    "DE-Fossil oil": 108.8,
+    "DE-Fossil gas": 7405.9,
+    "DE-Geothermal": 18.7,
+    "DE-Others": 56.7,
+    "DE-Waste": 1104.1,
+    "DE-Solar": 7880,
+    "DE-Load": 69738.7,
+    "DE-Residual load": 38312.7,
+    "DE-Renewable share of generation": 44.7,
+    "DE-Renewable share of load": 45.1,
+    "DE-Hydro Pumped": 1071.3999999999999,
+    "DE-Wind": 15937,
+    "DE-Coal": 25774.7,
+    "DE-Hydro": 2890,
+    "DE-Import": -3275.4
   }
 ]

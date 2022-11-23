@@ -99,7 +99,7 @@ markets.forEach((market, marketIndex) => {
 
       const flat = energyChartsCalls
         .flat()
-        // .concat(nordpoolFiltered)
+        .concat(nordpoolFiltered)
         .concat(importData)
         .filter(p => p.x.minute === 0)
 
