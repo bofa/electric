@@ -22,7 +22,7 @@ const predefinedList = [
     text: 'Sweden Current Price',
 
     selectDataSet: 'priceDataSet',
-    range: 'Past 2 Weeks',
+    range: 'Past Month',
     selectedAreas: ['SE3-Price'],
 
     windowSize: 1,

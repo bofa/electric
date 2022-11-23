@@ -70,11 +70,7 @@ function App (props) {
       .then(setOptions)
   }, [])
 
-  console.log('selectedAreas', selectedAreas);
-
   React.useEffect(() => {
-    console.log('Running!');
-
     const files = selectedAreas
       .map(area => options
         .find(option => option.key === selectDataSet)?.files
