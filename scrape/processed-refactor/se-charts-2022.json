@@ -94233,10 +94233,70 @@
     "SE-Renewable share of load": 62,
     "SE-Wind": 2034.5,
     "SE-Hydro": 7619,
-    "SE-Import": -1516.9
+    "SE-Import": -1493.2
   },
   {
     "x": "2022-11-24T05:00:00.000+01:00",
+    "SE-Nuclear": 5750,
+    "SE-Others": 1368.8,
+    "SE-Load": 16311,
+    "SE-Residual load": 5869.1,
+    "SE-Renewable share of generation": 59.5,
+    "SE-Renewable share of load": 64,
+    "SE-Wind": 2035.8,
+    "SE-Hydro": 8406,
+    "SE-Import": -1815.1
+  },
+  {
+    "x": "2022-11-24T06:00:00.000+01:00",
+    "SE-Nuclear": 5750,
+    "SE-Others": 1466.2,
+    "SE-Load": 17673,
+    "SE-Residual load": 5915.3,
+    "SE-Renewable share of generation": 62,
+    "SE-Renewable share of load": 66.5,
+    "SE-Wind": 2012.2,
+    "SE-Hydro": 9745.5,
+    "SE-Import": -1726.4
+  },
+  {
+    "x": "2022-11-24T07:00:00.000+01:00",
+    "SE-Nuclear": 5749,
+    "SE-Others": 1494.5,
+    "SE-Load": 19103,
+    "SE-Residual load": 6166.6,
+    "SE-Renewable share of generation": 64.1,
+    "SE-Renewable share of load": 67.7,
+    "SE-Wind": 1868.7,
+    "SE-Hydro": 11067.7,
+    "SE-Import": -1539.2
+  },
+  {
+    "x": "2022-11-24T08:00:00.000+01:00",
+    "SE-Nuclear": 5751,
+    "SE-Others": 1526.3,
+    "SE-Load": 19108,
+    "SE-Residual load": 6102.9,
+    "SE-Renewable share of generation": 64.1,
+    "SE-Renewable share of load": 68.1,
+    "SE-Wind": 1688.6,
+    "SE-Hydro": 11316.5,
+    "SE-Import": -1349.9
+  },
+  {
+    "x": "2022-11-24T09:00:00.000+01:00",
+    "SE-Nuclear": 5750,
+    "SE-Others": 1531.1,
+    "SE-Load": 19266,
+    "SE-Residual load": 6380.2,
+    "SE-Renewable share of generation": 63.9,
+    "SE-Renewable share of load": 66.9,
+    "SE-Wind": 1514.5,
+    "SE-Hydro": 11371.3,
+    "SE-Import": -1281.6
+  },
+  {
+    "x": "2022-11-24T10:00:00.000+01:00",
     "SE-Nuclear": null,
     "SE-Others": null,
     "SE-Load": null,
@@ -94245,6 +94305,6 @@
     "SE-Renewable share of load": null,
     "SE-Wind": null,
     "SE-Hydro": null,
-    "SE-Import": -2486.5
+    "SE-Import": -2560
   }
 ]

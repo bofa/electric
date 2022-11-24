@@ -1,5 +1,6 @@
 const folderRead = './scrape/processed-refactor/';
 const fs = require('fs');
+const { DateTime } = require('luxon');
 
 // Extract options
 const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
@@ -72,8 +73,11 @@ const options = // ['price', 'production', 'consumption']
               const movingAverage = values.map((_, i, a1) => a1.slice(Math.max(i-window, 0), i+1).reduce((s, v, i, a2) => s + v/a2.length, 0))
               const variance = values.reduce((sum , value, i) => sum + (value-movingAverage[i])**2, 0) / values.length;
               
+              const sampling = DateTime.fromISO(content[1].x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
+
               return {
                 key,
+                sampling,
                 average: Math.round(average),
                 stdMovingAverage: Math.sqrt(variance),
               };
