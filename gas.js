@@ -10,9 +10,9 @@ function uniq(a, key) {
   });
 }
 
-const days = 8 * 365;
+const days = 10; // 8 * 365;
 data$ = Array(days).fill().map((_, i) => {
-  const date = luxon.DateTime.now().minus({ days: i + 2 });
+  const date = luxon.DateTime.now().minus({ days: i - 2 });
   const endTime = date.toFormat('yyyy-MM-dd');
 
   return new Promise(resolve => setTimeout(resolve, 350 * i))
@@ -51,10 +51,22 @@ Promise.all(data$).then(data => {
 
   markets.forEach((market, i) => {
     const marketSlice = market.slice(0, 2);
-    const sorted = data.map(date => date.find(p => p.market === market)?.data)
-      .sort((d1, d2) => d1.x - d2.x)
+    const fileName = `./scrape/raw/gie-gas-${marketSlice}.json`;
+
+    let importData = [];
+    try {
+      importData = require(fileName).filter(p => p !== null);
+    } catch {}
+    importData.forEach(p => p.x = luxon.DateTime.fromISO(p.x))
     
-    fs.writeFileSync(`scrape/raw/gie-gas-${marketSlice}.json`, JSON.stringify(sorted, null, 2));
+    const concat = data.map(date => date.find(p => p.market === market)?.data)
+      .concat(importData)
+      .filter(p => !Object.keys(p).filter(k => k !== 'x').every(k => p[k] === null))
+    
+    const unique = uniq(concat, 'x')
+      .sort((a, b) => a.x - b.x);
+
+    fs.writeFileSync(fileName, JSON.stringify(unique, null, 2));
     // console.log('transformed', market, data);
   })
 })
