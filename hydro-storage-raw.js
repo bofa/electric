@@ -14,7 +14,7 @@ markets.forEach((market) => {
       const marketKey = market.toUpperCase() + '-Storage hydro';
 
       const format = values
-        .map(([ms, y]) => ({ x: luxon.DateTime.fromMillis(ms), [marketKey]: y }))
+        .map(([ms, y]) => ({ x: luxon.DateTime.fromMillis(ms), [marketKey]: y / 1000 }))
         .filter(p => !Object.keys(p).filter(k => k !== 'x').every(k => p[k] === 0))
 
       fs.writeFileSync(`scrape/raw/energy-hydrostorage-${market}.json`, JSON.stringify(format, null, 2));
