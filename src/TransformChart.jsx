@@ -231,7 +231,6 @@ export default function TransformChart(props) {
       y: {
         stacked,
         beginAtZero: true,
-        suggestedMax: 250,
         position: 'right',
         title: {
           display: true,
