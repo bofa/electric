@@ -46,10 +46,12 @@ data$.forEach((r, i) => r.then(() => console.log(i, Math.round(100 * i / days)))
 
 Promise.all(data$).then(data => {
 
+  const exclude = ['GB', 'IE'];
   const markets = data[0]
-    .map(p => p.market)
+    .filter(p => !exclude.includes(p.market))
+    .map(p => p.market);
 
-  markets.forEach((market, i) => {
+  markets.forEach((market) => {
     const marketSlice = market.slice(0, 2);
     const fileName = `./scrape/raw/gie-gas-${marketSlice}.json`;
 
