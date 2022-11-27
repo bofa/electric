@@ -23,7 +23,9 @@ markets.forEach((market, marketIndex) => {
         // Only on country level...
         .slice(-1)
 
-      const transform = X.map((x, xIndex) => labels.reduce((obj, label, labelIndex) => ({ ...obj, [label]: data[labelIndex][xIndex] }), { x }))
+      const transform = X
+        .map((x, xIndex) => labels.reduce((obj, label, labelIndex) => ({ ...obj, [label]: data[labelIndex][xIndex] }), { x }))
+        .filter(p => !Object.keys(p).filter(k => k !== 'x').every(k => p[k] === 0))
 
       fs.writeFileSync(`scrape/raw/energy-hydrostorage-${market}.json`, JSON.stringify(transform, null, 2));
     })
