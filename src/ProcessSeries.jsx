@@ -1,5 +1,10 @@
-function ProcessSeries(series, windowSize, samplingSize, confidenceTransform) {
+function ProcessSeries(series, windowSizeHours, samplingSizeHours, confidenceTransform) {
   const tradingData = series.data;
+  
+  const sampling = tradingData[1].x.diff(tradingData[0].x, 'hours').hours;  
+  const samplingSize = Math.max(1, Math.round(samplingSizeHours / sampling));
+  const windowSize = Math.max(1, Math.round(windowSizeHours / sampling));
+
   // const tradingData = rangeDataSet
   //   .map(p => ({
   //     x: p.x,

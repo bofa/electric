@@ -117,7 +117,6 @@ function App (props) {
             return seriesFiltered;
           });
         })
-
       })
     
   }, [selectDataSet, selectedAreas.length, options.length, range, pre])
