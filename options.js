@@ -85,6 +85,7 @@ const options = // ['price', 'production', 'consumption']
             .filter(option => !isNaN(option.stdMovingAverage) && option.stdMovingAverage !== 0)
         }
       })
+      .filter(file => file.options.length > 0)
       // .sort((a, b) => a.localeCompare(b))
 
     return {
