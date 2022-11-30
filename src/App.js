@@ -28,6 +28,31 @@ function transformSin(p, bias, amplitude, frequence, phase) {
   return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
 }
 
+function customFind(x, i, data) {
+  if (i >= data.length) {
+    i = data.length - 1;
+  }
+
+  if (+data[i].x === +x) {
+    return data[i].y;
+  }
+    
+  const direction = Math.sign(data[i].x - x);
+  let halt;
+  i += direction;
+  while(i >= 0 && i < data.length) {
+    halt = Math.sign(+data[i].x === +x)
+    if (halt === 0) {
+      return data[i];
+    } else if (direction - halt === 0) {
+      return NaN;
+    }
+    i += direction;
+  }
+  
+  return NaN;
+}
+
 const now = DateTime.now();
 export const rangeOptions = [
   { key: 'Full',         from: DateTime.fromISO('2000-01-01') },
@@ -144,11 +169,15 @@ function App (props) {
     .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
     .sort((s1, s2) => s1.option.stdMovingAverage - s2.option.stdMovingAverage)
 
-  if (merge) {
+  if (merge && processedSeriesBeforeMerge.length > 0) {
     const labels = processedSeriesBeforeMerge.map(series => series.label);
     const dataMerge = processedSeriesBeforeMerge
       .map(series => series.data)
-      .reduce((out, data) => out.map(p1 => ({ x: p1.x, y: p1.y + (data.find(p2 => p2.x === p1.x)?.y || 0) })));
+      .sort((a, b) => b.length - a.length)
+      .reduce((out, data) => out.map((p, i) => ({
+        x: p.x,
+        y: p.y + customFind(p.x, i, data)
+      })));
 
     processedSeriesBeforeMerge = [{
       label: 'Merge ' + labels.join(', '),
