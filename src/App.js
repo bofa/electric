@@ -43,7 +43,7 @@ function customFind(x, i, data) {
   while(i >= 0 && i < data.length) {
     halt = Math.sign(+data[i].x === +x)
     if (halt === 0) {
-      return data[i];
+      return data[i].y;
     } else if (direction - halt === 0) {
       return NaN;
     }

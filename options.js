@@ -79,7 +79,7 @@ const options = // ['price', 'production', 'consumption']
                 key,
                 sampling,
                 average: Math.round(average),
-                stdMovingAverage: Math.sqrt(variance),
+                stdMovingAverage: Math.round(Math.sqrt(variance)),
               };
             })
             .filter(option => !isNaN(option.stdMovingAverage) && option.stdMovingAverage !== 0)
