@@ -58,7 +58,7 @@ function App (props) {
   // const [datasets, setDatasets] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
 
-  const { selectedAreas, selectDataSet, range, pre } = props;
+  const { selectedAreas, selectDataSet, range, pre, merge } = props;
 
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
@@ -139,12 +139,25 @@ function App (props) {
     .map(f => f.options)
     .flat();
 
-  const processedSeries = fullDataSet
+  let processedSeriesBeforeMerge = fullDataSet
     .filter(series => selectedAreas.includes(series.label))
     .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
     .sort((s1, s2) => s1.option.stdMovingAverage - s2.option.stdMovingAverage)
-    .map(s => ({ ...s, data: s.data.slice(s.data.findIndex(p => p.x - lowerDate > 0)) }))
-    .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform))
+
+  if (merge) {
+    const labels = processedSeriesBeforeMerge.map(series => series.label);
+    const dataMerge = processedSeriesBeforeMerge
+      .map(series => series.data)
+      .reduce((out, data) => out.map(p1 => ({ x: p1.x, y: p1.y + (data.find(p2 => p2.x === p1.x)?.y || 0) })));
+
+    processedSeriesBeforeMerge = [{
+      label: 'Merge ' + labels.join(', '),
+      data: dataMerge,
+    }]
+  }
+
+  const processedSeries = processedSeriesBeforeMerge
+    .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform, lowerDate))
 
   const stacked = confidence === 'stacked';
 

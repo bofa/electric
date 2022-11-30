@@ -7,6 +7,7 @@ import {
   NavbarGroup,
   Button,
   Menu,
+  Icon,
 } from "@blueprintjs/core";
 import AreaMultiSelect from './AreaMultiSelect';
 import App, { rangeOptions } from './App';
@@ -68,6 +69,7 @@ export default function TopBar() {
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   const [range, setRange] = React.useState(rangeOptions[6].key);
   const [preKey, setPreKey] = React.useState(null);
+  const [merge, setMerge] = React.useState(false);
   
   const pre = predefinedList.find(p => p.key === preKey);
 
@@ -117,11 +119,12 @@ export default function TopBar() {
               {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
             </MenuItem2>
             <MenuItem2 text="Range" icon="time">
-              {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range}  key={key} text={key} />)}
+              {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range} key={key} text={key} />)}
             </MenuItem2>
             <MenuItem2 text="Predefined" icon="settings">
               {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
             </MenuItem2>
+            <MenuItem2 text="Merge" icon="git-merge" labelElement={<Icon icon={merge ? "tick" : "disable"} minimal/>} onClick={() => setMerge(!merge)} />
           </Menu>}>
             <Button icon={settingsIcon}/>
           </Popover2>
@@ -139,6 +142,7 @@ export default function TopBar() {
         selectDataSet={selectDataSet}
         range={range}
         pre={pre}
+        merge={merge}
       />
     </div>
   )

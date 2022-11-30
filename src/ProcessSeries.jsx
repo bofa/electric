@@ -1,5 +1,6 @@
-function ProcessSeries(series, windowSizeHours, samplingSizeHours, confidenceTransform) {
-  const tradingData = series.data;
+function ProcessSeries(series, windowSizeHours, samplingSizeHours, confidenceTransform, lowerDate) {
+
+  const tradingData = series.data.slice(series.data.findIndex(p => p.x - lowerDate > 0))
   
   const sampling = tradingData[1].x.diff(tradingData[0].x, 'hours').hours;  
   const samplingSize = Math.max(1, Math.round(samplingSizeHours / sampling));
@@ -65,14 +66,14 @@ function ProcessSeries(series, windowSizeHours, samplingSizeHours, confidenceTra
 }
 
 let cache = {};
-const memoize = (series, range, windowSize, samplingSize, confidence, confidenceTransform) => {
-  const triggerKeys = [series.label, series.data.length, range, windowSize, samplingSize, confidence];
+const memoize = (series, range, windowSize, samplingSize, confidence, confidenceTransform, lowerDate) => {
+  const triggerKeys = [series.label, series.data.length, range, windowSize, samplingSize, confidence, lowerDate.toISO()];
   let n = triggerKeys.join('|');
   if (n in cache) {
     return cache[n];
   }
   else {
-    let result = ProcessSeries(series, windowSize, samplingSize, confidenceTransform);
+    let result = ProcessSeries(series, windowSize, samplingSize, confidenceTransform, lowerDate);
     cache[n] = result;
     return result;
   }
