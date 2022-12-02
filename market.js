@@ -50,8 +50,12 @@ markets.forEach((market, marketIndex) => {
           return merge;
         }))
         .catch(error => {
-          console.warn('Error', error.response?.status, error.request?.path);
-          return [];
+          if (error.response) {
+            console.warn('Error', error.response?.status, error.request?.path);
+            return [];
+          }
+
+          throw error;
         })
     )
 
