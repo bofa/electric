@@ -72,7 +72,6 @@ export const rangeOptions = [
 ]
 
 function App (props) {
-  const [options, setOptions] = React.useState([]);
   const [loadedFiles, setLoadedFiles] = React.useState([]);
 
   const [windowSize, setWindowSize] = React.useState(24*7);
@@ -83,17 +82,11 @@ function App (props) {
   // const [datasets, setDatasets] = React.useState([]);
   const [confidence, setConfidence] = React.useState(confidenceTransforms[1].key);
 
-  const { selectedAreas, selectDataSet, range, pre, merge } = props;
+  const { selectedAreas, selectDataSet, range, pre, merge, options } = props;
 
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   let lowerDate = rangeOptions.find(ro => ro.key === range)?.from;
-
-  React.useEffect(() => {
-    axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
-      .then(response => response.data)
-      .then(setOptions)
-  }, [])
 
   React.useEffect(() => {
     const files = selectedAreas
@@ -144,7 +137,7 @@ function App (props) {
         })
       })
     
-  }, [selectDataSet, selectedAreas.length, options.length, range, pre])
+  }, [selectDataSet, selectedAreas.length, options, range, pre])
 
   React.useEffect(() => {
     if (pre) {

@@ -138,6 +138,7 @@ export default function TopBar() {
         </NavbarGroup>
       </Navbar>
       <App
+        options={options}
         selectedAreas={selectedAreas}
         selectDataSet={selectDataSet}
         range={range}
