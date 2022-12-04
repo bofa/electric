@@ -114,7 +114,7 @@ export default function TopBar() {
     <div className="App">
       <Navbar>
         <NavbarGroup>
-          <Popover2 content={<Menu>
+          <Popover2 position="bottom" content={<Menu>
             <MenuItem2 text="Unit" icon="lightning">
               {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
             </MenuItem2>

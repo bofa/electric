@@ -71,6 +71,26 @@ const seriesTransforms = [
     )
   },
   {
+    key: 'week',
+    name: 'Weekly',
+    unit: seriesYUnit => ['weekNumber', seriesYUnit],
+    transform: timeBinTransform(
+      null, [0],
+      'weekNumber', Array(53).fill().map((_, i) => i+1),
+      ['']
+    )
+  },
+  {
+    key: 'weekOfYear',
+    name: 'Weekly per year',
+    unit: seriesYUnit => ['weekNumber', seriesYUnit],
+    transform: timeBinTransform(
+      'year', yearsNames,
+      'weekNumber', Array(53).fill().map((_, i) => i+1),
+      yearsNames
+    )
+  },
+  {
     key: 'month',
     name: 'Monthly',
     unit: seriesYUnit => ['month', seriesYUnit],
