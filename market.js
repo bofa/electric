@@ -32,7 +32,7 @@ markets.forEach((market, marketIndex) => {
   const now = luxon.DateTime.now();
   const weeks = Array(now.year - startDateRequested.year + 1).fill().map((_, i) => startDateRequested.year + i)
     .filter(year => year >= startDate.year - 1)
-    .map((year, delay, weekArray) => new Promise(resolve => setTimeout(resolve, 350 * (weekArray.length*marketIndex + delay))).then(() =>
+    .map((year, yearIndex, yearArray) => new Promise(resolve => setTimeout(resolve, 350 * (yearArray.length*marketIndex + yearIndex))).then(() =>
       axios.get(`https://www.energy-charts.info/charts/power/data/${market}/year_${year}.json`)
         .then(response => response.data)
         .then(sources => {

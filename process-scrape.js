@@ -64,7 +64,8 @@ allFiles
         // Remove keys
 
       const startYear = contentTransform.at(0).x.year;
-      Array(luxon.DateTime.now().year - startYear + 1).fill()
+      Array(luxon.DateTime.now().year - startYear + 1)
+        .fill()
         .forEach((_, i) => {
           const year = startYear + i
           const startIndex = contentTransform.findIndex(p =>p.x.year === year);
