@@ -85,7 +85,7 @@ const seriesTransforms = [
     name: 'Weekly per year',
     unit: seriesYUnit => ['weekNumber', seriesYUnit],
     transform: timeBinTransform(
-      'year', yearsNames,
+      'weekYear', yearsNames,
       'weekNumber', Array(53).fill().map((_, i) => i+1),
       yearsNames
     )
