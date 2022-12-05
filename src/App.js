@@ -73,7 +73,7 @@ export const rangeOptions = [
 
 function App (props) {
   const [loadedFiles, setLoadedFiles] = React.useState([]);
-
+  const [scatter, setScatter] = React.useState(false);
   const [windowSize, setWindowSize] = React.useState(24*7);
   const [samplingSize, setSamplingSize] = React.useState(24);
   const [priceDataSet, setPriceDataSet] = React.useState([]);
@@ -187,13 +187,13 @@ function App (props) {
     datasets: 
       processedSeries.map((area, i) => [
         {
-          type: windowSize === 1 ? 'scatter' : 'line',
+          type: scatter ? 'scatter' : 'line',
           label: area.label,
           data: area.movingAverage
             .map(p => stacked ? ({ x: p.x, y: Math.max(p.y, 0) }) : p),
           backgroundColor: adjustHexOpacity(i, 0.25),
           borderColor: adjustHexOpacity(i, 1),
-          pointRadius: windowSize === 1 ? 1 : 0,
+          pointRadius: scatter ? 1 : 0,
           borderWidth: 1,
           // TODO
           fill: !stacked ? false
