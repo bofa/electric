@@ -113709,20 +113709,34 @@
   },
   {
     "x": "2022-12-05T10:00:00.000+01:00",
-    "CH-Nuclear": 2498.5,
+    "CH-Nuclear": 2995.3,
     "CH-Solar": 0,
     "CH-Load": 9541.7,
-    "CH-Residual load": 5994.2,
-    "CH-Renewable share of generation": 48.5,
-    "CH-Renewable share of load": 37.2,
-    "CH-Hydro Pumped": 1275.3,
+    "CH-Residual load": 5833.5,
+    "CH-Renewable share of generation": 45.3,
+    "CH-Renewable share of load": 38.9,
+    "CH-Hydro Pumped": 1479.7,
     "CH-Wind": null,
-    "CH-Hydro": 4822.9,
+    "CH-Hydro": 5187.9,
     "CH-Import": -846.3,
     "CH-Gas": null
   },
   {
     "x": "2022-12-05T11:00:00.000+01:00",
+    "CH-Nuclear": 2498.4,
+    "CH-Solar": 0,
+    "CH-Load": 9318.4,
+    "CH-Residual load": 6148.6,
+    "CH-Renewable share of generation": 46.6,
+    "CH-Renewable share of load": 34,
+    "CH-Hydro Pumped": 1134.1,
+    "CH-Wind": null,
+    "CH-Hydro": 4303.8,
+    "CH-Import": -389.8,
+    "CH-Gas": null
+  },
+  {
+    "x": "2022-12-05T12:00:00.000+01:00",
     "CH-Nuclear": null,
     "CH-Solar": 0,
     "CH-Load": null,
@@ -113732,7 +113746,7 @@
     "CH-Hydro Pumped": null,
     "CH-Wind": null,
     "CH-Hydro": null,
-    "CH-Import": -410.6,
+    "CH-Import": 130.2,
     "CH-Gas": null
   }
 ]

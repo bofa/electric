@@ -105564,7 +105564,7 @@
     "NO-Other renewables": 54.2,
     "NO-Waste": 20.8,
     "NO-Load": 19901.4,
-    "NO-Residual load": -1850.1,
+    "NO-Residual load": -1850,
     "NO-Renewable share of generation": 97.8,
     "NO-Renewable share of load": 109.3,
     "NO-Wind": 1688.1,
@@ -105589,17 +105589,30 @@
     "x": "2022-12-05T10:00:00.000+01:00",
     "NO-Other renewables": 53.6,
     "NO-Waste": 21.3,
-    "NO-Load": 23933.9,
-    "NO-Residual load": 1388.5,
+    "NO-Load": 20120.6,
+    "NO-Residual load": -2424.8,
     "NO-Renewable share of generation": 96.9,
-    "NO-Renewable share of load": 94.2,
+    "NO-Renewable share of load": 112.1,
     "NO-Wind": 1484.9,
     "NO-Hydro": 21703.8,
-    "NO-Import": -3644.3,
+    "NO-Import": -3748.4,
     "NO-Gas": null
   },
   {
     "x": "2022-12-05T11:00:00.000+01:00",
+    "NO-Other renewables": 47.4,
+    "NO-Waste": 20.2,
+    "NO-Load": 23946.1,
+    "NO-Residual load": 1022.8,
+    "NO-Renewable share of generation": 97,
+    "NO-Renewable share of load": 95.7,
+    "NO-Wind": 1670.3,
+    "NO-Hydro": 21902.899999999998,
+    "NO-Import": -4321.2,
+    "NO-Gas": null
+  },
+  {
+    "x": "2022-12-05T12:00:00.000+01:00",
     "NO-Other renewables": null,
     "NO-Waste": null,
     "NO-Load": null,
@@ -105608,7 +105621,7 @@
     "NO-Renewable share of load": null,
     "NO-Wind": null,
     "NO-Hydro": null,
-    "NO-Import": -760.6,
+    "NO-Import": -793.2,
     "NO-Gas": null
   }
 ]
