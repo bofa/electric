@@ -17,7 +17,10 @@ data$ = Array(days).fill().map((_, i) => {
 
   return new Promise(resolve => setTimeout(resolve, 350 * i))
     .then(() => axios.get(`https://agsi.gie.eu/api?date=${endTime}`))
-    .then(response => response.data.data.map(m => m.children).flat())
+    .then(response => {
+      // console.log(endTime, response.data);
+      return response.data.data.map(m => m.children).flat()
+    })
     .then(markets => {
       // console.log('market', markets[0])
       const x = luxon.DateTime.fromISO(markets[0]?.gasDayStart);
@@ -37,8 +40,13 @@ data$ = Array(days).fill().map((_, i) => {
       return output;
     })
     .catch(error => {
-      console.log('error', error?.status, error?.message)
-      return [];
+      if (error.response) {
+        console.warn('Error', error.response?.status, error.request?.path);
+        return [];
+      }
+
+      console.error(error);
+      throw error;
     })
 })
 
