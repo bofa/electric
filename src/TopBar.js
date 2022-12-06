@@ -25,6 +25,7 @@ const predefinedList = [
     selectDataSet: 'priceDataSet',
     range: 'Past Month',
     selectedAreas: ['SE3-Price'],
+    merge: false,
 
     windowSize: 1,
     samplingSize: 1,
@@ -39,6 +40,7 @@ const predefinedList = [
     selectDataSet: 'productionDataSet',
     range: 'Full',
     selectedAreas: ['FR-Nuclear', 'FR-Import', 'FR-Load'],
+    merge: false,
 
     windowSize: 24*7,
     samplingSize: 24,
@@ -53,6 +55,7 @@ const predefinedList = [
     selectDataSet: 'priceDataSet',
     range: '2021',
     selectedAreas: ['SE3-Price', 'FI-Price', 'DE-LU-Price', 'FR-Price'],
+    merge: false,
 
     windowSize: 24*7,
     samplingSize: 24,
@@ -60,6 +63,72 @@ const predefinedList = [
     confidence: 'off',
     confidenceTransform: 'off',
   },
+  {
+    key: 'gas',
+    text: 'Gas Storage',
+
+    confidence: "stacked",
+    range: "2016",
+    selectDataSet: "energyDataSet",
+    selectedAreas: ['DE-Storage gas', 'IT-Storage gas', 'FR-Storage gas', 'NL-Storage gas', 'AT-Storage gas'],
+    merge: true,
+
+    windowSize: 24,
+    samplingSize: 24,
+    confidence: 'off',
+    transform: 'weekOfYear',
+    confidenceTransform: 'off',
+  },
+  {
+    key: 'prodSweden',
+    text: 'Production Sweden',
+
+    "selectedAreas": [
+      "DE-Storage gas",
+      "IT-Storage gas",
+      "FR-Storage gas",
+      "NL-Storage gas",
+      "AT-Storage gas",
+      "SE-Hydro",
+      "SE-Nuclear",
+      "SE-Wind",
+      "SE-Others"
+    ],
+    "range": "Past Month",
+    "selectDataSet": "productionDataSet",
+    "windowSize": 1,
+    "samplingSize": 1,
+    "confidence": "stacked",
+    merge: false,
+    transform: 'hour',
+    confidenceTransform: 'stacked',
+  },
+  {
+    key: 'prodItaly',
+    text: 'Production Italy',
+
+    selectedAreas: [
+      "DE-Storage gas",
+      "IT-Storage gas",
+      "FR-Storage gas",
+      "NL-Storage gas",
+      "AT-Storage gas",
+      "IT-Gas",
+      "IT-Hydro",
+      "IT-Coal",
+      "IT-Solar",
+      "IT-Wind",
+      "IT-Others"
+    ],
+    range: "Past Month",
+    selectDataSet: "productionDataSet",
+    windowSize: 1,
+    samplingSize: 1,
+    confidence: "stacked",
+    merge: false,
+    transform: 'hour',
+    confidenceTransform: 'stacked',
+  }
 ]
 
 export default function TopBar() {
@@ -106,6 +175,7 @@ export default function TopBar() {
       setSelectDataSet(pre.selectDataSet);
       setSelectedAreas(pre.selectedAreas);
       setRange(pre.range);
+      setMerge(pre.merge);
       setPreKey(null);
     }
   }, [pre]);

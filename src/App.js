@@ -84,6 +84,18 @@ function App (props) {
 
   const { selectedAreas, selectDataSet, range, pre, merge, options } = props;
 
+  console.log('Possible Preset', JSON.stringify({
+    selectedAreas,
+    range,
+    selectDataSet,
+    selectedAreas,
+    windowSize,
+    samplingSize,
+    confidence,
+    // transform,
+    // confidenceTransform
+  }, null, 2));
+
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
   let lowerDate = rangeOptions.find(ro => ro.key === range)?.from;
