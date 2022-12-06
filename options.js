@@ -72,7 +72,8 @@ const options = // ['price', 'production', 'consumption']
               const window = 7 * 24;
               const movingAverage = values.map((_, i, a1) => a1.slice(Math.max(i-window, 0), i+1).reduce((s, v, i, a2) => s + v/a2.length, 0))
               const variance = values.reduce((sum , value, i) => sum + (value-movingAverage[i])**2, 0) / values.length;
-              
+              const negative = values.some(v => v < 0);
+
               const sampling = DateTime.fromISO(content[1].x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
 
               return {
@@ -80,6 +81,7 @@ const options = // ['price', 'production', 'consumption']
                 sampling,
                 average: Math.round(average),
                 stdMovingAverage: Math.round(Math.sqrt(variance)),
+                negative,
               };
             })
             .filter(option => !isNaN(option.stdMovingAverage) && option.stdMovingAverage !== 0)
