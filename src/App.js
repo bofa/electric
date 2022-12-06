@@ -160,7 +160,13 @@ function App (props) {
   let processedSeriesBeforeMerge = fullDataSet
     .filter(series => selectedAreas.includes(series.label))
     .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
-    .sort((s1, s2) => s1.option.stdMovingAverage - s2.option.stdMovingAverage)
+    .sort((s1, s2) => {
+      if (s1.option.negative ^ s2.option.negative) {
+        return s2.option.negative - s1.option.negative;
+      }
+      
+      return s1.option.stdMovingAverage - s2.option.stdMovingAverage;
+    })
 
   if (merge && processedSeriesBeforeMerge.length > 0) {
     const labels = processedSeriesBeforeMerge.map(series => series.label);
@@ -290,13 +296,14 @@ function App (props) {
     // Append negative series
     .concat(stacked
       ? processedSeries
-        .filter(area => area.movingAverage.some(p => p.y < 0))
-        .map((area, i) => ({
+        .map((area, index) => ({ area, index }))
+        .filter(({ area }) => area.movingAverage.some(p => p.y < 0))
+        .map(({ area, index }) => ({
           label: area.label + ' Negative',
           data: area.movingAverage.map(p => ({ x: p.x, y: p.y <= 0 ? p.y : NaN })),
           fill: 'origin',
-          backgroundColor: adjustHexOpacity(6, 0.25),
-          borderColor: adjustHexOpacity(6, 1),
+          backgroundColor: adjustHexOpacity(index, 0.25),
+          borderColor: adjustHexOpacity(index, 1),
           pointRadius: 0,
           borderWidth: 1,
           stacked: false,
