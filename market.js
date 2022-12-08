@@ -54,8 +54,10 @@ markets.forEach((market, marketIndex) => {
             console.warn('Error', error.response?.status, error.request?.path);
             return [];
           }
-
-          throw error;
+          
+          console.warn('Error', market, year);
+          // throw error;
+          return [];
         })
     )
 
