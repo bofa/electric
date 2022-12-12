@@ -44,7 +44,7 @@ const predefinedList = [
 
     windowSize: 24*7,
     samplingSize: 24,
-    transform: 'monthOfYear',
+    transform: 'year',
     confidence: 'std1',
     confidenceTransform: 'off',
   },
