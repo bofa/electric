@@ -178,6 +178,53 @@ const seriesTransforms = [
       };
     }).filter(group => !isNaN(group?.bin[0].x))
   },
+  {
+    key: 'currentYearWithRange',
+    name: 'Current Year and Range',
+    unit: seriesYUnit => ['Date', seriesYUnit],
+    transform: series => {
+      const startDate = series.tradingData.at(-1).x;
+      const filterDate = startDate.minus({ year: 1});
+
+      const seriesCurrent = series.tradingData
+        .filter(p => p.x - filterDate > 0)
+
+      const seriesCompare = series.tradingData
+        .filter(p => p.x - filterDate <= 0)
+
+      const weeks = Array(53).fill().map((_, i) => i+1)
+        .map(week => {
+          const values = seriesCompare.filter(p => p.x.weekNumber === week).map(p => p.y)
+
+          return {
+            min: Math.min(...values),
+            max: Math.max(...values),
+            average: values.reduce((avg, value) => avg + value, 0) / values.length
+          }
+        })
+
+      const average = seriesCurrent.map(p => ({ x: p.x, y: weeks[p.x.weekNumber-1].average }))
+      const min = seriesCurrent.map(p => ({ x: p.x, y: weeks[p.x.weekNumber-1].min }));
+      const max = seriesCurrent.map(p => ({ x: p.x, y: weeks[p.x.weekNumber-1].max }));
+
+      console.log('weeks', weeks, average);
+
+      return [
+        {
+          label: series.label,
+          bin: seriesCurrent,
+          min: [],
+          max: [],
+        },
+        {
+          label: series.label + ' Average',
+          bin: average,
+          min,
+          max,
+        }
+      ];
+    }
+  },
 ]
 
 export default function TransformChart(props) {
