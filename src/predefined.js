@@ -65,11 +65,6 @@ const predefinedList = [
     text: 'Production Sweden',
 
     "selectedAreas": [
-      "DE-Storage gas",
-      "IT-Storage gas",
-      "FR-Storage gas",
-      "NL-Storage gas",
-      "AT-Storage gas",
       "SE-Hydro",
       "SE-Nuclear",
       "SE-Wind",
@@ -89,11 +84,6 @@ const predefinedList = [
     text: 'Production Italy',
 
     selectedAreas: [
-      "DE-Storage gas",
-      "IT-Storage gas",
-      "FR-Storage gas",
-      "NL-Storage gas",
-      "AT-Storage gas",
       "IT-Gas",
       "IT-Hydro",
       "IT-Coal",
