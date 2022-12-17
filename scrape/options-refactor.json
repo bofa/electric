@@ -2872,6 +2872,86 @@
     ],
     "files": [
       {
+        "file": "NS-nem-2021.json",
+        "options": [
+          {
+            "key": "NS-Wind",
+            "sampling": 1,
+            "average": 609,
+            "stdMovingAverage": 370,
+            "negative": false
+          },
+          {
+            "key": "NS-Coal",
+            "sampling": 1,
+            "average": 527,
+            "stdMovingAverage": 401,
+            "negative": false
+          },
+          {
+            "key": "NS-Hydro",
+            "sampling": 1,
+            "average": 300,
+            "stdMovingAverage": 322,
+            "negative": true
+          },
+          {
+            "key": "NS-Gas",
+            "sampling": 1,
+            "average": 3,
+            "stdMovingAverage": 11,
+            "negative": false
+          },
+          {
+            "key": "NS-Solar",
+            "sampling": 1,
+            "average": 399,
+            "stdMovingAverage": 494,
+            "negative": true
+          }
+        ]
+      },
+      {
+        "file": "NS-nem-2022.json",
+        "options": [
+          {
+            "key": "NS-Wind",
+            "sampling": 1,
+            "average": 693,
+            "stdMovingAverage": 426,
+            "negative": false
+          },
+          {
+            "key": "NS-Coal",
+            "sampling": 1,
+            "average": 501,
+            "stdMovingAverage": 504,
+            "negative": false
+          },
+          {
+            "key": "NS-Hydro",
+            "sampling": 1,
+            "average": 396,
+            "stdMovingAverage": 378,
+            "negative": true
+          },
+          {
+            "key": "NS-Gas",
+            "sampling": 1,
+            "average": 13,
+            "stdMovingAverage": 34,
+            "negative": false
+          },
+          {
+            "key": "NS-Solar",
+            "sampling": 1,
+            "average": 545,
+            "stdMovingAverage": 683,
+            "negative": false
+          }
+        ]
+      },
+      {
         "file": "at-charts-2015.json",
         "options": [
           {
