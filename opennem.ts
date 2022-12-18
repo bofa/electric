@@ -38,10 +38,17 @@ interface OpennemDTO {
   data: Datum[];
 }
 
+const market = 'NS';
 
-const startDate = DateTime.fromISO('2021-01-01');
+let importData: any[] = [];
+try {
+  importData = require(`./scrape/raw/open-nem-${market}.json`);
+} catch {}
+importData.forEach(p => p.x = DateTime.fromISO(p.x))
+
+// const startDate = DateTime.fromISO('2021-01-01');
 const now = DateTime.now();
-// const startDate = now.minus({weeks: 10 });
+const startDate = now.minus({weeks: 15 });
 
 const intervals = Interval
   .fromDateTimes(startDate, now)
@@ -50,7 +57,6 @@ const intervals = Interval
 
 // console.log('Weeks', intervals);
 
-const market = 'NS';
 const data$ = intervals.map((date, dateIndex) => new Promise(resolve => setTimeout(resolve, 350 * dateIndex))
   .then(() => console.log(Math.round(100 * dateIndex/intervals.length), date.year, date.weekNumber))
   .then(() => axios.get(`https://data.opennem.org.au/v3/stats/historic/weekly/NEM/NSW1/year/${date.year}/week/${date.weekNumber}.json`))
@@ -84,6 +90,7 @@ Promise.all(data$).then(response => {
   }))
   .map(source => source.data.map(p => ({ x: p.x, [market + '-' + source.fuel_tech]: p.y })))
   .reduce((agg, source) => agg.map((p, i) => ({ ...p, ...source[i] })))
+  .concat(importData)
   .sort((a: any, b: any) => a.x - b.x)
 
   // console.log('response', response[0]);
