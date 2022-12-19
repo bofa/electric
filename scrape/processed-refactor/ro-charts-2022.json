@@ -126836,7 +126836,7 @@
     "RO-Wind": 931,
     "RO-Coal": 1239,
     "RO-Hydro": 2736,
-    "RO-Import": -206,
+    "RO-Import": -202.1,
     "RO-Gas": 1554
   },
   {
@@ -126851,7 +126851,7 @@
     "RO-Wind": 1058,
     "RO-Coal": 1278,
     "RO-Hydro": 2547,
-    "RO-Import": 164.1,
+    "RO-Import": 183.3,
     "RO-Gas": 1601
   },
   {
@@ -126866,7 +126866,7 @@
     "RO-Wind": 869,
     "RO-Coal": 1297,
     "RO-Hydro": 2653,
-    "RO-Import": 208.4,
+    "RO-Import": 230.4,
     "RO-Gas": 1596
   },
   {
@@ -126881,7 +126881,67 @@
     "RO-Wind": 573,
     "RO-Coal": 1249,
     "RO-Hydro": 2849,
-    "RO-Import": -923.1,
+    "RO-Import": 48.1,
     "RO-Gas": 1607
+  },
+  {
+    "x": "2022-12-19T11:00:00.000+01:00",
+    "RO-Nuclear": 1324,
+    "RO-Biomass": 61,
+    "RO-Solar": 313,
+    "RO-Load": 7776,
+    "RO-Residual load": 4054,
+    "RO-Renewable share of generation": 47.2,
+    "RO-Renewable share of load": 47.9,
+    "RO-Wind": 521,
+    "RO-Coal": 1218,
+    "RO-Hydro": 2827,
+    "RO-Import": -67.9,
+    "RO-Gas": 1614
+  },
+  {
+    "x": "2022-12-19T12:00:00.000+01:00",
+    "RO-Nuclear": 1363,
+    "RO-Biomass": 61,
+    "RO-Solar": 340,
+    "RO-Load": 7807,
+    "RO-Residual load": 4349,
+    "RO-Renewable share of generation": 45.1,
+    "RO-Renewable share of load": 44.3,
+    "RO-Wind": 438,
+    "RO-Coal": 1219,
+    "RO-Hydro": 2619,
+    "RO-Import": 229.5,
+    "RO-Gas": 1622
+  },
+  {
+    "x": "2022-12-19T13:00:00.000+01:00",
+    "RO-Nuclear": 1349,
+    "RO-Biomass": 60,
+    "RO-Solar": 304,
+    "RO-Load": 7749,
+    "RO-Residual load": 4528,
+    "RO-Renewable share of generation": 43.3,
+    "RO-Renewable share of load": 41.6,
+    "RO-Wind": 397,
+    "RO-Coal": 1236,
+    "RO-Hydro": 2460,
+    "RO-Import": 374.7,
+    "RO-Gas": 1627
+  },
+  {
+    "x": "2022-12-19T14:00:00.000+01:00",
+    "RO-Nuclear": 1351,
+    "RO-Biomass": 62,
+    "RO-Solar": 168,
+    "RO-Load": 7621,
+    "RO-Residual load": 4565,
+    "RO-Renewable share of generation": 42.2,
+    "RO-Renewable share of load": 40.1,
+    "RO-Wind": 376,
+    "RO-Coal": 1199,
+    "RO-Hydro": 2450,
+    "RO-Import": -81.6,
+    "RO-Gas": 1628
   }
 ]
