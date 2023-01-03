@@ -74,7 +74,7 @@ const options = // ['price', 'production', 'consumption']
               const variance = values.reduce((sum , value, i) => sum + (value-movingAverage[i])**2, 0) / values.length;
               const negative = values.some(v => v < 0);
 
-              const sampling = DateTime.fromISO(content[1].x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
+              const sampling = DateTime.fromISO(content[1]?.x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
 
               return {
                 key,
