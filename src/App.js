@@ -11,47 +11,7 @@ import { adjustHexOpacity } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
 
-function transformSeries(series) {
-  series.forEach(p => p.x = DateTime.fromISO(p.x))
-  const keys = Object.keys(series[0]).filter(key => key !== 'x')
-
-  const formattedSeries = keys.map(key => ({
-    label: key,
-    data: series.map(p => ({ x: p.x, y: p[key] === null ? NaN : p[key] }))
-  }))
-
-  return formattedSeries;
-}
-
 const referenceDate = DateTime.fromISO('2000-01-01T00:00:00');
-function transformSin(p, bias, amplitude, frequence, phase) {
-  return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
-}
-
-function customFind(x, i, data) {
-  if (i >= data.length) {
-    i = data.length - 1;
-  }
-
-  if (+data[i].x === +x) {
-    return data[i].y;
-  }
-    
-  const direction = Math.sign(data[i].x - x);
-  let halt;
-  i += direction;
-  while(i >= 0 && i < data.length) {
-    halt = Math.sign(+data[i].x === +x)
-    if (halt === 0) {
-      return data[i].y;
-    } else if (direction - halt === 0) {
-      return NaN;
-    }
-    i += direction;
-  }
-  
-  return NaN;
-}
 
 const now = DateTime.now();
 export const rangeOptions = [
@@ -408,3 +368,44 @@ function App (props) {
 }
 
 export default App;
+
+function transformSeries(series) {
+  series.forEach(p => p.x = DateTime.fromISO(p.x))
+  const keys = Object.keys(series[0]).filter(key => key !== 'x')
+
+  const formattedSeries = keys.map(key => ({
+    label: key,
+    data: series.map(p => ({ x: p.x, y: p[key] === null ? NaN : p[key] }))
+  }))
+
+  return formattedSeries;
+}
+
+function customFind(x, i, data) {
+  if (i >= data.length) {
+    i = data.length - 1;
+  }
+
+  if (+data[i].x === +x) {
+    return data[i].y;
+  }
+    
+  const direction = Math.sign(data[i].x - x);
+  let halt;
+  i += direction;
+  while(i >= 0 && i < data.length) {
+    halt = Math.sign(+data[i].x === +x)
+    if (halt === 0) {
+      return data[i].y;
+    } else if (direction - halt === 0) {
+      return NaN;
+    }
+    i += direction;
+  }
+  
+  return NaN;
+}
+
+function transformSin(p, bias, amplitude, frequence, phase) {
+  return { x: p.x, y: bias + amplitude * Math.sin(frequence * p.x.diff(referenceDate, 'years').values.years + phase) };
+}

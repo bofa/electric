@@ -5,30 +5,6 @@ import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import { DateTime } from 'luxon';
 
-function timeBinTransform(groupKey, groups, binKey, bins, labels) {
-  return (series, confidenceTransform) => {
-    const ranges = groups.map(group => bins.map(bin => series.tradingData
-      .filter(p => !isNaN(p.y) && p.x[binKey] === bin && (groupKey === null || p.x[groupKey] === group))
-      .map(p => p.y)
-    ))
-
-    const output = ranges.map((range, label) => {
-      const average = range.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
-      const bin = average.map((m, i) => ({ x: bins[i], y: m }));
-      const { min, max } = confidenceTransform(range, bin);
-
-      return {
-        label: series.label + labels[label], // + ' ' + weekDayNames[label], 
-        bin,
-        min,
-        max,
-      };
-    }).filter(group => !group?.bin.every(p => isNaN(p.y)))
-
-    return output;
-  };
-}
-
 const seriesTransforms = [
   {
     key: 'hour',
@@ -124,7 +100,7 @@ const seriesTransforms = [
     key: 'histogram',
     name: 'Histogram',
     unit: seriesYUnit => [seriesYUnit, '100 hours / MW'],
-    transform: series => {
+    transform(series) {
       const numberOfBins = 100;
 
       const rawSeries = series.tradingData.map(p => p.y).filter(y => !isNaN(y))
@@ -333,4 +309,28 @@ export default function TransformChart(props) {
       <Chart type="line" data={dataHourOfDay} options={optionsTransform}/>
     </>
   )
+}
+
+function timeBinTransform(groupKey, groups, binKey, bins, labels) {
+  return (series, confidenceTransform) => {
+    const ranges = groups.map(group => bins.map(bin => series.tradingData
+      .filter(p => !isNaN(p.y) && p.x[binKey] === bin && (groupKey === null || p.x[groupKey] === group))
+      .map(p => p.y)
+    ))
+
+    const output = ranges.map((range, label) => {
+      const average = range.map(range => range.reduce((sum, y) => sum + y, 0) / range.length);
+      const bin = average.map((m, i) => ({ x: bins[i], y: m }));
+      const { min, max } = confidenceTransform(range, bin);
+
+      return {
+        label: series.label + labels[label], // + ' ' + weekDayNames[label], 
+        bin,
+        min,
+        max,
+      };
+    }).filter(group => !group?.bin.every(p => isNaN(p.y)))
+
+    return output;
+  };
 }
