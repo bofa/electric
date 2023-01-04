@@ -16,13 +16,8 @@ const referenceDate = DateTime.fromISO('2000-01-01T00:00:00');
 const now = DateTime.now();
 export const rangeOptions = [
   { key: 'Full',         from: DateTime.fromISO('2000-01-01') },
-  { key: '2016',         from: DateTime.fromISO('2016-01-01') },
-  { key: '2017',         from: DateTime.fromISO('2017-01-01') },
-  { key: '2018',         from: DateTime.fromISO('2018-01-01') },
-  { key: '2019',         from: DateTime.fromISO('2019-01-01') },
-  { key: '2020',         from: DateTime.fromISO('2020-01-01') },
-  { key: '2021',         from: DateTime.fromISO('2021-01-01') },
-  { key: '2022',         from: DateTime.fromISO('2022-01-01') },
+  ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
+  .map(year => ({ key: year, from: DateTime.fromISO(year + '-01-01')})),
   { key: 'Past 2 Years', from: now.minus({ years:  2 }) },
   { key: 'Past Year',    from: now.minus({ years:  1 }) },
   { key: 'Past 2 Month', from: now.minus({ months: 2 }) },
