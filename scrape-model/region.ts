@@ -23,7 +23,5 @@ export const regions = {
   ],
 } as const;
 
-export type RegionId = typeof regions['id']
-  | typeof regions['children'][number]['id']
-  | typeof regions['children'][number]['children'][number]['id']
-  | typeof regions['children'][number]['children'][number]['children'][number]['id'];
+type TreeSearch<N> = N extends { id: string, children: any } ? N['id'] | TreeSearch<N['children'][number]> : never;
+export type RegionId = TreeSearch<typeof regions>;
