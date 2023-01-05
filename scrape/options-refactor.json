@@ -16151,7 +16151,6 @@
     "unit": "TWh",
     "fields": [
       "-Storage gas",
-      "-Capacity gas",
       "-Storage hydro"
     ],
     "files": [
@@ -16176,13 +16175,6 @@
             "average": 44,
             "stdMovingAverage": 17,
             "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 86,
-            "stdMovingAverage": 8,
-            "negative": false
           }
         ]
       },
@@ -16195,13 +16187,6 @@
             "average": 59,
             "stdMovingAverage": 15,
             "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 94,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -16213,13 +16198,6 @@
             "sampling": 24,
             "average": 45,
             "stdMovingAverage": 20,
-            "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 93,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -16245,13 +16223,6 @@
             "average": 71,
             "stdMovingAverage": 15,
             "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 93,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -16263,13 +16234,6 @@
             "sampling": 24,
             "average": 81,
             "stdMovingAverage": 6,
-            "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 95,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -16294,13 +16258,6 @@
             "sampling": 24,
             "average": 47,
             "stdMovingAverage": 20,
-            "negative": false
-          },
-          {
-            "key": "AT-Capacity gas",
-            "sampling": 24,
-            "average": 95,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -16650,13 +16607,6 @@
             "average": 27,
             "stdMovingAverage": 9,
             "negative": false
-          },
-          {
-            "key": "CZ-Capacity gas",
-            "sampling": 24,
-            "average": 40,
-            "stdMovingAverage": 3,
-            "negative": false
           }
         ]
       },
@@ -16681,13 +16631,6 @@
             "average": 118,
             "stdMovingAverage": 33,
             "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 206,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -16700,13 +16643,6 @@
             "average": 175,
             "stdMovingAverage": 35,
             "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 239,
-            "stdMovingAverage": 13,
-            "negative": false
           }
         ]
       },
@@ -16718,13 +16654,6 @@
             "sampling": 24,
             "average": 141,
             "stdMovingAverage": 46,
-            "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 244,
-            "stdMovingAverage": 3,
             "negative": false
           }
         ]
@@ -16750,13 +16679,6 @@
             "average": 192,
             "stdMovingAverage": 31,
             "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 243,
-            "stdMovingAverage": 2,
-            "negative": false
           }
         ]
       },
@@ -16768,13 +16690,6 @@
             "sampling": 24,
             "average": 208,
             "stdMovingAverage": 18,
-            "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 241,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -16788,13 +16703,6 @@
             "average": 116,
             "stdMovingAverage": 37,
             "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 242,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -16806,13 +16714,6 @@
             "sampling": 24,
             "average": 152,
             "stdMovingAverage": 49,
-            "negative": false
-          },
-          {
-            "key": "DE-Capacity gas",
-            "sampling": 24,
-            "average": 244,
-            "stdMovingAverage": 2,
             "negative": false
           }
         ]
@@ -16921,13 +16822,6 @@
             "sampling": 24,
             "average": 21,
             "stdMovingAverage": 2,
-            "negative": false
-          },
-          {
-            "key": "ES-Capacity gas",
-            "sampling": 24,
-            "average": 31,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17241,13 +17135,6 @@
             "average": 77,
             "stdMovingAverage": 27,
             "negative": false
-          },
-          {
-            "key": "FR-Capacity gas",
-            "sampling": 24,
-            "average": 134,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -17272,13 +17159,6 @@
             "average": 66,
             "stdMovingAverage": 34,
             "negative": false
-          },
-          {
-            "key": "FR-Capacity gas",
-            "sampling": 24,
-            "average": 134,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -17291,13 +17171,6 @@
             "average": 88,
             "stdMovingAverage": 27,
             "negative": false
-          },
-          {
-            "key": "FR-Capacity gas",
-            "sampling": 24,
-            "average": 130,
-            "stdMovingAverage": 4,
-            "negative": false
           }
         ]
       },
@@ -17309,13 +17182,6 @@
             "sampling": 24,
             "average": 95,
             "stdMovingAverage": 26,
-            "negative": false
-          },
-          {
-            "key": "FR-Capacity gas",
-            "sampling": 24,
-            "average": 130,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17340,13 +17206,6 @@
             "sampling": 24,
             "average": 83,
             "stdMovingAverage": 30,
-            "negative": false
-          },
-          {
-            "key": "FR-Capacity gas",
-            "sampling": 24,
-            "average": 131,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17600,13 +17459,6 @@
             "average": 44,
             "stdMovingAverage": 15,
             "negative": false
-          },
-          {
-            "key": "HU-Capacity gas",
-            "sampling": 24,
-            "average": 69,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -17630,13 +17482,6 @@
             "sampling": 24,
             "average": 45,
             "stdMovingAverage": 8,
-            "negative": false
-          },
-          {
-            "key": "HU-Capacity gas",
-            "sampling": 24,
-            "average": 69,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17686,13 +17531,6 @@
             "average": 131,
             "stdMovingAverage": 32,
             "negative": false
-          },
-          {
-            "key": "IT-Capacity gas",
-            "sampling": 24,
-            "average": 185,
-            "stdMovingAverage": 5,
-            "negative": false
           }
         ]
       },
@@ -17704,13 +17542,6 @@
             "sampling": 24,
             "average": 134,
             "stdMovingAverage": 32,
-            "negative": false
-          },
-          {
-            "key": "IT-Capacity gas",
-            "sampling": 24,
-            "average": 192,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17724,13 +17555,6 @@
             "average": 134,
             "stdMovingAverage": 34,
             "negative": false
-          },
-          {
-            "key": "IT-Capacity gas",
-            "sampling": 24,
-            "average": 193,
-            "stdMovingAverage": 7,
-            "negative": false
           }
         ]
       },
@@ -17742,13 +17566,6 @@
             "sampling": 24,
             "average": 139,
             "stdMovingAverage": 34,
-            "negative": false
-          },
-          {
-            "key": "IT-Capacity gas",
-            "sampling": 24,
-            "average": 194,
-            "stdMovingAverage": 8,
             "negative": false
           }
         ]
@@ -17785,13 +17602,6 @@
             "sampling": 24,
             "average": 124,
             "stdMovingAverage": 35,
-            "negative": false
-          },
-          {
-            "key": "IT-Capacity gas",
-            "sampling": 24,
-            "average": 195,
-            "stdMovingAverage": 2,
             "negative": false
           }
         ]
@@ -17925,13 +17735,6 @@
             "average": 14,
             "stdMovingAverage": 4,
             "negative": false
-          },
-          {
-            "key": "LV-Capacity gas",
-            "sampling": 24,
-            "average": 22,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -17944,13 +17747,6 @@
             "average": 12,
             "stdMovingAverage": 4,
             "negative": false
-          },
-          {
-            "key": "LV-Capacity gas",
-            "sampling": 24,
-            "average": 22,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -17962,13 +17758,6 @@
             "sampling": 24,
             "average": 10,
             "stdMovingAverage": 2,
-            "negative": false
-          },
-          {
-            "key": "LV-Capacity gas",
-            "sampling": 24,
-            "average": 23,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -17994,13 +17783,6 @@
             "average": 97,
             "stdMovingAverage": 29,
             "negative": false
-          },
-          {
-            "key": "NL-Capacity gas",
-            "sampling": 24,
-            "average": 149,
-            "stdMovingAverage": 4,
-            "negative": false
           }
         ]
       },
@@ -18012,13 +17794,6 @@
             "sampling": 24,
             "average": 79,
             "stdMovingAverage": 31,
-            "negative": false
-          },
-          {
-            "key": "NL-Capacity gas",
-            "sampling": 24,
-            "average": 138,
-            "stdMovingAverage": 4,
             "negative": false
           }
         ]
@@ -18044,13 +17819,6 @@
             "average": 100,
             "stdMovingAverage": 21,
             "negative": false
-          },
-          {
-            "key": "NL-Capacity gas",
-            "sampling": 24,
-            "average": 134,
-            "stdMovingAverage": 4,
-            "negative": false
           }
         ]
       },
@@ -18062,13 +17830,6 @@
             "sampling": 24,
             "average": 100,
             "stdMovingAverage": 18,
-            "negative": false
-          },
-          {
-            "key": "NL-Capacity gas",
-            "sampling": 24,
-            "average": 142,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -18093,13 +17854,6 @@
             "sampling": 24,
             "average": 77,
             "stdMovingAverage": 28,
-            "negative": false
-          },
-          {
-            "key": "NL-Capacity gas",
-            "sampling": 24,
-            "average": 141,
-            "stdMovingAverage": 2,
             "negative": false
           }
         ]
@@ -18209,13 +17963,6 @@
             "average": 21,
             "stdMovingAverage": 6,
             "negative": false
-          },
-          {
-            "key": "PL-Capacity gas",
-            "sampling": 24,
-            "average": 30,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18227,13 +17974,6 @@
             "sampling": 24,
             "average": 20,
             "stdMovingAverage": 6,
-            "negative": false
-          },
-          {
-            "key": "PL-Capacity gas",
-            "sampling": 24,
-            "average": 32,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -18283,13 +18023,6 @@
             "average": 26,
             "stdMovingAverage": 7,
             "negative": false
-          },
-          {
-            "key": "PL-Capacity gas",
-            "sampling": 24,
-            "average": 35,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18338,13 +18071,6 @@
             "average": 17,
             "stdMovingAverage": 5,
             "negative": false
-          },
-          {
-            "key": "RO-Capacity gas",
-            "sampling": 24,
-            "average": 33,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18368,13 +18094,6 @@
             "sampling": 24,
             "average": 14,
             "stdMovingAverage": 6,
-            "negative": false
-          },
-          {
-            "key": "RO-Capacity gas",
-            "sampling": 24,
-            "average": 33,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -18544,13 +18263,6 @@
             "average": 16,
             "stdMovingAverage": 7,
             "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 35,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18562,13 +18274,6 @@
             "sampling": 24,
             "average": 22,
             "stdMovingAverage": 8,
-            "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 35,
-            "stdMovingAverage": 1,
             "negative": false
           }
         ]
@@ -18582,13 +18287,6 @@
             "average": 19,
             "stdMovingAverage": 8,
             "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 36,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18601,13 +18299,6 @@
             "average": 16,
             "stdMovingAverage": 7,
             "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 39,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18619,13 +18310,6 @@
             "sampling": 24,
             "average": 29,
             "stdMovingAverage": 9,
-            "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 40,
-            "stdMovingAverage": 2,
             "negative": false
           }
         ]
@@ -18651,13 +18335,6 @@
             "average": 23,
             "stdMovingAverage": 5,
             "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 42,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18670,13 +18347,6 @@
             "average": 21,
             "stdMovingAverage": 8,
             "negative": false
-          },
-          {
-            "key": "SK-Capacity gas",
-            "sampling": 24,
-            "average": 37,
-            "stdMovingAverage": 1,
-            "negative": false
           }
         ]
       },
@@ -18688,13 +18358,6 @@
             "sampling": 24,
             "average": 68,
             "stdMovingAverage": 28,
-            "negative": false
-          },
-          {
-            "key": "UA-Capacity gas",
-            "sampling": 24,
-            "average": 276,
-            "stdMovingAverage": 108,
             "negative": false
           }
         ]
