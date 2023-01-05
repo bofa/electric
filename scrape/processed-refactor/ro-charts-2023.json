@@ -1571,7 +1571,7 @@
     "RO-Wind": 2311,
     "RO-Coal": 1116,
     "RO-Hydro": 1801,
-    "RO-Import": -1281.7,
+    "RO-Import": -1276.6,
     "RO-Gas": 1786
   },
   {
@@ -1586,7 +1586,37 @@
     "RO-Wind": 2361,
     "RO-Coal": 1128,
     "RO-Hydro": 1752,
-    "RO-Import": -215.4,
+    "RO-Import": -1250.4,
     "RO-Gas": 1774
+  },
+  {
+    "x": "2023-01-05T10:00:00.000+01:00",
+    "RO-Nuclear": 1383,
+    "RO-Biomass": 44,
+    "RO-Solar": 176,
+    "RO-Load": 7253,
+    "RO-Residual load": 2855,
+    "RO-Renewable share of generation": 50.8,
+    "RO-Renewable share of load": 60.6,
+    "RO-Wind": 2436,
+    "RO-Coal": 1104,
+    "RO-Hydro": 1742,
+    "RO-Import": -1406.5,
+    "RO-Gas": 1770
+  },
+  {
+    "x": "2023-01-05T11:00:00.000+01:00",
+    "RO-Nuclear": 1362,
+    "RO-Biomass": 45,
+    "RO-Solar": 222,
+    "RO-Load": 7136,
+    "RO-Residual load": 2706,
+    "RO-Renewable share of generation": 51,
+    "RO-Renewable share of load": 62.1,
+    "RO-Wind": 2432,
+    "RO-Coal": 1134,
+    "RO-Hydro": 1731,
+    "RO-Import": 40.4,
+    "RO-Gas": 1767
   }
 ]

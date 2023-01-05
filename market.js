@@ -71,7 +71,7 @@ markets.forEach((market, marketIndex) => {
       const unique = uniq(flat, 'x')
         .sort((a, b) => a.x - b.x);
 
-      fs.writeFileSync(`scrape/raw/energy-charts-${market}.json`, JSON.stringify(unique, null, 2));
+      fs.writeFileSync(`scrape/raw/energy-charts-${market}.json`, JSON.stringify(unique));
       
       // const filteredProduction = unique
       //   .filter(p => p.x.year >= 2020)
