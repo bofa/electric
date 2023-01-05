@@ -74,8 +74,9 @@ allFiles
           endIndex = endIndex < 0 ? undefined : endIndex;
 
           const contentYear = contentTransform.slice(startIndex, endIndex);
-          const newFilename = marketLabel + type + year + '.json';
-
-          fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear, null, 2));
+          if (contentYear.length > 1) {
+            const newFilename = marketLabel + type + year + '.json';
+            fs.writeFileSync(folderWrite + newFilename, JSON.stringify(contentYear, null, 2));
+          }
         })
   })
