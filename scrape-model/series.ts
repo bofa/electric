@@ -8,6 +8,6 @@ export type Series = {
   type: PriceId | PowerId | EnergyId,
   stepSize: DurationObjectUnits,
   startDate: DateTime,
-  endDate?: string,
+  endDate?: DateTime,
   data: (number | null)[],
 }
