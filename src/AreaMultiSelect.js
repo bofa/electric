@@ -2,21 +2,6 @@ import { MenuItem, Menu, ButtonGroup, Button, MenuDivider, Label } from "@bluepr
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
 
-function toggleItems(selected, item) {
-  if (selected.includes(item)) {
-    return selected.filter(v => v !== item);
-  } else {
-    return selected.concat(item);
-  }
-}
-
-function matchQuery(query, itemString) {
-  const itemStringLower = itemString.toLowerCase();
-  const querys = query.split(' ').map(q => q.toLowerCase())
-  
-  return querys.every(query => itemStringLower.includes(query));
-}
-
 const sortFunctions = [
   (a1, a2) => a1.text.localeCompare(a2.text),
   (a1, a2) => a2.label - a1.label,
@@ -89,4 +74,19 @@ export default class AreaMultiSelect extends React.PureComponent {
       />
     );
   }
+}
+
+function toggleItems(selected, item) {
+  if (selected.includes(item)) {
+    return selected.filter(v => v !== item);
+  } else {
+    return selected.concat(item);
+  }
+}
+
+function matchQuery(query, itemString) {
+  const itemStringLower = itemString.toLowerCase();
+  const querys = query.split(' ').map(q => q.toLowerCase())
+  
+  return querys.every(query => itemStringLower.includes(query));
 }

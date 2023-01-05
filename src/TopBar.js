@@ -38,7 +38,7 @@ export default function TopBar() {
   }, [])
 
   React.useEffect(() => {
-    const yearNow = DateTime.now().year;
+    const yearNow = DateTime.now().minus({ weeks: 4 }).year;
     const areas = options
       .find(option => option.key === selectDataSet)
       ?.files
@@ -47,6 +47,7 @@ export default function TopBar() {
         year: Number(file.file.split('.')[0].split('-')[2])
       })))
       .flat()
+      // TODO
       .filter(o => o.year === yearNow)
       || [];
   
