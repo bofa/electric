@@ -1436,7 +1436,7 @@
     "NL-Renewable share of load": 26.3,
     "NL-Wind": 3232.9,
     "NL-Coal": 2593.8,
-    "NL-Import": 1833.4,
+    "NL-Import": 952.7,
     "NL-Gas": 1310.1
   },
   {
@@ -1446,13 +1446,13 @@
     "NL-Others": 322.6,
     "NL-Waste": 65.8,
     "NL-Solar": 0.5,
-    "NL-Load": null,
-    "NL-Residual load": null,
+    "NL-Load": 12596.3,
+    "NL-Residual load": 9293.9,
     "NL-Renewable share of generation": 41.4,
-    "NL-Renewable share of load": null,
+    "NL-Renewable share of load": 26.2,
     "NL-Wind": 3269,
     "NL-Coal": 2575,
-    "NL-Import": 749.3,
+    "NL-Import": 726.6,
     "NL-Gas": 1255.2
   },
   {
@@ -1500,7 +1500,7 @@
     "NL-Renewable share of load": 29.6,
     "NL-Wind": 3251.6,
     "NL-Coal": 2077.9,
-    "NL-Import": 1059.3,
+    "NL-Import": 21,
     "NL-Gas": 833.5
   },
   {
@@ -1660,7 +1660,71 @@
     "NL-Renewable share of load": 28.3,
     "NL-Wind": 3005.1,
     "NL-Coal": 1903,
-    "NL-Import": 1507.9,
+    "NL-Import": -164,
     "NL-Gas": 1654.8
+  },
+  {
+    "x": "2023-01-05T08:00:00.000+01:00",
+    "NL-Nuclear": 485,
+    "NL-Biomass": 0,
+    "NL-Others": 496.4,
+    "NL-Waste": 67.3,
+    "NL-Solar": 0.5,
+    "NL-Load": 11692.8,
+    "NL-Residual load": 8857.8,
+    "NL-Renewable share of generation": 33.7,
+    "NL-Renewable share of load": 24.2,
+    "NL-Wind": 2800.9,
+    "NL-Coal": 2376.9,
+    "NL-Import": 325.6,
+    "NL-Gas": 2178.5
+  },
+  {
+    "x": "2023-01-05T09:00:00.000+01:00",
+    "NL-Nuclear": 485.3,
+    "NL-Biomass": 0,
+    "NL-Others": 463.6,
+    "NL-Waste": 69.4,
+    "NL-Solar": 2.4,
+    "NL-Load": 12560.9,
+    "NL-Residual load": 10207.3,
+    "NL-Renewable share of generation": 27.2,
+    "NL-Renewable share of load": 18.7,
+    "NL-Wind": 2316.5,
+    "NL-Coal": 2812.4,
+    "NL-Import": 989.8,
+    "NL-Gas": 2517.7
+  },
+  {
+    "x": "2023-01-05T10:00:00.000+01:00",
+    "NL-Nuclear": 484.4,
+    "NL-Biomass": 0,
+    "NL-Others": 436.9,
+    "NL-Waste": 67.9,
+    "NL-Solar": 8.1,
+    "NL-Load": 12959.7,
+    "NL-Residual load": 11105.9,
+    "NL-Renewable share of generation": 22,
+    "NL-Renewable share of load": 14.3,
+    "NL-Wind": 1811.7,
+    "NL-Coal": 2918.4,
+    "NL-Import": 226.5,
+    "NL-Gas": 2701.7
+  },
+  {
+    "x": "2023-01-05T11:00:00.000+01:00",
+    "NL-Nuclear": 485.6,
+    "NL-Biomass": 0,
+    "NL-Others": 388,
+    "NL-Waste": 70.3,
+    "NL-Solar": 15.6,
+    "NL-Load": 12736,
+    "NL-Residual load": 11272.6,
+    "NL-Renewable share of generation": 18.5,
+    "NL-Renewable share of load": 11.5,
+    "NL-Wind": 1412.6,
+    "NL-Coal": 2894.7,
+    "NL-Import": 1364.1,
+    "NL-Gas": 2634.4
   }
 ]
