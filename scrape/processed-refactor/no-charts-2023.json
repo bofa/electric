@@ -1673,7 +1673,7 @@
     "NO-Renewable share of load": 91.5,
     "NO-Wind": 3557.7,
     "NO-Hydro": 16554.5,
-    "NO-Import": 724,
+    "NO-Import": 724.9,
     "NO-Gas": 207.6
   },
   {
@@ -1686,7 +1686,7 @@
     "NO-Renewable share of load": 90.6,
     "NO-Wind": 3159.1,
     "NO-Hydro": 16764.2,
-    "NO-Import": 767.9,
+    "NO-Import": 768.6,
     "NO-Gas": 204.6
   },
   {
@@ -1699,7 +1699,7 @@
     "NO-Renewable share of load": 89.1,
     "NO-Wind": 2966.3,
     "NO-Hydro": 16688.2,
-    "NO-Import": 1060,
+    "NO-Import": 1060.7,
     "NO-Gas": 213.6
   },
   {
@@ -1712,20 +1712,20 @@
     "NO-Renewable share of load": 91.3,
     "NO-Wind": 2936.6,
     "NO-Hydro": 16890,
-    "NO-Import": 834.8,
+    "NO-Import": 836.8,
     "NO-Gas": 215.2
   },
   {
     "x": "2023-01-06T12:00:00.000+01:00",
     "NO-Other renewables": 66.5,
     "NO-Waste": 23.1,
-    "NO-Load": 21221.2,
-    "NO-Residual load": 1455.5,
+    "NO-Load": 21221,
+    "NO-Residual load": 1455.3,
     "NO-Renewable share of generation": 97.4,
     "NO-Renewable share of load": 93.1,
     "NO-Wind": 3015.3,
     "NO-Hydro": 16969.9,
-    "NO-Import": 627.4,
+    "NO-Import": 630.6,
     "NO-Gas": 209.6
   },
   {
@@ -1738,7 +1738,20 @@
     "NO-Renewable share of load": 91.4,
     "NO-Wind": 3153.9,
     "NO-Hydro": 16154.7,
-    "NO-Import": 1151.8,
+    "NO-Import": 1153.1,
     "NO-Gas": 214
+  },
+  {
+    "x": "2023-01-06T14:00:00.000+01:00",
+    "NO-Other renewables": 68,
+    "NO-Waste": 24.4,
+    "NO-Load": 20797.5,
+    "NO-Residual load": 502.2,
+    "NO-Renewable share of generation": 97.4,
+    "NO-Renewable share of load": 97.6,
+    "NO-Wind": 3239.9,
+    "NO-Hydro": 17290.2,
+    "NO-Import": 0.8,
+    "NO-Gas": 213.7
   }
 ]
