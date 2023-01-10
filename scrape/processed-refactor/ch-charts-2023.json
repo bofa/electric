@@ -2992,7 +2992,7 @@
     "CH-Hydro Pumped": 443.3,
     "CH-Wind": null,
     "CH-Hydro": 2629.4,
-    "CH-Import": 563,
+    "CH-Import": 1933.9,
     "CH-Gas": null
   },
   {
@@ -3006,7 +3006,7 @@
     "CH-Hydro Pumped": 179.3,
     "CH-Wind": null,
     "CH-Hydro": 2309,
-    "CH-Import": 1491.9,
+    "CH-Import": 2746.6,
     "CH-Gas": null
   },
   {
@@ -3020,7 +3020,7 @@
     "CH-Hydro Pumped": 44.4,
     "CH-Wind": null,
     "CH-Hydro": 2054.2,
-    "CH-Import": 2167.2,
+    "CH-Import": 3502,
     "CH-Gas": null
   },
   {
@@ -3095,16 +3095,86 @@
   },
   {
     "x": "2023-01-10T05:00:00.000+01:00",
-    "CH-Nuclear": 2489.6,
+    "CH-Nuclear": 2986.4,
     "CH-Solar": 0,
     "CH-Load": 7411.6,
-    "CH-Residual load": 5405.5,
-    "CH-Renewable share of generation": 44.2,
-    "CH-Renewable share of load": 27.1,
-    "CH-Hydro Pumped": 46.3,
+    "CH-Residual load": 5389.7,
+    "CH-Renewable share of generation": 40,
+    "CH-Renewable share of load": 27.3,
+    "CH-Hydro Pumped": 49.4,
     "CH-Wind": null,
-    "CH-Hydro": 2052.4,
+    "CH-Hydro": 2071.4,
     "CH-Import": 3939.8,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-01-10T06:00:00.000+01:00",
+    "CH-Nuclear": 2988.9,
+    "CH-Solar": 0,
+    "CH-Load": 9195.2,
+    "CH-Residual load": 6783.6,
+    "CH-Renewable share of generation": 42.8,
+    "CH-Renewable share of load": 26.2,
+    "CH-Hydro Pumped": 227.8,
+    "CH-Wind": null,
+    "CH-Hydro": 2639.3,
+    "CH-Import": 2381.1,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-01-10T07:00:00.000+01:00",
+    "CH-Nuclear": 2981.4,
+    "CH-Solar": 0,
+    "CH-Load": 9063.6,
+    "CH-Residual load": 5517,
+    "CH-Renewable share of generation": 47.2,
+    "CH-Renewable share of load": 39.1,
+    "CH-Hydro Pumped": 987.4,
+    "CH-Wind": null,
+    "CH-Hydro": 4534,
+    "CH-Import": 1174.2,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-01-10T08:00:00.000+01:00",
+    "CH-Nuclear": 2984.2,
+    "CH-Solar": 0,
+    "CH-Load": 9637.3,
+    "CH-Residual load": 4557.7,
+    "CH-Renewable share of generation": 53.3,
+    "CH-Renewable share of load": 52.7,
+    "CH-Hydro Pumped": 1459.4,
+    "CH-Wind": null,
+    "CH-Hydro": 6538.9,
+    "CH-Import": -1020.3,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-01-10T09:00:00.000+01:00",
+    "CH-Nuclear": 2488.8,
+    "CH-Solar": 0,
+    "CH-Load": 9459.5,
+    "CH-Residual load": 4087.9,
+    "CH-Renewable share of generation": 59.2,
+    "CH-Renewable share of load": 56.8,
+    "CH-Hydro Pumped": 1220.4,
+    "CH-Wind": null,
+    "CH-Hydro": 6592,
+    "CH-Import": -775.3,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-01-10T10:00:00.000+01:00",
+    "CH-Nuclear": 2487.3,
+    "CH-Solar": 0,
+    "CH-Load": 9681,
+    "CH-Residual load": 5184,
+    "CH-Renewable share of generation": 59.2,
+    "CH-Renewable share of load": 46.5,
+    "CH-Hydro Pumped": 608.9,
+    "CH-Wind": null,
+    "CH-Hydro": 5105.8,
+    "CH-Import": 1051,
     "CH-Gas": null
   }
 ]
