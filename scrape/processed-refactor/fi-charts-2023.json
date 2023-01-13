@@ -4042,7 +4042,7 @@
     "FI-Wind": 2929.5,
     "FI-Coal": 749.1,
     "FI-Hydro": 1261.8,
-    "FI-Import": -538.2,
+    "FI-Import": -523.9,
     "FI-Gas": 172.8,
     "FI-Oil": 0.4
   },
@@ -4061,7 +4061,7 @@
     "FI-Wind": 2653.1,
     "FI-Coal": 739.4,
     "FI-Hydro": 1201.3,
-    "FI-Import": -28.8,
+    "FI-Import": -14.7,
     "FI-Gas": 184.7,
     "FI-Oil": 0.4
   },
@@ -4080,7 +4080,7 @@
     "FI-Wind": 2409.4,
     "FI-Coal": 745.1,
     "FI-Hydro": 1111.5,
-    "FI-Import": 47.8,
+    "FI-Import": 61.6,
     "FI-Gas": 178.6,
     "FI-Oil": 0.4
   },
@@ -4099,7 +4099,7 @@
     "FI-Wind": 2379.1,
     "FI-Coal": 775.6,
     "FI-Hydro": 961.8,
-    "FI-Import": -123,
+    "FI-Import": -109.5,
     "FI-Gas": 186.4,
     "FI-Oil": 0.4
   },
@@ -4954,7 +4954,7 @@
     "FI-Wind": 4425.3,
     "FI-Coal": 341.7,
     "FI-Hydro": 1016.3,
-    "FI-Import": -413.5,
+    "FI-Import": -401.6,
     "FI-Gas": 130.8,
     "FI-Oil": 0.2
   },
@@ -4973,7 +4973,7 @@
     "FI-Wind": 4330.8,
     "FI-Coal": 329.5,
     "FI-Hydro": 1019.8,
-    "FI-Import": -138.8,
+    "FI-Import": -129.2,
     "FI-Gas": 144.1,
     "FI-Oil": 0.2
   },
@@ -5631,15 +5631,34 @@
     "FI-Others": 69.5,
     "FI-Other renewables": 1.5,
     "FI-Waste": 11.4,
-    "FI-Load": null,
-    "FI-Residual load": null,
+    "FI-Load": 10520,
+    "FI-Residual load": 4756.1,
     "FI-Renewable share of generation": 60.9,
-    "FI-Renewable share of load": null,
+    "FI-Renewable share of load": 54.8,
     "FI-Wind": 2958.6,
     "FI-Coal": 325.2,
     "FI-Hydro": 1941,
-    "FI-Import": 491.9,
+    "FI-Import": 505.4,
     "FI-Gas": 140.7,
     "FI-Oil": 0.1
+  },
+  {
+    "x": "2023-01-13T09:00:00.000+01:00",
+    "FI-Nuclear": 2776.6,
+    "FI-Biomass": 860.7,
+    "FI-Fossil peat": 385.8,
+    "FI-Others": 69.6,
+    "FI-Other renewables": 1.5,
+    "FI-Waste": 8.4,
+    "FI-Load": 10413,
+    "FI-Residual load": 4539.8,
+    "FI-Renewable share of generation": 61.3,
+    "FI-Renewable share of load": 56.4,
+    "FI-Wind": 2970.8,
+    "FI-Coal": 330.6,
+    "FI-Hydro": 2036,
+    "FI-Import": 275.5,
+    "FI-Gas": 139.6,
+    "FI-Oil": null
   }
 ]
