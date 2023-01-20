@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scrape": "npm run hydros && npm run markets && npm run marketsprice && npm run productiongranular && npm run process && npm run options && npm run push",
-    "push": "git add scrape & git commit -m scrape && git push",
+    "push": "git add scrape && git commit -m scrape && git push",
     "price": "node price.js",
     "production": "node production.js",
     "productiongranular": "node production-sweden-granular.js && npm run gas",
