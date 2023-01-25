@@ -8342,7 +8342,7 @@
     "LT-Hydro Pumped": -49.8,
     "LT-Wind": 604.3,
     "LT-Hydro": 23.900000000000006,
-    "LT-Import": 901.3,
+    "LT-Import": 900.4,
     "LT-Gas": 20.4,
     "LT-Oil": null
   },
@@ -8359,7 +8359,7 @@
     "LT-Hydro Pumped": -111.8,
     "LT-Wind": 603.4,
     "LT-Hydro": -39,
-    "LT-Import": 960.9,
+    "LT-Import": 960,
     "LT-Gas": 20.2,
     "LT-Oil": null
   },
@@ -8376,7 +8376,7 @@
     "LT-Hydro Pumped": -99.9,
     "LT-Wind": 602.4,
     "LT-Hydro": -30.80000000000001,
-    "LT-Import": 942,
+    "LT-Import": 941.1,
     "LT-Gas": 20,
     "LT-Oil": null
   },
@@ -8393,7 +8393,7 @@
     "LT-Hydro Pumped": null,
     "LT-Wind": 586.5,
     "LT-Hydro": 90,
-    "LT-Import": 805.7,
+    "LT-Import": 804.8,
     "LT-Gas": 20.1,
     "LT-Oil": null
   },
@@ -8410,7 +8410,7 @@
     "LT-Hydro Pumped": null,
     "LT-Wind": 593.2,
     "LT-Hydro": 88.3,
-    "LT-Import": 807.7,
+    "LT-Import": 805.6,
     "LT-Gas": 20.1,
     "LT-Oil": null
   },
@@ -9923,7 +9923,7 @@
     "LT-Hydro Pumped": null,
     "LT-Wind": 352.5,
     "LT-Hydro": 95.9,
-    "LT-Import": 1132.5,
+    "LT-Import": 1295.4,
     "LT-Gas": 19,
     "LT-Oil": null
   },
@@ -9940,7 +9940,7 @@
     "LT-Hydro Pumped": 184.6,
     "LT-Wind": 343.1,
     "LT-Hydro": 280.5,
-    "LT-Import": 796.8,
+    "LT-Import": 1145.2,
     "LT-Gas": 18.9,
     "LT-Oil": null
   },
@@ -9957,8 +9957,59 @@
     "LT-Hydro Pumped": 187.2,
     "LT-Wind": 337.5,
     "LT-Hydro": 283.29999999999995,
-    "LT-Import": 1184,
+    "LT-Import": 1144,
     "LT-Gas": 19,
+    "LT-Oil": null
+  },
+  {
+    "x": "2023-01-25T10:00:00.000+01:00",
+    "LT-Biomass": 34.3,
+    "LT-Others": 7.6,
+    "LT-Waste": 53.3,
+    "LT-Solar": 16.9,
+    "LT-Load": 1833,
+    "LT-Residual load": 1329.6,
+    "LT-Renewable share of generation": 67.7,
+    "LT-Renewable share of load": 27.5,
+    "LT-Hydro Pumped": 186.3,
+    "LT-Wind": 329.4,
+    "LT-Hydro": 282.3,
+    "LT-Import": 1124.4,
+    "LT-Gas": 19.1,
+    "LT-Oil": null
+  },
+  {
+    "x": "2023-01-25T11:00:00.000+01:00",
+    "LT-Biomass": 34.2,
+    "LT-Others": 7.7,
+    "LT-Waste": 52.8,
+    "LT-Solar": 19.3,
+    "LT-Load": 1801.1,
+    "LT-Residual load": 1313.7,
+    "LT-Renewable share of generation": 72.1,
+    "LT-Renewable share of load": 27.1,
+    "LT-Hydro Pumped": 135.4,
+    "LT-Wind": 314,
+    "LT-Hydro": 228.9,
+    "LT-Import": 1164.2,
+    "LT-Gas": 19.1,
+    "LT-Oil": null
+  },
+  {
+    "x": "2023-01-25T12:00:00.000+01:00",
+    "LT-Biomass": 34.3,
+    "LT-Others": 7.9,
+    "LT-Waste": 53.1,
+    "LT-Solar": 17.4,
+    "LT-Load": 1820.3,
+    "LT-Residual load": 1341.3,
+    "LT-Renewable share of generation": 89.9,
+    "LT-Renewable share of load": 26.3,
+    "LT-Hydro Pumped": null,
+    "LT-Wind": 304.5,
+    "LT-Hydro": 96.3,
+    "LT-Import": 997.5,
+    "LT-Gas": 19.1,
     "LT-Oil": null
   }
 ]
