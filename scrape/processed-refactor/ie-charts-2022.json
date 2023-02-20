@@ -120587,7 +120587,7 @@
     "IE-Wind": null,
     "IE-Coal": null,
     "IE-Hydro": null,
-    "IE-Import": null,
+    "IE-Import": -121.7,
     "IE-Gas": null,
     "IE-Oil": null
   },
@@ -120603,7 +120603,7 @@
     "IE-Wind": null,
     "IE-Coal": null,
     "IE-Hydro": null,
-    "IE-Import": null,
+    "IE-Import": -11.2,
     "IE-Gas": null,
     "IE-Oil": null
   },
@@ -121277,6 +121277,22 @@
     "IE-Hydro": 459.9,
     "IE-Import": null,
     "IE-Gas": 890.8,
+    "IE-Oil": null
+  },
+  {
+    "x": "2022-11-12T20:00:00.000+01:00",
+    "IE-Fossil peat": 80.9,
+    "IE-Others": 0,
+    "IE-Load": null,
+    "IE-Residual load": null,
+    "IE-Renewable share of generation": 67.1,
+    "IE-Renewable share of load": null,
+    "IE-Hydro Pumped": 253.3,
+    "IE-Wind": 2474.3,
+    "IE-Coal": 100.6,
+    "IE-Hydro": 415.3,
+    "IE-Import": null,
+    "IE-Gas": 856,
     "IE-Oil": null
   }
 ]
