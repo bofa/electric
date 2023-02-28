@@ -126,12 +126,12 @@ function App (props) {
 
   let processedSeriesBeforeMerge = fullDataSet
     .filter(series => selectedAreas.includes(series.label))
-    .map(series => ({ option: flatOptions?.find(o => o.key === series.label), ...series }))
+    .map(series => ({ option: flatOptions?.findLast(o => o.key === series.label), ...series }))
     .sort((s1, s2) => {
       if (s1.option.negative ^ s2.option.negative) {
         return s2.option.negative - s1.option.negative;
       }
-      
+
       return s1.option.stdMovingAverage - s2.option.stdMovingAverage;
     })
 
