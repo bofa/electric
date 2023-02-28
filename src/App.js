@@ -132,8 +132,10 @@ function App (props) {
         return s2.option.negative - s1.option.negative;
       }
 
-      return s1.option.stdMovingAverage - s2.option.stdMovingAverage;
+      return s1.option.stdMovingAverage / Math.sqrt(s1.option.average) - s2.option.stdMovingAverage / Math.sqrt(s2.option.average);
     })
+
+  // console.log('processedSeriesBeforeMerge', processedSeriesBeforeMerge)
 
   if (merge && processedSeriesBeforeMerge.length > 0) {
     const labels = processedSeriesBeforeMerge.map(series => series.label);
