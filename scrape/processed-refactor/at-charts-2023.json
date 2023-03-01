@@ -7,14 +7,14 @@
     "AT-Waste": 100,
     "AT-Solar": 0,
     "AT-Load": 5482,
-    "AT-Residual load": 4482,
-    "AT-Renewable share of generation": 97.3,
-    "AT-Renewable share of load": 65.6,
+    "AT-Residual load": null,
+    "AT-Renewable share of generation": null,
+    "AT-Renewable share of load": null,
     "AT-Hydro Pumped": -1406,
     "AT-Wind": 1000,
     "AT-Coal": null,
     "AT-Hydro": 901.6000000000001,
-    "AT-Import": 2930.1,
+    "AT-Import": null,
     "AT-Gas": 27.2
   },
   {
@@ -194,7 +194,7 @@
     "AT-Wind": 336,
     "AT-Coal": null,
     "AT-Hydro": 1792.4,
-    "AT-Import": 2991.1,
+    "AT-Import": 2991,
     "AT-Gas": 56.4
   },
   {
@@ -2300,7 +2300,7 @@
     "AT-Wind": 256,
     "AT-Coal": null,
     "AT-Hydro": 2598,
-    "AT-Import": 1797.1,
+    "AT-Import": 1797,
     "AT-Gas": 678
   },
   {
@@ -6782,7 +6782,7 @@
     "AT-Wind": 1048,
     "AT-Coal": null,
     "AT-Hydro": 3239.2,
-    "AT-Import": 2591.9,
+    "AT-Import": 2591.8,
     "AT-Gas": 1300.4
   },
   {
@@ -8222,7 +8222,7 @@
     "AT-Wind": 1252,
     "AT-Coal": null,
     "AT-Hydro": 1790.4,
-    "AT-Import": 1901.2,
+    "AT-Import": 1899.2,
     "AT-Gas": 1351.2
   },
   {
@@ -8240,7 +8240,7 @@
     "AT-Wind": 884,
     "AT-Coal": null,
     "AT-Hydro": 1695.2,
-    "AT-Import": 2209.6,
+    "AT-Import": 2208.6,
     "AT-Gas": 1308
   },
   {
@@ -8258,7 +8258,7 @@
     "AT-Wind": 568,
     "AT-Coal": null,
     "AT-Hydro": 1910,
-    "AT-Import": 2116.5,
+    "AT-Import": 2114.5,
     "AT-Gas": 1229.6
   },
   {
@@ -8276,7 +8276,7 @@
     "AT-Wind": 912,
     "AT-Coal": null,
     "AT-Hydro": 1780.8,
-    "AT-Import": 1838.7,
+    "AT-Import": 1836.7,
     "AT-Gas": 1204
   },
   {
@@ -8294,7 +8294,7 @@
     "AT-Wind": 1148,
     "AT-Coal": null,
     "AT-Hydro": 1709.6000000000001,
-    "AT-Import": 1653.5,
+    "AT-Import": 1651.5,
     "AT-Gas": 1187.2
   },
   {
@@ -8312,7 +8312,7 @@
     "AT-Wind": 1300,
     "AT-Coal": null,
     "AT-Hydro": 1684.8,
-    "AT-Import": 2057.3,
+    "AT-Import": 2055.3,
     "AT-Gas": 1244
   },
   {
@@ -8330,7 +8330,7 @@
     "AT-Wind": 960,
     "AT-Coal": null,
     "AT-Hydro": 3179.6,
-    "AT-Import": 1399.3,
+    "AT-Import": 1397.3,
     "AT-Gas": 1679.6
   },
   {
@@ -8348,7 +8348,7 @@
     "AT-Wind": 1420,
     "AT-Coal": null,
     "AT-Hydro": 4904.4,
-    "AT-Import": -45.2,
+    "AT-Import": -47.2,
     "AT-Gas": 1965.6
   },
   {
@@ -8366,7 +8366,7 @@
     "AT-Wind": 1560,
     "AT-Coal": null,
     "AT-Hydro": 5474.4,
-    "AT-Import": -476.1,
+    "AT-Import": -478.1,
     "AT-Gas": 2089.6
   },
   {
@@ -8384,7 +8384,7 @@
     "AT-Wind": 1696,
     "AT-Coal": null,
     "AT-Hydro": 5545.2,
-    "AT-Import": -275.1,
+    "AT-Import": -278.1,
     "AT-Gas": 2114
   },
   {
@@ -8402,7 +8402,7 @@
     "AT-Wind": 1664,
     "AT-Coal": null,
     "AT-Hydro": 5386,
-    "AT-Import": -230.9,
+    "AT-Import": -232.9,
     "AT-Gas": 2124.4
   },
   {
@@ -8420,7 +8420,7 @@
     "AT-Wind": 1976,
     "AT-Coal": null,
     "AT-Hydro": 4973.2,
-    "AT-Import": -277.8,
+    "AT-Import": -279.8,
     "AT-Gas": 2146.4
   },
   {
@@ -8438,7 +8438,7 @@
     "AT-Wind": 2512,
     "AT-Coal": null,
     "AT-Hydro": 4358.4,
-    "AT-Import": -377.8,
+    "AT-Import": -379.8,
     "AT-Gas": 2159.2
   },
   {
@@ -8456,7 +8456,7 @@
     "AT-Wind": 2656,
     "AT-Coal": null,
     "AT-Hydro": 4082.4,
-    "AT-Import": -491.4,
+    "AT-Import": -494.4,
     "AT-Gas": 2059.6
   },
   {
@@ -8474,7 +8474,7 @@
     "AT-Wind": 2788,
     "AT-Coal": null,
     "AT-Hydro": 4006.3999999999996,
-    "AT-Import": -738,
+    "AT-Import": -741,
     "AT-Gas": 2038
   },
   {
@@ -8492,7 +8492,7 @@
     "AT-Wind": 2760,
     "AT-Coal": null,
     "AT-Hydro": 4269.6,
-    "AT-Import": -931.1,
+    "AT-Import": -934.1,
     "AT-Gas": 2065.2
   },
   {
@@ -8510,7 +8510,7 @@
     "AT-Wind": 2848,
     "AT-Coal": null,
     "AT-Hydro": 4470,
-    "AT-Import": -1205.7,
+    "AT-Import": -1221.7,
     "AT-Gas": 2116.4
   },
   {
@@ -8528,7 +8528,7 @@
     "AT-Wind": 2968,
     "AT-Coal": null,
     "AT-Hydro": 4961.6,
-    "AT-Import": -1575.9,
+    "AT-Import": -1578.9,
     "AT-Gas": 2116
   },
   {
@@ -8546,7 +8546,7 @@
     "AT-Wind": 3032,
     "AT-Coal": null,
     "AT-Hydro": 5410,
-    "AT-Import": -1830.5,
+    "AT-Import": -1833.5,
     "AT-Gas": 2156.4
   },
   {
@@ -8564,7 +8564,7 @@
     "AT-Wind": 3080,
     "AT-Coal": null,
     "AT-Hydro": 5201.2,
-    "AT-Import": -1951.1,
+    "AT-Import": -1953.1,
     "AT-Gas": 2140.4
   },
   {
@@ -8582,7 +8582,7 @@
     "AT-Wind": 3120,
     "AT-Coal": null,
     "AT-Hydro": 3805.6,
-    "AT-Import": -1174.6,
+    "AT-Import": -1177.6,
     "AT-Gas": 2131.6
   },
   {
@@ -8600,7 +8600,7 @@
     "AT-Wind": 3036,
     "AT-Coal": null,
     "AT-Hydro": 2833.6,
-    "AT-Import": -668.3,
+    "AT-Import": -671.3,
     "AT-Gas": 1993.2
   },
   {
@@ -8618,7 +8618,7 @@
     "AT-Wind": 2660,
     "AT-Coal": null,
     "AT-Hydro": 2666,
-    "AT-Import": -314.5,
+    "AT-Import": -317.5,
     "AT-Gas": 1949.6
   },
   {
@@ -8636,7 +8636,7 @@
     "AT-Wind": 2868,
     "AT-Coal": null,
     "AT-Hydro": 1899.2,
-    "AT-Import": 502.9,
+    "AT-Import": 500.9,
     "AT-Gas": 1350.4
   },
   {
@@ -9770,7 +9770,7 @@
     "AT-Wind": 1768,
     "AT-Coal": null,
     "AT-Hydro": 4835.6,
-    "AT-Import": 85.4,
+    "AT-Import": 85.5,
     "AT-Gas": 2100.4
   },
   {
@@ -10166,7 +10166,7 @@
     "AT-Wind": 980,
     "AT-Coal": null,
     "AT-Hydro": 4979.6,
-    "AT-Import": 874.7,
+    "AT-Import": 874.8,
     "AT-Gas": 2294.8
   },
   {
@@ -16268,7 +16268,7 @@
     "AT-Wind": 716,
     "AT-Coal": null,
     "AT-Hydro": 3325.6000000000004,
-    "AT-Import": 1542.7,
+    "AT-Import": 1542.6,
     "AT-Gas": 2260
   },
   {
@@ -17078,7 +17078,7 @@
     "AT-Wind": 1116,
     "AT-Coal": null,
     "AT-Hydro": 2362,
-    "AT-Import": 1538.6,
+    "AT-Import": 1955.2,
     "AT-Gas": 2234
   },
   {
@@ -17096,7 +17096,7 @@
     "AT-Wind": 1276,
     "AT-Coal": null,
     "AT-Hydro": 2098.8,
-    "AT-Import": 1614.1,
+    "AT-Import": 2018.9,
     "AT-Gas": 2090
   },
   {
@@ -17114,7 +17114,7 @@
     "AT-Wind": 1432,
     "AT-Coal": null,
     "AT-Hydro": 2243.6,
-    "AT-Import": 1243.4,
+    "AT-Import": 1747.3,
     "AT-Gas": 2095.6
   },
   {
@@ -17132,7 +17132,7 @@
     "AT-Wind": 1496,
     "AT-Coal": null,
     "AT-Hydro": 2445.2,
-    "AT-Import": 800.5,
+    "AT-Import": 1318.1,
     "AT-Gas": 2361.6
   },
   {
@@ -17150,7 +17150,7 @@
     "AT-Wind": 1392,
     "AT-Coal": null,
     "AT-Hydro": 3512,
-    "AT-Import": 188.1,
+    "AT-Import": 707.4,
     "AT-Gas": 2452.4
   },
   {
@@ -17168,7 +17168,7 @@
     "AT-Wind": 1540,
     "AT-Coal": null,
     "AT-Hydro": 4862.4,
-    "AT-Import": -709.8,
+    "AT-Import": -347.6,
     "AT-Gas": 2364.8
   },
   {
@@ -17186,7 +17186,7 @@
     "AT-Wind": 1504,
     "AT-Coal": null,
     "AT-Hydro": 5710.8,
-    "AT-Import": -972.1,
+    "AT-Import": -386.1,
     "AT-Gas": 2288.4
   },
   {
@@ -17204,7 +17204,7 @@
     "AT-Wind": 1712,
     "AT-Coal": null,
     "AT-Hydro": 5517.200000000001,
-    "AT-Import": -1106.5,
+    "AT-Import": -791.8,
     "AT-Gas": 2312.4
   },
   {
@@ -17222,7 +17222,7 @@
     "AT-Wind": 2108,
     "AT-Coal": null,
     "AT-Hydro": 4376.4,
-    "AT-Import": -1011.9,
+    "AT-Import": -567.5,
     "AT-Gas": 2455.6
   },
   {
@@ -17240,7 +17240,7 @@
     "AT-Wind": 2240,
     "AT-Coal": null,
     "AT-Hydro": 2621.6,
-    "AT-Import": 49.5,
+    "AT-Import": 445,
     "AT-Gas": 2398.8
   },
   {
@@ -17258,7 +17258,7 @@
     "AT-Wind": 2152,
     "AT-Coal": null,
     "AT-Hydro": 2107.6,
-    "AT-Import": 953,
+    "AT-Import": 1271.3,
     "AT-Gas": 1986
   },
   {
@@ -17276,7 +17276,7 @@
     "AT-Wind": 1908,
     "AT-Coal": null,
     "AT-Hydro": 1790,
-    "AT-Import": 1310.6,
+    "AT-Import": 1717.4,
     "AT-Gas": 1686
   },
   {
@@ -17294,7 +17294,7 @@
     "AT-Wind": 1676,
     "AT-Coal": null,
     "AT-Hydro": 1975.6000000000001,
-    "AT-Import": 1096.8,
+    "AT-Import": 1585.6,
     "AT-Gas": 1409.6
   },
   {
@@ -17312,7 +17312,7 @@
     "AT-Wind": 1088,
     "AT-Coal": null,
     "AT-Hydro": 2134,
-    "AT-Import": 1582,
+    "AT-Import": 1781.3,
     "AT-Gas": 1392.4
   },
   {
@@ -17330,7 +17330,7 @@
     "AT-Wind": 776,
     "AT-Coal": null,
     "AT-Hydro": 2209.6,
-    "AT-Import": 1662.2,
+    "AT-Import": 1914.4,
     "AT-Gas": 1413.6
   },
   {
@@ -17348,7 +17348,7 @@
     "AT-Wind": 560,
     "AT-Coal": null,
     "AT-Hydro": 1981.2,
-    "AT-Import": 1788.3,
+    "AT-Import": 2171,
     "AT-Gas": 1421.2
   },
   {
@@ -17366,7 +17366,7 @@
     "AT-Wind": 352,
     "AT-Coal": null,
     "AT-Hydro": 1920.8000000000002,
-    "AT-Import": 1895.8,
+    "AT-Import": 2449.9,
     "AT-Gas": 1400.4
   },
   {
@@ -17384,7 +17384,7 @@
     "AT-Wind": 232,
     "AT-Coal": null,
     "AT-Hydro": 2211.2,
-    "AT-Import": 1985.1,
+    "AT-Import": 2522.8,
     "AT-Gas": 1510.8
   },
   {
@@ -17402,7 +17402,7 @@
     "AT-Wind": 160,
     "AT-Coal": null,
     "AT-Hydro": 2745.6000000000004,
-    "AT-Import": 1973.2,
+    "AT-Import": 2324.6,
     "AT-Gas": 2041.2
   },
   {
@@ -17420,7 +17420,7 @@
     "AT-Wind": 132,
     "AT-Coal": null,
     "AT-Hydro": 5225.2,
-    "AT-Import": 520.8,
+    "AT-Import": 707.8,
     "AT-Gas": 2268.4
   },
   {
@@ -17438,7 +17438,7 @@
     "AT-Wind": 140,
     "AT-Coal": null,
     "AT-Hydro": 5758.8,
-    "AT-Import": 522.8,
+    "AT-Import": 893.7,
     "AT-Gas": 2298.4
   },
   {
@@ -17456,7 +17456,7 @@
     "AT-Wind": 168,
     "AT-Coal": null,
     "AT-Hydro": 3674.8,
-    "AT-Import": 2183.3,
+    "AT-Import": 2373.6,
     "AT-Gas": 2487.2
   },
   {
@@ -17474,7 +17474,7 @@
     "AT-Wind": 176,
     "AT-Coal": null,
     "AT-Hydro": 2713.6,
-    "AT-Import": 2673.9,
+    "AT-Import": 3094,
     "AT-Gas": 2516
   },
   {
@@ -17492,7 +17492,7 @@
     "AT-Wind": 176,
     "AT-Coal": null,
     "AT-Hydro": 2482.8,
-    "AT-Import": 2425.8,
+    "AT-Import": 2945.8,
     "AT-Gas": 2533.2
   },
   {
@@ -17510,7 +17510,7 @@
     "AT-Wind": 412,
     "AT-Coal": null,
     "AT-Hydro": 2413.2,
-    "AT-Import": 2123.4,
+    "AT-Import": 2530.4,
     "AT-Gas": 2471.6
   },
   {
@@ -17528,7 +17528,7 @@
     "AT-Wind": 576,
     "AT-Coal": null,
     "AT-Hydro": 2251.6,
-    "AT-Import": 1787.7,
+    "AT-Import": 2354.9,
     "AT-Gas": 2489.6
   },
   {
@@ -17546,7 +17546,7 @@
     "AT-Wind": 716,
     "AT-Coal": null,
     "AT-Hydro": 2057.2,
-    "AT-Import": 1722.7,
+    "AT-Import": 2204.8,
     "AT-Gas": 2536.4
   },
   {
@@ -17564,7 +17564,7 @@
     "AT-Wind": 604,
     "AT-Coal": null,
     "AT-Hydro": 2293.6,
-    "AT-Import": 1536.7,
+    "AT-Import": 2083.3,
     "AT-Gas": 2600.4
   },
   {
@@ -17582,7 +17582,7 @@
     "AT-Wind": 360,
     "AT-Coal": null,
     "AT-Hydro": 2756,
-    "AT-Import": 1585.6,
+    "AT-Import": 2046.4,
     "AT-Gas": 2764
   },
   {
@@ -17600,7 +17600,7 @@
     "AT-Wind": 216,
     "AT-Coal": null,
     "AT-Hydro": 3955.2,
-    "AT-Import": 624.2,
+    "AT-Import": 1186.6,
     "AT-Gas": 3002.4
   },
   {
@@ -17618,7 +17618,7 @@
     "AT-Wind": 156,
     "AT-Coal": null,
     "AT-Hydro": 5384.8,
-    "AT-Import": -243.2,
+    "AT-Import": 248.7,
     "AT-Gas": 3103.2
   },
   {
@@ -17636,7 +17636,7 @@
     "AT-Wind": 120,
     "AT-Coal": null,
     "AT-Hydro": 4187.6,
-    "AT-Import": 671.2,
+    "AT-Import": 1048.7,
     "AT-Gas": 3188.4
   },
   {
@@ -17654,7 +17654,7 @@
     "AT-Wind": 128,
     "AT-Coal": null,
     "AT-Hydro": 3218.3999999999996,
-    "AT-Import": 1084,
+    "AT-Import": 1499.1,
     "AT-Gas": 3174
   },
   {
@@ -17672,7 +17672,7 @@
     "AT-Wind": 184,
     "AT-Coal": null,
     "AT-Hydro": 2502,
-    "AT-Import": 1416.8,
+    "AT-Import": 1812.5,
     "AT-Gas": 2886
   },
   {
@@ -17690,7 +17690,7 @@
     "AT-Wind": 248,
     "AT-Coal": null,
     "AT-Hydro": 3043.6,
-    "AT-Import": 1266.1,
+    "AT-Import": 1668.6,
     "AT-Gas": 2335.2
   },
   {
@@ -17708,7 +17708,7 @@
     "AT-Wind": 336,
     "AT-Coal": null,
     "AT-Hydro": 2046.8,
-    "AT-Import": 1991.4,
+    "AT-Import": 2320,
     "AT-Gas": 2045.6
   },
   {
@@ -17726,7 +17726,7 @@
     "AT-Wind": 368,
     "AT-Coal": null,
     "AT-Hydro": 2110,
-    "AT-Import": 1525.3,
+    "AT-Import": 2008.8,
     "AT-Gas": 1855.6
   },
   {
@@ -17744,7 +17744,7 @@
     "AT-Wind": 496,
     "AT-Coal": null,
     "AT-Hydro": 1976,
-    "AT-Import": 1420.1,
+    "AT-Import": 1929.9,
     "AT-Gas": 1422.8
   },
   {
@@ -17762,7 +17762,7 @@
     "AT-Wind": 724,
     "AT-Coal": null,
     "AT-Hydro": 1591.6,
-    "AT-Import": 1350.1,
+    "AT-Import": 2076.3,
     "AT-Gas": 1336.4
   },
   {
@@ -17780,7 +17780,7 @@
     "AT-Wind": 840,
     "AT-Coal": null,
     "AT-Hydro": 1309.6000000000001,
-    "AT-Import": 1500.5,
+    "AT-Import": 2061,
     "AT-Gas": 1272
   },
   {
@@ -17798,7 +17798,7 @@
     "AT-Wind": 860,
     "AT-Coal": null,
     "AT-Hydro": 1302,
-    "AT-Import": 1491.4,
+    "AT-Import": 1994.7,
     "AT-Gas": 1295.6
   },
   {
@@ -17816,7 +17816,7 @@
     "AT-Wind": 836,
     "AT-Coal": null,
     "AT-Hydro": 1276,
-    "AT-Import": 1880.5,
+    "AT-Import": 2409.4,
     "AT-Gas": 1276.4
   },
   {
@@ -17834,7 +17834,7 @@
     "AT-Wind": 1012,
     "AT-Coal": null,
     "AT-Hydro": 1544.8000000000002,
-    "AT-Import": 1675.1,
+    "AT-Import": 2122,
     "AT-Gas": 1322.4
   },
   {
@@ -17852,7 +17852,7 @@
     "AT-Wind": 1068,
     "AT-Coal": null,
     "AT-Hydro": 2198,
-    "AT-Import": 1265,
+    "AT-Import": 1679.5,
     "AT-Gas": 1467.2
   },
   {
@@ -17870,7 +17870,7 @@
     "AT-Wind": 968,
     "AT-Coal": null,
     "AT-Hydro": 2203.2,
-    "AT-Import": 1637.1,
+    "AT-Import": 2197.6,
     "AT-Gas": 1519.6
   },
   {
@@ -17888,7 +17888,7 @@
     "AT-Wind": 748,
     "AT-Coal": null,
     "AT-Hydro": 2168.4,
-    "AT-Import": 1953.6,
+    "AT-Import": 2700.9,
     "AT-Gas": 1525.2
   },
   {
@@ -17906,7 +17906,7 @@
     "AT-Wind": 600,
     "AT-Coal": null,
     "AT-Hydro": 2122.4,
-    "AT-Import": 2197.6,
+    "AT-Import": 2821.7,
     "AT-Gas": 1522
   },
   {
@@ -17924,7 +17924,7 @@
     "AT-Wind": 476,
     "AT-Coal": null,
     "AT-Hydro": 2396,
-    "AT-Import": 2063.1,
+    "AT-Import": 2549.7,
     "AT-Gas": 1552
   },
   {
@@ -17942,7 +17942,7 @@
     "AT-Wind": 596,
     "AT-Coal": null,
     "AT-Hydro": 2142,
-    "AT-Import": 1964.6,
+    "AT-Import": 2551.5,
     "AT-Gas": 1522.8
   },
   {
@@ -17960,7 +17960,7 @@
     "AT-Wind": 716,
     "AT-Coal": null,
     "AT-Hydro": 1964,
-    "AT-Import": 1589,
+    "AT-Import": 2156.2,
     "AT-Gas": 1474
   },
   {
@@ -17978,7 +17978,7 @@
     "AT-Wind": 760,
     "AT-Coal": null,
     "AT-Hydro": 1907.6,
-    "AT-Import": 1813.2,
+    "AT-Import": 2349.6,
     "AT-Gas": 1439.6
   },
   {
@@ -17996,7 +17996,7 @@
     "AT-Wind": 980,
     "AT-Coal": null,
     "AT-Hydro": 2133.6,
-    "AT-Import": 1428.2,
+    "AT-Import": 1945.9,
     "AT-Gas": 1443.2
   },
   {
@@ -18014,7 +18014,7 @@
     "AT-Wind": 1216,
     "AT-Coal": null,
     "AT-Hydro": 2335.2,
-    "AT-Import": 1042.7,
+    "AT-Import": 1546.8,
     "AT-Gas": 1452
   },
   {
@@ -18032,7 +18032,7 @@
     "AT-Wind": 1520,
     "AT-Coal": null,
     "AT-Hydro": 2899.6,
-    "AT-Import": 735.1,
+    "AT-Import": 1005.1,
     "AT-Gas": 1442
   },
   {
@@ -18050,7 +18050,7 @@
     "AT-Wind": 1856,
     "AT-Coal": null,
     "AT-Hydro": 3685.6,
-    "AT-Import": 12.6,
+    "AT-Import": 250.8,
     "AT-Gas": 1447.2
   },
   {
@@ -18068,7 +18068,7 @@
     "AT-Wind": 2148,
     "AT-Coal": null,
     "AT-Hydro": 3070.3999999999996,
-    "AT-Import": 176.6,
+    "AT-Import": 525.6,
     "AT-Gas": 1521.2
   },
   {
@@ -18086,7 +18086,7 @@
     "AT-Wind": 2404,
     "AT-Coal": null,
     "AT-Hydro": 2434.4,
-    "AT-Import": 78.8,
+    "AT-Import": 612.3,
     "AT-Gas": 1518
   },
   {
@@ -18104,7 +18104,7 @@
     "AT-Wind": 2492,
     "AT-Coal": null,
     "AT-Hydro": 2013.2,
-    "AT-Import": -60.1,
+    "AT-Import": 623.2,
     "AT-Gas": 1434.8
   },
   {
@@ -18122,7 +18122,7 @@
     "AT-Wind": 2688,
     "AT-Coal": null,
     "AT-Hydro": 1707.2,
-    "AT-Import": 115.4,
+    "AT-Import": 587.4,
     "AT-Gas": 1368.4
   },
   {
@@ -18140,7 +18140,7 @@
     "AT-Wind": 2756,
     "AT-Coal": null,
     "AT-Hydro": 1412.4,
-    "AT-Import": 25.6,
+    "AT-Import": 578.5,
     "AT-Gas": 1272.8
   },
   {
@@ -18158,7 +18158,7 @@
     "AT-Wind": 2468,
     "AT-Coal": null,
     "AT-Hydro": 908.4,
-    "AT-Import": 405.5,
+    "AT-Import": 982.6,
     "AT-Gas": 1266
   },
   {
@@ -18176,7 +18176,7 @@
     "AT-Wind": 2420,
     "AT-Coal": null,
     "AT-Hydro": 656.8,
-    "AT-Import": 492.4,
+    "AT-Import": 1085.9,
     "AT-Gas": 1305.6
   },
   {
@@ -18194,7 +18194,7 @@
     "AT-Wind": 2344,
     "AT-Coal": null,
     "AT-Hydro": 988,
-    "AT-Import": 123.4,
+    "AT-Import": 654.6,
     "AT-Gas": 1292.8
   },
   {
@@ -18212,7 +18212,7 @@
     "AT-Wind": 2492,
     "AT-Coal": null,
     "AT-Hydro": 853.1999999999999,
-    "AT-Import": 167.6,
+    "AT-Import": 681.7,
     "AT-Gas": 1308.4
   },
   {
@@ -18230,7 +18230,7 @@
     "AT-Wind": 2340,
     "AT-Coal": null,
     "AT-Hydro": 816.8000000000001,
-    "AT-Import": 216.3,
+    "AT-Import": 677.9,
     "AT-Gas": 1334.8
   },
   {
@@ -18248,7 +18248,7 @@
     "AT-Wind": 2184,
     "AT-Coal": null,
     "AT-Hydro": 810.0000000000001,
-    "AT-Import": 420.7,
+    "AT-Import": 978.2,
     "AT-Gas": 1299.6
   },
   {
@@ -18266,7 +18266,7 @@
     "AT-Wind": 2064,
     "AT-Coal": null,
     "AT-Hydro": 1350.4,
-    "AT-Import": 151.6,
+    "AT-Import": 708.3,
     "AT-Gas": 1362.4
   },
   {
@@ -18284,7 +18284,7 @@
     "AT-Wind": 2044,
     "AT-Coal": null,
     "AT-Hydro": 1522.8,
-    "AT-Import": 475.5,
+    "AT-Import": 920.4,
     "AT-Gas": 1309.6
   },
   {
@@ -18302,7 +18302,7 @@
     "AT-Wind": 2060,
     "AT-Coal": null,
     "AT-Hydro": 1690.4,
-    "AT-Import": 580.3,
+    "AT-Import": 1019.2,
     "AT-Gas": 1396.4
   },
   {
@@ -18320,7 +18320,7 @@
     "AT-Wind": 1760,
     "AT-Coal": null,
     "AT-Hydro": 2034.3999999999999,
-    "AT-Import": 912.5,
+    "AT-Import": 1266.4,
     "AT-Gas": 1418
   },
   {
@@ -18338,7 +18338,7 @@
     "AT-Wind": 1456,
     "AT-Coal": null,
     "AT-Hydro": 2213.2000000000003,
-    "AT-Import": 1173.4,
+    "AT-Import": 1481.5,
     "AT-Gas": 1520
   },
   {
@@ -18356,7 +18356,7 @@
     "AT-Wind": 1176,
     "AT-Coal": null,
     "AT-Hydro": 2256,
-    "AT-Import": 1298.6,
+    "AT-Import": 1475.1,
     "AT-Gas": 1547.2
   },
   {
@@ -18374,7 +18374,7 @@
     "AT-Wind": 1004,
     "AT-Coal": null,
     "AT-Hydro": 1626.4,
-    "AT-Import": 2074.9,
+    "AT-Import": 2388,
     "AT-Gas": 1458.8
   },
   {
@@ -18392,7 +18392,7 @@
     "AT-Wind": 832,
     "AT-Coal": null,
     "AT-Hydro": 790.3999999999999,
-    "AT-Import": 2922.6,
+    "AT-Import": 3158.2,
     "AT-Gas": 1348.4
   },
   {
@@ -18410,7 +18410,7 @@
     "AT-Wind": 920,
     "AT-Coal": null,
     "AT-Hydro": 479.60000000000014,
-    "AT-Import": 3043.2,
+    "AT-Import": 3231.7,
     "AT-Gas": 1317.6
   },
   {
@@ -18428,7 +18428,7 @@
     "AT-Wind": 692,
     "AT-Coal": null,
     "AT-Hydro": 764.7999999999997,
-    "AT-Import": 2742.2,
+    "AT-Import": 2999.9,
     "AT-Gas": 1383.2
   },
   {
@@ -18446,7 +18446,7 @@
     "AT-Wind": 748,
     "AT-Coal": null,
     "AT-Hydro": 1984,
-    "AT-Import": 1605.2,
+    "AT-Import": 1882.9,
     "AT-Gas": 1394.4
   },
   {
@@ -18464,7 +18464,7 @@
     "AT-Wind": 1012,
     "AT-Coal": null,
     "AT-Hydro": 2618.8,
-    "AT-Import": 1171,
+    "AT-Import": 1438.8,
     "AT-Gas": 1439.2
   },
   {
@@ -18482,7 +18482,7 @@
     "AT-Wind": 936,
     "AT-Coal": null,
     "AT-Hydro": 4472.8,
-    "AT-Import": -50.5,
+    "AT-Import": 81.8,
     "AT-Gas": 1418
   },
   {
@@ -18500,7 +18500,7 @@
     "AT-Wind": 840,
     "AT-Coal": null,
     "AT-Hydro": 3726,
-    "AT-Import": 719.1,
+    "AT-Import": 1053.1,
     "AT-Gas": 1439.2
   },
   {
@@ -18518,7 +18518,7 @@
     "AT-Wind": 584,
     "AT-Coal": null,
     "AT-Hydro": 3066.3999999999996,
-    "AT-Import": 1161,
+    "AT-Import": 1596.3,
     "AT-Gas": 1492
   },
   {
@@ -18536,7 +18536,7 @@
     "AT-Wind": 460,
     "AT-Coal": null,
     "AT-Hydro": 2252,
-    "AT-Import": 1747.2,
+    "AT-Import": 2340,
     "AT-Gas": 1426.4
   },
   {
@@ -18554,7 +18554,7 @@
     "AT-Wind": 456,
     "AT-Coal": null,
     "AT-Hydro": 1870.8,
-    "AT-Import": 2164.2,
+    "AT-Import": 2761.2,
     "AT-Gas": 1412
   },
   {
@@ -18572,7 +18572,7 @@
     "AT-Wind": 468,
     "AT-Coal": null,
     "AT-Hydro": 1712.4,
-    "AT-Import": 1899.5,
+    "AT-Import": 2527.2,
     "AT-Gas": 1409.2
   },
   {
@@ -18590,7 +18590,7 @@
     "AT-Wind": 448,
     "AT-Coal": null,
     "AT-Hydro": 1408,
-    "AT-Import": 2250.3,
+    "AT-Import": 2775.9,
     "AT-Gas": 1358.4
   },
   {
@@ -18608,7 +18608,7 @@
     "AT-Wind": 384,
     "AT-Coal": null,
     "AT-Hydro": 1177.6,
-    "AT-Import": 2238,
+    "AT-Import": 2812.9,
     "AT-Gas": 1332
   },
   {
@@ -18626,7 +18626,7 @@
     "AT-Wind": 248,
     "AT-Coal": null,
     "AT-Hydro": 1242.3999999999999,
-    "AT-Import": 2377.3,
+    "AT-Import": 2835,
     "AT-Gas": 1341.2
   },
   {
@@ -18644,7 +18644,7 @@
     "AT-Wind": 208,
     "AT-Coal": null,
     "AT-Hydro": 1094.4,
-    "AT-Import": 2520.9,
+    "AT-Import": 2838.3,
     "AT-Gas": 1338.4
   },
   {
@@ -18662,7 +18662,7 @@
     "AT-Wind": 132,
     "AT-Coal": null,
     "AT-Hydro": 1093.2,
-    "AT-Import": 2968.6,
+    "AT-Import": 3180.1,
     "AT-Gas": 1303.6
   },
   {
@@ -18680,7 +18680,7 @@
     "AT-Wind": 84,
     "AT-Coal": null,
     "AT-Hydro": 1627.6000000000001,
-    "AT-Import": 2707.6,
+    "AT-Import": 2965,
     "AT-Gas": 1529.6
   },
   {
@@ -18698,7 +18698,7 @@
     "AT-Wind": 80,
     "AT-Coal": null,
     "AT-Hydro": 2689.6,
-    "AT-Import": 2017.8,
+    "AT-Import": 2315.7,
     "AT-Gas": 2104.8
   },
   {
@@ -18716,7 +18716,7 @@
     "AT-Wind": 120,
     "AT-Coal": null,
     "AT-Hydro": 4989.6,
-    "AT-Import": 694.7,
+    "AT-Import": 809.9,
     "AT-Gas": 2370
   },
   {
@@ -18734,7 +18734,7 @@
     "AT-Wind": 164,
     "AT-Coal": null,
     "AT-Hydro": 5589.200000000001,
-    "AT-Import": 464.3,
+    "AT-Import": 805.6,
     "AT-Gas": 2347.2
   },
   {
@@ -18752,7 +18752,7 @@
     "AT-Wind": 152,
     "AT-Coal": null,
     "AT-Hydro": 5414.799999999999,
-    "AT-Import": 536.4,
+    "AT-Import": 991,
     "AT-Gas": 2421.6
   },
   {
@@ -18770,7 +18770,7 @@
     "AT-Wind": 132,
     "AT-Coal": null,
     "AT-Hydro": 3929.2000000000003,
-    "AT-Import": 1691.5,
+    "AT-Import": 2367.6,
     "AT-Gas": 2514
   },
   {
@@ -18788,7 +18788,7 @@
     "AT-Wind": 112,
     "AT-Coal": null,
     "AT-Hydro": 2849.6,
-    "AT-Import": 2100.2,
+    "AT-Import": 2875.1,
     "AT-Gas": 2490.8
   },
   {
@@ -18806,7 +18806,7 @@
     "AT-Wind": 120,
     "AT-Coal": null,
     "AT-Hydro": 2633.6,
-    "AT-Import": 2593.7,
+    "AT-Import": 3357.6,
     "AT-Gas": 2461.6
   },
   {
@@ -18824,7 +18824,7 @@
     "AT-Wind": 68,
     "AT-Coal": null,
     "AT-Hydro": 2431.6,
-    "AT-Import": 2562.8,
+    "AT-Import": 3061.7,
     "AT-Gas": 2405.2
   },
   {
@@ -18842,7 +18842,7 @@
     "AT-Wind": 136,
     "AT-Coal": null,
     "AT-Hydro": 2306,
-    "AT-Import": 2586.8,
+    "AT-Import": 2916,
     "AT-Gas": 2416.4
   },
   {
@@ -18860,7 +18860,7 @@
     "AT-Wind": 276,
     "AT-Coal": null,
     "AT-Hydro": 2273.2,
-    "AT-Import": 2452.1,
+    "AT-Import": 2740.7,
     "AT-Gas": 2410
   },
   {
@@ -18878,7 +18878,7 @@
     "AT-Wind": 404,
     "AT-Coal": null,
     "AT-Hydro": 3144.3999999999996,
-    "AT-Import": 1664.9,
+    "AT-Import": 1884.8,
     "AT-Gas": 2472.8
   },
   {
@@ -18896,7 +18896,7 @@
     "AT-Wind": 456,
     "AT-Coal": null,
     "AT-Hydro": 4530.4,
-    "AT-Import": 824.7,
+    "AT-Import": 830.4,
     "AT-Gas": 2494
   },
   {
@@ -18914,7 +18914,7 @@
     "AT-Wind": 516,
     "AT-Coal": null,
     "AT-Hydro": 5684,
-    "AT-Import": -34.4,
+    "AT-Import": 133.4,
     "AT-Gas": 2475.2
   },
   {
@@ -18932,7 +18932,7 @@
     "AT-Wind": 632,
     "AT-Coal": null,
     "AT-Hydro": 5652.8,
-    "AT-Import": -414.9,
+    "AT-Import": -140.7,
     "AT-Gas": 2496
   },
   {
@@ -18950,7 +18950,7 @@
     "AT-Wind": 780,
     "AT-Coal": null,
     "AT-Hydro": 4934.8,
-    "AT-Import": -227,
+    "AT-Import": 34.3,
     "AT-Gas": 2434.4
   },
   {
@@ -18968,7 +18968,7 @@
     "AT-Wind": 864,
     "AT-Coal": null,
     "AT-Hydro": 3412.8,
-    "AT-Import": 152.9,
+    "AT-Import": 702.7,
     "AT-Gas": 2399.6
   },
   {
@@ -18986,7 +18986,7 @@
     "AT-Wind": 1160,
     "AT-Coal": null,
     "AT-Hydro": 2668.4,
-    "AT-Import": 466.6,
+    "AT-Import": 1084.9,
     "AT-Gas": 2380.4
   },
   {
@@ -19004,7 +19004,7 @@
     "AT-Wind": 1204,
     "AT-Coal": null,
     "AT-Hydro": 2230.4,
-    "AT-Import": 382,
+    "AT-Import": 1104,
     "AT-Gas": 2252
   },
   {
@@ -21614,7 +21614,7 @@
     "AT-Wind": 1940,
     "AT-Coal": null,
     "AT-Hydro": 1513.2,
-    "AT-Import": 1417.2,
+    "AT-Import": 1459.3,
     "AT-Gas": 700.8
   },
   {
@@ -21632,7 +21632,7 @@
     "AT-Wind": 1200,
     "AT-Coal": null,
     "AT-Hydro": 1536.4000000000003,
-    "AT-Import": 1836.4,
+    "AT-Import": 1880.9,
     "AT-Gas": 704.8
   },
   {
@@ -21650,7 +21650,7 @@
     "AT-Wind": 656,
     "AT-Coal": null,
     "AT-Hydro": 1800,
-    "AT-Import": 1950.7,
+    "AT-Import": 2000.5,
     "AT-Gas": 710.8
   },
   {
@@ -21668,7 +21668,7 @@
     "AT-Wind": 216,
     "AT-Coal": null,
     "AT-Hydro": 1769.2,
-    "AT-Import": 2404.2,
+    "AT-Import": 2452.8,
     "AT-Gas": 743.2
   },
   {
@@ -21686,7 +21686,7 @@
     "AT-Wind": 84,
     "AT-Coal": null,
     "AT-Hydro": 1759.6000000000001,
-    "AT-Import": 2760.4,
+    "AT-Import": 2807.1,
     "AT-Gas": 698.4
   },
   {
@@ -21704,7 +21704,7 @@
     "AT-Wind": 104,
     "AT-Coal": null,
     "AT-Hydro": 2111.6000000000004,
-    "AT-Import": 2530.8,
+    "AT-Import": 2575.1,
     "AT-Gas": 824.8
   },
   {
@@ -21722,7 +21722,7 @@
     "AT-Wind": 224,
     "AT-Coal": null,
     "AT-Hydro": 3289.6,
-    "AT-Import": 1975.2,
+    "AT-Import": 2018,
     "AT-Gas": 1199.6
   },
   {
@@ -21740,7 +21740,7 @@
     "AT-Wind": 368,
     "AT-Coal": null,
     "AT-Hydro": 4428.799999999999,
-    "AT-Import": 1487.2,
+    "AT-Import": 1529.6,
     "AT-Gas": 1371.6
   },
   {
@@ -21758,7 +21758,7 @@
     "AT-Wind": 568,
     "AT-Coal": null,
     "AT-Hydro": 4944.8,
-    "AT-Import": 1185.9,
+    "AT-Import": 1234.1,
     "AT-Gas": 1438
   },
   {
@@ -21776,7 +21776,7 @@
     "AT-Wind": 792,
     "AT-Coal": null,
     "AT-Hydro": 4718,
-    "AT-Import": 1091.8,
+    "AT-Import": 1155.2,
     "AT-Gas": 1482.8
   },
   {
@@ -21794,7 +21794,7 @@
     "AT-Wind": 912,
     "AT-Coal": null,
     "AT-Hydro": 4340.8,
-    "AT-Import": 1201.9,
+    "AT-Import": 1280.2,
     "AT-Gas": 1475.6
   },
   {
@@ -21812,7 +21812,7 @@
     "AT-Wind": 1480,
     "AT-Coal": null,
     "AT-Hydro": 3433.6,
-    "AT-Import": 1328.8,
+    "AT-Import": 1419.9,
     "AT-Gas": 1414.4
   },
   {
@@ -21830,7 +21830,7 @@
     "AT-Wind": 1896,
     "AT-Coal": null,
     "AT-Hydro": 3023.2,
-    "AT-Import": 1060.4,
+    "AT-Import": 1230.5,
     "AT-Gas": 1378.4
   },
   {
@@ -21848,7 +21848,7 @@
     "AT-Wind": 1816,
     "AT-Coal": null,
     "AT-Hydro": 2838.4,
-    "AT-Import": 1058.7,
+    "AT-Import": 1222,
     "AT-Gas": 1498
   },
   {
@@ -21866,7 +21866,7 @@
     "AT-Wind": 1652,
     "AT-Coal": null,
     "AT-Hydro": 2750,
-    "AT-Import": 1234.3,
+    "AT-Import": 1372,
     "AT-Gas": 1433.2
   },
   {
@@ -21884,7 +21884,7 @@
     "AT-Wind": 1492,
     "AT-Coal": null,
     "AT-Hydro": 3197.6,
-    "AT-Import": 1066.9,
+    "AT-Import": 1149.4,
     "AT-Gas": 1466.8
   },
   {
@@ -21902,7 +21902,7 @@
     "AT-Wind": 1388,
     "AT-Coal": null,
     "AT-Hydro": 3788.7999999999997,
-    "AT-Import": 788.6,
+    "AT-Import": 873.9,
     "AT-Gas": 1462.8
   },
   {
@@ -21920,7 +21920,7 @@
     "AT-Wind": 1520,
     "AT-Coal": null,
     "AT-Hydro": 4185.6,
-    "AT-Import": 506.3,
+    "AT-Import": 545.5,
     "AT-Gas": 1465.6
   },
   {
@@ -21938,7 +21938,7 @@
     "AT-Wind": 1600,
     "AT-Coal": null,
     "AT-Hydro": 4919.6,
-    "AT-Import": 10.4,
+    "AT-Import": 36,
     "AT-Gas": 1437.6
   },
   {
@@ -21956,7 +21956,7 @@
     "AT-Wind": 2280,
     "AT-Coal": null,
     "AT-Hydro": 4110.4,
-    "AT-Import": 103.1,
+    "AT-Import": 131.6,
     "AT-Gas": 1420
   },
   {
@@ -21974,7 +21974,7 @@
     "AT-Wind": 2168,
     "AT-Coal": null,
     "AT-Hydro": 3780,
-    "AT-Import": 187,
+    "AT-Import": 221.6,
     "AT-Gas": 1325.6
   },
   {
@@ -21992,7 +21992,7 @@
     "AT-Wind": 2224,
     "AT-Coal": null,
     "AT-Hydro": 3257.2000000000003,
-    "AT-Import": 40.9,
+    "AT-Import": 76.2,
     "AT-Gas": 1309.2
   },
   {
@@ -22010,7 +22010,7 @@
     "AT-Wind": 2104,
     "AT-Coal": null,
     "AT-Hydro": 2880.4,
-    "AT-Import": 575.6,
+    "AT-Import": 611.7,
     "AT-Gas": 1088.8
   },
   {
@@ -22028,7 +22028,7 @@
     "AT-Wind": 2296,
     "AT-Coal": null,
     "AT-Hydro": 2377.6000000000004,
-    "AT-Import": 812.2,
+    "AT-Import": 850.8,
     "AT-Gas": 841.6
   },
   {
@@ -22118,7 +22118,7 @@
     "AT-Wind": 2340,
     "AT-Coal": null,
     "AT-Hydro": 1240.3999999999999,
-    "AT-Import": 1202.4,
+    "AT-Import": 1202.3,
     "AT-Gas": 417.2
   },
   {
@@ -22982,7 +22982,7 @@
     "AT-Wind": 900,
     "AT-Coal": null,
     "AT-Hydro": 2721.6,
-    "AT-Import": 235.9,
+    "AT-Import": 235.8,
     "AT-Gas": 1350.8
   },
   {
@@ -24632,14 +24632,14 @@
     "AT-Solar": 0,
     "AT-Load": 6230.8,
     "AT-Residual load": 4074.8,
-    "AT-Renewable share of generation": 79.5,
-    "AT-Renewable share of load": 75.1,
-    "AT-Hydro Pumped": 8.4,
+    "AT-Renewable share of generation": 79,
+    "AT-Renewable share of load": 80.4,
+    "AT-Hydro Pumped": 11.2,
     "AT-Wind": 2156,
     "AT-Coal": null,
-    "AT-Hydro": 2216.7999999999997,
-    "AT-Import": -116,
-    "AT-Gas": 1125.6
+    "AT-Hydro": 2552.4,
+    "AT-Import": -115.8,
+    "AT-Gas": 1248.8
   },
   {
     "x": "2023-02-27T01:00:00.000+01:00",
@@ -24650,14 +24650,14 @@
     "AT-Solar": 0,
     "AT-Load": 5959.6,
     "AT-Residual load": 3715.6,
-    "AT-Renewable share of generation": 80.1,
-    "AT-Renewable share of load": 77.5,
-    "AT-Hydro Pumped": 28,
+    "AT-Renewable share of generation": 78.9,
+    "AT-Renewable share of load": 83.6,
+    "AT-Hydro Pumped": 32.4,
     "AT-Wind": 2244,
     "AT-Coal": null,
-    "AT-Hydro": 2087.6,
-    "AT-Import": -305.7,
-    "AT-Gas": 1048.4
+    "AT-Hydro": 2459.2000000000003,
+    "AT-Import": -305.3,
+    "AT-Gas": 1230
   },
   {
     "x": "2023-02-27T02:00:00.000+01:00",
@@ -24668,14 +24668,14 @@
     "AT-Solar": 0,
     "AT-Load": 5874.8,
     "AT-Residual load": 3670.8,
-    "AT-Renewable share of generation": 80.3,
-    "AT-Renewable share of load": 75.5,
-    "AT-Hydro Pumped": 13.6,
+    "AT-Renewable share of generation": 78.7,
+    "AT-Renewable share of load": 82.3,
+    "AT-Hydro Pumped": 16.4,
     "AT-Wind": 2204,
     "AT-Coal": null,
-    "AT-Hydro": 1930.3999999999999,
-    "AT-Import": -7.8,
-    "AT-Gas": 1002.4
+    "AT-Hydro": 2332.7999999999997,
+    "AT-Import": -7.3,
+    "AT-Gas": 1222.4
   },
   {
     "x": "2023-02-27T03:00:00.000+01:00",
@@ -24686,14 +24686,14 @@
     "AT-Solar": 0,
     "AT-Load": 5844.4,
     "AT-Residual load": 3604.4,
-    "AT-Renewable share of generation": 80.5,
-    "AT-Renewable share of load": 76.5,
-    "AT-Hydro Pumped": -102.4,
+    "AT-Renewable share of generation": 78.8,
+    "AT-Renewable share of load": 82.9,
+    "AT-Hydro Pumped": -98.4,
     "AT-Wind": 2240,
     "AT-Coal": null,
-    "AT-Hydro": 1812,
-    "AT-Import": -135.4,
-    "AT-Gas": 1009.2
+    "AT-Hydro": 2191.2,
+    "AT-Import": -136.6,
+    "AT-Gas": 1232.4
   },
   {
     "x": "2023-02-27T04:00:00.000+01:00",
@@ -24704,14 +24704,14 @@
     "AT-Solar": 0,
     "AT-Load": 5902.8,
     "AT-Residual load": 3594.8,
-    "AT-Renewable share of generation": 80.6,
-    "AT-Renewable share of load": 78.2,
-    "AT-Hydro Pumped": -66.8,
+    "AT-Renewable share of generation": 78.1,
+    "AT-Renewable share of load": 83.4,
+    "AT-Hydro Pumped": -59.2,
     "AT-Wind": 2308,
     "AT-Coal": null,
-    "AT-Hydro": 1936,
-    "AT-Import": -148.3,
-    "AT-Gas": 1037.6
+    "AT-Hydro": 2251.6,
+    "AT-Import": -147.4,
+    "AT-Gas": 1305.2
   },
   {
     "x": "2023-02-27T05:00:00.000+01:00",
@@ -24722,14 +24722,14 @@
     "AT-Solar": 0,
     "AT-Load": 6387.6,
     "AT-Residual load": 4251.6,
-    "AT-Renewable share of generation": 77.6,
-    "AT-Renewable share of load": 72.3,
-    "AT-Hydro Pumped": -6.8,
+    "AT-Renewable share of generation": 75.5,
+    "AT-Renewable share of load": 74.4,
+    "AT-Hydro Pumped": -1.6,
     "AT-Wind": 2136,
     "AT-Coal": null,
-    "AT-Hydro": 2172.4,
-    "AT-Import": 117.2,
-    "AT-Gas": 1259.6
+    "AT-Hydro": 2308.8,
+    "AT-Import": 118.2,
+    "AT-Gas": 1467.6
   },
   {
     "x": "2023-02-27T06:00:00.000+01:00",
@@ -24740,14 +24740,14 @@
     "AT-Solar": 0,
     "AT-Load": 7390.4,
     "AT-Residual load": 5070.4,
-    "AT-Renewable share of generation": 70.4,
-    "AT-Renewable share of load": 70.7,
-    "AT-Hydro Pumped": 425.2,
+    "AT-Renewable share of generation": 69.4,
+    "AT-Renewable share of load": 72.7,
+    "AT-Hydro Pumped": 481.2,
     "AT-Wind": 2320,
     "AT-Coal": null,
-    "AT-Hydro": 3023.6,
-    "AT-Import": -522.7,
-    "AT-Gas": 1696.8
+    "AT-Hydro": 3229.2,
+    "AT-Import": -522.1,
+    "AT-Gas": 1816
   },
   {
     "x": "2023-02-27T07:00:00.000+01:00",
@@ -24758,14 +24758,14 @@
     "AT-Solar": 24,
     "AT-Load": 8380,
     "AT-Residual load": 6156,
-    "AT-Renewable share of generation": 66.5,
+    "AT-Renewable share of generation": 62.9,
     "AT-Renewable share of load": 66.7,
-    "AT-Hydro Pumped": 1206.4,
+    "AT-Hydro Pumped": 1422.8,
     "AT-Wind": 2200,
     "AT-Coal": null,
-    "AT-Hydro": 4266.8,
-    "AT-Import": -253.3,
-    "AT-Gas": 1539.2
+    "AT-Hydro": 4482,
+    "AT-Import": -252.2,
+    "AT-Gas": 1797.2
   },
   {
     "x": "2023-02-27T08:00:00.000+01:00",
@@ -24776,14 +24776,14 @@
     "AT-Solar": 64,
     "AT-Load": 8879.6,
     "AT-Residual load": 6983.6,
-    "AT-Renewable share of generation": 62.1,
-    "AT-Renewable share of load": 64.6,
-    "AT-Hydro Pumped": 1713.6,
+    "AT-Renewable share of generation": 59.4,
+    "AT-Renewable share of load": 62.9,
+    "AT-Hydro Pumped": 1910.8,
     "AT-Wind": 1832,
     "AT-Coal": null,
-    "AT-Hydro": 5245.2,
-    "AT-Import": -424.4,
-    "AT-Gas": 1712.8
+    "AT-Hydro": 5295.2,
+    "AT-Import": -422.1,
+    "AT-Gas": 1838
   },
   {
     "x": "2023-02-27T09:00:00.000+01:00",
@@ -24794,14 +24794,14 @@
     "AT-Solar": 152,
     "AT-Load": 8917.2,
     "AT-Residual load": 7257.2,
-    "AT-Renewable share of generation": 59.2,
-    "AT-Renewable share of load": 60.3,
-    "AT-Hydro Pumped": 1821.6,
+    "AT-Renewable share of generation": 58.3,
+    "AT-Renewable share of load": 59.4,
+    "AT-Hydro Pumped": 1810,
     "AT-Wind": 1508,
     "AT-Coal": null,
-    "AT-Hydro": 5234.4,
-    "AT-Import": -33.6,
-    "AT-Gas": 1815.6
+    "AT-Hydro": 5147.6,
+    "AT-Import": -31.9,
+    "AT-Gas": 1904.8
   },
   {
     "x": "2023-02-27T10:00:00.000+01:00",
@@ -24812,14 +24812,14 @@
     "AT-Solar": 236,
     "AT-Load": 8857.6,
     "AT-Residual load": 7253.6,
-    "AT-Renewable share of generation": 61.9,
-    "AT-Renewable share of load": 58.4,
-    "AT-Hydro Pumped": 1272.4,
+    "AT-Renewable share of generation": 60.9,
+    "AT-Renewable share of load": 55.8,
+    "AT-Hydro Pumped": 1211.6,
     "AT-Wind": 1368,
     "AT-Coal": null,
-    "AT-Hydro": 4539.6,
-    "AT-Import": 685.7,
-    "AT-Gas": 1835.6
+    "AT-Hydro": 4249.6,
+    "AT-Import": 689.5,
+    "AT-Gas": 1885.6
   },
   {
     "x": "2023-02-27T11:00:00.000+01:00",
@@ -24830,14 +24830,14 @@
     "AT-Solar": 292,
     "AT-Load": 8825.6,
     "AT-Residual load": 7385.6,
-    "AT-Renewable share of generation": 69.3,
-    "AT-Renewable share of load": 53.8,
-    "AT-Hydro Pumped": 136,
+    "AT-Renewable share of generation": 67.9,
+    "AT-Renewable share of load": 49.5,
+    "AT-Hydro Pumped": 153.2,
     "AT-Wind": 1148,
     "AT-Coal": null,
-    "AT-Hydro": 3142,
-    "AT-Import": 2324.7,
-    "AT-Gas": 1899.6
+    "AT-Hydro": 2778.3999999999996,
+    "AT-Import": 2328.7,
+    "AT-Gas": 1841.6
   },
   {
     "x": "2023-02-27T12:00:00.000+01:00",
@@ -24848,14 +24848,14 @@
     "AT-Solar": 244,
     "AT-Load": 8668.8,
     "AT-Residual load": 7484.8,
-    "AT-Renewable share of generation": 65.9,
-    "AT-Renewable share of load": 50.9,
-    "AT-Hydro Pumped": 311.2,
+    "AT-Renewable share of generation": 65.1,
+    "AT-Renewable share of load": 46.9,
+    "AT-Hydro Pumped": 282.4,
     "AT-Wind": 940,
     "AT-Coal": null,
-    "AT-Hydro": 3241.2,
-    "AT-Import": 2179.6,
-    "AT-Gas": 1901.2
+    "AT-Hydro": 2861.6000000000004,
+    "AT-Import": 2183.6,
+    "AT-Gas": 1826
   },
   {
     "x": "2023-02-27T13:00:00.000+01:00",
@@ -24866,14 +24866,14 @@
     "AT-Solar": 184,
     "AT-Load": 8468.8,
     "AT-Residual load": 7400.8,
-    "AT-Renewable share of generation": 66.1,
-    "AT-Renewable share of load": 49.9,
-    "AT-Hydro Pumped": 302.8,
+    "AT-Renewable share of generation": 65.5,
+    "AT-Renewable share of load": 46.5,
+    "AT-Hydro Pumped": 285.6,
     "AT-Wind": 884,
     "AT-Coal": null,
-    "AT-Hydro": 3160.4,
-    "AT-Import": 2231.2,
-    "AT-Gas": 1793.2
+    "AT-Hydro": 2850.4,
+    "AT-Import": 2235.2,
+    "AT-Gas": 1718.4
   },
   {
     "x": "2023-02-27T14:00:00.000+01:00",
@@ -24884,14 +24884,14 @@
     "AT-Solar": 160,
     "AT-Load": 8304.8,
     "AT-Residual load": 7204.8,
-    "AT-Renewable share of generation": 67.4,
-    "AT-Renewable share of load": 48.1,
-    "AT-Hydro Pumped": 238.4,
+    "AT-Renewable share of generation": 68.1,
+    "AT-Renewable share of load": 45.6,
+    "AT-Hydro Pumped": 227.2,
     "AT-Wind": 940,
     "AT-Coal": null,
-    "AT-Hydro": 2829.6000000000004,
-    "AT-Import": 2571.8,
-    "AT-Gas": 1618.8
+    "AT-Hydro": 2608.4,
+    "AT-Import": 2578.7,
+    "AT-Gas": 1469.2
   },
   {
     "x": "2023-02-27T15:00:00.000+01:00",
@@ -24902,14 +24902,14 @@
     "AT-Solar": 116,
     "AT-Load": 8240,
     "AT-Residual load": 7444,
-    "AT-Renewable share of generation": 60.9,
-    "AT-Renewable share of load": 43.4,
-    "AT-Hydro Pumped": 463.2,
+    "AT-Renewable share of generation": 62.1,
+    "AT-Renewable share of load": 41.3,
+    "AT-Hydro Pumped": 419.6,
     "AT-Wind": 680,
     "AT-Coal": null,
-    "AT-Hydro": 2938,
-    "AT-Import": 2596.8,
-    "AT-Gas": 1761.6
+    "AT-Hydro": 2717.2,
+    "AT-Import": 2603.5,
+    "AT-Gas": 1586.8
   },
   {
     "x": "2023-02-27T16:00:00.000+01:00",
@@ -24920,14 +24920,14 @@
     "AT-Solar": 68,
     "AT-Load": 8267.2,
     "AT-Residual load": 7599.2,
-    "AT-Renewable share of generation": 55.3,
-    "AT-Renewable share of load": 44.4,
-    "AT-Hydro Pumped": 1049.2,
+    "AT-Renewable share of generation": 55.9,
+    "AT-Renewable share of load": 42.8,
+    "AT-Hydro Pumped": 1032.8,
     "AT-Wind": 600,
     "AT-Coal": null,
-    "AT-Hydro": 3749.2,
-    "AT-Import": 1883.7,
-    "AT-Gas": 1846.4
+    "AT-Hydro": 3604.4,
+    "AT-Import": 1889.8,
+    "AT-Gas": 1691.6
   },
   {
     "x": "2023-02-27T17:00:00.000+01:00",
@@ -24938,14 +24938,14 @@
     "AT-Solar": 40,
     "AT-Load": 8469.6,
     "AT-Residual load": 7889.6,
-    "AT-Renewable share of generation": 49.4,
-    "AT-Renewable share of load": 47.4,
-    "AT-Hydro Pumped": 2190.8,
+    "AT-Renewable share of generation": 49.6,
+    "AT-Renewable share of load": 46.7,
+    "AT-Hydro Pumped": 2214.8,
     "AT-Wind": 540,
     "AT-Coal": null,
-    "AT-Hydro": 5325.6,
-    "AT-Import": 414.6,
-    "AT-Gas": 1847.2
+    "AT-Hydro": 5290.8,
+    "AT-Import": 418.1,
+    "AT-Gas": 1733.2
   },
   {
     "x": "2023-02-27T18:00:00.000+01:00",
@@ -24956,14 +24956,14 @@
     "AT-Solar": 0,
     "AT-Load": 8797.6,
     "AT-Residual load": 8181.6,
-    "AT-Renewable share of generation": 49.2,
+    "AT-Renewable share of generation": 48.7,
     "AT-Renewable share of load": 48.4,
-    "AT-Hydro Pumped": 2456,
+    "AT-Hydro Pumped": 2653.2,
     "AT-Wind": 616,
     "AT-Coal": null,
-    "AT-Hydro": 5792.4,
-    "AT-Import": -82.4,
-    "AT-Gas": 1857.6
+    "AT-Hydro": 5990.4,
+    "AT-Import": -76.9,
+    "AT-Gas": 1753.6
   },
   {
     "x": "2023-02-27T19:00:00.000+01:00",
@@ -24974,14 +24974,14 @@
     "AT-Solar": 0,
     "AT-Load": 8694,
     "AT-Residual load": 8070,
-    "AT-Renewable share of generation": 49.4,
-    "AT-Renewable share of load": 50.2,
-    "AT-Hydro Pumped": 2543.2,
+    "AT-Renewable share of generation": 49,
+    "AT-Renewable share of load": 51.3,
+    "AT-Hydro Pumped": 2790.4,
     "AT-Wind": 624,
     "AT-Coal": null,
-    "AT-Hydro": 5978.799999999999,
-    "AT-Import": -272.7,
-    "AT-Gas": 1852.4
+    "AT-Hydro": 6328,
+    "AT-Import": -267.9,
+    "AT-Gas": 1784.4
   },
   {
     "x": "2023-02-27T20:00:00.000+01:00",
@@ -24992,14 +24992,14 @@
     "AT-Solar": 0,
     "AT-Load": 8254.4,
     "AT-Residual load": 7606.4,
-    "AT-Renewable share of generation": 50.5,
-    "AT-Renewable share of load": 52.2,
-    "AT-Hydro Pumped": 2270.8,
+    "AT-Renewable share of generation": 50.9,
+    "AT-Renewable share of load": 54.2,
+    "AT-Hydro Pumped": 2394,
     "AT-Wind": 648,
     "AT-Coal": null,
-    "AT-Hydro": 5628.8,
-    "AT-Import": -414.4,
-    "AT-Gas": 1887.6
+    "AT-Hydro": 5914,
+    "AT-Import": -411.4,
+    "AT-Gas": 1844.8
   },
   {
     "x": "2023-02-27T21:00:00.000+01:00",
@@ -25010,14 +25010,14 @@
     "AT-Solar": 0,
     "AT-Load": 7680,
     "AT-Residual load": 7136,
-    "AT-Renewable share of generation": 51.5,
-    "AT-Renewable share of load": 53.8,
-    "AT-Hydro Pumped": 1949.6,
+    "AT-Renewable share of generation": 52,
+    "AT-Renewable share of load": 55.6,
+    "AT-Hydro Pumped": 2040,
     "AT-Wind": 544,
     "AT-Coal": null,
-    "AT-Hydro": 5238,
-    "AT-Import": -389.4,
-    "AT-Gas": 1875.2
+    "AT-Hydro": 5460.4,
+    "AT-Import": -385.5,
+    "AT-Gas": 1819.6
   },
   {
     "x": "2023-02-27T22:00:00.000+01:00",
@@ -25028,14 +25028,14 @@
     "AT-Solar": 0,
     "AT-Load": 7452.4,
     "AT-Residual load": 6908.4,
-    "AT-Renewable share of generation": 59.1,
-    "AT-Renewable share of load": 52,
-    "AT-Hydro Pumped": 776,
+    "AT-Renewable share of generation": 59.5,
+    "AT-Renewable share of load": 52.3,
+    "AT-Hydro Pumped": 773.2,
     "AT-Wind": 544,
     "AT-Coal": null,
-    "AT-Hydro": 3804.8,
-    "AT-Import": 1077.1,
-    "AT-Gas": 1837.6
+    "AT-Hydro": 3828.4,
+    "AT-Import": 1076.8,
+    "AT-Gas": 1812.4
   },
   {
     "x": "2023-02-27T23:00:00.000+01:00",
@@ -25046,14 +25046,14 @@
     "AT-Solar": 0,
     "AT-Load": 7000.8,
     "AT-Residual load": 6464.8,
-    "AT-Renewable share of generation": 64.1,
-    "AT-Renewable share of load": 52.5,
-    "AT-Hydro Pumped": 172,
+    "AT-Renewable share of generation": 64.6,
+    "AT-Renewable share of load": 52.3,
+    "AT-Hydro Pumped": 187.6,
     "AT-Wind": 536,
     "AT-Coal": null,
-    "AT-Hydro": 3010,
-    "AT-Import": 1358.4,
-    "AT-Gas": 1814.4
+    "AT-Hydro": 3013.6,
+    "AT-Import": 1367.6,
+    "AT-Gas": 1747.2
   },
   {
     "x": "2023-02-28T00:00:00.000+01:00",
@@ -25070,7 +25070,7 @@
     "AT-Wind": 468,
     "AT-Coal": null,
     "AT-Hydro": 2481.2000000000003,
-    "AT-Import": 1722.4,
+    "AT-Import": 1724.4,
     "AT-Gas": 1542.8
   },
   {
@@ -25088,7 +25088,7 @@
     "AT-Wind": 348,
     "AT-Coal": null,
     "AT-Hydro": 2454.4,
-    "AT-Import": 1605.5,
+    "AT-Import": 1606.5,
     "AT-Gas": 1440.4
   },
   {
@@ -25106,7 +25106,7 @@
     "AT-Wind": 212,
     "AT-Coal": null,
     "AT-Hydro": 2463.6000000000004,
-    "AT-Import": 1639.9,
+    "AT-Import": 1641.9,
     "AT-Gas": 1419.6
   },
   {
@@ -25124,7 +25124,7 @@
     "AT-Wind": 124,
     "AT-Coal": null,
     "AT-Hydro": 2429.6,
-    "AT-Import": 1545.7,
+    "AT-Import": 1547.7,
     "AT-Gas": 1420.4
   },
   {
@@ -25142,7 +25142,7 @@
     "AT-Wind": 84,
     "AT-Coal": null,
     "AT-Hydro": 2486.8,
-    "AT-Import": 1699.5,
+    "AT-Import": 1700.5,
     "AT-Gas": 1430
   },
   {
@@ -25160,7 +25160,7 @@
     "AT-Wind": 80,
     "AT-Coal": null,
     "AT-Hydro": 2660.4,
-    "AT-Import": 1809.6,
+    "AT-Import": 1810.6,
     "AT-Gas": 1703.6
   },
   {
@@ -25178,7 +25178,7 @@
     "AT-Wind": 88,
     "AT-Coal": null,
     "AT-Hydro": 4280.8,
-    "AT-Import": 630,
+    "AT-Import": 632,
     "AT-Gas": 1794
   },
   {
@@ -25196,31 +25196,31 @@
     "AT-Wind": 120,
     "AT-Coal": null,
     "AT-Hydro": 5406.4,
-    "AT-Import": 576.8,
+    "AT-Import": 578.8,
     "AT-Gas": 1870.8
   },
   {
     "x": "2023-02-28T08:00:00.000+01:00",
     "AT-Biomass": 260,
-    "AT-Geothermal": 0,
+    "AT-Geothermal": 0.1,
     "AT-Others": 22,
     "AT-Waste": 100,
     "AT-Solar": 84,
-    "AT-Load": 8794,
-    "AT-Residual load": 8594,
+    "AT-Load": 8794.4,
+    "AT-Residual load": 8594.4,
     "AT-Renewable share of generation": 47.3,
     "AT-Renewable share of load": 45.1,
-    "AT-Hydro Pumped": 2409,
+    "AT-Hydro Pumped": 2409.2,
     "AT-Wind": 116,
     "AT-Coal": null,
-    "AT-Hydro": 5868,
-    "AT-Import": -626.3,
-    "AT-Gas": 1941
+    "AT-Hydro": 5868.4,
+    "AT-Import": 581.7,
+    "AT-Gas": 1941.2
   },
   {
     "x": "2023-02-28T09:00:00.000+01:00",
     "AT-Biomass": 260,
-    "AT-Geothermal": 0,
+    "AT-Geothermal": 0.1,
     "AT-Others": 22,
     "AT-Waste": 100,
     "AT-Solar": 196,
@@ -25228,11 +25228,425 @@
     "AT-Residual load": 8396,
     "AT-Renewable share of generation": 52.9,
     "AT-Renewable share of load": 47.5,
-    "AT-Hydro Pumped": 1562,
+    "AT-Hydro Pumped": 1561.6,
     "AT-Wind": 64,
     "AT-Coal": null,
-    "AT-Hydro": 5105,
+    "AT-Hydro": 5104.8,
+    "AT-Import": 1218.3,
+    "AT-Gas": 2022.8
+  },
+  {
+    "x": "2023-02-28T10:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 320,
+    "AT-Load": 8475.2,
+    "AT-Residual load": 8091.2,
+    "AT-Renewable share of generation": 54.7,
+    "AT-Renewable share of load": 44,
+    "AT-Hydro Pumped": 996.4,
+    "AT-Wind": 64,
+    "AT-Coal": null,
+    "AT-Hydro": 4033.6,
+    "AT-Import": 2199.3,
+    "AT-Gas": 2026
+  },
+  {
+    "x": "2023-02-28T11:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 420,
+    "AT-Load": 8302.8,
+    "AT-Residual load": 7798.8,
+    "AT-Renewable share of generation": 57,
+    "AT-Renewable share of load": 44.8,
+    "AT-Hydro Pumped": 642.8,
+    "AT-Wind": 84,
+    "AT-Coal": null,
+    "AT-Hydro": 3547.2,
+    "AT-Import": 2122.8,
+    "AT-Gas": 2092
+  },
+  {
+    "x": "2023-02-28T12:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 480,
+    "AT-Load": 8057.2,
+    "AT-Residual load": 7481.2,
+    "AT-Renewable share of generation": 56.5,
+    "AT-Renewable share of load": 46.8,
+    "AT-Hydro Pumped": 680.8,
+    "AT-Wind": 96,
+    "AT-Coal": null,
+    "AT-Hydro": 3568.7999999999997,
+    "AT-Import": 1841.2,
+    "AT-Gas": 2156
+  },
+  {
+    "x": "2023-02-28T13:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 480,
+    "AT-Load": 7874.4,
+    "AT-Residual load": 7278.4,
+    "AT-Renewable share of generation": 59.4,
+    "AT-Renewable share of load": 48.6,
+    "AT-Hydro Pumped": 381.6,
+    "AT-Wind": 116,
+    "AT-Coal": null,
+    "AT-Hydro": 3299.2,
+    "AT-Import": 1940.8,
+    "AT-Gas": 2156.8
+  },
+  {
+    "x": "2023-02-28T14:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 428,
+    "AT-Load": 7745.2,
+    "AT-Residual load": 7209.2,
+    "AT-Renewable share of generation": 60.2,
+    "AT-Renewable share of load": 47,
+    "AT-Hydro Pumped": 248.8,
+    "AT-Wind": 108,
+    "AT-Coal": null,
+    "AT-Hydro": 3046.4,
+    "AT-Import": 2206.2,
+    "AT-Gas": 2090.4
+  },
+  {
+    "x": "2023-02-28T15:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 324,
+    "AT-Load": 7788.4,
+    "AT-Residual load": 7376.4,
+    "AT-Renewable share of generation": 56.7,
+    "AT-Renewable share of load": 45.3,
+    "AT-Hydro Pumped": 576,
+    "AT-Wind": 88,
+    "AT-Coal": null,
+    "AT-Hydro": 3379.6000000000004,
+    "AT-Import": 2010.1,
+    "AT-Gas": 2043.6
+  },
+  {
+    "x": "2023-02-28T16:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 188,
+    "AT-Load": 7918,
+    "AT-Residual load": 7610,
+    "AT-Renewable share of generation": 54.1,
+    "AT-Renewable share of load": 44,
+    "AT-Hydro Pumped": 822,
+    "AT-Wind": 120,
+    "AT-Coal": null,
+    "AT-Hydro": 3690,
+    "AT-Import": 1873.6,
+    "AT-Gas": 2067.6
+  },
+  {
+    "x": "2023-02-28T17:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 56,
+    "AT-Load": 8176.8,
+    "AT-Residual load": 7964.8,
+    "AT-Renewable share of generation": 45.8,
+    "AT-Renewable share of load": 46.7,
+    "AT-Hydro Pumped": 2184,
+    "AT-Wind": 156,
+    "AT-Coal": null,
+    "AT-Hydro": 5484.4,
+    "AT-Import": 143.4,
+    "AT-Gas": 2261.6
+  },
+  {
+    "x": "2023-02-28T18:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 8367,
+    "AT-Residual load": 8223,
+    "AT-Renewable share of generation": 44,
+    "AT-Renewable share of load": 45.8,
+    "AT-Hydro Pumped": 2536,
+    "AT-Wind": 144,
+    "AT-Coal": null,
+    "AT-Hydro": 5913.6,
+    "AT-Import": 119.9,
+    "AT-Gas": 2268
+  },
+  {
+    "x": "2023-02-28T19:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 8557.2,
+    "AT-Residual load": 8437.2,
+    "AT-Renewable share of generation": 43.8,
+    "AT-Renewable share of load": 44.6,
+    "AT-Hydro Pumped": 2572,
+    "AT-Wind": 120,
+    "AT-Coal": null,
+    "AT-Hydro": 5958,
+    "AT-Import": -70.7,
+    "AT-Gas": 2252.4
+  },
+  {
+    "x": "2023-02-28T20:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 8087.2,
+    "AT-Residual load": 8083.2,
+    "AT-Renewable share of generation": 43.6,
+    "AT-Renewable share of load": 45.7,
+    "AT-Hydro Pumped": 2449.2,
+    "AT-Wind": 4,
+    "AT-Coal": null,
+    "AT-Hydro": 5827.6,
+    "AT-Import": -262.8,
+    "AT-Gas": 2251.2
+  },
+  {
+    "x": "2023-02-28T21:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 7568,
+    "AT-Residual load": 7564,
+    "AT-Renewable share of generation": 48.6,
+    "AT-Renewable share of load": 49.1,
+    "AT-Hydro Pumped": 1848.8,
+    "AT-Wind": 4,
+    "AT-Coal": null,
+    "AT-Hydro": 5249.2,
+    "AT-Import": 129.7,
+    "AT-Gas": 2006
+  },
+  {
+    "x": "2023-02-28T22:00:00.000+01:00",
+    "AT-Biomass": 264,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 7354.8,
+    "AT-Residual load": 7350.8,
+    "AT-Renewable share of generation": 50.9,
+    "AT-Renewable share of load": 45.5,
+    "AT-Hydro Pumped": 1179.6,
+    "AT-Wind": 4,
+    "AT-Coal": null,
+    "AT-Hydro": 4211.6,
+    "AT-Import": 914.6,
+    "AT-Gas": 1985.2
+  },
+  {
+    "x": "2023-02-28T23:00:00.000+01:00",
+    "AT-Biomass": 260,
+    "AT-Geothermal": 0,
+    "AT-Others": 7.3,
+    "AT-Waste": 33.3,
+    "AT-Solar": 0,
+    "AT-Load": 6907.6,
+    "AT-Residual load": 6903.6,
+    "AT-Renewable share of generation": 57.1,
+    "AT-Renewable share of load": 38.5,
+    "AT-Hydro Pumped": 358,
+    "AT-Wind": 4,
+    "AT-Coal": null,
+    "AT-Hydro": 2738,
+    "AT-Import": 1496.8,
+    "AT-Gas": 1616.8
+  },
+  {
+    "x": "2023-03-01T00:00:00.000+01:00",
+    "AT-Biomass": 272,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6641.2,
+    "AT-Residual load": 6453.2,
+    "AT-Renewable share of generation": 61.6,
+    "AT-Renewable share of load": 45.9,
+    "AT-Hydro Pumped": 197.6,
+    "AT-Wind": 188,
+    "AT-Coal": null,
+    "AT-Hydro": 2737.6,
+    "AT-Import": 1882.9,
+    "AT-Gas": 1634
+  },
+  {
+    "x": "2023-03-01T01:00:00.000+01:00",
+    "AT-Biomass": 272,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6346.8,
+    "AT-Residual load": 6186.8,
+    "AT-Renewable share of generation": 62.1,
+    "AT-Renewable share of load": 46.3,
+    "AT-Hydro Pumped": 186.8,
+    "AT-Wind": 160,
+    "AT-Coal": null,
+    "AT-Hydro": 2645.6,
+    "AT-Import": 1706.8,
+    "AT-Gas": 1535.6
+  },
+  {
+    "x": "2023-03-01T02:00:00.000+01:00",
+    "AT-Biomass": 272,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6298.8,
+    "AT-Residual load": 6174.8,
+    "AT-Renewable share of generation": 60.3,
+    "AT-Renewable share of load": 45.5,
+    "AT-Hydro Pumped": 301.6,
+    "AT-Wind": 124,
+    "AT-Coal": null,
+    "AT-Hydro": 2720.8,
+    "AT-Import": 1567.5,
+    "AT-Gas": 1513.6
+  },
+  {
+    "x": "2023-03-01T03:00:00.000+01:00",
+    "AT-Biomass": 268,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6187.2,
+    "AT-Residual load": 6047.2,
+    "AT-Renewable share of generation": 60.2,
+    "AT-Renewable share of load": 46.2,
+    "AT-Hydro Pumped": 268.4,
+    "AT-Wind": 140,
+    "AT-Coal": null,
+    "AT-Hydro": 2671.2,
+    "AT-Import": 1454.7,
+    "AT-Gas": 1548.4
+  },
+  {
+    "x": "2023-03-01T04:00:00.000+01:00",
+    "AT-Biomass": 268,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6264.4,
+    "AT-Residual load": 6120.4,
+    "AT-Renewable share of generation": 60.4,
+    "AT-Renewable share of load": 46.3,
+    "AT-Hydro Pumped": 272.4,
+    "AT-Wind": 144,
+    "AT-Coal": null,
+    "AT-Hydro": 2713.2,
+    "AT-Import": 1481.8,
+    "AT-Gas": 1556.8
+  },
+  {
+    "x": "2023-03-01T05:00:00.000+01:00",
+    "AT-Biomass": 268,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 6667.6,
+    "AT-Residual load": 6423.6,
+    "AT-Renewable share of generation": 59.2,
+    "AT-Renewable share of load": 46.1,
+    "AT-Hydro Pumped": 371.6,
+    "AT-Wind": 244,
+    "AT-Coal": null,
+    "AT-Hydro": 2883.2,
+    "AT-Import": 1607.3,
+    "AT-Gas": 1671.2
+  },
+  {
+    "x": "2023-03-01T06:00:00.000+01:00",
+    "AT-Biomass": 268,
+    "AT-Geothermal": 0.1,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 0,
+    "AT-Load": 7665.2,
+    "AT-Residual load": 7381.2,
+    "AT-Renewable share of generation": 49.9,
+    "AT-Renewable share of load": 44.8,
+    "AT-Hydro Pumped": 1404,
+    "AT-Wind": 284,
+    "AT-Coal": null,
+    "AT-Hydro": 4237.6,
+    "AT-Import": 793.1,
+    "AT-Gas": 1968.8
+  },
+  {
+    "x": "2023-03-01T07:00:00.000+01:00",
+    "AT-Biomass": 264,
+    "AT-Geothermal": 0,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 24,
+    "AT-Load": 8614,
+    "AT-Residual load": 8422,
+    "AT-Renewable share of generation": 45.2,
+    "AT-Renewable share of load": 43.4,
+    "AT-Hydro Pumped": 2534,
+    "AT-Wind": 168,
+    "AT-Coal": null,
+    "AT-Hydro": 5767,
+    "AT-Import": 10.7,
+    "AT-Gas": 1935
+  },
+  {
+    "x": "2023-03-01T08:00:00.000+01:00",
+    "AT-Biomass": 268,
+    "AT-Geothermal": 0,
+    "AT-Others": 22,
+    "AT-Waste": 100,
+    "AT-Solar": 80,
+    "AT-Load": 8956,
+    "AT-Residual load": 8808,
+    "AT-Renewable share of generation": 44.6,
+    "AT-Renewable share of load": 42.7,
+    "AT-Hydro Pumped": 2678,
+    "AT-Wind": 68,
+    "AT-Coal": null,
+    "AT-Hydro": 6032,
     "AT-Import": null,
-    "AT-Gas": 2023
+    "AT-Gas": 2003
   }
 ]
