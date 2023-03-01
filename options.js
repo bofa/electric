@@ -3,7 +3,12 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 
 // Extract options
-const allFiles = fs.readdirSync(folderRead).filter(file => file.includes('.json'))
+const allFiles = fs.readdirSync(folderRead)
+  .filter(file => file.includes('.json'))
+  // .filter(file => file.includes('it'))
+  // .filter(file => file.includes('2023'))
+  // .filter(file => file.includes('charts'))
+
 const options = // ['price', 'production', 'consumption']
 [
   {
@@ -75,6 +80,8 @@ const options = // ['price', 'production', 'consumption']
               const negative = values.some(v => v < 0);
 
               const sampling = DateTime.fromISO(content[1]?.x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
+
+              // console.log('values', key, average, values);
 
               return {
                 key,

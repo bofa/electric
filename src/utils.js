@@ -2,7 +2,7 @@ export const weekDayNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frid
 
 // export const colors = ['red', 'maroon', 'olive', 'lime', 'green', 'aqua', 'teal', 'yellow'];
 // export const colors = ['#d11141', '#00b159', '#00aedb', '#f37735', '#ffc425'];
-export const colors = ['#d11141', '#00b159', '#00aedb', '#f37735', '#ffc425', '#cccccc', '#8c8c8c'];
+export const colors = ['#d11141', '#00b159', '#00aedb', '#f37735', '#cccccc', '#ffc425', '#8c8c8c'];
 
 export function adjustHexOpacity(colorIndex, opacity) {
   const colorIndexMod = colorIndex % colors.length;
