@@ -20835,7 +20835,7 @@
     "NO-Renewable share of load": 118.9,
     "NO-Wind": 898,
     "NO-Hydro": 23190.600000000002,
-    "NO-Import": -4708.9,
+    "NO-Import": -4699.3,
     "NO-Gas": 181.5
   },
   {
@@ -20848,7 +20848,7 @@
     "NO-Renewable share of load": 115.8,
     "NO-Wind": 950.4,
     "NO-Hydro": 22653.300000000003,
-    "NO-Import": -4089.3,
+    "NO-Import": -4093.1,
     "NO-Gas": 189.7
   },
   {
@@ -20861,7 +20861,7 @@
     "NO-Renewable share of load": 115.7,
     "NO-Wind": 981.3,
     "NO-Hydro": 22573.2,
-    "NO-Import": -4053,
+    "NO-Import": -4055.2,
     "NO-Gas": 189.1
   },
   {
@@ -20874,7 +20874,7 @@
     "NO-Renewable share of load": 117.7,
     "NO-Wind": 1051.5,
     "NO-Hydro": 22609.8,
-    "NO-Import": -4285.4,
+    "NO-Import": -4286.3,
     "NO-Gas": 180.9
   },
   {
@@ -20887,7 +20887,7 @@
     "NO-Renewable share of load": 117.4,
     "NO-Wind": 942.9,
     "NO-Hydro": 22285.7,
-    "NO-Import": -4355.6,
+    "NO-Import": -4359.5,
     "NO-Gas": 188.4
   },
   {
@@ -20900,7 +20900,7 @@
     "NO-Renewable share of load": 119.5,
     "NO-Wind": 878.4,
     "NO-Hydro": 22056.100000000002,
-    "NO-Import": -4537.9,
+    "NO-Import": -4540.4,
     "NO-Gas": 186.3
   },
   {
@@ -20913,7 +20913,7 @@
     "NO-Renewable share of load": 119,
     "NO-Wind": 818.2,
     "NO-Hydro": 21199.8,
-    "NO-Import": -4167.8,
+    "NO-Import": -4170.3,
     "NO-Gas": 187.2
   },
   {
@@ -20926,7 +20926,7 @@
     "NO-Renewable share of load": 117.9,
     "NO-Wind": 782.7,
     "NO-Hydro": 20732,
-    "NO-Import": -3930.4,
+    "NO-Import": -3928.4,
     "NO-Gas": 187
   },
   {
@@ -20939,7 +20939,7 @@
     "NO-Renewable share of load": 116.7,
     "NO-Wind": 735,
     "NO-Hydro": 20449,
-    "NO-Import": -3601.2,
+    "NO-Import": -3602.4,
     "NO-Gas": 188.8
   },
   {
@@ -20952,7 +20952,7 @@
     "NO-Renewable share of load": 113.2,
     "NO-Wind": 560.4,
     "NO-Hydro": 20229.5,
-    "NO-Import": -3129.5,
+    "NO-Import": -3134.7,
     "NO-Gas": 189.2
   },
   {
@@ -20965,20 +20965,72 @@
     "NO-Renewable share of load": 111.1,
     "NO-Wind": 498.7,
     "NO-Hydro": 20253.2,
-    "NO-Import": -2934.6,
+    "NO-Import": -2938.8,
     "NO-Gas": 189.5
   },
   {
     "x": "2023-03-09T05:00:00.000+01:00",
     "NO-Other renewables": 57.9,
     "NO-Waste": 8.9,
-    "NO-Load": 18597.4,
-    "NO-Residual load": 18076,
+    "NO-Load": 18595.4,
+    "NO-Residual load": 18074,
     "NO-Renewable share of generation": 97.2,
-    "NO-Renewable share of load": 114.2,
+    "NO-Renewable share of load": 114.3,
     "NO-Wind": 521.4,
     "NO-Hydro": 21089.2,
-    "NO-Import": -3412.2,
+    "NO-Import": -3411.1,
     "NO-Gas": 186.1
+  },
+  {
+    "x": "2023-03-09T06:00:00.000+01:00",
+    "NO-Other renewables": 55.9,
+    "NO-Waste": 7.7,
+    "NO-Load": 19713.5,
+    "NO-Residual load": 19146.1,
+    "NO-Renewable share of generation": 96.8,
+    "NO-Renewable share of load": 115.9,
+    "NO-Wind": 567.4,
+    "NO-Hydro": 22783.3,
+    "NO-Import": -3892.3,
+    "NO-Gas": 183
+  },
+  {
+    "x": "2023-03-09T07:00:00.000+01:00",
+    "NO-Other renewables": 49.9,
+    "NO-Waste": 7,
+    "NO-Load": 21009.8,
+    "NO-Residual load": 20424.8,
+    "NO-Renewable share of generation": 96.6,
+    "NO-Renewable share of load": 108.8,
+    "NO-Wind": 585,
+    "NO-Hydro": 22858.2,
+    "NO-Import": -2823.6,
+    "NO-Gas": 182.7
+  },
+  {
+    "x": "2023-03-09T08:00:00.000+01:00",
+    "NO-Other renewables": 50.7,
+    "NO-Waste": 6.6,
+    "NO-Load": 21425.1,
+    "NO-Residual load": 20889.3,
+    "NO-Renewable share of generation": 96.4,
+    "NO-Renewable share of load": 104.6,
+    "NO-Wind": 535.8,
+    "NO-Hydro": 22465.2,
+    "NO-Import": -2066.9,
+    "NO-Gas": 182.9
+  },
+  {
+    "x": "2023-03-09T09:00:00.000+01:00",
+    "NO-Other renewables": 47.2,
+    "NO-Waste": 6.3,
+    "NO-Load": 21057.9,
+    "NO-Residual load": 20594.6,
+    "NO-Renewable share of generation": 96.3,
+    "NO-Renewable share of load": 109.2,
+    "NO-Wind": 463.3,
+    "NO-Hydro": 23178,
+    "NO-Import": -2945.8,
+    "NO-Gas": 175.6
   }
 ]
