@@ -17041,19 +17041,19 @@
   },
   {
     "x": "2023-02-14T09:00:00.000+01:00",
-    "NL-Nuclear": 485.4,
-    "NL-Biomass": 0,
-    "NL-Others": 1398.7,
-    "NL-Waste": 11.5,
-    "NL-Solar": 1.6,
+    "NL-Nuclear": 486.6,
+    "NL-Biomass": 35.3,
+    "NL-Others": 3325.4,
+    "NL-Waste": 366.5,
+    "NL-Solar": 25.8,
     "NL-Load": 13816.3,
-    "NL-Residual load": 13667,
-    "NL-Renewable share of generation": 1.2,
-    "NL-Renewable share of load": 1.1,
-    "NL-Wind": 147.7,
-    "NL-Coal": 3866.2,
+    "NL-Residual load": 13536.8,
+    "NL-Renewable share of generation": 3.1,
+    "NL-Renewable share of load": 3.6,
+    "NL-Wind": 253.8,
+    "NL-Coal": 3862.9,
     "NL-Import": -2484.7,
-    "NL-Gas": 7078.7
+    "NL-Gas": 7758.1
   },
   {
     "x": "2023-02-14T10:00:00.000+01:00",
@@ -27804,8 +27804,8 @@
     "NL-Renewable share of load": 20.1,
     "NL-Wind": 2357.5,
     "NL-Coal": 1800.5,
-    "NL-Import": 156.1,
-    "NL-Gas": 1776
+    "NL-Import": 758.3,
+    "NL-Gas": 1776.4
   },
   {
     "x": "2023-03-14T10:00:00.000+01:00",
@@ -27820,7 +27820,23 @@
     "NL-Renewable share of load": 20.2,
     "NL-Wind": 2206,
     "NL-Coal": 1648,
-    "NL-Import": null,
+    "NL-Import": -358.6,
     "NL-Gas": 1690
+  },
+  {
+    "x": "2023-03-14T11:00:00.000+01:00",
+    "NL-Nuclear": 472,
+    "NL-Biomass": 0,
+    "NL-Others": 805,
+    "NL-Waste": 60,
+    "NL-Solar": 43,
+    "NL-Load": 10648,
+    "NL-Residual load": 8020,
+    "NL-Renewable share of generation": 39.9,
+    "NL-Renewable share of load": 25,
+    "NL-Wind": 2585,
+    "NL-Coal": 1308,
+    "NL-Import": null,
+    "NL-Gas": 1396
   }
 ]
