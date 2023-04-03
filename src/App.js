@@ -11,6 +11,8 @@ import { adjustHexOpacity } from './utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
 
+const currentYear = DateTime.now().year;
+
 const referenceDate = DateTime.fromISO('2000-01-01T00:00:00');
 
 const now = DateTime.now();
@@ -72,7 +74,14 @@ function App (props) {
     setLoadedFiles(loadedFiles => loadedFiles.concat(files))
 
     Promise.all(files.map(file => axios
-      .get(`https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file)
+      .get(
+        `https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file,
+        {
+          params: {
+            cacheHax: file.includes(currentYear) ? new Date() : undefined
+          }
+        }
+      )
       .then(response => response.data)
         .catch(error => {
           console.warn('Error', error);
