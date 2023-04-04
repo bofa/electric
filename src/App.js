@@ -78,7 +78,7 @@ function App (props) {
         `https://raw.githubusercontent.com/bofa/electric/master/scrape/processed-refactor/` + file,
         {
           params: {
-            cacheHax: file.includes(currentYear) ? new Date() : undefined
+            cacheHax: file.includes(currentYear) ? now : undefined
           }
         }
       )
