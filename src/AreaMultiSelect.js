@@ -48,17 +48,21 @@ export default class AreaMultiSelect extends React.PureComponent {
         resetOnSelect={false}
         items={items}
         itemRenderer={this.renderItem}
-        itemListRenderer={({ items, itemsParentRef, query, renderItem }) => <Menu ulRef={itemsParentRef}>
-          <ButtonGroup minimal={true}>
-            <Button rightIcon="sort-alphabetical" onClick={() => this.setState({ sort: 0 })}>
-              Sort
-            </Button>
-            <Button icon="sort-numerical-desc" onClick={() => this.setState({ sort: 1 })}/>
-            <Button icon="eraser" onClick={() => setSelectedAreas([])}/>
-          </ButtonGroup>
-          <MenuDivider/>
-          {items.map(renderItem).filter(item => item != null)}
-        </Menu>}
+        itemListRenderer={({ items, itemsParentRef, query, renderItem }) => 
+          <>
+            <ButtonGroup minimal={true}>
+              <Button rightIcon="sort-alphabetical" onClick={() => this.setState({ sort: 0 })}>
+                Sort
+              </Button>
+              <Button icon="sort-numerical-desc" onClick={() => this.setState({ sort: 1 })}/>
+              <Button icon="eraser" onClick={() => setSelectedAreas([])}/>
+            </ButtonGroup>
+            <Menu ulRef={itemsParentRef}>
+              <MenuDivider/>
+              {items.map(renderItem).filter(item => item != null)}
+            </Menu>
+          </>
+        }
         itemPredicate={(query, item) => matchQuery(query, item.area)}
         noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
         onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
