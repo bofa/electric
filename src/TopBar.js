@@ -82,11 +82,6 @@ export default function TopBar() {
 
   const slim = window.innerWidth < 600;
 
-  const dateRangeSelect = <DateRangeSelect
-    value={range}
-    onChange={range => setRange(range)}
-  />
-
   return (
     <div className="App">
       <Navbar>
@@ -108,13 +103,19 @@ export default function TopBar() {
 
           {slim ?
             <Popover2 popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING} content={
-              {dateRangeSelect}
+              <DateRangeSelect
+                value={range}
+                onChange={range => setRange(range)}
+              />
             }>
               <Button icon="time"/>
             </Popover2>
           : 
             <div style={{ width: 200 }}>
-              {dateRangeSelect}
+              <DateRangeSelect
+                value={range}
+                onChange={range => setRange(range)}
+              />
             </div>
           }
 

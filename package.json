@@ -38,6 +38,7 @@
     "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se no cz ro",
     "marketprice": "node market-price.js",
     "marketsprice": "node market-price.js dk ee es fi fr hu ie it lt lu lv nl pl pt se no cz ro",
+    "_marketsprice": "node market-price.js se no",
     "options": "node options.js",
     "process": "node process-scrape.js",
     "gas": "node gas.js",
@@ -45,7 +46,8 @@
     "hydroraw": "node hydro-storage-raw.js",
     "hydros": "npm run hydro se fi it at no fr ch es ro && npm run hydroraw de",
     "opennem": "ts-node opennem.ts",
-    "gurkburk": "ts-node scrape-model/types.ts"
+    "gurkburk": "ts-node scrape-model/types.ts",
+    "hydronord": "ts-node hydro-nordpool.ts"
   },
   "eslintConfig": {
     "extends": [
