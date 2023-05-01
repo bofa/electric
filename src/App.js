@@ -16,17 +16,6 @@ const currentYear = DateTime.now().year;
 const referenceDate = DateTime.fromISO('2000-01-01T00:00:00');
 
 const now = DateTime.now();
-export const rangeOptions = [
-  { key: 'Full',         from: DateTime.fromISO('2000-01-01') },
-  ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
-  .map(year => ({ key: '' + year, from: DateTime.fromISO(year + '-01-01')})),
-  { key: 'Past 2 Years', from: now.minus({ years:  2 }) },
-  { key: 'Past Year',    from: now.minus({ years:  1 }) },
-  { key: 'Past 2 Month', from: now.minus({ months: 2 }) },
-  { key: 'Past Month',   from: now.minus({ months: 1 }) },
-  { key: 'Past 2 Weeks', from: now.minus({ weeks:  2 }) },
-  { key: 'Past Week',    from: now.minus({ weeks:  1 }) },
-]
 
 function App (props) {
   const [loadedFiles, setLoadedFiles] = React.useState([]);
@@ -55,7 +44,8 @@ function App (props) {
 
   const confidenceTransform = confidenceTransforms.find(transform => transform.key === confidence).transform;
 
-  let lowerDate = rangeOptions.find(ro => ro.key === range)?.from;
+  let lowerDate = range[0];
+  let upperDate = range[1];
 
   React.useEffect(() => {
     const files = selectedAreas
@@ -163,7 +153,7 @@ function App (props) {
   }
 
   const processedSeries = processedSeriesBeforeMerge
-    .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform, lowerDate))
+    .map(series => ProcessSeries(series, range, windowSize, samplingSize, confidence, confidenceTransform, lowerDate, upperDate))
 
   const stacked = confidence === 'stacked';
 

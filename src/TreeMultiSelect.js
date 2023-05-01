@@ -5,25 +5,23 @@ import {
   Button,
   MenuDivider,
   Tree,
-  Icon,
-  Intent,
   Radio,
   RadioGroup,
-  Classes
 } from "@blueprintjs/core";
-import { Tooltip2, ContextMenu2, Popover2, MenuItem2, Classes as ClassesPop } from "@blueprintjs/popover2";
+import { Popover2, MenuItem2, Classes as ClassesPop } from "@blueprintjs/popover2";
 import { MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
 
 const sortFunctions = [
-  (a1, a2) => a1.text.localeCompare(a2.text),
-  (a1, a2) => a2.label - a1.label,
+  (a, b) => a.text.localeCompare(b.text),
+  (a, b) => a.label - b.label,
 ]
 
 export default class AreaMultiSelect extends React.PureComponent {
    
   state = {
-    sort: 0,
+    sort: 0, // TODO 'alphabetical' or 'numerical'?
+    desc: 1,
     price: true,
     power: true,
     energy: true,
@@ -57,7 +55,9 @@ export default class AreaMultiSelect extends React.PureComponent {
     
     const { price, power, energy } = this.state;
 
-    const items = props.items.sort(sortFunctions[this.state.sort]);
+    const sorter = (a, b) => this.state.desc * sortFunctions[this.state.sort];
+
+    const items = props.items.sort(sorter);
     // const items = props.items.sort((a1, a2) => a1.text.localeCompare(a2.text));
 
 
@@ -95,22 +95,20 @@ export default class AreaMultiSelect extends React.PureComponent {
                 <>
                   <RadioGroup
                     inline
-                    label="Category"
-                    onChange={this.handleMealChange}
-                    selectedValue={this.state.mealType}
+                    onChange={e => this.setState({ sort: +e.target.value })}
+                    selectedValue={this.state.sort}
                   >
-                    <Radio label="Alphabetical" value="one" />
-                    <Radio label="Numerical" value="two" />
+                    <Radio label="Alphabetical" value={0} />
+                    <Radio label="Numerical" value={1} />
                   </RadioGroup>
 
                   <RadioGroup
                     inline
-                    label="Order"
-                    onChange={this.handleMealChange}
-                    selectedValue={this.state.mealType}
+                    onChange={e => this.setState({ desc: +e.target.value })}
+                    selectedValue={this.state.desc}
                   >
-                    <Radio label="Accending" value="one" />
-                    <Radio label="Descending" value="two" />
+                    <Radio label="Accending" value={1} />
+                    <Radio label="Descending" value={-1} />
                   </RadioGroup>
 
                 </>
@@ -120,7 +118,7 @@ export default class AreaMultiSelect extends React.PureComponent {
             </ButtonGroup>
             <MenuDivider/>
             <Tree
-              contents={INITIAL_STATE}
+              contents={INITIAL_STATE.filter(n => n.label.includes())}
             />
             {/* {items.map(renderItem).filter(item => item != null)} */}
           </>
@@ -161,78 +159,40 @@ const INITIAL_STATE = [
   {
     id: 0,
     hasCaret: true,
-    icon: "folder-close",
-    label: (
-      <ContextMenu2 content={<div>Hello there!</div>}>
-        Folder 0
-      </ContextMenu2>
-    ),
+    isExpanded: true,
+    label: "Sweden",
+    childNodes: [
+      {
+        id: 12,
+        label: "Nuclear",
+      },
+    ]
   },
   {
     id: 1,
-    icon: "folder-close",
+    label: 'Norway',
     isExpanded: true,
-    label: (
-      <ContextMenu2 content={<div>Hello there!</div>}>
-        <Tooltip2 content="I'm a folder <3" placement="right">
-          Folder 1
-        </Tooltip2>
-      </ContextMenu2>
-    ),
     childNodes: [
       {
-        id: 2,
-        icon: "document",
-        label: "Item 0",
-        secondaryLabel: (
-          <Tooltip2 content="An eye!">
-            <Icon icon="eye-open" />
-          </Tooltip2>
-        ),
-      },
-      {
         id: 3,
-        icon: <Icon icon="tag" intent={Intent.PRIMARY} className={Classes.TREE_NODE_ICON} />,
-        label: "Organic meditation gluten-free, sriracha VHS drinking vinegar beard man.",
+        label: "Price",
       },
       {
-        id: 4,
-        hasCaret: true,
-        icon: "folder-close",
-        label: (
-          <ContextMenu2 content={<div>Hello there!</div>}>
-            <Tooltip2 content="foo" placement="right">
-              Folder 2
-            </Tooltip2>
-          </ContextMenu2>
-        ),
+        id: 2,
+        label: "Power",
+        isExpanded: true,
         childNodes: [
-          { id: 5, label: "No-Icon Item" },
-          { id: 6, icon: "tag", label: "Item 1" },
           {
-            id: 7,
-            hasCaret: true,
-            icon: "folder-close",
-            label: (
-              <ContextMenu2 content={<div>Hello there!</div>}>
-                Folder 3
-              </ContextMenu2>
-            ),
-            childNodes: [
-              { id: 8, icon: "document", label: "Item 0" },
-              { id: 9, icon: "tag", label: "Item 1" },
-            ],
+            id: 1,
+            label: 'Hydro',
           },
-        ],
+          {
+            id: 2,
+            label: 'Wind',
+          }
+        ]
       },
     ],
-  },
-  {
-    id: 2,
-    hasCaret: true,
-    icon: "folder-close",
-    label: "Super secret files",
-    disabled: true,
   },
 ];
 

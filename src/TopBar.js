@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { DateTime } from 'luxon';
 import { MenuItem2, Popover2 } from "@blueprintjs/popover2";
 import {
   Navbar,
@@ -8,12 +9,15 @@ import {
   Button,
   Menu,
   Icon,
+  Classes as ClassesPop
 } from "@blueprintjs/core";
+
+import App from './App';
 import AreaMultiSelect from './AreaMultiSelect';
-import App, { rangeOptions } from './App';
+// import AreaMultiSelect from './TreeMultiSelect';
+import DateRangeSelect, { rangeShortcuts } from './DateRangeSelect';
 import './App.css';
 import randomIcon from './icon-random';
-import { DateTime } from 'luxon';
 import predefinedList from './predefined';
 
 const settingsIcon = randomIcon();
@@ -23,7 +27,11 @@ export default function TopBar() {
   const [items, setItems] = React.useState([]);
   const [selectedAreas, setSelectedAreas] = React.useState(['SE3-Price', 'SE-Nuclear', 'SE-Load', 'SE-Import Balance']);
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
-  const [range, setRange] = React.useState(rangeOptions[6].key);
+  // const [range, setRange] = React.useState(rangeOptions[6].key);
+  const [range, setRange] = React.useState([
+    DateTime.now().minus({year: 1}),
+    null,
+  ]);
   const [preKey, setPreKey] = React.useState(null);
   const [merge, setMerge] = React.useState(false);
   
@@ -60,13 +68,24 @@ export default function TopBar() {
 
   React.useEffect(() => {
     if (pre) {
+      const rangeCut = rangeShortcuts
+        .find(r => r.label === pre.range)
+        ?.dateRange
+
       setSelectDataSet(pre.selectDataSet);
       setSelectedAreas(pre.selectedAreas);
-      setRange(pre.range);
+      setRange(rangeCut || [null, null]);
       setMerge(pre.merge);
       setPreKey(null);
     }
   }, [pre]);
+
+  const slim = window.innerWidth < 600;
+
+  const dateRangeSelect = <DateRangeSelect
+    value={range}
+    onChange={range => setRange(range)}
+  />
 
   return (
     <div className="App">
@@ -76,9 +95,7 @@ export default function TopBar() {
             <MenuItem2 text="Unit" icon="lightning">
               {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
             </MenuItem2>
-            <MenuItem2 text="Range" icon="time">
-              {rangeOptions.map(({ key }) => <MenuItem2 onClick={() => setRange(key)} roleStructure="listoption" selected={key === range} key={key} text={key} />)}
-            </MenuItem2>
+
             <MenuItem2 text="Predefined" icon="settings">
               {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
             </MenuItem2>
@@ -86,7 +103,23 @@ export default function TopBar() {
           </Menu>}>
             <Button icon={settingsIcon}/>
           </Popover2>
+
           <NavbarDivider/>
+
+          {slim ?
+            <Popover2 popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING} content={
+              {dateRangeSelect}
+            }>
+              <Button icon="time"/>
+            </Popover2>
+          : 
+            <div style={{ width: 200 }}>
+              {dateRangeSelect}
+            </div>
+          }
+
+          <NavbarDivider/>
+          
           <AreaMultiSelect
             items={items}
             selectedAreas={selectedAreas}

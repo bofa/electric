@@ -34,7 +34,7 @@ const predefinedList = [
     text: 'Wide Price',
 
     selectDataSet: 'priceDataSet',
-    range: '2021',
+    range: '2021->',
     selectedAreas: ['SE3-Price', 'FI-Price', 'DE-LU-Price', 'FR-Price'],
     merge: false,
 
@@ -49,7 +49,7 @@ const predefinedList = [
     text: 'Gas Storage',
 
     confidence: "stacked",
-    range: "2016",
+    range: "Full",
     selectDataSet: "energyDataSet",
     selectedAreas: ['DE-Storage gas', 'IT-Storage gas', 'FR-Storage gas', 'NL-Storage gas', 'AT-Storage gas'],
     merge: true,
