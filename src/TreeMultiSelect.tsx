@@ -7,43 +7,53 @@ import {
   Tree,
   Radio,
   RadioGroup,
+  TreeNodeInfo,
 } from "@blueprintjs/core";
-import { Popover2, MenuItem2, Classes as ClassesPop } from "@blueprintjs/popover2";
-import { MultiSelect2 } from "@blueprintjs/select";
+import { Popover2, MenuItem2, Classes as ClassesPop, MenuItem2Props } from "@blueprintjs/popover2";
+import { ItemRendererProps, MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
 
-const sortFunctions = [
-  (a, b) => a.text.localeCompare(b.text),
-  (a, b) => a.label - b.label,
-]
+type Item = {
+  area: string,
+  text: string,
+  label: number,
+}
 
-export default class AreaMultiSelect extends React.PureComponent {
+type Props = {
+  items: Item[],
+  selectedAreas: any[],
+  setSelectedAreas: (areas: any[]) => void,
+}
+
+const initState = {
+  sort: 0, // TODO 'alphabetical' or 'numerical'?
+  desc: 1,
+  price: true,
+  power: true,
+  energy: true,
+};
+
+export default class AreaMultiSelect extends React.Component<Props, typeof initState> {
    
-  state = {
-    sort: 0, // TODO 'alphabetical' or 'numerical'?
-    desc: 1,
-    price: true,
-    power: true,
-    energy: true,
-  }
+  state = initState
 
-  renderItem = (item, { handleClick, handleFocus, modifiers, query }) => {
+  renderItem = (item: TreeNodeInfo, { handleClick, handleFocus, modifiers, query }: ItemRendererProps) => {
     if (!modifiers.matchesPredicate) {
       return null;
     }
 
-    const active = this.props.selectedAreas.includes(item.area);
+    const active = this.props.selectedAreas.includes(item.id);
 
     return (
       <MenuItem
         {...modifiers}
         active={modifiers.active}
         disabled={modifiers.disabled}
-        key={item.area}
+        key={item.id}
         onClick={handleClick}
         onFocus={handleFocus}
-        text={item.text}
-        label={item.label}
+        text={item.label}
+        label={'' + item.label}
         icon={active ? 'tick' : false}
       />
     );
@@ -55,22 +65,23 @@ export default class AreaMultiSelect extends React.PureComponent {
     
     const { price, power, energy } = this.state;
 
-    const sorter = (a, b) => this.state.desc * sortFunctions[this.state.sort];
+    const sorter = (a: any, b: any) => this.state.desc * sortFunctions[this.state.sort](a, b);
 
-    const items = props.items.sort(sorter);
+    const items = props.items.sort(sorter).map(item2node);
     // const items = props.items.sort((a1, a2) => a1.text.localeCompare(a2.text));
 
 
-    console.log('adsf', price, power, energy);
+    console.log('this.props', this.props, this.state);
+
     return (
-      <MultiSelect2
+      <MultiSelect2<Omit<TreeNodeInfo, 'id'> & { id: string }>
         resetOnQuery={false}
         resetOnSelect={false}
         items={items}
         itemRenderer={this.renderItem}
-        itemListRenderer={({ items, itemsParentRef, query, renderItem }) =>
+        itemListRenderer={({ items, itemsParentRef, query, renderItem }) => (
           <>
-            <ButtonGroup minimal={true}>
+            <ButtonGroup minimal>
               <Popover2 content={
                 <Menu>
                   <CustomItem text="Price" selected={price} onClick={() => this.setState({ price: !price })}/>
@@ -78,7 +89,7 @@ export default class AreaMultiSelect extends React.PureComponent {
                   <CustomItem text="Energy" selected={energy} onClick={() => this.setState({ energy: !energy })}/>
                 </Menu>
               }>
-              <Button icon="lightning" onClick={() => setSelectedAreas([])}/>
+                <Button icon="lightning" onClick={() => setSelectedAreas([])}/>
               </Popover2>
 
               <Popover2 content={
@@ -95,7 +106,7 @@ export default class AreaMultiSelect extends React.PureComponent {
                 <>
                   <RadioGroup
                     inline
-                    onChange={e => this.setState({ sort: +e.target.value })}
+                    onChange={(e: any) => this.setState({ sort: +e.target.value })}
                     selectedValue={this.state.sort}
                   >
                     <Radio label="Alphabetical" value={0} />
@@ -104,7 +115,7 @@ export default class AreaMultiSelect extends React.PureComponent {
 
                   <RadioGroup
                     inline
-                    onChange={e => this.setState({ desc: +e.target.value })}
+                    onChange={(e: any) => this.setState({ desc: +e.target.value })}
                     selectedValue={this.state.desc}
                   >
                     <Radio label="Accending" value={1} />
@@ -113,25 +124,23 @@ export default class AreaMultiSelect extends React.PureComponent {
 
                 </>
               }>
-                  <Button rightIcon="sort" onClick={() => this.setState({ sort: 0 })}/>
-                </Popover2>
+                <Button rightIcon="sort" onClick={() => this.setState({ sort: 0 })}/>
+              </Popover2>
             </ButtonGroup>
             <MenuDivider/>
             <Tree
-              contents={INITIAL_STATE.filter(n => n.label.includes())}
+              contents={items.filter((item) => matchQuery(query, item.id))}
             />
-            {/* {items.map(renderItem).filter(item => item != null)} */}
           </>
-        }
-        itemPredicate={(query, item) => matchQuery(query, item.area)}
+        )}
+        itemPredicate={(query, item) => matchQuery(query, item.id)}
         noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
-        onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
-        selectedItems={items.filter(item => selectedAreas.includes(item.area))}
-        tagRenderer={item => item.area}
-        onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.area))}
+        onItemSelect={item => setSelectedAreas(toggleItems(selectedAreas, item.id))}
+        selectedItems={items.filter(item => selectedAreas.includes(item.id))}
+        tagRenderer={item => item.id}
+        onRemove={item => setSelectedAreas(toggleItems(selectedAreas, item.id))}
         tagInputProps={{
           inputProps: {
-            autofill: 'off',
             type: 'search',
           }
         }}
@@ -140,7 +149,12 @@ export default class AreaMultiSelect extends React.PureComponent {
   }
 }
 
-function toggleItems(selected, item) {
+const sortFunctions = [
+  (a: { text: string; }, b: { text: any; }) => a.text.localeCompare(b.text),
+  (a: { label: number; }, b: { label: number; }) => a.label - b.label,
+]
+
+function toggleItems(selected: any[], item: string) {
   if (selected.includes(item)) {
     return selected.filter(v => v !== item);
   } else {
@@ -148,7 +162,7 @@ function toggleItems(selected, item) {
   }
 }
 
-function matchQuery(query, itemString) {
+function matchQuery(query: string, itemString: string) {
   const itemStringLower = itemString.toLowerCase();
   const querys = query.split(' ').map(q => q.toLowerCase())
   
@@ -196,4 +210,11 @@ const INITIAL_STATE = [
   },
 ];
 
-const CustomItem = (props) => <MenuItem2 roleStructure='listoption' shouldDismissPopover={false} {...props}/> 
+const CustomItem = (props: MenuItem2Props) => <MenuItem2 roleStructure='listoption' shouldDismissPopover={false} {...props}/> 
+
+function item2node(item: Item, index: number, array: Item[]) {
+  return {
+    id: item.area,
+    label: item.text,
+  }
+}
