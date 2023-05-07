@@ -6,6 +6,7 @@ import {
   Navbar,
   NavbarDivider,
   NavbarGroup,
+  ButtonGroup,
   Button,
   Menu,
   Icon,
@@ -19,6 +20,7 @@ import DateRangeSelect, { rangeShortcuts } from './DateRangeSelect';
 import './App.css';
 import randomIcon from './icon-random';
 import predefinedList from './predefined';
+import { useWindowSize } from './utils/window';
 
 const settingsIcon = randomIcon();
 
@@ -36,6 +38,8 @@ export default function TopBar() {
   const [merge, setMerge] = React.useState(false);
   
   const pre = predefinedList.find(p => p.key === preKey);
+
+  const size = useWindowSize();
 
   React.useEffect(() => {
     axios.get('https://raw.githubusercontent.com/bofa/electric/master/scrape/options-refactor.json')
@@ -80,43 +84,52 @@ export default function TopBar() {
     }
   }, [pre]);
 
-  const slim = window.innerWidth < 600;
+  const slim = size.width < 600;
 
   return (
     <div className="App">
       <Navbar>
         <NavbarGroup>
-          <Popover2 position="bottom" content={<Menu>
-            <MenuItem2 text="Unit" icon="lightning">
-              {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
-            </MenuItem2>
+          <ButtonGroup>
 
-            <MenuItem2 text="Predefined" icon="settings">
-              {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
-            </MenuItem2>
-            <MenuItem2 text="Merge" icon="git-merge" labelElement={<Icon icon={merge ? "tick" : "disable"} minimal/>} onClick={() => setMerge(!merge)} />
-          </Menu>}>
-            <Button icon={settingsIcon}/>
-          </Popover2>
+            <Popover2 position="bottom" content={
+              <Menu>
+                <MenuItem2 text="Unit" icon="lightning">
+                  {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
+                </MenuItem2>
 
-          <NavbarDivider/>
-
-          {slim ?
-            <Popover2 popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING} content={
-              <DateRangeSelect
-                value={range}
-                onChange={range => setRange(range)}
-              />
+                <MenuItem2 text="Predefined" icon="settings">
+                  {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
+                </MenuItem2>
+                <MenuItem2 text="Merge" icon="git-merge" labelElement={<Icon icon={merge ? "tick" : "disable"} minimal/>} onClick={() => setMerge(!merge)} />
+              </Menu>
             }>
-              <Button icon="time"/>
+              <Button icon={settingsIcon}/>
             </Popover2>
-          : 
-            <div style={{ width: 200 }}>
-              <DateRangeSelect
-                value={range}
-                onChange={range => setRange(range)}
-              />
-            </div>
+            {slim &&
+              <Popover2 popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING} content={
+                <DateRangeSelect
+                  value={range}
+                  onChange={range => setRange(range)}
+                />
+              }>
+                <Button icon="time"/>
+              </Popover2>
+            }
+          </ButtonGroup>
+
+
+
+          {!slim &&
+            <>
+              <NavbarDivider/>
+              <div style={{ width: 200 }}>
+                <DateRangeSelect
+                  value={range}
+                  onChange={range => setRange(range)}
+                  />
+              </div>
+            </>
           }
 
           <NavbarDivider/>

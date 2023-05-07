@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { HTMLSelect } from "@blueprintjs/core";
 import { Chart } from 'react-chartjs-2';
-import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils';
+import { weekDayNames, monthNames, yearsNames, adjustHexOpacity, } from './utils/utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import { DateTime } from 'luxon';
 

@@ -7,7 +7,7 @@ import { DateTime } from 'luxon';
 import axios from 'axios';
 import TransformChart from './TransformChart';
 // import { fft, util as fftUtil } from 'fft-js';
-import { adjustHexOpacity } from './utils';
+import { adjustHexOpacity } from './utils/utils';
 import SelectConfidence, { confidenceTransforms } from './SelectConfidence';
 import ProcessSeries from './ProcessSeries';
 

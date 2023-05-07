@@ -1,3 +1,16 @@
+# TODO
+* Finish new datamodel for scraped data
+* Scrape with new datamodel
+* Map in hydro storage from nordpool
+* Use react-query for fetching data
+* Optimize processing of data
+* Build grouped on diffrent items
+  * Market
+  * Source
+* Convert application to typescript
+* Add models too time series
+  * n years average with min/max
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
