@@ -36,6 +36,7 @@ export default function TopBar() {
   ]);
   const [preKey, setPreKey] = React.useState(null);
   const [merge, setMerge] = React.useState(false);
+  const [dateOpen, setDateOpen] = React.useState(false);
   
   const pre = predefinedList.find(p => p.key === preKey);
 
@@ -107,13 +108,19 @@ export default function TopBar() {
               <Button icon={settingsIcon}/>
             </Popover2>
             {slim &&
-              <Popover2 popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING} content={
-                <DateRangeSelect
-                  value={range}
-                  onChange={range => setRange(range)}
-                />
-              }>
-                <Button icon="time"/>
+              <Popover2
+                onClose={() => setDateOpen(false)}
+                isOpen={dateOpen}
+                popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING}
+                content={
+                  <DateRangeSelect
+                    isOpen={dateOpen}
+                    value={range}
+                    onChange={range => setRange(range)}
+                  />
+                }
+              >
+                <Button icon="time" onClick={() => setDateOpen(true)}/>
               </Popover2>
             }
           </ButtonGroup>

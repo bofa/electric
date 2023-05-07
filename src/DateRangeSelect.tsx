@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon';
-import { DateRangeInput2 } from "@blueprintjs/datetime2";
+import { DateRange, DateRangeInput2, DateRangeInput2Props } from "@blueprintjs/datetime2";
+import React from 'react';
 
 // { key: 'Full', from: DateTime.fromISO('2000-01-01') },
 // ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
@@ -26,18 +27,20 @@ export const rangeShortcuts = [
   { label: 'Full',         dateRange: [minDate, null] },
 ]
 
-export default function DateRangeSelect(props) {
+export default function DateRangeSelect(props: DateRangeInput2Props & { isOpen?: boolean }) {
   return <DateRangeInput2
     fill
     highlightCurrentDay
-    value={props.value.map(d => d?.toJSDate())}
-    onChange={r => props.onChange(r.map(d => d === null ? null : DateTime.fromJSDate(d)))}
-    shortcuts={rangeShortcuts.map(mapDate2LuxonRange)}
-    formatDate={d => DateTime.fromJSDate(d).toFormat('yyyy-MM-dd')}
-    parseDate={s => new Date(s)}
+    popoverProps={props.isOpen === undefined ? undefined : { isOpen: props.isOpen }}
+    value={props.value.map((d: DateTime) => d?.toJSDate())}
+    onChange={(r: DateRange) => props.onChange(r.map((d: Date | null) => d === null ? null : DateTime.fromJSDate(d)))}
+    shortcuts={rangeShortcuts.map(mapLuxon2DateRange)}
+    formatDate={(d: Date) => DateTime.fromJSDate(d).toFormat('yyyy-MM-dd')}
+    parseDate={(s: string | number | Date) => new Date(s)}
     minDate={minDate.toJSDate()}
     maxDate={maxDate.toJSDate()}
   />
 }
 
-const mapDate2LuxonRange = ({ label, dateRange }) => ({ label, dateRange: [dateRange[0]?.toJSDate(), dateRange[1]?.toJSDate() ] })
+const mapLuxon2DateRange = ({ label, dateRange }: { label: string, dateRange: (null | DateTime)[] }) =>
+  ({ label, dateRange: [dateRange[0]?.toJSDate(), dateRange[1]?.toJSDate() ] })
