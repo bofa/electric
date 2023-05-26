@@ -52257,7 +52257,7 @@
     "SE-undefined": 1.61,
     "SE-Wind": 6847.4,
     "SE-Hydro": 4021.7,
-    "SE-Import": -4805.4
+    "SE-Import": -4805.8
   },
   {
     "x": "2023-05-26T05:00:00.000+02:00",
@@ -52272,21 +52272,66 @@
     "SE-undefined": 22.05,
     "SE-Wind": 6823.4,
     "SE-Hydro": 4509,
-    "SE-Import": -4953.1
+    "SE-Import": -4952.4
   },
   {
     "x": "2023-05-26T06:00:00.000+02:00",
-    "SE-Nuclear": 4160,
+    "SE-Nuclear": 4199,
     "SE-Fossil gas": 0.2,
     "SE-Others": 415.1,
     "SE-Solar": 126.8,
-    "SE-Load": 13988,
-    "SE-Residual load": 6864,
-    "SE-Renewable share of generation": 73.7,
-    "SE-Renewable share of load": 91.9,
+    "SE-Load": 12693,
+    "SE-Residual load": 5584.6,
+    "SE-Renewable share of generation": 73.6,
+    "SE-Renewable share of load": 101.2,
     "SE-undefined": 102.42,
-    "SE-Wind": 6997.2,
-    "SE-Hydro": 5729.7,
-    "SE-Import": -413.5
+    "SE-Wind": 6981.6,
+    "SE-Hydro": 5731.7,
+    "SE-Import": -5057.6
+  },
+  {
+    "x": "2023-05-26T07:00:00.000+02:00",
+    "SE-Nuclear": 4199,
+    "SE-Fossil gas": 0.2,
+    "SE-Others": 500.6,
+    "SE-Solar": 298.5,
+    "SE-Load": 13154,
+    "SE-Residual load": 5978.6,
+    "SE-Renewable share of generation": 73.9,
+    "SE-Renewable share of load": 101.2,
+    "SE-undefined": 103.06,
+    "SE-Wind": 6876.8,
+    "SE-Hydro": 6132.4,
+    "SE-Import": -5155.8
+  },
+  {
+    "x": "2023-05-26T08:00:00.000+02:00",
+    "SE-Nuclear": 4193,
+    "SE-Fossil gas": 0.2,
+    "SE-Others": 515,
+    "SE-Solar": 513.2,
+    "SE-Load": 13179,
+    "SE-Residual load": 5743,
+    "SE-Renewable share of generation": 74.3,
+    "SE-Renewable share of load": 103.2,
+    "SE-undefined": 95,
+    "SE-Wind": 6922.8,
+    "SE-Hydro": 6163.9,
+    "SE-Import": -2432.7
+  },
+  {
+    "x": "2023-05-26T09:00:00.000+02:00",
+    "SE-Nuclear": 4160,
+    "SE-Fossil gas": 0.2,
+    "SE-Others": 565.1,
+    "SE-Solar": 761.6,
+    "SE-Load": 14657,
+    "SE-Residual load": 6834.3,
+    "SE-Renewable share of generation": 74.5,
+    "SE-Renewable share of load": 94,
+    "SE-undefined": 74.9,
+    "SE-Wind": 7061.1,
+    "SE-Hydro": 5954.9,
+    "SE-Import": null
   }
 ]
