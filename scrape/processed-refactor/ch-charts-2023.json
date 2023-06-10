@@ -56875,7 +56875,7 @@
     "CH-undefined": 87,
     "CH-Hydro Pumped": 767.8,
     "CH-Wind": null,
-    "CH-Hydro": 6467,
+    "CH-Hydro": 6467.4,
     "CH-Import": -3448,
     "CH-Gas": null
   },
@@ -56890,7 +56890,7 @@
     "CH-undefined": 83.69,
     "CH-Hydro Pumped": 287.1,
     "CH-Wind": null,
-    "CH-Hydro": 5681.6,
+    "CH-Hydro": 5680.9,
     "CH-Import": -2005.2,
     "CH-Gas": null
   },
@@ -56905,7 +56905,7 @@
     "CH-undefined": 82.07,
     "CH-Hydro Pumped": 176,
     "CH-Wind": null,
-    "CH-Hydro": 4955.2,
+    "CH-Hydro": 4955.6,
     "CH-Import": -1956.8,
     "CH-Gas": null
   },
@@ -56920,7 +56920,7 @@
     "CH-undefined": 82.81,
     "CH-Hydro Pumped": 193,
     "CH-Wind": null,
-    "CH-Hydro": 4863.9,
+    "CH-Hydro": 4863.1,
     "CH-Import": -1178,
     "CH-Gas": null
   },
@@ -56935,7 +56935,7 @@
     "CH-undefined": 82.92,
     "CH-Hydro Pumped": 157.8,
     "CH-Wind": null,
-    "CH-Hydro": 4716.6,
+    "CH-Hydro": 4718,
     "CH-Import": -1968.3,
     "CH-Gas": null
   },
@@ -56950,7 +56950,7 @@
     "CH-undefined": 83.53,
     "CH-Hydro Pumped": 272.8,
     "CH-Wind": null,
-    "CH-Hydro": 5283.4,
+    "CH-Hydro": 5282.8,
     "CH-Import": -2246.7,
     "CH-Gas": null
   },
@@ -56965,7 +56965,7 @@
     "CH-undefined": 91.05,
     "CH-Hydro Pumped": 681.5,
     "CH-Wind": null,
-    "CH-Hydro": 6504.2,
+    "CH-Hydro": 6504.5,
     "CH-Import": -2542.4,
     "CH-Gas": null
   },
@@ -56980,7 +56980,7 @@
     "CH-undefined": 93.59,
     "CH-Hydro Pumped": 692.1,
     "CH-Wind": null,
-    "CH-Hydro": 7431.3,
+    "CH-Hydro": 7430.9,
     "CH-Import": -2963.1,
     "CH-Gas": null
   },
@@ -56995,7 +56995,7 @@
     "CH-undefined": 89.8,
     "CH-Hydro Pumped": 569,
     "CH-Wind": null,
-    "CH-Hydro": 6828.6,
+    "CH-Hydro": 6829,
     "CH-Import": -1590.2,
     "CH-Gas": null
   },
@@ -57010,7 +57010,7 @@
     "CH-undefined": 78.21,
     "CH-Hydro Pumped": 118.9,
     "CH-Wind": null,
-    "CH-Hydro": 4296,
+    "CH-Hydro": 4295.3,
     "CH-Import": 1227.7,
     "CH-Gas": null
   },
@@ -57025,7 +57025,7 @@
     "CH-undefined": 70.28,
     "CH-Hydro Pumped": 150.9,
     "CH-Wind": null,
-    "CH-Hydro": 3819.5,
+    "CH-Hydro": 3819.1,
     "CH-Import": 903.7,
     "CH-Gas": null
   },
@@ -57040,7 +57040,7 @@
     "CH-undefined": 65.08,
     "CH-Hydro Pumped": 81.1,
     "CH-Wind": null,
-    "CH-Hydro": 3466.4,
+    "CH-Hydro": 3467,
     "CH-Import": 880.3,
     "CH-Gas": null
   },
@@ -57716,22 +57716,37 @@
     "CH-Hydro Pumped": 212.1,
     "CH-Wind": null,
     "CH-Hydro": 3309.6,
-    "CH-Import": -998.3,
+    "CH-Import": -955.5,
     "CH-Gas": null
   },
   {
     "x": "2023-06-10T09:00:00.000+02:00",
-    "CH-Nuclear": 1949.1,
+    "CH-Nuclear": 1949.4,
     "CH-Solar": null,
     "CH-Load": 6020.8,
     "CH-Residual load": 6020.8,
     "CH-Renewable share of generation": 56.6,
     "CH-Renewable share of load": 45.4,
     "CH-undefined": 57.84,
-    "CH-Hydro Pumped": 144.7,
+    "CH-Hydro Pumped": 144.8,
     "CH-Wind": null,
-    "CH-Hydro": 2877.8,
-    "CH-Import": 1001.1,
+    "CH-Hydro": 2880.3,
+    "CH-Import": 787.7,
+    "CH-Gas": null
+  },
+  {
+    "x": "2023-06-10T10:00:00.000+02:00",
+    "CH-Nuclear": 1946.1,
+    "CH-Solar": null,
+    "CH-Load": 5720.1,
+    "CH-Residual load": 5720.1,
+    "CH-Renewable share of generation": 55,
+    "CH-Renewable share of load": 44,
+    "CH-undefined": 37.99,
+    "CH-Hydro Pumped": 110.3,
+    "CH-Wind": null,
+    "CH-Hydro": 2627,
+    "CH-Import": 1486,
     "CH-Gas": null
   }
 ]

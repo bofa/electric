@@ -80824,7 +80824,7 @@
     "ES-Wind": 1616,
     "ES-Coal": 260,
     "ES-Hydro": 2132,
-    "ES-Import": 1406,
+    "ES-Import": -632.2,
     "ES-Gas": 7084,
     "ES-Oil": 48
   },
@@ -80845,7 +80845,7 @@
     "ES-Wind": 1424,
     "ES-Coal": 304,
     "ES-Hydro": 2012,
-    "ES-Import": null,
+    "ES-Import": -364,
     "ES-Gas": 5212,
     "ES-Oil": 48
   },
@@ -80869,5 +80869,26 @@
     "ES-Import": null,
     "ES-Gas": 3356,
     "ES-Oil": 48
+  },
+  {
+    "x": "2023-06-10T12:00:00.000+02:00",
+    "ES-Nuclear": 4968,
+    "ES-Biomass": 372,
+    "ES-Others": 8,
+    "ES-Other renewables": 84,
+    "ES-Waste": 232,
+    "ES-Solar": 13532,
+    "ES-Load": 24028,
+    "ES-Residual load": 9296,
+    "ES-Renewable share of generation": 65.8,
+    "ES-Renewable share of load": 70.7,
+    "ES-undefined": 61.85,
+    "ES-Hydro Pumped": -1040,
+    "ES-Wind": 1200,
+    "ES-Coal": 352,
+    "ES-Hydro": 632,
+    "ES-Import": null,
+    "ES-Gas": 3288,
+    "ES-Oil": 44
   }
 ]
