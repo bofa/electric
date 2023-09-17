@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { DateTime } from 'luxon';
-import { MenuItem2, Popover2 } from "@blueprintjs/popover2";
+import { MenuItem, Popover } from "@blueprintjs/core";
 import {
   Navbar,
   NavbarDivider,
@@ -16,7 +16,7 @@ import {
 import App from './App';
 import AreaMultiSelect from './AreaMultiSelect';
 // import AreaMultiSelect from './TreeMultiSelect';
-import DateRangeSelect, { rangeShortcuts } from './DateRangeSelect';
+import DateRangeSelect, { rangeShortcuts, minDate, maxDate } from './DateRangeSelect';
 import './App.css';
 import randomIcon from './icon-random';
 import predefinedList from './predefined';
@@ -31,8 +31,8 @@ export default function TopBar() {
   const [selectDataSet, setSelectDataSet] = React.useState('priceDataSet');
   // const [range, setRange] = React.useState(rangeOptions[6].key);
   const [range, setRange] = React.useState([
-    DateTime.now().minus({year: 1}),
-    null,
+    DateTime.now().minus({ year: 1 }),
+    maxDate,
   ]);
   const [preKey, setPreKey] = React.useState(null);
   const [merge, setMerge] = React.useState(false);
@@ -79,13 +79,11 @@ export default function TopBar() {
 
       setSelectDataSet(pre.selectDataSet);
       setSelectedAreas(pre.selectedAreas);
-      setRange(rangeCut || [null, null]);
+      setRange(rangeCut || [minDate, maxDate]);
       setMerge(pre.merge);
       setPreKey(null);
     }
   }, [pre]);
-
-  const slim = size.width < 600;
 
   return (
     <div className="App">
@@ -93,51 +91,36 @@ export default function TopBar() {
         <NavbarGroup>
           <ButtonGroup>
 
-            <Popover2 position="bottom" content={
+            <Popover position="bottom" content={
               <Menu>
-                <MenuItem2 text="Unit" icon="lightning">
-                  {options.map(({ key, name }) => <MenuItem2 onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
-                </MenuItem2>
+                <MenuItem text="Unit" icon="lightning">
+                  {options.map(({ key, name }) => <MenuItem onClick={() => setSelectDataSet(key)} roleStructure="listoption" selected={key === selectDataSet} key={key} text={name} />)}
+                </MenuItem>
 
-                <MenuItem2 text="Predefined" icon="settings">
-                  {predefinedList.map(({ key, text }) => <MenuItem2 onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
-                </MenuItem2>
-                <MenuItem2 text="Merge" icon="git-merge" labelElement={<Icon icon={merge ? "tick" : "disable"} minimal/>} onClick={() => setMerge(!merge)} />
+                <MenuItem text="Predefined" icon="settings">
+                  {predefinedList.map(({ key, text }) => <MenuItem onClick={() => setPreKey(key)} roleStructure="listoption" key={key} text={text} />)}
+                </MenuItem>
+                <MenuItem text="Merge" icon="git-merge" labelElement={<Icon icon={merge ? "tick" : "disable"} minimal/>} onClick={() => setMerge(!merge)} />
               </Menu>
             }>
               <Button icon={settingsIcon}/>
-            </Popover2>
-            {slim &&
-              <Popover2
-                onClose={() => setDateOpen(false)}
-                isOpen={dateOpen}
-                popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING}
-                content={
+            </Popover>
+            <Popover
+              onClose={() => setDateOpen(false)}
+              isOpen={dateOpen}
+              popoverClassName={ClassesPop.POPOVER_CONTENT_SIZING}
+              content={
+                <div style={{ width: '90vw' }}>
                   <DateRangeSelect
-                    isOpen={dateOpen}
                     value={range}
                     onChange={range => setRange(range)}
                   />
-                }
-              >
-                <Button icon="time" onClick={() => setDateOpen(true)}/>
-              </Popover2>
-            }
+                </div>
+              }
+            >
+              <Button icon="time" onClick={() => setDateOpen(true)}/>
+            </Popover>
           </ButtonGroup>
-
-
-
-          {!slim &&
-            <>
-              <NavbarDivider/>
-              <div style={{ width: 200 }}>
-                <DateRangeSelect
-                  value={range}
-                  onChange={range => setRange(range)}
-                  />
-              </div>
-            </>
-          }
 
           <NavbarDivider/>
           

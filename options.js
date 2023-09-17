@@ -81,8 +81,6 @@ const options = // ['price', 'production', 'consumption']
 
               const sampling = DateTime.fromISO(content[1]?.x).diff(DateTime.fromISO(content[0].x), 'hours').hours;  
 
-              // console.log('values', key, average, values);
-
               return {
                 key,
                 sampling,

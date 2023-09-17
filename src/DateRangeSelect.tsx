@@ -1,54 +1,49 @@
 import React, { useEffect, useState } from 'react';
 import { DateTime } from 'luxon';
-import { MultiSlider } from '@blueprintjs/core'
+import { Intent, MultiSlider } from '@blueprintjs/core'
 
 // { key: 'Full', from: DateTime.fromISO('2000-01-01') },
 // ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
 // .map(year => ({ key: '' + year, from: DateTime.fromISO(year + '-01-01')})),
 
-const minDate = DateTime.fromISO('2015-01-01');
-const maxDate = DateTime.now().plus({ days: 2 });
+export const minDate = DateTime.fromISO('2015-01-01');
+export const maxDate = DateTime.now().plus({ days: 2 });
 
 const minDays = 0
-const maxDays = maxDate.diff(minDate, 'days').days
+const maxDays = Math.ceil(maxDate.diff(minDate, 'days').days)
 
-const toDays = (date: DateTime|null) => date?.diff(minDate, 'days').days ?? null
+const toDays = (date: DateTime) => date.diff(minDate, 'days').days
 
 const now = DateTime.now();
 export const rangeShortcuts = [
-  { label: 'Past Week',    dateRange: [now.minus({ weeks:  1 }), null] },
-  { label: 'Past 2 Weeks', dateRange: [now.minus({ weeks:  2 }), null] },
-  { label: 'Past Month',   dateRange: [now.minus({ months: 1 }), null] },
-  { label: 'Past 2 Month', dateRange: [now.minus({ months: 2 }), null] },
-  { label: 'Past Year',    dateRange: [now.minus({ years:  1 }), null] },
-  { label: 'Past 2 Years', dateRange: [now.minus({ years:  2 }), null] },
-  { label: '2023->',       dateRange: [DateTime.fromISO('2023-01-01'), null] },
-  { label: '2022->',       dateRange: [DateTime.fromISO('2022-01-01'), null] },
+  { label: 'Past Week',    dateRange: [now.minus({ weeks:  1 }), maxDate] },
+  { label: 'Past 2 Weeks', dateRange: [now.minus({ weeks:  2 }), maxDate] },
+  { label: 'Past Month',   dateRange: [now.minus({ months: 1 }), maxDate] },
+  { label: 'Past 2 Month', dateRange: [now.minus({ months: 2 }), maxDate] },
+  { label: 'Past Year',    dateRange: [now.minus({ years:  1 }), maxDate] },
+  { label: 'Past 2 Years', dateRange: [now.minus({ years:  2 }), maxDate] },
+  { label: '2023->',       dateRange: [DateTime.fromISO('2023-01-01'), maxDate] },
+  { label: '2022->',       dateRange: [DateTime.fromISO('2022-01-01'), maxDate] },
   { label: '2022',         dateRange: [DateTime.fromISO('2022-01-01'), DateTime.fromISO('2023-01-01').minus({day:1})] },
-  { label: '2021->',       dateRange: [DateTime.fromISO('2021-01-01'), null] },
+  { label: '2021->',       dateRange: [DateTime.fromISO('2021-01-01'), maxDate] },
   { label: '2021',         dateRange: [DateTime.fromISO('2021-01-01'), DateTime.fromISO('2022-01-01').minus({day:1})] },
-  { label: '2020->',       dateRange: [DateTime.fromISO('2020-01-01'), null] },
+  { label: '2020->',       dateRange: [DateTime.fromISO('2020-01-01'), maxDate] },
   { label: '2020',         dateRange: [DateTime.fromISO('2020-01-01'), DateTime.fromISO('2021-01-01').minus({day:1})] },
-  { label: 'Full',         dateRange: [minDate, null] },
+  { label: 'Full',         dateRange: [minDate, maxDate] },
 ]
 
-type Range = (DateTime | null)[]
+type Range = DateTime[]
 
 export default function DateRangeSelect(props: {
   value: Range
   onChange: (range: Range) => void
 }) {
-  const [dateRange, setDateRange] = useState<(number|null)[]>([minDate.diffNow().days - 14, maxDays])
+  const [dateRange, setDateRange] = useState<number[]>([0, 0])
   
   useEffect(() => {
-    console.log('Running Effect')
     const rangeDays = props.value.map(toDays)
     setDateRange(rangeDays)
   }, [props.value[0], props.value[1]])
-
-  console.log('asdf', minDays, maxDays)
-
-
 
   return (
     <MultiSlider
@@ -68,17 +63,15 @@ export default function DateRangeSelect(props: {
           : ""
       }}
     >
-      {dateRange[0] && <MultiSlider.Handle
+      <MultiSlider.Handle
         value={dateRange[0]}
         type="start"
-        // intentAfter={Intent.PRIMARY}
-        // htmlProps={handleHtmlProps.start}
-      />}
-      {dateRange[1] && <MultiSlider.Handle
+        intentAfter={Intent.PRIMARY}
+      />
+      <MultiSlider.Handle
         value={dateRange[1]}
         type="end"
-        // htmlProps={handleHtmlProps.end}
-      />}
+      />
     </MultiSlider>
   )
   
