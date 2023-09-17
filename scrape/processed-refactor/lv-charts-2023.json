@@ -93316,7 +93316,7 @@
   },
   {
     "x": "2023-09-17T06:00:00.000+02:00",
-    "LV-Cross border electricity trading": 753.6,
+    "LV-Cross border electricity trading": 477,
     "LV-Biomass": 19,
     "LV-Others": 13,
     "LV-Load": 512,
@@ -93328,5 +93328,50 @@
     "LV-Hydro": null,
     "LV-Import": null,
     "LV-Gas": 1
+  },
+  {
+    "x": "2023-09-17T07:00:00.000+02:00",
+    "LV-Cross border electricity trading": 531.6,
+    "LV-Biomass": 19,
+    "LV-Others": 14,
+    "LV-Load": 587,
+    "LV-Residual load": 558,
+    "LV-Renewable share of generation": 77.4,
+    "LV-Renewable share of load": 8.2,
+    "LV-undefined": 101.99,
+    "LV-Wind": 29,
+    "LV-Hydro": null,
+    "LV-Import": null,
+    "LV-Gas": null
+  },
+  {
+    "x": "2023-09-17T08:00:00.000+02:00",
+    "LV-Cross border electricity trading": 566.2,
+    "LV-Biomass": 17,
+    "LV-Others": 14,
+    "LV-Load": 606,
+    "LV-Residual load": 592,
+    "LV-Renewable share of generation": 68.9,
+    "LV-Renewable share of load": 5.1,
+    "LV-undefined": 92.91,
+    "LV-Wind": 14,
+    "LV-Hydro": null,
+    "LV-Import": null,
+    "LV-Gas": null
+  },
+  {
+    "x": "2023-09-17T09:00:00.000+02:00",
+    "LV-Cross border electricity trading": 556.5,
+    "LV-Biomass": 18,
+    "LV-Others": 16,
+    "LV-Load": 598,
+    "LV-Residual load": 588,
+    "LV-Renewable share of generation": 78.4,
+    "LV-Renewable share of load": 9.7,
+    "LV-undefined": 82.36,
+    "LV-Wind": 10,
+    "LV-Hydro": 30,
+    "LV-Import": null,
+    "LV-Gas": null
   }
 ]
