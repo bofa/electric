@@ -1,6 +1,6 @@
+import React, { useEffect, useState } from 'react';
 import { DateTime } from 'luxon';
-import { DateRange, DateRangeInput2, DateRangeInput2Props } from "@blueprintjs/datetime2";
-import React from 'react';
+import { MultiSlider } from '@blueprintjs/core'
 
 // { key: 'Full', from: DateTime.fromISO('2000-01-01') },
 // ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
@@ -8,6 +8,11 @@ import React from 'react';
 
 const minDate = DateTime.fromISO('2015-01-01');
 const maxDate = DateTime.now().plus({ days: 2 });
+
+const minDays = 0
+const maxDays = maxDate.diff(minDate, 'days').days
+
+const toDays = (date: DateTime|null) => date?.diff(minDate, 'days').days ?? null
 
 const now = DateTime.now();
 export const rangeShortcuts = [
@@ -27,20 +32,69 @@ export const rangeShortcuts = [
   { label: 'Full',         dateRange: [minDate, null] },
 ]
 
-export default function DateRangeSelect(props: DateRangeInput2Props & { isOpen?: boolean }) {
-  return <DateRangeInput2
-    fill
-    highlightCurrentDay
-    popoverProps={props.isOpen === undefined ? undefined : { isOpen: props.isOpen }}
-    value={props.value.map((d: DateTime) => d?.toJSDate())}
-    onChange={(r: DateRange) => props.onChange(r.map((d: Date | null) => d === null ? null : DateTime.fromJSDate(d)))}
-    shortcuts={rangeShortcuts.map(mapLuxon2DateRange)}
-    formatDate={(d: Date) => DateTime.fromJSDate(d).toFormat('yyyy-MM-dd')}
-    parseDate={(s: string | number | Date) => new Date(s)}
-    minDate={minDate.toJSDate()}
-    maxDate={maxDate.toJSDate()}
-  />
+type Range = (DateTime | null)[]
+
+export default function DateRangeSelect(props: {
+  value: Range
+  onChange: (range: Range) => void
+}) {
+  const [dateRange, setDateRange] = useState<(number|null)[]>([minDate.diffNow().days - 14, maxDays])
+  
+  useEffect(() => {
+    console.log('Running Effect')
+    const rangeDays = props.value.map(toDays)
+    setDateRange(rangeDays)
+  }, [props.value[0], props.value[1]])
+
+  console.log('asdf', minDays, maxDays)
+
+
+
+  return (
+    <MultiSlider
+      // labelStepSize={2*365}
+      // stepSize={100}
+      min={minDays}
+      max={maxDays}
+      onChange={setDateRange}
+      onRelease={range => props.onChange(range.map(day => minDate.plus({ day })))}
+      labelRenderer={(day, opt) => {
+        const date = minDate.plus({ day })
+        const isFirstOfYear = date.month === 1 && date.day === 1
+
+        return opt?.isHandleTooltip
+          ? <span style={{ whiteSpace: 'nowrap'  }}>{date.toFormat('yy-MM-dd')}</span>
+          : isFirstOfYear ? minDate.plus({ day }).toFormat('yyyy')
+          : ""
+      }}
+    >
+      {dateRange[0] && <MultiSlider.Handle
+        value={dateRange[0]}
+        type="start"
+        // intentAfter={Intent.PRIMARY}
+        // htmlProps={handleHtmlProps.start}
+      />}
+      {dateRange[1] && <MultiSlider.Handle
+        value={dateRange[1]}
+        type="end"
+        // htmlProps={handleHtmlProps.end}
+      />}
+    </MultiSlider>
+  )
+  
+  // return <DateRangeInput2
+  //   fill
+  //   highlightCurrentDay
+  //   popoverProps={props.isOpen === undefined ? undefined : { isOpen: props.isOpen }}
+  //   value={props.value.map((d: DateTime) => d?.toJSDate())}
+  //   onChange={(r: DateRange) => props.onChange(r.map((d: Date | null) => d === null ? null : DateTime.fromJSDate(d)))}
+  //   shortcuts={rangeShortcuts.map(mapLuxon2DateRange)}
+  //   formatDate={(d: Date) => DateTime.fromJSDate(d).toFormat('yyyy-MM-dd')}
+  //   parseDate={(s: string | number | Date) => new Date(s)}
+  //   minDate={minDate.toJSDate()}
+  //   maxDate={maxDate.toJSDate()}
+  // />
 }
 
-const mapLuxon2DateRange = ({ label, dateRange }: { label: string, dateRange: (null | DateTime)[] }) =>
-  ({ label, dateRange: [dateRange[0]?.toJSDate(), dateRange[1]?.toJSDate() ] })
+// const mapLuxon2DateRange = ({ label, dateRange }: { label: string, dateRange: (null | DateTime)[] }) =>
+//   ({ label, dateRange: [dateRange[0]?.toJSDate(), dateRange[1]?.toJSDate() ] })
