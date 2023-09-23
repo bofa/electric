@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DateTime } from 'luxon';
-import { Intent, MultiSlider } from '@blueprintjs/core'
+import { Button, ButtonGroup, Drawer, Intent, MultiSlider } from '@blueprintjs/core'
 
 // { key: 'Full', from: DateTime.fromISO('2000-01-01') },
 // ...Array(DateTime.now().year - 2015).fill().map((_, i) => 2016 + i)
@@ -38,6 +38,7 @@ export default function DateRangeSelect(props: {
   value: Range
   onChange: (range: Range) => void
 }) {
+  const [dateOpen, setDateOpen] = React.useState(false);
   const [dateRange, setDateRange] = useState<number[]>([0, 0])
   
   useEffect(() => {
@@ -46,33 +47,55 @@ export default function DateRangeSelect(props: {
   }, [props.value[0], props.value[1]])
 
   return (
-    <MultiSlider
-      // labelStepSize={2*365}
-      // stepSize={100}
-      min={minDays}
-      max={maxDays}
-      onChange={setDateRange}
-      onRelease={range => props.onChange(range.map(day => minDate.plus({ day })))}
-      labelRenderer={(day, opt) => {
-        const date = minDate.plus({ day })
-        const isFirstOfYear = date.month === 1 && date.day === 1
+    <>
+    <Button icon="time" onClick={() => setDateOpen(true)}/>
 
-        return opt?.isHandleTooltip
-          ? <span style={{ whiteSpace: 'nowrap'  }}>{date.toFormat('yy-MM-dd')}</span>
-          : isFirstOfYear ? minDate.plus({ day }).toFormat('yyyy')
-          : ""
-      }}
+    <Drawer
+      isOpen={dateOpen}
+      onClose={() => setDateOpen(false)}
+      position="top"
+      size={300}
+      style={{ padding: 40 }}
     >
-      <MultiSlider.Handle
-        value={dateRange[0]}
-        type="start"
-        intentAfter={Intent.PRIMARY}
-      />
-      <MultiSlider.Handle
-        value={dateRange[1]}
-        type="end"
-      />
-    </MultiSlider>
+      <MultiSlider
+        // labelStepSize={2*365}
+        // stepSize={100}
+        min={minDays}
+        max={maxDays}
+        onChange={setDateRange}
+        onRelease={range => props.onChange(range.map(day => minDate.plus({ day })))}
+        labelRenderer={(day, opt) => {
+          const date = minDate.plus({ day })
+          const isFirstOfYear = date.month === 1 && date.day === 1
+
+          return opt?.isHandleTooltip
+            ? <span style={{ whiteSpace: 'nowrap'  }}>{date.toFormat('yy-MM-dd')}</span>
+            : isFirstOfYear ? minDate.plus({ day }).toFormat('yyyy')
+            : ""
+        }}
+      >
+        <MultiSlider.Handle
+          value={dateRange[0]}
+          type="start"
+          intentAfter={Intent.PRIMARY}
+        />
+        <MultiSlider.Handle
+          value={dateRange[1]}
+          type="end"
+        />
+      </MultiSlider>
+      <ButtonGroup minimal large style={{ marginTop: 30 }}>
+        {rangeShortcuts.map(range => <Button
+          text={range.label}
+          onClick={() => {
+            props.onChange(range.dateRange)
+            setDateOpen(false)
+          }}
+        />)}
+
+      </ButtonGroup>
+    </Drawer>
+    </>
   )
   
   // return <DateRangeInput2
