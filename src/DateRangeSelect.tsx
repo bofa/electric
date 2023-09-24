@@ -24,10 +24,10 @@ export const rangeShortcuts = [
   { label: 'Past 2 Years', dateRange: [now.minus({ years:  2 }), maxDate] },
   { label: '2023->',       dateRange: [DateTime.fromISO('2023-01-01'), maxDate] },
   { label: '2022->',       dateRange: [DateTime.fromISO('2022-01-01'), maxDate] },
-  { label: '2022',         dateRange: [DateTime.fromISO('2022-01-01'), DateTime.fromISO('2023-01-01').minus({day:1})] },
   { label: '2021->',       dateRange: [DateTime.fromISO('2021-01-01'), maxDate] },
-  { label: '2021',         dateRange: [DateTime.fromISO('2021-01-01'), DateTime.fromISO('2022-01-01').minus({day:1})] },
   { label: '2020->',       dateRange: [DateTime.fromISO('2020-01-01'), maxDate] },
+  { label: '2022',         dateRange: [DateTime.fromISO('2022-01-01'), DateTime.fromISO('2023-01-01').minus({day:1})] },
+  { label: '2021',         dateRange: [DateTime.fromISO('2021-01-01'), DateTime.fromISO('2022-01-01').minus({day:1})] },
   { label: '2020',         dateRange: [DateTime.fromISO('2020-01-01'), DateTime.fromISO('2021-01-01').minus({day:1})] },
   { label: 'Full',         dateRange: [minDate, maxDate] },
 ]
@@ -54,7 +54,7 @@ export default function DateRangeSelect(props: {
       isOpen={dateOpen}
       onClose={() => setDateOpen(false)}
       position="top"
-      size={300}
+      size="auto"
       style={{ padding: 40 }}
     >
       <MultiSlider
@@ -84,8 +84,9 @@ export default function DateRangeSelect(props: {
           type="end"
         />
       </MultiSlider>
-      <ButtonGroup minimal large style={{ marginTop: 30 }}>
+      <div style={{ marginTop: 30, display: 'flex', flexWrap: 'wrap' }}>
         {rangeShortcuts.map(range => <Button
+          minimal
           text={range.label}
           onClick={() => {
             props.onChange(range.dateRange)
@@ -93,7 +94,7 @@ export default function DateRangeSelect(props: {
           }}
         />)}
 
-      </ButtonGroup>
+      </div>
     </Drawer>
     </>
   )
