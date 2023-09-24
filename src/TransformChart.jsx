@@ -201,6 +201,17 @@ const seriesTransforms = [
       ];
     }
   },
+  // TODO
+  // {
+  //   key: 'contour',
+  //   name: 'Contour',
+  //   unit: seriesYUnit => ['month', seriesYUnit],
+  //   transform: timeBinTransform(
+  //     'year', yearsNames,
+  //     'month', Array(12).fill().map((_, month) => month+1),
+  //     yearsNames
+  //   )
+  // },
 ]
 
 export default function TransformChart(props) {
