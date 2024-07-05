@@ -71585,7 +71585,7 @@
   },
   {
     "x": "2024-07-05T11:00:00.000+02:00",
-    "LV-Cross border electricity trading": -133.6,
+    "LV-Cross border electricity trading": 573.3,
     "LV-Biomass": 9,
     "LV-Others": 12,
     "LV-Solar": 43,
@@ -71596,6 +71596,22 @@
     "LV-undefined": 6.32,
     "LV-Wind": 48,
     "LV-Hydro": 9,
+    "LV-Import": null,
+    "LV-Gas": null
+  },
+  {
+    "x": "2024-07-05T12:00:00.000+02:00",
+    "LV-Cross border electricity trading": -7.3,
+    "LV-Biomass": 9,
+    "LV-Others": 12,
+    "LV-Solar": 53,
+    "LV-Load": 650,
+    "LV-Residual load": 556,
+    "LV-Renewable share of generation": 90.5,
+    "LV-Renewable share of load": 17.5,
+    "LV-undefined": 4.56,
+    "LV-Wind": 41,
+    "LV-Hydro": 11,
     "LV-Import": null,
     "LV-Gas": null
   }
