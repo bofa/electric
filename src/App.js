@@ -147,7 +147,7 @@ function App (props) {
       })));
 
     processedSeriesBeforeMerge = [{
-      label: 'Merge ' + labels.join(', '),
+      label: 'Merge',
       data: dataMerge,
     }]
   }

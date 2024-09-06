@@ -18,4 +18,4 @@ export const monthNames = ["January", "February", "March", "April", "May", "June
   "July", "August", "September", "October", "November", "December"
 ];
 
-export const yearsNames = [2018, 2019, 2020, 2021, 2022, 2023];
+export const yearsNames = [2018, 2019, 2020, 2021, 2022, 2023, 2024];

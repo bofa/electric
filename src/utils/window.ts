@@ -8,6 +8,7 @@ export function useWindowSize() {
     width: undefined as number | undefined,
     height: undefined as number | undefined,
   });
+
   useEffect(() => {
     // Handler to call on window resize
     function handleResize() {
@@ -24,5 +25,6 @@ export function useWindowSize() {
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []); // Empty array ensures that effect is only run on mount
+  
   return windowSize;
 }
