@@ -1,6 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const luxon = require('luxon');
+const agsiApiKey = require('./agsiApiKey')
 // const importData = require('./scrape/price.json');
 
 function uniq(a, key) {
@@ -11,14 +12,17 @@ function uniq(a, key) {
 }
 
 const days = 10; // 8 * 365;
-data$ = Array(days).fill().map((_, i) => {
+const data$ = Array(days).fill().map((_, i) => {
   const date = luxon.DateTime.now().minus({ days: i - 2 });
   const endTime = date.toFormat('yyyy-MM-dd');
 
   return new Promise(resolve => setTimeout(resolve, 350 * i))
-    .then(() => axios.get(`https://agsi.gie.eu/api?date=${endTime}`))
+    .then(() => axios.get(
+      `https://agsi.gie.eu/api?date=${endTime}`,
+      { headers: { 'x-key': agsiApiKey }}
+    ))
     .then(response => {
-      // console.log(endTime, response.data);
+      console.log(endTime, response.data);
       return response.data.data.map(m => m.children).flat()
     })
     .then(markets => {
