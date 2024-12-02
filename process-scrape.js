@@ -13,7 +13,7 @@ const combineKeys =
   ['Wind', ['Wind offshore', 'Wind onshore', 'wind']],
   ['Coal', ['Fossil brown coal / lignite', 'Fossil hard coal', 'Fossil coal-derived gas', 'coal_black']],
   ['Hydro', ['Hydro pumped storage consumption', 'Hydro pumped storage', 'Hydro water reservoir', 'Hydro Run-of-River', 'hydro']],
-  ['Import', ['Import Balance']],
+  ['Import', ['Import Balance', 'Cross border electricity trading']],
   ['Gas', ['Fossil gas', 'gas_ccgt']],
   ['Oil', ['Fossil oil']],
   ['Solar', ['solar_utility']]
