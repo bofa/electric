@@ -22,7 +22,7 @@ const data$ = Array(days).fill().map((_, i) => {
       { headers: { 'x-key': agsiApiKey }}
     ))
     .then(response => {
-      console.log(endTime, response.data);
+      console.log(endTime);
       return response.data.data.map(m => m.children).flat()
     })
     .then(markets => {
