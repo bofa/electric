@@ -135,7 +135,7 @@
             "key": "CZ-Price",
             "sampling": 1,
             "average": 127,
-            "stdMovingAverage": 49,
+            "stdMovingAverage": 48,
             "negative": false
           }
         ]
@@ -457,14 +457,14 @@
             "key": "DK1-Price",
             "sampling": 1,
             "average": 100,
-            "stdMovingAverage": 60,
+            "stdMovingAverage": 59,
             "negative": false
           },
           {
             "key": "DK2-Price",
             "sampling": 1,
-            "average": 103,
-            "stdMovingAverage": 61,
+            "average": 104,
+            "stdMovingAverage": 60,
             "negative": false
           }
         ]
@@ -859,8 +859,8 @@
           {
             "key": "FI-Price",
             "sampling": 1,
-            "average": 50,
-            "stdMovingAverage": 54,
+            "average": 49,
+            "stdMovingAverage": 53,
             "negative": false
           }
         ]
@@ -1145,7 +1145,7 @@
             "key": "HU-Price",
             "sampling": 1,
             "average": 134,
-            "stdMovingAverage": 57,
+            "stdMovingAverage": 56,
             "negative": false
           }
         ]
@@ -2517,8 +2517,8 @@
           {
             "key": "LV-Price",
             "sampling": 1,
-            "average": 96,
-            "stdMovingAverage": 60,
+            "average": 97,
+            "stdMovingAverage": 59,
             "negative": false
           }
         ]
@@ -3082,7 +3082,7 @@
           {
             "key": "NO1-Price",
             "sampling": 1,
-            "average": 66,
+            "average": 67,
             "stdMovingAverage": 52,
             "negative": false
           },
@@ -3117,7 +3117,7 @@
           {
             "key": "NO5-Price",
             "sampling": 1,
-            "average": 54,
+            "average": 55,
             "stdMovingAverage": 38,
             "negative": false
           }
@@ -3250,7 +3250,7 @@
             "key": "PL-Price",
             "sampling": 1,
             "average": 116,
-            "stdMovingAverage": 43,
+            "stdMovingAverage": 42,
             "negative": true
           }
         ]
@@ -3514,7 +3514,7 @@
             "key": "RO-Price",
             "sampling": 1,
             "average": 137,
-            "stdMovingAverage": 55,
+            "stdMovingAverage": 54,
             "negative": false
           }
         ]
@@ -3862,21 +3862,21 @@
           {
             "key": "SE2-Price",
             "sampling": 1,
-            "average": 20,
-            "stdMovingAverage": 34,
+            "average": 19,
+            "stdMovingAverage": 33,
             "negative": false
           },
           {
             "key": "SE3-Price",
             "sampling": 1,
             "average": 56,
-            "stdMovingAverage": 53,
+            "stdMovingAverage": 52,
             "negative": true
           },
           {
             "key": "SE4-Price",
             "sampling": 1,
-            "average": 69,
+            "average": 70,
             "stdMovingAverage": 60,
             "negative": true
           }
@@ -4570,56 +4570,56 @@
             "key": "AT-Biomass",
             "sampling": 1,
             "average": 264,
-            "stdMovingAverage": 17,
+            "stdMovingAverage": 16,
             "negative": false
           },
           {
             "key": "AT-Solar",
             "sampling": 1,
-            "average": 270,
+            "average": 272,
             "stdMovingAverage": 447,
             "negative": false
           },
           {
             "key": "AT-Load",
             "sampling": 1,
-            "average": 7629,
-            "stdMovingAverage": 1113,
+            "average": 7642,
+            "stdMovingAverage": 1112,
             "negative": false
           },
           {
             "key": "AT-Hydro Pumped",
             "sampling": 1,
             "average": 283,
-            "stdMovingAverage": 1128,
+            "stdMovingAverage": 1127,
             "negative": true
           },
           {
             "key": "AT-Wind",
             "sampling": 1,
-            "average": 887,
-            "stdMovingAverage": 1011,
+            "average": 885,
+            "stdMovingAverage": 1000,
             "negative": false
           },
           {
             "key": "AT-Hydro",
             "sampling": 1,
             "average": 2718,
-            "stdMovingAverage": 1514,
+            "stdMovingAverage": 1513,
             "negative": true
           },
           {
             "key": "AT-Import",
             "sampling": 1,
-            "average": 1486,
-            "stdMovingAverage": 1346,
+            "average": 1501,
+            "stdMovingAverage": 1341,
             "negative": true
           },
           {
             "key": "AT-Gas",
             "sampling": 1,
-            "average": 2053,
-            "stdMovingAverage": 609,
+            "average": 2050,
+            "stdMovingAverage": 605,
             "negative": false
           }
         ]
@@ -5184,22 +5184,22 @@
           {
             "key": "CH-Solar",
             "sampling": 1,
-            "average": 231,
-            "stdMovingAverage": 509,
+            "average": 242,
+            "stdMovingAverage": 518,
             "negative": false
           },
           {
             "key": "CH-Load",
             "sampling": 1,
-            "average": 6920,
-            "stdMovingAverage": 744,
+            "average": 6961,
+            "stdMovingAverage": 760,
             "negative": false
           },
           {
             "key": "CH-Hydro Pumped",
             "sampling": 1,
-            "average": 951,
-            "stdMovingAverage": 902,
+            "average": 957,
+            "stdMovingAverage": 904,
             "negative": false
           },
           {
@@ -5212,15 +5212,15 @@
           {
             "key": "CH-Hydro",
             "sampling": 1,
-            "average": 2385,
-            "stdMovingAverage": 1760,
+            "average": 2401,
+            "stdMovingAverage": 1765,
             "negative": false
           },
           {
             "key": "CH-Import",
             "sampling": 1,
-            "average": 618,
-            "stdMovingAverage": 1848,
+            "average": 624,
+            "stdMovingAverage": 1846,
             "negative": true
           }
         ]
@@ -6121,8 +6121,8 @@
           {
             "key": "CZ-Nuclear",
             "sampling": 1,
-            "average": 3440,
-            "stdMovingAverage": 226,
+            "average": 3442,
+            "stdMovingAverage": 224,
             "negative": false
           },
           {
@@ -6142,50 +6142,50 @@
           {
             "key": "CZ-Solar",
             "sampling": 1,
-            "average": 182,
-            "stdMovingAverage": 369,
+            "average": 180,
+            "stdMovingAverage": 368,
             "negative": false
           },
           {
             "key": "CZ-Load",
             "sampling": 1,
-            "average": 8169,
-            "stdMovingAverage": 1131,
+            "average": 8181,
+            "stdMovingAverage": 1130,
             "negative": false
           },
           {
             "key": "CZ-Hydro Pumped",
             "sampling": 1,
-            "average": -41,
-            "stdMovingAverage": 400,
+            "average": -42,
+            "stdMovingAverage": 402,
             "negative": true
           },
           {
             "key": "CZ-Wind",
             "sampling": 1,
-            "average": 90,
-            "stdMovingAverage": 49,
+            "average": 89,
+            "stdMovingAverage": 50,
             "negative": false
           },
           {
             "key": "CZ-Coal",
             "sampling": 1,
-            "average": 4244,
-            "stdMovingAverage": 593,
+            "average": 4258,
+            "stdMovingAverage": 587,
             "negative": false
           },
           {
             "key": "CZ-Hydro",
             "sampling": 1,
             "average": 232,
-            "stdMovingAverage": 500,
+            "stdMovingAverage": 502,
             "negative": true
           },
           {
             "key": "CZ-Import",
             "sampling": 1,
-            "average": -758,
-            "stdMovingAverage": 804,
+            "average": -757,
+            "stdMovingAverage": 809,
             "negative": true
           },
           {
@@ -7163,78 +7163,78 @@
           {
             "key": "DE-Biomass",
             "sampling": 1,
-            "average": 4479,
-            "stdMovingAverage": 136,
+            "average": 4476,
+            "stdMovingAverage": 137,
             "negative": false
           },
           {
             "key": "DE-Others",
             "sampling": 1,
-            "average": 253,
+            "average": 251,
             "stdMovingAverage": 47,
             "negative": false
           },
           {
             "key": "DE-Solar",
             "sampling": 1,
-            "average": 2538,
-            "stdMovingAverage": 4649,
+            "average": 2526,
+            "stdMovingAverage": 4627,
             "negative": false
           },
           {
             "key": "DE-Load",
             "sampling": 1,
-            "average": 58751,
-            "stdMovingAverage": 8888,
+            "average": 58879,
+            "stdMovingAverage": 8884,
             "negative": false
           },
           {
             "key": "DE-Hydro Pumped",
             "sampling": 1,
-            "average": -220,
-            "stdMovingAverage": 3115,
+            "average": -221,
+            "stdMovingAverage": 3103,
             "negative": true
           },
           {
             "key": "DE-Wind",
             "sampling": 1,
-            "average": 18706,
-            "stdMovingAverage": 11756,
+            "average": 18850,
+            "stdMovingAverage": 11955,
             "negative": false
           },
           {
             "key": "DE-Coal",
             "sampling": 1,
-            "average": 15033,
-            "stdMovingAverage": 3607,
+            "average": 15136,
+            "stdMovingAverage": 3568,
             "negative": false
           },
           {
             "key": "DE-Hydro",
             "sampling": 1,
-            "average": 1715,
-            "stdMovingAverage": 3190,
+            "average": 1713,
+            "stdMovingAverage": 3178,
             "negative": true
           },
           {
             "key": "DE-Import",
             "sampling": 1,
-            "average": 1514,
-            "stdMovingAverage": 5143,
+            "average": 1426,
+            "stdMovingAverage": 5325,
             "negative": true
           },
           {
             "key": "DE-Gas",
             "sampling": 1,
-            "average": 10920,
-            "stdMovingAverage": 3792,
+            "average": 10949,
+            "stdMovingAverage": 3784,
             "negative": false
           },
           {
             "key": "DE-Oil",
             "sampling": 1,
             "average": 405,
-            "stdMovingAverage": 113,
+            "stdMovingAverage": 112,
             "negative": false
           }
         ]
@@ -7856,49 +7856,49 @@
             "key": "DK-Biomass",
             "sampling": 1,
             "average": 678,
-            "stdMovingAverage": 184,
+            "stdMovingAverage": 182,
             "negative": false
           },
           {
             "key": "DK-Solar",
             "sampling": 1,
-            "average": 90,
-            "stdMovingAverage": 195,
+            "average": 97,
+            "stdMovingAverage": 216,
             "negative": false
           },
           {
             "key": "DK-Load",
             "sampling": 1,
-            "average": 4889,
-            "stdMovingAverage": 596,
+            "average": 4891,
+            "stdMovingAverage": 592,
             "negative": false
           },
           {
             "key": "DK-Wind",
             "sampling": 1,
-            "average": 2707,
-            "stdMovingAverage": 1763,
+            "average": 2675,
+            "stdMovingAverage": 1742,
             "negative": false
           },
           {
             "key": "DK-Coal",
             "sampling": 1,
-            "average": 455,
-            "stdMovingAverage": 178,
+            "average": 458,
+            "stdMovingAverage": 176,
             "negative": false
           },
           {
             "key": "DK-Import",
             "sampling": 1,
-            "average": 185,
-            "stdMovingAverage": 1859,
+            "average": 204,
+            "stdMovingAverage": 1842,
             "negative": true
           },
           {
             "key": "DK-Gas",
             "sampling": 1,
-            "average": 325,
-            "stdMovingAverage": 126,
+            "average": 328,
+            "stdMovingAverage": 125,
             "negative": false
           },
           {
@@ -8429,7 +8429,7 @@
             "key": "EE-Biomass",
             "sampling": 1,
             "average": 73,
-            "stdMovingAverage": 13,
+            "stdMovingAverage": 12,
             "negative": false
           },
           {
@@ -8449,8 +8449,8 @@
           {
             "key": "EE-Wind",
             "sampling": 1,
-            "average": 225,
-            "stdMovingAverage": 136,
+            "average": 220,
+            "stdMovingAverage": 135,
             "negative": false
           },
           {
@@ -8463,8 +8463,8 @@
           {
             "key": "EE-Import",
             "sampling": 1,
-            "average": 109,
-            "stdMovingAverage": 148,
+            "average": 106,
+            "stdMovingAverage": 146,
             "negative": true
           },
           {
@@ -9372,78 +9372,78 @@
           {
             "key": "ES-Nuclear",
             "sampling": 1,
-            "average": 7029,
-            "stdMovingAverage": 333,
+            "average": 7031,
+            "stdMovingAverage": 328,
             "negative": false
           },
           {
             "key": "ES-Biomass",
             "sampling": 1,
-            "average": 426,
-            "stdMovingAverage": 52,
+            "average": 428,
+            "stdMovingAverage": 53,
             "negative": false
           },
           {
             "key": "ES-Others",
             "sampling": 1,
-            "average": 8,
+            "average": 7,
             "stdMovingAverage": 4,
             "negative": false
           },
           {
             "key": "ES-Solar",
             "sampling": 1,
-            "average": 3291,
-            "stdMovingAverage": 5008,
+            "average": 3353,
+            "stdMovingAverage": 5093,
             "negative": false
           },
           {
             "key": "ES-Load",
             "sampling": 1,
-            "average": 28895,
-            "stdMovingAverage": 4962,
+            "average": 28951,
+            "stdMovingAverage": 4953,
             "negative": false
           },
           {
             "key": "ES-Hydro Pumped",
             "sampling": 1,
-            "average": 31,
-            "stdMovingAverage": 1717,
+            "average": 48,
+            "stdMovingAverage": 1705,
             "negative": true
           },
           {
             "key": "ES-Wind",
             "sampling": 1,
-            "average": 9124,
-            "stdMovingAverage": 4366,
+            "average": 8985,
+            "stdMovingAverage": 4340,
             "negative": false
           },
           {
             "key": "ES-Coal",
             "sampling": 1,
-            "average": 426,
-            "stdMovingAverage": 193,
+            "average": 433,
+            "stdMovingAverage": 194,
             "negative": false
           },
           {
             "key": "ES-Hydro",
             "sampling": 1,
-            "average": 4148,
-            "stdMovingAverage": 2836,
+            "average": 4225,
+            "stdMovingAverage": 2816,
             "negative": true
           },
           {
             "key": "ES-Import",
             "sampling": 1,
-            "average": -1302,
-            "stdMovingAverage": 2180,
+            "average": -1284,
+            "stdMovingAverage": 2217,
             "negative": true
           },
           {
             "key": "ES-Gas",
             "sampling": 1,
-            "average": 5569,
-            "stdMovingAverage": 3007,
+            "average": 5612,
+            "stdMovingAverage": 3018,
             "negative": false
           },
           {
@@ -10225,71 +10225,71 @@
           {
             "key": "FI-Nuclear",
             "sampling": 1,
-            "average": 4098,
-            "stdMovingAverage": 284,
+            "average": 4115,
+            "stdMovingAverage": 152,
             "negative": false
           },
           {
             "key": "FI-Biomass",
             "sampling": 1,
-            "average": 1257,
-            "stdMovingAverage": 260,
+            "average": 1256,
+            "stdMovingAverage": 247,
             "negative": false
           },
           {
             "key": "FI-Others",
             "sampling": 1,
-            "average": 310,
-            "stdMovingAverage": 33,
+            "average": 311,
+            "stdMovingAverage": 27,
             "negative": false
           },
           {
             "key": "FI-Solar",
             "sampling": 1,
-            "average": 10,
-            "stdMovingAverage": 24,
+            "average": 11,
+            "stdMovingAverage": 25,
             "negative": false
           },
           {
             "key": "FI-Load",
             "sampling": 1,
-            "average": 11251,
-            "stdMovingAverage": 707,
+            "average": 11245,
+            "stdMovingAverage": 703,
             "negative": false
           },
           {
             "key": "FI-Wind",
             "sampling": 1,
-            "average": 2932,
-            "stdMovingAverage": 1775,
+            "average": 2977,
+            "stdMovingAverage": 1767,
             "negative": false
           },
           {
             "key": "FI-Coal",
             "sampling": 1,
             "average": 162,
-            "stdMovingAverage": 58,
+            "stdMovingAverage": 57,
             "negative": false
           },
           {
             "key": "FI-Hydro",
             "sampling": 1,
-            "average": 1560,
-            "stdMovingAverage": 462,
+            "average": 1558,
+            "stdMovingAverage": 458,
             "negative": false
           },
           {
             "key": "FI-Import",
             "sampling": 1,
-            "average": 885,
-            "stdMovingAverage": 997,
+            "average": 866,
+            "stdMovingAverage": 995,
             "negative": true
           },
           {
             "key": "FI-Gas",
             "sampling": 1,
-            "average": 178,
-            "stdMovingAverage": 198,
+            "average": 177,
+            "stdMovingAverage": 195,
             "negative": false
           },
           {
@@ -11127,78 +11127,78 @@
           {
             "key": "FR-Nuclear",
             "sampling": 1,
-            "average": 51508,
-            "stdMovingAverage": 3603,
+            "average": 51405,
+            "stdMovingAverage": 3568,
             "negative": false
           },
           {
             "key": "FR-Biomass",
             "sampling": 1,
-            "average": 392,
-            "stdMovingAverage": 53,
+            "average": 391,
+            "stdMovingAverage": 52,
             "negative": false
           },
           {
             "key": "FR-Solar",
             "sampling": 1,
-            "average": 1573,
-            "stdMovingAverage": 2591,
+            "average": 1588,
+            "stdMovingAverage": 2609,
             "negative": false
           },
           {
             "key": "FR-Load",
             "sampling": 1,
-            "average": 65866,
-            "stdMovingAverage": 6731,
+            "average": 65955,
+            "stdMovingAverage": 6700,
             "negative": false
           },
           {
             "key": "FR-Hydro Pumped",
             "sampling": 1,
-            "average": 280,
-            "stdMovingAverage": 1913,
+            "average": 279,
+            "stdMovingAverage": 1906,
             "negative": true
           },
           {
             "key": "FR-Wind",
             "sampling": 1,
-            "average": 6933,
-            "stdMovingAverage": 5574,
+            "average": 7021,
+            "stdMovingAverage": 5613,
             "negative": false
           },
           {
             "key": "FR-Coal",
             "sampling": 1,
             "average": 244,
-            "stdMovingAverage": 252,
+            "stdMovingAverage": 253,
             "negative": false
           },
           {
             "key": "FR-Hydro",
             "sampling": 1,
-            "average": 8734,
-            "stdMovingAverage": 3591,
+            "average": 8727,
+            "stdMovingAverage": 3586,
             "negative": false
           },
           {
             "key": "FR-Import",
             "sampling": 1,
-            "average": -9191,
-            "stdMovingAverage": 4449,
+            "average": -9085,
+            "stdMovingAverage": 4411,
             "negative": true
           },
           {
             "key": "FR-Gas",
             "sampling": 1,
-            "average": 4198,
-            "stdMovingAverage": 2083,
+            "average": 4219,
+            "stdMovingAverage": 2078,
             "negative": false
           },
           {
             "key": "FR-Oil",
             "sampling": 1,
-            "average": 171,
-            "stdMovingAverage": 192,
+            "average": 170,
+            "stdMovingAverage": 190,
             "negative": false
           }
         ]
@@ -12001,7 +12001,7 @@
           {
             "key": "HU-Biomass",
             "sampling": 1,
-            "average": 171,
+            "average": 172,
             "stdMovingAverage": 28,
             "negative": false
           },
@@ -12015,28 +12015,28 @@
           {
             "key": "HU-Solar",
             "sampling": 1,
-            "average": 300,
-            "stdMovingAverage": 596,
+            "average": 308,
+            "stdMovingAverage": 605,
             "negative": false
           },
           {
             "key": "HU-Load",
             "sampling": 1,
-            "average": 5720,
-            "stdMovingAverage": 719,
+            "average": 5727,
+            "stdMovingAverage": 718,
             "negative": false
           },
           {
             "key": "HU-Wind",
             "sampling": 1,
-            "average": 73,
-            "stdMovingAverage": 78,
+            "average": 72,
+            "stdMovingAverage": 77,
             "negative": false
           },
           {
             "key": "HU-Coal",
             "sampling": 1,
-            "average": 214,
+            "average": 216,
             "stdMovingAverage": 60,
             "negative": false
           },
@@ -12050,15 +12050,15 @@
           {
             "key": "HU-Import",
             "sampling": 1,
-            "average": 1665,
-            "stdMovingAverage": 785,
+            "average": 1660,
+            "stdMovingAverage": 790,
             "negative": true
           },
           {
             "key": "HU-Gas",
             "sampling": 1,
-            "average": 1259,
-            "stdMovingAverage": 300,
+            "average": 1262,
+            "stdMovingAverage": 299,
             "negative": false
           },
           {
@@ -13579,14 +13579,14 @@
             "key": "IT-Solar",
             "sampling": 1,
             "average": 3165,
-            "stdMovingAverage": 4190,
+            "stdMovingAverage": 4189,
             "negative": false
           },
           {
             "key": "IT-Load",
             "sampling": 1,
             "average": 31790,
-            "stdMovingAverage": 6450,
+            "stdMovingAverage": 6451,
             "negative": false
           },
           {
@@ -13627,7 +13627,7 @@
           {
             "key": "IT-Gas",
             "sampling": 1,
-            "average": 10665,
+            "average": 10664,
             "stdMovingAverage": 4698,
             "negative": false
           },
@@ -14436,8 +14436,8 @@
           {
             "key": "LT-Others",
             "sampling": 1,
-            "average": 49,
-            "stdMovingAverage": 16,
+            "average": 50,
+            "stdMovingAverage": 15,
             "negative": false
           },
           {
@@ -14450,42 +14450,42 @@
           {
             "key": "LT-Load",
             "sampling": 1,
-            "average": 1529,
-            "stdMovingAverage": 268,
+            "average": 1531,
+            "stdMovingAverage": 267,
             "negative": false
           },
           {
             "key": "LT-Hydro Pumped",
             "sampling": 1,
             "average": -18,
-            "stdMovingAverage": 213,
+            "stdMovingAverage": 211,
             "negative": true
           },
           {
             "key": "LT-Wind",
             "sampling": 1,
-            "average": 538,
-            "stdMovingAverage": 306,
+            "average": 533,
+            "stdMovingAverage": 303,
             "negative": false
           },
           {
             "key": "LT-Hydro",
             "sampling": 1,
-            "average": 21,
-            "stdMovingAverage": 224,
+            "average": 20,
+            "stdMovingAverage": 222,
             "negative": true
           },
           {
             "key": "LT-Import",
             "sampling": 1,
-            "average": 523,
-            "stdMovingAverage": 314,
+            "average": 528,
+            "stdMovingAverage": 311,
             "negative": true
           },
           {
             "key": "LT-Gas",
             "sampling": 1,
-            "average": 282,
+            "average": 285,
             "stdMovingAverage": 73,
             "negative": false
           }
@@ -14778,7 +14778,7 @@
           {
             "key": "LU-Hydro Run-of-River",
             "sampling": 1,
-            "average": 9,
+            "average": 10,
             "stdMovingAverage": 3,
             "negative": false
           },
@@ -14786,7 +14786,7 @@
             "key": "LU-Biomass",
             "sampling": 1,
             "average": 35,
-            "stdMovingAverage": 18,
+            "stdMovingAverage": 19,
             "negative": false
           },
           {
@@ -14799,8 +14799,8 @@
           {
             "key": "LU-Wind onshore",
             "sampling": 1,
-            "average": 62,
-            "stdMovingAverage": 63,
+            "average": 64,
+            "stdMovingAverage": 64,
             "negative": false
           },
           {
@@ -14813,8 +14813,8 @@
           {
             "key": "LU-Load",
             "sampling": 1,
-            "average": 628,
-            "stdMovingAverage": 100,
+            "average": 629,
+            "stdMovingAverage": 101,
             "negative": false
           }
         ]
@@ -15386,36 +15386,36 @@
           {
             "key": "LV-Load",
             "sampling": 1,
-            "average": 843,
+            "average": 844,
             "stdMovingAverage": 151,
             "negative": false
           },
           {
             "key": "LV-Wind",
             "sampling": 1,
-            "average": 38,
+            "average": 37,
             "stdMovingAverage": 27,
             "negative": false
           },
           {
             "key": "LV-Hydro",
             "sampling": 1,
-            "average": 446,
-            "stdMovingAverage": 177,
+            "average": 448,
+            "stdMovingAverage": 176,
             "negative": false
           },
           {
             "key": "LV-Import",
             "sampling": 1,
-            "average": 132,
-            "stdMovingAverage": 275,
+            "average": 124,
+            "stdMovingAverage": 273,
             "negative": true
           },
           {
             "key": "LV-Gas",
             "sampling": 1,
-            "average": 306,
-            "stdMovingAverage": 168,
+            "average": 314,
+            "stdMovingAverage": 169,
             "negative": false
           }
         ]
@@ -16195,64 +16195,64 @@
           {
             "key": "NL-Nuclear",
             "sampling": 1,
-            "average": 482,
-            "stdMovingAverage": 45,
+            "average": 483,
+            "stdMovingAverage": 39,
             "negative": false
           },
           {
             "key": "NL-Biomass",
             "sampling": 1,
-            "average": 3,
+            "average": 4,
             "stdMovingAverage": 4,
             "negative": false
           },
           {
             "key": "NL-Others",
             "sampling": 1,
-            "average": 1125,
-            "stdMovingAverage": 1033,
+            "average": 1197,
+            "stdMovingAverage": 1023,
             "negative": false
           },
           {
             "key": "NL-Solar",
             "sampling": 1,
-            "average": 10,
-            "stdMovingAverage": 22,
+            "average": 11,
+            "stdMovingAverage": 23,
             "negative": false
           },
           {
             "key": "NL-Load",
             "sampling": 1,
-            "average": 13201,
-            "stdMovingAverage": 1974,
+            "average": 13243,
+            "stdMovingAverage": 1977,
             "negative": false
           },
           {
             "key": "NL-Wind",
             "sampling": 1,
-            "average": 2260,
-            "stdMovingAverage": 1858,
+            "average": 2329,
+            "stdMovingAverage": 1911,
             "negative": false
           },
           {
             "key": "NL-Coal",
             "sampling": 1,
-            "average": 2896,
-            "stdMovingAverage": 1042,
+            "average": 2921,
+            "stdMovingAverage": 1015,
             "negative": false
           },
           {
             "key": "NL-Import",
             "sampling": 1,
-            "average": -1259,
-            "stdMovingAverage": 2186,
+            "average": -1337,
+            "stdMovingAverage": 2173,
             "negative": true
           },
           {
             "key": "NL-Gas",
             "sampling": 1,
-            "average": 5293,
-            "stdMovingAverage": 3174,
+            "average": 5288,
+            "stdMovingAverage": 3164,
             "negative": false
           }
         ]
@@ -16712,29 +16712,29 @@
           {
             "key": "NO-Load",
             "sampling": 1,
-            "average": 19799,
-            "stdMovingAverage": 1437,
+            "average": 19782,
+            "stdMovingAverage": 1425,
             "negative": false
           },
           {
             "key": "NO-Wind",
             "sampling": 1,
-            "average": 1974,
-            "stdMovingAverage": 941,
+            "average": 1971,
+            "stdMovingAverage": 931,
             "negative": false
           },
           {
             "key": "NO-Hydro",
             "sampling": 1,
-            "average": 21168,
-            "stdMovingAverage": 3453,
+            "average": 21180,
+            "stdMovingAverage": 3414,
             "negative": false
           },
           {
             "key": "NO-Import",
             "sampling": 1,
-            "average": -3974,
-            "stdMovingAverage": 2311,
+            "average": -4012,
+            "stdMovingAverage": 2282,
             "negative": true
           },
           {
@@ -17547,77 +17547,77 @@
           {
             "key": "PL-Biomass",
             "sampling": 1,
-            "average": 330,
-            "stdMovingAverage": 70,
+            "average": 325,
+            "stdMovingAverage": 69,
             "negative": false
           },
           {
             "key": "PL-Others",
             "sampling": 1,
-            "average": 729,
-            "stdMovingAverage": 37,
+            "average": 726,
+            "stdMovingAverage": 36,
             "negative": false
           },
           {
             "key": "PL-Solar",
             "sampling": 1,
-            "average": 607,
-            "stdMovingAverage": 1181,
+            "average": 624,
+            "stdMovingAverage": 1218,
             "negative": false
           },
           {
             "key": "PL-Load",
             "sampling": 1,
-            "average": 19631,
-            "stdMovingAverage": 2947,
+            "average": 19727,
+            "stdMovingAverage": 2945,
             "negative": false
           },
           {
             "key": "PL-Hydro Pumped",
             "sampling": 1,
-            "average": 89,
-            "stdMovingAverage": 157,
+            "average": 91,
+            "stdMovingAverage": 159,
             "negative": false
           },
           {
             "key": "PL-Wind",
             "sampling": 1,
-            "average": 3851,
-            "stdMovingAverage": 2049,
+            "average": 3725,
+            "stdMovingAverage": 2002,
             "negative": false
           },
           {
             "key": "PL-Coal",
             "sampling": 1,
-            "average": 12394,
-            "stdMovingAverage": 2239,
+            "average": 12468,
+            "stdMovingAverage": 2194,
             "negative": false
           },
           {
             "key": "PL-Hydro",
             "sampling": 1,
-            "average": 292,
-            "stdMovingAverage": 220,
+            "average": 295,
+            "stdMovingAverage": 223,
             "negative": false
           },
           {
             "key": "PL-Import",
             "sampling": 1,
-            "average": -1149,
-            "stdMovingAverage": 1299,
+            "average": -1050,
+            "stdMovingAverage": 1367,
             "negative": true
           },
           {
             "key": "PL-Gas",
             "sampling": 1,
-            "average": 2590,
-            "stdMovingAverage": 605,
+            "average": 2608,
+            "stdMovingAverage": 595,
             "negative": false
           },
           {
             "key": "PL-Oil",
             "sampling": 1,
-            "average": 205,
+            "average": 206,
             "stdMovingAverage": 7,
             "negative": false
           }
@@ -18358,7 +18358,7 @@
           {
             "key": "PT-Biomass",
             "sampling": 1,
-            "average": 333,
+            "average": 332,
             "stdMovingAverage": 14,
             "negative": false
           },
@@ -18372,50 +18372,50 @@
           {
             "key": "PT-Solar",
             "sampling": 1,
-            "average": 398,
-            "stdMovingAverage": 670,
+            "average": 402,
+            "stdMovingAverage": 676,
             "negative": false
           },
           {
             "key": "PT-Load",
             "sampling": 1,
-            "average": 6705,
-            "stdMovingAverage": 1233,
+            "average": 6712,
+            "stdMovingAverage": 1232,
             "negative": false
           },
           {
             "key": "PT-Hydro Pumped",
             "sampling": 1,
-            "average": 299,
-            "stdMovingAverage": 1216,
+            "average": 301,
+            "stdMovingAverage": 1217,
             "negative": true
           },
           {
             "key": "PT-Wind",
             "sampling": 1,
-            "average": 2246,
+            "average": 2226,
             "stdMovingAverage": 1347,
             "negative": false
           },
           {
             "key": "PT-Hydro",
             "sampling": 1,
-            "average": 2171,
-            "stdMovingAverage": 1877,
+            "average": 2206,
+            "stdMovingAverage": 1874,
             "negative": true
           },
           {
             "key": "PT-Import",
             "sampling": 1,
-            "average": 514,
-            "stdMovingAverage": 1600,
+            "average": 504,
+            "stdMovingAverage": 1610,
             "negative": true
           },
           {
             "key": "PT-Gas",
             "sampling": 1,
-            "average": 916,
-            "stdMovingAverage": 365,
+            "average": 911,
+            "stdMovingAverage": 370,
             "negative": false
           }
         ]
@@ -19106,7 +19106,7 @@
           {
             "key": "RO-Nuclear",
             "sampling": 1,
-            "average": 1262,
+            "average": 1261,
             "stdMovingAverage": 16,
             "negative": false
           },
@@ -19120,50 +19120,50 @@
           {
             "key": "RO-Solar",
             "sampling": 1,
-            "average": 118,
-            "stdMovingAverage": 201,
+            "average": 119,
+            "stdMovingAverage": 202,
             "negative": false
           },
           {
             "key": "RO-Load",
             "sampling": 1,
-            "average": 6700,
-            "stdMovingAverage": 901,
+            "average": 6737,
+            "stdMovingAverage": 903,
             "negative": false
           },
           {
             "key": "RO-Wind",
             "sampling": 1,
-            "average": 652,
-            "stdMovingAverage": 535,
+            "average": 684,
+            "stdMovingAverage": 547,
             "negative": false
           },
           {
             "key": "RO-Coal",
             "sampling": 1,
-            "average": 814,
-            "stdMovingAverage": 145,
+            "average": 826,
+            "stdMovingAverage": 147,
             "negative": false
           },
           {
             "key": "RO-Hydro",
             "sampling": 1,
-            "average": 1165,
-            "stdMovingAverage": 189,
+            "average": 1172,
+            "stdMovingAverage": 190,
             "negative": false
           },
           {
             "key": "RO-Import",
             "sampling": 1,
-            "average": 773,
-            "stdMovingAverage": 875,
+            "average": 759,
+            "stdMovingAverage": 872,
             "negative": true
           },
           {
             "key": "RO-Gas",
             "sampling": 1,
-            "average": 1579,
-            "stdMovingAverage": 98,
+            "average": 1576,
+            "stdMovingAverage": 97,
             "negative": false
           }
         ]
@@ -19658,50 +19658,50 @@
           {
             "key": "SE-Nuclear",
             "sampling": 1,
-            "average": 5907,
-            "stdMovingAverage": 244,
+            "average": 5905,
+            "stdMovingAverage": 255,
             "negative": false
           },
           {
             "key": "SE-Others",
             "sampling": 1,
-            "average": 895,
-            "stdMovingAverage": 327,
+            "average": 903,
+            "stdMovingAverage": 325,
             "negative": false
           },
           {
             "key": "SE-Solar",
             "sampling": 1,
-            "average": 18,
-            "stdMovingAverage": 40,
+            "average": 20,
+            "stdMovingAverage": 47,
             "negative": false
           },
           {
             "key": "SE-Load",
             "sampling": 1,
-            "average": 18953,
-            "stdMovingAverage": 1794,
+            "average": 18955,
+            "stdMovingAverage": 1782,
             "negative": false
           },
           {
             "key": "SE-Wind",
             "sampling": 1,
-            "average": 6050,
-            "stdMovingAverage": 2850,
+            "average": 6048,
+            "stdMovingAverage": 2815,
             "negative": false
           },
           {
             "key": "SE-Hydro",
             "sampling": 1,
-            "average": 9359,
-            "stdMovingAverage": 2292,
+            "average": 9334,
+            "stdMovingAverage": 2272,
             "negative": false
           },
           {
             "key": "SE-Import",
             "sampling": 1,
-            "average": -4063,
-            "stdMovingAverage": 1443,
+            "average": -4025,
+            "stdMovingAverage": 1439,
             "negative": true
           }
         ]
@@ -20431,8 +20431,8 @@
           {
             "key": "DE-Storage gas",
             "sampling": 24,
-            "average": 165,
-            "stdMovingAverage": 21,
+            "average": 164,
+            "stdMovingAverage": 22,
             "negative": false
           }
         ]
@@ -21415,7 +21415,7 @@
           {
             "key": "HU-Storage gas",
             "sampling": 24,
-            "average": 42,
+            "average": 41,
             "stdMovingAverage": 3,
             "negative": false
           }
@@ -21559,8 +21559,8 @@
           {
             "key": "IT-Storage gas",
             "sampling": 24,
-            "average": 140,
-            "stdMovingAverage": 10,
+            "average": 139,
+            "stdMovingAverage": 11,
             "negative": false
           }
         ]
@@ -21895,7 +21895,7 @@
           {
             "key": "NL-Storage gas",
             "sampling": 24,
-            "average": 66,
+            "average": 65,
             "stdMovingAverage": 9,
             "negative": false
           }
@@ -22519,7 +22519,7 @@
           {
             "key": "SK-Storage gas",
             "sampling": 24,
-            "average": 25,
+            "average": 24,
             "stdMovingAverage": 2,
             "negative": false
           }
