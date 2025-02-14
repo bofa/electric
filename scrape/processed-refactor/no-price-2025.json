@@ -9505,24 +9505,321 @@
   },
   {
     "x": "2025-02-14T00:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
+    "NO1-Price": 123.26,
+    "NO2-Price": 123.47,
     "NO2NSL-Price": 103.2,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
+    "NO3-Price": 112.23,
+    "NO4-Price": 8.24,
+    "NO5-Price": 122.78
   },
   {
     "x": "2025-02-14T01:00:00.000+01:00",
+    "NO1-Price": 118.05,
+    "NO2-Price": 117.97,
+    "NO2NSL-Price": 98.97,
+    "NO3-Price": 112.85,
+    "NO4-Price": 6.44,
+    "NO5-Price": 118.23
+  },
+  {
+    "x": "2025-02-14T02:00:00.000+01:00",
+    "NO1-Price": 123.25,
+    "NO2-Price": 123.36,
+    "NO2NSL-Price": 99.44,
+    "NO3-Price": 114.36,
+    "NO4-Price": 6.29,
+    "NO5-Price": 123.01
+  },
+  {
+    "x": "2025-02-14T03:00:00.000+01:00",
+    "NO1-Price": 121.28,
+    "NO2-Price": 121.5,
+    "NO2NSL-Price": 99.52,
+    "NO3-Price": 110.02,
+    "NO4-Price": 5.98,
+    "NO5-Price": 120.79
+  },
+  {
+    "x": "2025-02-14T04:00:00.000+01:00",
+    "NO1-Price": 101.04,
+    "NO2-Price": 101.74,
+    "NO2NSL-Price": 95.68,
+    "NO3-Price": 82,
+    "NO4-Price": 6.33,
+    "NO5-Price": 99.48
+  },
+  {
+    "x": "2025-02-14T05:00:00.000+01:00",
+    "NO1-Price": 96.51,
+    "NO2-Price": 98.11,
+    "NO2NSL-Price": 115.88,
+    "NO3-Price": 62.24,
+    "NO4-Price": 5.98,
+    "NO5-Price": 92.97
+  },
+  {
+    "x": "2025-02-14T06:00:00.000+01:00",
+    "NO1-Price": 144.85,
+    "NO2-Price": 146.67,
+    "NO2NSL-Price": 142.53,
+    "NO3-Price": 101.72,
+    "NO4-Price": 8.3,
+    "NO5-Price": 140.84
+  },
+  {
+    "x": "2025-02-14T07:00:00.000+01:00",
+    "NO1-Price": 204.29,
+    "NO2-Price": 207.11,
+    "NO2NSL-Price": 184.86,
+    "NO3-Price": 139.01,
+    "NO4-Price": 13.97,
+    "NO5-Price": 198.16
+  },
+  {
+    "x": "2025-02-14T08:00:00.000+01:00",
+    "NO1-Price": 244.55,
+    "NO2-Price": 247,
+    "NO2NSL-Price": 190.94,
+    "NO3-Price": 183.48,
+    "NO4-Price": 9.38,
+    "NO5-Price": 239.24
+  },
+  {
+    "x": "2025-02-14T09:00:00.000+01:00",
+    "NO1-Price": 206.71,
+    "NO2-Price": 207.76,
+    "NO2NSL-Price": 181.25,
+    "NO3-Price": 174.7,
+    "NO4-Price": 11.05,
+    "NO5-Price": 204.43
+  },
+  {
+    "x": "2025-02-14T10:00:00.000+01:00",
+    "NO1-Price": 174.58,
+    "NO2-Price": 175.35,
+    "NO2NSL-Price": 170.54,
+    "NO3-Price": 153.81,
+    "NO4-Price": 74.99,
+    "NO5-Price": 172.91
+  },
+  {
+    "x": "2025-02-14T11:00:00.000+01:00",
+    "NO1-Price": 157.46,
+    "NO2-Price": 157.92,
+    "NO2NSL-Price": 156.91,
+    "NO3-Price": 147.84,
+    "NO4-Price": 39.9,
+    "NO5-Price": 156.47
+  },
+  {
+    "x": "2025-02-14T12:00:00.000+01:00",
+    "NO1-Price": 145.01,
+    "NO2-Price": 145.2,
+    "NO2NSL-Price": 146.49,
+    "NO3-Price": 137.2,
+    "NO4-Price": 75,
+    "NO5-Price": 144.6
+  },
+  {
+    "x": "2025-02-14T13:00:00.000+01:00",
+    "NO1-Price": 145.2,
+    "NO2-Price": 144.1,
+    "NO2NSL-Price": 144.38,
+    "NO3-Price": 159.69,
+    "NO4-Price": 25.55,
+    "NO5-Price": 147.64
+  },
+  {
+    "x": "2025-02-14T14:00:00.000+01:00",
+    "NO1-Price": 145.54,
+    "NO2-Price": 143.96,
+    "NO2NSL-Price": 147.09,
+    "NO3-Price": 168.18,
+    "NO4-Price": 8.46,
+    "NO5-Price": 149.03
+  },
+  {
+    "x": "2025-02-14T15:00:00.000+01:00",
+    "NO1-Price": 134.35,
+    "NO2-Price": 134.15,
+    "NO2NSL-Price": 158.8,
+    "NO3-Price": 131.01,
+    "NO4-Price": 10,
+    "NO5-Price": 134.8
+  },
+  {
+    "x": "2025-02-14T16:00:00.000+01:00",
+    "NO1-Price": 168.09,
+    "NO2-Price": 171.01,
+    "NO2NSL-Price": 168.51,
+    "NO3-Price": 102.08,
+    "NO4-Price": 10.29,
+    "NO5-Price": 161.55
+  },
+  {
+    "x": "2025-02-14T17:00:00.000+01:00",
+    "NO1-Price": 241.95,
+    "NO2-Price": 247.26,
+    "NO2NSL-Price": 190.58,
+    "NO3-Price": 126.2,
+    "NO4-Price": 28.08,
+    "NO5-Price": 230.09
+  },
+  {
+    "x": "2025-02-14T18:00:00.000+01:00",
+    "NO1-Price": 224.34,
+    "NO2-Price": 229.62,
+    "NO2NSL-Price": 210.93,
+    "NO3-Price": 110.55,
+    "NO4-Price": 38.78,
+    "NO5-Price": 212.51
+  },
+  {
+    "x": "2025-02-14T19:00:00.000+01:00",
+    "NO1-Price": 180.54,
+    "NO2-Price": 184.75,
+    "NO2NSL-Price": 197.15,
+    "NO3-Price": 89.6,
+    "NO4-Price": 27.28,
+    "NO5-Price": 171.08
+  },
+  {
+    "x": "2025-02-14T20:00:00.000+01:00",
+    "NO1-Price": 146.94,
+    "NO2-Price": 150.33,
+    "NO2NSL-Price": 178.83,
+    "NO3-Price": 73.46,
+    "NO4-Price": 26.79,
+    "NO5-Price": 139.26
+  },
+  {
+    "x": "2025-02-14T21:00:00.000+01:00",
+    "NO1-Price": 131.15,
+    "NO2-Price": 134.17,
+    "NO2NSL-Price": 153.44,
+    "NO3-Price": 65.59,
+    "NO4-Price": 24.08,
+    "NO5-Price": 124.31
+  },
+  {
+    "x": "2025-02-14T22:00:00.000+01:00",
+    "NO1-Price": 117.98,
+    "NO2-Price": 120.7,
+    "NO2NSL-Price": 140.91,
+    "NO3-Price": 59.07,
+    "NO4-Price": 8.3,
+    "NO5-Price": 111.79
+  },
+  {
+    "x": "2025-02-14T23:00:00.000+01:00",
+    "NO1-Price": 87.82,
+    "NO2-Price": 89.82,
+    "NO2NSL-Price": 133.82,
+    "NO3-Price": 44.1,
+    "NO4-Price": 8.3,
+    "NO5-Price": 83.26
+  },
+  {
+    "x": "2025-02-15T00:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 98.97,
+    "NO2NSL-Price": 111.83,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T02:00:00.000+01:00",
+    "x": "2025-02-15T01:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 105.25,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T02:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 99.49,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T03:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 95.36,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T04:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 90.65,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T05:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 91.52,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T06:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 95.34,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T07:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 103.37,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T08:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 104.71,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T09:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 113.29,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T10:00:00.000+01:00",
+    "NO1-Price": null,
+    "NO2-Price": null,
+    "NO2NSL-Price": 109.25,
+    "NO3-Price": null,
+    "NO4-Price": null,
+    "NO5-Price": null
+  },
+  {
+    "x": "2025-02-15T11:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
     "NO2NSL-Price": 99.44,
@@ -9531,190 +9828,109 @@
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T03:00:00.000+01:00",
+    "x": "2025-02-15T12:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 99.52,
+    "NO2NSL-Price": 91.63,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T04:00:00.000+01:00",
+    "x": "2025-02-15T13:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 95.68,
+    "NO2NSL-Price": 86.16,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T05:00:00.000+01:00",
+    "x": "2025-02-15T14:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 115.88,
+    "NO2NSL-Price": 76.52,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T06:00:00.000+01:00",
+    "x": "2025-02-15T15:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 142.53,
+    "NO2NSL-Price": 88.9,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T07:00:00.000+01:00",
+    "x": "2025-02-15T16:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 184.86,
+    "NO2NSL-Price": 114.55,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T08:00:00.000+01:00",
+    "x": "2025-02-15T17:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 190.94,
+    "NO2NSL-Price": 140.89,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T09:00:00.000+01:00",
+    "x": "2025-02-15T18:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 181.25,
+    "NO2NSL-Price": 144.41,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T10:00:00.000+01:00",
+    "x": "2025-02-15T19:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 170.54,
+    "NO2NSL-Price": 125.6,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T11:00:00.000+01:00",
+    "x": "2025-02-15T20:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 156.91,
+    "NO2NSL-Price": 107.46,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T12:00:00.000+01:00",
+    "x": "2025-02-15T21:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 146.49,
+    "NO2NSL-Price": 102.99,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T13:00:00.000+01:00",
+    "x": "2025-02-15T22:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 144.38,
+    "NO2NSL-Price": 92,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
   },
   {
-    "x": "2025-02-14T14:00:00.000+01:00",
+    "x": "2025-02-15T23:00:00.000+01:00",
     "NO1-Price": null,
     "NO2-Price": null,
-    "NO2NSL-Price": 147.09,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T15:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 158.8,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T16:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 168.51,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T17:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 190.58,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T18:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 210.93,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T19:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 197.15,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T20:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 178.83,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T21:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 153.44,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T22:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 140.91,
-    "NO3-Price": null,
-    "NO4-Price": null,
-    "NO5-Price": null
-  },
-  {
-    "x": "2025-02-14T23:00:00.000+01:00",
-    "NO1-Price": null,
-    "NO2-Price": null,
-    "NO2NSL-Price": 133.82,
+    "NO2NSL-Price": 87,
     "NO3-Price": null,
     "NO4-Price": null,
     "NO5-Price": null
