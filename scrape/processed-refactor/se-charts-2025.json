@@ -27642,7 +27642,7 @@
     "SE-undefined": 114.23,
     "SE-Wind": 8483.4,
     "SE-Hydro": 4554.4,
-    "SE-Import": -2387.6
+    "SE-Import": -2188.1
   },
   {
     "x": "2025-03-18T19:00:00.000+01:00",
@@ -27657,7 +27657,7 @@
     "SE-undefined": 105.28,
     "SE-Wind": 8762.8,
     "SE-Hydro": 4520.4,
-    "SE-Import": -2901.3
+    "SE-Import": -2760.8
   },
   {
     "x": "2025-03-18T20:00:00.000+01:00",
@@ -27672,7 +27672,7 @@
     "SE-undefined": 86.26,
     "SE-Wind": 8842.6,
     "SE-Hydro": 4613.8,
-    "SE-Import": -3291.5
+    "SE-Import": -3325.1
   },
   {
     "x": "2025-03-18T21:00:00.000+01:00",
@@ -27687,7 +27687,7 @@
     "SE-undefined": 75.53,
     "SE-Wind": 8626.9,
     "SE-Hydro": 4473.7,
-    "SE-Import": -3376.2
+    "SE-Import": -3099
   },
   {
     "x": "2025-03-18T22:00:00.000+01:00",
@@ -27702,7 +27702,7 @@
     "SE-undefined": 71.69,
     "SE-Wind": 8029.7,
     "SE-Hydro": 4344.7,
-    "SE-Import": -3311
+    "SE-Import": -3079
   },
   {
     "x": "2025-03-18T23:00:00.000+01:00",
@@ -27717,7 +27717,7 @@
     "SE-undefined": 64.75,
     "SE-Wind": 7424.2,
     "SE-Hydro": 4287.8,
-    "SE-Import": -3304
+    "SE-Import": -3070.9
   },
   {
     "x": "2025-03-19T00:00:00.000+01:00",
@@ -27732,7 +27732,7 @@
     "SE-undefined": 66.13,
     "SE-Wind": 7223,
     "SE-Hydro": 4286.4,
-    "SE-Import": -2923.7
+    "SE-Import": -3181.8
   },
   {
     "x": "2025-03-19T01:00:00.000+01:00",
@@ -27747,7 +27747,7 @@
     "SE-undefined": 63.5,
     "SE-Wind": 6972.2,
     "SE-Hydro": 4155.6,
-    "SE-Import": -2915.5
+    "SE-Import": -3117
   },
   {
     "x": "2025-03-19T02:00:00.000+01:00",
@@ -27762,7 +27762,7 @@
     "SE-undefined": 62.75,
     "SE-Wind": 6967.3,
     "SE-Hydro": 4224.3,
-    "SE-Import": -3009
+    "SE-Import": -3226.6
   },
   {
     "x": "2025-03-19T03:00:00.000+01:00",
@@ -27777,7 +27777,7 @@
     "SE-undefined": 63.49,
     "SE-Wind": 6942.2,
     "SE-Hydro": 4289.5,
-    "SE-Import": -3056.8
+    "SE-Import": -3263.3
   },
   {
     "x": "2025-03-19T04:00:00.000+01:00",
@@ -27792,7 +27792,7 @@
     "SE-undefined": 65.88,
     "SE-Wind": 6931.9,
     "SE-Hydro": 4283.4,
-    "SE-Import": -2853.2
+    "SE-Import": -3159.9
   },
   {
     "x": "2025-03-19T05:00:00.000+01:00",
@@ -27807,7 +27807,7 @@
     "SE-undefined": 71.92,
     "SE-Wind": 6698.6,
     "SE-Hydro": 4300.9,
-    "SE-Import": -2294.3
+    "SE-Import": -2426.2
   },
   {
     "x": "2025-03-19T06:00:00.000+01:00",
@@ -27822,21 +27822,396 @@
     "SE-undefined": 102.45,
     "SE-Wind": 6495,
     "SE-Hydro": 5566.1,
-    "SE-Import": -2111.5
+    "SE-Import": -1948.8
   },
   {
     "x": "2025-03-19T07:00:00.000+01:00",
-    "SE-Nuclear": 5828,
+    "SE-Nuclear": 5850,
     "SE-Fossil gas": 0.7,
-    "SE-Others": 849.8,
+    "SE-Others": 905.8,
     "SE-Solar": 113.2,
     "SE-Load": 18428,
-    "SE-Residual load": 12179.3,
-    "SE-Renewable share of generation": 65.9,
-    "SE-Renewable share of load": 70.2,
+    "SE-Residual load": 12191,
+    "SE-Renewable share of generation": 65.7,
+    "SE-Renewable share of load": 70.1,
     "SE-undefined": 114.91,
-    "SE-Wind": 6135.5,
-    "SE-Hydro": 6680.4,
-    "SE-Import": -2364.2
+    "SE-Wind": 6123.8,
+    "SE-Hydro": 6681.7,
+    "SE-Import": -2073.6
+  },
+  {
+    "x": "2025-03-19T08:00:00.000+01:00",
+    "SE-Nuclear": 5850,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 941.1,
+    "SE-Solar": 302.4,
+    "SE-Load": 18178,
+    "SE-Residual load": 11909.6,
+    "SE-Renewable share of generation": 66,
+    "SE-Renewable share of load": 72.5,
+    "SE-undefined": 84.88,
+    "SE-Wind": 5966,
+    "SE-Hydro": 6918.7,
+    "SE-Import": -2451.7
+  },
+  {
+    "x": "2025-03-19T09:00:00.000+01:00",
+    "SE-Nuclear": 5851,
+    "SE-Fossil gas": 0.7,
+    "SE-Others": 953.1,
+    "SE-Solar": 611.5,
+    "SE-Load": 17661,
+    "SE-Residual load": 11266.9,
+    "SE-Renewable share of generation": 65.2,
+    "SE-Renewable share of load": 72.2,
+    "SE-undefined": 53.53,
+    "SE-Wind": 5782.5,
+    "SE-Hydro": 6350.7,
+    "SE-Import": -2585.7
+  },
+  {
+    "x": "2025-03-19T10:00:00.000+01:00",
+    "SE-Nuclear": 5851,
+    "SE-Fossil gas": 0.7,
+    "SE-Others": 930.1,
+    "SE-Solar": 926.1,
+    "SE-Load": 16992,
+    "SE-Residual load": 10494.3,
+    "SE-Renewable share of generation": 64.1,
+    "SE-Renewable share of load": 71.1,
+    "SE-undefined": 26.82,
+    "SE-Wind": 5571.6,
+    "SE-Hydro": 5587.6,
+    "SE-Import": -2558.2
+  },
+  {
+    "x": "2025-03-19T11:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 0.9,
+    "SE-Others": 943.2,
+    "SE-Solar": 1186.3,
+    "SE-Load": 16580,
+    "SE-Residual load": 9891,
+    "SE-Renewable share of generation": 63.6,
+    "SE-Renewable share of load": 71.6,
+    "SE-undefined": 3.73,
+    "SE-Wind": 5502.8,
+    "SE-Hydro": 5188.9,
+    "SE-Import": -2745.8
+  },
+  {
+    "x": "2025-03-19T12:00:00.000+01:00",
+    "SE-Nuclear": 5853,
+    "SE-Fossil gas": 0.9,
+    "SE-Others": 930.2,
+    "SE-Solar": 1263.7,
+    "SE-Load": 16158,
+    "SE-Residual load": 9582.9,
+    "SE-Renewable share of generation": 62.9,
+    "SE-Renewable share of load": 71.3,
+    "SE-undefined": -0.52,
+    "SE-Wind": 5311.4,
+    "SE-Hydro": 4949.7,
+    "SE-Import": -3070.7
+  },
+  {
+    "x": "2025-03-19T13:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 0.8,
+    "SE-Others": 966.3,
+    "SE-Solar": 1209.8,
+    "SE-Load": 16007,
+    "SE-Residual load": 9589.3,
+    "SE-Renewable share of generation": 62.4,
+    "SE-Renewable share of load": 70.8,
+    "SE-undefined": -0.16,
+    "SE-Wind": 5207.9,
+    "SE-Hydro": 4911.9,
+    "SE-Import": -3358
+  },
+  {
+    "x": "2025-03-19T14:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 0.8,
+    "SE-Others": 990.6,
+    "SE-Solar": 1032,
+    "SE-Load": 15676,
+    "SE-Residual load": 9380.5,
+    "SE-Renewable share of generation": 62.9,
+    "SE-Renewable share of load": 74,
+    "SE-undefined": 25.43,
+    "SE-Wind": 5263.4,
+    "SE-Hydro": 5304,
+    "SE-Import": -3028
+  },
+  {
+    "x": "2025-03-19T15:00:00.000+01:00",
+    "SE-Nuclear": 5851,
+    "SE-Fossil gas": 0.8,
+    "SE-Others": 1006.1,
+    "SE-Solar": 676.7,
+    "SE-Load": 15761,
+    "SE-Residual load": 10046.1,
+    "SE-Renewable share of generation": 64.3,
+    "SE-Renewable share of load": 78.2,
+    "SE-undefined": 33.75,
+    "SE-Wind": 5038.2,
+    "SE-Hydro": 6614.8,
+    "SE-Import": -3427.1
+  },
+  {
+    "x": "2025-03-19T16:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 1118.9,
+    "SE-Solar": 328,
+    "SE-Load": 16190,
+    "SE-Residual load": 11043.5,
+    "SE-Renewable share of generation": 65.2,
+    "SE-Renewable share of load": 80.6,
+    "SE-undefined": 107.95,
+    "SE-Wind": 4818.5,
+    "SE-Hydro": 7905.5,
+    "SE-Import": -4080.8
+  },
+  {
+    "x": "2025-03-19T17:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 0.7,
+    "SE-Others": 1243.6,
+    "SE-Solar": 67,
+    "SE-Load": 17366,
+    "SE-Residual load": 12460.1,
+    "SE-Renewable share of generation": 65.6,
+    "SE-Renewable share of load": 77.8,
+    "SE-undefined": 146.25,
+    "SE-Wind": 4838.9,
+    "SE-Hydro": 8601.9,
+    "SE-Import": -3656.1
+  },
+  {
+    "x": "2025-03-19T18:00:00.000+01:00",
+    "SE-Nuclear": 5852,
+    "SE-Fossil gas": 1.5,
+    "SE-Others": 1312.8,
+    "SE-Solar": 5.2,
+    "SE-Load": 18070,
+    "SE-Residual load": 13041.3,
+    "SE-Renewable share of generation": 66,
+    "SE-Renewable share of load": 76.8,
+    "SE-undefined": 244.13,
+    "SE-Wind": 5023.4,
+    "SE-Hydro": 8857.8,
+    "SE-Import": -3930.6
+  },
+  {
+    "x": "2025-03-19T19:00:00.000+01:00",
+    "SE-Nuclear": 5850,
+    "SE-Fossil gas": 0.8,
+    "SE-Others": 1180.5,
+    "SE-Solar": 1.1,
+    "SE-Load": 17478,
+    "SE-Residual load": 12489.1,
+    "SE-Renewable share of generation": 65.5,
+    "SE-Renewable share of load": 76.4,
+    "SE-undefined": 185.01,
+    "SE-Wind": 4987.8,
+    "SE-Hydro": 8370.1,
+    "SE-Import": -2839.5
+  },
+  {
+    "x": "2025-03-19T20:00:00.000+01:00",
+    "SE-Nuclear": 5849,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 964.4,
+    "SE-Solar": 1,
+    "SE-Load": 17531,
+    "SE-Residual load": 12255.3,
+    "SE-Renewable share of generation": 66.7,
+    "SE-Renewable share of load": 77.9,
+    "SE-undefined": 140.86,
+    "SE-Wind": 5274.7,
+    "SE-Hydro": 8384.1,
+    "SE-Import": -3356.3
+  },
+  {
+    "x": "2025-03-19T21:00:00.000+01:00",
+    "SE-Nuclear": 5849,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 948.9,
+    "SE-Solar": 1,
+    "SE-Load": 16764,
+    "SE-Residual load": 11323,
+    "SE-Renewable share of generation": 66.7,
+    "SE-Renewable share of load": 81.4,
+    "SE-undefined": 114.66,
+    "SE-Wind": 5440.1,
+    "SE-Hydro": 8196.9,
+    "SE-Import": -3755.7
+  },
+  {
+    "x": "2025-03-19T22:00:00.000+01:00",
+    "SE-Nuclear": 5849,
+    "SE-Fossil gas": 0.5,
+    "SE-Others": 898.2,
+    "SE-Solar": 1,
+    "SE-Load": 16239,
+    "SE-Residual load": 10799.6,
+    "SE-Renewable share of generation": 66.2,
+    "SE-Renewable share of load": 81.6,
+    "SE-undefined": 101.38,
+    "SE-Wind": 5438.4,
+    "SE-Hydro": 7803.9,
+    "SE-Import": -3914.5
+  },
+  {
+    "x": "2025-03-19T23:00:00.000+01:00",
+    "SE-Nuclear": 5848,
+    "SE-Fossil gas": 0.5,
+    "SE-Others": 818.1,
+    "SE-Solar": 1.1,
+    "SE-Load": 15863,
+    "SE-Residual load": 10412.6,
+    "SE-Renewable share of generation": 66.4,
+    "SE-Renewable share of load": 82.9,
+    "SE-undefined": 79.96,
+    "SE-Wind": 5449.4,
+    "SE-Hydro": 7702.2,
+    "SE-Import": -4291
+  },
+  {
+    "x": "2025-03-20T00:00:00.000+01:00",
+    "SE-Nuclear": 5845,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 848.2,
+    "SE-Solar": 0.9,
+    "SE-Load": 16075,
+    "SE-Residual load": 10851.8,
+    "SE-Renewable share of generation": 66,
+    "SE-Renewable share of load": 80.9,
+    "SE-undefined": 35.39,
+    "SE-Wind": 5222.3,
+    "SE-Hydro": 7781.6,
+    "SE-Import": -4621.2
+  },
+  {
+    "x": "2025-03-20T01:00:00.000+01:00",
+    "SE-Nuclear": 5843,
+    "SE-Fossil gas": 0.4,
+    "SE-Others": 850,
+    "SE-Solar": 0.9,
+    "SE-Load": 15573,
+    "SE-Residual load": 10605.9,
+    "SE-Renewable share of generation": 65.9,
+    "SE-Renewable share of load": 83.1,
+    "SE-undefined": 56.83,
+    "SE-Wind": 4966.2,
+    "SE-Hydro": 7980.5,
+    "SE-Import": -4750.1
+  },
+  {
+    "x": "2025-03-20T02:00:00.000+01:00",
+    "SE-Nuclear": 5844,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 864.8,
+    "SE-Solar": 0.8,
+    "SE-Load": 15796,
+    "SE-Residual load": 11028.5,
+    "SE-Renewable share of generation": 66.1,
+    "SE-Renewable share of load": 82.9,
+    "SE-undefined": 43.97,
+    "SE-Wind": 4766.7,
+    "SE-Hydro": 8322.8,
+    "SE-Import": -5107.6
+  },
+  {
+    "x": "2025-03-20T03:00:00.000+01:00",
+    "SE-Nuclear": 5845,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 884.2,
+    "SE-Solar": 0.9,
+    "SE-Load": 15602,
+    "SE-Residual load": 11138.4,
+    "SE-Renewable share of generation": 66.1,
+    "SE-Renewable share of load": 84.3,
+    "SE-undefined": 54.09,
+    "SE-Wind": 4462.7,
+    "SE-Hydro": 8682,
+    "SE-Import": -5354.6
+  },
+  {
+    "x": "2025-03-20T04:00:00.000+01:00",
+    "SE-Nuclear": 5845,
+    "SE-Fossil gas": 0.4,
+    "SE-Others": 922.4,
+    "SE-Solar": 0.9,
+    "SE-Load": 15454,
+    "SE-Residual load": 11055.9,
+    "SE-Renewable share of generation": 66.5,
+    "SE-Renewable share of load": 87.1,
+    "SE-undefined": 68.34,
+    "SE-Wind": 4397.2,
+    "SE-Hydro": 9066.7,
+    "SE-Import": -5423.6
+  },
+  {
+    "x": "2025-03-20T05:00:00.000+01:00",
+    "SE-Nuclear": 5846,
+    "SE-Fossil gas": 0.5,
+    "SE-Others": 1013.9,
+    "SE-Solar": 0.9,
+    "SE-Load": 16003,
+    "SE-Residual load": 11557.5,
+    "SE-Renewable share of generation": 67.3,
+    "SE-Renewable share of load": 88.1,
+    "SE-undefined": 114.87,
+    "SE-Wind": 4444.6,
+    "SE-Hydro": 9654.2,
+    "SE-Import": -5437.7
+  },
+  {
+    "x": "2025-03-20T06:00:00.000+01:00",
+    "SE-Nuclear": 5846,
+    "SE-Fossil gas": 0.5,
+    "SE-Others": 1086.7,
+    "SE-Solar": 12.2,
+    "SE-Load": 17220,
+    "SE-Residual load": 12833.8,
+    "SE-Renewable share of generation": 67.3,
+    "SE-Renewable share of load": 83,
+    "SE-undefined": 140.95,
+    "SE-Wind": 4374,
+    "SE-Hydro": 9898.4,
+    "SE-Import": -4453.4
+  },
+  {
+    "x": "2025-03-20T07:00:00.000+01:00",
+    "SE-Nuclear": 5846,
+    "SE-Fossil gas": 0.7,
+    "SE-Others": 1114.4,
+    "SE-Solar": 107.9,
+    "SE-Load": 18206,
+    "SE-Residual load": 13882.2,
+    "SE-Renewable share of generation": 67.9,
+    "SE-Renewable share of load": 80.7,
+    "SE-undefined": 138.55,
+    "SE-Wind": 4215.9,
+    "SE-Hydro": 10369.1,
+    "SE-Import": -3811.5
+  },
+  {
+    "x": "2025-03-20T08:00:00.000+01:00",
+    "SE-Nuclear": 5838,
+    "SE-Fossil gas": 0.6,
+    "SE-Others": 1112.7,
+    "SE-Solar": 328,
+    "SE-Load": 18080,
+    "SE-Residual load": 14223.5,
+    "SE-Renewable share of generation": 67.9,
+    "SE-Renewable share of load": 81.4,
+    "SE-undefined": 103.38,
+    "SE-Wind": 3528.5,
+    "SE-Hydro": 10864.9,
+    "SE-Import": -3920.6
   }
 ]
