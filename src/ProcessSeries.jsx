@@ -5,6 +5,18 @@ function ProcessSeries(series, windowSizeHours, samplingSizeHours, confidenceTra
     series.data.findLastIndex(p => p.x - upperDate < 0)
   );
 
+  console.log('tradingData', series, tradingData)
+
+  if (tradingData.length < 3) {
+    return {
+      label: series.label,
+      tradingData: tradingData,
+      movingAverage: [],
+      min: NaN,
+      max: NaN,
+    }
+  }
+
   const sampling = tradingData[1].x.diff(tradingData[0].x, 'hours').hours;  
   const samplingSize = Math.max(1, Math.round(samplingSizeHours / sampling));
   const windowSize = Math.max(1, Math.round(windowSizeHours / sampling));

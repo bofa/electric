@@ -12,6 +12,8 @@ import {
 import { Popover2, MenuItem2, Classes as ClassesPop, MenuItem2Props } from "@blueprintjs/popover2";
 import { ItemRendererProps, MultiSelect2 } from "@blueprintjs/select";
 import React from "react";
+import { Series } from "./scrape-model/series";
+import { REGIONS } from "./scrape-model/region";
 
 type Item = {
   area: string,
@@ -19,11 +21,15 @@ type Item = {
   label: number,
 }
 
+type Node = Omit<TreeNodeInfo, 'id'> & { id: string }
+
 type Props = {
-  items: Item[],
+  series: Series[],
   selectedAreas: any[],
   setSelectedAreas: (areas: any[]) => void,
 }
+
+type State = typeof initState;
 
 const initState = {
   sort: 0, // TODO 'alphabetical' or 'numerical'?
@@ -33,7 +39,7 @@ const initState = {
   energy: true,
 };
 
-export default class AreaMultiSelect extends React.Component<Props, typeof initState> {
+export default class AreaMultiSelect extends React.Component<Props, State> {
    
   state = initState
 
@@ -67,14 +73,24 @@ export default class AreaMultiSelect extends React.Component<Props, typeof initS
 
     const sorter = (a: any, b: any) => this.state.desc * sortFunctions[this.state.sort](a, b);
 
-    const items = props.items.sort(sorter).map(item2node);
+    // const items = props.series
+    //   // TODO
+    //   // .sort(sorter)
+    //   .map(s => ({
+    //     id: s.id,
+    //     label: [s.region, s.type, s.unit].join('-'),
+    //     isSelected: selectedAreas.includes(s.id),
+    //   }));
+
     // const items = props.items.sort((a1, a2) => a1.text.localeCompare(a2.text));
 
-
-    console.log('this.props', this.props, this.state);
+    const items: Node[] = REGIONS.children.map(r => ({
+      id: r.id,
+      label: r.name,
+    }))
 
     return (
-      <MultiSelect2<Omit<TreeNodeInfo, 'id'> & { id: string }>
+      <MultiSelect2<Node>
         resetOnQuery={false}
         resetOnSelect={false}
         items={items}
@@ -99,7 +115,7 @@ export default class AreaMultiSelect extends React.Component<Props, typeof initS
                   <CustomItem text="Unit" icon="lightning" selected={power} onClick={() => this.setState({ power: !power })}/>
                 </Menu>
               }>
-                <Button icon="globe" onClick={() => this.setState({ sort: 1 })}/>
+                <Button icon="globe"/>
               </Popover2>
 
               <Popover2 popoverClassName={ClassesPop.POPOVER2_CONTENT_SIZING} content={
@@ -124,12 +140,13 @@ export default class AreaMultiSelect extends React.Component<Props, typeof initS
 
                 </>
               }>
-                <Button rightIcon="sort" onClick={() => this.setState({ sort: 0 })}/>
+                <Button rightIcon="sort"/>
               </Popover2>
             </ButtonGroup>
             <MenuDivider/>
             <Tree
               contents={items.filter((item) => matchQuery(query, item.id))}
+              onNodeClick={node => setSelectedAreas(toggleItems(selectedAreas, node.id as string))}
             />
           </>
         )}
@@ -211,10 +228,3 @@ const INITIAL_STATE = [
 ];
 
 const CustomItem = (props: MenuItem2Props) => <MenuItem2 roleStructure='listoption' shouldDismissPopover={false} {...props}/> 
-
-function item2node(item: Item, index: number, array: Item[]) {
-  return {
-    id: item.area,
-    label: item.text,
-  }
-}
