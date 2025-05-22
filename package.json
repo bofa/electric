@@ -18,15 +18,14 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.0.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "web-vitals": "^3.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scrape": "npm run markets && npm run marketsprice && npm run productiongranular && npm run process && npm run options && npm run push",
+    "scrape": "npm run markets0 && npm run productiongranular && npm run process && npm run options && npm run push",
     "push": "git add scrape && git commit -m scrape && git push",
     "deploy": "npm run build && git add docs && git commit -m build && git push",
     "price": "node price.js",
@@ -34,8 +33,17 @@
     "productiongranular": "npm run gas",
     "market": "node market.js",
     "markets": "node market.js at ch de dk ee es fi fr hu ie it lt lu lv mt nl pl pt se no cz ro",
+    "markets0": "npm run markets1 && npm run markets2 && npm run markets3",
+    "markets1": "node market.js at ch de dk ee es fi",
+    "markets2": "node market.js fr hu ie it lt lu lv",
+    "markets3": "node market.js mt nl pl pt se no cz ro",
     "marketprice": "node market-price.js",
     "marketsprice": "node market-price.js dk ee es fi fr hu ie it lt lu lv nl pl pt se no cz ro",
+    "marketsprice0": "npm run marketsprice1 && npm run marketsprice2 && npm run marketsprice3 && npm run marketsprice4",
+    "marketsprice1": "node market-price.js dk ee es fi fr",
+    "marketsprice2": "node market-price.js hu ie it lt lu",
+    "marketsprice3": "node market-price.js lv nl pl pt se",
+    "marketsprice4": "node market-price.js se no cz ro",
     "_marketsprice": "node market-price.js se no",
     "debug": "node market-price.js",
     "options": "node options.js",
@@ -69,7 +77,9 @@
   "devDependencies": {
     "@types/luxon": "^3.1.0",
     "@types/react": "^18.2.6",
+    "@vitejs/plugin-react": "^4.4.1",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "vite": "^6.3.5"
   }
 }
