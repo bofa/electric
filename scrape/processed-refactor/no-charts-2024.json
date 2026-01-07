@@ -17312,11 +17312,11 @@
   {
     "x": "2024-02-18T02:00:00.000+01:00",
     "NO-Other renewables": 55.1,
-    "NO-Waste": null,
+    "NO-Waste": 30.2,
     "NO-Solar": null,
     "NO-Load": 17422.4,
     "NO-Residual load": 15826.2,
-    "NO-Renewable share of load": 99.2,
+    "NO-Renewable share of load": 99.3,
     "NO-Renewable share of generation": 95.7,
     "NO-undefined": 51.39,
     "NO-Wind": 1596.2,
@@ -17341,16 +17341,16 @@
   },
   {
     "x": "2024-02-18T04:00:00.000+01:00",
-    "NO-Other renewables": null,
-    "NO-Waste": null,
+    "NO-Other renewables": 52,
+    "NO-Waste": 30.2,
     "NO-Solar": null,
     "NO-Load": 17406.1,
     "NO-Residual load": 15584.9,
-    "NO-Renewable share of load": 97.2,
-    "NO-Renewable share of generation": 98.8,
+    "NO-Renewable share of load": 97.6,
+    "NO-Renewable share of generation": 96.5,
     "NO-undefined": 49.37,
     "NO-Wind": 1821.2,
-    "NO-Hydro": 15099.8,
+    "NO-Hydro": 15505.099999999999,
     "NO-Import": -519.4,
     "NO-Gas": 200.4
   },
@@ -23366,7 +23366,7 @@
     "NO-undefined": 63.73,
     "NO-Wind": 1026.4,
     "NO-Hydro": 23110.8,
-    "NO-Import": -5963.9,
+    "NO-Import": -5965.4,
     "NO-Gas": 199.3
   },
   {
@@ -23381,7 +23381,7 @@
     "NO-undefined": 61.98,
     "NO-Wind": 966.7,
     "NO-Hydro": 22298.300000000003,
-    "NO-Import": -5705.5,
+    "NO-Import": -5714.3,
     "NO-Gas": 202.9
   },
   {
@@ -23396,7 +23396,7 @@
     "NO-undefined": 60.79,
     "NO-Wind": 962.3,
     "NO-Hydro": 21376.100000000002,
-    "NO-Import": -5695.6,
+    "NO-Import": -5716.3,
     "NO-Gas": 204.5
   },
   {
@@ -24476,7 +24476,7 @@
     "NO-undefined": 59.89,
     "NO-Wind": 1130.2,
     "NO-Hydro": 16698.4,
-    "NO-Import": -1598.1,
+    "NO-Import": -1597.1,
     "NO-Gas": 221.7
   },
   {
@@ -25046,7 +25046,7 @@
     "NO-undefined": 50.89,
     "NO-Wind": 2259.8,
     "NO-Hydro": 10824,
-    "NO-Import": 4840.1,
+    "NO-Import": 4842.3,
     "NO-Gas": 205.8
   },
   {
@@ -25166,7 +25166,7 @@
     "NO-undefined": 55,
     "NO-Wind": 1633,
     "NO-Hydro": 15587.099999999999,
-    "NO-Import": 810,
+    "NO-Import": 810.1,
     "NO-Gas": 204
   },
   {
@@ -25181,7 +25181,7 @@
     "NO-undefined": 54.66,
     "NO-Wind": 1615.3,
     "NO-Hydro": 15001.2,
-    "NO-Import": 1117.1,
+    "NO-Import": 1117.8,
     "NO-Gas": 204.9
   },
   {
@@ -25196,7 +25196,7 @@
     "NO-undefined": 53.71,
     "NO-Wind": 1604.9,
     "NO-Hydro": 14309.6,
-    "NO-Import": 1534.3,
+    "NO-Import": 1535.7,
     "NO-Gas": 206.4
   },
   {
@@ -25781,7 +25781,7 @@
     "NO-undefined": 70.06,
     "NO-Wind": 613.8,
     "NO-Hydro": 21126.4,
-    "NO-Import": -4309.1,
+    "NO-Import": -4230.4,
     "NO-Gas": 205.8
   },
   {
@@ -25796,7 +25796,7 @@
     "NO-undefined": 69.01,
     "NO-Wind": 655.8,
     "NO-Hydro": 21942.100000000002,
-    "NO-Import": -4800.6,
+    "NO-Import": -4717.9,
     "NO-Gas": 205.8
   },
   {
@@ -25811,7 +25811,7 @@
     "NO-undefined": 69,
     "NO-Wind": 603.3,
     "NO-Hydro": 22746.7,
-    "NO-Import": -5326,
+    "NO-Import": -5229.2,
     "NO-Gas": 210.4
   },
   {
@@ -25916,7 +25916,7 @@
     "NO-undefined": 63.15,
     "NO-Wind": 1115.6,
     "NO-Hydro": 20849.5,
-    "NO-Import": -5561.9,
+    "NO-Import": -5410.4,
     "NO-Gas": 212.9
   },
   {
@@ -65995,7 +65995,7 @@
     "NO-Renewable share of generation": null,
     "NO-undefined": 37.95,
     "NO-Wind": 1264.1,
-    "NO-Hydro": 16351.400000000001,
+    "NO-Hydro": 16351.600000000002,
     "NO-Import": -4412.3,
     "NO-Gas": 140.9
   },
@@ -108386,7 +108386,7 @@
     "NO-undefined": 10.09,
     "NO-Wind": 1911.3,
     "NO-Hydro": 14062.199999999999,
-    "NO-Import": -2855.4,
+    "NO-Import": -2674.5,
     "NO-Gas": 214.2
   },
   {
@@ -108401,7 +108401,7 @@
     "NO-undefined": 10.09,
     "NO-Wind": 1711.2,
     "NO-Hydro": 13891.4,
-    "NO-Import": -2660.9,
+    "NO-Import": -2523.9,
     "NO-Gas": 215.8
   },
   {
@@ -108416,7 +108416,7 @@
     "NO-undefined": 10.12,
     "NO-Wind": 1426.9,
     "NO-Hydro": 13738.8,
-    "NO-Import": -2461.4,
+    "NO-Import": -2329.7,
     "NO-Gas": 216.9
   },
   {
@@ -108431,7 +108431,7 @@
     "NO-undefined": 10.21,
     "NO-Wind": 1135.3,
     "NO-Hydro": 13998.899999999998,
-    "NO-Import": -2398.4,
+    "NO-Import": -2309.5,
     "NO-Gas": 216.8
   },
   {
@@ -108446,7 +108446,7 @@
     "NO-undefined": 10.47,
     "NO-Wind": 998.5,
     "NO-Hydro": 14795.2,
-    "NO-Import": -2666,
+    "NO-Import": -2286,
     "NO-Gas": 211.1
   },
   {
@@ -108461,7 +108461,7 @@
     "NO-undefined": 17.01,
     "NO-Wind": 1250.6,
     "NO-Hydro": 15492.2,
-    "NO-Import": -2252.8,
+    "NO-Import": -2190.3,
     "NO-Gas": 167.5
   },
   {
@@ -108476,7 +108476,7 @@
     "NO-undefined": 22.66,
     "NO-Wind": 1669.8,
     "NO-Hydro": 16611.6,
-    "NO-Import": -2830.7,
+    "NO-Import": -2693.9,
     "NO-Gas": 165.9
   },
   {
@@ -108491,7 +108491,7 @@
     "NO-undefined": 21.41,
     "NO-Wind": 1644.5,
     "NO-Hydro": 17365.5,
-    "NO-Import": -2856.7,
+    "NO-Import": -2584.9,
     "NO-Gas": 165.3
   },
   {
@@ -108506,7 +108506,7 @@
     "NO-undefined": 21.27,
     "NO-Wind": 1828.7,
     "NO-Hydro": 17321.7,
-    "NO-Import": -2844.4,
+    "NO-Import": -2599.6,
     "NO-Gas": 171
   },
   {
@@ -108521,7 +108521,7 @@
     "NO-undefined": 20.02,
     "NO-Wind": 1656.7,
     "NO-Hydro": 16839.4,
-    "NO-Import": -2862,
+    "NO-Import": -2735.3,
     "NO-Gas": 167.2
   },
   {
@@ -108536,7 +108536,7 @@
     "NO-undefined": 19.36,
     "NO-Wind": 1519.7,
     "NO-Hydro": 16708.4,
-    "NO-Import": -2949.3,
+    "NO-Import": -2798.9,
     "NO-Gas": 167.1
   },
   {
@@ -108551,7 +108551,7 @@
     "NO-undefined": 18.77,
     "NO-Wind": 1490.1,
     "NO-Hydro": 16551.100000000002,
-    "NO-Import": -2776.4,
+    "NO-Import": -2631.6,
     "NO-Gas": 165.7
   },
   {
@@ -108566,7 +108566,7 @@
     "NO-undefined": 18.03,
     "NO-Wind": 1402.7,
     "NO-Hydro": 16226.5,
-    "NO-Import": -2661.6,
+    "NO-Import": -2465.7,
     "NO-Gas": 168.5
   },
   {
@@ -108581,7 +108581,7 @@
     "NO-undefined": 18.15,
     "NO-Wind": 1463.3,
     "NO-Hydro": 17229.1,
-    "NO-Import": -3041.1,
+    "NO-Import": -2563.8,
     "NO-Gas": 172
   },
   {
@@ -108596,7 +108596,7 @@
     "NO-undefined": 20.03,
     "NO-Wind": 1664.2,
     "NO-Hydro": 17576.1,
-    "NO-Import": -3224,
+    "NO-Import": -2595.4,
     "NO-Gas": 170
   },
   {
@@ -108611,7 +108611,7 @@
     "NO-undefined": 22.82,
     "NO-Wind": 1710.5,
     "NO-Hydro": 18544.800000000003,
-    "NO-Import": -3448.5,
+    "NO-Import": -2874.7,
     "NO-Gas": 171.1
   },
   {
@@ -108626,7 +108626,7 @@
     "NO-undefined": 27.45,
     "NO-Wind": 1834.3,
     "NO-Hydro": 18909.8,
-    "NO-Import": -3770.5,
+    "NO-Import": -3331.5,
     "NO-Gas": 172.1
   },
   {
@@ -108641,7 +108641,7 @@
     "NO-undefined": 29.9,
     "NO-Wind": 1763.4,
     "NO-Hydro": 18993.7,
-    "NO-Import": -4055,
+    "NO-Import": -3645.7,
     "NO-Gas": 164.4
   },
   {
@@ -108656,7 +108656,7 @@
     "NO-undefined": 24.61,
     "NO-Wind": 1673,
     "NO-Hydro": 18777.1,
-    "NO-Import": -3563.3,
+    "NO-Import": -3125.7,
     "NO-Gas": 167.1
   },
   {
@@ -108671,7 +108671,7 @@
     "NO-undefined": 23.22,
     "NO-Wind": 1432.8,
     "NO-Hydro": 18665.800000000003,
-    "NO-Import": -3398.5,
+    "NO-Import": -2833.6,
     "NO-Gas": 173.6
   },
   {
@@ -108686,7 +108686,7 @@
     "NO-undefined": 20.18,
     "NO-Wind": 1439.9,
     "NO-Hydro": 18192.3,
-    "NO-Import": -3140.8,
+    "NO-Import": -2448.2,
     "NO-Gas": 172.9
   },
   {
@@ -108701,7 +108701,7 @@
     "NO-undefined": 18.14,
     "NO-Wind": 1471.9,
     "NO-Hydro": 17550.5,
-    "NO-Import": -3055.9,
+    "NO-Import": -2616.9,
     "NO-Gas": 174.2
   },
   {
@@ -108716,7 +108716,7 @@
     "NO-undefined": 13.93,
     "NO-Wind": 1182.5,
     "NO-Hydro": 17128.199999999997,
-    "NO-Import": -3128.3,
+    "NO-Import": -2829.1,
     "NO-Gas": 175.2
   },
   {
@@ -108731,7 +108731,7 @@
     "NO-undefined": 17.67,
     "NO-Wind": 1122.9,
     "NO-Hydro": 16670.399999999998,
-    "NO-Import": -3311.1,
+    "NO-Import": -3105.2,
     "NO-Gas": 176.4
   },
   {
@@ -111596,7 +111596,7 @@
     "NO-undefined": 20.13,
     "NO-Wind": 893.3,
     "NO-Hydro": 17863.7,
-    "NO-Import": -3158.9,
+    "NO-Import": -3159.9,
     "NO-Gas": 160.4
   },
   {
