@@ -86,6 +86,7 @@ export default function DateRangeSelect(props: {
       </MultiSlider>
       <div style={{ marginTop: 30, display: 'flex', flexWrap: 'wrap' }}>
         {rangeShortcuts.map(range => <Button
+          key={range.label}
           minimal
           text={range.label}
           onClick={() => {
